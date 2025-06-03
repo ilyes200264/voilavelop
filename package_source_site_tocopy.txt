@@ -14,25 +14,27 @@
             </script>
         
 <!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
-<title>Tandem Package | Bike n&#039; Blend</title>
-<meta name="description" content="The Tandem package from Bike n&#039; Blend offers an exciting and hands-on way to mix fitness with pleasure at your next event. This package includes"/>
+<title>Packages | Bike n&#039; Blend</title>
+<meta name="description" content="Expos and corporate events, fundraisers or school holiday programs, there is a package for it. Choose between our Tandem Tasty, Competition, Tour de France or"/>
 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-<link rel="canonical" href="https://www.bikenblend.com.au/tandem/" />
+<link rel="canonical" href="https://www.bikenblend.com.au/packages/" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Tandem Package | Bike n&#039; Blend" />
-<meta property="og:description" content="The Tandem package from Bike n&#039; Blend offers an exciting and hands-on way to mix fitness with pleasure at your next event. This package includes" />
-<meta property="og:url" content="https://www.bikenblend.com.au/tandem/" />
+<meta property="og:title" content="Packages | Bike n&#039; Blend" />
+<meta property="og:description" content="Expos and corporate events, fundraisers or school holiday programs, there is a package for it. Choose between our Tandem Tasty, Competition, Tour de France or" />
+<meta property="og:url" content="https://www.bikenblend.com.au/packages/" />
 <meta property="og:site_name" content="Bike n&#039; Blend" />
-<meta property="og:updated_time" content="2025-01-15T11:18:09+11:00" />
+<meta property="og:updated_time" content="2025-01-15T11:19:14+11:00" />
 <meta property="og:image" content="https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg" />
 <meta property="og:image:secure_url" content="https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg" />
 <meta property="og:image:width" content="1920" />
 <meta property="og:image:height" content="1280" />
 <meta property="og:image:alt" content="team building activities - team building ideas for work" />
 <meta property="og:image:type" content="image/jpeg" />
-<meta property="article:published_time" content="2024-10-01T15:28:53+10:00" />
-<meta property="article:modified_time" content="2025-01-15T11:18:09+11:00" />
+<meta property="article:published_time" content="2022-05-23T01:50:01+10:00" />
+<meta property="article:modified_time" content="2025-01-15T11:19:14+11:00" />
+<meta property="og:video" content="https://www.youtube.com/embed/qEnc3Tn3OR8" />
+<meta property="video:duration" content="35" />
 <meta property="og:video" content="https://www.youtube.com/embed/G8IgDNSTOdo" />
 <meta property="video:duration" content="28" />
 <meta property="og:video" content="https://www.youtube.com/embed/qvZGr3z3yPI" />
@@ -40,12 +42,12 @@
 <meta property="ya:ovs:upload_date" content="2024-02-20T15:56:45-08:00" />
 <meta property="ya:ovs:allow_embed" content="true" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Tandem Package | Bike n&#039; Blend" />
-<meta name="twitter:description" content="The Tandem package from Bike n&#039; Blend offers an exciting and hands-on way to mix fitness with pleasure at your next event. This package includes" />
+<meta name="twitter:title" content="Packages | Bike n&#039; Blend" />
+<meta name="twitter:description" content="Expos and corporate events, fundraisers or school holiday programs, there is a package for it. Choose between our Tandem Tasty, Competition, Tour de France or" />
 <meta name="twitter:image" content="https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg" />
 <meta name="twitter:label1" content="Time to read" />
-<meta name="twitter:data1" content="14 minutes" />
-<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Organization"],"@id":"https://www.bikenblend.com.au/#organization","name":"Bike n' Blend","url":"https://www.bikenblend.com.au","openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday 09:00-17:00"],"description":"A healthy, sustainable and fun addition to your next event! Pedal to blend your own smoothies, cocktails or milkshakes with our Australian made blender bikes.\r\n","telephone":"+61-1300606774"},{"@type":"WebSite","@id":"https://www.bikenblend.com.au/#website","url":"https://www.bikenblend.com.au","name":"Bike n' Blend","publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","url":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","width":"1920","height":"1280","caption":"team building activities - team building ideas for work","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.bikenblend.com.au/tandem/#webpage","url":"https://www.bikenblend.com.au/tandem/","name":"Tandem Package | Bike n&#039; Blend","datePublished":"2024-10-01T15:28:53+10:00","dateModified":"2025-01-15T11:18:09+11:00","isPartOf":{"@id":"https://www.bikenblend.com.au/#website"},"primaryImageOfPage":{"@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.bikenblend.com.au/author/leena/","name":"Leena van Raay","url":"https://www.bikenblend.com.au/author/leena/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/3c2bd9b16194d7a88ee016a69db8378a323294f0d3d498487e52102f94e7cbad?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/3c2bd9b16194d7a88ee016a69db8378a323294f0d3d498487e52102f94e7cbad?s=96&amp;d=mm&amp;r=g","caption":"Leena van Raay","inLanguage":"en-US"},"sameAs":["https://www.bikenblend.com.au"],"worksFor":{"@id":"https://www.bikenblend.com.au/#organization"}},{"headline":"Tandem Package | Bike n&#039; Blend","description":"The Tandem package from Bike n&#039; Blend offers an exciting and hands-on way to mix fitness with pleasure at your next event. This package includes","datePublished":"2024-10-01T15:28:53+10:00","dateModified":"2025-01-15T11:18:09+11:00","keywords":"Tandem, corporate team building, smoothie, bikes","image":{"@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg"},"author":{"@id":"https://www.bikenblend.com.au/author/leena/","name":"Leena van Raay"},"@type":"Article","name":"Tandem Package | Bike n&#039; Blend","@id":"https://www.bikenblend.com.au/tandem/#schema-660137","isPartOf":{"@id":"https://www.bikenblend.com.au/tandem/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.bikenblend.com.au/tandem/#webpage"}},{"@type":"VideoObject","name":"Tandem Tasty with Staff!","description":"Tandem Tasty with Staff (using corporate table)\u201cA healthy fun experience for all ages\u201dLet us take care everything; ideal for indoor events (ie staff wellbein...","uploadDate":"2024-02-20T15:56:45-08:00","thumbnailUrl":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","embedUrl":"https://www.youtube.com/embed/G8IgDNSTOdo","duration":"PT0M28S","width":"1280","height":"720","isFamilyFriendly":"True","@id":"https://www.bikenblend.com.au/tandem/#schema-660153","isPartOf":{"@id":"https://www.bikenblend.com.au/tandem/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"},{"@type":"VideoObject","name":"Competition package with Bike n&#039; Blend!","description":"Release your competitive spirit with our indoor competition package. Complete with leaderboard and speedometers, this package suits those who want a bit more...","uploadDate":"2024-02-21T19:50:42-08:00","thumbnailUrl":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","embedUrl":"https://www.youtube.com/embed/qvZGr3z3yPI","duration":"PT0M30S","width":"1280","height":"720","isFamilyFriendly":"True","@id":"https://www.bikenblend.com.au/tandem/#schema-660154","isPartOf":{"@id":"https://www.bikenblend.com.au/tandem/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"}]}</script>
+<meta name="twitter:data1" content="22 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Organization"],"@id":"https://www.bikenblend.com.au/#organization","name":"Bike n' Blend","url":"https://www.bikenblend.com.au","openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday 09:00-17:00"],"description":"A healthy, sustainable and fun addition to your next event! Pedal to blend your own smoothies, cocktails or milkshakes with our Australian made blender bikes.\r\n","telephone":"+61-1300606774"},{"@type":"WebSite","@id":"https://www.bikenblend.com.au/#website","url":"https://www.bikenblend.com.au","name":"Bike n' Blend","publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","url":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","width":"1920","height":"1280","caption":"team building activities - team building ideas for work","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.bikenblend.com.au/packages/#webpage","url":"https://www.bikenblend.com.au/packages/","name":"Packages | Bike n&#039; Blend","datePublished":"2022-05-23T01:50:01+10:00","dateModified":"2025-01-15T11:19:14+11:00","isPartOf":{"@id":"https://www.bikenblend.com.au/#website"},"primaryImageOfPage":{"@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.bikenblend.com.au/author/leena/","name":"Leena van Raay","url":"https://www.bikenblend.com.au/author/leena/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/3c2bd9b16194d7a88ee016a69db8378a323294f0d3d498487e52102f94e7cbad?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/3c2bd9b16194d7a88ee016a69db8378a323294f0d3d498487e52102f94e7cbad?s=96&amp;d=mm&amp;r=g","caption":"Leena van Raay","inLanguage":"en-US"},"sameAs":["https://www.bikenblend.com.au"],"worksFor":{"@id":"https://www.bikenblend.com.au/#organization"}},{"headline":"Packages | Bike n&#039; Blend","description":"Expos and corporate events, fundraisers or school holiday programs, there is a package for it. Choose between our Tandem Tasty, Competition, Tour de France or","datePublished":"2022-05-23T01:50:01+10:00","dateModified":"2025-01-15T11:19:14+11:00","keywords":"package, corporate team building, smoothie, bikes","image":{"@id":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg"},"author":{"@id":"https://www.bikenblend.com.au/author/leena/","name":"Leena van Raay"},"@type":"Article","name":"Packages | Bike n&#039; Blend","@id":"https://www.bikenblend.com.au/packages/#schema-659034","isPartOf":{"@id":"https://www.bikenblend.com.au/packages/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.bikenblend.com.au/packages/#webpage"}},{"@type":"VideoObject","name":"Bike n&#039; Blend (the Tour de France package) at Bankstown Council","description":"Bankstown Council festival with Bike n&#039; Blend The Tour de France package! Is perfect for outdoor events. rain, hail or shine we\u2019ve got you covered with our a...","uploadDate":"2024-08-27T16:30:52-07:00","thumbnailUrl":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","embedUrl":"https://www.youtube.com/embed/qEnc3Tn3OR8","duration":"PT0M35S","width":"1280","height":"720","isFamilyFriendly":"True","@id":"https://www.bikenblend.com.au/packages/#schema-660682","isPartOf":{"@id":"https://www.bikenblend.com.au/packages/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"},{"@type":"VideoObject","name":"Tandem Tasty with Staff!","description":"Tandem Tasty with Staff (using corporate table)\u201cA healthy fun experience for all ages\u201dLet us take care everything; ideal for indoor events (ie staff wellbein...","uploadDate":"2024-02-20T15:56:45-08:00","thumbnailUrl":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","embedUrl":"https://www.youtube.com/embed/G8IgDNSTOdo","duration":"PT0M28S","width":"1280","height":"720","isFamilyFriendly":"True","@id":"https://www.bikenblend.com.au/packages/#schema-660681","isPartOf":{"@id":"https://www.bikenblend.com.au/packages/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"},{"@type":"VideoObject","name":"Competition package with Bike n&#039; Blend!","description":"Release your competitive spirit with our indoor competition package. Complete with leaderboard and speedometers, this package suits those who want a bit more...","uploadDate":"2024-02-21T19:50:42-08:00","thumbnailUrl":"https://www.bikenblend.com.au/wp-content/uploads/2024/02/Packages-596-Edit.jpg","embedUrl":"https://www.youtube.com/embed/qvZGr3z3yPI","duration":"PT0M30S","width":"1280","height":"720","isFamilyFriendly":"True","@id":"https://www.bikenblend.com.au/packages/#schema-660683","isPartOf":{"@id":"https://www.bikenblend.com.au/packages/#webpage"},"publisher":{"@id":"https://www.bikenblend.com.au/#organization"},"inLanguage":"en-US"}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 
 <link rel='dns-prefetch' href='//moderate.cleantalk.org' />
@@ -53,7 +55,7 @@
 <link rel='dns-prefetch' href='//www.googletagmanager.com' />
 <link rel="alternate" type="application/rss+xml" title="Bike n&#039; Blend &raquo; Feed" href="https://www.bikenblend.com.au/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Bike n&#039; Blend &raquo; Comments Feed" href="https://www.bikenblend.com.au/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Bike n&#039; Blend &raquo; Tandem Package Comments Feed" href="https://www.bikenblend.com.au/tandem/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bike n&#039; Blend &raquo; Packages Comments Feed" href="https://www.bikenblend.com.au/packages/feed/" />
 <script data-optimized="1" type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.bikenblend.com.au\/wp-includes\/js\/wp-emoji-release.min.js?ver=f98a4c6178821d8cbdc05bcc6d546070"}};
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings)</script>
@@ -75,7 +77,6 @@
 <link data-optimized="1" rel='stylesheet' id='font-awesome-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/a271d527436f890f26a7da97abb76647.css?ver=d28a2' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='salient-grid-system-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/5593c3eece074530a3dcfd8252d11fb2.css?ver=2889a' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='main-styles-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/7bfc5d132d5b75311179dc9fb472cd20.css?ver=b0790' type='text/css' media='all' />
-<link data-optimized="1" rel='stylesheet' id='nectar-element-testimonial-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/797142374374df37a82b1a2ac811bcd8.css?ver=49479' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='nectar-element-fancy-box-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/054debf3dbd4de7c23ded4276e31de40.css?ver=8a83d' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='nectar-element-toggle-panels-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/db7a56e2cf3fc77dea6c4da5cbbbba03.css?ver=f703c' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='nectar-element-asset-reveal-animation-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/939b1fd036ec67179ca93470f24bc2e1.css?ver=0f7eb' type='text/css' media='all' />
@@ -86,10 +87,11 @@
 <link data-optimized="1" rel='stylesheet' id='salient-wp-menu-dynamic-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/79cb4e458ba5e9c424f7773fe2e735f8.css?ver=50bf7' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='nectar-widget-posts-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/7703a263f0b1011ff4d028fe4bbe3b3b.css?ver=bd518' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='js_composer_front-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/fe15feaf9a9f50e83cbec4494b9bfee6.css?ver=f52af' type='text/css' media='all' />
+<link data-optimized="1" rel='stylesheet' id='popup-maker-site-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/fa34d3e047661a922179c350b5655b1d.css?ver=49572' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='cf7cf-style-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/ca06d0598bbd6a1ddcf3499e5fb58c5d.css?ver=2100e' type='text/css' media='all' />
 <link data-optimized="1" rel='stylesheet' id='dynamic-css-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/941028f60a94ac268d6ff7b7cea30b22.css?ver=f6c75' type='text/css' media='all' />
 <style id='dynamic-css-inline-css' type='text/css'>
-@media only screen and (min-width:1000px){body #ajax-content-wrap.no-scroll{min-height:calc(100vh - 100px);height:calc(100vh - 100px)!important;}}@media only screen and (min-width:1000px){#page-header-wrap.fullscreen-header,#page-header-wrap.fullscreen-header #page-header-bg,html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,#nectar_fullscreen_rows:not(.afterLoaded) > div{height:calc(100vh - 99px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 99px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header{top:100px;}.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 98px)!important;}.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 98px - 32px)!important;}}.admin-bar[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level,.admin-bar[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 32px);}body[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level,body[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:100vh;}@media only screen and (max-width:999px){.using-mobile-browser #nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 126px);}.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 126px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container,#nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 73px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 73px);}body[data-transparent-header="false"] #ajax-content-wrap.no-scroll{min-height:calc(100vh - 73px);height:calc(100vh - 73px);}}#nectar_fullscreen_rows{background-color:transparent;}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .vc_column-inner{padding-left:0;}}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .n-sticky > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .n-sticky > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .n-sticky > .vc_column-inner{padding-left:0;}}.wpb_column[data-cfc="true"] h1,.wpb_column[data-cfc="true"] h2,.wpb_column[data-cfc="true"] h3,.wpb_column[data-cfc="true"] h4,.wpb_column[data-cfc="true"] h5,.wpb_column[data-cfc="true"] h6,.wpb_column[data-cfc="true"] p{color:inherit}.img-with-aniamtion-wrap[data-border-radius="10px"] .img-with-animation,.img-with-aniamtion-wrap[data-border-radius="10px"] .inner,.img-with-aniamtion-wrap[data-border-radius="10px"] .hover-wrap{border-radius:10px;}@media only screen and (max-width:999px){.wpb_column.child_column.bottom_margin_tablet_0px{margin-bottom:0!important;}}@media only screen and (max-width:690px){.wpb_column.child_column.bottom_margin_phone_0px{margin-bottom:0!important;}}.wpb_column[data-cfc="true"] h1,.wpb_column[data-cfc="true"] h2,.wpb_column[data-cfc="true"] h3,.wpb_column[data-cfc="true"] h4,.wpb_column[data-cfc="true"] h5,.wpb_column[data-cfc="true"] h6,.wpb_column[data-cfc="true"] p{color:inherit}.img-with-aniamtion-wrap.custom-width-200px .inner{max-width:200px;}.img-with-aniamtion-wrap[data-max-width="custom"].center .inner{display:inline-block;}.screen-reader-text,.nectar-skip-to-content:not(:focus){border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;}.row .col img:not([srcset]){width:auto;}.row .col img.img-with-animation.nectar-lazy:not([srcset]){width:100%;}
+@media only screen and (min-width:1000px){body #ajax-content-wrap.no-scroll{min-height:calc(100vh - 100px);height:calc(100vh - 100px)!important;}}@media only screen and (min-width:1000px){#page-header-wrap.fullscreen-header,#page-header-wrap.fullscreen-header #page-header-bg,html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,#nectar_fullscreen_rows:not(.afterLoaded) > div{height:calc(100vh - 99px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 99px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header{top:100px;}.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 98px)!important;}.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 98px - 32px)!important;}}.admin-bar[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level,.admin-bar[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 32px);}body[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level,body[class*="page-template-template-no-header"] .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:100vh;}@media only screen and (max-width:999px){.using-mobile-browser #nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 126px);}.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 126px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container,#nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 73px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 73px);}body[data-transparent-header="false"] #ajax-content-wrap.no-scroll{min-height:calc(100vh - 73px);height:calc(100vh - 73px);}}#nectar_fullscreen_rows{background-color:transparent;}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .vc_column-inner{padding-left:0;}}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .n-sticky > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .n-sticky > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .n-sticky > .vc_column-inner{padding-left:0;}}.wpb_column[data-cfc="true"] h1,.wpb_column[data-cfc="true"] h2,.wpb_column[data-cfc="true"] h3,.wpb_column[data-cfc="true"] h4,.wpb_column[data-cfc="true"] h5,.wpb_column[data-cfc="true"] h6,.wpb_column[data-cfc="true"] p{color:inherit}.img-with-aniamtion-wrap[data-border-radius="10px"] .img-with-animation,.img-with-aniamtion-wrap[data-border-radius="10px"] .inner,.img-with-aniamtion-wrap[data-border-radius="10px"] .hover-wrap{border-radius:10px;}#ajax-content-wrap .vc_row.left_padding_5pct .row_col_wrap_12,.nectar-global-section .vc_row.left_padding_5pct .row_col_wrap_12{padding-left:5%;}#ajax-content-wrap .vc_row.right_padding_5pct .row_col_wrap_12,.nectar-global-section .vc_row.right_padding_5pct .row_col_wrap_12{padding-right:5%;}.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc(600px * 0.01);}@media only screen and (max-width:690px){.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc(100vw * 0.01);}}@media only screen and (min-width:1000px){.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc((100vw - 180px) * 0.01);}.column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc((100vw - 180px) * 0.005);}}@media only screen and (min-width:1425px){.col.padding-1-percent > .vc_column-inner{padding:calc(1245px * 0.01);}.column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc(1245px * 0.005);}}.full-width-content .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.01);}@media only screen and (max-width:999px){.full-width-content .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.01);}}@media only screen and (min-width:1000px){.full-width-content .column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.005);}}.nectar-fancy-box[data-style="color_box_hover"] .box-inner-wrap{transform:translateZ(0);}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap > i{margin-bottom:25px;}.nectar-fancy-box[data-style="color_box_hover"][data-border="true"] .box-inner-wrap{border:1px solid rgba(0,0,0,0.1);transition:all 0.45s cubic-bezier(0.25,1,0.2,1);}.span_12.light .nectar-fancy-box[data-style="color_box_hover"][data-border="true"] .box-inner-wrap{border-color:rgba(255,255,255,0.14);}.nectar-fancy-box[data-style="color_box_hover"][data-border="true"]:hover .box-inner-wrap{border:1px solid rgba(0,0,0,0);}.nectar-fancy-box[data-style="color_box_hover"] .inner{display:-webkit-flex;display:flex;align-items:center;justify-content:center;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"] .inner-wrap{position:relative;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"] .inner i.hover-only{position:absolute;opacity:0;top:-2px;left:0;z-index:1;transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"][data-alignment="right"] .inner i.hover-only{right:0;left:auto;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"][data-alignment="center"] .inner i.hover-only{left:50%;transform:translateX(-50%);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"]:hover .inner i.hover-only{opacity:1;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"].inner i:not(.hover-only){transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"]:hover .inner i:not(.hover-only){opacity:0;}.nectar-fancy-box[data-style="color_box_hover"] .inner i{text-align:center;}.nectar-fancy-box[data-style="color_box_hover"] .inner p{opacity:0.75;}.vc_col-sm-3 .nectar-fancy-box[data-style="color_box_hover"] .inner p,.vc_col-sm-4 .nectar-fancy-box[data-style="color_box_hover"] .inner p,.nectar-flickity[data-desktop-columns="4"] .nectar-fancy-box[data-style="color_box_hover"] .inner p,.nectar-flickity[data-desktop-columns="3"] .nectar-fancy-box[data-style="color_box_hover"] .inner p{line-height:1.7em;}.nectar-fancy-box[data-style="color_box_hover"] .inner{padding-bottom:0;text-align:center;vertical-align:middle;}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{text-align:center;vertical-align:middle;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner p{opacity:0.65;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"]:hover .inner p{opacity:0.8;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"]:hover:before{display:none}.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner-wrap,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner i{text-align:left;}.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner-wrap,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner i{text-align:right;}.nectar-fancy-box[data-style="color_box_hover"]:before{display:block;position:absolute;left:1%;top:1%;height:98%;width:98%;opacity:0;content:"";}.nectar-fancy-box[data-style="color_box_hover"]:hover:before{opacity:0.33;}.nectar-fancy-box[data-style="color_box_hover"]:hover .box-bg{transform:scale(1.08);-webkit-transform:scale(1.08);}.nectar-fancy-box[data-style="color_box_hover"]{overflow:visible;padding:0;}.nectar-fancy-box[data-style="color_box_hover"] .box-inner-wrap{padding:10% 15%;position:relative;overflow:hidden;}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap *,.nectar-fancy-box[data-style="color_box_hover"] .box-bg,.nectar-fancy-box[data-style="color_box_hover"] .box-bg:after{transition:all 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"]:before{transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .link_wrap .link_text:after{border-color:rgba(255,255,255,0.4);}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta[data-style="see-through"] .link_wrap .arrow:after{border-color:#fff;}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .arrow,.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .link_wrap .arrow:before{color:#fff;}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap *,.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{color:#444;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner-wrap *,.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{color:#fff;}.nectar-fancy-box[data-style="color_box_hover"] .box-bg,.nectar-fancy-box[data-style="color_box_hover"]:after{opacity:0}.nectar-fancy-box[data-style="color_box_hover"]:hover .box-bg{opacity:1;}.nectar-fancy-box[data-style="color_box_hover"].using-img .box-bg:after{opacity:0.85;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.9"] .box-bg:after{opacity:0.9;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.8"] .box-bg:after{opacity:0.8;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.7"] .box-bg:after{opacity:0.7;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.6"] .box-bg:after{opacity:0.6;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.5"] .box-bg:after{opacity:0.5;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.4"] .box-bg:after{opacity:0.4;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.3"] .box-bg:after{opacity:0.3;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.2"] .box-bg:after{opacity:0.2;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.1"] .box-bg:after{opacity:0.1;}@media only screen and (max-width:999px){.nectar-fancy-box:not([data-style="parallax_hover"]):not([data-style="hover_desc"]).min_height_tablet_150px .inner,.nectar-fancy-box[data-style="parallax_hover"].min_height_tablet_150px .meta-wrap,.nectar-fancy-box[data-style="hover_desc"].min_height_tablet_150px{min-height:150px!important;}}@media only screen and (max-width:999px){.wpb_column.child_column.bottom_margin_tablet_0px{margin-bottom:0!important;}}@media only screen and (max-width:690px){.nectar-fancy-box:not([data-style="parallax_hover"]):not([data-style="hover_desc"]).min_height_phone_100px .inner,.nectar-fancy-box[data-style="parallax_hover"].min_height_phone_100px .meta-wrap,.nectar-fancy-box[data-style="hover_desc"].min_height_phone_100px{min-height:100px!important;}}@media only screen and (max-width:690px){.wpb_column.child_column.bottom_margin_phone_0px{margin-bottom:0!important;}}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .vc_column-inner{padding-left:0;}}@media only screen,print{.wpb_column.left_padding_desktop_10pct > .n-sticky > .vc_column-inner{padding-left:10%;}}@media only screen and (max-width:999px){body .wpb_column.left_padding_tablet_0px > .n-sticky > .vc_column-inner{padding-left:0;}}@media only screen and (max-width:690px){html body .wpb_column.left_padding_phone_0px > .n-sticky > .vc_column-inner{padding-left:0;}}.wpb_column[data-cfc="true"] h1,.wpb_column[data-cfc="true"] h2,.wpb_column[data-cfc="true"] h3,.wpb_column[data-cfc="true"] h4,.wpb_column[data-cfc="true"] h5,.wpb_column[data-cfc="true"] h6,.wpb_column[data-cfc="true"] p{color:inherit}.img-with-aniamtion-wrap[data-border-radius="10px"] .img-with-animation,.img-with-aniamtion-wrap[data-border-radius="10px"] .inner,.img-with-aniamtion-wrap[data-border-radius="10px"] .hover-wrap{border-radius:10px;}#ajax-content-wrap .vc_row.left_padding_5pct .row_col_wrap_12,.nectar-global-section .vc_row.left_padding_5pct .row_col_wrap_12{padding-left:5%;}#ajax-content-wrap .vc_row.right_padding_5pct .row_col_wrap_12,.nectar-global-section .vc_row.right_padding_5pct .row_col_wrap_12{padding-right:5%;}.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc(600px * 0.01);}@media only screen and (max-width:690px){.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc(100vw * 0.01);}}@media only screen and (min-width:1000px){.col.padding-1-percent > .vc_column-inner,.col.padding-1-percent > .n-sticky > .vc_column-inner{padding:calc((100vw - 180px) * 0.01);}.column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc((100vw - 180px) * 0.005);}}@media only screen and (min-width:1425px){.col.padding-1-percent > .vc_column-inner{padding:calc(1245px * 0.01);}.column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc(1245px * 0.005);}}.full-width-content .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.01);}@media only screen and (max-width:999px){.full-width-content .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.01);}}@media only screen and (min-width:1000px){.full-width-content .column_container:not(.vc_col-sm-12) .col.padding-1-percent > .vc_column-inner{padding:calc(100vw * 0.005);}}.nectar-fancy-box[data-style="color_box_hover"] .box-inner-wrap{transform:translateZ(0);}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap > i{margin-bottom:25px;}.nectar-fancy-box[data-style="color_box_hover"][data-border="true"] .box-inner-wrap{border:1px solid rgba(0,0,0,0.1);transition:all 0.45s cubic-bezier(0.25,1,0.2,1);}.span_12.light .nectar-fancy-box[data-style="color_box_hover"][data-border="true"] .box-inner-wrap{border-color:rgba(255,255,255,0.14);}.nectar-fancy-box[data-style="color_box_hover"][data-border="true"]:hover .box-inner-wrap{border:1px solid rgba(0,0,0,0);}.nectar-fancy-box[data-style="color_box_hover"] .inner{display:-webkit-flex;display:flex;align-items:center;justify-content:center;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"] .inner-wrap{position:relative;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"] .inner i.hover-only{position:absolute;opacity:0;top:-2px;left:0;z-index:1;transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"][data-alignment="right"] .inner i.hover-only{right:0;left:auto;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"][data-alignment="center"] .inner i.hover-only{left:50%;transform:translateX(-50%);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"]:hover .inner i.hover-only{opacity:1;}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"].inner i:not(.hover-only){transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"][data-color*="gradient"]:hover .inner i:not(.hover-only){opacity:0;}.nectar-fancy-box[data-style="color_box_hover"] .inner i{text-align:center;}.nectar-fancy-box[data-style="color_box_hover"] .inner p{opacity:0.75;}.vc_col-sm-3 .nectar-fancy-box[data-style="color_box_hover"] .inner p,.vc_col-sm-4 .nectar-fancy-box[data-style="color_box_hover"] .inner p,.nectar-flickity[data-desktop-columns="4"] .nectar-fancy-box[data-style="color_box_hover"] .inner p,.nectar-flickity[data-desktop-columns="3"] .nectar-fancy-box[data-style="color_box_hover"] .inner p{line-height:1.7em;}.nectar-fancy-box[data-style="color_box_hover"] .inner{padding-bottom:0;text-align:center;vertical-align:middle;}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{text-align:center;vertical-align:middle;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner p{opacity:0.65;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"]:hover .inner p{opacity:0.8;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"]:hover:before{display:none}.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner-wrap,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="left"] .inner i{text-align:left;}.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner-wrap,.nectar-fancy-box[data-style="color_box_hover"][data-alignment="right"] .inner i{text-align:right;}.nectar-fancy-box[data-style="color_box_hover"]:before{display:block;position:absolute;left:1%;top:1%;height:98%;width:98%;opacity:0;content:"";}.nectar-fancy-box[data-style="color_box_hover"]:hover:before{opacity:0.33;}.nectar-fancy-box[data-style="color_box_hover"]:hover .box-bg{transform:scale(1.08);-webkit-transform:scale(1.08);}.nectar-fancy-box[data-style="color_box_hover"]{overflow:visible;padding:0;}.nectar-fancy-box[data-style="color_box_hover"] .box-inner-wrap{padding:10% 15%;position:relative;overflow:hidden;}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap *,.nectar-fancy-box[data-style="color_box_hover"] .box-bg,.nectar-fancy-box[data-style="color_box_hover"] .box-bg:after{transition:all 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"]:before{transition:opacity 0.45s cubic-bezier(0.25,1,0.2,1);}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .link_wrap .link_text:after{border-color:rgba(255,255,255,0.4);}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta[data-style="see-through"] .link_wrap .arrow:after{border-color:#fff;}.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .arrow,.nectar-fancy-box[data-style="color_box_hover"]:hover .inner-wrap .nectar-cta .link_wrap .arrow:before{color:#fff;}.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap *,.nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{color:#444;}.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner-wrap *,.span_12.light .nectar-fancy-box[data-style="color_box_hover"] .inner-wrap{color:#fff;}.nectar-fancy-box[data-style="color_box_hover"] .box-bg,.nectar-fancy-box[data-style="color_box_hover"]:after{opacity:0}.nectar-fancy-box[data-style="color_box_hover"]:hover .box-bg{opacity:1;}.nectar-fancy-box[data-style="color_box_hover"].using-img .box-bg:after{opacity:0.85;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.9"] .box-bg:after{opacity:0.9;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.8"] .box-bg:after{opacity:0.8;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.7"] .box-bg:after{opacity:0.7;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.6"] .box-bg:after{opacity:0.6;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.5"] .box-bg:after{opacity:0.5;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.4"] .box-bg:after{opacity:0.4;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.3"] .box-bg:after{opacity:0.3;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.2"] .box-bg:after{opacity:0.2;}.nectar-fancy-box[data-style="color_box_hover"][data-hover-o="0.1"] .box-bg:after{opacity:0.1;}@media only screen and (max-width:999px){.nectar-fancy-box:not([data-style="parallax_hover"]):not([data-style="hover_desc"]).min_height_tablet_150px .inner,.nectar-fancy-box[data-style="parallax_hover"].min_height_tablet_150px .meta-wrap,.nectar-fancy-box[data-style="hover_desc"].min_height_tablet_150px{min-height:150px!important;}}@media only screen and (max-width:999px){.wpb_column.child_column.bottom_margin_tablet_0px{margin-bottom:0!important;}}@media only screen and (max-width:690px){.nectar-fancy-box:not([data-style="parallax_hover"]):not([data-style="hover_desc"]).min_height_phone_100px .inner,.nectar-fancy-box[data-style="parallax_hover"].min_height_phone_100px .meta-wrap,.nectar-fancy-box[data-style="hover_desc"].min_height_phone_100px{min-height:100px!important;}}@media only screen and (max-width:690px){.wpb_column.child_column.bottom_margin_phone_0px{margin-bottom:0!important;}}.wpb_column[data-cfc="true"] h1,.wpb_column[data-cfc="true"] h2,.wpb_column[data-cfc="true"] h3,.wpb_column[data-cfc="true"] h4,.wpb_column[data-cfc="true"] h5,.wpb_column[data-cfc="true"] h6,.wpb_column[data-cfc="true"] p{color:inherit}.img-with-aniamtion-wrap.custom-width-200px .inner{max-width:200px;}.img-with-aniamtion-wrap[data-max-width="custom"].center .inner{display:inline-block;}.screen-reader-text,.nectar-skip-to-content:not(:focus){border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;}.row .col img:not([srcset]){width:auto;}.row .col img.img-with-animation.nectar-lazy:not([srcset]){width:100%;}
 body[data-header-resize="0"] .container-wrap, body[data-header-resize="0"] .project-title {
     margin-top: -40px;
 }
@@ -403,8 +405,8 @@ select{
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/83604dfeba972ac85ab16e97eb48f52e.js?ver=033e0" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="https://www.bikenblend.com.au/wp-content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.56_1748218330" id="apbct-public-bundle-js-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/8a3532c903afb83b69055b810d6f7a9b.js?ver=f7a9b" id="ct_bot_detector-js" defer="defer" data-wp-strategy="defer"></script>
-<script></script><link rel="https://api.w.org/" href="https://www.bikenblend.com.au/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.bikenblend.com.au/wp-json/wp/v2/pages/33885" /><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.bikenblend.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bikenblend.com.au%2Ftandem%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.bikenblend.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bikenblend.com.au%2Ftandem%2F&#038;format=xml" />
+<script></script><link rel="https://api.w.org/" href="https://www.bikenblend.com.au/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.bikenblend.com.au/wp-json/wp/v2/pages/12308" /><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.bikenblend.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bikenblend.com.au%2Fpackages%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.bikenblend.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bikenblend.com.au%2Fpackages%2F&#038;format=xml" />
 <meta name="generator" content="Site Kit by Google 1.153.0" /><!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- MDM:11-4-2022 This is for GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SVJT4XRGY"></script>
@@ -482,7 +484,7 @@ if(document.querySelector('[name="utm_content"]')){document.querySelector('[name
 <link rel="icon" href="https://www.bikenblend.com.au/wp-content/uploads/2022/11/cropped-bikenblend-swirl-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://www.bikenblend.com.au/wp-content/uploads/2022/11/cropped-bikenblend-swirl-180x180.png" />
 <meta name="msapplication-TileImage" content="https://www.bikenblend.com.au/wp-content/uploads/2022/11/cropped-bikenblend-swirl-270x270.png" />
-<style type="text/css" data-type="vc_shortcodes-default-css">.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1709876379448{margin-bottom:20px!important}.vc_custom_1727070564603{margin-bottom:30px!important}.vc_custom_1727070605846{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1727071776896{margin-bottom:40px!important}.vc_custom_1727070585206{margin-bottom:30px!important}.vc_custom_1727070657822{margin-bottom:40px!important}.vc_custom_1727070985094{margin-bottom:20px!important}.vc_custom_1727071738093{margin-bottom:40px!important}.vc_custom_1727072417727{margin-bottom:30px!important}.vc_custom_1727074319293{margin-top:40px!important;margin-bottom:40px!important}.vc_custom_1727073384044{margin-bottom:30px!important}.vc_custom_1727073927774{margin-bottom:40px!important}.vc_custom_1727138812669{margin-bottom:30px!important}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head><body data-rsssl=1 class="wp-singular page-template-default page page-id-33885 wp-theme-salient wp-child-theme-salient-child material wpb-js-composer js-comp-ver-7.6 vc_responsive" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutCubic" data-cad="750" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="1" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="regular" data-is="minimal" data-button-style="rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="true" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-ext-padding="90" data-header-resize="0" data-header-color="custom" data-transparent-header="false" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false" >
+<style type="text/css" data-type="vc_shortcodes-default-css">.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}.vc_do_custom_heading{margin-bottom:.625rem;margin-top:0}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1709876379448{margin-bottom:20px!important}.vc_custom_1709523923507{margin-bottom:30px!important}.vc_custom_1707285297419{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1711419671299{margin-bottom:40px!important}.vc_custom_1707285527175{margin-bottom:30px!important}.vc_custom_1709522020030{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1711419692984{margin-bottom:40px!important}.vc_custom_1714087370334{margin-top:40px!important;margin-bottom:40px!important}.vc_custom_1708472784567{margin-bottom:30px!important}.vc_custom_1709524128336{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1716517500657{margin-bottom:40px!important}.vc_custom_1727761879722{margin-top:40px!important;margin-bottom:40px!important}.vc_custom_1707285972329{margin-bottom:30px!important}.vc_custom_1709524136178{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1711419582145{margin-bottom:40px!important}.vc_custom_1714087431699{margin-top:40px!important;margin-bottom:40px!important}.vc_custom_1708472742814{margin-bottom:30px!important}.vc_custom_1709523840033{margin-bottom:40px!important}.vc_custom_1707285394675{margin-bottom:20px!important}.vc_custom_1711419593394{margin-bottom:40px!important}.vc_custom_1707284764152{margin-bottom:30px!important}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head><body data-rsssl=1 class="wp-singular page-template-default page page-id-12308 wp-theme-salient wp-child-theme-salient-child material wpb-js-composer js-comp-ver-7.6 vc_responsive" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutCubic" data-cad="750" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="1" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="regular" data-is="minimal" data-button-style="rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="true" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-ext-padding="90" data-header-resize="0" data-header-color="custom" data-transparent-header="false" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false" >
 	
 	<script data-optimized="1" type="text/javascript">(function(window,document){if(navigator.userAgent.match(/(Android|iPod|iPhone|iPad|BlackBerry|IEMobile|Opera Mini)/)){document.body.className+=" using-mobile-browser mobile "}
 if(navigator.userAgent.match(/Mac/)&&navigator.maxTouchPoints&&navigator.maxTouchPoints>2){document.body.className+=" using-ios-device "}
@@ -542,9 +544,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													<ul class="sf-menu">
 								<li id="menu-item-3851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nectar-regular-menu-item menu-item-3851"><a href="https://www.bikenblend.com.au/"><span class="menu-title-text">Home</span></a></li>
 <li id="menu-item-2790" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-2790"><a href="https://www.bikenblend.com.au/about-us/"><span class="menu-title-text">About</span></a></li>
-<li id="menu-item-12330" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-12330"><a href="https://www.bikenblend.com.au/packages/"><span class="menu-title-text">Packages</span><span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu" aria-hidden="true"></i></span></a>
+<li id="menu-item-12330" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12308 current_page_item menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-12330"><a href="https://www.bikenblend.com.au/packages/" aria-current="page"><span class="menu-title-text">Packages</span><span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu" aria-hidden="true"></i></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-33948" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-33885 current_page_item nectar-regular-menu-item menu-item-33948"><a href="https://www.bikenblend.com.au/tandem/" aria-current="page"><span class="menu-title-text">Tandem</span></a></li>
+	<li id="menu-item-33948" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-33948"><a href="https://www.bikenblend.com.au/tandem/"><span class="menu-title-text">Tandem</span></a></li>
 	<li id="menu-item-33949" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-33949"><a href="https://www.bikenblend.com.au/tandem-tasty/"><span class="menu-title-text">Tandem Tasty</span></a></li>
 	<li id="menu-item-33950" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-33950"><a href="https://www.bikenblend.com.au/tandem-tasty-with-staff/"><span class="menu-title-text">Tandem Tasty with Staff</span></a></li>
 	<li id="menu-item-33951" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-33951"><a href="https://www.bikenblend.com.au/tour-de-france/"><span class="menu-title-text">Tour De France</span></a></li>
@@ -583,19 +585,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container main-content" role="main">
 		<div class="row">
 			
-		<div id="fws_683f5b5b190a2"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row top-level"  style="padding-top: 60px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop"  style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_683f5f13dc9a4"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row top-level"  style="padding-top: 60px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop"  style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<div id="fws_683f5b5b1a9cc" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_683f5f13de2de" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
-			<h2 style="font-size: 58px;text-align: center" class="vc_custom_heading vc_do_custom_heading scriptHeader" >Tandem Package</h2>
+			<h2 style="font-size: 58px;text-align: center" class="vc_custom_heading vc_do_custom_heading scriptHeader" >Choose your package</h2>
 		</div> 
 	</div>
 	</div> 
-</div></div><div id="fws_683f5b5b1b145" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+</div></div><div id="fws_683f5f13de9bc" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-4 vc_col-lg-offset-4 vc_col-md-offset-4 wpb_column column_container vc_column_container col child_column no-extra-padding bottom_margin_tablet_0px bottom_margin_phone_0px inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -612,14 +614,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div> 
 	</div>
 	</div> 
-</div></div><div id="fws_683f5b5b1b5bc" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+</div></div><div id="fws_683f5f13dee79" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column centered-text has-animation no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="600" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
 			
 <div class="wpb_text_column wpb_content_element  introText" >
 	<div class="wpb_wrapper">
-		<p><span style="font-weight: 400;">The Tandem package from Bike n&#8217; Blend offers an exciting and hands-on way to mix fitness with pleasure at your next event. </span></p>
+		<p>We have pedal powered smoothie packages to cater for small or large events from Expos, Conferences, office celebrations and Community Festivals to school fetes and holiday programs.</p>
 	</div>
 </div>
 
@@ -634,11 +636,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div> 
 </div></div>
+		<div id="fws_683f5f13df2fc"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row has-global-section"  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop"  style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+			<div class="wpb_wrapper">
+				
+		<div id="fws_683f5f13dfd3c"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-middle  right_padding_5pct left_padding_5pct"  style="padding-top: 50px; padding-bottom: 50px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #f7f8f7; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+			<div class="wpb_wrapper">
+				<div id="fws_683f5f13e0192" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-1/5 vc_col-lg-1/5 vc_col-md-6 vc_col-xs-12 wpb_column column_container vc_column_container col child_column padding-1-percent inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="nectar-fancy-box using-img  min_height_tablet_150px min_height_phone_100px " data-style="color_box_hover" data-animation="" data-hover-o="0.1" data-border-radius="10px" data-border="" data-box-color-opacity="1" data-delay="" data-alignment="center" data-color="accent-color" ><div class="box-inner-wrap"><div class="box-bg"  style="background-image: url('https://www.bikenblend.com.au/wp-content/uploads/2024/03/smoothie-bike-team-lighter.jpg'); "></div> <div class="inner" style="min-height: 220px"><div class="inner-wrap">
+<h4 style="margin-bottom: 30px">Tandem</h4>
+<p><img loading="lazy" decoding="async" class="pkgIcon" src="https://www.bikenblend.com.au/wp-content/uploads/2016/02/blender-bike-x2-icon.png" alt="Blender bike icon" width="52" height="40" /></div></div>  <a  href="#tandem" class="box-link"></a></div> </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div  class="vc_col-sm-1/5 vc_col-lg-1/5 vc_col-md-6 vc_col-xs-12 wpb_column column_container vc_column_container col child_column padding-1-percent inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="nectar-fancy-box using-img  min_height_tablet_150px min_height_phone_100px " data-style="color_box_hover" data-animation="" data-hover-o="0.1" data-border-radius="10px" data-border="" data-box-color-opacity="1" data-delay="" data-alignment="center" data-color="extra-color-1" ><div class="box-inner-wrap"><div class="box-bg"  style="background-image: url('https://www.bikenblend.com.au/wp-content/uploads/2024/03/smoothie-bike-team-lighter.jpg'); "></div> <div class="inner" style="min-height: 220px"><div class="inner-wrap">
+<h4 style="margin-bottom: 30px">Tandem Tasty</h4>
+<p><img loading="lazy" decoding="async" class="pkgIcon" src="https://www.bikenblend.com.au/wp-content/uploads/2024/02/tandem-tasty-icon.png" alt="tandem tasty icon | Bike n&#039; Blend" width="110" height="40"></div></div>  <a  href="#tandem-tasty" class="box-link"></a></div> </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div  class="vc_col-sm-1/5 vc_col-lg-1/5 vc_col-md-6 vc_col-xs-12 wpb_column column_container vc_column_container col child_column padding-1-percent inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="nectar-fancy-box using-img  min_height_tablet_150px min_height_phone_100px " data-style="color_box_hover" data-animation="" data-hover-o="0.1" data-border-radius="10px" data-border="" data-box-color-opacity="1" data-delay="" data-alignment="center" data-color="extra-color-2" ><div class="box-inner-wrap"><div class="box-bg"  style="background-image: url('https://www.bikenblend.com.au/wp-content/uploads/2024/03/smoothie-bike-team-lighter.jpg'); "></div> <div class="inner" style="min-height: 220px"><div class="inner-wrap">
+<h4 style="margin-bottom: 30px">Tandem Tasty with Staff</h4>
+<p><img loading="lazy" decoding="async" class="pkgIcon" src="https://www.bikenblend.com.au/wp-content/uploads/2024/02/tandem-tasty-staff-icon.png" alt="tandem tasty staff icon | Bike n&#039; Blend" width="142" height="40"></div></div>  <a  href="#tandem-tasty-with-staff" class="box-link"></a></div> </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div  class="vc_col-sm-1/5 vc_col-lg-1/5 vc_col-md-6 vc_col-xs-12 wpb_column column_container vc_column_container col child_column padding-1-percent inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="nectar-fancy-box using-img  min_height_tablet_150px min_height_phone_100px " data-style="color_box_hover" data-animation="" data-hover-o="0.1" data-border-radius="10px" data-border="" data-box-color-opacity="1" data-delay="" data-alignment="center" data-color="extra-color-3" ><div class="box-inner-wrap"><div class="box-bg"  style="background-image: url('https://www.bikenblend.com.au/wp-content/uploads/2024/03/smoothie-bike-team-lighter.jpg'); "></div> <div class="inner" style="min-height: 220px"><div class="inner-wrap">
+<h4 style="margin-bottom: 30px">Tour de France</h4>
+<p><img decoding="async" loading="lazy" class="pkgIcon" src="https://www.bikenblend.com.au/wp-content/uploads/2024/04/tour-de-france-icon-2024.png" alt="tour de france icon" width="212" height="40" /></div></div>  <a  href="#tour-de-france" class="box-link"></a></div> </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div  class="vc_col-sm-1/5 vc_col-lg-1/5 vc_col-md-6 vc_col-xs-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="nectar-fancy-box using-img  min_height_tablet_150px min_height_phone_100px " data-style="color_box_hover" data-animation="" data-hover-o="0.1" data-border-radius="10px" data-border="" data-box-color-opacity="1" data-delay="" data-alignment="center" data-color="accent-color" ><div class="box-inner-wrap"><div class="box-bg"  style="background-image: url('https://www.bikenblend.com.au/wp-content/uploads/2024/03/smoothie-bike-team-lighter.jpg'); "></div> <div class="inner" style="min-height: 220px"><div class="inner-wrap">
+<h4 style="margin-bottom: 30px">Competition</h4>
+<p><img loading="lazy" decoding="async" class="pkgIcon" src="https://www.bikenblend.com.au/wp-content/uploads/2024/02/tandem-tasty-staff-icon.png" alt="tandem tasty staff icon | Bike n&#039; Blend" width="142" height="40"></div></div>  <a  href="#competition" class="box-link"></a></div> </div>
+		</div> 
+	</div>
+	</div> 
+</div></div>
+			</div> 
+		</div>
+	</div> 
+</div></div>
+
+			</div> 
+		</div>
+	</div> 
+</div></div>
 		<div id="tandem"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 100px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<div id="fws_683f5b5b1bdb9" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_683f5f13e1f6d" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-3/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -646,7 +717,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="inner">
         <div class="hover-wrap"> 
           <div class="hover-wrap-inner">
-            <img fetchpriority="high" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package.jpg" alt="Bike n blend tandem package" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-900x600.jpg 900w" sizes="(max-width: 1200px) 100vw, 1200px" />
+            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package.jpg" alt="Bike n blend tandem package" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-tandem-package-900x600.jpg 900w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />
           </div>
         </div>
       </div>
@@ -658,32 +729,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div style=" color: #ffffff;" class="vc_col-sm-2/5 wpb_column column_container vc_column_container col child_column left_padding_desktop_10pct left_padding_tablet_0px left_padding_phone_0px " data-cfc="true"  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
-			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727070564603" >What does it include?</h2>
-<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727070605846" >
+			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1709523923507" >Tandem</h2>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285297419" >
 	<div class="wpb_wrapper">
-		<p><span style="font-weight: 400;">This package includes two blender bikes, allowing as many smoothies as you wish to cater for (not included in this package) so participants to pedal their way to creating their smoothies or cocktails, making it a fun, interactive activity for all ages.  </span></p>
-<p><span style="font-weight: 400;">The Tandem package provides the basics you need for a streamlined blending experience, ensuring your guests leave with a memorable impression</span></p>
+		<p>Ideal for people who can do their own food shopping and want to run the event eg. birthday parties, gym open days, school or rural events.</p>
 	</div>
 </div>
 
 
 
 <h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285394675" >Includes</h5>
-<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727071776896" >
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1711419671299" >
 	<div class="wpb_wrapper">
 		<ul>
-<li>Two blender bikes &#8211; <span style="font-weight: 400;">Small (kids from 6+) or Large bikes available</span></li>
-<li>Four jugs</li>
-<li>Recipes</li>
-<li>Menu boards</li>
-<li>* Delivery (optional)</li>
+<li>two blender bikes</li>
+<li>four jugs</li>
+<li>recipes</li>
+<li>menu boards</li>
+<li>* delivery optional</li>
 </ul>
 	</div>
 </div>
 
 
 
-<a class="nectar-button large regular accent-color has-icon  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/contact/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Enquire Today</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
+<a class="nectar-button large regular accent-color has-icon  regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/tandem/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Learn More</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
 		</div> 
 	</div>
 	</div> 
@@ -696,7 +766,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<div id="fws_683f5b5b1d3a9" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_683f5f13e34ca" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-3/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -704,7 +774,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="inner">
         <div class="hover-wrap"> 
           <div class="hover-wrap-inner">
-            <img decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="1178" width="1600" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike.jpeg" alt="T 1 large and 1 small bike | Bike n&#039; Blend" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike.jpeg 1600w, https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike-300x221.jpeg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike-1024x754.jpeg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike-768x565.jpeg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/09/T_1-large-and-1-small-bike-1536x1131.jpeg 1536w" sizes="(max-width: 1600px) 100vw, 1600px">
+            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package.jpg" alt="Bike n blend Tandem Tasty package" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-Tandem-Tasty-package-900x600.jpg 900w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />
           </div>
         </div>
       </div>
@@ -716,31 +786,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div style=" color: #ffffff;" class="vc_col-sm-2/5 wpb_column column_container vc_column_container col child_column left_padding_desktop_10pct left_padding_tablet_0px left_padding_phone_0px " data-cfc="true"  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
-			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727070585206" >Who is it ideal for?</h2>
-<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727070657822" >
+			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285527175" >Tandem Tasty</h2>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1709522020030" >
 	<div class="wpb_wrapper">
-		<p>This package is ideal for people who have the time to shop for their own ingredients (or need very specific ingredients) and have the time and manpower to set up and run their own blending event. The Tandem Package is the ultimate DIY experience!</p>
+		<p>We’ll take care of the ingredient shopping and you take care of running the event. Just like the Tandem package, with the addition of our delicious smoothie ingredients.</p>
 	</div>
 </div>
 
 
 
-<h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727070985094" >Perfect fit for</h5>
-<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727071738093" >
+<h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285394675" >Includes</h5>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1711419692984" >
 	<div class="wpb_wrapper">
 		<ul>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Birthday celebrations &#8211; <a href="https://www.bikenblend.com.au/make-your-next-birthday-party-fun-original/">Get inspired</a></span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Community gatherings </span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">School events </span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Open Days </span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Cocktail parties &#8211; <a href="https://www.bikenblend.com.au/elevate-celebrations-byo-affordable-cocktail/">Get inspired</a></span></li>
+<li>two blender bikes</li>
+<li>four jugs</li>
+<li>recipes</li>
+<li>menu boards + 100 smoothies</li>
+<li>* delivery optional</li>
 </ul>
 	</div>
 </div>
 
 
 
-<a class="nectar-button large regular accent-color has-icon  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/contact/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Enquire Today</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
+<a class="nectar-button large regular accent-color has-icon  regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/tandem-tasty/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Learn More</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
 		</div> 
 	</div>
 	</div> 
@@ -753,11 +823,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<h2 style="color: #000000;text-align: center" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727072417727" >Tandem Package in a nutshell!</h2>
-	<div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1727074319293 vc_video-aspect-ratio-169 vc_video-el-width-60 vc_video-align-center" >
+				<div id="fws_683f5f13e49d1" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-3/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="ro-reveal-from-left" >
+      <div class="inner">
+        <div class="hover-wrap"> 
+          <div class="hover-wrap-inner">
+            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package.jpg" alt="Tandem Tasty with Staff package | Bike n&#039; Blend" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Tandem-Tasty-with-Staff-package-900x600.jpg 900w" sizes="auto, (max-width: 1200px) 100vw, 1200px">
+          </div>
+        </div>
+      </div>
+    </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div style=" color: #ffffff;" class="vc_col-sm-2/5 wpb_column column_container vc_column_container col child_column left_padding_desktop_10pct left_padding_tablet_0px left_padding_phone_0px " data-cfc="true"  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1708472784567" >Tandem Tasty with Staff</h2>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1709524128336" >
+	<div class="wpb_wrapper">
+		<p>Let us take care everything; ideal for indoor events (ie staff wellbeing events, brand promotion pop ups etc).</p>
+	</div>
+</div>
+
+
+
+<h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285394675" >Includes</h5>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1716517500657" >
+	<div class="wpb_wrapper">
+		<ul>
+<li>two blender bikes</li>
+<li>four jugs</li>
+<li>recipes</li>
+<li>menu boards and 100 (270ml) fruit smoothies</li>
+<li>two energetic Bike n’ Blend staff</li>
+</ul>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular accent-color has-icon  regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/tandem-tasty-with-staff/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Learn More</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
+		</div> 
+	</div>
+	</div> 
+</div></div>
+	<div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1714087370334 vc_video-aspect-ratio-169 vc_video-el-width-60 vc_video-align-left" >
 		<div class="wpb_wrapper">
 			
-			<div class="wpb_video_wrapper"><iframe title="Bike n&#039; Blend: the Tandem Package" width="500" height="281" src="https://www.youtube.com/embed/2L5eG5xleOU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+			<div class="wpb_video_wrapper"><iframe loading="lazy" title="Tandem Tasty with Staff!" width="500" height="281" src="https://www.youtube.com/embed/G8IgDNSTOdo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 		</div>
 	</div>
 
@@ -769,25 +887,139 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<h2 style="color: #000000;text-align: center" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727073384044" >Reviews</h2>
-<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727073927774" >
+				<div id="fws_683f5f13f0ea8" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-3/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="ro-reveal-from-left" >
+      <div class="inner">
+        <div class="hover-wrap"> 
+          <div class="hover-wrap-inner">
+            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies.jpg" alt="pedal powered smoothies perfect for team building activities for students, team well-being, and birthday parties for all ages" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/01/pedal-powered-smoothies-900x600.jpg 900w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />
+          </div>
+        </div>
+      </div>
+    </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div style=" color: #ffffff;" class="vc_col-sm-2/5 wpb_column column_container vc_column_container col child_column left_padding_desktop_10pct left_padding_tablet_0px left_padding_phone_0px " data-cfc="true"  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285972329" >Tour De France</h2>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1709524136178" >
 	<div class="wpb_wrapper">
-		<p style="text-align: center;"><span style="color: #ffffff;">What people say about Bike N&#8217; Blend and our Tandem Package</span></p>
+		<p>Perfect for outdoor events. Rain, hail or shine we&#8217;ve got you covered with our all-weather marquee.</p>
 	</div>
 </div>
 
 
 
-<div class="testimonial_slider span_12 col" data-color="" data-rating-color="extra-color-1" data-controls="default" data-add-border="" data-autorotate="8000" data-style="default" ><div class="slides"><blockquote> <div data-shadow="true" class="image-icon has-bg" style="background-image: url(https://www.bikenblend.com.au/wp-content/uploads/2024/08/Black-and-Red-House-Repair-Logo-300x300.png);">&#8220;</div> <p>Bike n' Blend were absolutely fantastic throughout the entire booking process. We used their bikes for an event activation at a community fundraiser and are incredibly impressed. Highly recommend booking your smoothie bikes through Bike n' Blend for your next event.<span class="star-rating-wrap"> <span class="star-rating"><span style="width: 100%;" class="filled"></span></span></span> <span role="none" class="bottom-arrow"></span></p><span class="testimonial-name">Mikayla</span><span class="title"></span></blockquote><blockquote> <div data-shadow="true" class="image-icon has-bg" style="background-image: url(https://www.bikenblend.com.au/wp-content/uploads/2024/08/Black-and-Red-House-Repair-Logo-300x300.png);">&#8220;</div> <p>Our Primary Students loved Bike n' Blend! The blenders were great and the students even loved the pulpy orange juice. We used oranges to save on cost.<span class="star-rating-wrap"> <span class="star-rating"><span style="width: 100%;" class="filled"></span></span></span> <span role="none" class="bottom-arrow"></span></p><span class="testimonial-name">Daniel</span><span class="title"></span></blockquote></div></div>
+<h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285394675" >Includes</h5>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1711419582145" >
+	<div class="wpb_wrapper">
+		<ul>
+<li>three blender bikes</li>
+<li>menu boards</li>
+<li>200 (270ml) fruit smoothies</li>
+<li>our colourful marquee</li>
+<li>table</li>
+<li>hot water washing unit</li>
+<li>food permit</li>
+<li>two energetic Bike n’ Blend staff</li>
+</ul>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular accent-color has-icon  regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/tour-de-france/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Learn More</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
+		</div> 
+	</div>
+	</div> 
+</div></div>
+	<div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1727761879722 vc_video-aspect-ratio-169 vc_video-el-width-60 vc_video-align-left" >
+		<div class="wpb_wrapper">
+			
+			<div class="wpb_video_wrapper"><iframe loading="lazy" title="Bike n&#039; Blend (the Tour de France package) at Bankstown Council" width="500" height="281" src="https://www.youtube.com/embed/qEnc3Tn3OR8?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+		</div>
+	</div>
+
 			</div> 
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_683f5b5b1f5ba"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row"  style="padding-top: 100px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop"  style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="competition"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 100px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #efb860; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+			<div class="wpb_wrapper">
+				<div id="fws_683f5f13f20e7" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-3/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="ro-reveal-from-left" >
+      <div class="inner">
+        <div class="hover-wrap"> 
+          <div class="hover-wrap-inner">
+            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="800" width="1200" data-animation="ro-reveal-from-left" src="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package.jpg" alt="Corporate team building ideas for work - Bike n blend competition package" srcset="https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package.jpg 1200w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package-300x200.jpg 300w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package-1024x683.jpg 1024w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package-768x512.jpg 768w, https://www.bikenblend.com.au/wp-content/uploads/2024/03/Bike-n-blend-competition-package-900x600.jpg 900w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />
+          </div>
+        </div>
+      </div>
+    </div>
+		</div> 
+	</div>
+	</div> 
+
+	<div style=" color: #ffffff;" class="vc_col-sm-2/5 wpb_column column_container vc_column_container col child_column left_padding_desktop_10pct left_padding_tablet_0px left_padding_phone_0px " data-cfc="true"  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" >
+		<div class="wpb_wrapper">
+			<h2 style="color: #000000;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1708472742814" >Competition Package</h2>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1709523840033" >
+	<div class="wpb_wrapper">
+		<p>Release your competitive spirit with our indoor competition package. Complete with leaderboard and speedometers, this package suits those who want a bit more of a challenge.</p>
+	</div>
+</div>
+
+
+
+<h5 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_do_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707285394675" >Includes</h5>
+<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1711419593394" >
+	<div class="wpb_wrapper">
+		<ul>
+<li>2 competition bikes</li>
+<li>menu board and 50 (270ml) fruit smoothies</li>
+<li>four jugs</li>
+<li>corporate table</li>
+<li>two competition facilitators</li>
+<li>leaderboard</li>
+</ul>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular accent-color has-icon  regular-button"  role="button" style="color: #ec634c; background-color: #ffffff;"  href="/competition/" data-color-override="#ffffff" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Learn More</span><i style="color: #ec634c;"  class="icon-button-arrow"></i></a>
+		</div> 
+	</div>
+	</div> 
+</div></div>
+	<div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1714087431699 vc_video-aspect-ratio-169 vc_video-el-width-60 vc_video-align-left" >
+		<div class="wpb_wrapper">
+			
+			<div class="wpb_video_wrapper"><iframe loading="lazy" title="Competition package with Bike n&#039; Blend!" width="500" height="281" src="https://www.youtube.com/embed/qvZGr3z3yPI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+		</div>
+	</div>
+
+			</div> 
+		</div>
+	</div> 
+</div></div>
+		<div id="fws_683f5f13f2f71"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row"  style="padding-top: 100px; padding-bottom: 100px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop"  style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<h2 style="color: #f0b860;text-align: center" class="vc_custom_heading vc_do_custom_heading bolder wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1727138812669" >Make your Tandem unique with Personalised Event Branding</h2>
+				<h2 style="color: #f0b860;text-align: center" class="vc_custom_heading vc_do_custom_heading bolder wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1707284764152" >Event Branding</h2>
 <div class="wpb_text_column wpb_content_element " >
 	<div class="wpb_wrapper">
 		<p>Stand out and make your event your own with our range of event branding options.</p>
@@ -807,7 +1039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 	<div class="nectar-global-section before-footer"><div class="container normal-container row">
-		<div id="fws_683f5b5b2053e"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 100px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_683f5f13f3e4a"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 100px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
@@ -816,7 +1048,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_683f5b5b20957"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 20px; padding-bottom: 20px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_683f5f1400035"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section"  style="padding-top: 20px; padding-bottom: 20px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
@@ -830,7 +1062,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      </div><div id="fws_683f5b5b21061" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+      </div><div id="fws_683f5f1400697" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -859,11 +1091,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_683f5b5b219f8"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section footerDeets"  style="padding-top: 0px; padding-bottom: 40px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_683f5f1401146"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section footerDeets"  style="padding-top: 0px; padding-bottom: 40px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #ec634c; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<div class="divider-wrap" data-alignment="default"><div style="margin-top: 15px; height: 1px; margin-bottom: 15px;" data-width="100%" data-animate="yes" data-animation-delay="" data-color="white" class="divider-border"></div></div><div id="fws_683f5b5b21ebb" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style="padding-top: 30px; padding-bottom: 30px; "><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div class="divider-wrap" data-alignment="default"><div style="margin-top: 15px; height: 1px; margin-bottom: 15px;" data-width="100%" data-animate="yes" data-animation-delay="" data-color="white" class="divider-border"></div></div><div id="fws_683f5f140163a" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style="padding-top: 30px; padding-bottom: 30px; "><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -887,11 +1119,11 @@ Preston VIC 3072</a></p>
 	<div  class="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
-			<h3 style="font-size: 30px;color: #f0b860;text-align: left" class="vc_custom_heading vc_do_custom_heading vc_custom_1707697714930" ><a href="https://www.bikenblend.com.au/packages/" title="Packages">Packages</a></h3><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-packages-menu-container"><ul id="menu-packages-menu" class="menu"><li id="menu-item-33042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33042"><a href="/packages/#tandem">Tandem</a></li>
+			<h3 style="font-size: 30px;color: #f0b860;text-align: left" class="vc_custom_heading vc_do_custom_heading vc_custom_1707697714930" ><a href="https://www.bikenblend.com.au/packages/" title="Packages">Packages</a></h3><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-packages-menu-container"><ul id="menu-packages-menu" class="menu"><li id="menu-item-33042" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-33042"><a href="/packages/#tandem" aria-current="page">Tandem</a></li>
 <li id="menu-item-33043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33043"><a href="/tandem-tasty/">Tandem Tasty</a></li>
 <li id="menu-item-33044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33044"><a href="/tandem-tasty-with-staff/">Tandem Tasty with Staff</a></li>
-<li id="menu-item-33045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33045"><a href="/packages/#tour-de-france">Tour de France</a></li>
-<li id="menu-item-33437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33437"><a href="/packages/#competition">Competition</a></li>
+<li id="menu-item-33045" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-33045"><a href="/packages/#tour-de-france" aria-current="page">Tour de France</a></li>
+<li id="menu-item-33437" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-33437"><a href="/packages/#competition" aria-current="page">Competition</a></li>
 </ul></div></div></div>
 		</div> 
 	</div>
@@ -924,14 +1156,14 @@ Preston VIC 3072</a></p>
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
 			<h3 style="font-size: 30px;color: #f0b860;text-align: left" class="vc_custom_heading vc_do_custom_heading vc_custom_1707697888595" >Connect with us</h3>
-<div class="wpcf7 no-js" id="wpcf7-f15630-o1" lang="en-US" dir="ltr" data-wpcf7-id="15630">
+<div class="wpcf7 no-js" id="wpcf7-f15630-o2" lang="en-US" dir="ltr" data-wpcf7-id="15630">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/tandem/#wpcf7-f15630-o1" method="post" class="wpcf7-form init mailchimp-ext-0.5.72" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<form action="/packages/#wpcf7-f15630-o2" method="post" class="wpcf7-form init mailchimp-ext-0.5.72" aria-label="Contact form" novalidate="novalidate" data-status="init">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="15630" />
 <input type="hidden" name="_wpcf7_version" value="6.0.6" />
 <input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f15630-o1" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f15630-o2" />
 <input type="hidden" name="_wpcf7_container_post" value="0" />
 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
 <input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]" />
@@ -954,16 +1186,16 @@ Preston VIC 3072</a></p>
 
 <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="SUBSCRIBE" />
 <input class="wpcf7-form-control wpcf7-hidden" value="Email only subscribe Form" type="hidden" name="your-subject" />
-<input class="wpcf7-form-control wpcf7-hidden" value="https://www.bikenblend.com.au/tandem" type="hidden" name="referring-page" />
+<input class="wpcf7-form-control wpcf7-hidden" value="https://www.bikenblend.com.au/packages" type="hidden" name="referring-page" />
 <input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_source" />
 <input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_medium" />
 <input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_campaign" />
-<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_content" /><input type="hidden" id="ct_checkjs_cf7_6e0721b2c6977135b916ef286bcb49ec" name="ct_checkjs_cf7" value="0" /><script data-optimized="1" >setTimeout(function(){var ct_input_name="ct_checkjs_cf7_6e0721b2c6977135b916ef286bcb49ec";if(document.getElementById(ct_input_name)!==null){var ct_input_value=document.getElementById(ct_input_name).value;document.getElementById(ct_input_name).value=document.getElementById(ct_input_name).value.replace(ct_input_value,'496b54e27c422c081d3174616a0d39d910d186af2c6a3c38b6aff839493b5f00')}},1000)</script><label id="apbct_label_id_56581" class="apbct_special_field"><input
+<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_content" /><input type="hidden" id="ct_checkjs_cf7_f9b902fc3289af4dd08de5d1de54f68f" name="ct_checkjs_cf7" value="0" /><script data-optimized="1" >setTimeout(function(){var ct_input_name="ct_checkjs_cf7_f9b902fc3289af4dd08de5d1de54f68f";if(document.getElementById(ct_input_name)!==null){var ct_input_value=document.getElementById(ct_input_name).value;document.getElementById(ct_input_name).value=document.getElementById(ct_input_name).value.replace(ct_input_value,'496b54e27c422c081d3174616a0d39d910d186af2c6a3c38b6aff839493b5f00')}},1000)</script><label id="apbct_label_id_47338" class="apbct_special_field"><input
                     class="apbct_special_field apbct__email_id__wp_contact_form_7"
                     name="apbct_email_id__wp_contact_form_7"
                     type="text" size="30" maxlength="200" autocomplete="off"
                     value=""
-                /></label><input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output" aria-hidden="true"></div><p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page"><input type="hidden" name="referer-page" value="https://www.bikenblend.com.au/" data-value="https://www.bikenblend.com.au/" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false"></span></p>
+                /></label><input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output" aria-hidden="true"></div><p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page"><input type="hidden" name="referer-page" value="https://www.bikenblend.com.au/how-it-works/" data-value="https://www.bikenblend.com.au/how-it-works/" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false"></span></p>
 <!-- Chimpmatic extension by Renzo Johnson -->
 </form>
 </div>
@@ -980,11 +1212,11 @@ Preston VIC 3072</a></p>
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_683f5b5b265b8"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section copyDeets"  style="padding-top: 20px; padding-bottom: 20px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #4d4d4d; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_683f5f14052ac"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section copyDeets"  style="padding-top: 20px; padding-bottom: 20px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" ><div class="row-bg viewport-desktop using-bg-color"  style="background-color: #4d4d4d; "></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 			<div class="wpb_wrapper">
-				<div id="fws_683f5b5b26925" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_683f5f140563f" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row"  style=""><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div  class="vc_col-sm-1 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "   data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
 		<div class="vc_column-inner" >
 		<div class="wpb_wrapper">
@@ -1049,9 +1281,9 @@ Preston VIC 3072</a></p>
 						<ul class="menu">
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3851"><a href="https://www.bikenblend.com.au/">Home</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2790"><a href="https://www.bikenblend.com.au/about-us/">About</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-12330"><a href="https://www.bikenblend.com.au/packages/">Packages</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12308 current_page_item menu-item-has-children menu-item-12330"><a href="https://www.bikenblend.com.au/packages/" aria-current="page">Packages</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-33885 current_page_item menu-item-33948"><a href="https://www.bikenblend.com.au/tandem/" aria-current="page">Tandem</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33948"><a href="https://www.bikenblend.com.au/tandem/">Tandem</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33949"><a href="https://www.bikenblend.com.au/tandem-tasty/">Tandem Tasty</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33950"><a href="https://www.bikenblend.com.au/tandem-tasty-with-staff/">Tandem Tasty with Staff</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33951"><a href="https://www.bikenblend.com.au/tour-de-france/">Tour De France</a></li>
@@ -1109,6 +1341,84 @@ var s=document.getElementsByTagName("script")[0];var b=document.createElement("s
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7890593&fmt=gif" />
 </noscript>
+<div 
+	id="pum-14090" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_14090"
+	class="pum pum-overlay pum-theme-5292 pum-theme-default-theme popmake-overlay auto_open click_open" 
+	data-popmake="{&quot;id&quot;:14090,&quot;slug&quot;:&quot;price-list&quot;,&quot;theme_id&quot;:5292,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-14090&quot;,&quot;key&quot;:&quot;18809998760&quot;,&quot;session&quot;:null,&quot;path&quot;:&quot;1&quot;,&quot;time&quot;:&quot;1 month&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;delay&quot;:15000,&quot;cookie_name&quot;:[&quot;pum-14090&quot;]}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-14090" class="pum-container popmake theme-5292 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+							<div id="pum_popup_title_14090" class="pum-title popmake-title">
+				Request Price List			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+<div class="wpcf7 no-js" id="wpcf7-f15645-o1" lang="en-US" dir="ltr" data-wpcf7-id="15645">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/packages/#wpcf7-f15645-o1" method="post" class="wpcf7-form init mailchimp-ext-0.5.72" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="15645" />
+<input type="hidden" name="_wpcf7_version" value="6.0.6" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f15645-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]" />
+<input type="hidden" name="_wpcf7cf_hidden_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_visible_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_repeaters" value="[]" />
+<input type="hidden" name="_wpcf7cf_steps" value="{}" />
+<input type="hidden" name="_wpcf7cf_options" value="{&quot;form_id&quot;:15645,&quot;conditions&quot;:[],&quot;settings&quot;:{&quot;animation&quot;:&quot;yes&quot;,&quot;animation_intime&quot;:200,&quot;animation_outtime&quot;:200,&quot;conditions_ui&quot;:&quot;normal&quot;,&quot;notice_dismissed&quot;:false}}" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<div class="form-top">Fields marked with an <span class="form-required">*</span> are required</div>
+<div class="form-top">Please note, by submitting this form you agree to be subscribed to the Bike n' Blend email newsletter (you may unsubscribe at any time).</div>
+
+<label class="form-item">
+<span class="form-label">First Name</span>
+<span class="wpcf7-form-control-wrap" data-name="first-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="first-name" /></span>
+</label>
+
+<label class="form-item">
+<span class="form-label">Last Name</span>
+<span class="wpcf7-form-control-wrap" data-name="last-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="last-name" /></span>
+</label>
+
+<label class="form-item">
+<span class="form-label">Email <span class="form-required">*</span></span>
+<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email" /></span>
+</label>
+
+<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit" />
+<input class="wpcf7-form-control wpcf7-hidden" value="Request Price List Form" type="hidden" name="your-subject" />
+<input class="wpcf7-form-control wpcf7-hidden" value="https://www.bikenblend.com.au/packages" type="hidden" name="referring-page" />
+<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_source" />
+<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_medium" />
+<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_campaign" />
+<input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="utm_content" /><input type="hidden" id="ct_checkjs_cf7_7eacb532570ff6858afd2723755ff790" name="ct_checkjs_cf7" value="0" /><script data-optimized="1" >setTimeout(function(){var ct_input_name="ct_checkjs_cf7_7eacb532570ff6858afd2723755ff790";if(document.getElementById(ct_input_name)!==null){var ct_input_value=document.getElementById(ct_input_name).value;document.getElementById(ct_input_name).value=document.getElementById(ct_input_name).value.replace(ct_input_value,'496b54e27c422c081d3174616a0d39d910d186af2c6a3c38b6aff839493b5f00')}},1000)</script><label id="apbct_label_id_23732" class="apbct_special_field"><input
+                    class="apbct_special_field apbct__email_id__wp_contact_form_7"
+                    name="apbct_email_id__wp_contact_form_7"
+                    type="text" size="30" maxlength="200" autocomplete="off"
+                    value=""
+                /></label><input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' /><div class="wpcf7-response-output" aria-hidden="true"></div><p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page"><input type="hidden" name="referer-page" value="https://www.bikenblend.com.au/how-it-works/" data-value="https://www.bikenblend.com.au/how-it-works/" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false"></span></p>
+<!-- Chimpmatic extension by Renzo Johnson -->
+</form>
+</div>
+
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			CLOSE			</button>
+		
+	</div>
+
+</div>
 <!-- Instagram Feed JS -->
 <script data-optimized="1" type="text/javascript">var sbiajaxurl="https://www.bikenblend.com.au/wp-admin/admin-ajax.php"</script>
 <script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><link data-optimized="1" rel='stylesheet' id='vc_animate-css-css' href='https://www.bikenblend.com.au/wp-content/litespeed/css/5cde7febfd881fc62aeca0c7986b6fe1.css?ver=7c280' type='text/css' media='all' />
@@ -1125,7 +1435,7 @@ var s=document.getElementsByTagName("script")[0];var b=document.createElement("s
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/d9128e166ac61e2e5c3e6ce40d273957.js?ver=7ca51" id="wp-i18n-js"></script>
 <script data-optimized="1" type="text/javascript" id="wp-i18n-js-after">wp.i18n.setLocaleData({'text direction\u0004ltr':['ltr']})</script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/d3a07794704d703709ea1c97f231b6ab.js?ver=30a26" id="swv-js"></script>
-<script data-optimized="1" type="text/javascript" id="contact-form-7-js-before">var wpcf7={"api":{"root":"https:\/\/www.bikenblend.com.au\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":1}</script>
+<script data-optimized="1" type="text/javascript" id="contact-form-7-js-before">var wpcf7={"api":{"root":"https:\/\/www.bikenblend.com.au\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":1};var wpcf7={"api":{"root":"https:\/\/www.bikenblend.com.au\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":1}</script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/c13bc45e6cedf264724773e7d4f9e5c9.js?ver=6737a" id="contact-form-7-js"></script>
 <script data-optimized="1" type="text/javascript" id="wpcf7-redirect-script-js-extra">var wpcf7r={"ajax_url":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php"}</script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/9a634312cf35f534a3bfc8a4eeccd2e8.js?ver=f3223" id="wpcf7-redirect-script-js"></script>
@@ -1137,17 +1447,19 @@ var s=document.getElementsByTagName("script")[0];var b=document.createElement("s
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/2a43e9b23d6c0fb0d1ea7517106e5260.js?ver=7b04f" id="imagesLoaded-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/fef1228eed30c5552e938539591f585a.js?ver=6b91c" id="hoverintent-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/969116828ad14d36028479952a05e77d.js?ver=00ac7" id="fancyBox-js"></script>
-<script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/7bb4c8d6511d4b9d8e875452e3c799e9.js?ver=fdb8e" id="touchswipe-js"></script>
-<script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/c7a47b8ccc72cbe501f71c51f519dea9.js?ver=bc5d0" id="nectar-testimonial-sliders-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/ffe99aa18f098d2f5b68f0386db3f37e.js?ver=16684" id="anime-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/e18162e0f3c84a2f9e2ddf2edb537a80.js?ver=111bb" id="superfish-js"></script>
-<script data-optimized="1" type="text/javascript" id="nectar-frontend-js-extra">var nectarLove={"ajaxurl":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php","postID":"33885","rooturl":"https:\/\/www.bikenblend.com.au","disqusComments":"false","loveNonce":"c93482a2b0","mapApiKey":""};var nectarOptions={"delay_js":"false","quick_search":"false","react_compat":"disabled","header_entrance":"false","dropdown_hover_intent":"default","simplify_ocm_mobile":"0","mobile_header_format":"default","ocm_btn_position":"default","left_header_dropdown_func":"default","ajax_add_to_cart":"0","ocm_remove_ext_menu_items":"remove_images","woo_product_filter_toggle":"0","woo_sidebar_toggles":"true","woo_sticky_sidebar":"0","woo_minimal_product_hover":"default","woo_minimal_product_effect":"default","woo_related_upsell_carousel":"false","woo_product_variable_select":"default","woo_using_cart_addons":"false"};var nectar_front_i18n={"menu":"Menu","next":"Next","previous":"Previous","close":"Close"}</script>
+<script data-optimized="1" type="text/javascript" id="nectar-frontend-js-extra">var nectarLove={"ajaxurl":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php","postID":"12308","rooturl":"https:\/\/www.bikenblend.com.au","disqusComments":"false","loveNonce":"c93482a2b0","mapApiKey":""};var nectarOptions={"delay_js":"false","quick_search":"false","react_compat":"disabled","header_entrance":"false","dropdown_hover_intent":"default","simplify_ocm_mobile":"0","mobile_header_format":"default","ocm_btn_position":"default","left_header_dropdown_func":"default","ajax_add_to_cart":"0","ocm_remove_ext_menu_items":"remove_images","woo_product_filter_toggle":"0","woo_sidebar_toggles":"true","woo_sticky_sidebar":"0","woo_minimal_product_hover":"default","woo_minimal_product_effect":"default","woo_related_upsell_carousel":"false","woo_product_variable_select":"default","woo_using_cart_addons":"false"};var nectar_front_i18n={"menu":"Menu","next":"Next","previous":"Previous","close":"Close"}</script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/723f83cd6cda1482a9b615a472b2e0a9.js?ver=e9d86" id="nectar-frontend-js"></script>
+<script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/7bb4c8d6511d4b9d8e875452e3c799e9.js?ver=fdb8e" id="touchswipe-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/5b713c29690d6c55af76c7cc732c8d59.js?ver=49525" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/ffbf732ec3bb2866aa8361e6338ac301.js?ver=0ab88" id="jquery-ui-core-js"></script>
+<script data-optimized="1" type="text/javascript" id="popup-maker-site-js-extra">var pum_vars={"version":"1.20.5","pm_dir_url":"https:\/\/www.bikenblend.com.au\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php","restapi":"https:\/\/www.bikenblend.com.au\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"5292","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","analytics_route":"analytics","analytics_api":"https:\/\/www.bikenblend.com.au\/wp-json\/pum\/v1"};var pum_sub_vars={"ajaxurl":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php","message_position":"top"};var pum_popups={"pum-14090":{"triggers":[{"type":"auto_open","settings":{"delay":15000,"cookie_name":["pum-14090"]}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-14090","key":"18809998760","session":null,"path":"1","time":"1 month"}}],"disable_on_mobile":!1,"disable_on_tablet":!1,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"5292","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":!1,"custom_height":"380px","scrollable_content":!1,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":!1,"position_fixed":!1,"overlay_disabled":!1,"stackable":!1,"disable_reposition":!1,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":!1,"close_on_form_submission_delay":"0","close_on_overlay_click":!1,"close_on_esc_press":!1,"close_on_f4_press":!1,"disable_form_reopen":!1,"disable_accessibility":!1,"theme_slug":"default-theme","id":14090,"slug":"price-list"}}</script>
+<script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/c71ad575e235256fcf09ca22c90389ab.js?ver=1c082" id="popup-maker-site-js"></script>
 <script data-optimized="1" type="text/javascript" id="wpcf7cf-scripts-js-extra">var wpcf7cf_global_settings={"ajaxurl":"https:\/\/www.bikenblend.com.au\/wp-admin\/admin-ajax.php"}</script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/94f299c2fd54b12e8705ae662e7edbc6.js?ver=88f8c" id="wpcf7cf-scripts-js"></script>
 <script data-optimized="1" type="text/javascript" src="https://www.bikenblend.com.au/wp-content/litespeed/js/b9c03cbe544b0caa7b59e6d8040101e6.js?ver=3ad95" id="wpb_composer_front_js-js"></script>
 <script></script></body>
 </html>
 
-<!-- Page cached by LiteSpeed Cache 7.1 on 2025-06-04 06:30:19 -->
+<!-- Page cached by LiteSpeed Cache 7.1 on 2025-06-04 06:46:12 -->

@@ -26,8 +26,14 @@ export default function ForfaitsPage() {
       duration: "1-2 heures",
       capacity: "25-50 smoothies",
       startingPrice: "299",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-primary-red",
+      image: "/images/velo-smoothie-1.jpg",
+      color: "bg-primary-red",
+      textColor: "text-white",
+      features: [
+        "1 vélo mélangeur adapté aux enfants",
+        "Animation et musique festive",
+        "Recettes et menu coloré"
+      ]
     },
     {
       id: "pop-solo",
@@ -38,8 +44,14 @@ export default function ForfaitsPage() {
       duration: "1.5-2.5 heures",
       capacity: "50-75 smoothies",
       startingPrice: "449",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-secondary-yellow",
+      image: "/images/velo-smoothie-2.jpg",
+      color: "bg-secondary-yellow",
+      textColor: "text-dark-charcoal",
+      features: [
+        "1 vélo mélangeur pour adultes",
+        "Atmosphère festive et animée",
+        "Recettes santé personnalisées"
+      ]
     },
     {
       id: "double-fun",
@@ -50,8 +62,14 @@ export default function ForfaitsPage() {
       duration: "2-4 heures",
       capacity: "100-300 smoothies",
       startingPrice: "699",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-trust-blue",
+      image: "/images/velo-smoothie-3.jpg",
+      color: "bg-trust-blue",
+      textColor: "text-white",
+      features: [
+        "2 vélos mélangeurs pour adultes",
+        "Installation complète avec tables",
+        "Musique et ambiance dynamique"
+      ]
     },
     {
       id: "ready-set-blend",
@@ -62,8 +80,14 @@ export default function ForfaitsPage() {
       duration: "2-3 heures",
       capacity: "75-150 smoothies",
       startingPrice: "599",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-accent-green",
+      image: "/images/gallery-3.jpg",
+      color: "bg-accent-green",
+      textColor: "text-white",
+      features: [
+        "2 vélos avec moniteurs de vitesse",
+        "Tableau des scores en temps réel",
+        "Animateur énergique pour la compétition"
+      ]
     },
     {
       id: "defi-parent-enfant",
@@ -74,8 +98,14 @@ export default function ForfaitsPage() {
       duration: "1.5-2 heures",
       capacity: "40-80 smoothies",
       startingPrice: "399",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-creative-purple",
+      image: "/images/gallery-1.jpg",
+      color: "bg-creative-purple",
+      textColor: "text-white",
+      features: [
+        "1 vélo enfant + 1 vélo adulte",
+        "Défis parents-enfants amusants",
+        "Moments de complicité garantis"
+      ]
     },
     {
       id: "la-smoothie-parade",
@@ -86,8 +116,14 @@ export default function ForfaitsPage() {
       duration: "4-8 heures",
       capacity: "300-500 smoothies",
       startingPrice: "999",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-primary-red",
+      image: "/images/gallery-5.jpg",
+      color: "bg-primary-red",
+      textColor: "text-white",
+      features: [
+        "3 vélos mélangeurs (2 grands + 1 petit)",
+        "Installation spectaculaire complète",
+        "Équipe d'animateurs dédiée"
+      ]
     },
     {
       id: "signature",
@@ -98,8 +134,14 @@ export default function ForfaitsPage() {
       duration: "Flexible",
       capacity: "Sur mesure",
       startingPrice: "Sur devis",
-      image: "/placeholder.svg?height=300&width=400",
-      color: "border-t-dark-charcoal",
+      image: "/images/Signature package2.jpg",
+      color: "bg-dark-charcoal",
+      textColor: "text-white",
+      features: [
+        "Personnalisation complète à votre image",
+        "Service concierge dédié",
+        "Solution sur mesure premium"
+      ]
     },
   ]
 
@@ -119,17 +161,33 @@ export default function ForfaitsPage() {
             
             <ScrollReveal delay={0.3}>
               <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                Choisissez le forfait parfait pour votre événement. De l'intime au spectaculaire, nous avons l'expérience
-                qu'il vous faut.
+                Festivals, événements corporatifs, collectes de fonds ou programmes scolaires - nous avons le forfait parfait pour vous. Découvrez nos offres de vélos à smoothies.
               </p>
             </ScrollReveal>
           </div>
         </MotionSection>
 
-        {/* Packages Grid */}
+        {/* Intro Section */}
+        <MotionSection className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <ScrollReveal>
+              <p className="text-2xl text-gray-700 leading-relaxed italic mb-8">
+                Nos vélos à smoothies sont disponibles pour la location dans toute la région. Que vous organisiez un petit événement familial ou un grand festival, nous avons une solution adaptée à vos besoins.
+              </p>
+            </ScrollReveal>
+            
+            <ScrollReveal delay={0.2}>
+              <p className="text-lg text-gray-600">
+                Tous nos forfaits comprennent la livraison, l'installation et la désinstallation, ainsi qu'un animateur professionnel pour guider vos invités à travers l'expérience. Nous fournissons également tous les ingrédients frais, gobelets, et autres accessoires nécessaires.
+              </p>
+            </ScrollReveal>
+          </div>
+        </MotionSection>
+
+        {/* Packages Grid - New Design */}
         <MotionSection className="py-20 bg-light-gray">
           <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-16">
+            <div className="text-center mb-16">
               <TextReveal>
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Découvrez nos forfaits</h2>
               </TextReveal>
@@ -141,55 +199,54 @@ export default function ForfaitsPage() {
                   Une expérience unique et mémorable pour tous types d'événements
                 </p>
               </ScrollReveal>
-            </ScrollReveal>
+            </div>
             
-            <StaggerContainer className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
+            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {packages.map((pkg, index) => (
                 <MotionDiv
                   key={pkg.id}
                   variant="fadeUp"
                   custom={index}
-                  className={`package-card bg-white rounded-2xl overflow-hidden shadow-lg ${pkg.color} border-t-4`}
+                  className="item-packages h-full"
                 >
-                  <AnimatedImage hoverEffect="lift" className="h-full">
-                    <div className="package-image relative">
+                  <AnimatedImage 
+                    hoverEffect="lift" 
+                    className={`${pkg.color} rounded-xl overflow-hidden shadow-lg h-full flex flex-col`}
+                  >
+                    <div className="relative overflow-hidden h-48">
                       <Image
-                        src={pkg.image || "/placeholder.svg"}
+                        src={pkg.image}
                         alt={pkg.title}
                         width={400}
                         height={300}
-                        className="w-full h-52 object-cover"
+                        className="w-full h-full object-cover"
                       />
-                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                        <span className="text-primary-red font-bold">
-                          {pkg.startingPrice === "Sur devis" ? pkg.startingPrice : `${pkg.startingPrice}$`}
-                        </span>
-                      </div>
                     </div>
-
-                    <div className="p-8">
-                      <div className="package-header mb-6">
-                        <h3 className="text-2xl font-bold text-dark-charcoal mb-3">{pkg.title}</h3>
-                        <p className="text-primary-red font-semibold text-lg mb-4">{pkg.tagline}</p>
-                        <p className="text-gray-600 leading-relaxed">{pkg.description}</p>
+                    
+                    <div className={`p-6 flex-grow flex flex-col ${pkg.textColor}`}>
+                      <div className="text-center mb-4">
+                        <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
+                        <p className="text-lg font-semibold opacity-90 mb-4">{pkg.tagline}</p>
+                        <RedLineSeparator className="w-12 mx-auto mb-4" />
                       </div>
-
-                      <div className="package-badges flex flex-wrap gap-3 my-6">
-                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                          {pkg.ageRange}
-                        </span>
-                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                          {pkg.duration}
-                        </span>
-                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                          {pkg.capacity}
-                        </span>
-                      </div>
-
-                      <div className="package-footer mt-8 text-center">
+                      
+                      <ul className="mb-6 flex-grow">
+                        {pkg.features.map((feature, idx) => (
+                          <li key={idx} className="mb-3 flex items-start">
+                            <span className="inline-block mr-2">•</span>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      
+                      <div className="mt-auto text-center">
+                        <div className="font-bold text-xl mb-4">
+                          {pkg.startingPrice === "Sur devis" ? pkg.startingPrice : `${pkg.startingPrice}$`}
+                        </div>
+                        
                         <AnimatedImage hoverEffect="scale">
                           <Link href={`/forfaits/${pkg.id}`} className="block w-full">
-                            <Button className="w-full bg-primary-red text-white hover:bg-primary-red/90 py-3 text-lg font-semibold">
+                            <Button className={`w-full ${pkg.textColor === 'text-white' ? 'bg-white text-black hover:bg-gray-100' : 'bg-dark-charcoal text-white hover:bg-dark-charcoal/90'} py-3 text-lg font-semibold`}>
                               En savoir plus
                             </Button>
                           </Link>

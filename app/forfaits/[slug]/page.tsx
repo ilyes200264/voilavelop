@@ -5,9 +5,8 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRight, Check } from "lucide-react"
-import { IconMapper } from "@/components/ui/icon-mapper"
-import { PackageDetailsClient, IncludesSection } from "@/components/package-details-client"
+import { ChevronRight, Check, Play, Star } from "lucide-react"
+import { packagesData } from "../packages-data"
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -17,205 +16,351 @@ import {
   TextReveal,
   RedLineSeparator
 } from "@/components/motion/motion-components"
+import { use } from "react"
 
 interface PackagePageProps {
   params: { slug: string }
 }
 
-export default function PackagePage({ params }: PackagePageProps) {
+export default function EnhancedPackagePage({ params }: PackagePageProps) {
   const { slug } = params
-
-  // Mock package data - in real app, this would come from a CMS or database
-  const packageData = {
-    "la-petite-koki": {
-      title: "La petite Koki",
-      tagline: "Le favori de tous les temps des enfants!",
-      description:
-        "Parfait pour les anniversaires, les graduations de garderie ou les festivals familiaux, ce forfait apporte plaisir, rire et smoothies savoureux à toute célébration! Nos vélos adaptés aux enfants sont sécuritaires et amusants, créant des souvenirs inoubliables pour les petits pédaleurs.",
-      ageRange: "5-10 ans",
-      duration: "1-2 heures",
-      capacity: "25-50 smoothies",
-      heroImage: "/images/velo-smoothie-1.jpg",
-      options: [
-        {
-          title: "Option Petite Fête",
-          price: "299",
-          duration: "1 heure",
-          smoothies: "25",
-          includes: [
-            "1 vélo mélangeur adapté aux enfants",
-            "25 smoothies délicieux",
-            "1 heure d'animation énergique",
-            "Musique et ambiance festive",
-            "Ingrédients frais et colorés",
-          ],
-          idealFor: "Parfait pour les petites fêtes d'anniversaire (10-15 enfants) ou les événements intimes.",
-        },
-        {
-          title: "Option Grande Célébration",
-          price: "449",
-          duration: "2 heures",
-          smoothies: "50",
-          includes: [
-            "1 vélo mélangeur adapté aux enfants",
-            "50 smoothies délicieux",
-            "2 heures de divertissement",
-            "Animation interactive avec jeux",
-            "Décorations colorées incluses",
-            "Personnalisation possible",
-          ],
-          idealFor: "Idéal pour les grandes fêtes (20-30 enfants), graduations de garderie ou festivals familiaux.",
-          featured: true,
-        },
-      ],
-      includes: [
-        {
-          iconName: "bike",
-          title: "Vélo mélangeur sécuritaire",
-          description: "Vélo spécialement adapté pour les enfants de 5-10 ans avec toutes les mesures de sécurité",
-        },
-        {
-          iconName: "glass",
-          title: "Smoothies frais",
-          description: "Ingrédients frais et colorés, parfaits pour les goûts des enfants",
-        },
-        {
-          iconName: "theater",
-          title: "Animation énergique",
-          description: "Animateur professionnel qui engage les enfants et crée une atmosphère festive",
-        },
-        {
-          iconName: "music",
-          title: "Musique et ambiance",
-          description: "Playlist adaptée aux enfants et équipement sonore professionnel",
-        },
-      ],
-      perfectFor: [
-        {
-          title: "Fêtes d'anniversaire",
-          description: "Créez une fête d'anniversaire unique que les enfants n'oublieront jamais",
-          image: "/images/gallery-1.jpg",
-        },
-        {
-          title: "Graduations de garderie",
-          description: "Célébrez cette étape importante avec une activité amusante et saine",
-          image: "/images/gallery-2.jpg",
-        },
-        {
-          title: "Festivals familiaux",
-          description: "Ajoutez une attraction populaire qui plaira aux enfants et aux parents",
-          image: "/images/gallery-3.jpg",
-        },
-      ],
-    },
-  }
-
-  const currentPackage = packageData[slug as keyof typeof packageData]
+  const currentPackage = packagesData[slug as keyof typeof packagesData]
 
   if (!currentPackage) {
-    return <div>Package not found</div>
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-dark-charcoal mb-4">Forfait non trouvé</h1>
+          <Link href="/forfaits">
+            <Button>Retour aux forfaits</Button>
+          </Link>
+        </div>
+      </div>
+    )
   }
+
+  const StarRating = ({ rating }: { rating: number }) => (
+    <div className="flex space-x-1 mb-4">
+      {[...Array(5)].map((_, i) => (
+        <Star
+          key={i}
+          className={`h-5 w-5 ${i < rating ? 'text-secondary-yellow fill-current' : 'text-gray-300'}`}
+        />
+      ))}
+    </div>
+  )
 
   return (
     <div className="min-h-screen">
       <Header />
 
       <main className="pt-20">
-        {/* Breadcrumb */}
-        <section className="py-4 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <nav className="breadcrumb" aria-label="Breadcrumb">
-              <ol className="flex items-center space-x-2 text-sm">
-                <li>
-                  <Link href="/" className="text-gray-600 hover:text-primary-red">
-                    Accueil
-                  </Link>
-                </li>
-                <li>
-                  <ChevronRight className="h-4 w-4 text-gray-400" />
-                </li>
-                <li>
-                  <Link href="/forfaits" className="text-gray-600 hover:text-primary-red">
-                    Forfaits
-                  </Link>
-                </li>
-                <li>
-                  <ChevronRight className="h-4 w-4 text-gray-400" />
-                </li>
-                <li className="text-primary-red font-medium">{currentPackage.title}</li>
-              </ol>
-            </nav>
-          </div>
-        </section>
-
-        {/* Package Hero - Styled like original site */}
-        <section className="package-hero py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <PackageDetailsClient packageData={currentPackage} />
-          </div>
-        </section>
-
-        {/* Package Options */}
-        <MotionSection id="options" className="package-options py-16 bg-light-gray">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-12">
+        {/* Hero Section */}
+        <MotionSection className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center">
               <TextReveal>
-                <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Options disponibles</h2>
+                <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
+                  {currentPackage.title}
+                </h1>
               </TextReveal>
               
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               
               <ScrollReveal delay={0.3}>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">Choisissez l'option qui convient le mieux à votre événement et à votre budget</p>
+                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic mb-4">
+                  {currentPackage.tagline}
+                </p>
+              </ScrollReveal>
+              
+              <ScrollReveal delay={0.5}>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {currentPackage.heroDescription}
+                </p>
+              </ScrollReveal>
+            </div>
+          </div>
+        </MotionSection>
+
+        {/* Main Section - What's Included */}
+        <MotionSection 
+          className="py-20"
+          style={{ backgroundColor: currentPackage.mainSection.backgroundColor }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+              {/* Image */}
+              <div className="lg:col-span-3">
+                <AnimatedImage hoverEffect="scale">
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src={currentPackage.mainSection.image}
+                      alt={`${currentPackage.title} en action`}
+                      width={800}
+                      height={600}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </AnimatedImage>
+              </div>
+
+              {/* Content */}
+              <StaggerContainer className="lg:col-span-2 text-white">
+                <MotionDiv variant="fadeUp">
+                  <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                    {currentPackage.mainSection.title}
+                  </h2>
+                </MotionDiv>
+                
+                <MotionDiv variant="fadeUp">
+                  <p className="text-lg leading-relaxed mb-8 text-black">
+                    {currentPackage.mainSection.description}
+                  </p>
+                </MotionDiv>
+
+                <MotionDiv variant="fadeUp">
+                  <h5 className="text-xl font-semibold mb-4">Ce qui est inclus:</h5>
+                  
+                  <ul className="space-y-3 mb-8">
+                    {currentPackage.mainSection.includes.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </MotionDiv>
+
+                <MotionDiv variant="fadeUp">
+                  <AnimatedImage hoverEffect="lift">
+                    <Link href="/contact">
+                      <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                        Demander un devis
+                      </Button>
+                    </Link>
+                  </AnimatedImage>
+                </MotionDiv>
+              </StaggerContainer>
+            </div>
+          </div>
+        </MotionSection>
+
+        {/* Target Section - Who is it ideal for */}
+        <MotionSection 
+          className="py-20"
+          style={{ backgroundColor: currentPackage.targetSection.backgroundColor }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+              {/* Content */}
+              <StaggerContainer className="lg:col-span-2 text-white order-2 lg:order-1">
+                <MotionDiv variant="fadeUp">
+                  <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                    {currentPackage.targetSection.title}
+                  </h2>
+                </MotionDiv>
+                
+                <MotionDiv variant="fadeUp">
+                  <p className="text-lg leading-relaxed mb-8 text-black">
+                    {currentPackage.targetSection.description}
+                  </p>
+                </MotionDiv>
+
+                <MotionDiv variant="fadeUp">
+                  <h5 className="text-xl font-semibold mb-4">Parfait pour:</h5>
+                  
+                  <ul className="space-y-3 mb-8">
+                    {currentPackage.targetSection.perfectFor.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </MotionDiv>
+
+                <MotionDiv variant="fadeUp">
+                  <AnimatedImage hoverEffect="lift">
+                    <Link href="/contact">
+                      <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                        Réserver maintenant
+                      </Button>
+                    </Link>
+                  </AnimatedImage>
+                </MotionDiv>
+              </StaggerContainer>
+
+              {/* Image */}
+              <div className="lg:col-span-3 order-1 lg:order-2">
+                <AnimatedImage hoverEffect="scale">
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src={currentPackage.targetSection.image}
+                      alt={`${currentPackage.title} target audience`}
+                      width={800}
+                      height={600}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </AnimatedImage>
+              </div>
+            </div>
+          </div>
+        </MotionSection>
+
+        {/* Demo Section - Video */}
+        <MotionSection 
+          className="py-20 text-center"
+          style={{ backgroundColor: currentPackage.demoSection.backgroundColor }}
+        >
+          <div className="container mx-auto px-4">
+            <TextReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
+                {currentPackage.demoSection.title}
+              </h2>
+            </TextReveal>
+            
+            <ScrollReveal>
+              <div className="max-w-4xl mx-auto">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="aspect-video">
+                    <iframe
+                      src={currentPackage.demoSection.videoUrl}
+                      title={`${currentPackage.title} demo video`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </MotionSection>
+
+        {/* Reviews Section */}
+        <MotionSection 
+          className="py-20 text-center"
+          style={{ backgroundColor: currentPackage.reviewsSection.backgroundColor }}
+        >
+          <div className="container mx-auto px-4">
+            <TextReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                {currentPackage.reviewsSection.title}
+              </h2>
+            </TextReveal>
+            
+            <ScrollReveal delay={0.3}>
+              <p className="text-xl text-white mb-12">
+                {currentPackage.reviewsSection.subtitle}
+              </p>
+            </ScrollReveal>
+
+            <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {currentPackage.reviewsSection.testimonials.map((testimonial, index) => (
+                <MotionDiv
+                  key={index}
+                  variant="fadeUp"
+                  custom={index}
+                >
+                  <AnimatedImage hoverEffect="lift" className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                    <StarRating rating={testimonial.rating} />
+                    
+                    <blockquote className="text-lg text-gray-700 italic mb-6">
+                      "{testimonial.text}"
+                    </blockquote>
+                    
+                    <div className="flex items-center justify-center">
+                      <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center mr-4">
+                        <span className="text-white font-bold text-lg">
+                          {testimonial.author.charAt(0)}
+                        </span>
+                      </div>
+                      <div className="text-left">
+                        <div className="font-semibold text-dark-charcoal">
+                          {testimonial.author}
+                        </div>
+                      </div>
+                    </div>
+                  </AnimatedImage>
+                </MotionDiv>
+              ))}
+            </StaggerContainer>
+          </div>
+        </MotionSection>
+
+        {/* Package Options */}
+        <MotionSection className="py-20 bg-light-gray">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-12">
+              <TextReveal>
+                <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
+                  Options disponibles
+                </h2>
+              </TextReveal>
+              
+              <RedLineSeparator className="w-16 mx-auto mb-8" />
+              
+              <ScrollReveal delay={0.3}>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Choisissez l'option qui convient le mieux à votre événement et à votre budget
+                </p>
               </ScrollReveal>
             </ScrollReveal>
 
-            <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {currentPackage.options.map((option, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
                   custom={index}
-                  className={`option-card bg-white rounded-2xl p-8 shadow-lg relative ${
-                    option.featured ? "ring-2 ring-primary-red" : ""
-                  }`}
                 >
-                  <AnimatedImage hoverEffect="lift" className="h-full">
+                  <AnimatedImage 
+                    hoverEffect="lift" 
+                    className={`bg-white rounded-2xl p-8 shadow-lg relative ${
+                      option.featured ? 'ring-2 ring-primary-red' : ''
+                    }`}
+                  >
                     {option.featured && (
-                      <div className="featured-badge absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
                         Plus populaire
                       </div>
                     )}
 
-                    <div className="option-header text-center mb-6">
-                      <h3 className="text-xl font-bold text-dark-charcoal mb-2">{option.title}</h3>
-                      <div className="text-3xl font-bold text-primary-red">{option.price}$</div>
+                    <div className="text-center mb-6">
+                      <h3 className="text-xl font-bold text-dark-charcoal mb-2">
+                        {option.title}
+                      </h3>
+                      <div className="text-3xl font-bold text-primary-red">
+                        {option.price === "Sur devis" ? option.price : `${option.price}$`}
+                      </div>
                     </div>
 
-                    <div className="option-details mb-6">
+                    <div className="mb-6">
                       <h4 className="font-semibold text-dark-charcoal mb-3">Inclus:</h4>
                       <ul className="space-y-2">
                         {option.includes.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start">
                             <Check className="h-5 w-5 text-accent-green mr-2 mt-0.5 flex-shrink-0" />
-                            <span className="text-gray-700">{item}</span>
+                            <span className="text-gray-700 text-sm">{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="option-ideal-for mb-6">
+                    <div className="mb-6">
                       <h4 className="font-semibold text-dark-charcoal mb-2">Idéal pour:</h4>
                       <p className="text-gray-600 text-sm">{option.idealFor}</p>
                     </div>
 
                     <AnimatedImage hoverEffect="scale">
-                      <Link href="#booking">
+                      <Link href="/contact">
                         <Button
                           className={`w-full ${
                             option.featured
-                              ? "bg-primary-red text-white"
-                              : "bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white"
+                              ? 'bg-primary-red text-white'
+                              : 'bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white'
                           }`}
                         >
                           Choisir cette option
@@ -229,76 +374,44 @@ export default function PackagePage({ params }: PackagePageProps) {
           </div>
         </MotionSection>
 
-        {/* What's Included */}
-        <MotionSection className="whats-included py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-8">
-              <TextReveal>
-                <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Ce qui est inclus</h2>
-              </TextReveal>
+        {/* Customization Section */}
+        <MotionSection className="py-20 bg-white text-center">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <TextReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-secondary-yellow mb-8">
+                {currentPackage.customizationSection.title}
+              </h2>
+            </TextReveal>
+            
+            <ScrollReveal delay={0.3}>
+              <p className="text-lg text-gray-700 mb-6">
+                {currentPackage.customizationSection.description}
+              </p>
               
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-              
-              <ScrollReveal delay={0.3}>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">Votre expérience Voilà Vélo Fruité comprend tout ce dont vous avez besoin pour un événement réussi</p>
-              </ScrollReveal>
+              <p className="text-gray-600 mb-8">
+                {currentPackage.customizationSection.details}
+              </p>
             </ScrollReveal>
 
-            <IncludesSection includes={currentPackage.includes} />
-          </div>
-        </MotionSection>
-
-        {/* Perfect For */}
-        <MotionSection className="perfect-for py-16 bg-light-gray">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-12">
-              <TextReveal>
-                <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Parfait pour</h2>
-              </TextReveal>
-              
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-              
-              <ScrollReveal delay={0.3}>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">Ce forfait est idéal pour une variété d'événements et d'occasions spéciales</p>
-              </ScrollReveal>
-            </ScrollReveal>
-
-            <StaggerContainer className="grid md:grid-cols-3 gap-8">
-              {currentPackage.perfectFor.map((useCase, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                >
-                  <AnimatedImage hoverEffect="lift" className="use-case bg-white rounded-2xl overflow-hidden shadow-lg">
-                    <div className="use-case-image relative">
-                      <Image
-                        src={useCase.image || "/placeholder.svg"}
-                        alt={useCase.title}
-                        width={400}
-                        height={250}
-                        className="w-full h-52 object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white">{useCase.title}</h3>
-                    </div>
-                    <div className="p-6">
-                      <p className="text-gray-600 leading-relaxed">{useCase.description}</p>
-                    </div>
-                  </AnimatedImage>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
+            <AnimatedImage hoverEffect="lift">
+              <Link href={currentPackage.customizationSection.downloadLink} target="_blank">
+                <Button className="bg-primary-red text-white px-8 py-3 text-lg font-semibold hover:bg-primary-red/90">
+                  Télécharger le guide
+                </Button>
+              </Link>
+            </AnimatedImage>
           </div>
         </MotionSection>
 
         {/* CTA Section */}
-        <MotionSection id="booking" className="py-16 bg-primary-red text-white">
+        <MotionSection className="py-16 bg-primary-red text-white text-center">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <StaggerContainer className="cta-content">
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <StaggerContainer className="text-left">
                 <MotionDiv variant="fadeUp">
-                  <h2 className="text-3xl font-bold mb-4">Prêt à réserver {currentPackage.title}?</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Prêt à réserver {currentPackage.title}?
+                  </h2>
                 </MotionDiv>
                 
                 <RedLineSeparator className="w-16 mb-6" />
@@ -332,12 +445,15 @@ export default function PackagePage({ params }: PackagePageProps) {
               </StaggerContainer>
               
               <ScrollReveal>
-                <div className="testimonial-card bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-                  <div className="quote-icon text-4xl mb-4 text-white/80">"</div>
-                  <p className="text-xl italic mb-6">Notre expérience avec {currentPackage.title} a été absolument incroyable! Nos invités ont adoré l'interactivité et les smoothies étaient délicieux.</p>
-                  <div className="testimonial-author flex items-center">
-                    <div className="author-avatar w-12 h-12 bg-white/30 rounded-full mr-4"></div>
-                    <div className="author-info">
+                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                  <div className="text-4xl mb-4 text-white/80">"</div>
+                  <p className="text-xl italic mb-6">
+                    Notre expérience avec {currentPackage.title} a été absolument incroyable! 
+                    Nos invités ont adoré l'interactivité et les smoothies étaient délicieux.
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-white/30 rounded-full mr-4"></div>
+                    <div>
                       <h4 className="font-bold">Isabelle Tremblay</h4>
                       <p className="text-sm">Montréal, QC</p>
                     </div>
