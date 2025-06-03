@@ -5,13 +5,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronRight, Check } from "lucide-react"
 import { IconMapper } from "@/components/ui/icon-mapper"
+import { PackageDetailsClient, IncludesSection } from "@/components/package-details-client"
 
 interface PackagePageProps {
-  params: Promise<{ slug: string }>
+  params: { slug: string }
 }
 
-export default async function PackagePage({ params }: PackagePageProps) {
-  const { slug } = await params
+export default function PackagePage({ params }: PackagePageProps) {
+  const { slug } = params
 
   // Mock package data - in real app, this would come from a CMS or database
   const packageData = {
@@ -136,54 +137,21 @@ export default async function PackagePage({ params }: PackagePageProps) {
           </div>
         </section>
 
-        {/* Package Hero */}
+        {/* Package Hero - Styled like original site */}
         <section className="package-hero py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="package-hero-text">
-                <h1 className="text-4xl md:text-5xl font-bold text-dark-charcoal mb-4">{currentPackage.title}</h1>
-                <h2 className="text-xl md:text-2xl text-primary-red font-semibold mb-6">{currentPackage.tagline}</h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">{currentPackage.description}</p>
-
-                <div className="package-badges flex flex-wrap gap-3 mb-8">
-                  <span className="badge bg-primary-red text-white px-4 py-2 rounded-full font-medium">
-                    {currentPackage.ageRange}
-                  </span>
-                  <span className="badge bg-secondary-yellow text-dark-charcoal px-4 py-2 rounded-full font-medium">
-                    {currentPackage.duration}
-                  </span>
-                  <span className="badge bg-accent-green text-white px-4 py-2 rounded-full font-medium">
-                    {currentPackage.capacity}
-                  </span>
-                </div>
-              </div>
-
-              <div className="package-hero-image relative">
-                <Image
-                  src={currentPackage.heroImage || "/placeholder.svg"}
-                  alt={`${currentPackage.title} en action`}
-                  width={800}
-                  height={600}
-                  className="rounded-2xl shadow-2xl"
-                />
-                <div className="price-overlay absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                  <span className="price-label text-sm text-gray-600 block">À partir de</span>
-                  <span className="price-amount text-2xl font-bold text-dark-charcoal">
-                    {currentPackage.options[0].price}$
-                  </span>
-                  <Link href="#booking">
-                    <Button className="mt-2 w-full bg-primary-red text-white">Réserver maintenant</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <PackageDetailsClient packageData={currentPackage} />
           </div>
         </section>
 
         {/* Package Options */}
-        <section className="package-options py-16 bg-light-gray">
+        <section id="options" className="package-options py-16 bg-light-gray">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-dark-charcoal mb-12">Options disponibles</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Options disponibles</h2>
+              <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">Choisissez l'option qui convient le mieux à votre événement et à votre budget</p>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {currentPackage.options.map((option, index) => (
@@ -241,45 +209,44 @@ export default async function PackagePage({ params }: PackagePageProps) {
         {/* What's Included */}
         <section className="whats-included py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-dark-charcoal mb-12">Ce qui est inclus</h2>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {currentPackage.includes.map((item, index) => (
-                <div key={index} className="include-item text-center">
-                  <div className="include-icon text-4xl mb-4">
-                    <IconMapper iconName={item.iconName} className="h-10 w-10 mx-auto text-primary-red" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-dark-charcoal mb-3">{item.title}</h4>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>
-              ))}
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Ce qui est inclus</h2>
+              <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">Votre expérience Voilà Vélo Fruité comprend tout ce dont vous avez besoin pour un événement réussi</p>
             </div>
+
+            <IncludesSection includes={currentPackage.includes} />
           </div>
         </section>
 
         {/* Perfect For */}
         <section className="perfect-for py-16 bg-light-gray">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-dark-charcoal mb-12">Parfait pour</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Parfait pour</h2>
+              <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">Ce forfait est idéal pour une variété d'événements et d'occasions spéciales</p>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {currentPackage.perfectFor.map((useCase, index) => (
                 <div
                   key={index}
-                  className="use-case bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="use-case bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                 >
-                  <div className="use-case-image">
+                  <div className="use-case-image relative">
                     <Image
                       src={useCase.image || "/placeholder.svg"}
                       alt={useCase.title}
-                      width={300}
-                      height={200}
-                      className="w-full h-48 object-cover"
+                      width={400}
+                      height={250}
+                      className="w-full h-52 object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white">{useCase.title}</h3>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold text-dark-charcoal mb-3">{useCase.title}</h3>
-                    <p className="text-gray-600">{useCase.description}</p>
+                    <p className="text-gray-600 leading-relaxed">{useCase.description}</p>
                   </div>
                 </div>
               ))}
@@ -289,25 +256,42 @@ export default async function PackagePage({ params }: PackagePageProps) {
 
         {/* CTA Section */}
         <section id="booking" className="py-16 bg-primary-red text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Prêt à réserver {currentPackage.title}?</h2>
-            <p className="text-xl mb-8 opacity-90">
-              Contactez-nous pour une soumission personnalisée et réservez votre date dès aujourd'hui!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button className="bg-white text-primary-red px-8 py-3 hover:bg-gray-100">
-                  Demander une soumission
-                </Button>
-              </Link>
-              <Link href="tel:+1-XXX-XXX-XXXX">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3"
-                >
-                  Appelez maintenant
-                </Button>
-              </Link>
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="cta-content">
+                <h2 className="text-3xl font-bold mb-4">Prêt à réserver {currentPackage.title}?</h2>
+                <div className="contactRedLine w-16 h-1 bg-white mb-6"></div>
+                <p className="text-xl mb-8 opacity-90">
+                  Contactez-nous pour une soumission personnalisée et réservez votre date dès aujourd'hui!
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/contact">
+                    <Button className="bg-white text-primary-red px-8 py-3 hover:bg-gray-100">
+                      Demander une soumission
+                    </Button>
+                  </Link>
+                  <Link href="tel:+1-XXX-XXX-XXXX">
+                    <Button
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3"
+                    >
+                      Appelez maintenant
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              
+              <div className="testimonial-card bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                <div className="quote-icon text-4xl mb-4 text-white/80">"</div>
+                <p className="text-xl italic mb-6">Notre expérience avec {currentPackage.title} a été absolument incroyable! Nos invités ont adoré l'interactivité et les smoothies étaient délicieux.</p>
+                <div className="testimonial-author flex items-center">
+                  <div className="author-avatar w-12 h-12 bg-white/30 rounded-full mr-4"></div>
+                  <div className="author-info">
+                    <h4 className="font-bold">Isabelle Tremblay</h4>
+                    <p className="text-sm">Montréal, QC</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
