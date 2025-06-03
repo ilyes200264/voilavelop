@@ -1,8 +1,19 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import { 
+  MotionSection, 
+  ScrollReveal, 
+  StaggerContainer, 
+  MotionDiv, 
+  AnimatedImage,
+  TextReveal,
+  RedLineSeparator
+} from "@/components/motion/motion-components"
 
 export default function ForfaitsPage() {
   const packages = [
@@ -98,122 +109,155 @@ export default function ForfaitsPage() {
 
       <main className="pt-20">
         {/* Page Hero */}
-        <section className="page-hero bg-gradient-to-br from-primary-red to-secondary-yellow text-white py-20">
+        <MotionSection className="page-hero bg-gradient-to-br from-primary-red to-secondary-yellow text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Nos Forfaits</h1>
-            <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Choisissez le forfait parfait pour votre événement. De l'intime au spectaculaire, nous avons l'expérience
-              qu'il vous faut.
-            </p>
+            <TextReveal>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Nos Forfaits</h1>
+            </TextReveal>
+            
+            <RedLineSeparator className="w-16 mx-auto mb-8" />
+            
+            <ScrollReveal delay={0.3}>
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+                Choisissez le forfait parfait pour votre événement. De l'intime au spectaculaire, nous avons l'expérience
+                qu'il vous faut.
+              </p>
+            </ScrollReveal>
           </div>
-        </section>
+        </MotionSection>
 
         {/* Packages Grid */}
-        <section className="py-20 bg-light-gray">
+        <MotionSection className="py-20 bg-light-gray">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Découvrez nos forfaits</h2>
-              <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Une expérience unique et mémorable pour tous types d'événements
-              </p>
-            </div>
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
-              {packages.map((pkg) => (
-                <div
+            <ScrollReveal className="text-center mb-16">
+              <TextReveal>
+                <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Découvrez nos forfaits</h2>
+              </TextReveal>
+              
+              <RedLineSeparator className="w-16 mx-auto mb-8" />
+              
+              <ScrollReveal delay={0.3}>
+                <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                  Une expérience unique et mémorable pour tous types d'événements
+                </p>
+              </ScrollReveal>
+            </ScrollReveal>
+            
+            <StaggerContainer className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
+              {packages.map((pkg, index) => (
+                <MotionDiv
                   key={pkg.id}
-                  className={`package-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${pkg.color} border-t-4`}
+                  variant="fadeUp"
+                  custom={index}
+                  className={`package-card bg-white rounded-2xl overflow-hidden shadow-lg ${pkg.color} border-t-4`}
                 >
-                  <div className="package-image relative">
-                    <Image
-                      src={pkg.image || "/placeholder.svg"}
-                      alt={pkg.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-52 object-cover"
-                    />
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                      <span className="text-primary-red font-bold">
-                        {pkg.startingPrice === "Sur devis" ? pkg.startingPrice : `${pkg.startingPrice}$`}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="p-8">
-                    <div className="package-header mb-6">
-                      <h3 className="text-2xl font-bold text-dark-charcoal mb-3">{pkg.title}</h3>
-                      <p className="text-primary-red font-semibold text-lg mb-4">{pkg.tagline}</p>
-                      <p className="text-gray-600 leading-relaxed">{pkg.description}</p>
+                  <AnimatedImage hoverEffect="lift" className="h-full">
+                    <div className="package-image relative">
+                      <Image
+                        src={pkg.image || "/placeholder.svg"}
+                        alt={pkg.title}
+                        width={400}
+                        height={300}
+                        className="w-full h-52 object-cover"
+                      />
+                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                        <span className="text-primary-red font-bold">
+                          {pkg.startingPrice === "Sur devis" ? pkg.startingPrice : `${pkg.startingPrice}$`}
+                        </span>
+                      </div>
                     </div>
 
-                    <div className="package-badges flex flex-wrap gap-3 my-6">
-                      <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                        {pkg.ageRange}
-                      </span>
-                      <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                        {pkg.duration}
-                      </span>
-                      <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                        {pkg.capacity}
-                      </span>
-                    </div>
+                    <div className="p-8">
+                      <div className="package-header mb-6">
+                        <h3 className="text-2xl font-bold text-dark-charcoal mb-3">{pkg.title}</h3>
+                        <p className="text-primary-red font-semibold text-lg mb-4">{pkg.tagline}</p>
+                        <p className="text-gray-600 leading-relaxed">{pkg.description}</p>
+                      </div>
 
-                    <div className="package-footer mt-8 text-center">
-                      <Link href={`/forfaits/${pkg.id}`} className="block w-full">
-                        <Button className="w-full bg-primary-red text-white hover:bg-primary-red/90 py-3 text-lg font-semibold">
-                          En savoir plus
-                        </Button>
-                      </Link>
+                      <div className="package-badges flex flex-wrap gap-3 my-6">
+                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+                          {pkg.ageRange}
+                        </span>
+                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+                          {pkg.duration}
+                        </span>
+                        <span className="badge bg-light-gray text-dark-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+                          {pkg.capacity}
+                        </span>
+                      </div>
+
+                      <div className="package-footer mt-8 text-center">
+                        <AnimatedImage hoverEffect="scale">
+                          <Link href={`/forfaits/${pkg.id}`} className="block w-full">
+                            <Button className="w-full bg-primary-red text-white hover:bg-primary-red/90 py-3 text-lg font-semibold">
+                              En savoir plus
+                            </Button>
+                          </Link>
+                        </AnimatedImage>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              )))
-            </div>
+                  </AnimatedImage>
+                </MotionDiv>
+              ))}
+            </StaggerContainer>
           </div>
-        </section>
+        </MotionSection>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary-red to-secondary-yellow text-white">
+        <MotionSection className="py-20 bg-gradient-to-br from-primary-red to-secondary-yellow text-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="cta-content">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Besoin d'aide pour choisir?</h2>
-                <div className="w-16 h-1 bg-white mb-6"></div>
-                <p className="text-xl mb-8">
-                  Notre équipe peut vous aider à sélectionner le forfait parfait pour votre événement ou créer une solution
-                  entièrement personnalisée.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
-                    <Button className="bg-white text-primary-red px-8 py-3 text-lg font-semibold hover:bg-gray-100">
-                      Demander une soumission
-                    </Button>
-                  </Link>
-                  <Link href="tel:+1-XXX-XXX-XXXX">
-                    <Button 
-                      variant="outline" 
-                      className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 text-lg font-semibold">
-                      Appelez-nous
-                    </Button>
-                  </Link>
-                </div>
-              </div>
+              <StaggerContainer className="cta-content">
+                <MotionDiv variant="fadeUp">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Besoin d'aide pour choisir?</h2>
+                </MotionDiv>
+                
+                <RedLineSeparator className="w-16 mb-6" />
+                
+                <MotionDiv variant="fadeUp">
+                  <p className="text-xl mb-8">
+                    Notre équipe peut vous aider à sélectionner le forfait parfait pour votre événement ou créer une solution
+                    entièrement personnalisée.
+                  </p>
+                </MotionDiv>
+                
+                <MotionDiv variant="fadeUp" className="flex flex-col sm:flex-row gap-4">
+                  <AnimatedImage hoverEffect="lift">
+                    <Link href="/contact">
+                      <Button className="bg-white text-primary-red px-8 py-3 text-lg font-semibold hover:bg-gray-100">
+                        Demander une soumission
+                      </Button>
+                    </Link>
+                  </AnimatedImage>
+                  
+                  <AnimatedImage hoverEffect="lift">
+                    <Link href="tel:+1-XXX-XXX-XXXX">
+                      <Button 
+                        variant="outline" 
+                        className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 text-lg font-semibold">
+                        Appelez-nous
+                      </Button>
+                    </Link>
+                  </AnimatedImage>
+                </MotionDiv>
+              </StaggerContainer>
               
-              <div className="testimonial-card bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-                <div className="quote-icon text-4xl mb-4 text-white/80">“</div>
-                <p className="text-xl italic mb-6">Nous avons réservé Voilà Vélo Fruité pour notre journée corporative et ce fut un succès retentissant! L'équipe était professionnelle et nos employés ont adoré l'expérience.</p>
-                <div className="testimonial-author flex items-center">
-                  <div className="author-avatar w-12 h-12 bg-white/30 rounded-full mr-4"></div>
-                  <div className="author-info">
-                    <h4 className="font-bold">Marie Lemieux</h4>
-                    <p className="text-sm">Directrice RH, Entreprise XYZ</p>
+              <ScrollReveal>
+                <div className="testimonial-card bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                  <div className="quote-icon text-4xl mb-4 text-white/80">"</div>
+                  <p className="text-xl italic mb-6">Nous avons réservé Voilà Vélo Fruité pour notre journée corporative et ce fut un succès retentissant! L'équipe était professionnelle et nos employés ont adoré l'expérience.</p>
+                  <div className="testimonial-author flex items-center">
+                    <div className="author-avatar w-12 h-12 bg-white/30 rounded-full mr-4"></div>
+                    <div className="author-info">
+                      <h4 className="font-bold">Marie Lemieux</h4>
+                      <p className="text-sm">Directrice RH, Entreprise XYZ</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
-        </section>
+        </MotionSection>
       </main>
 
       <Footer />

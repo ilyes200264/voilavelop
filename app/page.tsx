@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { ValuePropositionSection } from "@/components/value-proposition-section"
+import { WhyChooseSection } from "@/components/wh_chose"
 import { BenefitsSection } from "@/components/benefits-section"
 import { PackagesSection } from "@/components/packages-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
@@ -14,6 +15,7 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <ValuePropositionSection />
+        <WhyChooseSection />
         <BenefitsSection />
         <PackagesSection />
         <TestimonialsSection />

@@ -1,60 +1,62 @@
-import React from "react";
-import {
-  Bike,
-  Building2,
-  Dumbbell,
-  GraduationCap,
-  Heart,
-  Leaf,
-  Music,
-  PartyPopper,
-  Recycle,
-  ShoppingBag,
+import { 
+  Heart, 
+  Leaf, 
+  Users, 
   Sparkles,
-  Sprout,
-  Users,
+  Bike,
+  GlassWater,
+  Theater,
+  Music,
+  Dumbbell,
+  Building,
+  ShoppingBag,
+  GraduationCap,
+  PartyPopper,
   UsersRound,
   Apple,
-  CupSoda,
-  Drumstick,
-  HandHelping,
-} from "lucide-react";
-import { NoStrawsIcon } from "@/components/icons/no-straws-icon";
+  Recycle,
+  Ban,
+  Coffee,
+  Sprout
+} from "lucide-react"
+import { NoStrawsIcon } from "@/components/icons/no-straws-icon"
 
 interface IconMapperProps {
-  iconName: string;
-  className?: string;
+  iconName: string
+  className?: string
 }
 
 export function IconMapper({ iconName, className = "h-6 w-6" }: IconMapperProps) {
-  const iconMap: Record<string, React.ReactNode> = {
-    // Sustainability
-    noStraws: <NoStrawsIcon className={className} />,
-    recycle: <Recycle className={className} />,
-    apple: <Apple className={className} />,
-    handsClapping: <HandHelping className={className} />,
-    sprout: <Sprout className={className} />,
-    
-    // Benefits
-    dumbbell: <Dumbbell className={className} />,
-    users: <Users className={className} />,
-    building: <Building2 className={className} />,
-    shoppingBag: <ShoppingBag className={className} />,
-    graduationCap: <GraduationCap className={className} />,
-    partyPopper: <PartyPopper className={className} />,
-    
-    // Package Details
-    bike: <Bike className={className} />,
-    glass: <CupSoda className={className} />,
-    theater: <Drumstick className={className} />,
-    music: <Music className={className} />,
-    
-    // About Page Values
-    heart: <Heart className={className} />,
-    leaf: <Leaf className={className} />,
-    usersRound: <UsersRound className={className} />,
-    sparkles: <Sparkles className={className} />,
-  };
+  const iconMap = {
+    heart: Heart,
+    leaf: Leaf,
+    users: Users,
+    usersRound: UsersRound,
+    sparkles: Sparkles,
+    bike: Bike,
+    glass: GlassWater,
+    theater: Theater,
+    music: Music,
+    dumbbell: Dumbbell,
+    building: Building,
+    shoppingBag: ShoppingBag,
+    graduationCap: GraduationCap,
+    partyPopper: PartyPopper,
+    apple: Apple,
+    recycle: Recycle,
+    noStraws: NoStrawsIcon,
+    sprout: Sprout,
+  }
+  const IconComponent = iconMap[iconName as keyof typeof iconMap]
 
-  return <>{iconMap[iconName] || <div className={className}>Icon not found</div>}</>;
+  if (!IconComponent) {
+    console.warn(`Icon "${iconName}" not found in iconMap`)
+    return <div className={className} />
+  }
+
+  if (iconName === 'noStraws') {
+    return <NoStrawsIcon className={className} />
+  }
+
+  return <IconComponent className={className} />
 }

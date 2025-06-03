@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Brand Colors */
+  /* Primary Brand Colors - Bike n' Blend Style */
   --primary-red: #ec634c;
   --secondary-yellow: #f0b860;
   --accent-green: #85ba5d;
@@ -12,7 +12,7 @@
 
   /* Supporting Colors */
   --dark-charcoal: #4d4d4d;
-  --light-gray: #f7f8f7;
+  --light-gray: #f6f7f7;
   --warm-white: #ffffff;
   --overlay-dark: rgba(77, 77, 77, 0.8);
   --overlay-light: rgba(247, 248, 247, 0.9);
@@ -25,12 +25,7 @@
     color: var(--dark-charcoal);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     font-weight: 600;
   }
@@ -51,6 +46,48 @@
 
   .parallax-bg {
     @apply bg-fixed bg-cover bg-center bg-no-repeat;
+  }
+
+  /* Section Title Styling */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-center;
+  }
+
+  /* Red Line Separator - Bike n' Blend Style */
+  .red-line-separator {
+    @apply h-1 bg-primary-red mx-auto block;
+    width: 4rem;
+    transition: width 0.3s ease;
+  }
+
+  .red-line-separator:hover {
+    width: 5rem;
+  }
+
+  /* Contact Red Line - Left Aligned */
+  .contactRedLine {
+    @apply h-1 bg-primary-red block;
+    width: 4rem;
+    margin: 0 auto 1.25rem 0;
+  }
+
+  /* Intro Text Styling */
+  .introText {
+    @apply text-2xl leading-tight font-light italic text-dark-charcoal;
+  }
+
+  /* Card Hover Effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  /* Rounded Corners */
+  .rounded-corners {
+    border-radius: 10px;
   }
 }
 
@@ -110,6 +147,11 @@
   .border-t-trust-blue {
     border-top-color: var(--trust-blue);
   }
+
+  /* Section Spacing */
+  .section-py {
+    @apply py-16 md:py-24;
+  }
 }
 
 /* Smooth scrolling */
@@ -129,6 +171,28 @@ html {
   }
 }
 
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes scaleIn {
   from {
     opacity: 0;
@@ -144,37 +208,19 @@ html {
   animation: fadeInUp 0.8s ease forwards;
 }
 
+.animate-fade-in-from-bottom {
+  animation: fadeInFromBottom 0.8s ease forwards;
+}
+
+.animate-reveal-from-left {
+  animation: revealFromLeft 0.8s ease forwards;
+}
+
 .animate-scale-in {
   animation: scaleIn 0.6s ease forwards;
 }
 
-/* Additional styles for package pages */
-.red-line-separator {
-  height: 4px;
-  background-color: var(--primary-red);
-  display: block;
-  transition: width 0.3s ease;
-}
-
-.red-line-separator:hover {
-  width: 80px !important;
-}
-
-.contactRedLine {
-  height: 4px;
-  background-color: var(--primary-red);
-  display: block;
-  margin: 0 0 20px 0;
-}
-
-.introText {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--dark-charcoal);
-}
-
+/* Package Cards Styling */
 .package-card {
   transition: all 0.3s ease;
 }
@@ -206,6 +252,15 @@ html {
   .footer-columns {
     grid-template-columns: 1fr;
   }
+
+  /* Mobile Typography Adjustments */
+  .section-title {
+    @apply text-2xl md:text-4xl;
+  }
+  
+  .introText {
+    @apply text-xl;
+  }
 }
 
 /* Parallax effect for supported browsers */
@@ -220,4 +275,97 @@ html {
   .parallax-bg {
     background-attachment: scroll;
   }
+}
+
+/* Additional Bike n' Blend Specific Styles */
+.bolder {
+  font-weight: 600;
+}
+
+.redFont {
+  color: var(--primary-red);
+}
+
+.introItalic {
+  color: #474747;
+  font-style: italic;
+}
+
+/* Two Column Layout Helper */
+.two-column-section {
+  @apply grid lg:grid-cols-2 gap-12 items-center;
+}
+
+/* Three Column Values Layout */
+.values-section {
+  @apply grid md:grid-cols-3 gap-8;
+}
+
+/* Content Padding */
+.content-padding {
+  @apply px-0 lg:px-12;
+}
+
+/* Color Section Backgrounds */
+.bg-section-red {
+  background-color: var(--primary-red);
+}
+
+.bg-section-blue {
+  background-color: var(--trust-blue);
+}
+
+.bg-section-yellow {
+  background-color: var(--secondary-yellow);
+}
+
+.bg-section-gray {
+  background-color: var(--light-gray);
+}
+
+/* Text Color Variations */
+.text-on-dark {
+  @apply text-white;
+}
+
+.text-on-light {
+  @apply text-dark-charcoal;
+}
+
+/* Image Styling */
+.feature-image {
+  @apply rounded-lg shadow-lg w-full;
+}
+
+/* Button Variations */
+.btn-white {
+  @apply bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-lg transition-colors;
+}
+
+.btn-outline {
+  @apply border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 text-lg font-semibold rounded-lg transition-colors;
+}
+
+/* Icon Sizing */
+.icon-large {
+  @apply text-6xl mb-6;
+}
+
+.icon-medium {
+  @apply text-4xl mb-4;
+}
+
+/* Service Areas Grid */
+.service-areas-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-8;
+}
+
+/* Footer Styling */
+.footer-section {
+  @apply py-16 bg-primary-red text-white;
+}
+
+/* Divider Styling */
+.section-divider {
+  @apply w-full h-px bg-white opacity-30 my-8;
 }

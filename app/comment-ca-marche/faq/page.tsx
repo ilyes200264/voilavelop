@@ -22,6 +22,11 @@ export default function FaqPage() {
             "Il ne faut que 30 secondes pour pédaler un smoothie, mais vous pouvez rester et continuer à rouler si vous le souhaitez! C'est très amusant et très facile pour tous les âges!",
         },
         {
+          question: "Que se passe-t-il si je veux quelque chose en plus de ce que vous proposez habituellement?",
+          answer:
+            "Nous adorons entendre des idées intéressantes! Appelez-nous ou envoyez-nous un e-mail pour discuter des détails et nous ferons de notre mieux pour répondre à votre demande.",
+        },
+        {
           question: "Quels ingrédients utilisez-vous?",
           answer:
             "Nous utilisons uniquement des fruits frais, des légumes biologiques et des ingrédients naturels. Nous pouvons accommoder les allergies alimentaires et les préférences diététiques avec un préavis.",
@@ -30,6 +35,21 @@ export default function FaqPage() {
           question: "Avez-vous besoin d'électricité?",
           answer:
             "Non! C'est la beauté de nos vélos - ils fonctionnent entièrement à l'énergie humaine. Nous apportons notre propre équipement sonore alimenté par batterie si nécessaire.",
+        },
+        {
+          question: "Voilà Vélo fonctionne-t-il mieux à l'intérieur ou à l'extérieur?",
+          answer:
+            "Voilà Vélo est parfait pour les événements en intérieur comme en extérieur. Nous nous adaptons à votre espace et à vos besoins.",
+        },
+        {
+          question: "Les clients peuvent-ils préparer leurs propres boissons?",
+          answer:
+            "Oui! Nous encourageons tous nos clients à préparer leurs propres boissons - nous pensons que c'est plus amusant et plus engageant de cette façon. Presque tout le monde peut utiliser les vélos mélangeurs - les enfants dès l'âge de quatre ans, les adolescents, les adultes et même les personnes âgées dynamiques peuvent confortablement utiliser nos formidables vélos mélangeurs. Notre personnel est également composé de cyclistes enthousiastes si vous souhaitez que nous vous donnions un coup de main (ou de jambe) à tout moment.",
+        },
+        {
+          question: "Pouvez-vous mélanger des cocktails alcoolisés lors de mariages ou de fêtes privées?",
+          answer:
+            "Oui, absolument! Nous pouvons mélanger de délicieux cocktails alcoolisés pour les mariages et les événements privés. Nous nous occupons également d'obtenir le permis d'alcool nécessaire auprès du Québec pour garantir que tout est légal et sécuritaire.",
         },
         {
           question: "Que se passe-t-il s'il pleut?",
@@ -48,19 +68,14 @@ export default function FaqPage() {
       name: "Équipement et logistique",
       faqs: [
         {
-          question: "Combien de personnes peuvent utiliser un vélo en même temps?",
-          answer:
-            "Chaque vélo peut accommoder une personne à la fois. Cependant, nous encourageons les participants à faire la queue et à encourager les autres, créant une atmosphère festive et communautaire.",
-        },
-        {
           question: "Quels vélos sont disponibles?",
           answer:
             "Nous proposons des vélos pour adultes (convenant aux personnes à partir de 10 ans) et des vélos de taille enfant (adaptés aux enfants de 5 à 10 ans). Veuillez préciser vos besoins lors de votre réservation.",
         },
         {
-          question: "Voilà Vélo fonctionne-t-il mieux à l'intérieur ou à l'extérieur?",
+          question: "Combien de personnes peuvent utiliser un vélo en même temps?",
           answer:
-            "Voilà Vélo est parfait pour les événements en intérieur comme en extérieur. Nous nous adaptons à votre espace et à vos besoins.",
+            "Chaque vélo peut accommoder une personne à la fois. Cependant, nous encourageons les participants à faire la queue et à encourager les autres, créant une atmosphère festive et communautaire.",
         },
         {
           question: "De combien d'espace avez-vous besoin pour l'installation?",
@@ -82,21 +97,6 @@ export default function FaqPage() {
           question: "Pouvez-vous personnaliser les smoothies pour notre marque?",
           answer:
             "Oui! Nous pouvons créer des recettes personnalisées, utiliser vos couleurs de marque, et même ajouter votre logo sur les vélos pour les événements corporatifs.",
-        },
-        {
-          question: "Les clients peuvent-ils préparer leurs propres boissons?",
-          answer:
-            "Oui! Nous encourageons tous nos clients à préparer leurs propres boissons - nous pensons que c'est plus amusant et plus engageant de cette façon. Presque tout le monde peut utiliser les vélos mélangeurs - les enfants dès l'âge de quatre ans, les adolescents, les adultes et même les personnes âgées dynamiques peuvent confortablement utiliser nos formidables vélos mélangeurs. Notre personnel est également composé de cyclistes enthousiastes si vous souhaitez que nous vous donnions un coup de main (ou de jambe) à tout moment.",
-        },
-        {
-          question: "Pouvez-vous mélanger des cocktails alcoolisés lors de mariages ou de fêtes privées?",
-          answer:
-            "Oui, absolument! Nous pouvons mélanger de délicieux cocktails alcoolisés pour les mariages et les événements privés. Nous nous occupons également d'obtenir le permis d'alcool nécessaire auprès du Québec pour garantir que tout est légal et sécuritaire.",
-        },
-        {
-          question: "Que se passe-t-il si je veux quelque chose en plus de ce que vous proposez habituellement?",
-          answer:
-            "Nous adorons entendre des idées intéressantes! Appelez-nous ou envoyez-nous un e-mail pour discuter des détails et nous ferons de notre mieux pour répondre à votre demande.",
         },
         {
           question: "Pouvez-vous fournir des services bilingues?",

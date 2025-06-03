@@ -1,210 +1,341 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
-import { IconMapper } from "@/components/ui/icon-mapper"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { 
+  MotionDiv, 
+  MotionSection, 
+  AnimatedImage, 
+  StaggerContainer, 
+  RedLineSeparator,
+  ScrollReveal,
+  TextReveal,
+  ImageMaskReveal
+} from "@/components/motion/motion-components"
 
 export default function AboutPage() {
   const values = [
     {
-      iconName: "heart",
-      title: "Santé & Bien-être",
-      description:
-        "Nous croyons que la santé physique et mentale est la base d'une vie épanouie. Nos événements encouragent l'activité physique tout en créant des moments de joie et de connexion sociale.",
+      icon: "👁️",
+      title: "Notre Vision",
+      description: "Nous croyons aux pratiques éthiques et durables pour un monde plus heureux et plus sain que tous peuvent apprécier."
     },
     {
-      iconName: "leaf",
-      title: "Durabilité",
-      description:
-        "Engagées envers l'environnement québécois, nous pratiquons le zéro déchet, utilisons des ingrédients locaux et compensons notre empreinte carbone par des plantations d'arbres au Québec.",
+      icon: "🎯", 
+      title: "Notre Mission",
+      description: "Être la principale entreprise d'événements pop-up à vélo du Québec afin de pouvoir soutenir et faire des dons aux organisations internationales et locales qui partagent notre vision."
     },
     {
-      iconName: "usersRound",
-      title: "Communauté",
-      description:
-        "Nous croyons au pouvoir de rassembler les gens. Nos événements créent des liens authentiques entre les participants et renforcent le tissu social de nos communautés québécoises.",
-    },
-    {
-      iconName: "sparkles",
-      title: "Autonomisation & Inclusion",
-      description:
-        "Nous créons des expériences accessibles à tous, peu importe l'âge, les capacités physiques ou le background. Chaque personne mérite de vivre la joie de pédaler pour son smoothie.",
-    },
+      icon: "⚖️",
+      title: "Notre Éthique",
+      description: "Nous plaçons la planète et nos gens avant le profit tout en offrant un service exceptionnel. Nous croyons en 'soyez le changement que vous voulez voir'."
+    }
   ]
+
+  const cities = ['Montréal', 'Québec', 'Laval', 'Ottawa']
 
   return (
     <div className="min-h-screen">
       <Header />
 
       <main className="pt-20">
-        {/* About Hero */}
-        <section className="about-hero py-16 bg-gradient-to-br from-primary-red to-secondary-yellow text-white">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="about-hero-content">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Voilà Vélo Fruité</h1>
-                <p className="text-xl leading-relaxed opacity-90">
-                  L'histoire de deux sœurs qui ont transformé leur passion pour la santé et la durabilité en expériences
-                  inoubliables à travers le Québec.
+        {/* Hero Section */}
+        <section className="py-16 bg-white overflow-hidden">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center">
+              <TextReveal>
+                <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
+                  À Propos de Nous
+                </h1>
+              </TextReveal>
+              
+              <RedLineSeparator className="mb-8" />
+              
+              <ScrollReveal delay={0.3}>
+                <p className="text-2xl italic text-gray-700 mb-8 leading-relaxed">
+                  "Nous engageons et inspirons les gens d'une manière amusante et saine!"
                 </p>
-              </div>
-
-              <div className="founders-image">
+              </ScrollReveal>
+              
+              <AnimatedImage hoverEffect="scale" className="mb-6">
                 <Image
                   src="/images/founders.jpg"
                   alt="Leen et Micha, fondatrices de Voilà Vélo Fruité"
                   width={600}
-                  height={500}
-                  className="rounded-2xl shadow-2xl"
+                  height={400}
+                  className="rounded-lg shadow-2xl mx-auto"
                 />
-              </div>
+              </AnimatedImage>
+              
+              <ScrollReveal delay={0.5}>
+                <p className="text-lg text-gray-600">Leen et Micha</p>
+              </ScrollReveal>
             </div>
           </div>
         </section>
 
-        {/* Who We Are */}
-        <section className="who-we-are py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-dark-charcoal mb-12">Qui nous sommes</h2>
-
-            <div className="founders-story grid lg:grid-cols-3 gap-12 items-start">
-              <div className="story-text lg:col-span-2 space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Voilà Vélo Fruité est née de la vision de deux sœurs québécoises, Leen et Micha, qui partageaient une
-                  passion commune pour la santé, l'environnement et la création d'expériences mémorables. Inspirées par
-                  les valeurs québécoises de convivialité et de respect de la nature, elles ont découvert les vélos
-                  smoothie lors d'un voyage en Europe et ont immédiatement vu le potentiel de cette innovation pour le
-                  marché québécois.
-                </p>
-
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Après avoir étudié le concept original de Bike n' Blend, elles ont adapté l'idée aux besoins
-                  spécifiques du Québec : événements bilingues, ingrédients locaux, résistance aux conditions
-                  climatiques variées et respect des valeurs environnementales chères aux Québécois. Leur mission était
-                  claire : créer des moments de joie tout en promouvant un mode de vie sain et durable.
-                </p>
-
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Aujourd'hui, Voilà Vélo Fruité dessert fièrement Montréal, Québec, Laval et Ottawa, apportant
-                  sourires, énergie et smoothies délicieux à des milliers d'événements chaque année. Leur engagement
-                  envers la communauté québécoise se reflète dans chaque pédalée, chaque smoothie et chaque sourire
-                  qu'elles créent.
-                </p>
-              </div>
-
-              <div className="founders-photos space-y-8">
-                <div className="founder-card text-center">
-                  <Image
-                    src="/images/team-1.jpg"
-                    alt="Leen"
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto mb-4 shadow-lg"
-                  />
-                  <h4 className="text-xl font-semibold text-dark-charcoal mb-2">Leen</h4>
-                  <p className="text-gray-600">
-                    Co-fondatrice & Directrice des Opérations. Passionnée de nutrition et d'événementiel, Leen s'assure
-                    que chaque expérience soit parfaite.
-                  </p>
-                </div>
-
-                <div className="founder-card text-center">
-                  <Image
-                    src="/images/team-2.jpg"
-                    alt="Micha"
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto mb-4 shadow-lg"
-                  />
-                  <h4 className="text-xl font-semibold text-dark-charcoal mb-2">Micha</h4>
-                  <p className="text-gray-600">
-                    Co-fondatrice & Directrice du Développement Durable. Experte en environnement, Micha guide nos
-                    initiatives écologiques et communautaires.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Mission */}
-        <section className="our-mission py-16 bg-light-gray">
+        {/* Company Section - Red Background */}
+        <MotionSection className="py-24 bg-primary-red">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="mission-text">
-                <h2 className="text-3xl font-bold text-dark-charcoal mb-6">Notre mission</h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Transformer chaque événement en une célébration de la santé, de la durabilité et de la joie de vivre
-                  québécoise. Nous croyons que les meilleurs souvenirs se créent quand les gens se rassemblent pour
-                  partager des expériences authentiques qui nourrissent le corps, l'esprit et la communauté.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Notre engagement envers le Québec va au-delà du divertissement : nous contribuons activement à la
-                  santé publique, à la protection de l'environnement et au renforcement des liens communautaires. Chaque
-                  pédalée est un geste vers un avenir plus sain et plus durable pour nos enfants et nos communautés.
-                </p>
-              </div>
-
-              <div className="mission-image">
+              <ImageMaskReveal className="rounded-lg">
                 <Image
                   src="/images/equipe-frooshy.jpg"
-                  alt="Notre mission en action"
-                  width={500}
-                  height={400}
-                  className="rounded-2xl shadow-lg"
+                  alt="Équipe Voilà Vélo Fruité"
+                  width={1200}
+                  height={940}
+                  className="rounded-lg shadow-lg w-full"
                 />
-              </div>
+              </ImageMaskReveal>
+              
+              <StaggerContainer className="text-white pl-0 lg:pl-12">
+                <MotionDiv variant="fadeUp">
+                  <h2 className="text-4xl font-bold text-black mb-4">
+                    Voilà Vélo Fruité
+                  </h2>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <h5 className="text-2xl text-secondary-yellow mb-6">
+                    Nous créons des événements innovants et durables
+                  </h5>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p className="mb-4">
+                    Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut le cyclisme, la durabilité, 
+                    la santé et le bonheur en utilisant nos vélos mélangeurs fabriqués au Québec.
+                  </p>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p className="mb-4">
+                    Nous sommes une équipe d'organisateurs d'événements passionnés qui croient aux pratiques éthiques 
+                    et durables pour créer un monde plus heureux et plus sain — un événement smoothie à la fois! 
+                    Nous utilisons des gobelets lavables ou biodégradables, compensons notre carbone, compostons 
+                    ou recyclons tous les déchets produits et faisons des dons à UNICEF.
+                  </p>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p className="mb-4">
+                    Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur 
+                    divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.
+                  </p>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p>
+                    L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. 
+                    Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.
+                  </p>
+                </MotionDiv>
+              </StaggerContainer>
             </div>
           </div>
-        </section>
+        </MotionSection>
 
-        {/* Our Values */}
-        <section className="our-values py-16 bg-white">
+        {/* Founder Section - Blue Background */}
+        <MotionSection className="py-24 bg-trust-blue">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-dark-charcoal mb-12">Nos valeurs</h2>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <StaggerContainer className="text-white order-2 lg:order-1 pr-0 lg:pr-12">
+                <MotionDiv variant="fadeUp">
+                  <h2 className="text-4xl font-bold text-black mb-4">
+                    Nos Fondatrices
+                  </h2>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <h5 className="text-2xl text-primary-red mb-6">
+                    Leen et Micha
+                  </h5>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p className="mb-6">
+                    Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. 
+                    C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent 
+                    monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, 
+                    alimentée entièrement par leur énergie! Pour en savoir plus sur la façon dont nous avons commencé 
+                    Voilà Vélo Fruité, consultez notre histoire.
+                  </p>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <AnimatedImage hoverEffect="lift">
+                    <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                      En savoir plus
+                    </Button>
+                  </AnimatedImage>
+                </MotionDiv>
+              </StaggerContainer>
+              
+              <ImageMaskReveal className="order-1 lg:order-2 rounded-lg">
+                <Image
+                  src="/images/team-1.jpg"
+                  alt="Leen et Micha - Fondatrices de Voilà Vélo Fruité"
+                  width={700}
+                  height={644}
+                  className="rounded-lg shadow-lg w-full"
+                />
+              </ImageMaskReveal>
+            </div>
+          </div>
+        </MotionSection>
 
-            <div className="values-grid grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Mission Section - White Background */}
+        <MotionSection id="notre-mission" className="py-24 bg-white">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
+                Notre Mission
+              </h2>
+            </ScrollReveal>
+
+            <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {values.map((value, index) => (
-                <div
-                  key={index}
-                  className="value-card text-center p-6 bg-light-gray rounded-2xl hover:shadow-lg transition-all duration-300"
+                <MotionDiv 
+                  key={index} 
+                  variant="fadeUp"
+                  custom={index}
+                  className="text-center"
                 >
-                  <div className="value-icon text-4xl mb-4">
-                    <IconMapper iconName={value.iconName} className="h-10 w-10 mx-auto text-primary-red" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-dark-charcoal mb-4">{value.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
-                </div>
+                  <AnimatedImage hoverEffect="rotate" className="text-6xl mb-6">
+                    <div>{value.icon}</div>
+                  </AnimatedImage>
+                  
+                  <h2 className="text-2xl font-bold text-primary-red mb-4">
+                    {value.title}
+                  </h2>
+                  
+                  <p className="text-gray-700 leading-relaxed">
+                    {value.description}
+                  </p>
+                </MotionDiv>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
-        </section>
+        </MotionSection>
 
-        {/* Partners Section */}
-        <section className="partners py-16 bg-primary-red text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">Nos partenaires de confiance</h2>
-            <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto">
-              Nous sommes fiers de collaborer avec des organisations qui partagent nos valeurs de santé, durabilité et
-              excellence au service de la communauté québécoise.
-            </p>
+        {/* "We do this by" Section - Light Gray Background */}
+        <MotionSection className="py-24 bg-light-gray">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
+                Nous le faisons en:
+              </h2>
+            </ScrollReveal>
 
-            <div className="partners-grid grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-              {/* Partner logos would go here */}
-              <div className="partner-logo bg-white/10 rounded-lg p-4 h-20 flex items-center justify-center">
-                <span className="text-sm opacity-75">Moisson Montréal</span>
-              </div>
-              <div className="partner-logo bg-white/10 rounded-lg p-4 h-20 flex items-center justify-center">
-                <span className="text-sm opacity-75">UNICEF Québec</span>
-              </div>
-              <div className="partner-logo bg-white/10 rounded-lg p-4 h-20 flex items-center justify-center">
-                <span className="text-sm opacity-75">Arbres Canada</span>
-              </div>
-              <div className="partner-logo bg-white/10 rounded-lg p-4 h-20 flex items-center justify-center">
-                <span className="text-sm opacity-75">Ville de Montréal</span>
-              </div>
-            </div>
+            <StaggerContainer className="max-w-4xl mx-auto text-center space-y-8">
+              <MotionDiv variant="fadeUp">
+                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
+                  Fournissant des activations durables professionnelles exceptionnelles;
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Rendant la santé et le bien-être faciles et amusants pour tout groupe démographique;
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Adoptant des pratiques durables et éthiques en utilisant uniquement des gobelets lavables 
+                  ou biodégradables (et en prenant position contre l'utilisation de pailles ou de couvercles), 
+                  en compostant ou recyclant presque TOUS nos déchets y compris le plastique souple, 
+                  en utilisant des compensations carbone pour neutraliser nos émissions et en faisant des dons 
+                  à UNICEF et à des organisations locales;
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
+                  Partenariat avec des entreprises qui partagent une mission similaire.
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Ainsi, nous soutenir, c'est soutenir notre merveilleuse planète.
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Nous construisons également chaque vélo mélangeur à la main au Québec.
+                </p>
+              </MotionDiv>
+            </StaggerContainer>
           </div>
-        </section>
+        </MotionSection>
+
+        {/* Partners Section - White Background */}
+        <MotionSection id="nos-partenaires" className="py-24 bg-white">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
+                Nos Partenaires
+              </h2>
+            </ScrollReveal>
+
+            <StaggerContainer className="max-w-2xl mx-auto text-center">
+              <AnimatedImage hoverEffect="scale" className="mb-12">
+                <Image
+                  src="/placeholder.svg?height=131&width=250"
+                  alt="Logo Partenaire"
+                  width={250}
+                  height={131}
+                  className="mx-auto mb-6"
+                />
+              </AnimatedImage>
+              
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                  Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos 
+                  pour engager, éduquer et divertir les enfants et les adultes.
+                </p>
+              </MotionDiv>
+              
+              <MotionDiv variant="fadeUp">
+                <AnimatedImage hoverEffect="lift">
+                  <Button className="bg-primary-red text-white hover:bg-primary-red/90 px-8 py-3 text-lg font-semibold">
+                    En savoir plus
+                  </Button>
+                </AnimatedImage>
+              </MotionDiv>
+            </StaggerContainer>
+          </div>
+        </MotionSection>
+
+        {/* Service Areas Footer Section - Red Background */}
+        <MotionSection className="py-16 bg-primary-red">
+          <div className="container mx-auto px-4">
+            <StaggerContainer className="text-center">
+              <AnimatedImage hoverEffect="scale" className="mb-16">
+                <Link href="/">
+                  <Image
+                    src="/placeholder.svg?height=240&width=275"
+                    alt="Logo Voilà Vélo Fruité"
+                    width={275}
+                    height={240}
+                    className="mx-auto"
+                  />
+                </Link>
+              </AnimatedImage>
+              
+              <StaggerContainer fast className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
+                {cities.map((city, index) => (
+                  <MotionDiv 
+                    key={city}
+                    variant="fadeUp"
+                    custom={index}
+                  >
+                    <AnimatedImage hoverEffect="bounce">
+                      <h3 className="text-3xl font-bold cursor-pointer">{city}</h3>
+                    </AnimatedImage>
+                  </MotionDiv>
+                ))}
+              </StaggerContainer>
+            </StaggerContainer>
+          </div>
+        </MotionSection>
       </main>
 
       <Footer />
