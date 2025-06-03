@@ -5,7 +5,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ChevronDown, ChevronUp, MapPin, Building, TreePine, MapFlag, Phone, ClipboardEdit, CheckSquare, PartyPopper } from "lucide-react"
+import { ChevronDown, ChevronUp, MapPin, Building, TreePine, Flag, Phone, ClipboardEdit, CheckSquare, PartyPopper } from "lucide-react"
 
 export default function HowItWorksPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -29,7 +29,7 @@ export default function HowItWorksPage() {
     {
       name: "Ottawa",
       description: "Ottawa-Gatineau (côtés Ontario et Québec)",
-      icon: <MapFlag className="h-12 w-12 text-primary-red" />,
+      icon: <Flag className="h-12 w-12 text-primary-red" />,
     },
   ]
 

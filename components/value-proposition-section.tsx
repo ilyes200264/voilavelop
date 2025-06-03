@@ -20,7 +20,7 @@ export function ValuePropositionSection() {
           <ImageMaskReveal className="value-prop-image rounded-lg">
             <div className="image-container relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/velo-smoothie-3.jpg"
                 alt="Personnes pédalant joyeusement sur les vélos smoothie Voilà Vélo"
                 width={800}
                 height={600}
