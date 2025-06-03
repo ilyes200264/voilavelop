@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronRight, Check } from "lucide-react"
+import { IconMapper } from "@/components/ui/icon-mapper"
 
 interface PackagePageProps {
   params: Promise<{ slug: string }>
@@ -22,7 +23,7 @@ export default async function PackagePage({ params }: PackagePageProps) {
       ageRange: "5-10 ans",
       duration: "1-2 heures",
       capacity: "25-50 smoothies",
-      heroImage: "/placeholder.svg?height=600&width=800",
+      heroImage: "/images/velo-smoothie-1.jpg",
       options: [
         {
           title: "Option Petite Fête",
@@ -57,22 +58,22 @@ export default async function PackagePage({ params }: PackagePageProps) {
       ],
       includes: [
         {
-          icon: "🚴‍♀️",
+          iconName: "bike",
           title: "Vélo mélangeur sécuritaire",
           description: "Vélo spécialement adapté pour les enfants de 5-10 ans avec toutes les mesures de sécurité",
         },
         {
-          icon: "🥤",
+          iconName: "glass",
           title: "Smoothies frais",
           description: "Ingrédients frais et colorés, parfaits pour les goûts des enfants",
         },
         {
-          icon: "🎭",
+          iconName: "theater",
           title: "Animation énergique",
           description: "Animateur professionnel qui engage les enfants et crée une atmosphère festive",
         },
         {
-          icon: "🎵",
+          iconName: "music",
           title: "Musique et ambiance",
           description: "Playlist adaptée aux enfants et équipement sonore professionnel",
         },
@@ -81,17 +82,17 @@ export default async function PackagePage({ params }: PackagePageProps) {
         {
           title: "Fêtes d'anniversaire",
           description: "Créez une fête d'anniversaire unique que les enfants n'oublieront jamais",
-          image: "/placeholder.svg?height=200&width=300",
+          image: "/images/gallery-1.jpg",
         },
         {
           title: "Graduations de garderie",
           description: "Célébrez cette étape importante avec une activité amusante et saine",
-          image: "/placeholder.svg?height=200&width=300",
+          image: "/images/gallery-2.jpg",
         },
         {
           title: "Festivals familiaux",
           description: "Ajoutez une attraction populaire qui plaira aux enfants et aux parents",
-          image: "/placeholder.svg?height=200&width=300",
+          image: "/images/gallery-3.jpg",
         },
       ],
     },
@@ -245,7 +246,9 @@ export default async function PackagePage({ params }: PackagePageProps) {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {currentPackage.includes.map((item, index) => (
                 <div key={index} className="include-item text-center">
-                  <div className="include-icon text-4xl mb-4">{item.icon}</div>
+                  <div className="include-icon text-4xl mb-4">
+                    <IconMapper iconName={item.iconName} className="h-10 w-10 mx-auto text-primary-red" />
+                  </div>
                   <h4 className="text-lg font-semibold text-dark-charcoal mb-3">{item.title}</h4>
                   <p className="text-gray-600">{item.description}</p>
                 </div>

@@ -1,30 +1,32 @@
+import { IconMapper } from "@/components/ui/icon-mapper";
+
 export function SustainabilitySection() {
   const sustainabilityFeatures = [
     {
-      icon: "🚫🥤",
+      iconName: "noStraws",
       title: "Pailles\nNon merci!",
       description:
         "Nous n'utilisons pas de pailles ou de couvercles lors de nos événements et encourageons nos clients à faire de même",
     },
     {
-      icon: "♻️",
+      iconName: "recycle",
       title: "Zéro\nDéchet!",
       description:
         "Nous ne contribuons pas aux décharges lors de nos événements, recyclant et compostant tous nos déchets",
     },
     {
-      icon: "🍎",
+      iconName: "apple",
       title: "Lutte contre le\ngaspillage alimentaire!",
       description: "Nous donnons tous les ingrédients restants à des organismes de bienfaisance comme Moisson Montréal",
     },
     {
-      icon: "🤝",
+      iconName: "handsClapping",
       title: "Lutte contre\nles inégalités!",
       description:
         "Nous faisons des dons à UNICEF et à des organismes locaux, aidant les enfants et les jeunes chaque jour",
     },
     {
-      icon: "🌱",
+      iconName: "sprout",
       title: "Carbone\nNeutre!",
       description:
         "Tout le carbone produit par nos véhicules et notre papier est compensé par des plantations d'arbres au Québec",
@@ -37,7 +39,7 @@ export function SustainabilitySection() {
       <div
         className="parallax-bg absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('/placeholder.svg?height=1200&width=1920')`,
+          backgroundImage: `url('/images/velo-smoothie-3.jpg')`,
         }}
       />
 
@@ -62,7 +64,9 @@ export function SustainabilitySection() {
                   animationDelay: `${index * 150}ms`,
                 }}
               >
-                <div className="feature-icon text-4xl mb-4">{feature.icon}</div>
+                <div className="feature-icon text-4xl mb-4">
+                  <IconMapper iconName={feature.iconName} className="h-10 w-10 mx-auto text-accent-green" />
+                </div>
                 <h3 className="feature-title text-lg font-bold text-dark-charcoal mb-4 whitespace-pre-line">
                   {feature.title}
                 </h3>

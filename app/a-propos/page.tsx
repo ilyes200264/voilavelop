@@ -1,29 +1,30 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
+import { IconMapper } from "@/components/ui/icon-mapper"
 
 export default function AboutPage() {
   const values = [
     {
-      icon: "💪",
+      iconName: "heart",
       title: "Santé & Bien-être",
       description:
         "Nous croyons que la santé physique et mentale est la base d'une vie épanouie. Nos événements encouragent l'activité physique tout en créant des moments de joie et de connexion sociale.",
     },
     {
-      icon: "🌱",
+      iconName: "leaf",
       title: "Durabilité",
       description:
         "Engagées envers l'environnement québécois, nous pratiquons le zéro déchet, utilisons des ingrédients locaux et compensons notre empreinte carbone par des plantations d'arbres au Québec.",
     },
     {
-      icon: "🤝",
+      iconName: "usersRound",
       title: "Communauté",
       description:
         "Nous croyons au pouvoir de rassembler les gens. Nos événements créent des liens authentiques entre les participants et renforcent le tissu social de nos communautés québécoises.",
     },
     {
-      icon: "🌈",
+      iconName: "sparkles",
       title: "Autonomisation & Inclusion",
       description:
         "Nous créons des expériences accessibles à tous, peu importe l'âge, les capacités physiques ou le background. Chaque personne mérite de vivre la joie de pédaler pour son smoothie.",
@@ -49,7 +50,7 @@ export default function AboutPage() {
 
               <div className="founders-image">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/images/founders.jpg"
                   alt="Leen et Micha, fondatrices de Voilà Vélo Fruité"
                   width={600}
                   height={500}
@@ -93,7 +94,7 @@ export default function AboutPage() {
               <div className="founders-photos space-y-8">
                 <div className="founder-card text-center">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                    src="/images/team-1.jpg"
                     alt="Leen"
                     width={200}
                     height={200}
@@ -108,7 +109,7 @@ export default function AboutPage() {
 
                 <div className="founder-card text-center">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                    src="/images/team-2.jpg"
                     alt="Micha"
                     width={200}
                     height={200}
@@ -145,7 +146,7 @@ export default function AboutPage() {
 
               <div className="mission-image">
                 <Image
-                  src="/placeholder.svg?height=400&width=500"
+                  src="/images/equipe-frooshy.jpg"
                   alt="Notre mission en action"
                   width={500}
                   height={400}
@@ -167,7 +168,9 @@ export default function AboutPage() {
                   key={index}
                   className="value-card text-center p-6 bg-light-gray rounded-2xl hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="value-icon text-4xl mb-4">{value.icon}</div>
+                  <div className="value-icon text-4xl mb-4">
+                    <IconMapper iconName={value.iconName} className="h-10 w-10 mx-auto text-primary-red" />
+                  </div>
                   <h3 className="text-xl font-semibold text-dark-charcoal mb-4">{value.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{value.description}</p>
                 </div>

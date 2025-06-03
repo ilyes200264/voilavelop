@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function PackagesSection() {
@@ -64,6 +65,84 @@ export function PackagesSection() {
       colorClass: "blue-package",
       borderColor: "border-t-trust-blue",
     },
+    {
+      id: "ready-set-blend",
+      title: "Ready, Set, Blend",
+      tagline: "Team-building avec une touche de santé et d'énergie!",
+      description: 
+        "Parfait pour les soirées d'entreprise, les événements festifs, les conférences, les défis de bien-être et les collectes de fonds amusantes!",
+      includes: [
+        "2 vélos mélangeurs pour adultes",
+        "Moniteurs de vitesse + tableau des scores en temps réel",
+        "Animateur énergique pour encourager la foule",
+        "Smoothies préparés avec votre propre énergie",
+        "Une compétition amicale avec des récompenses délicieuses",
+      ],
+      options: [
+        { label: "Option 1:", details: "100 smoothies + 2 heures de compétition" },
+        { label: "Option 2:", details: "200 smoothies + 3 heures de divertissement" },
+      ],
+      colorClass: "green-package",
+      borderColor: "border-t-accent-green",
+    },
+    {
+      id: "defi-parent-enfant",
+      title: "Défi Parent-Enfant",
+      tagline: "Un défi familial qu'ils n'oublieront pas!",
+      description:
+        "Parfait pour les écoles, les festivals, les fêtes familiales ou les événements de quartier.",
+      includes: [
+        "1 vélo pour enfant + 1 vélo pour adulte",
+        "Moniteurs de vitesse + tableau des scores en direct",
+        "Animateur dynamique & ambiance festive",
+        "Médaille pour l'équipe gagnante",
+        "Moments de complicité, rires et smoothies délicieux en un seul événement!",
+      ],
+      options: [
+        { label: "Option 1:", details: "50 smoothies + 2 heures de compétition" },
+        { label: "Option 2:", details: "100 smoothies + 3 heures d'énergie et de plaisir" },
+      ],
+      colorClass: "purple-package",
+      borderColor: "border-t-purple-500",
+    },
+    {
+      id: "la-smoothie-parade",
+      title: "La Smoothie Parade",
+      tagline: "Parfait pour les grands groupes et pour encore plus de plaisir!",
+      description:
+        "Ce forfait festif comprend 2 grands vélos mélangeurs et 1 petit (pour les enfants de 6 ans et plus), parfait pour les événements qui appellent à l'excitation, aux couleurs et à la communauté.",
+      includes: [
+        "3 vélos mélangeurs (2 grands + 1 petit)",
+        "200 smoothies aux fruits frais",
+        "Panneaux de menu",
+        "Table d'installation",
+        "Idéal pour les activations d'entreprise, festivals, événements scolaires et plus",
+      ],
+      options: [
+        { label: "Option unique:", details: "200 smoothies + 3 heures d'animation" },
+      ],
+      colorClass: "orange-package",
+      borderColor: "border-t-orange-400",
+    },
+    {
+      id: "signature",
+      title: "Forfait Signature",
+      tagline: "Ajoutez votre saveur au plaisir!",
+      description:
+        "Rendez votre événement unique avec notre forfait de marque événementielle Signature. Que ce soit un événement d'entreprise, une activation de marque ou une célébration personnelle, nous offrons des options de personnalisation pour mettre en valeur votre identité - à la manière des smoothies!",
+      includes: [
+        "Gobelets personnalisés à votre marque",
+        "Housses de roues imprimées double face",
+        "Panneaux sandwich à cadre A",
+        "Décorations de table à votre style",
+        "Parfait pour tout type d'événement, du corporatif aux fêtes privées",
+      ],
+      options: [
+        { label: "Option signature:", details: "Personnalisation complète de l'expérience" },
+      ],
+      colorClass: "yellow-package",
+      borderColor: "border-t-secondary-yellow",
+    },
   ]
 
   return (
@@ -72,11 +151,14 @@ export function PackagesSection() {
         {/* Section Header */}
         <div className="section-header text-center mb-12">
           <h2 className="section-title text-3xl md:text-4xl font-bold text-dark-charcoal">Nos forfaits favoris</h2>
+          <p className="section-subtitle text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+            Des options adaptées à tous types d'événements, personnalisables selon vos besoins
+          </p>
         </div>
 
-        {/* Packages Grid */}
+        {/* Featured Packages Grid - Show first 3 packages */}
         <div className="packages-grid grid lg:grid-cols-3 gap-8 mb-12">
-          {packages.map((pkg, index) => (
+          {packages.slice(0, 3).map((pkg, index) => (
             <div
               key={pkg.id}
               className={`package-card bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${pkg.borderColor} border-t-4`}
@@ -135,7 +217,9 @@ export function PackagesSection() {
           </p>
 
           <div className="packages-cta">
-            <Button className="btn-primary bg-primary-red text-white px-8 py-3">Voir plus de forfaits</Button>
+            <Link href="/forfaits/">
+              <Button className="btn-primary bg-primary-red text-white px-8 py-3">Voir tous nos forfaits</Button>
+            </Link>
           </div>
         </div>
       </div>

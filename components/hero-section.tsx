@@ -23,21 +23,21 @@ export function HeroSection() {
         <div
           className="hero-video absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/placeholder.svg?height=1080&width=1920')`,
+            backgroundImage: `url('/images/Packages-596-Edit.jpg')`,
           }}
         />
-        <div className="video-overlay absolute inset-0 bg-gradient-to-br from-primary-red/30 to-secondary-yellow/20" />
+        <div className="video-overlay absolute inset-0 bg-gradient-to-br from-black/30 to-primary-red/30" />
       </div>
 
       {/* Hero Content */}
       <div className="hero-content relative z-10 text-center text-white px-4">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-3xl">
           {/* City Names with Animation */}
           <div className="city-names flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
             {cities.map((city, index) => (
               <h1
                 key={city}
-                className={`city-name text-3xl md:text-5xl lg:text-6xl font-bold transition-all duration-800 ${
+                className={`city-name text-xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-xl transition-all duration-800 ${
                   animationStarted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
@@ -59,7 +59,7 @@ export function HeroSection() {
 
           {/* Main Value Proposition */}
           <p
-            className={`hero-tagline text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 transition-all duration-800 ${
+            className={`hero-tagline text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-white inline-block backdrop-blur-sm bg-black/20 px-4 py-3 rounded-lg transition-all duration-800 ${
               animationStarted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }`}
             style={{ transitionDelay: "750ms" }}
@@ -75,7 +75,7 @@ export function HeroSection() {
             }`}
             style={{ transitionDelay: "900ms" }}
           >
-            <Button size="lg" className="btn-primary text-lg px-8 py-4">
+            <Button size="lg" className="btn-primary text-base px-6 py-3 shadow-xl">
               Demander une soumission
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

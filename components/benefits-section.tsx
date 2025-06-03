@@ -1,12 +1,14 @@
+import { IconMapper } from "@/components/ui/icon-mapper";
+
 export function BenefitsSection() {
   const benefits = [
-    { icon: "💪", text: "Bien-être au travail" },
-    { icon: "🤝", text: "Consolidation d'équipe et engagement du personnel" },
-    { icon: "🏢", text: "Événements corporatifs (engagement de marque et promotion)" },
-    { icon: "🛍️", text: "Activités de centres commerciaux / Programmes de vacances scolaires" },
-    { icon: "🎓", text: "Fêtes d'école / Collectes de fonds caritatives" },
-    { icon: "🎓", text: "Journées portes ouvertes universitaires" },
-    { icon: "💒", text: "Mariages, fêtes d'anniversaire et dîners de gala" },
+    { iconName: "dumbbell", text: "Bien-être au travail" },
+    { iconName: "users", text: "Consolidation d'équipe et engagement du personnel" },
+    { iconName: "building", text: "Événements corporatifs (engagement de marque et promotion)" },
+    { iconName: "shoppingBag", text: "Activités de centres commerciaux / Programmes de vacances scolaires" },
+    { iconName: "graduationCap", text: "Fêtes d'école / Collectes de fonds caritatives" },
+    { iconName: "graduationCap", text: "Journées portes ouvertes universitaires" },
+    { iconName: "partyPopper", text: "Mariages, fêtes d'anniversaire et dîners de gala" },
   ]
 
   return (
@@ -15,7 +17,7 @@ export function BenefitsSection() {
       <div
         className="parallax-bg absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('/placeholder.svg?height=1200&width=1920')`,
+          backgroundImage: `url('/images/gallery-hero.jpg')`,
         }}
       />
 
@@ -34,7 +36,9 @@ export function BenefitsSection() {
             <ul className="benefits-list grid md:grid-cols-2 gap-4 mb-8">
               {benefits.map((benefit, index) => (
                 <li key={index} className="benefit-item flex items-start space-x-3 p-3">
-                  <span className="benefit-icon text-2xl flex-shrink-0">{benefit.icon}</span>
+                  <span className="benefit-icon text-2xl flex-shrink-0">
+                    <IconMapper iconName={benefit.iconName} className="h-6 w-6 text-primary-red" />
+                  </span>
                   <span className="benefit-text text-dark-charcoal leading-relaxed">{benefit.text}</span>
                 </li>
               ))}
