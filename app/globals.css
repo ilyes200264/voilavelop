@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Brand Colors */
+  --primary-red: #ec634c;
+  --secondary-yellow: #f0b860;
+  --accent-green: #85ba5d;
+  --trust-blue: #73bfc3;
+  --creative-purple: #c8a5f8;
+
+  /* Supporting Colors */
+  --dark-charcoal: #4d4d4d;
+  --light-gray: #f7f8f7;
+  --warm-white: #ffffff;
+  --overlay-dark: rgba(77, 77, 77, 0.8);
+  --overlay-light: rgba(247, 248, 247, 0.9);
+}
+
+@layer base {
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-charcoal);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#ec634c] text-white border-none rounded-lg px-6 py-3 font-semibold uppercase tracking-wide cursor-pointer transition-all duration-300 shadow-lg;
+  }
+
+  .btn-primary:hover {
+    @apply bg-[#d55741] transform -translate-y-1 shadow-xl;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .parallax-bg {
+    @apply bg-fixed bg-cover bg-center bg-no-repeat;
+  }
+}
+
+@layer utilities {
+  .text-primary-red {
+    color: var(--primary-red);
+  }
+
+  .text-secondary-yellow {
+    color: var(--secondary-yellow);
+  }
+
+  .text-accent-green {
+    color: var(--accent-green);
+  }
+
+  .text-trust-blue {
+    color: var(--trust-blue);
+  }
+
+  .text-dark-charcoal {
+    color: var(--dark-charcoal);
+  }
+
+  .bg-primary-red {
+    background-color: var(--primary-red);
+  }
+
+  .bg-secondary-yellow {
+    background-color: var(--secondary-yellow);
+  }
+
+  .bg-accent-green {
+    background-color: var(--accent-green);
+  }
+
+  .bg-trust-blue {
+    background-color: var(--trust-blue);
+  }
+
+  .bg-light-gray {
+    background-color: var(--light-gray);
+  }
+
+  .bg-dark-charcoal {
+    background-color: var(--dark-charcoal);
+  }
+
+  .border-t-primary-red {
+    border-top-color: var(--primary-red);
+  }
+
+  .border-t-secondary-yellow {
+    border-top-color: var(--secondary-yellow);
+  }
+
+  .border-t-trust-blue {
+    border-top-color: var(--trust-blue);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease forwards;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  .city-names {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sustainability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Parallax effect for supported browsers */
+@supports (background-attachment: fixed) {
+  .parallax-bg {
+    background-attachment: fixed;
+  }
+}
+
+/* Mobile fallback for parallax */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
