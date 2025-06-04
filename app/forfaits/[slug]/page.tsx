@@ -62,7 +62,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
               <TextReveal>
-                <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
+                <h1 className="text-5xl md:text-7xl font-normal text-dark-charcoal mb-6 font-great-vibes leading-tight tracking-wide">
                   {currentPackage.title}
                 </h1>
               </TextReveal>
@@ -109,7 +109,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
               {/* Content */}
               <StaggerContainer className="lg:col-span-2 text-white">
                 <MotionDiv variant="fadeUp">
-                  <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                  <h2 className="text-4xl md:text-5xl font-normal text-black mb-6 font-great-vibes">
                     {currentPackage.mainSection.title}
                   </h2>
                 </MotionDiv>
@@ -157,7 +157,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
               {/* Content */}
               <StaggerContainer className="lg:col-span-2 text-white order-2 lg:order-1">
                 <MotionDiv variant="fadeUp">
-                  <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                  <h2 className="text-4xl md:text-5xl font-normal text-black mb-6 font-great-vibes">
                     {currentPackage.targetSection.title}
                   </h2>
                 </MotionDiv>
@@ -217,7 +217,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
         >
           <div className="container mx-auto px-4">
             <TextReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
+              <h2 className="text-4xl md:text-5xl font-normal text-black mb-8 font-great-vibes">
                 {currentPackage.demoSection.title}
               </h2>
             </TextReveal>
@@ -248,7 +248,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
         >
           <div className="container mx-auto px-4">
             <TextReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              <h2 className="text-4xl md:text-5xl font-normal text-black mb-4 font-great-vibes">
                 {currentPackage.reviewsSection.title}
               </h2>
             </TextReveal>
@@ -380,7 +380,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
         <MotionSection className="py-20 bg-white text-center">
           <div className="container mx-auto px-4 max-w-4xl">
             <TextReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-secondary-yellow mb-8">
+              <h2 className="text-4xl md:text-5xl font-normal text-secondary-yellow mb-8 font-great-vibes">
                 {currentPackage.customizationSection.title}
               </h2>
             </TextReveal>
