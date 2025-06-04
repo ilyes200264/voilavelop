@@ -12,7 +12,7 @@ export default function HowItWorksPage() {
   const { t } = useI18n()
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  const cities = t<any[]>('serviceAreas.cities')
+  const cities = t<any[]>('serviceAreas.cities', [])
   const cityIcons = [
     <MapPin className="h-12 w-12 text-primary-red" />,
     <Building className="h-12 w-12 text-primary-red" />,
@@ -20,12 +20,12 @@ export default function HowItWorksPage() {
     <Flag className="h-12 w-12 text-primary-red" />
   ]
   
-  const serviceCities = cities.map((city, index) => ({
+  const serviceCities = (cities || []).map((city, index) => ({
     ...city,
     icon: cityIcons[index]
   }))
 
-  const steps = t<any[]>('bookingProcess.steps')
+  const steps = t<any[]>('bookingProcess.steps', [])
   const stepIcons = [
     <Phone className="h-12 w-12 text-primary-red" />,
     <ClipboardEdit className="h-12 w-12 text-primary-red" />,
@@ -33,12 +33,12 @@ export default function HowItWorksPage() {
     <PartyPopper className="h-12 w-12 text-primary-red" />
   ]
   
-  const processSteps = steps.map((step, index) => ({
+  const processSteps = (steps || []).map((step, index) => ({
     ...step,
     icon: stepIcons[index]
   }))
 
-  const faqItems = t<any[]>('faq.items')
+  const faqItems = t<any[]>('faq.items', [])
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -72,7 +72,7 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="service-cities grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {serviceCities.map((city, index) => (
+              {(serviceCities || []).map((city, index) => (
                 <div
                   key={index}
                   className="city-card text-center p-8 bg-light-gray rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
@@ -99,7 +99,7 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="process-steps grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-              {processSteps.map((step, index) => (
+              {(processSteps || []).map((step, index) => (
                 <div key={index} className="step text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative animate-fade-in-up" style={{animationDuration: '0.7s', animationDelay: `${0.4 + index * 0.2}s`, animationFillMode: 'both'}}>
                   <div className="step-number absolute -top-6 left-1/2 transform -translate-x-1/2 bg-primary-red text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-white">
                     {step.number}
@@ -131,7 +131,7 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="faq-list max-w-4xl mx-auto bg-light-gray p-8 rounded-2xl shadow-lg">
-              {faqItems.map((item, index) => (
+              {(faqItems || []).map((item, index) => (
                 <div key={index} className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: `${0.2 + index * 0.1}s`, animationFillMode: 'both'}}>
                   <button
                     className="faq-question w-full text-left py-6 px-4 flex justify-between items-center hover:text-primary-red transition-colors"
