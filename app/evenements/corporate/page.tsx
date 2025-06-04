@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 "use client";
 
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Check, Users, Award, Smile, ArrowRight, Building, Heart, TrendingUp, Coffee, Star } from "lucide-react"

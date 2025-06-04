@@ -1,6 +1,5 @@
 "use client"
 
-import { Metadata } from "next"
 import { H1, H2, P, PoppinsText } from "@/components/ui/typography"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -14,15 +13,6 @@ import { CalendarIcon } from "lucide-react"
 import { format } from "date-fns"
 import { fr, enUS } from "date-fns/locale"
 import { useI18n } from "@/lib/i18n"
-
-export const generateMetadata = (): Metadata => {
-  // Note: This is client component but we can still use static metadata
-  // If we need dynamic metadata based on language, we need to use a Server Component
-  return {
-    title: "Réserver - Voilà Vélo",
-    description: "Réservez un forfait vélo smoothie pour votre prochain événement",
-  }
-}
 
 export default function BookingPage() {
   const { t, language } = useI18n();
