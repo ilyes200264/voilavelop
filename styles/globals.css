@@ -6,6 +6,31 @@ body {
   font-family: var(--font-open-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Package card background colors with opacity */
+.package-card.border-t-primary-red {
+  background-color: rgba(236, 99, 76, 0.05);
+}
+
+.package-card.border-t-secondary-yellow {
+  background-color: rgba(240, 184, 96, 0.05);
+}
+
+.package-card.border-t-trust-blue {
+  background-color: rgba(115, 191, 195, 0.05);
+}
+
+.package-card.border-t-accent-green {
+  background-color: rgba(133, 186, 93, 0.05);
+}
+
+.package-card.border-t-purple-500 {
+  background-color: rgba(200, 165, 248, 0.05);
+}
+
+.package-card.border-t-orange-400 {
+  background-color: rgba(251, 146, 60, 0.05);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

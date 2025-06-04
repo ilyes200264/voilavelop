@@ -36,26 +36,23 @@ export function ValuePropositionSection() {
           <StaggerContainer className="value-prop-text space-y-6">
             <MotionDiv variant="fadeUp">
               <h2 className="section-title text-4xl md:text-5xl font-bold leading-tight">
-                {t('valueProposition.title')}
+                {t('home.valueProposition.title')}
               </h2>
             </MotionDiv>
 
             <MotionDiv variant="fadeUp">
               <h5 className="section-subtitle text-xl md:text-2xl text-secondary-yellow font-medium">
-                {t('valueProposition.subtitle')}
+                {t('home.valueProposition.subtitle')}
               </h5>
             </MotionDiv>
 
             <MotionDiv variant="fadeUp" className="section-content space-y-4">
               <p className="intro-paragraph text-lg leading-relaxed">
-                Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut la santé et le bien-être en
-                utilisant nos vélos mélangeurs fabriqués au Québec.
+                {t('home.valueProposition.description1')}
               </p>
 
               <p className="detail-paragraph text-base leading-relaxed opacity-90">
-                Faites de votre prochain événement un succès amusant et sain! Nous avons de l'expérience dans
-                l'organisation d'événements pop-up uniques pour répondre à vos besoins. Choisissez l'un de nos forfaits
-                populaires ou contactez-nous pour une soumission avant qu'on soit tous pédalés!
+                {t('home.valueProposition.description2')}
               </p>
             </MotionDiv>
 
@@ -63,7 +60,7 @@ export function ValuePropositionSection() {
               <div className="section-cta pt-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button variant="outline" size="lg" className="bg-white text-primary-red border-white hover:bg-gray-100">
-                    {t('hero.ctaButton')}
+                    {t('home.valueProposition.ctaButton')}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>

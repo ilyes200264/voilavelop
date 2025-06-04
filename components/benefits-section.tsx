@@ -1,6 +1,7 @@
 "use client"
 
 import { IconMapper } from "@/components/ui/icon-mapper";
+import { useI18n } from "@/lib/i18n";
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -12,14 +13,15 @@ import {
 } from "@/components/motion/motion-components"
 
 export function BenefitsSection() {
+  const { t } = useI18n();
   const benefits = [
-    { iconName: "dumbbell", text: "Bien-être au travail" },
-    { iconName: "users", text: "Consolidation d'équipe et engagement du personnel" },
-    { iconName: "building", text: "Événements corporatifs (engagement de marque et promotion)" },
-    { iconName: "shoppingBag", text: "Activités de centres commerciaux / Programmes de vacances scolaires" },
-    { iconName: "graduationCap", text: "Fêtes d'école / Collectes de fonds caritatives" },
-    { iconName: "graduationCap", text: "Journées portes ouvertes universitaires" },
-    { iconName: "partyPopper", text: "Mariages, fêtes d'anniversaire et dîners de gala" },
+    { iconName: "dumbbell", text: t('home.benefits.items.wellness') },
+    { iconName: "users", text: t('home.benefits.items.teamBuilding') },
+    { iconName: "building", text: t('home.benefits.items.corporate') },
+    { iconName: "shoppingBag", text: t('home.benefits.items.malls') },
+    { iconName: "graduationCap", text: t('home.benefits.items.schools') },
+    { iconName: "graduationCap", text: t('home.benefits.items.openDays') },
+    { iconName: "partyPopper", text: t('home.benefits.items.weddings') },
   ]
 
   return (
@@ -28,7 +30,7 @@ export function BenefitsSection() {
       <div
         className="parallax-bg absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('/images/gallery-hero.jpg')`,
+          backgroundImage: `url('/images/Signature package2.jpg')`,
         }}
       />
 
@@ -41,14 +43,14 @@ export function BenefitsSection() {
             <div className="benefits-content-box max-w-4xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl">
               <TextReveal>
                 <h2 className="benefits-title text-3xl md:text-4xl font-bold text-center text-dark-charcoal mb-4">
-                  Reconnectez-vous de façon amusante et saine.
+                  {t('home.benefits.title')}
                 </h2>
               </TextReveal>
 
               <RedLineSeparator className="w-24 mx-auto mb-4" />
 
               <ScrollReveal delay={0.3}>
-                <h5 className="benefits-subtitle text-xl font-semibold text-center text-primary-red mb-8">Parfait pour:</h5>
+                <h5 className="benefits-subtitle text-xl font-semibold text-center text-primary-red mb-8">{t('home.benefits.perfectFor')}</h5>
               </ScrollReveal>
 
               <StaggerContainer className="mb-8">
@@ -69,16 +71,16 @@ export function BenefitsSection() {
               <StaggerContainer className="benefits-footer text-center space-y-6">
                 <MotionDiv variant="fadeUp">
                   <p className="benefits-question text-lg text-dark-charcoal">
-                    Vous avez autre chose en tête?
+                    {t('home.benefits.question')}
                     <br />
-                    <span className="font-semibold">Contactez-nous pour votre idée d'événement!</span>
+                    <span className="font-semibold">{t('home.benefits.contactUs')}</span>
                   </p>
                 </MotionDiv>
 
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
                     <button className="btn-primary bg-primary-red text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                      En savoir plus
+                      {t('home.benefits.learnMore')}
                     </button>
                   </AnimatedImage>
                 </MotionDiv>

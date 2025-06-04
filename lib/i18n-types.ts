@@ -7,6 +7,6 @@ export type TranslationsType = {
 export type I18nContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: <T = string>(key: string) => T;
+  t: <T = string>(key: string, fallback?: any) => T;
   translations: TranslationsType;
 };

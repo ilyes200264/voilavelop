@@ -99,56 +99,56 @@ export function Header() {
   }
 
   const getNavItems = () => [
-    { name: t('navigation.home'), href: "/", hasSubmenu: false },
+    { name: t('common.navigation.home'), href: "/", hasSubmenu: false },
     { 
-      name: t('navigation.about'), 
+      name: t('common.navigation.about'), 
       href: "/a-propos/", 
       hasSubmenu: true,
       submenuId: "about",
       submenu: [
-        { name: t('about_submenu.whoWeAre'), href: "/a-propos/#qui-nous-sommes" },
-        { name: t('about_submenu.ourMission'), href: "/a-propos/#notre-mission" },
-        { name: t('about_submenu.ourValues'), href: "/a-propos/#nos-valeurs" }
+        { name: t('common.about_submenu.whoWeAre'), href: "/a-propos/#qui-nous-sommes" },
+        { name: t('common.about_submenu.ourMission'), href: "/a-propos/#notre-mission" },
+        { name: t('common.about_submenu.ourValues'), href: "/a-propos/#nos-valeurs" }
       ]
     },
     { 
-      name: t('navigation.packages'), 
+      name: t('common.navigation.packages'), 
       href: "/forfaits/", 
       hasSubmenu: true,
       submenuId: "packages",
       submenu: [
-        { name: t('packages_submenu.laPetiteKoki'), href: "/forfaits/la-petite-koki" },
-        { name: t('packages_submenu.popSolo'), href: "/forfaits/pop-solo" },
-        { name: t('packages_submenu.doubleFun'), href: "/forfaits/double-fun" },
-        { name: t('packages_submenu.readySetBlend'), href: "/forfaits/ready-set-blend" },
-        { name: t('packages_submenu.parentChildChallenge'), href: "/forfaits/defi-parent-enfant" },
-        { name: t('packages_submenu.smoothieParade'), href: "/forfaits/la-smoothie-parade" },
-        { name: t('packages_submenu.signature'), href: "/forfaits/signature" }
+        { name: t('common.packages_submenu.laPetiteKoki'), href: "/forfaits/la-petite-koki" },
+        { name: t('common.packages_submenu.popSolo'), href: "/forfaits/pop-solo" },
+        { name: t('common.packages_submenu.doubleFun'), href: "/forfaits/double-fun" },
+        { name: t('common.packages_submenu.readySetBlend'), href: "/forfaits/ready-set-blend" },
+        { name: t('common.packages_submenu.parentChildChallenge'), href: "/forfaits/defi-parent-enfant" },
+        { name: t('common.packages_submenu.smoothieParade'), href: "/forfaits/la-smoothie-parade" },
+        { name: t('common.packages_submenu.signature'), href: "/forfaits/signature" }
       ]
     },
     { 
-      name: t('navigation.events'), 
+      name: t('common.navigation.events'), 
       href: "/evenements/", 
       hasSubmenu: true,
       submenuId: "events",
       submenu: [
-        { name: t('events_submenu.corporate'), href: "/evenements/corporate" },
-        { name: t('events_submenu.openingsActivations'), href: "/evenements/ouvertures-et-activations" },
-        { name: t('events_submenu.schoolsOrganizationsAnniversaries'), href: "/evenements/ecoles-organismes-et-anniversaires" },
-        { name: t('events_submenu.conferencesExhibitions'), href: "/evenements/conferences-et-expositions" }
+        { name: t('common.events_submenu.corporate'), href: "/evenements/corporate" },
+        { name: t('common.events_submenu.openingsActivations'), href: "/evenements/ouvertures-et-activations" },
+        { name: t('common.events_submenu.schoolsOrganizationsAnniversaries'), href: "/evenements/ecoles-organismes-et-anniversaires" },
+        { name: t('common.events_submenu.conferencesExhibitions'), href: "/evenements/conferences-et-expositions" }
       ]
     },
     { 
-      name: t('navigation.howItWorks'), 
+      name: t('common.navigation.howItWorks'), 
       href: "/comment-ca-marche/", 
       hasSubmenu: true,
       submenuId: "how",
       submenu: [
-        { name: t('howItWorks_submenu.createYourEvent'), href: "/comment-ca-marche/build-your-event" },
-        { name: t('howItWorks_submenu.faq'), href: "/comment-ca-marche/faq" }
+        { name: t('common.howItWorks_submenu.createYourEvent'), href: "/comment-ca-marche/build-your-event" },
+        { name: t('common.howItWorks_submenu.faq'), href: "/comment-ca-marche/faq" }
       ]
     },
-    { name: t('navigation.contact'), href: "/contact/", hasSubmenu: false }
+    { name: t('common.navigation.contact'), href: "/contact/", hasSubmenu: false }
   ]
   
   const navItems = getNavItems()
@@ -174,7 +174,6 @@ export function Header() {
                 </div>
                 <div className="hidden md:block">
                   <h1 className="text-xl font-bold text-dark-charcoal">Voilà Vélo Fruité</h1>
-                  <p className="text-sm text-gray-600">Montréal | Québec | Laval | Ottawa</p>
                 </div>
               </div>
             </Link>
@@ -227,7 +226,7 @@ export function Header() {
             <LanguageSwitcher className="hidden md:flex" />
 
             <Button className="btn-primary hidden md:inline-flex" asChild>
-              <Link href="/reserver">{t('navigation.book')}</Link>
+              <Link href="/reserver">{t('common.navigation.book')}</Link>
             </Button>
 
             {/* Mobile Menu Toggle */}
@@ -305,7 +304,7 @@ export function Header() {
                 ))}
                 <motion.li className="pt-4 border-t border-gray-200" variants={navItemVariants}>
                   <Button className="btn-primary w-full" asChild>
-                    <Link href="/reserver">{t('navigation.book')}</Link>
+                    <Link href="/reserver">{t('common.navigation.book')}</Link>
                   </Button>
                 </motion.li>
               </ul>

@@ -2,6 +2,7 @@
 
 import React, { createContext, useState, useEffect, ReactNode, useContext } from 'react';
 import { I18nContextType, Language, TranslationsType } from './i18n-types';
+import { findTranslationInAllNamespaces, getNestedTranslation, logMissingTranslation } from './i18n-utils';
 
 const defaultTranslations: { [key in Language]: TranslationsType } = {
   en: {},
@@ -34,7 +35,16 @@ export const I18nProvider = ({
     translations[initialLanguage] || {}
   );
 
+  // Debug logging to check translations
+  console.log('I18nProvider initialized with:', { 
+    initialLanguage, 
+    translationsAvailable: Object.keys(translations),
+    hasCurrentLanguage: !!translations[initialLanguage],
+    translationKeys: translations[initialLanguage] ? Object.keys(translations[initialLanguage]) : []
+  });
+
   useEffect(() => {
+    console.log('Language changed to:', language, 'Available translations:', translations[language] ? Object.keys(translations[language]).length : 0);
     setCurrentTranslations(translations[language] || {});
     document.documentElement.lang = language;
     
@@ -54,21 +64,48 @@ export const I18nProvider = ({
     }
   }, []);
 
-  const t = <T = string>(key: string): T => {
-    // Handle nested keys (e.g., 'navigation.home')
-    const keys = key.split('.');
-    let result: any = currentTranslations;
-    
-    for (const k of keys) {
-      if (result && typeof result === 'object' && k in result) {
-        result = result[k];
+  const t = <T = string>(key: string, fallback: any = undefined): T => {
+    // First check if the key contains a namespace separator
+    if (key.includes(':')) {
+      // Format: 'namespace:path.to.key'
+      const [namespace, path] = key.split(':', 2);
+      if (currentTranslations[namespace]) {
+        const result = getNestedTranslation(currentTranslations[namespace], path);
+        if (result !== undefined) {
+          return result as T;
+        }
+        if (fallback !== undefined) {
+          return fallback as T;
+        }
+        logMissingTranslation(path, currentTranslations, namespace);
       } else {
-        console.warn(`Translation key not found: ${key}`);
-        return key as unknown as T; // Fallback to the key itself if translation not found
+        if (fallback !== undefined) {
+          return fallback as T;
+        }
+        logMissingTranslation(key, currentTranslations);
       }
+      return key as unknown as T;
     }
     
-    return result as T;
+    // Standard format: either 'namespace.path.to.key' or just 'path.to.key'
+    const result = findTranslationInAllNamespaces(currentTranslations, key);
+    if (result !== undefined) {
+      return result as T;
+    }
+    
+    // Use fallback if provided
+    if (fallback !== undefined) {
+      return fallback as T;
+    }
+    
+    // Add visual indicator for missing translations in development
+    if (process.env.NODE_ENV === 'development') {
+      logMissingTranslation(key, currentTranslations);
+      return (`[MISSING: ${key}]`) as unknown as T;
+    }
+    
+    // In production, just return the key as fallback
+    return key as unknown as T;
   };
 
   return (

@@ -33,16 +33,10 @@ export function HeroSection() {
         <div className="container mx-auto max-w-3xl">
           {/* City Names with Animation */}
           <StaggerContainer fast className="city-names flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
-            {cities.map((city, index) => (
-              <MotionDiv
-                key={city}
-                variant="fadeDown"
-                custom={index}
-                className="city-name text-xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-xl"
-              >
-                {city}
-              </MotionDiv>
-            ))}
+            <h1 className="hero-title text-3xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-xl mb-4">
+              {t('home.hero.title')}
+            </h1>
+            
           </StaggerContainer>
 
           {/* Red Accent Line */}
@@ -51,14 +45,14 @@ export function HeroSection() {
           {/* Main Value Proposition */}
           <TextReveal delay={0.5}>
             <p className="hero-tagline text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-white inline-block backdrop-blur-sm bg-black/20 px-4 py-3 rounded-lg">
-              {t('hero.subtitle')}
+              {t('home.hero.subtitle')}
             </p>
           </TextReveal>
 
           {/* Primary CTA */}
-          <AnimatedImage hoverEffect="lift" delay={0.6}>
+          <AnimatedImage hoverEffect="lift">
             <Button size="lg" className="btn-primary text-base px-6 py-3 shadow-xl">
-              {t('hero.ctaButton')}
+              {t('home.hero.ctaButton')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </AnimatedImage>

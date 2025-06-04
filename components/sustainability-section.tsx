@@ -1,35 +1,35 @@
+"use client"
+
 import { IconMapper } from "@/components/ui/icon-mapper";
+import { useI18n } from "@/lib/i18n";
 
 export function SustainabilitySection() {
+  const { t } = useI18n();
   const sustainabilityFeatures = [
     {
       iconName: "noStraws",
-      title: "Pailles\nNon merci!",
-      description:
-        "Nous n'utilisons pas de pailles ou de couvercles lors de nos événements et encourageons nos clients à faire de même",
+      title: t('home.sustainability.items.noStraws.title'),
+      description: t('home.sustainability.items.noStraws.description')
     },
     {
       iconName: "recycle",
-      title: "Zéro\nDéchet!",
-      description:
-        "Nous ne contribuons pas aux décharges lors de nos événements, recyclant et compostant tous nos déchets",
+      title: t('home.sustainability.items.zeroWaste.title'),
+      description: t('home.sustainability.items.zeroWaste.description')
     },
     {
       iconName: "apple",
-      title: "Lutte contre le\ngaspillage alimentaire!",
-      description: "Nous donnons tous les ingrédients restants à des organismes de bienfaisance comme Moisson Montréal",
+      title: t('home.sustainability.items.foodWaste.title'),
+      description: t('home.sustainability.items.foodWaste.description')
     },
     {
-      iconName: "handsClapping",
-      title: "Lutte contre\nles inégalités!",
-      description:
-        "Nous faisons des dons à UNICEF et à des organismes locaux, aidant les enfants et les jeunes chaque jour",
+      iconName: "heart",
+      title: t('home.sustainability.items.equality.title'),
+      description: t('home.sustainability.items.equality.description')
     },
     {
       iconName: "sprout",
-      title: "Carbone\nNeutre!",
-      description:
-        "Tout le carbone produit par nos véhicules et notre papier est compensé par des plantations d'arbres au Québec",
+      title: t('home.sustainability.items.carbon.title'),
+      description: t('home.sustainability.items.carbon.description')
     },
   ]
 
@@ -50,7 +50,7 @@ export function SustainabilitySection() {
           {/* Section Header */}
           <div className="section-header text-center mb-16">
             <h2 className="section-title text-3xl md:text-4xl font-bold text-white">
-              Nous intégrons la durabilité dans tout ce que nous faisons!!
+              {t('home.sustainability.title')}
             </h2>
           </div>
 

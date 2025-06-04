@@ -25,34 +25,43 @@ import reservationFr from '@/locales/fr/reservation.json';
 
 type Language = 'en' | 'fr';
 
+// Log all translation files to check their content
+console.log('Loading translations:', {
+  commonEn: Object.keys(commonEn || {}).length,
+  commonFr: Object.keys(commonFr || {}).length,
+  homeEn: Object.keys(homeEn || {}).length,
+  homeFr: Object.keys(homeFr || {}).length,
+});
+
+// Structured translations with namespaces instead of flattening
 const translations = {
   en: {
-    ...commonEn,
-    ...homeEn,
-    ...packagesEn,
-    ...aboutEn,
-    ...howItWorksEn,
-    ...faqEn,
-    ...buildYourEventEn,
-    ...contactEn,
-    ...eventsEn,
-    ...corporateEventsEn,
-    ...thankYouEn,
-    ...reservationEn,
+    common: commonEn,
+    home: homeEn,
+    packages: packagesEn,
+    about: aboutEn,
+    howItWorks: howItWorksEn,
+    faq: faqEn,
+    buildYourEvent: buildYourEventEn,
+    contact: contactEn,
+    events: eventsEn,
+    corporateEvents: corporateEventsEn,
+    thankYou: thankYouEn,
+    reservation: reservationEn,
   },
   fr: {
-    ...commonFr,
-    ...homeFr,
-    ...packagesFr,
-    ...aboutFr,
-    ...howItWorksFr,
-    ...faqFr,
-    ...buildYourEventFr,
-    ...contactFr,
-    ...eventsFr,
-    ...corporateEventsFr,
-    ...thankYouFr,
-    ...reservationFr,
+    common: commonFr,
+    home: homeFr,
+    packages: packagesFr,
+    about: aboutFr,
+    howItWorks: howItWorksFr,
+    faq: faqFr,
+    buildYourEvent: buildYourEventFr,
+    contact: contactFr,
+    events: eventsFr,
+    corporateEvents: corporateEventsFr,
+    thankYou: thankYouFr,
+    reservation: reservationFr,
   },
 };
 

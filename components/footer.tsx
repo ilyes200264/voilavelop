@@ -38,7 +38,7 @@ export function Footer() {
           <div className="footer-columns grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Column 1: Contact Information */}
             <div className="footer-column contact-column lg:col-span-2">
-              <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">{t('footer.contact')}</h3>
+              <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">{t('common.footer.contact')}</h3>
               <div className="contact-info space-y-4">
                 <div className="contact-item address flex items-start space-x-3">
                   <div className="contact-icon text-lg">📍</div>
@@ -86,7 +86,7 @@ export function Footer() {
             <div className="footer-column packages-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
                 <Link href="/forfaits/" className="hover:underline">
-                  {t('navigation.packages')}
+                  {t('common.navigation.packages')}
                 </Link>
               </h3>
               <ul className="footer-menu space-y-2">
@@ -132,23 +132,23 @@ export function Footer() {
             <div className="footer-column about-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
                 <Link href="/a-propos/" className="hover:underline">
-                  {t('navigation.about')}
+                  {t('common.navigation.about')}
                 </Link>
               </h3>
               <ul className="footer-menu space-y-2">
                 <li>
                   <Link href="/a-propos/#nos-partenaires" className="hover:text-secondary-yellow transition-colors">
-                    Nos Partenaires
+                    {t('common.footer.ourPartners')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/a-propos/#notre-mission" className="hover:text-secondary-yellow transition-colors">
-                    Notre Mission
+                    {t('common.footer.ourMission')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/blogue/" className="hover:text-secondary-yellow transition-colors">
-                    Notre Blogue
+                    {t('common.footer.ourBlog')}
                   </Link>
                 </li>
               </ul>
@@ -157,35 +157,35 @@ export function Footer() {
             {/* Column 4: Connect */}
             <div className="footer-column connect-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
-                {t('footer.connectWithUs')}
+                {t('common.footer.connectWithUs')}
               </h3>
 
               {/* Newsletter Signup */}
               <div className="newsletter-signup mb-6">
                 <p className="newsletter-intro text-sm mb-4">
-                  {t('footer.newsletterIntro')}
+                  {t('common.footer.newsletterIntro')}
                 </p>
 
                 <form className="newsletter-form space-y-3">
                   <Input
                     type="text"
-                    placeholder={t('footer.name')}
+                    placeholder={t('common.footer.name')}
                     className="newsletter-input bg-transparent border-white text-white placeholder:text-white/70"
                   />
                   <Input
                     type="email"
-                    placeholder={t('footer.email')}
+                    placeholder={t('common.footer.email')}
                     className="newsletter-input bg-transparent border-white text-white placeholder:text-white/70"
                   />
                   <Button className="newsletter-submit w-full bg-white text-primary-red hover:bg-secondary-yellow hover:text-dark-charcoal">
-                    {t('footer.subscribe')}
+                    {t('common.footer.subscribe')}
                   </Button>
                 </form>
               </div>
 
               {/* Social Media Links */}
               <div className="social-media">
-                <h4 className="social-title font-semibold mb-3">{t('footer.followUs')}</h4>
+                <h4 className="social-title font-semibold mb-3">{t('common.footer.followUs')}</h4>
                 <div className="social-links flex space-x-3">
                   <Link
                     href="#"
@@ -241,8 +241,7 @@ export function Footer() {
               </div>
               <div className="acknowledgment-text text-center md:text-left">
                 <p className="text-sm text-gray-300">
-                  Nous reconnaissons les peuples autochtones, gardiens traditionnels de cette terre. Voix. Traité.
-                  Vérité.
+                  {t('common.footer.indigenousAcknowledgment')}
                 </p>
               </div>
             </div>
@@ -250,10 +249,7 @@ export function Footer() {
             {/* Copyright */}
             <div className="copyright">
               <p className="text-sm text-gray-300">
-                © Copyright 2025{" "}
-                <Link href="/" className="hover:text-white transition-colors">
-                  Voilà Vélo Fruité
-                </Link>
+                {t('common.footer.copyright')}
               </p>
             </div>
           </div>

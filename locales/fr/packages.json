@@ -6,6 +6,8 @@
     "details": "Voir les détails"
   },
   "packages": {
+    "includes": "Le forfait inclut:",
+    "details": "Voir les détails",
     "laPetiteKoki": {
       "title": "La petite Koki",
       "description": "Idéal pour les petits événements jusqu'à 50 personnes",
@@ -89,6 +91,7 @@
     "signature": {
       "title": "Forfait Signature",
       "description": "L'expérience complète, entièrement personnalisée",
+      "customPrice": "Personnalisation sur mesure",
       "details": [
         "Nombre de vélos selon vos besoins",
         "Smoothies illimités",

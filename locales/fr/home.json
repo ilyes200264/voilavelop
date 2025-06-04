@@ -1,24 +1,28 @@
 {
   "hero": {
-    "title": "Des smoothies frais et sains, produits à la force des jambes!",
-    "subtitle": "Ajoutez une touche d'originalité et d'énergie à votre prochain événement",
-    "ctaButton": "RÉSERVER"
+    "title": "Voilà Vélo",
+    "subtitle": "Service de smoothies pour vos événements corporatifs et privés au Québec",
+    "ctaButton": "Réserver maintenant"
   },
   "valueProposition": {
     "title": "Transformez votre événement avec nos vélos à smoothies",
-    "subtitle": "Une expérience unique, mémorable et écologique"
+    "subtitle": "Une expérience unique, mémorable et écologique",
+    "description1": "Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut la santé et le bien-être en utilisant nos vélos mélangeurs fabriqués au Québec.",
+    "description2": "Faites de votre prochain événement un succès amusant et sain! Nous avons de l'expérience dans l'organisation d'événements pop-up uniques pour répondre à vos besoins. Choisissez l'un de nos forfaits populaires ou contactez-nous pour une soumission avant qu'on soit tous pédalés!",
+    "ctaButton": "EN SAVOIR PLUS"
   },
   "whyChoose": {
     "title": "Pourquoi choisir Voilà Vélo?",
     "subtitle": "Des smoothies délicieux et une expérience inoubliable",
+    "description": "Chez Voilà Vélo, nous croyons que l'apprentissage, le mouvement et le plaisir peuvent aller de pair. Notre atelier Smoothie Vélo est plus qu'une simple activité — c'est une expérience qui inspire des habitudes saines, un smoothie alimenté par pédalage à la fois.",
     "reasons": {
       "fun": {
         "title": "Amusant & Interactif",
         "description": "Créez une ambiance festive avec nos vélos à smoothies. Vos invités s'amuseront à pédaler pour mixer leurs propres boissons."
       },
       "healthy": {
-        "title": "Sain & Délicieux",
-        "description": "Nos smoothies sont préparés avec des ingrédients frais et naturels, sans sucre ajouté ni conservateurs."
+        "title": "Sain, savoureux et joyeux",
+        "description": "Nos smoothies sont faits sur place avec des ingrédients frais et colorés et une grande dose de plaisir — combinant nutrition et mouvement pour tous les âges."
       },
       "sustainable": {
         "title": "Éco-responsable",
@@ -27,12 +31,36 @@
       "unique": {
         "title": "Unique & Mémorable",
         "description": "Offrez une expérience originale qui se démarquera et dont vos invités se souviendront longtemps."
+      },
+      "ecoFriendly": {
+        "title": "Écologique et sans énergie",
+        "description": "Aucune électricité nécessaire! Les smoothies sont mélangés par la puissance de pédalage des participants — une activité zéro émission, 100% alimentée par l'humain qui rend la durabilité excitante."
+      },
+      "sustainability": {
+        "title": "Approche pratique de la durabilité",
+        "description": "Les participants deviennent créateurs, pas seulement consommateurs. C'est une façon unique de comprendre l'impact de nos actions, tout en embrassant l'effort physique et la conscience environnementale."
+      },
+      "events": {
+        "title": "Parfait pour tous types d'événements",
+        "description": "Des écoles et festivals aux événements corporatifs ou communautaires — notre atelier s'adapte à votre foule. C'est inclusif, interactif et inoubliable."
+      },
+      "values": {
+        "title": "Nous pédalons pour nos valeurs",
+        "description": "Nous utilisons des matériaux réutilisables ou compostables, réduisons les déchets et promouvons la consommation consciente — le tout dans une atmosphère vivante et accueillante."
       }
+    },
+    "tagline": {
+      "part1": "Voilà Vélo Fruité:",
+      "part2": "Mélangé par Vous, Alimenté par le Plaisir!"
     }
   },
   "benefits": {
-    "title": "Faites de votre événement un moment inoubliable",
+    "title": "Reconnectez-vous de façon amusante et saine",
     "subtitle": "Les avantages de nos vélos à smoothies",
+    "perfectFor": "Parfait pour:",
+    "question": "Vous avez autre chose en tête?",
+    "contactUs": "Contactez-nous pour votre idée d'événement!",
+    "learnMore": "En savoir plus",
     "items": {
       "engagement": {
         "title": "Augmentez l'engagement",
@@ -49,13 +77,24 @@
       "footprint": {
         "title": "Empreinte écologique réduite",
         "description": "Zéro électricité et matériaux 100% biodégradables"
-      }
+      },
+      "wellness": "Bien-être au travail",
+      "teamBuilding": "Consolidation d'équipe et engagement du personnel",
+      "corporate": "Événements corporatifs (engagement de marque et promotion)",
+      "malls": "Activités de centres commerciaux / Programmes de vacances scolaires",
+      "schools": "Fêtes d'école / Collectes de fonds caritatives",
+      "openDays": "Journées portes ouvertes universitaires",
+      "weddings": "Mariages, fêtes d'anniversaire et dîners de gala"
     }
   },
   "packages": {
     "title": "Nos forfaits",
     "subtitle": "Trouvez la formule parfaite pour votre événement",
     "viewAll": "Voir tous les forfaits",
+    "footer": {
+      "highlight": "Le choix vous appartient",
+      "text": "choisissez parmi notre gamme complète de forfaits ou contactez-nous pour créer le vôtre."
+    },
     "items": {
       "laPetiteKoki": {
         "title": "La petite Koki",
@@ -71,15 +110,47 @@
         "title": "Forfait Signature",
         "description": "L'expérience complète, entièrement personnalisée",
         "details": "Voir les détails"
+      },
+      "la-petite-koki": {
+        "details": "Voir les détails"
+      },
+      "pop-solo": {
+        "details": "Voir les détails"
+      },
+      "double-fun": {
+        "details": "Voir les détails"
       }
     }
   },
   "testimonials": {
-    "title": "Ce que nos clients disent",
-    "subtitle": "Des événements réussis et des clients satisfaits"
+    "title": "Témoignages",
+    "subtitle": "Des événements réussis et des clients satisfaits",
+    "previous": "Témoignage précédent",
+    "next": "Témoignage suivant",
+    "goTo": "Aller au témoignage",
+    "items": {
+      "testimonial1": {
+        "text": "Notre événement communautaire a eu beaucoup plus de succès grâce aux vélos. C'est la 3e année que nous les louons... merci beaucoup!",
+        "author": "Béatrice",
+        "title": "Organisatrice d'événement",
+        "date": "Décembre 2024"
+      },
+      "testimonial2": {
+        "text": "L'équipe de Voilà Vélo a transformé notre événement corporatif en une expérience inoubliable. Nos employés parlent encore de cette journée!",
+        "author": "Marc-André",
+        "title": "Directeur RH",
+        "date": "Novembre 2024"
+      },
+      "testimonial3": {
+        "text": "Parfait pour notre festival familial! Les enfants ont adoré pédaler pour créer leurs smoothies. Une activité à la fois amusante et éducative.",
+        "author": "Sophie",
+        "title": "Coordonnatrice événements",
+        "date": "Octobre 2024"
+      }
+    }
   },
   "sustainability": {
-    "title": "Notre engagement pour l'environnement",
+    "title": "Nous intégrons la durabilité dans tout ce que nous faisons!!",
     "subtitle": "Des événements responsables et écologiques",
     "description": "Chez Voilà Vélo, nous croyons qu'il est possible de s'amuser tout en respectant la planète. C'est pourquoi nous avons mis en place des pratiques durables à chaque étape de notre service.",
     "items": {
@@ -91,13 +162,33 @@
         "title": "Ingrédients locaux",
         "description": "Nous privilégions les producteurs locaux pour nos fruits et légumes"
       },
-      "zerWaste": {
+      "zeroWaste": {
         "title": "Zéro déchet",
         "description": "Tous nos contenants et ustensiles sont compostables"
       },
       "carbonOffset": {
         "title": "Compensation carbone",
         "description": "Nous compensons l'empreinte carbone de nos déplacements"
+      },
+      "noStraws": {
+        "title": "Pailles\nNon merci!",
+        "description": "Nous n'utilisons pas de pailles ou de couvercles lors de nos événements et encourageons nos clients à faire de même"
+      },
+      "zeroWaste": {
+        "title": "Zéro\nDéchet!",
+        "description": "Nous ne contribuons pas aux décharges lors de nos événements, recyclant et compostant tous nos déchets"
+      },
+      "foodWaste": {
+        "title": "Lutte contre le\ngaspillage alimentaire!",
+        "description": "Nous donnons tous les ingrédients restants à des organismes de bienfaisance comme Moisson Montréal"
+      },
+      "equality": {
+        "title": "Lutte contre\nles inégalités!",
+        "description": "Nous faisons des dons à UNICEF et à des organismes locaux, aidant les enfants et les jeunes chaque jour"
+      },
+      "carbon": {
+        "title": "Carbone\nNeutre!",
+        "description": "Tout le carbone produit par nos véhicules et notre papier est compensé par des plantations d'arbres au Québec"
       }
     }
   }

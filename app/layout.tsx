@@ -16,6 +16,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // Debug translations
+  console.log('Root layout translations check:', {
+    hasTranslations: !!translations,
+    languages: Object.keys(translations || {}),
+    enKeys: Object.keys(translations?.en || {}),
+    frKeys: Object.keys(translations?.fr || {})
+  });
+  
   return (
     <html lang="fr" className={`${openSans.variable} ${poppins.variable}`}>
       <body className={openSans.className}>

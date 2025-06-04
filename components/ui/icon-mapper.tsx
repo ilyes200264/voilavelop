@@ -17,7 +17,8 @@ import {
   Recycle,
   Ban,
   Coffee,
-  Sprout
+  Sprout,
+  Clap as HandClap
 } from "lucide-react"
 import { NoStrawsIcon } from "@/components/icons/no-straws-icon"
 
@@ -46,6 +47,7 @@ export function IconMapper({ iconName, className = "h-6 w-6" }: IconMapperProps)
     recycle: Recycle,
     noStraws: NoStrawsIcon,
     sprout: Sprout,
+    handsClapping: HandClap,
   }
   const IconComponent = iconMap[iconName as keyof typeof iconMap]
 

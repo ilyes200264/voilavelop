@@ -1,138 +1,165 @@
-# Internationalization Guide
+# Internationalization (i18n) Guide
 
-## Overview
+This document provides guidelines on how to use and maintain the internationalization system in this project.
 
-This guide explains how to work with the internationalization (i18n) system in the Voilà Vélo website. The system allows the website to be presented in multiple languages without requiring separate routes or pages.
+## Basic Usage
 
-## Architecture
+### Translating Text in Components
 
-The i18n system is built using React Context and consists of:
+To translate text in your components, use the `useI18n` hook and the `t` function:
 
-1. **I18nProvider**: A context provider that manages the current language and provides translation functions
-2. **Locale Files**: JSON files containing translations for each language
-3. **Language Switcher**: A component that allows users to change the current language
+```tsx
+import { useI18n } from "@/lib/i18n";
 
-## Working with Translations
+function MyComponent() {
+  const { t } = useI18n();
+  
+  return (
+    <div>
+      <h1>{t('common.navigation.home')}</h1>
+      <p>{t('home.hero.subtitle')}</p>
+    </div>
+  );
+}
+```
 
-### Accessing Translations in Components
+### Key Formats
 
-To use translations in a component:
+There are three ways to reference translation keys:
 
-1. Import the `useI18n` hook:
-   ```tsx
-   import { useI18n } from "@/lib/i18n";
-   ```
+1. **Namespace as first segment** (recommended): `t('common.navigation.home')`
+2. **Direct key access**: `t('navigation.home')` (will search in all namespaces)
 
-2. Use the hook to get the translation function and current language:
-   ```tsx
-   const { t, language } = useI18n();
-   ```
+For consistency and to avoid conflicts, we recommend using the namespace as the first segment format.
 
-3. Use the translation function to retrieve translated strings:
-   ```tsx
-   <h1>{t('page.title')}</h1>
-   <p>{t('page.description')}</p>
-   ```
+## Organizing Translations
 
-### Organization of Translation Files
+### File Structure
 
-Translation files are organized by feature/page in the `/locales/[language]/` directories:
+Translations are organized by language and feature:
 
-- `/locales/en/common.json` - Common UI elements used across the site
-- `/locales/en/home.json` - Home page specific translations
-- `/locales/en/packages.json` - Packages page specific translations
-
-The same structure is mirrored for each supported language (e.g., `/locales/fr/`).
+```
+/locales
+  /en
+    common.json
+    home.json
+    about.json
+    ...
+  /fr
+    common.json
+    home.json
+    about.json
+    ...
+```
 
 ### Adding New Translations
 
-When adding new content to the site:
+1. Add the translation to the appropriate JSON file in both language directories
+2. Maintain the same key structure in both languages
+3. Run `npm run validate-translations` to verify all keys are present
 
-1. Add translation keys to the appropriate files in each language directory
-2. Use nested objects to organize related translations:
-   ```json
-   {
-     "section": {
-       "title": "Section Title",
-       "subtitle": "Section Subtitle",
-       "items": {
-         "item1": "First Item",
-         "item2": "Second Item"
-       }
-     }
-   }
-   ```
+### Translation File Structure
 
-3. Access nested translations using dot notation:
-   ```tsx
-   <h2>{t('section.title')}</h2>
-   <p>{t('section.subtitle')}</p>
-   <li>{t('section.items.item1')}</li>
-   ```
+Organize keys by feature and component:
 
-### Adding a New Page or Feature
+```json
+{
+  "section_name": {
+    "title": "Section Title",
+    "subtitle": "Section subtitle text",
+    "items": {
+      "item1": {
+        "title": "Item 1 Title",
+        "description": "Item 1 description"
+      },
+      "item2": {
+        "title": "Item 2 Title",
+        "description": "Item 2 description"
+      }
+    }
+  }
+}
+```
 
-When adding a new page or feature:
+## Advanced Features
 
-1. Create translation files for each language:
-   - `/locales/en/feature-name.json`
-   - `/locales/fr/feature-name.json`
+### Package Data Translation
 
-2. Import and add the translations in `/lib/translations.ts`:
-   ```tsx
-   import featureNameEn from '@/locales/en/feature-name.json';
-   import featureNameFr from '@/locales/fr/feature-name.json';
+For translating package data from `packages-data.js`, you can use the `usePackageTranslations` hook:
 
-   const translations = {
-     en: {
-       ...commonEn,
-       ...homeEn,
-       ...featureNameEn,
-       // other translations
-     },
-     fr: {
-       ...commonFr,
-       ...homeFr,
-       ...featureNameFr,
-       // other translations
-     },
-   };
-   ```
+```tsx
+import { usePackageTranslations } from "@/lib/packages-i18n";
+
+function PackageComponent() {
+  const { translatePackage, getAllPackages } = usePackageTranslations();
+  
+  // Get a specific package with translations
+  const package = translatePackage("la-petite-koki");
+  
+  // Get all packages with translations
+  const allPackages = getAllPackages();
+  
+  return (
+    <div>
+      <h1>{package.title}</h1>
+      <p>{package.tagline}</p>
+      <p>{package.heroDescription}</p>
+      
+      {/* Package includes */}
+      <ul>
+        {package.mainSection.includes.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### Interpolation
+
+For strings that need variable values:
+
+```tsx
+// In your translation file:
+// "greeting": "Hello, {{name}}!"
+
+const name = "John";
+t('common.greeting', { name }); // "Hello, John!"
+```
+
+### Switching Languages
+
+Use the `setLanguage` function from the `useI18n` hook:
+
+```tsx
+const { language, setLanguage } = useI18n();
+
+// Switch to English
+<button onClick={() => setLanguage('en')}>English</button>
+
+// Switch to French
+<button onClick={() => setLanguage('fr')}>Français</button>
+```
 
 ## Best Practices
 
-### Translation Keys
+1. **Use namespaces**: Keep related translations in appropriate namespaces
+2. **Validate often**: Run the validation script frequently to catch missing translations
+3. **Consistent keys**: Use the same key structure across all language files
+4. **Descriptive keys**: Use clear and descriptive key names that reflect the content
+5. **Avoid nesting too deeply**: Keep nesting to a maximum of 3-4 levels
+6. **Document special cases**: Add comments for translations that need special handling
+7. **Package translations**: When working with packages:
+   - For UI elements and static text, use the regular translation system
+   - For dynamic content from packages-data.js, use the packages-i18n.ts layer
+   - When adding new packages, update both packages-data.js and the translation files
 
-- Use camelCase for keys
-- Use descriptive names that indicate the content's purpose
-- Organize keys hierarchically to reflect component/page structure
-- Keep translation keys consistent across language files
+## Troubleshooting
 
-### Component Design
+If you see keys displayed instead of translations:
 
-- Make all user-facing text translatable
-- Keep translations separate from component logic
-- Consider text expansion in different languages when designing layouts
-- Use fallbacks for missing translations
-
-### Performance Considerations
-
-- Load only necessary translations for each page
-- Consider code-splitting translations for large apps
-- Test rendering performance with different languages
-
-## Testing Translations
-
-When testing translations:
-
-1. Toggle between languages using the language switcher
-2. Verify that all UI elements are properly translated
-3. Check that layouts accommodate different text lengths
-4. Test edge cases like missing translations or very long text
-
-## Language Preference
-
-The system stores the user's language preference in localStorage to persist it across sessions. The preference is set when:
-
-1. The user selects a language using the language switcher
-2. The default language (French) is used if no preference is stored
+1. Check that the key exists in the correct translation file
+2. Verify the namespacing is correct
+3. Check the browser console for warnings about missing translations
+4. Run the validation script to find any missing keys
