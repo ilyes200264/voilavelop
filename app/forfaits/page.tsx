@@ -159,14 +159,14 @@ export default function ForfaitsPage() {
           <MotionSection className="page-hero bg-gradient-to-br from-primary-red to-secondary-yellow text-white py-20">
             <div className="container mx-auto px-4 text-center">
               <TextReveal>
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('pageHero.title')}</h1>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('pageHero.title', "Nos forfaits")}</h1>
               </TextReveal>
               
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                  {t('pageHero.description')}
+                  {t('pageHero.description', "Festivals, événements corporatifs, collectes de fonds ou programmes scolaires - nous avons le forfait parfait pour vous.")}
                 </p>
               </ScrollReveal>
             </div>
@@ -191,13 +191,13 @@ export default function ForfaitsPage() {
                 <div className="md:col-span-3 text-center md:text-left">
                   <ScrollReveal>
                     <p className="text-2xl text-gray-700 leading-relaxed italic mb-8">
-                      {t('intro.description1')}
+                      {t('intro.description1', "Nos vélos à smoothies sont disponibles pour la location dans toute la région. Que vous organisiez un petit événement familial ou un grand festival, nous avons une solution adaptée à vos besoins.")}
                     </p>
                   </ScrollReveal>
                   
                   <ScrollReveal delay={0.2}>
                     <p className="text-lg text-gray-600">
-                      {t('intro.description2')}
+                      {t('intro.description2', "Tous nos forfaits comprennent la livraison, l'installation et la désinstallation, ainsi qu'un animateur professionnel pour guider vos invités à travers l'expérience. Nous fournissons également tous les ingrédients frais, gobelets, et autres accessoires nécessaires.")}
                     </p>
                   </ScrollReveal>
                 </div>
@@ -210,14 +210,14 @@ export default function ForfaitsPage() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <TextReveal>
-                  <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('packagesGrid.title')}</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('packagesGrid.title', "Découvrez nos forfaits")}</h2>
                 </TextReveal>
                 
                 <RedLineSeparator className="w-16 mx-auto mb-8" />
                 
                 <ScrollReveal delay={0.3}>
                   <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                    {t('packagesGrid.subtitle')}
+                    {t('packagesGrid.subtitle', "Une expérience unique et mémorable pour tous types d'événements")}
                   </p>
                 </ScrollReveal>
               </div>
@@ -244,7 +244,7 @@ export default function ForfaitsPage() {
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                           <span className="text-white text-lg font-bold transform -translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                            {t('packagesGrid.seeDetails')}
+                            {t('packagesGrid.seeDetails', "Voir les détails")}
                           </span>
                         </div>
                       </div>
@@ -273,7 +273,7 @@ export default function ForfaitsPage() {
                           <AnimatedImage hoverEffect="scale">
                             <Link href={`/forfaits/${pkg.id}`} className="block w-full">
                               <Button className={`w-full ${pkg.textColor === 'text-white' ? 'bg-white text-black hover:bg-gray-100' : 'bg-dark-charcoal text-white hover:bg-dark-charcoal/90'} py-3 text-lg font-semibold`}>
-                                {t('packagesGrid.learnMore')}
+                                {t('packagesGrid.learnMore', "En savoir plus")}
                               </Button>
                             </Link>
                           </AnimatedImage>
@@ -292,14 +292,14 @@ export default function ForfaitsPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <StaggerContainer className="cta-content">
                   <MotionDiv variant="fadeUp">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('help.title')}</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('help.title', "Besoin d'aide pour choisir?")}</h2>
                   </MotionDiv>
                   
                   <RedLineSeparator className="w-16 mb-6" />
                   
                   <MotionDiv variant="fadeUp">
                     <p className="text-xl mb-8">
-                      {t('help.description')}
+                      {t('help.description', "Notre équipe peut vous aider à sélectionner le forfait parfait pour votre événement ou créer une solution entièrement personnalisée.")}
                     </p>
                   </MotionDiv>
                   
@@ -307,7 +307,7 @@ export default function ForfaitsPage() {
                     <AnimatedImage hoverEffect="lift">
                       <Link href="/contact">
                         <Button className="bg-white text-primary-red px-8 py-3 text-lg font-semibold hover:bg-gray-100">
-                          {t('help.requestQuote')}
+                          {t('help.requestQuote', "Demander un devis")}
                         </Button>
                       </Link>
                     </AnimatedImage>
@@ -317,7 +317,7 @@ export default function ForfaitsPage() {
                         <Button 
                           variant="outline" 
                           className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 text-lg font-semibold">
-                          {t('help.callUs')}
+                          {t('help.callUs', "Appelez-nous")}
                         </Button>
                       </Link>
                     </AnimatedImage>
@@ -327,12 +327,12 @@ export default function ForfaitsPage() {
                 <ScrollReveal>
                   <div className="testimonial-card bg-white/10 backdrop-blur-sm p-8 rounded-xl">
                     <div className="quote-icon text-4xl mb-4 text-white/80">"</div>
-                    <p className="text-xl italic mb-6">{t('help.testimonial.text')}</p>
+                    <p className="text-xl italic mb-6">{t('help.testimonial.text', "Nous avons réservé Voilà Vélo Fruité pour notre journée corporative et ce fut un succès retentissant! L'équipe était professionnelle et nos employés ont adoré l'expérience.")}</p>
                     <div className="testimonial-author flex items-center">
                       <div className="author-avatar w-12 h-12 bg-white/30 rounded-full mr-4"></div>
                       <div className="author-info">
-                        <h4 className="font-bold">{t('help.testimonial.author')}</h4>
-                        <p className="text-sm">{t('help.testimonial.company')}</p>
+                        <h4 className="font-bold">{t('help.testimonial.author', "Marie Lemieux")}</h4>
+                        <p className="text-sm">{t('help.testimonial.company', "Directrice RH, Entreprise XYZ")}</p>
                       </div>
                     </div>
                   </div>

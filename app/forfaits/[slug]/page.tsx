@@ -32,9 +32,9 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-dark-charcoal mb-4">{t('packageDetail.notFound.message')}</h1>
+          <h1 className="text-2xl font-bold text-dark-charcoal mb-4">{t('packageDetail.notFound.message', "Forfait non trouvé")}</h1>
           <Link href="/forfaits">
-            <Button>{t('packageDetail.notFound.backButton')}</Button>
+            <Button>{t('packageDetail.notFound.backButton', "Retour aux forfaits")}</Button>
           </Link>
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                 </MotionDiv>
 
                 <MotionDiv variant="fadeUp">
-                  <h5 className="text-xl font-semibold mb-4">{t('packageDetail.whatsIncluded')}</h5>
+                  <h5 className="text-xl font-semibold mb-4">{t('packageDetail.whatsIncluded', "Qu'est-ce qui est inclus?")}</h5>
                   
                   <ul className="space-y-3 mb-8">
                     {(currentPackage.mainSection?.includes || []).map((item, index) => (
@@ -137,7 +137,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/contact">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                        {t('packageDetail.requestQuote')}
+                        {t('packageDetail.requestQuote', "Demander un devis")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -169,7 +169,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                 </MotionDiv>
 
                 <MotionDiv variant="fadeUp">
-                  <h5 className="text-xl font-semibold mb-4">{t('packageDetail.perfectFor')}</h5>
+                  <h5 className="text-xl font-semibold mb-4">{t('packageDetail.perfectFor', "Pour qui est-ce idéal?")}</h5>
                   
                   <ul className="space-y-3 mb-8">
                     {(currentPackage.targetSection?.perfectFor || []).map((item, index) => (
@@ -185,7 +185,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/contact">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                        {t('packageDetail.bookNow')}
+                        {t('packageDetail.bookNow', "Réserver maintenant")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -298,7 +298,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
             <ScrollReveal className="text-center mb-12">
               <TextReveal>
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                  {t('packageDetail.options.title')}
+                  {t('packageDetail.options.title', "Options disponibles")}
                 </h2>
               </TextReveal>
               
@@ -306,7 +306,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  {t('packageDetail.options.subtitle')}
+                  {t('packageDetail.options.subtitle', "Choisissez l'option qui convient le mieux à votre événement et à votre budget")}
                 </p>
               </ScrollReveal>
             </ScrollReveal>
@@ -326,7 +326,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   >
                     {option.featured && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        {t('packageDetail.options.mostPopular')}
+                        {t('packageDetail.options.mostPopular', "Plus populaire")}
                       </div>
                     )}
 
@@ -340,7 +340,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                     </div>
 
                     <div className="mb-6">
-                      <h4 className="font-semibold text-dark-charcoal mb-3">{t('packageDetail.options.included')}:</h4>
+                      <h4 className="font-semibold text-dark-charcoal mb-3">{t('packageDetail.options.included', "Inclus")}:</h4>
                       <ul className="space-y-2">
                         {(option.includes || []).map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start">
@@ -352,7 +352,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                     </div>
 
                     <div className="mb-6">
-                      <h4 className="font-semibold text-dark-charcoal mb-2">{t('packageDetail.options.idealFor')}:</h4>
+                      <h4 className="font-semibold text-dark-charcoal mb-2">{t('packageDetail.options.idealFor', "Idéal pour")}:</h4>
                       <p className="text-gray-600 text-sm">{option.idealFor}</p>
                     </div>
 
@@ -365,7 +365,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                               : 'bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white'
                           }`}
                         >
-                          {t('packageDetail.options.chooseOption')}
+                          {t('packageDetail.options.chooseOption', "Choisir cette option")}
                         </Button>
                       </Link>
                     </AnimatedImage>
@@ -398,7 +398,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
             <AnimatedImage hoverEffect="lift">
               <Link href={currentPackage.customizationSection.downloadLink} target="_blank">
                 <Button className="bg-primary-red text-white px-8 py-3 text-lg font-semibold hover:bg-primary-red/90">
-                  {t('packageDetail.downloadGuide')}
+                  {t('packageDetail.downloadGuide', "Télécharger le guide")}
                 </Button>
               </Link>
             </AnimatedImage>
@@ -412,7 +412,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
               <StaggerContainer className="text-left">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    {t('packageDetail.readyToBook.title')} {currentPackage.title}?
+                    {t('packageDetail.readyToBook.title', "Prêt à réserver")} {currentPackage.title}?
                   </h2>
                 </MotionDiv>
                 
@@ -420,7 +420,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-8 opacity-90">
-                    {t('packageDetail.readyToBook.description')}
+                    {t('packageDetail.readyToBook.description', "Contactez-nous pour une soumission personnalisée et réservez votre date dès aujourd'hui!")}
                   </p>
                 </MotionDiv>
                 
@@ -428,7 +428,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/contact">
                       <Button className="bg-white text-primary-red px-8 py-3 hover:bg-gray-100">
-                        {t('packageDetail.readyToBook.requestQuote')}
+                        {t('packageDetail.readyToBook.requestQuote', "Demander une soumission")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -439,7 +439,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                         variant="outline"
                         className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3"
                       >
-                        {t('packageDetail.readyToBook.callNow')}
+                        {t('packageDetail.readyToBook.callNow', "Appelez maintenant")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -450,13 +450,13 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                 <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
                   <div className="text-4xl mb-4 text-white/80">"</div>
                   <p className="text-xl italic mb-6">
-                    {t('packageDetail.readyToBook.testimonial.text').replace('{packageTitle}', currentPackage.title)}
+                    {t('packageDetail.readyToBook.testimonial.text', "Notre expérience avec {packageTitle} a été absolument incroyable! Nos invités ont adoré l'interactivité et les smoothies étaient délicieux.").replace('{packageTitle}', currentPackage.title)}
                   </p>
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-white/30 rounded-full mr-4"></div>
                     <div>
-                      <h4 className="font-bold">{t('packageDetail.readyToBook.testimonial.author')}</h4>
-                      <p className="text-sm">{t('packageDetail.readyToBook.testimonial.location')}</p>
+                      <h4 className="font-bold">{t('packageDetail.readyToBook.testimonial.author', "Isabelle Tremblay")}</h4>
+                      <p className="text-sm">{t('packageDetail.readyToBook.testimonial.location', "Montréal, QC")}</p>
                     </div>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ export default function FaqPage() {
   const [openCategory, setOpenCategory] = useState<string | null>("general")
   const [searchQuery, setSearchQuery] = useState("")
 
-  const faqCategories = t<any[]>('categories')
+  const faqCategories = t<any[]>('categories', [])
 
   const toggleCategory = (categoryId: string) => {
     setOpenCategory(openCategory === categoryId ? null : categoryId)
@@ -45,10 +45,10 @@ export default function FaqPage() {
           {/* Page Header */}
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-              {t('title')}
+              {t('title', "Questions fréquemment posées")}
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-              {t('subtitle')}
+              {t('subtitle', "Trouvez des réponses à toutes vos questions concernant nos services de vélos à smoothie")}
             </p>
 
             {/* Search Bar */}
@@ -58,7 +58,7 @@ export default function FaqPage() {
               </div>
               <input
                 type="text"
-                placeholder={t('search.placeholder')}
+                placeholder={t('search.placeholder', "Rechercher une question...")}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                 value={searchQuery}
                 onChange={handleSearch}
@@ -70,7 +70,7 @@ export default function FaqPage() {
           {searchQuery && (
             <div className="search-results mb-12">
               <h2 className="text-xl font-semibold text-dark-charcoal mb-4">
-                {t('search.results')} ({filteredFaqs.length})
+                {t('search.results', "Résultats de recherche")} ({filteredFaqs.length})
               </h2>
               {filteredFaqs.length > 0 ? (
                 <div className="space-y-4">
@@ -88,9 +88,9 @@ export default function FaqPage() {
                 </div>
               ) : (
                 <div className="bg-light-gray p-6 rounded-lg text-center">
-                  <p className="text-gray-600">{t('search.noResults')} "{searchQuery}"</p>
+                  <p className="text-gray-600">{t('search.noResults', "Aucun résultat trouvé pour")} "{searchQuery}"</p>
                   <p className="text-sm text-gray-500 mt-2">
-                    {t('search.tryDifferent')}
+                    {t('search.tryDifferent', "Essayez avec des termes différents ou parcourez les catégories ci-dessous")}
                   </p>
                 </div>
               )}
@@ -138,17 +138,17 @@ export default function FaqPage() {
 
           {/* Still Have Questions */}
           <div className="still-have-questions bg-light-gray rounded-xl p-8 mt-12 text-center">
-            <h2 className="text-2xl font-bold text-dark-charcoal mb-4">{t('stillHaveQuestions.title')}</h2>
+            <h2 className="text-2xl font-bold text-dark-charcoal mb-4">{t('stillHaveQuestions.title', "Vous avez encore des questions?")}</h2>
             <p className="text-gray-600 mb-6">
-              {t('stillHaveQuestions.description')}
+              {t('stillHaveQuestions.description', "Notre équipe est là pour vous aider! Contactez-nous directement pour toute question spécifique.")}
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact">
-                <Button className="bg-primary-red text-white px-6 py-3">{t('stillHaveQuestions.contactButton')}</Button>
+                <Button className="bg-primary-red text-white px-6 py-3">{t('stillHaveQuestions.contactButton', "Nous contacter")}</Button>
               </Link>
               <Link href="tel:+1-XXX-XXX-XXXX">
                 <Button variant="outline" className="px-6 py-3">
-                  {t('stillHaveQuestions.callButton')}
+                  {t('stillHaveQuestions.callButton', "Appelez-nous: XXX-XXX-XXXX")}
                 </Button>
               </Link>
             </div>

@@ -36,7 +36,7 @@ export default function AboutPage() {
             <div className="text-center">
               <TextReveal>
                 <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
-                  {t('hero.title')}
+                  {t('hero.title', "À Propos de Nous")}
                 </h1>
               </TextReveal>
               
@@ -44,7 +44,7 @@ export default function AboutPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-2xl italic text-gray-700 mb-8 leading-relaxed">
-                  {t('hero.quote')}
+                  {t('hero.quote', "\"Nous engageons et inspirons les gens d'une manière amusante et saine!\"")}
                 </p>
               </ScrollReveal>
               
@@ -59,7 +59,7 @@ export default function AboutPage() {
               </AnimatedImage>
               
               <ScrollReveal delay={0.5}>
-                <p className="text-lg text-gray-600">{t('hero.founders')}</p>
+                <p className="text-lg text-gray-600">{t('hero.founders', "Leen et Micha, fondatrices de Voilà Vélo Fruité")}</p>
               </ScrollReveal>
             </div>
           </div>
@@ -82,32 +82,32 @@ export default function AboutPage() {
               <StaggerContainer className="text-white pl-0 lg:pl-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    {t('company.title')}
+                    {t('company.title', "Voilà Vélo Fruité")}
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-secondary-yellow mb-6">
-                    {t('company.subtitle')}
+                    {t('company.subtitle', "Nous créons des événements innovants et durables")}
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    {t('company.description1')}
+                    {t('company.description1', "Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut le cyclisme, la durabilité, la santé et le bonheur en utilisant nos vélos mélangeurs fabriqués au Québec.")}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    {t('company.description2')}
+                    {t('company.description2', "Nous sommes une équipe d'organisateurs d'événements passionnés qui croient aux pratiques éthiques et durables pour créer un monde plus heureux et plus sain — un événement smoothie à la fois! Nous utilisons des gobelets lavables ou biodégradables, compensons notre carbone, compostons ou recyclons tous les déchets produits et faisons des dons à UNICEF.")}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    {t('company.description3')}
+                    {t('company.description3', "Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.")}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p>
-                    {t('company.description4')}
+                    {t('company.description4', "L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.")}
                   </p>
                 </MotionDiv>
               </StaggerContainer>
@@ -122,23 +122,23 @@ export default function AboutPage() {
               <StaggerContainer className="text-white order-2 lg:order-1 pr-0 lg:pr-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    {t('founders.title')}
+                    {t('founders.title', "Nos Fondatrices")}
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-primary-red mb-6">
-                    {t('founders.subtitle')}
+                    {t('founders.subtitle', "Leen et Micha")}
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-6">
-                    {t('founders.description')}
+                    {t('founders.description', "Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, alimentée entièrement par leur énergie! Pour en savoir plus sur la façon dont nous avons commencé Voilà Vélo Fruité, consultez notre histoire.")}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
                     <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                      {t('founders.button')}
+                      {t('founders.button', "En savoir plus")}
                     </Button>
                   </AnimatedImage>
                 </MotionDiv>
@@ -162,7 +162,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('mission.title')}
+                {t('mission.title', "Notre Mission")}
               </h2>
             </ScrollReveal>
 
@@ -196,7 +196,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('howWeDo.title')}
+                {t('howWeDo.title', "Nous le faisons en:")}
               </h2>
             </ScrollReveal>
 
@@ -217,7 +217,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('partners.title')}
+                {t('partners.title', "Nos Partenaires")}
               </h2>
             </ScrollReveal>
 
@@ -234,14 +234,14 @@ export default function AboutPage() {
               
               <MotionDiv variant="fadeUp">
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  {t('partners.description')}
+                  {t('partners.description', "Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos pour engager, éduquer et divertir les enfants et les adultes.")}
                 </p>
               </MotionDiv>
               
               <MotionDiv variant="fadeUp">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-primary-red text-white hover:bg-primary-red/90 px-8 py-3 text-lg font-semibold">
-                    {t('partners.button')}
+                    {t('partners.button', "En savoir plus")}
                   </Button>
                 </AnimatedImage>
               </MotionDiv>

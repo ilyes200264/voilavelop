@@ -52,10 +52,10 @@ export default function HowItWorksPage() {
         {/* How It Works Hero */}
         <section className="how-it-works-hero py-20 bg-gradient-to-br from-primary-red to-secondary-yellow text-white">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up" style={{animationDuration: '0.8s'}}>{t('hero.title')}</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up" style={{animationDuration: '0.8s'}}>{t('hero.title', "Comment ça marche")}</h1>
             <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8 animate-scale-in" style={{animationDuration: '1s', animationDelay: '0.3s', animationFillMode: 'both'}}></div>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up" style={{animationDuration: '0.8s', animationDelay: '0.5s', animationFillMode: 'both'}}>
-              {t('hero.description')}
+              {t('hero.description', "Découvrez comment notre service de vélos à smoothie fonctionne, de la réservation à l'installation et l'animation lors de votre événement.")}
             </p>
           </div>
         </section>
@@ -64,10 +64,10 @@ export default function HowItWorksPage() {
         <section className="service-areas py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('serviceAreas.title')}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('serviceAreas.title', "Zones de service")}</h2>
               <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                {t('serviceAreas.subtitle')}
+                {t('serviceAreas.subtitle', "Nous desservons actuellement les principales régions suivantes, mais contactez-nous pour vérifier la disponibilité dans votre secteur.")}
               </p>
             </div>
 
@@ -91,10 +91,10 @@ export default function HowItWorksPage() {
         <section className="booking-process py-20 bg-light-gray">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('bookingProcess.title')}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('bookingProcess.title', "Processus de réservation")}</h2>
               <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                {t('bookingProcess.subtitle')}
+                {t('bookingProcess.subtitle', "Réserver votre expérience vélo smoothie est simple et rapide. Suivez ces quelques étapes:")}
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function HowItWorksPage() {
 
             <div className="text-center mt-20">
               <Link href="/contact">
-                <Button className="bg-primary-red text-white px-10 py-4 text-lg font-bold hover:bg-primary-red/90 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">{t('bookingProcess.ctaButton')}</Button>
+                <Button className="bg-primary-red text-white px-10 py-4 text-lg font-bold hover:bg-primary-red/90 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">{t('bookingProcess.ctaButton', "Réserver maintenant")}</Button>
               </Link>
             </div>
           </div>
@@ -123,10 +123,10 @@ export default function HowItWorksPage() {
         <section className="faq-section py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('faq.title')}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t('faq.title', "Questions fréquemment posées")}</h2>
               <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                {t('faq.subtitle')}
+                {t('faq.subtitle', "Trouvez des réponses à toutes vos questions concernant nos services de vélos à smoothie")}
               </p>
             </div>
 
@@ -155,22 +155,22 @@ export default function HowItWorksPage() {
             <div className="mt-20 grid md:grid-cols-2 gap-8 items-center bg-primary-red text-white p-10 rounded-2xl shadow-xl animate-fade-in-up" style={{animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both'}}>
               <div className="cta-content">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                  {t('faq.notFoundQuestion')}
+                  {t('faq.notFoundQuestion', "Vous n'avez pas trouvé la réponse à votre question?")}
                 </h3>
                 <div className="contactRedLine w-16 h-1 bg-white mb-6"></div>
                 <p className="text-xl mb-6 opacity-90">
-                  {t('faq.notFoundDescription')}
+                  {t('faq.notFoundDescription', "Contactez-nous directement et notre équipe vous répondra dans les plus brefs délais. Nous sommes là pour vous aider à créer l'événement parfait!")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact">
-                    <Button className="bg-white text-primary-red px-8 py-3 font-bold hover:bg-gray-100">{t('faq.contactButton')}</Button>
+                    <Button className="bg-white text-primary-red px-8 py-3 font-bold hover:bg-gray-100">{t('faq.contactButton', "Nous contacter")}</Button>
                   </Link>
                   <Link href="tel:+1-XXX-XXX-XXXX">
                     <Button 
                       variant="outline" 
                       className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 font-bold"
                     >
-                      {t('faq.callButton')}
+                      {t('faq.callButton', "Appelez-nous")}
                     </Button>
                   </Link>
                 </div>
@@ -178,12 +178,12 @@ export default function HowItWorksPage() {
               <div className="hidden md:block relative">
                 <div className="absolute -top-10 -right-10 text-6xl opacity-20">❝</div>
                 <div className="testimonial-content bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                  <p className="text-lg italic mb-4">{t('faq.testimonial.text')}</p>
+                  <p className="text-lg italic mb-4">{t('faq.testimonial.text', "L'équipe de Voilà Vélo Fruité a été très réactive et professionnelle. Ils ont répondu à toutes mes questions et ont créé une expérience parfaitement adaptée à nos besoins spécifiques.")}</p>
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-white/30 rounded-full mr-3"></div>
                     <div>
-                      <p className="font-bold">{t('faq.testimonial.name')}</p>
-                      <p className="text-sm">{t('faq.testimonial.title')}</p>
+                      <p className="font-bold">{t('faq.testimonial.name', "Sophie Tremblay")}</p>
+                      <p className="text-sm">{t('faq.testimonial.title', "Organisatrice d'événements")}</p>
                     </div>
                   </div>
                 </div>

@@ -96,21 +96,21 @@ export default function EventsPage() {
               <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-4xl mx-auto text-white">
                   <TextReveal>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">{t("title")}</h1>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">{t("title", "Événements")}</h1>
                   </TextReveal>
                   
                   <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                   
                   <ScrollReveal delay={0.3}>
                     <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-md">
-                      {t("subtitle")}
+                      {t("subtitle", "Nous apportons l'énergie, le plaisir et la durabilité à tous types d'événements. Découvrez comment nos vélos à smoothie peuvent transformer votre prochain rassemblement.")}
                     </p>
                   </ScrollReveal>
                   
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/forfaits">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        {t("viewPackages")}
+                        {t("viewPackages", "Voir nos forfaits")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
@@ -125,11 +125,11 @@ export default function EventsPage() {
             <div className="container mx-auto px-4">
               <ScrollReveal className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                  {t("eventCategories.title")}
+                  {t("eventCategories.title", "Types d'événements")}
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8" />
                 <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                  {t("eventCategories.subtitle")}
+                  {t("eventCategories.subtitle", "Chaque événement est unique. Choisissez la catégorie qui correspond le mieux à vos besoins et découvrez comment nous pouvons créer une expérience inoubliable.")}
                 </p>
               </ScrollReveal>
 
@@ -211,11 +211,11 @@ export default function EventsPage() {
             <div className="container mx-auto px-4">
               <ScrollReveal className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                  {t("howItWorks.title")}
+                  {t("howItWorks.title", "Comment ça marche")}
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8" />
                 <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                  {t("howItWorks.subtitle")}
+                  {t("howItWorks.subtitle", "Un processus simple en 3 étapes pour organiser votre événement Voilà Vélo")}
                 </p>
               </ScrollReveal>
 
@@ -264,7 +264,7 @@ export default function EventsPage() {
                 <div className="mt-16 text-center">
                   <Link href="/comment-ca-marche">
                     <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5">
-                      {t("howItWorks.learnMoreButton")}
+                      {t("howItWorks.learnMoreButton", "En savoir plus sur notre processus")}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -281,11 +281,11 @@ export default function EventsPage() {
               <div className="container mx-auto px-4 text-center relative z-10">
                 <ScrollReveal>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-sm">
-                    {t("cta.title")}
+                    {t("cta.title", "Prêt à créer un événement mémorable?")}
                   </h2>
                   <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                   <p className="text-xl mb-8 max-w-3xl mx-auto drop-shadow-sm">
-                    {t("cta.text")}
+                    {t("cta.text", "Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.")}
                   </p>
                 </ScrollReveal>
                 
@@ -293,7 +293,7 @@ export default function EventsPage() {
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/contact">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        {t("cta.requestQuote")}
+                        {t("cta.requestQuote", "Demander un devis")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -304,7 +304,7 @@ export default function EventsPage() {
                         variant="outline" 
                         className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
                       >
-                        {t("cta.callUs")}
+                        {t("cta.callUs", "Appelez-nous")}
                       </Button>
                     </Link>
                   </AnimatedImage>
