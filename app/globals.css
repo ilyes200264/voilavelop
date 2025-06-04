@@ -159,6 +159,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom fonts styling */
+.fancy-title {
+  padding: 0.5em 0;
+  line-height: 1.5;
+  overflow: visible;
+}
+
 /* Custom animations */
 @keyframes fadeInUp {
   from {

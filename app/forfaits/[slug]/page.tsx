@@ -62,7 +62,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
               <TextReveal>
-                <h1 className="text-5xl md:text-7xl font-normal text-dark-charcoal mb-6 font-great-vibes leading-tight tracking-wide">
+                <h1 className="text-5xl md:text-7xl font-normal text-dark-charcoal mb-6 font-allura leading-relaxed tracking-wide fancy-title">
                   {currentPackage.title}
                 </h1>
               </TextReveal>
