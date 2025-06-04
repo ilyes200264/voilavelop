@@ -12,8 +12,8 @@ export default function BuildYourEventPage() {
   const { t } = useI18n()
   const [currentStep, setCurrentStep] = useState(1)
   
-  const steps = t<Array<{ number: number; name: string }>>("steps")
-  const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes")
+  const steps = t<Array<{ number: number; name: string }>>("steps", [])
+  const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes", [])
 
   const handleNext = () => {
     if (currentStep < steps.length) {
@@ -46,7 +46,7 @@ export default function BuildYourEventPage() {
           {/* Step Progress */}
           <div className="step-progress mb-12">
             <div className="flex items-center justify-between">
-              {steps.map((step) => (
+              {(steps || []).map((step) => (
                 <div key={step.number} className="step-item flex-1 relative">
                   <div
                     className={`step-circle w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2 ${
@@ -89,7 +89,7 @@ export default function BuildYourEventPage() {
                 </p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                  {eventTypes.map((type, index) => (
+                  {(eventTypes || []).map((type, index) => (
                     <div
                       key={index}
                       className="event-type-card border border-gray-200 rounded-lg p-4 hover:border-primary-red hover:shadow-md cursor-pointer transition-all"
@@ -128,7 +128,7 @@ export default function BuildYourEventPage() {
                   <div className="form-group">
                     <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.duration")}</label>
                     <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent">
-                      {t<string[]>("step2.form.durationOptions").map((option, index) => (
+                      {t<string[]>("step2.form.durationOptions", []).map((option, index) => (
                         <option key={index} value={index + 1}>{option}</option>
                       ))}
                     </select>
@@ -172,7 +172,7 @@ export default function BuildYourEventPage() {
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
                     <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.bikes.title")}</h3>
                     <div className="grid md:grid-cols-3 gap-4">
-                      {t<string[]>("step3.bikes.options").map((option, index) => (
+                      {t<string[]>("step3.bikes.options", []).map((option, index) => (
                         <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
                           <input type="radio" name="bikes" className="text-primary-red focus:ring-primary-red h-4 w-4" />
                           <span className="text-dark-charcoal">{option}</span>
@@ -184,7 +184,7 @@ export default function BuildYourEventPage() {
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
                     <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.smoothies.title")}</h3>
                     <div className="grid md:grid-cols-3 gap-4">
-                      {t<string[]>("step3.smoothies.options").map((option, index) => (
+                      {t<string[]>("step3.smoothies.options", []).map((option, index) => (
                         <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
                           <input type="radio" name="smoothies" className="text-primary-red focus:ring-primary-red h-4 w-4" />
                           <span className="text-dark-charcoal">{option}</span>
@@ -196,7 +196,7 @@ export default function BuildYourEventPage() {
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
                     <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.extras.title")}</h3>
                     <div className="space-y-3">
-                      {t<Array<{title: string; description: string}>>("step3.extras.options").map((option, index) => (
+                      {t<Array<{title: string; description: string}>>("step3.extras.options", []).map((option, index) => (
                         <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
                           <input type="checkbox" className="text-primary-red focus:ring-primary-red h-4 w-4" />
                           <div>

@@ -118,7 +118,7 @@ export function PackagesSection() {
                     {t('packages.includes', 'Package includes:')}
                   </h5>
                   <ul className="includes-list space-y-2">
-                    {pkg.mainSection?.includes?.map((item: string, itemIndex: number) => (
+                    {(pkg.mainSection?.includes || []).map((item: string, itemIndex: number) => (
                       <li key={itemIndex} className="flex items-start text-sm group">
                         <span className={`${pkg.borderColor.replace('border-t-', 'text-')} mr-2 mt-1 transform transition-transform duration-300 group-hover:scale-125`}>✓</span>
                         <span className="text-gray-700">{item}</span>
@@ -128,7 +128,7 @@ export function PackagesSection() {
                 </div>
 
                 <div className="package-options mb-6">
-                  {pkg.options?.map((option: any, optionIndex: number) => (
+                  {(pkg.options || []).map((option: any, optionIndex: number) => (
                     <div key={optionIndex} className={`option flex justify-between items-center py-2 px-3 text-sm my-2 border-l-2 ${pkg.borderColor.replace('border-t-', 'border-l-')} rounded-r-lg transition-all duration-300 hover:bg-gray-50`}>
                       <span className="option-label font-medium text-dark-charcoal">
                         {option.title || `Option ${optionIndex + 1}`}

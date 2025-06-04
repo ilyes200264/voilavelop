@@ -64,7 +64,7 @@ export function TestimonialsSection() {
             <div className="testimonial-content space-y-6">
               {/* Stars Rating */}
               <div className="stars-rating flex justify-center space-x-1">
-                {[...Array(currentTestimonialData.rating)].map((_, i) => (
+                {[...Array(currentTestimonialData?.rating || 0)].map((_, i) => (
                   <span key={i} className="star text-secondary-yellow text-2xl">
                     ★
                   </span>
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
             </button>
 
             <div className="carousel-dots flex space-x-2">
-              {testimonials.map((_, index) => (
+              {(testimonials || []).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}

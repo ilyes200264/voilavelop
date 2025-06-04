@@ -257,7 +257,7 @@ export default function ForfaitsPage() {
                         </div>
                         
                         <ul className="mb-6 flex-grow">
-                          {pkg.features.map((feature, idx) => (
+                          {(pkg.features || []).map((feature, idx) => (
                             <li key={idx} className="mb-3 flex items-start">
                               <span className="inline-block mr-2">•</span>
                               <span>{feature}</span>

@@ -124,7 +124,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <h5 className="text-xl font-semibold mb-4">{t('packageDetail.whatsIncluded')}</h5>
                   
                   <ul className="space-y-3 mb-8">
-                    {currentPackage.mainSection.includes.map((item, index) => (
+                    {(currentPackage.mainSection?.includes || []).map((item, index) => (
                       <li key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
                         <span>{item}</span>
@@ -172,7 +172,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <h5 className="text-xl font-semibold mb-4">{t('packageDetail.perfectFor')}</h5>
                   
                   <ul className="space-y-3 mb-8">
-                    {currentPackage.targetSection.perfectFor.map((item, index) => (
+                    {(currentPackage.targetSection?.perfectFor || []).map((item, index) => (
                       <li key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
                         <span>{item}</span>
@@ -260,7 +260,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
             </ScrollReveal>
 
             <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {currentPackage.reviewsSection.testimonials.map((testimonial, index) => (
+              {(currentPackage.reviewsSection?.testimonials || []).map((testimonial, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -312,7 +312,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
             </ScrollReveal>
 
             <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {currentPackage.options.map((option, index) => (
+              {(currentPackage.options || []).map((option, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -342,7 +342,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                     <div className="mb-6">
                       <h4 className="font-semibold text-dark-charcoal mb-3">{t('packageDetail.options.included')}:</h4>
                       <ul className="space-y-2">
-                        {option.includes.map((item, itemIndex) => (
+                        {(option.includes || []).map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start">
                             <Check className="h-5 w-5 text-accent-green mr-2 mt-0.5 flex-shrink-0" />
                             <span className="text-gray-700 text-sm">{item}</span>
