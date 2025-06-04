@@ -5,10 +5,13 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
+import { LanguageSwitcher } from "./language-switcher"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
+  const { t, language } = useI18n()
 
   const toggleSubmenu = (menu: string) => {
     setActiveSubmenu(activeSubmenu === menu ? null : menu)
@@ -95,58 +98,60 @@ export function Header() {
     }
   }
 
-  const navItems = [
-    { name: "Accueil", href: "/", hasSubmenu: false },
+  const getNavItems = () => [
+    { name: t('navigation.home'), href: "/", hasSubmenu: false },
     { 
-      name: "À Propos", 
+      name: t('navigation.about'), 
       href: "/a-propos/", 
       hasSubmenu: true,
       submenuId: "about",
       submenu: [
-        { name: "Qui nous sommes", href: "/a-propos/#qui-nous-sommes" },
-        { name: "Notre mission", href: "/a-propos/#notre-mission" },
-        { name: "Nos valeurs", href: "/a-propos/#nos-valeurs" }
+        { name: t('about_submenu.whoWeAre'), href: "/a-propos/#qui-nous-sommes" },
+        { name: t('about_submenu.ourMission'), href: "/a-propos/#notre-mission" },
+        { name: t('about_submenu.ourValues'), href: "/a-propos/#nos-valeurs" }
       ]
     },
     { 
-      name: "Forfaits", 
+      name: t('navigation.packages'), 
       href: "/forfaits/", 
       hasSubmenu: true,
       submenuId: "packages",
       submenu: [
-        { name: "La petite Koki", href: "/forfaits/la-petite-koki" },
-        { name: "Pop Solo", href: "/forfaits/pop-solo" },
-        { name: "Double Fun", href: "/forfaits/double-fun" },
-        { name: "Ready Set Blend", href: "/forfaits/ready-set-blend" },
-        { name: "Défi Parent-Enfant", href: "/forfaits/defi-parent-enfant" },
-        { name: "La Smoothie Parade", href: "/forfaits/la-smoothie-parade" },
-        { name: "Forfait Signature", href: "/forfaits/signature" }
+        { name: t('packages_submenu.laPetiteKoki'), href: "/forfaits/la-petite-koki" },
+        { name: t('packages_submenu.popSolo'), href: "/forfaits/pop-solo" },
+        { name: t('packages_submenu.doubleFun'), href: "/forfaits/double-fun" },
+        { name: t('packages_submenu.readySetBlend'), href: "/forfaits/ready-set-blend" },
+        { name: t('packages_submenu.parentChildChallenge'), href: "/forfaits/defi-parent-enfant" },
+        { name: t('packages_submenu.smoothieParade'), href: "/forfaits/la-smoothie-parade" },
+        { name: t('packages_submenu.signature'), href: "/forfaits/signature" }
       ]
     },
     { 
-      name: "Événements", 
+      name: t('navigation.events'), 
       href: "/evenements/", 
       hasSubmenu: true,
       submenuId: "events",
       submenu: [
-        { name: "Corporate", href: "/evenements/corporate" },
-        { name: "Ouvertures & Activations", href: "/evenements/ouvertures-et-activations" },
-        { name: "Écoles, Organismes & Anniversaires", href: "/evenements/ecoles-organismes-et-anniversaires" },
-        { name: "Conférences & Expositions", href: "/evenements/conferences-et-expositions" }
+        { name: t('events_submenu.corporate'), href: "/evenements/corporate" },
+        { name: t('events_submenu.openingsActivations'), href: "/evenements/ouvertures-et-activations" },
+        { name: t('events_submenu.schoolsOrganizationsAnniversaries'), href: "/evenements/ecoles-organismes-et-anniversaires" },
+        { name: t('events_submenu.conferencesExhibitions'), href: "/evenements/conferences-et-expositions" }
       ]
     },
     { 
-      name: "Comment ça marche", 
+      name: t('navigation.howItWorks'), 
       href: "/comment-ca-marche/", 
       hasSubmenu: true,
       submenuId: "how",
       submenu: [
-        { name: "Créez votre événement", href: "/comment-ca-marche/build-your-event" },
-        { name: "FAQ", href: "/comment-ca-marche/faq" }
+        { name: t('howItWorks_submenu.createYourEvent'), href: "/comment-ca-marche/build-your-event" },
+        { name: t('howItWorks_submenu.faq'), href: "/comment-ca-marche/faq" }
       ]
     },
-    { name: "Contact", href: "/contact/", hasSubmenu: false }
+    { name: t('navigation.contact'), href: "/contact/", hasSubmenu: false }
   ]
+  
+  const navItems = getNavItems()
 
   return (
     <motion.header 
@@ -219,17 +224,11 @@ export function Header() {
             variants={navItemVariants}
             custom={6}
           >
-            <div className="language-switcher hidden md:flex items-center space-x-2">
-              <Link href="/" className="text-primary-red font-semibold">
-                FR
-              </Link>
-              <span className="text-gray-400">|</span>
-              <Link href="/en/" className="text-gray-600 hover:text-primary-red transition-colors">
-                EN
-              </Link>
-            </div>
+            <LanguageSwitcher className="hidden md:flex" />
 
-            <Button className="btn-primary hidden md:inline-flex">Réserver</Button>
+            <Button className="btn-primary hidden md:inline-flex" asChild>
+              <Link href="/reserver">{t('navigation.book')}</Link>
+            </Button>
 
             {/* Mobile Menu Toggle */}
             <motion.button 
@@ -305,7 +304,9 @@ export function Header() {
                   </motion.li>
                 ))}
                 <motion.li className="pt-4 border-t border-gray-200" variants={navItemVariants}>
-                  <Button className="btn-primary w-full">Réserver</Button>
+                  <Button className="btn-primary w-full" asChild>
+                    <Link href="/reserver">{t('navigation.book')}</Link>
+                  </Button>
                 </motion.li>
               </ul>
             </motion.nav>

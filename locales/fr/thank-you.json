@@ -1,0 +1,21 @@
+{
+  "title": "Merci pour votre demande!",
+  "subtitle": "Nous avons bien reçu votre demande de soumission. Notre équipe vous contactera dans les 24 heures avec une proposition personnalisée pour votre événement.",
+  "nextSteps": {
+    "title": "Prochaines étapes",
+    "steps": [
+      "Nous révisons les détails de votre événement",
+      "Nous préparons une soumission personnalisée",
+      "Nous vous contactons pour discuter des options",
+      "Nous finalisons les détails et confirmons la réservation"
+    ]
+  },
+  "urgentQuestions": {
+    "text": "Questions urgentes? Appelez-nous directement:",
+    "callButton": "XXX-XXX-XXXX"
+  },
+  "socialLinks": {
+    "text": "En attendant, suivez-nous pour l'inspiration:"
+  },
+  "returnHome": "Retour à l'accueil"
+}

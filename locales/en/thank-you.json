@@ -1,0 +1,21 @@
+{
+  "title": "Thank you for your request!",
+  "subtitle": "We have received your quote request. Our team will contact you within 24 hours with a personalized proposal for your event.",
+  "nextSteps": {
+    "title": "Next steps",
+    "steps": [
+      "We review your event details",
+      "We prepare a personalized quote",
+      "We contact you to discuss options",
+      "We finalize the details and confirm the booking"
+    ]
+  },
+  "urgentQuestions": {
+    "text": "Urgent questions? Call us directly:",
+    "callButton": "XXX-XXX-XXXX"
+  },
+  "socialLinks": {
+    "text": "Meanwhile, follow us for inspiration:"
+  },
+  "returnHome": "Return to home"
+}

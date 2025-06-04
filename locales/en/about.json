@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "title": "About Us",
+    "quote": "\"We engage and inspire people in a fun and healthy way!\"",
+    "founders": "Leen and Micha"
+  },
+  "company": {
+    "title": "Voilà Vélo Fruité",
+    "subtitle": "We create innovative and sustainable events",
+    "description1": "Voilà Vélo Fruité is a pop-up events company that promotes cycling, sustainability, health, and happiness using our Quebec-made blender bikes.",
+    "description2": "We are a team of passionate event organizers who believe in ethical and sustainable practices to create a happier and healthier world — one smoothie event at a time! We use washable or biodegradable cups, offset our carbon, compost or recycle all waste produced, and donate to UNICEF.",
+    "description3": "Voilà Vélo Fruité is perfect for engaging and inspiring your audience through entertaining catering, brand exposure, or promoting sustainability and health at events.",
+    "description4": "The company was founded by Leen and Micha in 2020 with the help of their dedicated team. They now run events in Montreal, Quebec City, Laval, and Ottawa."
+  },
+  "founders": {
+    "title": "Our Founders",
+    "subtitle": "Leen and Micha",
+    "description": "We are Leen and Micha — two sisters with a great love for nature, healthy living, and cycling. That's how Voilà Vélo Fruité came to be — a joyful concept where people of all ages can hop on a smoothie bike, pedal with all their heart, and create their own delicious drink, powered entirely by their energy! To learn more about how we started Voilà Vélo Fruité, check out our story.",
+    "button": "Learn More"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "values": [
+      {
+        "icon": "👁️",
+        "title": "Our Vision",
+        "description": "We believe in ethical and sustainable practices for a happier and healthier world that everyone can enjoy."
+      },
+      {
+        "icon": "🎯", 
+        "title": "Our Mission",
+        "description": "To be Quebec's leading bike pop-up events company so that we can support and donate to international and local organizations that share our vision."
+      },
+      {
+        "icon": "⚖️",
+        "title": "Our Ethics",
+        "description": "We place the planet and our people before profit while delivering exceptional service. We believe in 'be the change you want to see'."
+      }
+    ]
+  },
+  "howWeDo": {
+    "title": "We do this by:",
+    "points": [
+      "Providing exceptional professional sustainable activations;",
+      "Making health and wellness easy and fun for any demographic;",
+      "Adopting sustainable and ethical practices by using only washable or biodegradable cups (and taking a stand against the use of straws or lids), composting or recycling almost ALL of our waste including soft plastic, using carbon offsets to neutralize our emissions, and donating to UNICEF and local organizations;",
+      "Partnering with companies that share a similar mission.",
+      "So supporting us means supporting our wonderful planet.",
+      "We also build each blender bike by hand in Quebec."
+    ]
+  },
+  "partners": {
+    "title": "Our Partners",
+    "description": "Our partners specialize in pedal-powered events using bikes to engage, educate, and entertain children and adults.",
+    "button": "Learn More"
+  }
+}

@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+"use client";
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Check, Users, Award, Smile, ArrowRight, Building, Heart, TrendingUp, Coffee, Star } from "lucide-react"
@@ -12,115 +14,56 @@ import {
   TextReveal,
   RedLineSeparator
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export default function CorporateEventsPage() {
-  const benefits = [
-    {
-      icon: <Users className="h-12 w-12 text-white" />,
-      title: "Renforcement d'équipe",
-      description: "Favorisez la collaboration et l'esprit d'équipe à travers une activité amusante et interactive qui rassemble naturellement vos employés.",
-      color: "bg-primary-red"
-    },
-    {
-      icon: <Heart className="h-12 w-12 text-white" />,
-      title: "Promotion du bien-être",
-      description: "Encouragez un mode de vie sain et actif auprès de vos employés tout en offrant une pause énergisante dans leur journée de travail.",
-      color: "bg-secondary-yellow"
-    },
-    {
-      icon: <TrendingUp className="h-12 w-12 text-white" />,
-      title: "Productivité améliorée",
-      description: "Des recherches montrent qu'un employé en bonne santé est 5,81 fois plus productif et génère un ROI positif pour l'entreprise.",
-      color: "bg-accent-green"
-    },
-    {
-      icon: <Smile className="h-12 w-12 text-white" />,
-      title: "Expérience mémorable",
-      description: "Créez des souvenirs positifs associés à votre marque et à votre culture d'entreprise qui renforceront l'engagement des employés.",
-      color: "bg-trust-blue"
-    },
-  ]
-
-  const packages = [
-    {
-      title: "Pop Solo Corporate",
-      duration: "1.5-2.5 heures",
-      people: "20-40 personnes",
-      price: "À partir de 649$",
-      features: [
-        "1 vélo mélangeur pour adultes",
-        "50-75 smoothies énergisants",
-        "Animation professionnelle",
-        "Installation en entreprise",
-        "Nettoyage inclus"
-      ],
-      popular: false
-    },
-    {
-      title: "Ready Set Blend Team",
-      duration: "2-3 heures",
-      people: "30-60 personnes", 
-      price: "À partir de 799$",
-      features: [
-        "2 vélos avec moniteurs de vitesse",
-        "100-150 smoothies de compétition",
-        "Classement en temps réel",
-        "Animateur énergique",
-        "Prix pour les gagnants",
-        "Personnalisation d'entreprise"
-      ],
-      popular: true
-    },
-    {
-      title: "Double Fun Corporate",
-      duration: "3-4 heures",
-      people: "50-100 personnes",
-      price: "À partir de 999$",
-      features: [
-        "2 vélos mélangeurs premium",
-        "200-300 smoothies frais",
-        "Installation complète",
-        "Équipe d'animation",
-        "Branding personnalisé",
-        "Service traiteur smoothies"
-      ],
-      popular: false
-    }
-  ]
-
-  const testimonials = [
-    {
-      quote: "Nos employés ont adoré l'expérience des vélos à smoothie lors de notre journée bien-être. C'était à la fois amusant, sain et parfaitement aligné avec nos valeurs d'entreprise.",
-      author: "Marie Dubois",
-      position: "Directrice RH, Entreprise XYZ",
-      company: "Tech Montréal",
-      rating: 5,
-      image: "/images/testimonial-1.jpg"
-    },
-    {
-      quote: "L'équipe de Voilà Vélo a apporté une énergie incroyable à notre événement corporatif. C'était exactement ce qu'il nous fallait pour dynamiser notre journée et renforcer la cohésion d'équipe!",
-      author: "Jean Tremblay",
-      position: "Responsable événementiel, ABC Inc.",
-      company: "Consulting Québec",
-      rating: 5,
-      image: "/images/testimonial-2.jpg"
-    },
-    {
-      quote: "Le retour sur investissement a été immédiat. Nos employés parlent encore de cette activité 6 mois plus tard. Nous planifions déjà notre prochain événement avec Voilà Vélo!",
-      author: "Sophie Lavoie",
-      position: "VP Ressources Humaines",
-      company: "Innovation Labs",
-      rating: 5,
-      image: "/images/testimonial-3.jpg"
-    }
-  ]
-
-  const stats = [
-    { number: "5.81x", label: "ROI sur le bien-être employés" },
-    { number: "95%", label: "Taux de satisfaction" },
-    { number: "200+", label: "Entreprises satisfaites" },
-    { number: "30 sec", label: "Pour faire un smoothie" }
-  ]
+  const { t } = useI18n();
+  
+  // Icons for benefits
+  const benefitIcons = [
+    <Users key="users" className="h-12 w-12 text-white" />,
+    <Heart key="heart" className="h-12 w-12 text-white" />,
+    <TrendingUp key="trending" className="h-12 w-12 text-white" />,
+    <Smile key="smile" className="h-12 w-12 text-white" />
+  ];
+  
+  // Colors for benefits
+  const benefitColors = ["bg-primary-red", "bg-secondary-yellow", "bg-accent-green", "bg-trust-blue"];
+  
+  // Get benefits from translations and add icons and colors
+  const benefits = t<Array<{
+    title: string;
+    description: string;
+  }>>("benefits.items").map((benefit, index) => ({
+    ...benefit,
+    icon: benefitIcons[index],
+    color: benefitColors[index]
+  }));
+  
+  // Get packages from translations
+  const packages = t<Array<{
+    title: string;
+    duration: string;
+    people: string;
+    price: string;
+    features: string[];
+    popular?: boolean;
+  }>>("packages.items");
+  
+  // Get testimonials from translations
+  const testimonials = t<Array<{
+    quote: string;
+    author: string;
+    position: string;
+    company: string;
+    rating: number;
+  }>>("testimonials.items").map((testimonial, index) => ({
+    ...testimonial,
+    image: `/images/testimonial-${index + 1}.jpg`
+  }));
+  
+  // Get stats from translations
+  const stats = t<Array<{ number: string; label: string }>>("stats");
 
   return (
     <div className="min-h-screen">
@@ -213,12 +156,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                Pourquoi choisir Voilà Vélo pour votre événement d'entreprise?
+                {t("benefits.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Un employé en bonne santé est non seulement plus heureux, mais aussi plus productif — 
-                et quoi de mieux pour promouvoir le bien-être qu'un smoothie qu'ils préparent eux-mêmes?
+                {t("benefits.subtitle")}
               </p>
             </ScrollReveal>
 
@@ -270,28 +212,20 @@ export default function CorporateEventsPage() {
                   <div className="flex items-center mb-6">
                     <Building className="h-12 w-12 mr-4" />
                     <h2 className="text-3xl md:text-4xl font-bold">
-                      L'expérience corporate parfaite
+                      {t("corporateExperience.title")}
                     </h2>
                   </div>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    Que votre équipe revienne au bureau ou ait simplement besoin d'un coup de boost, 
-                    notre station de smoothies à pédales est un excellent moyen de promouvoir l'activité physique, 
-                    nourrir le corps et susciter des conversations.
+                    {t("corporateExperience.description")}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {[
-                      "Installation directement dans vos locaux",
-                      "Aucune électricité nécessaire - 100% énergie humaine",
-                      "Activité inclusive pour tous les âges et capacités",
-                      "Personnalisation possible avec votre branding",
-                      "Nettoyage et désinstallation inclus"
-                    ].map((feature, index) => (
+                    {t<string[]>("corporateExperience.features").map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{feature}</span>
@@ -304,7 +238,7 @@ export default function CorporateEventsPage() {
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-xl">
-                        Planifier mon événement
+                        {t("corporateExperience.planEventButton")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </AnimatedImage>
@@ -320,11 +254,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                Forfaits Corporate
+                {t("packages.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Choisissez le forfait qui correspond le mieux à la taille de votre équipe et à vos objectifs
+                {t("packages.subtitle")}
               </p>
             </ScrollReveal>
 
@@ -343,7 +277,7 @@ export default function CorporateEventsPage() {
                   >
                     {pkg.popular && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        Plus populaire
+                        {t("packages.mostPopular")}
                       </div>
                     )}
                     
@@ -375,7 +309,7 @@ export default function CorporateEventsPage() {
                               : 'bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white'
                           }`}
                         >
-                          Choisir ce forfait
+                          {t("packages.selectPackage")}
                         </Button>
                       </div>
                     </div>
@@ -391,7 +325,7 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                Ce que nos clients corporate disent
+                {t("testimonials.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
             </ScrollReveal>
@@ -442,26 +376,19 @@ export default function CorporateEventsPage() {
               <StaggerContainer>
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Un investissement qui rapporte
+                    {t("roi.title")}
                   </h2>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    Les recherches australiennes sur le bien-être en entreprise montrent un retour sur investissement 
-                    de 5,81$ pour chaque dollar investi dans le bien-être des employés.
+                    {t("roi.description")}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {[
-                      "Réduction de l'absentéisme",
-                      "Amélioration de la rétention du personnel", 
-                      "Augmentation de la productivité",
-                      "Renforcement de la culture d'entreprise",
-                      "Amélioration de l'image employeur"
-                    ].map((benefit, index) => (
+                    {t<string[]>("roi.benefits").map((benefit, index) => (
                       <div key={index} className="flex items-center">
                         <TrendingUp className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{benefit}</span>
@@ -474,10 +401,10 @@ export default function CorporateEventsPage() {
               <AnimatedImage hoverEffect="scale">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <div className="text-center">
-                    <div className="text-6xl font-bold mb-4">5.81x</div>
-                    <div className="text-xl mb-6">Retour sur investissement</div>
+                    <div className="text-6xl font-bold mb-4">{t("roi.roiCard.value")}</div>
+                    <div className="text-xl mb-6">{t("roi.roiCard.title")}</div>
                     <div className="text-lg opacity-90">
-                      Pour chaque dollar investi dans le bien-être des employés
+                      {t("roi.roiCard.subtitle")}
                     </div>
                   </div>
                 </div>
@@ -491,12 +418,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Prêt à dynamiser votre prochain événement d'entreprise?
+                {t("finalCta.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-xl mb-8">
-                Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé. 
-                Nos experts vous aideront à créer l'événement corporate parfait.
+                {t("finalCta.description")}
               </p>
             </ScrollReveal>
             
@@ -504,7 +430,7 @@ export default function CorporateEventsPage() {
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
                   <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Contactez-nous
+                    {t("finalCta.contactUs")}
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -516,7 +442,7 @@ export default function CorporateEventsPage() {
                     variant="outline" 
                     className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
                   >
-                    Créer votre événement
+                    {t("finalCta.createEvent")}
                   </Button>
                 </Link>
               </AnimatedImage>

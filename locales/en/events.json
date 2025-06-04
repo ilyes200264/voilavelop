@@ -1,0 +1,94 @@
+{
+  "title": "Events",
+  "subtitle": "We bring energy, fun, and sustainability to all types of events. Discover how our smoothie bikes can transform your next gathering.",
+  "viewPackages": "View our packages",
+  
+  "eventCategories": {
+    "title": "Event Types",
+    "subtitle": "Each event is unique. Choose the category that best matches your needs and discover how we can create an unforgettable experience.",
+    "categories": [
+      {
+        "id": "corporate",
+        "title": "Corporate",
+        "tagline": "Boost employee wellness and energize your workplace!",
+        "description": "Looking for a fun, healthy, and memorable way to engage your team right at your office? Our smoothie bike setup brings healthy fun directly to your workplace lobby or common area.",
+        "benefits": [
+          "Unique team building",
+          "Workplace wellness promotion", 
+          "Productivity improvement",
+          "Creating positive memories"
+        ],
+        "readMore": "Learn more"
+      },
+      {
+        "id": "ouvertures-et-activations",
+        "title": "Openings & Activations",
+        "tagline": "Make your next event unforgettable - blend your brand with action!",
+        "description": "Want to create buzz and draw a crowd? Our smoothie bike is more than just a fun activity - it's a magnet for your brand. Every element can be customized with your logo to leave a lasting impression.",
+        "benefits": [
+          "Strong visual attraction",
+          "Complete brand customization",
+          "High customer engagement",
+          "Guaranteed marketing buzz"
+        ],
+        "readMore": "Learn more"
+      },
+      {
+        "id": "ecoles-organismes-et-anniversaires",
+        "title": "Schools, Organizations & Birthdays", 
+        "tagline": "Bring people together around smoothies, smiles, and lots of fun!",
+        "description": "Looking for a creative way to raise funds, connect with your community, or celebrate a special day? Our smoothie bike experiences are perfect for school events and birthday parties!",
+        "benefits": [
+          "Educational and fun activity",
+          "Effective fundraising",
+          "Community engagement",
+          "Unforgettable memories"
+        ],
+        "readMore": "Learn more"
+      },
+      {
+        "id": "conferences-et-expositions",
+        "title": "Conferences & Exhibitions",
+        "tagline": "Attract attention, spark conversations, and energize your booth!",
+        "description": "Looking for a way to stand out at your next event? Our smoothie bike is an attraction that gets people pedaling, smiling, and engaging with your brand in a fun and memorable way.",
+        "benefits": [
+          "Competitive differentiation",
+          "Lead generation",
+          "Memorable experience",
+          "Increased booth traffic"
+        ],
+        "readMore": "Learn more"
+      }
+    ]
+  },
+  
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "A simple 3-step process to organize your Voilà Vélo event",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choose your package",
+        "description": "Select the package that matches your event and needs"
+      },
+      {
+        "step": "2", 
+        "title": "Customize the experience",
+        "description": "Adapt the details, decoration, and options to your preferences"
+      },
+      {
+        "step": "3",
+        "title": "Enjoy the event", 
+        "description": "We take care of everything else while you create memories"
+      }
+    ],
+    "learnMoreButton": "Learn more about our process"
+  },
+  
+  "cta": {
+    "title": "Ready to create a memorable event?",
+    "text": "Contact us today to discuss your needs and get a personalized quote for your next Voilà Vélo event.",
+    "requestQuote": "Request a quote",
+    "callUs": "Call us"
+  }
+}

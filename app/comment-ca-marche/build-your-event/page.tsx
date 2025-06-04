@@ -6,49 +6,14 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { CheckCircle, ChevronRight } from "lucide-react"
+import { useI18n } from "@/lib/i18n"
 
 export default function BuildYourEventPage() {
+  const { t } = useI18n()
   const [currentStep, setCurrentStep] = useState(1)
   
-  const steps = [
-    { number: 1, name: "Type d'événement" },
-    { number: 2, name: "Détails" },
-    { number: 3, name: "Options" },
-    { number: 4, name: "Résumé" },
-  ]
-
-  const eventTypes = [
-    {
-      title: "Événement corporatif",
-      description: "Parfait pour les événements d'entreprise, réunions d'équipe et bien-être au travail",
-      icon: "🏢",
-    },
-    {
-      title: "Activation de marque",
-      description: "Idéal pour les lancements de produits, ouvertures et événements promotionnels",
-      icon: "🚀",
-    },
-    {
-      title: "Fête scolaire",
-      description: "Pour les écoles, universités et événements éducatifs",
-      icon: "🎓",
-    },
-    {
-      title: "Fête privée",
-      description: "Parfait pour les anniversaires, mariages et célébrations familiales",
-      icon: "🎉",
-    },
-    {
-      title: "Festival ou événement communautaire",
-      description: "Pour les grands rassemblements, festivals et événements publics",
-      icon: "🎪",
-    },
-    {
-      title: "Organisme à but non lucratif",
-      description: "Pour les collectes de fonds et les événements caritatifs",
-      icon: "💝",
-    },
-  ]
+  const steps = t<Array<{ number: number; name: string }>>("steps")
+  const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes")
 
   const handleNext = () => {
     if (currentStep < steps.length) {
@@ -72,9 +37,9 @@ export default function BuildYourEventPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           {/* Page Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">Créez votre événement</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">{t("title")}</h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Suivez les étapes ci-dessous pour créer un événement personnalisé qui correspondra parfaitement à vos besoins
+              {t("subtitle")}
             </p>
           </div>
 
@@ -118,10 +83,9 @@ export default function BuildYourEventPage() {
           <div className="step-content bg-white rounded-xl shadow-md p-6 md:p-8 mb-8">
             {currentStep === 1 && (
               <div className="step-1">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">Quel type d'événement organisez-vous?</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{t("step1.title")}</h2>
                 <p className="text-gray-600 mb-8">
-                  Sélectionnez le type d'événement qui correspond le mieux à vos besoins. Cela nous aidera à vous
-                  recommander les forfaits les plus adaptés.
+                  {t("step1.subtitle")}
                 </p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -141,57 +105,55 @@ export default function BuildYourEventPage() {
 
             {currentStep === 2 && (
               <div className="step-2">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">Détails de votre événement</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{t("step2.title")}</h2>
                 <p className="text-gray-600 mb-8">
-                  Fournissez les informations essentielles concernant votre événement.
+                  {t("step2.subtitle")}
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   <div className="form-group">
-                    <label className="block text-dark-charcoal font-medium mb-2">Date de l'événement</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.eventDate")}</label>
                     <input
                       type="date"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                     />
                   </div>
                   <div className="form-group">
-                    <label className="block text-dark-charcoal font-medium mb-2">Heure de début</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.startTime")}</label>
                     <input
                       type="time"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                     />
                   </div>
                   <div className="form-group">
-                    <label className="block text-dark-charcoal font-medium mb-2">Durée (heures)</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.duration")}</label>
                     <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent">
-                      <option value="1">1 heure</option>
-                      <option value="2">2 heures</option>
-                      <option value="3">3 heures</option>
-                      <option value="4">4 heures</option>
-                      <option value="custom">Personnalisé</option>
+                      {t<string[]>("step2.form.durationOptions").map((option, index) => (
+                        <option key={index} value={index + 1}>{option}</option>
+                      ))}
                     </select>
                   </div>
                   <div className="form-group">
-                    <label className="block text-dark-charcoal font-medium mb-2">Nombre de participants</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.participants")}</label>
                     <input
                       type="number"
-                      placeholder="Nombre approximatif"
+                      placeholder={t("step2.form.participantsPlaceholder")}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                     />
                   </div>
                   <div className="form-group md:col-span-2">
-                    <label className="block text-dark-charcoal font-medium mb-2">Lieu de l'événement</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.location")}</label>
                     <input
                       type="text"
-                      placeholder="Adresse complète"
+                      placeholder={t("step2.form.locationPlaceholder")}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                     />
                   </div>
                   <div className="form-group md:col-span-2">
-                    <label className="block text-dark-charcoal font-medium mb-2">Description de l'événement</label>
+                    <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.description")}</label>
                     <textarea
                       rows={4}
-                      placeholder="Décrivez brièvement votre événement et vos attentes"
+                      placeholder={t("step2.form.descriptionPlaceholder")}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent resize-none"
                     ></textarea>
                   </div>
@@ -201,72 +163,48 @@ export default function BuildYourEventPage() {
 
             {currentStep === 3 && (
               <div className="step-3">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">Options et personnalisation</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{t("step3.title")}</h2>
                 <p className="text-gray-600 mb-8">
-                  Personnalisez votre expérience en sélectionnant les options qui vous intéressent.
+                  {t("step3.subtitle")}
                 </p>
 
                 <div className="space-y-6 mb-8">
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Nombre de vélos</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.bikes.title")}</h3>
                     <div className="grid md:grid-cols-3 gap-4">
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="bikes" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">1 vélo adulte</span>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="bikes" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">2 vélos adultes</span>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="bikes" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">1 enfant + 1 adulte</span>
-                      </label>
+                      {t<string[]>("step3.bikes.options").map((option, index) => (
+                        <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
+                          <input type="radio" name="bikes" className="text-primary-red focus:ring-primary-red h-4 w-4" />
+                          <span className="text-dark-charcoal">{option}</span>
+                        </label>
+                      ))}
                     </div>
                   </div>
 
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Quantité de smoothies</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.smoothies.title")}</h3>
                     <div className="grid md:grid-cols-3 gap-4">
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="smoothies" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">50 smoothies</span>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="smoothies" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">100 smoothies</span>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="radio" name="smoothies" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <span className="text-dark-charcoal">200+ smoothies</span>
-                      </label>
+                      {t<string[]>("step3.smoothies.options").map((option, index) => (
+                        <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
+                          <input type="radio" name="smoothies" className="text-primary-red focus:ring-primary-red h-4 w-4" />
+                          <span className="text-dark-charcoal">{option}</span>
+                        </label>
+                      ))}
                     </div>
                   </div>
 
                   <div className="option-group p-4 border border-gray-200 rounded-lg">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Options supplémentaires</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("step3.extras.title")}</h3>
                     <div className="space-y-3">
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="checkbox" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <div>
-                          <span className="block text-dark-charcoal font-medium">Personnalisation avec votre marque</span>
-                          <span className="block text-sm text-gray-500">Inclut gobelets et signalétique personnalisés</span>
-                        </div>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="checkbox" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <div>
-                          <span className="block text-dark-charcoal font-medium">Animation et musique</span>
-                          <span className="block text-sm text-gray-500">Animateur professionnel et système de son</span>
-                        </div>
-                      </label>
-                      <label className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
-                        <input type="checkbox" className="text-primary-red focus:ring-primary-red h-4 w-4" />
-                        <div>
-                          <span className="block text-dark-charcoal font-medium">Moniteurs de vitesse et classement</span>
-                          <span className="block text-sm text-gray-500">Pour des défis et compétitions amusantes</span>
-                        </div>
-                      </label>
+                      {t<Array<{title: string; description: string}>>("step3.extras.options").map((option, index) => (
+                        <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50">
+                          <input type="checkbox" className="text-primary-red focus:ring-primary-red h-4 w-4" />
+                          <div>
+                            <span className="block text-dark-charcoal font-medium">{option.title}</span>
+                            <span className="block text-sm text-gray-500">{option.description}</span>
+                          </div>
+                        </label>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -275,51 +213,51 @@ export default function BuildYourEventPage() {
 
             {currentStep === 4 && (
               <div className="step-4">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">Résumé de votre événement</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{t("step4.title")}</h2>
                 <p className="text-gray-600 mb-8">
-                  Vérifiez les détails de votre événement et soumettez votre demande pour obtenir un devis personnalisé.
+                  {t("step4.subtitle")}
                 </p>
 
                 <div className="summary p-6 bg-light-gray rounded-lg mb-8">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="summary-group">
-                      <h3 className="text-lg font-semibold text-dark-charcoal mb-3">Détails de l'événement</h3>
+                      <h3 className="text-lg font-semibold text-dark-charcoal mb-3">{t("step4.eventDetails.title")}</h3>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Type:</span>
+                          <span className="text-gray-600 w-32">{t("step4.eventDetails.type")}</span>
                           <span className="text-dark-charcoal font-medium">Événement corporatif</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Date:</span>
+                          <span className="text-gray-600 w-32">{t("step4.eventDetails.date")}</span>
                           <span className="text-dark-charcoal font-medium">JJ/MM/AAAA</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Heure:</span>
+                          <span className="text-gray-600 w-32">{t("step4.eventDetails.time")}</span>
                           <span className="text-dark-charcoal font-medium">HH:MM</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Durée:</span>
+                          <span className="text-gray-600 w-32">{t("step4.eventDetails.duration")}</span>
                           <span className="text-dark-charcoal font-medium">2 heures</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Lieu:</span>
+                          <span className="text-gray-600 w-32">{t("step4.eventDetails.location")}</span>
                           <span className="text-dark-charcoal font-medium">Adresse complète</span>
                         </li>
                       </ul>
                     </div>
                     <div className="summary-group">
-                      <h3 className="text-lg font-semibold text-dark-charcoal mb-3">Options choisies</h3>
+                      <h3 className="text-lg font-semibold text-dark-charcoal mb-3">{t("step4.selectedOptions.title")}</h3>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Vélos:</span>
+                          <span className="text-gray-600 w-32">{t("step4.selectedOptions.bikes")}</span>
                           <span className="text-dark-charcoal font-medium">2 vélos adultes</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Smoothies:</span>
+                          <span className="text-gray-600 w-32">{t("step4.selectedOptions.smoothies")}</span>
                           <span className="text-dark-charcoal font-medium">100 smoothies</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-gray-600 w-32">Extras:</span>
+                          <span className="text-gray-600 w-32">{t("step4.selectedOptions.extras")}</span>
                           <ul className="text-dark-charcoal font-medium">
                             <li>Personnalisation avec votre marque</li>
                             <li>Animation et musique</li>
@@ -331,37 +269,37 @@ export default function BuildYourEventPage() {
                 </div>
 
                 <div className="contact-info space-y-6 mb-8">
-                  <h3 className="text-lg font-semibold text-dark-charcoal">Vos coordonnées</h3>
+                  <h3 className="text-lg font-semibold text-dark-charcoal">{t("step4.contactInfo.title")}</h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="form-group">
-                      <label className="block text-dark-charcoal font-medium mb-2">Nom</label>
+                      <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.name")}</label>
                       <input
                         type="text"
-                        placeholder="Votre nom complet"
+                        placeholder={t("step4.contactInfo.namePlaceholder")}
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                       />
                     </div>
                     <div className="form-group">
-                      <label className="block text-dark-charcoal font-medium mb-2">Email</label>
+                      <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.email")}</label>
                       <input
                         type="email"
-                        placeholder="Votre adresse email"
+                        placeholder={t("step4.contactInfo.emailPlaceholder")}
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                       />
                     </div>
                     <div className="form-group">
-                      <label className="block text-dark-charcoal font-medium mb-2">Téléphone</label>
+                      <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.phone")}</label>
                       <input
                         type="tel"
-                        placeholder="Votre numéro de téléphone"
+                        placeholder={t("step4.contactInfo.phonePlaceholder")}
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                       />
                     </div>
                     <div className="form-group">
-                      <label className="block text-dark-charcoal font-medium mb-2">Entreprise/Organisation</label>
+                      <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.company")}</label>
                       <input
                         type="text"
-                        placeholder="Nom de votre entreprise (si applicable)"
+                        placeholder={t("step4.contactInfo.companyPlaceholder")}
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red focus:border-transparent"
                       />
                     </div>
@@ -379,17 +317,17 @@ export default function BuildYourEventPage() {
               disabled={currentStep === 1}
               className={currentStep === 1 ? "invisible" : ""}
             >
-              Retour
+              {t("navigation.back")}
             </Button>
 
             {currentStep < steps.length ? (
               <Button onClick={handleNext} className="bg-primary-red text-white">
-                Continuer <ChevronRight className="ml-2 h-4 w-4" />
+                {t("navigation.continue")} <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
               <Link href="/merci">
                 <Button className="bg-primary-red text-white">
-                  Soumettre la demande
+                  {t("navigation.submit")}
                 </Button>
               </Link>
             )}

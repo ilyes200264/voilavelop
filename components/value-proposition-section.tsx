@@ -10,8 +10,10 @@ import {
   ImageMaskReveal,
   AnimatedImage
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export function ValuePropositionSection() {
+  const { t } = useI18n()
   return (
     <MotionSection className="value-proposition bg-primary-red text-white py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -34,13 +36,13 @@ export function ValuePropositionSection() {
           <StaggerContainer className="value-prop-text space-y-6">
             <MotionDiv variant="fadeUp">
               <h2 className="section-title text-4xl md:text-5xl font-bold leading-tight">
-                Créez vos smoothies à énergie humaine!
+                {t('valueProposition.title')}
               </h2>
             </MotionDiv>
 
             <MotionDiv variant="fadeUp">
               <h5 className="section-subtitle text-xl md:text-2xl text-secondary-yellow font-medium">
-                "Une expérience saine et amusante pour tous les âges"
+                {t('valueProposition.subtitle')}
               </h5>
             </MotionDiv>
 
@@ -61,7 +63,7 @@ export function ValuePropositionSection() {
               <div className="section-cta pt-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button variant="outline" size="lg" className="bg-white text-primary-red border-white hover:bg-gray-100">
-                    Demander maintenant
+                    {t('hero.ctaButton')}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>

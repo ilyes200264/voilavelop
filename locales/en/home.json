@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "title": "Fresh and healthy smoothies, produced by pedal power!",
+    "subtitle": "Add a touch of originality and energy to your next event",
+    "ctaButton": "BOOK NOW"
+  },
+  "valueProposition": {
+    "title": "Transform your event with our smoothie bikes",
+    "subtitle": "A unique, memorable and eco-friendly experience"
+  },
+  "whyChoose": {
+    "title": "Why Choose Voilà Vélo?",
+    "subtitle": "Delicious smoothies and an unforgettable experience",
+    "reasons": {
+      "fun": {
+        "title": "Fun & Interactive",
+        "description": "Create a festive atmosphere with our smoothie bikes. Your guests will have fun pedaling to mix their own drinks."
+      },
+      "healthy": {
+        "title": "Healthy & Delicious",
+        "description": "Our smoothies are prepared with fresh, natural ingredients, with no added sugar or preservatives."
+      },
+      "sustainable": {
+        "title": "Eco-friendly",
+        "description": "Our bikes operate without electricity and we only use sustainable and biodegradable materials."
+      },
+      "unique": {
+        "title": "Unique & Memorable",
+        "description": "Offer an original experience that will stand out and be remembered by your guests for a long time."
+      }
+    }
+  },
+  "benefits": {
+    "title": "Make your event an unforgettable moment",
+    "subtitle": "The benefits of our smoothie bikes",
+    "items": {
+      "engagement": {
+        "title": "Increase Engagement",
+        "description": "Create positive and fun interactions between your guests"
+      },
+      "healthy": {
+        "title": "Healthy Option",
+        "description": "Offer nutritious and refreshing drinks"
+      },
+      "branding": {
+        "title": "Customization",
+        "description": "Adapt the experience to your brand colors"
+      },
+      "footprint": {
+        "title": "Reduced Ecological Footprint",
+        "description": "Zero electricity and 100% biodegradable materials"
+      }
+    }
+  },
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Find the perfect formula for your event",
+    "viewAll": "View all packages",
+    "items": {
+      "laPetiteKoki": {
+        "title": "La petite Koki",
+        "description": "Ideal for small events up to 50 people",
+        "details": "See details"
+      },
+      "doubleFun": {
+        "title": "Double Fun",
+        "description": "Two bikes for more fun and competition",
+        "details": "See details"
+      },
+      "signature": {
+        "title": "Signature Package",
+        "description": "The complete experience, fully customized",
+        "details": "See details"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Successful events and satisfied clients"
+  },
+  "sustainability": {
+    "title": "Our Commitment to the Environment",
+    "subtitle": "Responsible and eco-friendly events",
+    "description": "At Voilà Vélo, we believe it's possible to have fun while respecting the planet. That's why we've implemented sustainable practices at every step of our service.",
+    "items": {
+      "energyFree": {
+        "title": "Electricity-Free",
+        "description": "Our bikes operate solely on human power"
+      },
+      "localIngredients": {
+        "title": "Local Ingredients",
+        "description": "We prioritize local producers for our fruits and vegetables"
+      },
+      "zerWaste": {
+        "title": "Zero Waste",
+        "description": "All our containers and utensils are compostable"
+      },
+      "carbonOffset": {
+        "title": "Carbon Offset",
+        "description": "We offset the carbon footprint of our travel"
+      }
+    }
+  }
+}

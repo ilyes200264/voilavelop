@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voilà Vélo - Internationalization Documentation</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #e53e3e;
+      margin-top: 2rem;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #e53e3e;
+    }
+    .example {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .note {
+      background-color: #fff9db;
+      border-left: 4px solid #fcc419;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+    }
+    .language-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    .language-fr {
+      background-color: #2b6cb0;
+      color: white;
+    }
+    .language-en {
+      background-color: #c53030;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">Voilà Vélo</div>
+      <div>
+        <span class="language-badge language-fr">FR</span>
+        <span class="language-badge language-en">EN</span>
+      </div>
+    </div>
+
+    <h1>Internationalization (i18n) Documentation</h1>
+    <p>
+      This documentation provides an overview of how internationalization is implemented in the Voilà Vélo website.
+      The website supports multiple languages (currently French and English) through a custom React Context-based solution.
+    </p>
+
+    <h2>Quick Start</h2>
+    <p>To use translations in your component:</p>
+    <pre><code>// Import the hook
+import { useI18n } from "@/lib/i18n";
+
+// Inside your component
+const { t, language, setLanguage } = useI18n();
+
+// Use translations
+&lt;h1&gt;{t('page.title')}&lt;/h1&gt;
+&lt;p&gt;{t('page.description')}&lt;/p&gt;
+
+// Switch language
+&lt;button onClick={() => setLanguage('en')}&gt;English&lt;/button&gt;
+&lt;button onClick={() => setLanguage('fr')}&gt;French&lt;/button&gt;</code></pre>
+
+    <h2>Available Files</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>French (fr)</th>
+          <th>English (en)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Common UI</td>
+          <td>/locales/fr/common.json</td>
+          <td>/locales/en/common.json</td>
+        </tr>
+        <tr>
+          <td>Home Page</td>
+          <td>/locales/fr/home.json</td>
+          <td>/locales/en/home.json</td>
+        </tr>
+        <tr>
+          <td>Packages</td>
+          <td>/locales/fr/packages.json</td>
+          <td>/locales/en/packages.json</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Examples</h2>
+
+    <h3>1. Basic Translation</h3>
+    <div class="example">
+      <p><strong>Translation Key:</strong> <code>navigation.home</code></p>
+      <p><strong>French Value:</strong> <code>"Accueil"</code></p>
+      <p><strong>English Value:</strong> <code>"Home"</code></p>
+      <p><strong>Usage:</strong> <code>&lt;Link href="/"&gt;{t('navigation.home')}&lt;/Link&gt;</code></p>
+    </div>
+
+    <h3>2. Complex Content</h3>
+    <div class="example">
+      <p><strong>Translation Key:</strong> <code>whyChoose.reasons.sustainable.description</code></p>
+      <p><strong>French Value:</strong> <code>"Nos vélos fonctionnent sans électricité et nous utilisons uniquement des matériaux durables et biodégradables."</code></p>
+      <p><strong>English Value:</strong> <code>"Our bikes operate without electricity and we only use sustainable and biodegradable materials."</code></p>
+      <p><strong>Usage:</strong> <code>&lt;p&gt;{t('whyChoose.reasons.sustainable.description')}&lt;/p&gt;</code></p>
+    </div>
+
+    <h2>Project Structure</h2>
+    <pre><code>/lib
+  /i18n.ts             # Context provider and hook
+  /translations.ts     # Imports and merges translation files
+
+/locales
+  /en                  # English translations
+    /common.json
+    /home.json
+    /packages.json
+  /fr                  # French translations
+    /common.json
+    /home.json
+    /packages.json
+
+/components
+  /language-switcher.tsx  # UI for changing languages</code></pre>
+
+    <div class="note">
+      <p><strong>Note:</strong> For more detailed information, refer to the <a href="i18n-guide.md">i18n-guide.md</a> file or the README.md section on internationalization.</p>
+    </div>
+  </div>
+</body>
+</html>

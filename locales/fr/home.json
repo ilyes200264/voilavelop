@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "title": "Des smoothies frais et sains, produits à la force des jambes!",
+    "subtitle": "Ajoutez une touche d'originalité et d'énergie à votre prochain événement",
+    "ctaButton": "RÉSERVER"
+  },
+  "valueProposition": {
+    "title": "Transformez votre événement avec nos vélos à smoothies",
+    "subtitle": "Une expérience unique, mémorable et écologique"
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir Voilà Vélo?",
+    "subtitle": "Des smoothies délicieux et une expérience inoubliable",
+    "reasons": {
+      "fun": {
+        "title": "Amusant & Interactif",
+        "description": "Créez une ambiance festive avec nos vélos à smoothies. Vos invités s'amuseront à pédaler pour mixer leurs propres boissons."
+      },
+      "healthy": {
+        "title": "Sain & Délicieux",
+        "description": "Nos smoothies sont préparés avec des ingrédients frais et naturels, sans sucre ajouté ni conservateurs."
+      },
+      "sustainable": {
+        "title": "Éco-responsable",
+        "description": "Nos vélos fonctionnent sans électricité et nous utilisons uniquement des matériaux durables et biodégradables."
+      },
+      "unique": {
+        "title": "Unique & Mémorable",
+        "description": "Offrez une expérience originale qui se démarquera et dont vos invités se souviendront longtemps."
+      }
+    }
+  },
+  "benefits": {
+    "title": "Faites de votre événement un moment inoubliable",
+    "subtitle": "Les avantages de nos vélos à smoothies",
+    "items": {
+      "engagement": {
+        "title": "Augmentez l'engagement",
+        "description": "Créez des interactions positives et amusantes entre vos invités"
+      },
+      "healthy": {
+        "title": "Option saine",
+        "description": "Offrez des boissons nutritives et rafraîchissantes"
+      },
+      "branding": {
+        "title": "Personnalisation",
+        "description": "Adaptez l'expérience aux couleurs de votre marque"
+      },
+      "footprint": {
+        "title": "Empreinte écologique réduite",
+        "description": "Zéro électricité et matériaux 100% biodégradables"
+      }
+    }
+  },
+  "packages": {
+    "title": "Nos forfaits",
+    "subtitle": "Trouvez la formule parfaite pour votre événement",
+    "viewAll": "Voir tous les forfaits",
+    "items": {
+      "laPetiteKoki": {
+        "title": "La petite Koki",
+        "description": "Idéal pour les petits événements jusqu'à 50 personnes",
+        "details": "Voir les détails"
+      },
+      "doubleFun": {
+        "title": "Double Fun",
+        "description": "Deux vélos pour plus de fun et de compétition",
+        "details": "Voir les détails"
+      },
+      "signature": {
+        "title": "Forfait Signature",
+        "description": "L'expérience complète, entièrement personnalisée",
+        "details": "Voir les détails"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce que nos clients disent",
+    "subtitle": "Des événements réussis et des clients satisfaits"
+  },
+  "sustainability": {
+    "title": "Notre engagement pour l'environnement",
+    "subtitle": "Des événements responsables et écologiques",
+    "description": "Chez Voilà Vélo, nous croyons qu'il est possible de s'amuser tout en respectant la planète. C'est pourquoi nous avons mis en place des pratiques durables à chaque étape de notre service.",
+    "items": {
+      "energyFree": {
+        "title": "Sans électricité",
+        "description": "Nos vélos fonctionnent uniquement grâce à l'énergie humaine"
+      },
+      "localIngredients": {
+        "title": "Ingrédients locaux",
+        "description": "Nous privilégions les producteurs locaux pour nos fruits et légumes"
+      },
+      "zerWaste": {
+        "title": "Zéro déchet",
+        "description": "Tous nos contenants et ustensiles sont compostables"
+      },
+      "carbonOffset": {
+        "title": "Compensation carbone",
+        "description": "Nous compensons l'empreinte carbone de nos déplacements"
+      }
+    }
+  }
+}

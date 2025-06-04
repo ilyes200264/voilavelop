@@ -11,8 +11,10 @@ import {
   TextReveal,
   RedLineSeparator
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export function PackagesSection() {
+  const { t } = useI18n()
   const packages = [
     {
       id: "la-petite-koki",
@@ -162,14 +164,14 @@ export function PackagesSection() {
         {/* Section Header */}
         <ScrollReveal className="section-header text-center mb-12">
           <TextReveal>
-            <h2 className="section-title text-3xl md:text-4xl font-bold text-dark-charcoal">Nos forfaits favoris</h2>
+            <h2 className="section-title text-3xl md:text-4xl font-bold text-dark-charcoal">{t('packages_section.title')}</h2>
           </TextReveal>
           
           <RedLineSeparator className="w-24 mx-auto my-4" />
           
           <ScrollReveal delay={0.3}>
             <p className="section-subtitle text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-              Des options adaptées à tous types d'événements, personnalisables selon vos besoins
+              {t('packages_section.subtitle')}
             </p>
           </ScrollReveal>
         </ScrollReveal>
@@ -222,7 +224,7 @@ export function PackagesSection() {
                 <div className="package-cta text-center">
                   <AnimatedImage hoverEffect="scale">
                     <Button variant="outline" className="w-full">
-                      En savoir plus
+                      {t('packages_section.details')}
                     </Button>
                   </AnimatedImage>
                 </div>
@@ -245,7 +247,7 @@ export function PackagesSection() {
           <MotionDiv variant="fadeUp">
             <AnimatedImage hoverEffect="lift" className="packages-cta">
               <Link href="/forfaits/">
-                <Button className="btn-primary bg-primary-red text-white px-8 py-3">Voir tous nos forfaits</Button>
+                <Button className="btn-primary bg-primary-red text-white px-8 py-3">{t('packages_section.viewAll')}</Button>
               </Link>
             </AnimatedImage>
           </MotionDiv>

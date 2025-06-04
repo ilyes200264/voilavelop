@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react"
+import { useI18n } from "@/lib/i18n"
+import { LanguageSwitcher } from "./language-switcher"
 
 export function Footer() {
+  const { t } = useI18n()
   return (
     <footer className="site-footer bg-primary-red text-white">
       {/* Pre-footer CTA Section */}
@@ -33,7 +38,7 @@ export function Footer() {
           <div className="footer-columns grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Column 1: Contact Information */}
             <div className="footer-column contact-column lg:col-span-2">
-              <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">Contact</h3>
+              <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">{t('footer.contact')}</h3>
               <div className="contact-info space-y-4">
                 <div className="contact-item address flex items-start space-x-3">
                   <div className="contact-icon text-lg">📍</div>
@@ -81,7 +86,7 @@ export function Footer() {
             <div className="footer-column packages-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
                 <Link href="/forfaits/" className="hover:underline">
-                  Forfaits
+                  {t('navigation.packages')}
                 </Link>
               </h3>
               <ul className="footer-menu space-y-2">
@@ -127,7 +132,7 @@ export function Footer() {
             <div className="footer-column about-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
                 <Link href="/a-propos/" className="hover:underline">
-                  À Propos
+                  {t('navigation.about')}
                 </Link>
               </h3>
               <ul className="footer-menu space-y-2">
@@ -152,35 +157,35 @@ export function Footer() {
             {/* Column 4: Connect */}
             <div className="footer-column connect-column">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">
-                Connectez-vous avec nous
+                {t('footer.connectWithUs')}
               </h3>
 
               {/* Newsletter Signup */}
               <div className="newsletter-signup mb-6">
                 <p className="newsletter-intro text-sm mb-4">
-                  Abonnez-vous pour télécharger nos sept meilleurs conseils pour un événement réussi.
+                  {t('footer.newsletterIntro')}
                 </p>
 
                 <form className="newsletter-form space-y-3">
                   <Input
                     type="text"
-                    placeholder="Nom"
+                    placeholder={t('footer.name')}
                     className="newsletter-input bg-transparent border-white text-white placeholder:text-white/70"
                   />
                   <Input
                     type="email"
-                    placeholder="Email"
+                    placeholder={t('footer.email')}
                     className="newsletter-input bg-transparent border-white text-white placeholder:text-white/70"
                   />
                   <Button className="newsletter-submit w-full bg-white text-primary-red hover:bg-secondary-yellow hover:text-dark-charcoal">
-                    S'ABONNER
+                    {t('footer.subscribe')}
                   </Button>
                 </form>
               </div>
 
               {/* Social Media Links */}
               <div className="social-media">
-                <h4 className="social-title font-semibold mb-3">Suivez-nous</h4>
+                <h4 className="social-title font-semibold mb-3">{t('footer.followUs')}</h4>
                 <div className="social-links flex space-x-3">
                   <Link
                     href="#"

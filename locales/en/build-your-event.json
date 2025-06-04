@@ -1,0 +1,145 @@
+{
+  "title": "Build Your Event",
+  "subtitle": "Follow the steps below to create a customized event that perfectly matches your needs",
+  
+  "steps": [
+    { "number": 1, "name": "Event Type" },
+    { "number": 2, "name": "Details" },
+    { "number": 3, "name": "Options" },
+    { "number": 4, "name": "Summary" }
+  ],
+  
+  "navigation": {
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Submit Request"
+  },
+  
+  "step1": {
+    "title": "What type of event are you organizing?",
+    "subtitle": "Select the event type that best matches your needs. This will help us recommend the most suitable packages.",
+    "eventTypes": [
+      {
+        "title": "Corporate Event",
+        "description": "Perfect for company events, team meetings, and workplace wellness",
+        "icon": "🏢"
+      },
+      {
+        "title": "Brand Activation",
+        "description": "Ideal for product launches, openings, and promotional events",
+        "icon": "🚀"
+      },
+      {
+        "title": "School Event",
+        "description": "For schools, universities, and educational events",
+        "icon": "🎓"
+      },
+      {
+        "title": "Private Party",
+        "description": "Perfect for birthdays, weddings, and family celebrations",
+        "icon": "🎉"
+      },
+      {
+        "title": "Festival or Community Event",
+        "description": "For large gatherings, festivals, and public events",
+        "icon": "🎪"
+      },
+      {
+        "title": "Non-Profit Organization",
+        "description": "For fundraisers and charity events",
+        "icon": "💝"
+      }
+    ]
+  },
+  
+  "step2": {
+    "title": "Event Details",
+    "subtitle": "Provide essential information about your event.",
+    "form": {
+      "eventDate": "Event Date",
+      "startTime": "Start Time",
+      "duration": "Duration (hours)",
+      "participants": "Number of Participants",
+      "participantsPlaceholder": "Approximate number",
+      "location": "Event Location",
+      "locationPlaceholder": "Complete address",
+      "description": "Event Description",
+      "descriptionPlaceholder": "Briefly describe your event and expectations",
+      "durationOptions": [
+        "1 hour",
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "Custom"
+      ]
+    }
+  },
+  
+  "step3": {
+    "title": "Options and Customization",
+    "subtitle": "Customize your experience by selecting the options that interest you.",
+    "bikes": {
+      "title": "Number of Bikes",
+      "options": [
+        "1 adult bike",
+        "2 adult bikes",
+        "1 child + 1 adult"
+      ]
+    },
+    "smoothies": {
+      "title": "Smoothie Quantity",
+      "options": [
+        "50 smoothies",
+        "100 smoothies",
+        "200+ smoothies"
+      ]
+    },
+    "extras": {
+      "title": "Additional Options",
+      "options": [
+        {
+          "title": "Brand Customization",
+          "description": "Includes customized cups and signage"
+        },
+        {
+          "title": "Animation and Music",
+          "description": "Professional host and sound system"
+        },
+        {
+          "title": "Speed Monitors and Ranking",
+          "description": "For fun challenges and competitions"
+        }
+      ]
+    }
+  },
+  
+  "step4": {
+    "title": "Event Summary",
+    "subtitle": "Check your event details and submit your request to receive a personalized quote.",
+    "eventDetails": {
+      "title": "Event Details",
+      "type": "Type:",
+      "date": "Date:",
+      "time": "Time:",
+      "duration": "Duration:",
+      "location": "Location:"
+    },
+    "selectedOptions": {
+      "title": "Selected Options",
+      "bikes": "Bikes:",
+      "smoothies": "Smoothies:",
+      "extras": "Extras:"
+    },
+    "contactInfo": {
+      "title": "Your Contact Information",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "Your email address",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "company": "Company/Organization",
+      "companyPlaceholder": "Name of your company (if applicable)"
+    }
+  }
+}

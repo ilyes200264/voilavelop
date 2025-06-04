@@ -17,78 +17,71 @@ import {
   PageTransition,
   ImageMaskReveal
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export default function EventsPage() {
-  const eventCategories = [
-    {
-      id: "corporate",
-      title: "Corporate",
-      tagline: "Stimulez le bien-être des employés et dynamisez votre lieu de travail!",
-      description: "Vous cherchez une façon amusante, saine et mémorable d'engager votre équipe directement à votre bureau? Notre installation de vélos à smoothie apporte du plaisir sain directement dans le hall ou l'espace commun de votre lieu de travail.",
-      image: "/images/corporate-events.jpg",
-      icon: <Building className="h-12 w-12" />,
-      color: "bg-primary-red",
-      textColor: "text-white",
-      benefits: [
-        "Renforcement d'équipe unique",
-        "Promotion du bien-être au travail", 
-        "Amélioration de la productivité",
-        "Création de souvenirs positifs"
-      ],
-      link: "/evenements/corporate",
-    },
-    {
-      id: "ouvertures-et-activations",
-      title: "Ouvertures & Activations",
-      tagline: "Rendez votre prochain événement inoubliable - mélangez votre marque à l'action!",
-      description: "Vous voulez créer un buzz et attirer une foule? Notre vélo à smoothie est plus qu'une simple activité amusante - c'est un aimant pour votre marque. Chaque élément peut être adapté avec votre logo pour laisser une impression durable.",
-      image: "/images/event-2.jpg", 
-      icon: <Presentation className="h-12 w-12" />,
-      color: "bg-secondary-yellow",
-      textColor: "text-dark-charcoal",
-      benefits: [
-        "Attraction visuelle forte",
-        "Personnalisation complète de marque",
-        "Engagement client élevé",
-        "Buzz marketing garanti"
-      ],
-      link: "/evenements/ouvertures-et-activations",
-    },
-    {
-      id: "ecoles-organismes-et-anniversaires",
-      title: "Écoles, Organismes & Anniversaires", 
-      tagline: "Rassemblez les gens autour de smoothies, de sourires et beaucoup de plaisir!",
-      description: "Vous cherchez une façon créative de collecter des fonds, de vous connecter avec votre communauté ou de célébrer un jour spécial? Nos expériences de vélos à smoothie sont parfaites pour les événements scolaires et les fêtes d'anniversaire!",
-      image: "/images/event-3.jpg",
-      icon: <GraduationCap className="h-12 w-12" />,
-      color: "bg-trust-blue", 
-      textColor: "text-white",
-      benefits: [
-        "Activité éducative et amusante",
-        "Collecte de fonds efficace",
-        "Engagement communautaire",
-        "Souvenirs inoubliables"
-      ],
-      link: "/evenements/ecoles-organismes-et-anniversaires",
-    },
-    {
-      id: "conferences-et-expositions",
-      title: "Conférences & Expositions",
-      tagline: "Attirez l'attention, suscitez des conversations et dynamisez votre stand!",
-      description: "Vous cherchez un moyen de vous démarquer lors de votre prochain événement? Notre vélo à smoothie est une attraction qui fait pédaler, sourire et engager les gens avec votre marque d'une manière amusante et mémorable.",
-      image: "/images/event-1.jpg",
-      icon: <Users className="h-12 w-12" />,
-      color: "bg-accent-green",
-      textColor: "text-white", 
-      benefits: [
-        "Différenciation competitive",
-        "Génération de leads",
-        "Expérience mémorable",
-        "Trafic augmenté sur stand"
-      ],
-      link: "/evenements/conferences-et-expositions",
-    },
-  ]
+  const { t } = useI18n()
+  
+  // Get the categories from translations
+  const translatedCategories = t<Array<{
+    id: string,
+    title: string,
+    tagline: string,
+    description: string,
+    benefits: string[],
+    readMore: string
+  }>>("eventCategories.categories");
+  
+  // Map the icons and styles based on category ID
+  const eventCategories = translatedCategories.map(category => {
+    let icon, color, textColor, image, link;
+    
+    switch(category.id) {
+      case "corporate":
+        icon = <Building className="h-12 w-12" />;
+        color = "bg-primary-red";
+        textColor = "text-white";
+        image = "/images/corporate-events.jpg";
+        link = "/evenements/corporate";
+        break;
+      case "ouvertures-et-activations":
+        icon = <Presentation className="h-12 w-12" />;
+        color = "bg-secondary-yellow";
+        textColor = "text-dark-charcoal";
+        image = "/images/event-2.jpg";
+        link = "/evenements/ouvertures-et-activations";
+        break;
+      case "ecoles-organismes-et-anniversaires":
+        icon = <GraduationCap className="h-12 w-12" />;
+        color = "bg-trust-blue";
+        textColor = "text-white";
+        image = "/images/event-3.jpg";
+        link = "/evenements/ecoles-organismes-et-anniversaires";
+        break;
+      case "conferences-et-expositions":
+        icon = <Users className="h-12 w-12" />;
+        color = "bg-accent-green";
+        textColor = "text-white";
+        image = "/images/event-1.jpg";
+        link = "/evenements/conferences-et-expositions";
+        break;
+      default:
+        icon = <Building className="h-12 w-12" />;
+        color = "bg-primary-red";
+        textColor = "text-white";
+        image = "/images/event-1.jpg";
+        link = "/evenements/" + category.id;
+    }
+    
+    return {
+      ...category,
+      icon,
+      color,
+      textColor,
+      image,
+      link
+    };
+  });
 
   return (
     <PageTransition>
@@ -103,22 +96,21 @@ export default function EventsPage() {
               <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-4xl mx-auto text-white">
                   <TextReveal>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">Événements</h1>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">{t("title")}</h1>
                   </TextReveal>
                   
                   <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                   
                   <ScrollReveal delay={0.3}>
                     <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-md">
-                      Nous apportons l'énergie, le plaisir et la durabilité à tous types d'événements. 
-                      Découvrez comment nos vélos à smoothie peuvent transformer votre prochain rassemblement.
+                      {t("subtitle")}
                     </p>
                   </ScrollReveal>
                   
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/forfaits">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        Voir nos forfaits
+                        {t("viewPackages")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
@@ -133,12 +125,11 @@ export default function EventsPage() {
             <div className="container mx-auto px-4">
               <ScrollReveal className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                  Types d'événements
+                  {t("eventCategories.title")}
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8" />
                 <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                  Chaque événement est unique. Choisissez la catégorie qui correspond le mieux à vos besoins 
-                  et découvrez comment nous pouvons créer une expérience inoubliable.
+                  {t("eventCategories.subtitle")}
                 </p>
               </ScrollReveal>
 
@@ -202,7 +193,7 @@ export default function EventsPage() {
                                   : 'bg-dark-charcoal text-white hover:bg-gray-800'
                               } px-8 py-3 text-lg font-semibold rounded-xl`}
                             >
-                              En savoir plus
+                              {category.readMore}
                               <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                           </Link>
@@ -220,11 +211,11 @@ export default function EventsPage() {
             <div className="container mx-auto px-4">
               <ScrollReveal className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                  Comment ça marche
+                  {t("howItWorks.title")}
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8" />
                 <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                  Un processus simple en 3 étapes pour organiser votre événement Voilà Vélo
+                  {t("howItWorks.subtitle")}
                 </p>
               </ScrollReveal>
 
@@ -232,54 +223,40 @@ export default function EventsPage() {
                 {/* Connecting line between steps */}
                 <div className="hidden md:block absolute top-16 left-[calc(16.67%+32px)] right-[calc(16.67%+32px)] h-1 bg-gray-200 z-0"></div>
                 
-                {[
-                  {
-                    step: "1",
-                    title: "Choisissez votre forfait",
-                    description: "Sélectionnez le forfait qui correspond à votre événement et vos besoins",
-                    color: "bg-primary-red",
-                    icon: <ArrowRight className="h-6 w-6 text-dark-charcoal" />
-                  },
-                  {
-                    step: "2", 
-                    title: "Personnalisez l'expérience",
-                    description: "Adaptez les détails, la décoration et les options selon vos préférences",
-                    color: "bg-secondary-yellow",
-                    icon: <ArrowRight className="h-6 w-6 text-dark-charcoal" />
-                  },
-                  {
-                    step: "3",
-                    title: "Profitez de l'événement", 
-                    description: "Nous nous occupons de tout le reste pendant que vous créez des souvenirs",
-                    color: "bg-accent-green",
-                    icon: <ArrowRight className="h-6 w-6 text-dark-charcoal" />
-                  }
-                ].map((step, index) => (
-                  <MotionDiv
-                    key={step.step}
-                    variant="fadeUp"
-                    custom={index}
-                    className="text-center relative z-10"
-                  >
-                    <AnimatedImage 
-                      hoverEffect="bounce" 
-                      className={`${step.color} w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-8 shadow-lg`}
+                {t<Array<{
+                  step: string;
+                  title: string;
+                  description: string;
+                }>>("howItWorks.steps").map((step, index) => {
+                  const colors = ["bg-primary-red", "bg-secondary-yellow", "bg-accent-green"];
+                  
+                  return (
+                    <MotionDiv
+                      key={step.step}
+                      variant="fadeUp"
+                      custom={index}
+                      className="text-center relative z-10"
                     >
-                      <span className="text-3xl">{step.step}</span>
-                    </AnimatedImage>
-                    
-                    <h3 className="text-xl font-bold text-dark-charcoal mb-4">{step.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
-                    
-                    {index < 2 && (
-                      <div className="hidden md:block absolute top-10 left-full transform -translate-x-1/2 z-20">
-                        <div className="bg-gray-200 rounded-full p-2">
-                          {step.icon}
+                      <AnimatedImage 
+                        hoverEffect="bounce" 
+                        className={`${colors[index]} w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-8 shadow-lg`}
+                      >
+                        <span className="text-3xl">{step.step}</span>
+                      </AnimatedImage>
+                      
+                      <h3 className="text-xl font-bold text-dark-charcoal mb-4">{step.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                      
+                      {index < 2 && (
+                        <div className="hidden md:block absolute top-10 left-full transform -translate-x-1/2 z-20">
+                          <div className="bg-gray-200 rounded-full p-2">
+                            <ArrowRight className="h-6 w-6 text-dark-charcoal" />
+                          </div>
                         </div>
-                      </div>
-                    )}
-                  </MotionDiv>
-                ))}
+                      )}
+                    </MotionDiv>
+                  );
+                })}
               </div>
               
               {/* Additional explanation section */}
@@ -287,7 +264,7 @@ export default function EventsPage() {
                 <div className="mt-16 text-center">
                   <Link href="/comment-ca-marche">
                     <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5">
-                      En savoir plus sur notre processus
+                      {t("howItWorks.learnMoreButton")}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -304,12 +281,11 @@ export default function EventsPage() {
               <div className="container mx-auto px-4 text-center relative z-10">
                 <ScrollReveal>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-sm">
-                    Prêt à créer un événement mémorable?
+                    {t("cta.title")}
                   </h2>
                   <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                   <p className="text-xl mb-8 max-w-3xl mx-auto drop-shadow-sm">
-                    Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé 
-                    pour votre prochain événement Voilà Vélo.
+                    {t("cta.text")}
                   </p>
                 </ScrollReveal>
                 
@@ -317,7 +293,7 @@ export default function EventsPage() {
                   <AnimatedImage hoverEffect="lift">
                     <Link href="/contact">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        Demander un devis
+                        {t("cta.requestQuote")}
                       </Button>
                     </Link>
                   </AnimatedImage>
@@ -328,7 +304,7 @@ export default function EventsPage() {
                         variant="outline" 
                         className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
                       >
-                        Appelez-nous
+                        {t("cta.callUs")}
                       </Button>
                     </Link>
                   </AnimatedImage>

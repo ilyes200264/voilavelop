@@ -10,8 +10,10 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { useI18n } from "@/lib/i18n"
 
 export default function ContactPage() {
+  const { t } = useI18n()
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -48,9 +50,9 @@ export default function ContactPage() {
         {/* Contact Hero */}
         <section className="contact-hero py-16 bg-gradient-to-br from-primary-red to-secondary-yellow text-white">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contactez-nous</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h1>
             <p className="text-xl max-w-2xl mx-auto opacity-90">
-              Prêt à ajouter du plaisir pédalé à votre événement? Parlons-en!
+              {t("subtitle")}
             </p>
           </div>
         </section>
@@ -61,7 +63,7 @@ export default function ContactPage() {
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Contact Information */}
               <div className="contact-info lg:col-span-2">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-8">Informations de contact</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-8">{t("contactInfo.title")}</h2>
 
                 <div className="contact-methods space-y-6">
                   <div className="contact-method flex items-start space-x-4">
@@ -69,14 +71,14 @@ export default function ContactPage() {
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div className="method-details">
-                      <h3 className="font-semibold text-dark-charcoal mb-1">Adresse</h3>
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{t("contactInfo.address.title")}</h3>
                       <p className="text-gray-600 mb-2">
-                        [Adresse d'entreprise]
+                        {t("contactInfo.address.line1")}
                         <br />
-                        Montréal, QC [Code postal]
+                        {t("contactInfo.address.line2")}
                       </p>
                       <a href="#" target="_blank" className="text-primary-red hover:underline text-sm" rel="noreferrer">
-                        Voir sur la carte →
+                        {t("contactInfo.address.viewMap")}
                       </a>
                     </div>
                   </div>
@@ -86,13 +88,13 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6" />
                     </div>
                     <div className="method-details">
-                      <h3 className="font-semibold text-dark-charcoal mb-1">Téléphone</h3>
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{t("contactInfo.phone.title")}</h3>
                       <p className="text-gray-600 mb-1">
                         <a href="tel:+1-XXX-XXX-XXXX" className="hover:text-primary-red">
-                          XXX-XXX-XXXX
+                          {t("contactInfo.phone.number")}
                         </a>
                       </p>
-                      <p className="text-sm text-gray-500">Lun-Ven: 9h00-17h00</p>
+                      <p className="text-sm text-gray-500">{t("contactInfo.phone.hours")}</p>
                     </div>
                   </div>
 
@@ -101,13 +103,13 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6" />
                     </div>
                     <div className="method-details">
-                      <h3 className="font-semibold text-dark-charcoal mb-1">Email</h3>
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{t("contactInfo.email.title")}</h3>
                       <p className="text-gray-600 mb-1">
                         <a href="mailto:info@voilavelo.ca" className="hover:text-primary-red">
-                          info@voilavelo.ca
+                          {t("contactInfo.email.address")}
                         </a>
                       </p>
-                      <p className="text-sm text-gray-500">Réponse dans les 24h</p>
+                      <p className="text-sm text-gray-500">{t("contactInfo.email.responseTime")}</p>
                     </div>
                   </div>
                 </div>
@@ -115,30 +117,29 @@ export default function ContactPage() {
                 <div className="service-areas-summary mt-8 p-6 bg-light-gray rounded-xl">
                   <h3 className="font-semibold text-dark-charcoal mb-4 flex items-center">
                     <Clock className="h-5 w-5 mr-2 text-primary-red" />
-                    Zones de service
+                    {t("contactInfo.serviceAreas.title")}
                   </h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Montréal et région métropolitaine</li>
-                    <li>• Laval</li>
-                    <li>• Ville de Québec et environs</li>
-                    <li>• Ottawa-Gatineau</li>
+                    {t<string[]>("contactInfo.serviceAreas.areas").map((area, index) => (
+                      <li key={index}>• {area}</li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
               {/* Contact Form */}
               <div className="contact-form-section lg:col-span-3">
-                <h2 className="text-2xl font-bold text-dark-charcoal mb-8">Demander une soumission</h2>
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-8">{t("contactForm.title")}</h2>
 
                 <form className="quote-form space-y-8" onSubmit={handleSubmit}>
                   {/* Personal Information */}
                   <div className="form-section">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Informations personnelles</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("contactForm.personalInfo.title")}</h3>
 
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                       <div className="form-field">
                         <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                          Prénom *
+                          {t("contactForm.personalInfo.firstName")} *
                         </label>
                         <Input
                           id="firstName"
@@ -152,7 +153,7 @@ export default function ContactPage() {
 
                       <div className="form-field">
                         <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                          Nom *
+                          {t("contactForm.personalInfo.lastName")} *
                         </label>
                         <Input
                           id="lastName"
@@ -168,7 +169,7 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                       <div className="form-field">
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                          Email *
+                          {t("contactForm.personalInfo.email")} *
                         </label>
                         <Input
                           id="email"
@@ -182,7 +183,7 @@ export default function ContactPage() {
 
                       <div className="form-field">
                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                          Téléphone
+                          {t("contactForm.personalInfo.phone")}
                         </label>
                         <Input
                           id="phone"
@@ -196,7 +197,7 @@ export default function ContactPage() {
 
                     <div className="form-field">
                       <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                        Entreprise/Organisation
+                        {t("contactForm.personalInfo.company")}
                       </label>
                       <Input
                         id="company"
@@ -210,31 +211,31 @@ export default function ContactPage() {
 
                   {/* Event Information */}
                   <div className="form-section">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Détails de l'événement</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("contactForm.eventInfo.title")}</h3>
 
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                       <div className="form-field">
                         <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-2">
-                          Type d'événement *
+                          {t("contactForm.eventInfo.eventType.label")} *
                         </label>
                         <Select onValueChange={(value) => handleInputChange("eventType", value)}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez le type" />
+                            <SelectValue placeholder={t("contactForm.eventInfo.eventType.placeholder")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="corporate">Événement corporatif</SelectItem>
-                            <SelectItem value="school">École/Éducation</SelectItem>
-                            <SelectItem value="festival">Festival/Communautaire</SelectItem>
-                            <SelectItem value="wedding">Mariage</SelectItem>
-                            <SelectItem value="birthday">Anniversaire</SelectItem>
-                            <SelectItem value="other">Autre</SelectItem>
+                            <SelectItem value="corporate">{t("contactForm.eventInfo.eventType.options.corporate")}</SelectItem>
+                            <SelectItem value="school">{t("contactForm.eventInfo.eventType.options.school")}</SelectItem>
+                            <SelectItem value="festival">{t("contactForm.eventInfo.eventType.options.festival")}</SelectItem>
+                            <SelectItem value="wedding">{t("contactForm.eventInfo.eventType.options.wedding")}</SelectItem>
+                            <SelectItem value="birthday">{t("contactForm.eventInfo.eventType.options.birthday")}</SelectItem>
+                            <SelectItem value="other">{t("contactForm.eventInfo.eventType.options.other")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
 
                       <div className="form-field">
                         <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700 mb-2">
-                          Date d'événement
+                          {t("contactForm.eventInfo.eventDate")}
                         </label>
                         <Input
                           id="eventDate"
@@ -249,36 +250,36 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                       <div className="form-field">
                         <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-2">
-                          Nombre d'invités *
+                          {t("contactForm.eventInfo.guests.label")} *
                         </label>
                         <Select onValueChange={(value) => handleInputChange("guests", value)}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez" />
+                            <SelectValue placeholder={t("contactForm.eventInfo.guests.placeholder")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="1-25">1-25 personnes</SelectItem>
-                            <SelectItem value="26-50">26-50 personnes</SelectItem>
-                            <SelectItem value="51-100">51-100 personnes</SelectItem>
-                            <SelectItem value="101-200">101-200 personnes</SelectItem>
-                            <SelectItem value="200+">200+ personnes</SelectItem>
+                            <SelectItem value="1-25">{t("contactForm.eventInfo.guests.options.1-25")}</SelectItem>
+                            <SelectItem value="26-50">{t("contactForm.eventInfo.guests.options.26-50")}</SelectItem>
+                            <SelectItem value="51-100">{t("contactForm.eventInfo.guests.options.51-100")}</SelectItem>
+                            <SelectItem value="101-200">{t("contactForm.eventInfo.guests.options.101-200")}</SelectItem>
+                            <SelectItem value="200+">{t("contactForm.eventInfo.guests.options.200+")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
 
                       <div className="form-field">
                         <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
-                          Lieu *
+                          {t("contactForm.eventInfo.location.label")} *
                         </label>
                         <Select onValueChange={(value) => handleInputChange("location", value)}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez la ville" />
+                            <SelectValue placeholder={t("contactForm.eventInfo.location.placeholder")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="montreal">Montréal</SelectItem>
-                            <SelectItem value="laval">Laval</SelectItem>
-                            <SelectItem value="quebec">Québec</SelectItem>
-                            <SelectItem value="ottawa">Ottawa</SelectItem>
-                            <SelectItem value="other">Autre (précisez)</SelectItem>
+                            <SelectItem value="montreal">{t("contactForm.eventInfo.location.options.montreal")}</SelectItem>
+                            <SelectItem value="laval">{t("contactForm.eventInfo.location.options.laval")}</SelectItem>
+                            <SelectItem value="quebec">{t("contactForm.eventInfo.location.options.quebec")}</SelectItem>
+                            <SelectItem value="ottawa">{t("contactForm.eventInfo.location.options.ottawa")}</SelectItem>
+                            <SelectItem value="other">{t("contactForm.eventInfo.location.options.other")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -287,39 +288,39 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                       <div className="form-field">
                         <label htmlFor="package" className="block text-sm font-medium text-gray-700 mb-2">
-                          Forfait préféré
+                          {t("contactForm.eventInfo.package.label")}
                         </label>
                         <Select onValueChange={(value) => handleInputChange("package", value)}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez un forfait" />
+                            <SelectValue placeholder={t("contactForm.eventInfo.package.placeholder")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="la-petite-koki">La petite Koki</SelectItem>
-                            <SelectItem value="pop-solo">Pop Solo</SelectItem>
-                            <SelectItem value="double-fun">Double Fun</SelectItem>
-                            <SelectItem value="ready-set-blend">Ready Set Blend</SelectItem>
-                            <SelectItem value="defi-parent-enfant">Défi Parent-Enfant</SelectItem>
-                            <SelectItem value="la-smoothie-parade">La Smoothie Parade</SelectItem>
-                            <SelectItem value="signature">Forfait Signature</SelectItem>
-                            <SelectItem value="custom">Forfait personnalisé</SelectItem>
+                            <SelectItem value="la-petite-koki">{t("contactForm.eventInfo.package.options.la-petite-koki")}</SelectItem>
+                            <SelectItem value="pop-solo">{t("contactForm.eventInfo.package.options.pop-solo")}</SelectItem>
+                            <SelectItem value="double-fun">{t("contactForm.eventInfo.package.options.double-fun")}</SelectItem>
+                            <SelectItem value="ready-set-blend">{t("contactForm.eventInfo.package.options.ready-set-blend")}</SelectItem>
+                            <SelectItem value="defi-parent-enfant">{t("contactForm.eventInfo.package.options.defi-parent-enfant")}</SelectItem>
+                            <SelectItem value="la-smoothie-parade">{t("contactForm.eventInfo.package.options.la-smoothie-parade")}</SelectItem>
+                            <SelectItem value="signature">{t("contactForm.eventInfo.package.options.signature")}</SelectItem>
+                            <SelectItem value="custom">{t("contactForm.eventInfo.package.options.custom")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
 
                       <div className="form-field">
                         <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-                          Budget approximatif
+                          {t("contactForm.eventInfo.budget.label")}
                         </label>
                         <Select onValueChange={(value) => handleInputChange("budget", value)}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez" />
+                            <SelectValue placeholder={t("contactForm.eventInfo.budget.placeholder")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="under-500">Moins de 500$</SelectItem>
-                            <SelectItem value="500-1000">500$ - 1000$</SelectItem>
-                            <SelectItem value="1000-2000">1000$ - 2000$</SelectItem>
-                            <SelectItem value="2000-5000">2000$ - 5000$</SelectItem>
-                            <SelectItem value="5000+">5000$+</SelectItem>
+                            <SelectItem value="under-500">{t("contactForm.eventInfo.budget.options.under-500")}</SelectItem>
+                            <SelectItem value="500-1000">{t("contactForm.eventInfo.budget.options.500-1000")}</SelectItem>
+                            <SelectItem value="1000-2000">{t("contactForm.eventInfo.budget.options.1000-2000")}</SelectItem>
+                            <SelectItem value="2000-5000">{t("contactForm.eventInfo.budget.options.2000-5000")}</SelectItem>
+                            <SelectItem value="5000+">{t("contactForm.eventInfo.budget.options.5000+")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -328,16 +329,16 @@ export default function ContactPage() {
 
                   {/* Additional Information */}
                   <div className="form-section">
-                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">Informations supplémentaires</h3>
+                    <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{t("contactForm.additionalInfo.title")}</h3>
 
                     <div className="form-field mb-4">
                       <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                        Détails de votre événement, besoins spéciaux, questions
+                        {t("contactForm.additionalInfo.message.label")}
                       </label>
                       <Textarea
                         id="message"
                         rows={5}
-                        placeholder="Décrivez votre vision pour l'événement, toute exigence spéciale, ou questions que vous pourriez avoir..."
+                        placeholder={t("contactForm.additionalInfo.message.placeholder")}
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
                         className="w-full"
@@ -353,7 +354,7 @@ export default function ContactPage() {
                           className="w-4 h-4 text-primary-red border-gray-300 rounded focus:ring-primary-red"
                         />
                         <span className="text-sm text-gray-700">
-                          J'aimerais recevoir des conseils d'événements et des offres spéciales par email
+                          {t("contactForm.additionalInfo.newsletter")}
                         </span>
                       </label>
                     </div>
@@ -362,11 +363,11 @@ export default function ContactPage() {
                   {/* Submit */}
                   <div className="form-submit">
                     <Button type="submit" className="bg-primary-red text-white px-8 py-3 text-lg">
-                      Envoyer la demande →
+                      {t("contactForm.submit.button")}
                     </Button>
 
                     <p className="text-sm text-gray-600 mt-4">
-                      Nous vous répondrons dans les 24 heures avec une soumission personnalisée pour votre événement.
+                      {t("contactForm.submit.confirmation")}
                     </p>
                   </div>
                 </form>

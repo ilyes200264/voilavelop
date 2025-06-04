@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "title": "How It Works",
+    "description": "From booking to celebration - here's how we make your event unforgettable"
+  },
+  "serviceAreas": {
+    "title": "Service Areas",
+    "subtitle": "We serve events of all sizes across Quebec",
+    "cities": [
+      {
+        "name": "Montreal",
+        "description": "Montreal Island and close suburbs"
+      },
+      {
+        "name": "Quebec City",
+        "description": "Quebec City and metropolitan area"
+      },
+      {
+        "name": "Laval",
+        "description": "All of Laval city"
+      },
+      {
+        "name": "Ottawa",
+        "description": "Ottawa-Gatineau (Ontario and Quebec sides)"
+      }
+    ]
+  },
+  "bookingProcess": {
+    "title": "Booking Process",
+    "subtitle": "Simple, fast and stress-free - here's how to book your Voilà Vélo experience",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Contact Us",
+        "description": "Fill out our form or call us to discuss your needs"
+      },
+      {
+        "number": 2,
+        "title": "Custom Planning",
+        "description": "We create a package tailored to your event and budget"
+      },
+      {
+        "number": 3,
+        "title": "Confirmation and Preparation",
+        "description": "We finalize the details and prepare everything for your event"
+      },
+      {
+        "number": 4,
+        "title": "Event Day",
+        "description": "We arrive, set up, and host for a memorable experience"
+      }
+    ],
+    "ctaButton": "Get Started Now"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions about our services",
+    "items": [
+      {
+        "question": "How long does it take to make a smoothie?",
+        "answer": "It only takes 30 seconds to pedal a smoothie, but you can stay and keep riding if you want! It's very fun and very easy for all ages!"
+      },
+      {
+        "question": "What ingredients do you use?",
+        "answer": "We use only fresh fruits, organic vegetables, and natural ingredients. We can accommodate food allergies and dietary preferences with advance notice."
+      },
+      {
+        "question": "How many people can use a bike at once?",
+        "answer": "Each bike can accommodate one person at a time. However, we encourage participants to queue up and cheer each other on, creating a festive, community atmosphere."
+      },
+      {
+        "question": "Do you need electricity?",
+        "answer": "No! That's the beauty of our bikes - they run entirely on human power. We bring our own battery-powered sound equipment if needed."
+      },
+      {
+        "question": "What happens if it rains?",
+        "answer": "We can operate indoors if you have suitable space, or we can reschedule the event. We work with you to find the best solution."
+      },
+      {
+        "question": "How far in advance should I book?",
+        "answer": "We recommend booking at least 2-3 weeks in advance, especially during peak season (May-September). For large events, 4-6 weeks is preferable."
+      },
+      {
+        "question": "Do you offer bilingual services?",
+        "answer": "Absolutely! All of our hosts are bilingual and can conduct the event in French, English, or both languages according to your needs."
+      },
+      {
+        "question": "Are there any age restrictions?",
+        "answer": "Our children's bikes are perfect for ages 5-10, and our adult bikes are suitable for ages 10 and up. We have options for all ages and abilities."
+      },
+      {
+        "question": "What happens with unused ingredients?",
+        "answer": "As part of our commitment to sustainability, we donate all leftover ingredients to local charities such as Moisson Montreal."
+      },
+      {
+        "question": "Can you customize smoothies for our brand?",
+        "answer": "Yes! We can create custom recipes, use your brand colors, and even add your logo to the bikes for corporate events."
+      }
+    ],
+    "notFoundQuestion": "Can't find the answer to your question?",
+    "notFoundDescription": "Our team is here to help! Contact us directly for any specific questions.",
+    "contactButton": "Contact Us",
+    "callButton": "Call Us",
+    "testimonial": {
+      "text": "\"The booking process was simple and the team was incredibly responsive. Our guests loved the experience and we'll definitely book again!\"",
+      "name": "John Smith",
+      "title": "Marketing Director, ABC Quebec"
+    }
+  }
+}

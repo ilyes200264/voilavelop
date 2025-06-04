@@ -1,0 +1,158 @@
+{
+  "breadcrumb": {
+    "events": "Événements",
+    "corporate": "Corporate"
+  },
+  
+  "hero": {
+    "title": "Stimulez le bien-être des employés et dynamisez votre lieu de travail!",
+    "description": "Vous cherchez une façon amusante, saine et mémorable d'engager votre équipe? Notre installation de vélos à smoothie apporte du plaisir sain directement dans votre bureau, créant une pause unique que vos employés adoreront.",
+    "requestQuote": "Demander un devis",
+    "viewTeamBuilding": "Voir forfait Team-Building"
+  },
+  
+  "stats": [
+    { "number": "5.81x", "label": "ROI sur le bien-être employés" },
+    { "number": "95%", "label": "Taux de satisfaction" },
+    { "number": "200+", "label": "Entreprises satisfaites" },
+    { "number": "30 sec", "label": "Pour faire un smoothie" }
+  ],
+  
+  "benefits": {
+    "title": "Pourquoi choisir Voilà Vélo pour votre événement d'entreprise?",
+    "subtitle": "Un employé en bonne santé est non seulement plus heureux, mais aussi plus productif — et quoi de mieux pour promouvoir le bien-être qu'un smoothie qu'ils préparent eux-mêmes?",
+    "items": [
+      {
+        "title": "Renforcement d'équipe",
+        "description": "Favorisez la collaboration et l'esprit d'équipe à travers une activité amusante et interactive qui rassemble naturellement vos employés."
+      },
+      {
+        "title": "Promotion du bien-être",
+        "description": "Encouragez un mode de vie sain et actif auprès de vos employés tout en offrant une pause énergisante dans leur journée de travail."
+      },
+      {
+        "title": "Productivité améliorée",
+        "description": "Des recherches montrent qu'un employé en bonne santé est 5,81 fois plus productif et génère un ROI positif pour l'entreprise."
+      },
+      {
+        "title": "Expérience mémorable",
+        "description": "Créez des souvenirs positifs associés à votre marque et à votre culture d'entreprise qui renforceront l'engagement des employés."
+      }
+    ]
+  },
+  
+  "corporateExperience": {
+    "title": "L'expérience corporate parfaite",
+    "description": "Que votre équipe revienne au bureau ou ait simplement besoin d'un coup de boost, notre station de smoothies à pédales est un excellent moyen de promouvoir l'activité physique, nourrir le corps et susciter des conversations.",
+    "features": [
+      "Installation directement dans vos locaux",
+      "Aucune électricité nécessaire - 100% énergie humaine",
+      "Activité inclusive pour tous les âges et capacités",
+      "Personnalisation possible avec votre branding",
+      "Nettoyage et désinstallation inclus"
+    ],
+    "planEventButton": "Planifier mon événement"
+  },
+  
+  "packages": {
+    "title": "Forfaits Corporate",
+    "subtitle": "Choisissez le forfait qui correspond le mieux à la taille de votre équipe et à vos objectifs",
+    "mostPopular": "Plus populaire",
+    "selectPackage": "Choisir ce forfait",
+    "items": [
+      {
+        "title": "Pop Solo Corporate",
+        "duration": "1.5-2.5 heures",
+        "people": "20-40 personnes",
+        "price": "À partir de 649$",
+        "features": [
+          "1 vélo mélangeur pour adultes",
+          "50-75 smoothies énergisants",
+          "Animation professionnelle",
+          "Installation en entreprise",
+          "Nettoyage inclus"
+        ]
+      },
+      {
+        "title": "Ready Set Blend Team",
+        "duration": "2-3 heures",
+        "people": "30-60 personnes", 
+        "price": "À partir de 799$",
+        "features": [
+          "2 vélos avec moniteurs de vitesse",
+          "100-150 smoothies de compétition",
+          "Classement en temps réel",
+          "Animateur énergique",
+          "Prix pour les gagnants",
+          "Personnalisation d'entreprise"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Double Fun Corporate",
+        "duration": "3-4 heures",
+        "people": "50-100 personnes",
+        "price": "À partir de 999$",
+        "features": [
+          "2 vélos mélangeurs premium",
+          "200-300 smoothies frais",
+          "Installation complète",
+          "Équipe d'animation",
+          "Branding personnalisé",
+          "Service traiteur smoothies"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Ce que nos clients corporate disent",
+    "items": [
+      {
+        "quote": "Nos employés ont adoré l'expérience des vélos à smoothie lors de notre journée bien-être. C'était à la fois amusant, sain et parfaitement aligné avec nos valeurs d'entreprise.",
+        "author": "Marie Dubois",
+        "position": "Directrice RH, Entreprise XYZ",
+        "company": "Tech Montréal",
+        "rating": 5
+      },
+      {
+        "quote": "L'équipe de Voilà Vélo a apporté une énergie incroyable à notre événement corporatif. C'était exactement ce qu'il nous fallait pour dynamiser notre journée et renforcer la cohésion d'équipe!",
+        "author": "Jean Tremblay",
+        "position": "Responsable événementiel, ABC Inc.",
+        "company": "Consulting Québec",
+        "rating": 5
+      },
+      {
+        "quote": "Le retour sur investissement a été immédiat. Nos employés parlent encore de cette activité 6 mois plus tard. Nous planifions déjà notre prochain événement avec Voilà Vélo!",
+        "author": "Sophie Lavoie",
+        "position": "VP Ressources Humaines",
+        "company": "Innovation Labs",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "roi": {
+    "title": "Un investissement qui rapporte",
+    "description": "Les recherches australiennes sur le bien-être en entreprise montrent un retour sur investissement de 5,81$ pour chaque dollar investi dans le bien-être des employés.",
+    "benefits": [
+      "Réduction de l'absentéisme",
+      "Amélioration de la rétention du personnel", 
+      "Augmentation de la productivité",
+      "Renforcement de la culture d'entreprise",
+      "Amélioration de l'image employeur"
+    ],
+    "roiCard": {
+      "value": "5.81x",
+      "title": "Retour sur investissement",
+      "subtitle": "Pour chaque dollar investi dans le bien-être des employés"
+    }
+  },
+  
+  "finalCta": {
+    "title": "Prêt à dynamiser votre prochain événement d'entreprise?",
+    "description": "Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé. Nos experts vous aideront à créer l'événement corporate parfait.",
+    "contactUs": "Contactez-nous",
+    "createEvent": "Créer votre événement"
+  }
+}

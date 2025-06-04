@@ -105,7 +105,8 @@ const config: Config = {
         "scale-in": "scaleIn 0.6s ease forwards",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-open-sans)", "Arial", "Helvetica", "sans-serif"],
+        poppins: ["var(--font-poppins)", "Arial", "Helvetica", "sans-serif"],
       },
       fontSize: {
         h1: "clamp(2.5rem, 5vw, 4rem)",

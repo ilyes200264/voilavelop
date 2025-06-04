@@ -15,25 +15,12 @@ import {
   TextReveal,
   ImageMaskReveal
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export default function AboutPage() {
-  const values = [
-    {
-      icon: "👁️",
-      title: "Notre Vision",
-      description: "Nous croyons aux pratiques éthiques et durables pour un monde plus heureux et plus sain que tous peuvent apprécier."
-    },
-    {
-      icon: "🎯", 
-      title: "Notre Mission",
-      description: "Être la principale entreprise d'événements pop-up à vélo du Québec afin de pouvoir soutenir et faire des dons aux organisations internationales et locales qui partagent notre vision."
-    },
-    {
-      icon: "⚖️",
-      title: "Notre Éthique",
-      description: "Nous plaçons la planète et nos gens avant le profit tout en offrant un service exceptionnel. Nous croyons en 'soyez le changement que vous voulez voir'."
-    }
-  ]
+  const { t } = useI18n()
+  
+  const values = t<any[]>('mission.values')
 
   const cities = ['Montréal', 'Québec', 'Laval', 'Ottawa']
 
@@ -48,7 +35,7 @@ export default function AboutPage() {
             <div className="text-center">
               <TextReveal>
                 <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
-                  À Propos de Nous
+                  {t('hero.title')}
                 </h1>
               </TextReveal>
               
@@ -56,7 +43,7 @@ export default function AboutPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-2xl italic text-gray-700 mb-8 leading-relaxed">
-                  "Nous engageons et inspirons les gens d'une manière amusante et saine!"
+                  {t('hero.quote')}
                 </p>
               </ScrollReveal>
               
@@ -71,7 +58,7 @@ export default function AboutPage() {
               </AnimatedImage>
               
               <ScrollReveal delay={0.5}>
-                <p className="text-lg text-gray-600">Leen et Micha</p>
+                <p className="text-lg text-gray-600">{t('hero.founders')}</p>
               </ScrollReveal>
             </div>
           </div>
@@ -94,38 +81,32 @@ export default function AboutPage() {
               <StaggerContainer className="text-white pl-0 lg:pl-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    Voilà Vélo Fruité
+                    {t('company.title')}
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-secondary-yellow mb-6">
-                    Nous créons des événements innovants et durables
+                    {t('company.subtitle')}
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut le cyclisme, la durabilité, 
-                    la santé et le bonheur en utilisant nos vélos mélangeurs fabriqués au Québec.
+                    {t('company.description1')}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    Nous sommes une équipe d'organisateurs d'événements passionnés qui croient aux pratiques éthiques 
-                    et durables pour créer un monde plus heureux et plus sain — un événement smoothie à la fois! 
-                    Nous utilisons des gobelets lavables ou biodégradables, compensons notre carbone, compostons 
-                    ou recyclons tous les déchets produits et faisons des dons à UNICEF.
+                    {t('company.description2')}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4">
-                    Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur 
-                    divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.
+                    {t('company.description3')}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p>
-                    L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. 
-                    Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.
+                    {t('company.description4')}
                   </p>
                 </MotionDiv>
               </StaggerContainer>
@@ -140,27 +121,23 @@ export default function AboutPage() {
               <StaggerContainer className="text-white order-2 lg:order-1 pr-0 lg:pr-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    Nos Fondatrices
+                    {t('founders.title')}
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-primary-red mb-6">
-                    Leen et Micha
+                    {t('founders.subtitle')}
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-6">
-                    Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. 
-                    C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent 
-                    monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, 
-                    alimentée entièrement par leur énergie! Pour en savoir plus sur la façon dont nous avons commencé 
-                    Voilà Vélo Fruité, consultez notre histoire.
+                    {t('founders.description')}
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
                     <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                      En savoir plus
+                      {t('founders.button')}
                     </Button>
                   </AnimatedImage>
                 </MotionDiv>
@@ -184,12 +161,12 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                Notre Mission
+                {t('mission.title')}
               </h2>
             </ScrollReveal>
 
             <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {values.map((value, index) => (
+              {values.map((value: { icon: string; title: string; description: string }, index: number) => (
                 <MotionDiv 
                   key={index} 
                   variant="fadeUp"
@@ -218,50 +195,18 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                Nous le faisons en:
+                {t('howWeDo.title')}
               </h2>
             </ScrollReveal>
 
             <StaggerContainer className="max-w-4xl mx-auto text-center space-y-8">
-              <MotionDiv variant="fadeUp">
-                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
-                  Fournissant des activations durables professionnelles exceptionnelles;
-                </p>
-              </MotionDiv>
-              
-              <MotionDiv variant="fadeUp">
-                <p className="text-lg text-gray-700">
-                  Rendant la santé et le bien-être faciles et amusants pour tout groupe démographique;
-                </p>
-              </MotionDiv>
-              
-              <MotionDiv variant="fadeUp">
-                <p className="text-lg text-gray-700">
-                  Adoptant des pratiques durables et éthiques en utilisant uniquement des gobelets lavables 
-                  ou biodégradables (et en prenant position contre l'utilisation de pailles ou de couvercles), 
-                  en compostant ou recyclant presque TOUS nos déchets y compris le plastique souple, 
-                  en utilisant des compensations carbone pour neutraliser nos émissions et en faisant des dons 
-                  à UNICEF et à des organisations locales;
-                </p>
-              </MotionDiv>
-              
-              <MotionDiv variant="fadeUp">
-                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
-                  Partenariat avec des entreprises qui partagent une mission similaire.
-                </p>
-              </MotionDiv>
-              
-              <MotionDiv variant="fadeUp">
-                <p className="text-lg text-gray-700">
-                  Ainsi, nous soutenir, c'est soutenir notre merveilleuse planète.
-                </p>
-              </MotionDiv>
-              
-              <MotionDiv variant="fadeUp">
-                <p className="text-lg text-gray-700">
-                  Nous construisons également chaque vélo mélangeur à la main au Québec.
-                </p>
-              </MotionDiv>
+              {t<string[]>('howWeDo.points').map((point: string, index: number) => (
+                <MotionDiv key={index} variant="fadeUp" custom={index}>
+                  <p className={index === 0 || index === 3 ? "text-2xl font-medium text-dark-charcoal leading-relaxed" : "text-lg text-gray-700"}>
+                    {point}
+                  </p>
+                </MotionDiv>
+              ))}
             </StaggerContainer>
           </div>
         </MotionSection>
@@ -271,7 +216,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                Nos Partenaires
+                {t('partners.title')}
               </h2>
             </ScrollReveal>
 
@@ -288,15 +233,14 @@ export default function AboutPage() {
               
               <MotionDiv variant="fadeUp">
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos 
-                  pour engager, éduquer et divertir les enfants et les adultes.
+                  {t('partners.description')}
                 </p>
               </MotionDiv>
               
               <MotionDiv variant="fadeUp">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-primary-red text-white hover:bg-primary-red/90 px-8 py-3 text-lg font-semibold">
-                    En savoir plus
+                    {t('partners.button')}
                   </Button>
                 </AnimatedImage>
               </MotionDiv>

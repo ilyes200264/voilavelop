@@ -9,8 +9,10 @@ import {
   TextReveal,
   AnimatedImage
 } from "@/components/motion/motion-components"
+import { useI18n } from "@/lib/i18n"
 
 export function HeroSection() {
+  const { t } = useI18n()
   const cities = ["Montréal", "Québec", "Laval", "Ottawa"]
 
   return (
@@ -49,15 +51,14 @@ export function HeroSection() {
           {/* Main Value Proposition */}
           <TextReveal delay={0.5}>
             <p className="hero-tagline text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-white inline-block backdrop-blur-sm bg-black/20 px-4 py-3 rounded-lg">
-              Créez un événement mémorable qui soit amusant, innovant et qui promeut la durabilité avec une différence que
-              votre équipe appréciera.
+              {t('hero.subtitle')}
             </p>
           </TextReveal>
 
           {/* Primary CTA */}
           <AnimatedImage hoverEffect="lift" delay={0.6}>
             <Button size="lg" className="btn-primary text-base px-6 py-3 shadow-xl">
-              Demander une soumission
+              {t('hero.ctaButton')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </AnimatedImage>

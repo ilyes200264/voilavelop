@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "title": "Book - Voilà Vélo",
+    "description": "Book a smoothie bike package for your next event"
+  },
+  "hero": {
+    "title": "<span class=\"text-primary-red\">Book</span> your smoothie bike experience",
+    "description": "Complete the form below to book our smoothie bikes for your next event. Our team will contact you quickly to confirm the details."
+  },
+  "form": {
+    "title": "Booking Form",
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Your first name"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Your last name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "(514) 123-4567"
+    },
+    "company": {
+      "label": "Company / Organization (optional)",
+      "placeholder": "Name of your company"
+    },
+    "eventDate": {
+      "label": "Event Date",
+      "placeholder": "Select a date"
+    },
+    "package": {
+      "label": "Package",
+      "placeholder": "Select a package",
+      "options": {
+        "petiteKoki": "La petite Koki",
+        "popSolo": "Pop Solo",
+        "doubleFun": "Double Fun",
+        "readySetBlend": "Ready Set Blend",
+        "parentChildChallenge": "Parent-Child Challenge",
+        "smoothieParade": "The Smoothie Parade",
+        "signature": "Signature Package"
+      }
+    },
+    "guests": {
+      "label": "Number of Guests",
+      "placeholder": "Number of guests",
+      "options": {
+        "lessThan50": "Less than 50",
+        "50-100": "50-100",
+        "100-200": "100-200",
+        "200-500": "200-500",
+        "moreThan500": "More than 500"
+      }
+    },
+    "eventType": {
+      "label": "Event Type",
+      "placeholder": "Event type",
+      "options": {
+        "corporate": "Corporate",
+        "private": "Private",
+        "school": "School / Organization",
+        "festival": "Festival",
+        "conference": "Conference",
+        "other": "Other"
+      }
+    },
+    "message": {
+      "label": "Message (additional details)",
+      "placeholder": "Share additional details about your event..."
+    },
+    "submitButton": "Send Booking Request"
+  },
+  "sidebar": {
+    "needHelp": {
+      "title": "Need Help?",
+      "description": "We're here to guide you"
+    },
+    "contact": {
+      "email": {
+        "label": "Email",
+        "value": "info@voilavelo.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "(514) 123-4567"
+      },
+      "hours": {
+        "label": "Business Hours",
+        "value": "Monday - Friday: 9am to 5pm"
+      }
+    },
+    "packageHelp": {
+      "title": "Not sure which package to choose?",
+      "description": "Check out our packages page to discover the one that best suits your event.",
+      "button": "View all packages"
+    },
+    "features": {
+      "team": {
+        "title": "Dedicated Team",
+        "description": "Our professionals take care of everything"
+      },
+      "experience": {
+        "title": "Guaranteed Experience",
+        "description": "Satisfaction of your guests assured"
+      }
+    }
+  }
+}

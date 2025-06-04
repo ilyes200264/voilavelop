@@ -1,0 +1,49 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "packages": "Packages",
+    "events": "Events",
+    "howItWorks": "How It Works",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "about_submenu": {
+    "whoWeAre": "Who We Are",
+    "ourMission": "Our Mission",
+    "ourValues": "Our Values"
+  },
+  "packages_submenu": {
+    "laPetiteKoki": "La petite Koki",
+    "popSolo": "Pop Solo",
+    "doubleFun": "Double Fun",
+    "readySetBlend": "Ready Set Blend",
+    "parentChildChallenge": "Parent-Child Challenge",
+    "smoothieParade": "The Smoothie Parade",
+    "signature": "Signature Package"
+  },
+  "events_submenu": {
+    "corporate": "Corporate",
+    "openingsActivations": "Openings & Activations",
+    "schoolsOrganizationsAnniversaries": "Schools, Organizations & Birthdays",
+    "conferencesExhibitions": "Conferences & Exhibitions"
+  },
+  "howItWorks_submenu": {
+    "createYourEvent": "Create Your Event",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "connectWithUs": "Connect With Us",
+    "newsletterIntro": "Subscribe to download our seven best tips for a successful event.",
+    "name": "Name",
+    "email": "Email",
+    "subscribe": "SUBSCRIBE",
+    "ourPartners": "Our Partners",
+    "ourMission": "Our Mission",
+    "ourBlog": "Our Blog",
+    "indigenousAcknowledgment": "We acknowledge the Indigenous peoples, traditional guardians of this land. Voice. Treaty. Truth.",
+    "copyright": "© Copyright 2025 Voilà Vélo Fruité"
+  }
+}

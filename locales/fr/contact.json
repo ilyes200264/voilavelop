@@ -1,0 +1,120 @@
+{
+  "title": "Contactez-nous",
+  "subtitle": "Prêt à ajouter du plaisir pédalé à votre événement? Parlons-en!",
+  
+  "contactInfo": {
+    "title": "Informations de contact",
+    "address": {
+      "title": "Adresse",
+      "line1": "[Adresse d'entreprise]",
+      "line2": "Montréal, QC [Code postal]",
+      "viewMap": "Voir sur la carte →"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "number": "XXX-XXX-XXXX",
+      "hours": "Lun-Ven: 9h00-17h00"
+    },
+    "email": {
+      "title": "Email",
+      "address": "info@voilavelo.ca",
+      "responseTime": "Réponse dans les 24h"
+    },
+    "serviceAreas": {
+      "title": "Zones de service",
+      "areas": [
+        "Montréal et région métropolitaine",
+        "Laval",
+        "Ville de Québec et environs",
+        "Ottawa-Gatineau"
+      ]
+    }
+  },
+  
+  "contactForm": {
+    "title": "Demander une soumission",
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise/Organisation"
+    },
+    "eventInfo": {
+      "title": "Détails de l'événement",
+      "eventType": {
+        "label": "Type d'événement",
+        "placeholder": "Sélectionnez le type",
+        "options": {
+          "corporate": "Événement corporatif",
+          "school": "École/Éducation",
+          "festival": "Festival/Communautaire",
+          "wedding": "Mariage",
+          "birthday": "Anniversaire",
+          "other": "Autre"
+        }
+      },
+      "eventDate": "Date d'événement",
+      "guests": {
+        "label": "Nombre d'invités",
+        "placeholder": "Sélectionnez",
+        "options": {
+          "1-25": "1-25 personnes",
+          "26-50": "26-50 personnes",
+          "51-100": "51-100 personnes",
+          "101-200": "101-200 personnes",
+          "200+": "200+ personnes"
+        }
+      },
+      "location": {
+        "label": "Lieu",
+        "placeholder": "Sélectionnez la ville",
+        "options": {
+          "montreal": "Montréal",
+          "laval": "Laval",
+          "quebec": "Québec",
+          "ottawa": "Ottawa",
+          "other": "Autre (précisez)"
+        }
+      },
+      "package": {
+        "label": "Forfait préféré",
+        "placeholder": "Sélectionnez un forfait",
+        "options": {
+          "la-petite-koki": "La petite Koki",
+          "pop-solo": "Pop Solo",
+          "double-fun": "Double Fun",
+          "ready-set-blend": "Ready Set Blend",
+          "defi-parent-enfant": "Défi Parent-Enfant",
+          "la-smoothie-parade": "La Smoothie Parade",
+          "signature": "Forfait Signature",
+          "custom": "Forfait personnalisé"
+        }
+      },
+      "budget": {
+        "label": "Budget approximatif",
+        "placeholder": "Sélectionnez",
+        "options": {
+          "under-500": "Moins de 500$",
+          "500-1000": "500$ - 1000$",
+          "1000-2000": "1000$ - 2000$",
+          "2000-5000": "2000$ - 5000$",
+          "5000+": "5000$+"
+        }
+      }
+    },
+    "additionalInfo": {
+      "title": "Informations supplémentaires",
+      "message": {
+        "label": "Détails de votre événement, besoins spéciaux, questions",
+        "placeholder": "Décrivez votre vision pour l'événement, toute exigence spéciale, ou questions que vous pourriez avoir..."
+      },
+      "newsletter": "J'aimerais recevoir des conseils d'événements et des offres spéciales par email"
+    },
+    "submit": {
+      "button": "Envoyer la demande →",
+      "confirmation": "Nous vous répondrons dans les 24 heures avec une soumission personnalisée pour votre événement."
+    }
+  }
+}

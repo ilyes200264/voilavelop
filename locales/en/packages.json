@@ -1,0 +1,105 @@
+{
+  "packages_section": {
+    "title": "Our Packages",
+    "subtitle": "Find the perfect formula for your event",
+    "viewAll": "View all packages",
+    "details": "See details"
+  },
+  "packages": {
+    "laPetiteKoki": {
+      "title": "La petite Koki",
+      "description": "Ideal for small events up to 50 people",
+      "details": [
+        "1 smoothie bike",
+        "Up to 50 smoothies",
+        "2 hours of service",
+        "One host",
+        "All fresh ingredients",
+        "Biodegradable cups and straws"
+      ]
+    },
+    "popSolo": {
+      "title": "Pop Solo",
+      "description": "Perfect for medium-sized events",
+      "details": [
+        "1 smoothie bike",
+        "Up to 100 smoothies",
+        "3 hours of service",
+        "One host",
+        "All fresh ingredients",
+        "Biodegradable cups and straws",
+        "Basic customization"
+      ]
+    },
+    "doubleFun": {
+      "title": "Double Fun",
+      "description": "Two bikes for more fun and competition",
+      "details": [
+        "2 smoothie bikes",
+        "Up to 150 smoothies",
+        "3 hours of service",
+        "Two hosts",
+        "All fresh ingredients",
+        "Biodegradable cups and straws",
+        "Basic customization"
+      ]
+    },
+    "readySetBlend": {
+      "title": "Ready Set Blend",
+      "description": "For large events with many participants",
+      "details": [
+        "3 smoothie bikes",
+        "Up to 300 smoothies",
+        "4 hours of service",
+        "Three hosts",
+        "All fresh ingredients",
+        "Biodegradable cups and straws",
+        "Full customization",
+        "Animation and contests"
+      ]
+    },
+    "parentChildChallenge": {
+      "title": "Parent-Child Challenge",
+      "description": "A fun activity for families",
+      "details": [
+        "2 smoothie bikes (1 standard, 1 adapted for children)",
+        "Up to 120 smoothies",
+        "3 hours of service",
+        "Two hosts",
+        "Kid-friendly ingredients",
+        "Biodegradable cups and straws",
+        "Educational activities on nutrition"
+      ]
+    },
+    "smoothieParade": {
+      "title": "The Smoothie Parade",
+      "description": "For festivals and large public events",
+      "details": [
+        "4 smoothie bikes",
+        "Unlimited smoothies for the duration of the event",
+        "Up to 8 hours of service",
+        "Full team of hosts",
+        "Variety of ingredients and special recipes",
+        "Biodegradable cups and straws",
+        "Full customization",
+        "Animation and contests",
+        "Customized booth"
+      ]
+    },
+    "signature": {
+      "title": "Signature Package",
+      "description": "The complete experience, fully customized",
+      "details": [
+        "Number of bikes according to your needs",
+        "Unlimited smoothies",
+        "Duration adapted to your event",
+        "Full team of hosts",
+        "Custom ingredients and recipes",
+        "Custom containers",
+        "Complete branding",
+        "Tailored animation",
+        "Experience completely adapted to your vision"
+      ]
+    }
+  }
+}

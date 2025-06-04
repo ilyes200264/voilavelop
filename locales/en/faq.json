@@ -1,0 +1,140 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to all your questions about our smoothie bike services",
+  "search": {
+    "placeholder": "Search for a question...",
+    "results": "Search results",
+    "noResults": "No results found for",
+    "tryDifferent": "Try different terms or browse the categories below"
+  },
+  "categories": [
+    {
+      "id": "general",
+      "name": "General Questions",
+      "faqs": [
+        {
+          "question": "How long does it take to make a smoothie?",
+          "answer": "It only takes 30 seconds to pedal a smoothie, but you can stay and keep riding if you want! It's very fun and very easy for all ages!"
+        },
+        {
+          "question": "What if I want something beyond what you usually offer?",
+          "answer": "We love hearing interesting ideas! Call us or email us to discuss the details and we'll do our best to accommodate your request."
+        },
+        {
+          "question": "What ingredients do you use?",
+          "answer": "We use only fresh fruits, organic vegetables, and natural ingredients. We can accommodate food allergies and dietary preferences with advance notice."
+        },
+        {
+          "question": "Do you need electricity?",
+          "answer": "No! That's the beauty of our bikes - they run entirely on human power. We bring our own battery-powered sound equipment if needed."
+        },
+        {
+          "question": "Does Voilà Vélo work better indoors or outdoors?",
+          "answer": "Voilà Vélo is perfect for both indoor and outdoor events. We adapt to your space and needs."
+        },
+        {
+          "question": "Can customers make their own drinks?",
+          "answer": "Yes! We encourage all our customers to make their own drinks - we think it's more fun and engaging that way. Almost everyone can use the blender bikes - children as young as four, teenagers, adults, and even active seniors can comfortably use our fantastic blender bikes. Our staff are also enthusiastic cyclists if you'd like us to give you a hand (or leg) at any time."
+        },
+        {
+          "question": "Can you blend alcoholic cocktails for weddings or private parties?",
+          "answer": "Yes, absolutely! We can blend delicious alcoholic cocktails for weddings and private events. We also take care of obtaining the necessary alcohol permit from Quebec to ensure everything is legal and safe."
+        },
+        {
+          "question": "What happens if it rains?",
+          "answer": "We can operate indoors if you have suitable space, or we can reschedule the event. We work with you to find the best solution."
+        },
+        {
+          "question": "How far in advance should I book?",
+          "answer": "We recommend booking at least 2-3 weeks in advance, especially during peak season (May-September). For large events, 4-6 weeks is preferable."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "name": "Equipment and Logistics",
+      "faqs": [
+        {
+          "question": "What bikes are available?",
+          "answer": "We offer adult bikes (suitable for people ages 10 and up) and child-sized bikes (suitable for children ages 5-10). Please specify your needs when booking."
+        },
+        {
+          "question": "How many people can use a bike at once?",
+          "answer": "Each bike can accommodate one person at a time. However, we encourage participants to queue up and cheer each other on, creating a festive, community atmosphere."
+        },
+        {
+          "question": "How much space do you need for setup?",
+          "answer": "For one bike, we need approximately 2m x 2m of space. For multiple bikes, the required space increases accordingly. We also recommend allowing extra space for participants waiting their turn."
+        },
+        {
+          "question": "How long does setup take?",
+          "answer": "Our team typically arrives 1 hour before the event starts for setup. Teardown takes about 30-45 minutes after the event ends."
+        }
+      ]
+    },
+    {
+      "id": "customization",
+      "name": "Customization and Options",
+      "faqs": [
+        {
+          "question": "Can you customize smoothies for our brand?",
+          "answer": "Yes! We can create custom recipes, use your brand colors, and even add your logo to the bikes for corporate events."
+        },
+        {
+          "question": "Do you provide bilingual services?",
+          "answer": "Absolutely! All our hosts are bilingual and can conduct the event in French, English, or both languages according to your needs."
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing and Booking",
+      "faqs": [
+        {
+          "question": "How can I get a quote?",
+          "answer": "You can fill out our online contact form, call us directly, or use our 'Create Your Event' tool to receive a personalized quote based on your specific needs."
+        },
+        {
+          "question": "Are there additional charges for travel?",
+          "answer": "Travel is included free of charge within a 25 km radius of our base in Montreal. Beyond that, travel fees may apply depending on the distance. We will always provide you with a transparent quote including all costs."
+        },
+        {
+          "question": "Do you offer discounts for non-profits or schools?",
+          "answer": "Yes, we offer special packages for schools, non-profit organizations, and charitable events. Contact us to discuss your needs and budget."
+        },
+        {
+          "question": "What is your cancellation policy?",
+          "answer": "We understand that plans can change. Cancellations made more than 14 days before the event are fully refundable. For cancellations between 7 and 14 days, a 50% deposit is retained. For cancellations less than 7 days, full payment is due. In case of unfavorable weather conditions, we will work with you to reschedule at no additional cost."
+        },
+        {
+          "question": "How can I make payment?",
+          "answer": "We accept payments by electronic transfer, credit card, or company check. A 50% deposit is typically required to confirm the booking, with the balance due on the day of the event or in advance according to the terms of the contract."
+        }
+      ]
+    },
+    {
+      "id": "sustainability",
+      "name": "Sustainability and Values",
+      "faqs": [
+        {
+          "question": "How does Voilà Vélo contribute to sustainability?",
+          "answer": "Our concept is inherently sustainable as it operates without electricity, only human power. We use local and organic ingredients when possible, and all our containers and utensils are compostable or reusable."
+        },
+        {
+          "question": "What happens with unused ingredients?",
+          "answer": "As part of our commitment to sustainability, we donate all leftover ingredients to local charities such as Moisson Montreal."
+        },
+        {
+          "question": "Do you work with local suppliers?",
+          "answer": "Yes, we source fruits and vegetables from local producers whenever possible, depending on the season. We strongly believe in supporting the local economy and reducing our carbon footprint."
+        }
+      ]
+    }
+  ],
+  "stillHaveQuestions": {
+    "title": "Still have questions?",
+    "description": "Our team is here to help! Contact us directly for any specific questions.",
+    "contactButton": "Contact Us",
+    "callButton": "Call us: XXX-XXX-XXXX"
+  }
+}

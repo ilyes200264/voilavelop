@@ -1,0 +1,165 @@
+{
+  "packages_section": {
+    "title": "Nos Forfaits",
+    "subtitle": "Trouvez la formule parfaite pour votre événement",
+    "viewAll": "Voir tous les forfaits",
+    "details": "Voir les détails"
+  },
+  "packages": {
+    "laPetiteKoki": {
+      "title": "La petite Koki",
+      "description": "Idéal pour les petits événements jusqu'à 50 personnes",
+      "details": [
+        "1 vélo à smoothie",
+        "Jusqu'à 50 smoothies",
+        "2 heures de service",
+        "Un.e hôte.esse",
+        "Tous les ingrédients frais",
+        "Tasses et pailles biodégradables"
+      ]
+    },
+    "popSolo": {
+      "title": "Pop Solo",
+      "description": "Parfait pour les événements de taille moyenne",
+      "details": [
+        "1 vélo à smoothie",
+        "Jusqu'à 100 smoothies",
+        "3 heures de service",
+        "Un.e hôte.esse",
+        "Tous les ingrédients frais",
+        "Tasses et pailles biodégradables",
+        "Personnalisation de base"
+      ]
+    },
+    "doubleFun": {
+      "title": "Double Fun",
+      "description": "Deux vélos pour plus de fun et de compétition",
+      "details": [
+        "2 vélos à smoothie",
+        "Jusqu'à 150 smoothies",
+        "3 heures de service",
+        "Deux hôte.esse.s",
+        "Tous les ingrédients frais",
+        "Tasses et pailles biodégradables",
+        "Personnalisation de base"
+      ]
+    },
+    "readySetBlend": {
+      "title": "Ready Set Blend",
+      "description": "Pour les grands événements avec beaucoup de participants",
+      "details": [
+        "3 vélos à smoothie",
+        "Jusqu'à 300 smoothies",
+        "4 heures de service",
+        "Trois hôte.esse.s",
+        "Tous les ingrédients frais",
+        "Tasses et pailles biodégradables",
+        "Personnalisation complète",
+        "Animation et concours"
+      ]
+    },
+    "parentChildChallenge": {
+      "title": "Défi Parent-Enfant",
+      "description": "Une activité amusante pour les familles",
+      "details": [
+        "2 vélos à smoothie (1 standard, 1 adapté aux enfants)",
+        "Jusqu'à 120 smoothies",
+        "3 heures de service",
+        "Deux hôte.esse.s",
+        "Ingrédients adaptés aux enfants",
+        "Tasses et pailles biodégradables",
+        "Activités éducatives sur la nutrition"
+      ]
+    },
+    "smoothieParade": {
+      "title": "La Smoothie Parade",
+      "description": "Pour les festivals et grands événements publics",
+      "details": [
+        "4 vélos à smoothie",
+        "Smoothies illimités pendant la durée de l'événement",
+        "Jusqu'à 8 heures de service",
+        "Équipe complète d'hôte.esse.s",
+        "Variété d'ingrédients et recettes spéciales",
+        "Tasses et pailles biodégradables",
+        "Personnalisation complète",
+        "Animation et concours",
+        "Stand personnalisé"
+      ]
+    },
+    "signature": {
+      "title": "Forfait Signature",
+      "description": "L'expérience complète, entièrement personnalisée",
+      "details": [
+        "Nombre de vélos selon vos besoins",
+        "Smoothies illimités",
+        "Durée adaptée à votre événement",
+        "Équipe complète d'hôte.esse.s",
+        "Ingrédients et recettes personnalisés",
+        "Contenants personnalisés",
+        "Branding complet",
+        "Animation sur mesure",
+        "Expérience complètement adaptée à votre vision"
+      ]
+    }
+  },
+  "pageHero": {
+    "title": "Nos Forfaits",
+    "description": "Festivals, événements corporatifs, collectes de fonds ou programmes scolaires - nous avons le forfait parfait pour vous. Découvrez nos offres de vélos à smoothies."
+  },
+  
+  "intro": {
+    "description1": "Nos vélos à smoothies sont disponibles pour la location dans toute la région. Que vous organisiez un petit événement familial ou un grand festival, nous avons une solution adaptée à vos besoins.",
+    "description2": "Tous nos forfaits comprennent la livraison, l'installation et la désinstallation, ainsi qu'un animateur professionnel pour guider vos invités à travers l'expérience. Nous fournissons également tous les ingrédients frais, gobelets, et autres accessoires nécessaires."
+  },
+  
+  "packagesGrid": {
+    "title": "Découvrez nos forfaits",
+    "subtitle": "Une expérience unique et mémorable pour tous types d'événements",
+    "seeDetails": "Voir les détails",
+    "learnMore": "En savoir plus",
+    "startingAt": "À partir de"
+  },
+  
+  "help": {
+    "title": "Besoin d'aide pour choisir?",
+    "description": "Notre équipe peut vous aider à sélectionner le forfait parfait pour votre événement ou créer une solution entièrement personnalisée.",
+    "requestQuote": "Demander une soumission",
+    "callUs": "Appelez-nous",
+    "testimonial": {
+      "text": "Nous avons réservé Voilà Vélo Fruité pour notre journée corporative et ce fut un succès retentissant! L'équipe était professionnelle et nos employés ont adoré l'expérience.",
+      "author": "Marie Lemieux",
+      "company": "Directrice RH, Entreprise XYZ"
+    }
+  },
+  
+  "packageDetail": {
+    "notFound": {
+      "message": "Forfait non trouvé",
+      "backButton": "Retour aux forfaits"
+    },
+    "whatsIncluded": "Ce qui est inclus:",
+    "requestQuote": "Demander un devis",
+    "perfectFor": "Parfait pour:",
+    "bookNow": "Réserver maintenant",
+    "options": {
+      "title": "Options disponibles",
+      "subtitle": "Choisissez l'option qui convient le mieux à votre événement et à votre budget",
+      "included": "Inclus:",
+      "idealFor": "Idéal pour:",
+      "chooseOption": "Choisir cette option",
+      "mostPopular": "Plus populaire"
+    },
+    "downloadGuide": "Télécharger le guide",
+    "readyToBook": {
+      "title": "Prêt à réserver",
+      "description": "Contactez-nous pour une soumission personnalisée et réservez votre date dès aujourd'hui!",
+      "requestQuote": "Demander une soumission",
+      "callNow": "Appelez maintenant",
+      "testimonial": {
+        "text": "Notre expérience avec {packageTitle} a été absolument incroyable! Nos invités ont adoré l'interactivité et les smoothies étaient délicieux.",
+        "author": "Isabelle Tremblay",
+        "location": "Montréal, QC"
+      }
+    }
+  }
+}

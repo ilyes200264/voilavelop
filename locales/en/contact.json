@@ -1,0 +1,120 @@
+{
+  "title": "Contact Us",
+  "subtitle": "Ready to add pedal-powered fun to your event? Let's talk!",
+  
+  "contactInfo": {
+    "title": "Contact Information",
+    "address": {
+      "title": "Address",
+      "line1": "[Business Address]",
+      "line2": "Montreal, QC [Postal Code]",
+      "viewMap": "View on map →"
+    },
+    "phone": {
+      "title": "Phone",
+      "number": "XXX-XXX-XXXX",
+      "hours": "Mon-Fri: 9:00AM-5:00PM"
+    },
+    "email": {
+      "title": "Email",
+      "address": "info@voilavelo.ca",
+      "responseTime": "Response within 24h"
+    },
+    "serviceAreas": {
+      "title": "Service Areas",
+      "areas": [
+        "Montreal and metropolitan area",
+        "Laval",
+        "Quebec City and surrounding areas",
+        "Ottawa-Gatineau"
+      ]
+    }
+  },
+  
+  "contactForm": {
+    "title": "Request a Quote",
+    "personalInfo": {
+      "title": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company/Organization"
+    },
+    "eventInfo": {
+      "title": "Event Details",
+      "eventType": {
+        "label": "Event Type",
+        "placeholder": "Select type",
+        "options": {
+          "corporate": "Corporate Event",
+          "school": "School/Education",
+          "festival": "Festival/Community",
+          "wedding": "Wedding",
+          "birthday": "Birthday",
+          "other": "Other"
+        }
+      },
+      "eventDate": "Event Date",
+      "guests": {
+        "label": "Number of Guests",
+        "placeholder": "Select",
+        "options": {
+          "1-25": "1-25 people",
+          "26-50": "26-50 people",
+          "51-100": "51-100 people",
+          "101-200": "101-200 people",
+          "200+": "200+ people"
+        }
+      },
+      "location": {
+        "label": "Location",
+        "placeholder": "Select city",
+        "options": {
+          "montreal": "Montreal",
+          "laval": "Laval",
+          "quebec": "Quebec City",
+          "ottawa": "Ottawa",
+          "other": "Other (specify)"
+        }
+      },
+      "package": {
+        "label": "Preferred Package",
+        "placeholder": "Select a package",
+        "options": {
+          "la-petite-koki": "La petite Koki",
+          "pop-solo": "Pop Solo",
+          "double-fun": "Double Fun",
+          "ready-set-blend": "Ready Set Blend",
+          "defi-parent-enfant": "Parent-Child Challenge",
+          "la-smoothie-parade": "The Smoothie Parade",
+          "signature": "Signature Package",
+          "custom": "Custom Package"
+        }
+      },
+      "budget": {
+        "label": "Approximate Budget",
+        "placeholder": "Select",
+        "options": {
+          "under-500": "Under $500",
+          "500-1000": "$500 - $1000",
+          "1000-2000": "$1000 - $2000",
+          "2000-5000": "$2000 - $5000",
+          "5000+": "$5000+"
+        }
+      }
+    },
+    "additionalInfo": {
+      "title": "Additional Information",
+      "message": {
+        "label": "Event details, special needs, questions",
+        "placeholder": "Describe your vision for the event, any special requirements, or questions you might have..."
+      },
+      "newsletter": "I would like to receive event tips and special offers by email"
+    },
+    "submit": {
+      "button": "Send Request →",
+      "confirmation": "We will respond within 24 hours with a personalized quote for your event."
+    }
+  }
+}

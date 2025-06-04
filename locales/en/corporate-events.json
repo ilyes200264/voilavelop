@@ -1,0 +1,158 @@
+{
+  "breadcrumb": {
+    "events": "Events",
+    "corporate": "Corporate"
+  },
+  
+  "hero": {
+    "title": "Boost employee wellness and energize your workplace!",
+    "description": "Looking for a fun, healthy, and memorable way to engage your team? Our smoothie bike setup brings healthy fun directly to your office, creating a unique break your employees will love.",
+    "requestQuote": "Request a quote",
+    "viewTeamBuilding": "View Team-Building package"
+  },
+  
+  "stats": [
+    { "number": "5.81x", "label": "ROI on employee wellness" },
+    { "number": "95%", "label": "Satisfaction rate" },
+    { "number": "200+", "label": "Satisfied companies" },
+    { "number": "30 sec", "label": "To make a smoothie" }
+  ],
+  
+  "benefits": {
+    "title": "Why choose Voilà Vélo for your corporate event?",
+    "subtitle": "A healthy employee is not only happier but also more productive — and what better way to promote wellness than with a smoothie they make themselves?",
+    "items": [
+      {
+        "title": "Team building",
+        "description": "Foster collaboration and team spirit through a fun and interactive activity that naturally brings your employees together."
+      },
+      {
+        "title": "Wellness promotion",
+        "description": "Encourage a healthy and active lifestyle among your employees while offering an energizing break in their workday."
+      },
+      {
+        "title": "Improved productivity",
+        "description": "Research shows that a healthy employee is 5.81 times more productive and generates a positive ROI for the company."
+      },
+      {
+        "title": "Memorable experience",
+        "description": "Create positive memories associated with your brand and corporate culture that will strengthen employee engagement."
+      }
+    ]
+  },
+  
+  "corporateExperience": {
+    "title": "The perfect corporate experience",
+    "description": "Whether your team is returning to the office or simply needs a boost, our pedal-powered smoothie station is a great way to promote physical activity, nourish the body, and spark conversations.",
+    "features": [
+      "Installation directly at your premises",
+      "No electricity needed - 100% human-powered",
+      "Inclusive activity for all ages and abilities",
+      "Possible customization with your branding",
+      "Cleaning and dismantling included"
+    ],
+    "planEventButton": "Plan my event"
+  },
+  
+  "packages": {
+    "title": "Corporate Packages",
+    "subtitle": "Choose the package that best fits your team size and objectives",
+    "mostPopular": "Most popular",
+    "selectPackage": "Choose this package",
+    "items": [
+      {
+        "title": "Pop Solo Corporate",
+        "duration": "1.5-2.5 hours",
+        "people": "20-40 people",
+        "price": "Starting at $649",
+        "features": [
+          "1 adult blender bike",
+          "50-75 energizing smoothies",
+          "Professional animation",
+          "Corporate installation",
+          "Cleaning included"
+        ]
+      },
+      {
+        "title": "Ready Set Blend Team",
+        "duration": "2-3 hours",
+        "people": "30-60 people", 
+        "price": "Starting at $799",
+        "features": [
+          "2 bikes with speed monitors",
+          "100-150 competition smoothies",
+          "Real-time ranking",
+          "Energetic host",
+          "Prizes for winners",
+          "Corporate customization"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Double Fun Corporate",
+        "duration": "3-4 hours",
+        "people": "50-100 people",
+        "price": "Starting at $999",
+        "features": [
+          "2 premium blender bikes",
+          "200-300 fresh smoothies",
+          "Complete setup",
+          "Animation team",
+          "Custom branding",
+          "Smoothie catering service"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "What our corporate clients say",
+    "items": [
+      {
+        "quote": "Our employees loved the smoothie bike experience during our wellness day. It was fun, healthy, and perfectly aligned with our company values.",
+        "author": "Marie Dubois",
+        "position": "HR Director, XYZ Company",
+        "company": "Tech Montreal",
+        "rating": 5
+      },
+      {
+        "quote": "The Voilà Vélo team brought incredible energy to our corporate event. It was exactly what we needed to energize our day and strengthen team cohesion!",
+        "author": "Jean Tremblay",
+        "position": "Event Manager, ABC Inc.",
+        "company": "Consulting Quebec",
+        "rating": 5
+      },
+      {
+        "quote": "The return on investment was immediate. Our employees are still talking about this activity 6 months later. We're already planning our next event with Voilà Vélo!",
+        "author": "Sophie Lavoie",
+        "position": "VP Human Resources",
+        "company": "Innovation Labs",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "roi": {
+    "title": "An investment that pays off",
+    "description": "Australian research on corporate wellness shows a return on investment of $5.81 for every dollar invested in employee wellness.",
+    "benefits": [
+      "Reduced absenteeism",
+      "Improved staff retention", 
+      "Increased productivity",
+      "Strengthened corporate culture",
+      "Enhanced employer image"
+    ],
+    "roiCard": {
+      "value": "5.81x",
+      "title": "Return on investment",
+      "subtitle": "For every dollar invested in employee wellness"
+    }
+  },
+  
+  "finalCta": {
+    "title": "Ready to energize your next corporate event?",
+    "description": "Contact us today to discuss your needs and get a personalized quote. Our experts will help you create the perfect corporate event.",
+    "contactUs": "Contact us",
+    "createEvent": "Create your event"
+  }
+}

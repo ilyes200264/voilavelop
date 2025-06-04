@@ -1,0 +1,145 @@
+{
+  "title": "Créez votre événement",
+  "subtitle": "Suivez les étapes ci-dessous pour créer un événement personnalisé qui correspondra parfaitement à vos besoins",
+  
+  "steps": [
+    { "number": 1, "name": "Type d'événement" },
+    { "number": 2, "name": "Détails" },
+    { "number": 3, "name": "Options" },
+    { "number": 4, "name": "Résumé" }
+  ],
+  
+  "navigation": {
+    "back": "Retour",
+    "continue": "Continuer",
+    "submit": "Soumettre la demande"
+  },
+  
+  "step1": {
+    "title": "Quel type d'événement organisez-vous?",
+    "subtitle": "Sélectionnez le type d'événement qui correspond le mieux à vos besoins. Cela nous aidera à vous recommander les forfaits les plus adaptés.",
+    "eventTypes": [
+      {
+        "title": "Événement corporatif",
+        "description": "Parfait pour les événements d'entreprise, réunions d'équipe et bien-être au travail",
+        "icon": "🏢"
+      },
+      {
+        "title": "Activation de marque",
+        "description": "Idéal pour les lancements de produits, ouvertures et événements promotionnels",
+        "icon": "🚀"
+      },
+      {
+        "title": "Fête scolaire",
+        "description": "Pour les écoles, universités et événements éducatifs",
+        "icon": "🎓"
+      },
+      {
+        "title": "Fête privée",
+        "description": "Parfait pour les anniversaires, mariages et célébrations familiales",
+        "icon": "🎉"
+      },
+      {
+        "title": "Festival ou événement communautaire",
+        "description": "Pour les grands rassemblements, festivals et événements publics",
+        "icon": "🎪"
+      },
+      {
+        "title": "Organisme à but non lucratif",
+        "description": "Pour les collectes de fonds et les événements caritatifs",
+        "icon": "💝"
+      }
+    ]
+  },
+  
+  "step2": {
+    "title": "Détails de votre événement",
+    "subtitle": "Fournissez les informations essentielles concernant votre événement.",
+    "form": {
+      "eventDate": "Date de l'événement",
+      "startTime": "Heure de début",
+      "duration": "Durée (heures)",
+      "participants": "Nombre de participants",
+      "participantsPlaceholder": "Nombre approximatif",
+      "location": "Lieu de l'événement",
+      "locationPlaceholder": "Adresse complète",
+      "description": "Description de l'événement",
+      "descriptionPlaceholder": "Décrivez brièvement votre événement et vos attentes",
+      "durationOptions": [
+        "1 heure",
+        "2 heures",
+        "3 heures",
+        "4 heures",
+        "Personnalisé"
+      ]
+    }
+  },
+  
+  "step3": {
+    "title": "Options et personnalisation",
+    "subtitle": "Personnalisez votre expérience en sélectionnant les options qui vous intéressent.",
+    "bikes": {
+      "title": "Nombre de vélos",
+      "options": [
+        "1 vélo adulte",
+        "2 vélos adultes",
+        "1 enfant + 1 adulte"
+      ]
+    },
+    "smoothies": {
+      "title": "Quantité de smoothies",
+      "options": [
+        "50 smoothies",
+        "100 smoothies",
+        "200+ smoothies"
+      ]
+    },
+    "extras": {
+      "title": "Options supplémentaires",
+      "options": [
+        {
+          "title": "Personnalisation avec votre marque",
+          "description": "Inclut gobelets et signalétique personnalisés"
+        },
+        {
+          "title": "Animation et musique",
+          "description": "Animateur professionnel et système de son"
+        },
+        {
+          "title": "Moniteurs de vitesse et classement",
+          "description": "Pour des défis et compétitions amusantes"
+        }
+      ]
+    }
+  },
+  
+  "step4": {
+    "title": "Résumé de votre événement",
+    "subtitle": "Vérifiez les détails de votre événement et soumettez votre demande pour obtenir un devis personnalisé.",
+    "eventDetails": {
+      "title": "Détails de l'événement",
+      "type": "Type:",
+      "date": "Date:",
+      "time": "Heure:",
+      "duration": "Durée:",
+      "location": "Lieu:"
+    },
+    "selectedOptions": {
+      "title": "Options choisies",
+      "bikes": "Vélos:",
+      "smoothies": "Smoothies:",
+      "extras": "Extras:"
+    },
+    "contactInfo": {
+      "title": "Vos coordonnées",
+      "name": "Nom",
+      "namePlaceholder": "Votre nom complet",
+      "email": "Email",
+      "emailPlaceholder": "Votre adresse email",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Votre numéro de téléphone",
+      "company": "Entreprise/Organisation",
+      "companyPlaceholder": "Nom de votre entreprise (si applicable)"
+    }
+  }
+}

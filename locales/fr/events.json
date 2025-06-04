@@ -1,0 +1,94 @@
+{
+  "title": "Événements",
+  "subtitle": "Nous apportons l'énergie, le plaisir et la durabilité à tous types d'événements. Découvrez comment nos vélos à smoothie peuvent transformer votre prochain rassemblement.",
+  "viewPackages": "Voir nos forfaits",
+  
+  "eventCategories": {
+    "title": "Types d'événements",
+    "subtitle": "Chaque événement est unique. Choisissez la catégorie qui correspond le mieux à vos besoins et découvrez comment nous pouvons créer une expérience inoubliable.",
+    "categories": [
+      {
+        "id": "corporate",
+        "title": "Corporate",
+        "tagline": "Stimulez le bien-être des employés et dynamisez votre lieu de travail!",
+        "description": "Vous cherchez une façon amusante, saine et mémorable d'engager votre équipe directement à votre bureau? Notre installation de vélos à smoothie apporte du plaisir sain directement dans le hall ou l'espace commun de votre lieu de travail.",
+        "benefits": [
+          "Renforcement d'équipe unique",
+          "Promotion du bien-être au travail", 
+          "Amélioration de la productivité",
+          "Création de souvenirs positifs"
+        ],
+        "readMore": "En savoir plus"
+      },
+      {
+        "id": "ouvertures-et-activations",
+        "title": "Ouvertures & Activations",
+        "tagline": "Rendez votre prochain événement inoubliable - mélangez votre marque à l'action!",
+        "description": "Vous voulez créer un buzz et attirer une foule? Notre vélo à smoothie est plus qu'une simple activité amusante - c'est un aimant pour votre marque. Chaque élément peut être adapté avec votre logo pour laisser une impression durable.",
+        "benefits": [
+          "Attraction visuelle forte",
+          "Personnalisation complète de marque",
+          "Engagement client élevé",
+          "Buzz marketing garanti"
+        ],
+        "readMore": "En savoir plus"
+      },
+      {
+        "id": "ecoles-organismes-et-anniversaires",
+        "title": "Écoles, Organismes & Anniversaires", 
+        "tagline": "Rassemblez les gens autour de smoothies, de sourires et beaucoup de plaisir!",
+        "description": "Vous cherchez une façon créative de collecter des fonds, de vous connecter avec votre communauté ou de célébrer un jour spécial? Nos expériences de vélos à smoothie sont parfaites pour les événements scolaires et les fêtes d'anniversaire!",
+        "benefits": [
+          "Activité éducative et amusante",
+          "Collecte de fonds efficace",
+          "Engagement communautaire",
+          "Souvenirs inoubliables"
+        ],
+        "readMore": "En savoir plus"
+      },
+      {
+        "id": "conferences-et-expositions",
+        "title": "Conférences & Expositions",
+        "tagline": "Attirez l'attention, suscitez des conversations et dynamisez votre stand!",
+        "description": "Vous cherchez un moyen de vous démarquer lors de votre prochain événement? Notre vélo à smoothie est une attraction qui fait pédaler, sourire et engager les gens avec votre marque d'une manière amusante et mémorable.",
+        "benefits": [
+          "Différenciation competitive",
+          "Génération de leads",
+          "Expérience mémorable",
+          "Trafic augmenté sur stand"
+        ],
+        "readMore": "En savoir plus"
+      }
+    ]
+  },
+  
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "subtitle": "Un processus simple en 3 étapes pour organiser votre événement Voilà Vélo",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choisissez votre forfait",
+        "description": "Sélectionnez le forfait qui correspond à votre événement et vos besoins"
+      },
+      {
+        "step": "2", 
+        "title": "Personnalisez l'expérience",
+        "description": "Adaptez les détails, la décoration et les options selon vos préférences"
+      },
+      {
+        "step": "3",
+        "title": "Profitez de l'événement", 
+        "description": "Nous nous occupons de tout le reste pendant que vous créez des souvenirs"
+      }
+    ],
+    "learnMoreButton": "En savoir plus sur notre processus"
+  },
+  
+  "cta": {
+    "title": "Prêt à créer un événement mémorable?",
+    "text": "Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.",
+    "requestQuote": "Demander un devis",
+    "callUs": "Appelez-nous"
+  }
+}

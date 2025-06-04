@@ -1,6 +1,10 @@
+"use client";
+
 import { IconMapper } from "@/components/ui/icon-mapper"
+import { useI18n } from "@/lib/i18n"
 
 export function WhyChooseSection() {
+  const { t } = useI18n()
   const reasons = [
     {
       iconName: "bike",
@@ -35,11 +39,11 @@ export function WhyChooseSection() {
         {/* Section Header */}
         <div className="section-header text-center mb-16">
           <h2 className="section-title text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-            Pourquoi choisir notre atelier Voilà Vélo?
+            {t('whyChoose.title')}
           </h2>
           <div className="red-line-separator w-16 h-1 bg-primary-red mx-auto mb-8"></div>
           <p className="section-subtitle text-xl text-primary-red font-semibold mb-4">
-            Parce que c'est amusant, durable et inoubliable!
+            {t('whyChoose.subtitle')}
           </p>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Chez Voilà Vélo, nous croyons que l'apprentissage, le mouvement et le plaisir peuvent aller de pair. 

@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "title": "Réserver - Voilà Vélo",
+    "description": "Réservez un forfait vélo smoothie pour votre prochain événement"
+  },
+  "hero": {
+    "title": "<span class=\"text-primary-red\">Réservez</span> votre expérience vélo smoothie",
+    "description": "Complétez le formulaire ci-dessous pour réserver nos vélos smoothies pour votre prochain événement. Notre équipe vous contactera rapidement pour confirmer les détails."
+  },
+  "form": {
+    "title": "Formulaire de réservation",
+    "firstName": {
+      "label": "Prénom",
+      "placeholder": "Votre prénom"
+    },
+    "lastName": {
+      "label": "Nom",
+      "placeholder": "Votre nom"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "votre@email.com"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "placeholder": "(514) 123-4567"
+    },
+    "company": {
+      "label": "Entreprise / Organisation (optionnel)",
+      "placeholder": "Nom de votre entreprise"
+    },
+    "eventDate": {
+      "label": "Date de l'événement",
+      "placeholder": "Sélectionnez une date"
+    },
+    "package": {
+      "label": "Forfait",
+      "placeholder": "Sélectionnez un forfait",
+      "options": {
+        "petiteKoki": "La petite Koki",
+        "popSolo": "Pop Solo",
+        "doubleFun": "Double Fun",
+        "readySetBlend": "Ready Set Blend",
+        "parentChildChallenge": "Défi Parent-Enfant",
+        "smoothieParade": "La Smoothie Parade",
+        "signature": "Forfait Signature"
+      }
+    },
+    "guests": {
+      "label": "Nombre d'invités",
+      "placeholder": "Nombre d'invités",
+      "options": {
+        "lessThan50": "Moins de 50",
+        "50-100": "50-100",
+        "100-200": "100-200",
+        "200-500": "200-500",
+        "moreThan500": "Plus de 500"
+      }
+    },
+    "eventType": {
+      "label": "Type d'événement",
+      "placeholder": "Type d'événement",
+      "options": {
+        "corporate": "Corporatif",
+        "private": "Privé",
+        "school": "École / Organisme",
+        "festival": "Festival",
+        "conference": "Conférence",
+        "other": "Autre"
+      }
+    },
+    "message": {
+      "label": "Message (détails supplémentaires)",
+      "placeholder": "Partagez des détails supplémentaires sur votre événement..."
+    },
+    "submitButton": "Envoyer la demande de réservation"
+  },
+  "sidebar": {
+    "needHelp": {
+      "title": "Besoin d'aide?",
+      "description": "Nous sommes là pour vous guider"
+    },
+    "contact": {
+      "email": {
+        "label": "Email",
+        "value": "info@voilavelo.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "value": "(514) 123-4567"
+      },
+      "hours": {
+        "label": "Heures d'ouverture",
+        "value": "Lundi - Vendredi: 9h à 17h"
+      }
+    },
+    "packageHelp": {
+      "title": "Pas sûr du forfait à choisir?",
+      "description": "Consultez notre page de forfaits pour découvrir celui qui convient le mieux à votre événement.",
+      "button": "Voir tous les forfaits"
+    },
+    "features": {
+      "team": {
+        "title": "Équipe dédiée",
+        "description": "Nos professionnels s'occupent de tout"
+      },
+      "experience": {
+        "title": "Expérience garantie",
+        "description": "Satisfaction de vos invités assurée"
+      }
+    }
+  }
+}

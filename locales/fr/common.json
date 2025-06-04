@@ -1,0 +1,49 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "packages": "Forfaits",
+    "events": "Événements",
+    "howItWorks": "Comment ça marche",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "about_submenu": {
+    "whoWeAre": "Qui nous sommes",
+    "ourMission": "Notre mission",
+    "ourValues": "Nos valeurs"
+  },
+  "packages_submenu": {
+    "laPetiteKoki": "La petite Koki",
+    "popSolo": "Pop Solo",
+    "doubleFun": "Double Fun",
+    "readySetBlend": "Ready Set Blend",
+    "parentChildChallenge": "Défi Parent-Enfant",
+    "smoothieParade": "La Smoothie Parade",
+    "signature": "Forfait Signature"
+  },
+  "events_submenu": {
+    "corporate": "Corporate",
+    "openingsActivations": "Ouvertures & Activations",
+    "schoolsOrganizationsAnniversaries": "Écoles, Organismes & Anniversaires",
+    "conferencesExhibitions": "Conférences & Expositions"
+  },
+  "howItWorks_submenu": {
+    "createYourEvent": "Créez votre événement",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "contact": "Contact",
+    "followUs": "Suivez-nous",
+    "connectWithUs": "Connectez-vous avec nous",
+    "newsletterIntro": "Abonnez-vous pour télécharger nos sept meilleurs conseils pour un événement réussi.",
+    "name": "Nom",
+    "email": "Email",
+    "subscribe": "S'ABONNER",
+    "ourPartners": "Nos Partenaires",
+    "ourMission": "Notre Mission",
+    "ourBlog": "Notre Blogue",
+    "indigenousAcknowledgment": "Nous reconnaissons les peuples autochtones, gardiens traditionnels de cette terre. Voix. Traité. Vérité.",
+    "copyright": "© Copyright 2025 Voilà Vélo Fruité"
+  }
+}
