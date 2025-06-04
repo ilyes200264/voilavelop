@@ -120,7 +120,7 @@ export default function ContactPage() {
                     {t("contactInfo.serviceAreas.title")}
                   </h3>
                   <ul className="space-y-2 text-gray-600">
-                    {t<string[]>("contactInfo.serviceAreas.areas").map((area, index) => (
+                    {t<string[]>("contactInfo.serviceAreas.areas", []).map((area, index) => (
                       <li key={index}>• {area}</li>
                     ))}
                   </ul>
