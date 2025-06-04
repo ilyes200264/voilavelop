@@ -161,9 +161,13 @@ html {
 
 /* Custom fonts styling */
 .fancy-title {
-  padding: 0.5em 0;
-  line-height: 1.5;
+  padding: 0.6em 0;
+  line-height: 1.6;
   overflow: visible;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
 }
 
 /* Custom animations */

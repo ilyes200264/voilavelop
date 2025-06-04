@@ -107,7 +107,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-open-sans)", "Arial", "Helvetica", "sans-serif"],
         poppins: ["var(--font-poppins)", "Arial", "Helvetica", "sans-serif"],
-        'allura': ["var(--font-allura)", "cursive"],
+        'great-vibes': ["var(--font-great-vibes)", "cursive"],
       },
       fontSize: {
         h1: "clamp(2.5rem, 5vw, 4rem)",

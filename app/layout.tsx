@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { openSans, poppins, allura } from '@/lib/fonts'
+import { openSans, poppins, greatVibes } from '@/lib/fonts'
 import { ThemeProvider } from '@/components/theme-provider'
 import { I18nProvider } from '@/lib/i18n'
 import translations from '@/lib/translations'
@@ -25,7 +25,7 @@ export default function RootLayout({
   });
   
   return (
-    <html lang="fr" className={`${openSans.variable} ${poppins.variable} ${allura.variable}`}>
+    <html lang="fr" className={`${openSans.variable} ${poppins.variable} ${greatVibes.variable}`}>
       <body className={openSans.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <I18nProvider initialLanguage="fr" translations={translations}>
