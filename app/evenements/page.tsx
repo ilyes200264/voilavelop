@@ -30,7 +30,7 @@ export default function EventsPage() {
     description: string,
     benefits: string[],
     readMore: string
-  }>>("eventCategories.categories");
+  }>>("eventCategories.categories", []);
   
   // Map the icons and styles based on category ID
   const eventCategories = translatedCategories.map(category => {
@@ -175,7 +175,7 @@ export default function EventsPage() {
                         <div className="mb-8">
                           <h4 className="text-lg font-semibold mb-4">Avantages clés:</h4>
                           <ul className="space-y-2">
-                            {category.benefits.map((benefit, idx) => (
+                            {(category.benefits || []).map((benefit, idx) => (
                               <li key={idx} className="flex items-center">
                                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
                                 {benefit}
@@ -227,7 +227,7 @@ export default function EventsPage() {
                   step: string;
                   title: string;
                   description: string;
-                }>>("howItWorks.steps").map((step, index) => {
+                }>>("howItWorks.steps", []).map((step, index) => {
                   const colors = ["bg-primary-red", "bg-secondary-yellow", "bg-accent-green"];
                   
                   return (

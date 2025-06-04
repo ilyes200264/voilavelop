@@ -34,7 +34,7 @@ export default function CorporateEventsPage() {
   const benefits = t<Array<{
     title: string;
     description: string;
-  }>>("benefits.items").map((benefit, index) => ({
+  }>>("benefits.items", []).map((benefit, index) => ({
     ...benefit,
     icon: benefitIcons[index],
     color: benefitColors[index]
@@ -48,7 +48,7 @@ export default function CorporateEventsPage() {
     price: string;
     features: string[];
     popular?: boolean;
-  }>>("packages.items");
+  }>>("packages.items", []);
   
   // Get testimonials from translations
   const testimonials = t<Array<{
@@ -57,13 +57,13 @@ export default function CorporateEventsPage() {
     position: string;
     company: string;
     rating: number;
-  }>>("testimonials.items").map((testimonial, index) => ({
+  }>>("testimonials.items", []).map((testimonial, index) => ({
     ...testimonial,
     image: `/images/testimonial-${index + 1}.jpg`
   }));
   
   // Get stats from translations
-  const stats = t<Array<{ number: string; label: string }>>("stats");
+  const stats = t<Array<{ number: string; label: string }>>("stats", []);
 
   return (
     <div className="min-h-screen">
@@ -132,7 +132,7 @@ export default function CorporateEventsPage() {
         <MotionSection className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {stats.map((stat, index) => (
+              {(stats || []).map((stat, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -165,7 +165,7 @@ export default function CorporateEventsPage() {
             </ScrollReveal>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {benefits.map((benefit, index) => (
+              {(benefits || []).map((benefit, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -225,7 +225,7 @@ export default function CorporateEventsPage() {
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {t<string[]>("corporateExperience.features").map((feature, index) => (
+                    {t<string[]>("corporateExperience.features", []).map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{feature}</span>
@@ -263,7 +263,7 @@ export default function CorporateEventsPage() {
             </ScrollReveal>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {packages.map((pkg, index) => (
+              {(packages || []).map((pkg, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -292,7 +292,7 @@ export default function CorporateEventsPage() {
 
                       <div className="flex-grow">
                         <ul className="space-y-3">
-                          {pkg.features.map((feature, idx) => (
+                          {(pkg.features || []).map((feature, idx) => (
                             <li key={idx} className="flex items-start">
                               <Check className="h-5 w-5 text-accent-green mr-3 mt-0.5 flex-shrink-0" />
                               <span className="text-gray-700">{feature}</span>
@@ -331,7 +331,7 @@ export default function CorporateEventsPage() {
             </ScrollReveal>
 
             <StaggerContainer className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {testimonials.map((testimonial, index) => (
+              {(testimonials || []).map((testimonial, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -388,7 +388,7 @@ export default function CorporateEventsPage() {
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {t<string[]>("roi.benefits").map((benefit, index) => (
+                    {t<string[]>("roi.benefits", []).map((benefit, index) => (
                       <div key={index} className="flex items-center">
                         <TrendingUp className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{benefit}</span>
