@@ -20,7 +20,8 @@ import { useI18n } from "@/lib/i18n"
 export default function AboutPage() {
   const { t } = useI18n()
   
-  const values = t<any[]>('mission.values')
+  // Add fallback empty array to prevent "map is not a function" error
+  const values = t<any[]>('mission.values', [])
 
   const cities = ['Montréal', 'Québec', 'Laval', 'Ottawa']
 
@@ -200,7 +201,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <StaggerContainer className="max-w-4xl mx-auto text-center space-y-8">
-              {t<string[]>('howWeDo.points').map((point: string, index: number) => (
+              {t<string[]>('howWeDo.points', []).map((point: string, index: number) => (
                 <MotionDiv key={index} variant="fadeUp" custom={index}>
                   <p className={index === 0 || index === 3 ? "text-2xl font-medium text-dark-charcoal leading-relaxed" : "text-lg text-gray-700"}>
                     {point}
