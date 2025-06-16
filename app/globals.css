@@ -215,6 +215,27 @@ html {
   }
 }
 
+@keyframes subtle-zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -229,6 +250,14 @@ html {
 
 .animate-scale-in {
   animation: scaleIn 0.6s ease forwards;
+}
+
+.animate-subtle-zoom {
+  animation: subtle-zoom 20s ease-in-out infinite;
+}
+
+.animate-tilt {
+  animation: tilt 6s ease-in-out infinite;
 }
 
 /* Package Cards Styling */

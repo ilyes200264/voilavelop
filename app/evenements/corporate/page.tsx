@@ -17,7 +17,7 @@ import {
 import { useI18n } from "@/lib/i18n"
 
 export default function CorporateEventsPage() {
-  const { t } = useI18n();
+  const { t } = useI18n("corporate-events");
   
   // Icons for benefits
   const benefitIcons = [
@@ -76,15 +76,15 @@ export default function CorporateEventsPage() {
             <div className="max-w-4xl mx-auto text-white">
               <div className="flex items-center text-sm mb-4 opacity-90">
                 <Link href="/evenements" className="hover:underline">
-                  Événements
+                  {t("breadcrumb.events")}
                 </Link>
                 <span className="mx-2">/</span>
-                <span>Corporate</span>
+                <span>{t("breadcrumb.corporate")}</span>
               </div>
               
               <TextReveal>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  Stimulez le bien-être des employés et dynamisez votre lieu de travail!
+                  {t("hero.title")}
                 </h1>
               </TextReveal>
               
@@ -92,16 +92,14 @@ export default function CorporateEventsPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl">
-                  Vous cherchez une façon amusante, saine et mémorable d'engager votre équipe? 
-                  Notre installation de vélos à smoothie apporte du plaisir sain directement dans 
-                  votre bureau, créant une pause unique que vos employés adoreront.
+                  {t("hero.description")}
                 </p>
               </ScrollReveal>
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Demander un devis
+                    {t("hero.requestQuote")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>
@@ -112,7 +110,7 @@ export default function CorporateEventsPage() {
                       variant="outline" 
                       className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
                     >
-                      Voir forfait Team-Building
+                      {t("hero.viewTeamBuilding")}
                     </Button>
                   </Link>
                 </AnimatedImage>

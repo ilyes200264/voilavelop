@@ -20,7 +20,39 @@ import {
 import { useI18n } from "@/lib/i18n"
 
 export default function EventsPage() {
-  const { t } = useI18n()
+  const { t } = useI18n("events")
+  
+  // Icon map for categories
+  const categoryIcons = {
+    "corporate": <Building className="h-12 w-12" />,
+    "ouvertures-et-activations": <Presentation className="h-12 w-12" />,
+    "ecoles-organismes-et-anniversaires": <GraduationCap className="h-12 w-12" />,
+    "conferences-et-expositions": <Users className="h-12 w-12" />
+  };
+  
+  // Color map for categories
+  const categoryColors = {
+    "corporate": {
+      bg: "bg-primary-red",
+      text: "text-white",
+      image: "/images/corporate-events.jpg"
+    },
+    "ouvertures-et-activations": {
+      bg: "bg-secondary-yellow",
+      text: "text-dark-charcoal",
+      image: "/images/event-2.jpg"
+    },
+    "ecoles-organismes-et-anniversaires": {
+      bg: "bg-trust-blue",
+      text: "text-white",
+      image: "/images/event-3.jpg"
+    },
+    "conferences-et-expositions": {
+      bg: "bg-accent-green",
+      text: "text-white",
+      image: "/images/event-1.jpg"
+    }
+  };
   
   // Get the categories from translations
   const translatedCategories = t<Array<{
@@ -34,51 +66,22 @@ export default function EventsPage() {
   
   // Map the icons and styles based on category ID
   const eventCategories = translatedCategories.map(category => {
-    let icon, color, textColor, image, link;
+    const defaultColor = {
+      bg: "bg-primary-red",
+      text: "text-white",
+      image: "/images/event-1.jpg"
+    };
     
-    switch(category.id) {
-      case "corporate":
-        icon = <Building className="h-12 w-12" />;
-        color = "bg-primary-red";
-        textColor = "text-white";
-        image = "/images/corporate-events.jpg";
-        link = "/evenements/corporate";
-        break;
-      case "ouvertures-et-activations":
-        icon = <Presentation className="h-12 w-12" />;
-        color = "bg-secondary-yellow";
-        textColor = "text-dark-charcoal";
-        image = "/images/event-2.jpg";
-        link = "/evenements/ouvertures-et-activations";
-        break;
-      case "ecoles-organismes-et-anniversaires":
-        icon = <GraduationCap className="h-12 w-12" />;
-        color = "bg-trust-blue";
-        textColor = "text-white";
-        image = "/images/event-3.jpg";
-        link = "/evenements/ecoles-organismes-et-anniversaires";
-        break;
-      case "conferences-et-expositions":
-        icon = <Users className="h-12 w-12" />;
-        color = "bg-accent-green";
-        textColor = "text-white";
-        image = "/images/event-1.jpg";
-        link = "/evenements/conferences-et-expositions";
-        break;
-      default:
-        icon = <Building className="h-12 w-12" />;
-        color = "bg-primary-red";
-        textColor = "text-white";
-        image = "/images/event-1.jpg";
-        link = "/evenements/" + category.id;
-    }
+    const colorConfig = categoryColors[category.id] || defaultColor;
+    const icon = categoryIcons[category.id] || <Building className="h-12 w-12" />;
+    const link = `/evenements/${category.id}`;
     
     return {
       ...category,
       icon,
-      color,
-      textColor,
-      image,
+      color: colorConfig.bg,
+      textColor: colorConfig.text,
+      image: colorConfig.image,
       link
     };
   });
@@ -90,31 +93,47 @@ export default function EventsPage() {
         <main>
           {/* Hero Section with darker overlay to improve text visibility */}
           <div className="relative">
-            <MotionSection className="events-hero pt-32 pb-20 bg-gradient-to-br from-primary-red via-secondary-yellow to-accent-green">
+            <MotionSection className="events-hero relative pt-32 pb-20 bg-primary-red text-white">
               {/* Overlay scoped only to this section */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-red via-secondary-yellow to-accent-green opacity-90"></div>
+              <div className="absolute inset-0 bg-black/30"></div>
               <div className="container mx-auto px-4 relative z-10">
-                <div className="text-center max-w-4xl mx-auto text-white">
+                <div className="max-w-4xl mx-auto text-white text-center">
                   <TextReveal>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">{t("title", "Événements")}</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
+                      {t("title")}
+                    </h1>
                   </TextReveal>
                   
                   <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                   
                   <ScrollReveal delay={0.3}>
-                    <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-md">
-                      {t("subtitle", "Nous apportons l'énergie, le plaisir et la durabilité à tous types d'événements. Découvrez comment nos vélos à smoothie peuvent transformer votre prochain rassemblement.")}
+                    <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+                      {t("subtitle")}
                     </p>
                   </ScrollReveal>
                   
-                  <AnimatedImage hoverEffect="lift">
-                    <Link href="/forfaits">
-                      <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        {t("viewPackages", "Voir nos forfaits")}
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Button>
-                    </Link>
-                  </AnimatedImage>
+                  <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
+                    <AnimatedImage hoverEffect="lift">
+                      <Link href="/forfaits">
+                        <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                          {t("viewPackages")}
+                          <ArrowRight className="ml-2 h-5 w-5" />
+                        </Button>
+                      </Link>
+                    </AnimatedImage>
+                    
+                    <AnimatedImage hoverEffect="lift">
+                      <Link href="/contact">
+                        <Button 
+                          variant="outline" 
+                          className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
+                        >
+                          {t("cta.requestQuote")}
+                        </Button>
+                      </Link>
+                    </AnimatedImage>
+                  </StaggerContainer>
                 </div>
               </div>
             </MotionSection>
@@ -273,45 +292,42 @@ export default function EventsPage() {
             </div>
           </MotionSection>
 
-          {/* CTA Section */}
-          <div className="relative">
-            <MotionSection className="py-20 bg-gradient-to-r from-primary-red to-secondary-yellow text-white">
-              {/* Overlay scoped only to this section */}
-              <div className="absolute inset-0 bg-black/10"></div>
-              <div className="container mx-auto px-4 text-center relative z-10">
-                <ScrollReveal>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-sm">
-                    {t("cta.title", "Prêt à créer un événement mémorable?")}
-                  </h2>
-                  <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
-                  <p className="text-xl mb-8 max-w-3xl mx-auto drop-shadow-sm">
-                    {t("cta.text", "Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.")}
-                  </p>
-                </ScrollReveal>
+          {/* Final CTA Section */}
+          <MotionSection className="py-20 bg-trust-blue text-white text-center">
+            <div className="container mx-auto px-4 max-w-4xl">
+              <ScrollReveal>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  {t("cta.title")}
+                </h2>
+                <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
+                <p className="text-xl mb-8">
+                  {t("cta.text")}
+                </p>
+              </ScrollReveal>
+              
+              <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="/contact">
+                    <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                      {t("cta.requestQuote")}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </AnimatedImage>
                 
-                <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
-                  <AnimatedImage hoverEffect="lift">
-                    <Link href="/contact">
-                      <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                        {t("cta.requestQuote", "Demander un devis")}
-                      </Button>
-                    </Link>
-                  </AnimatedImage>
-                  
-                  <AnimatedImage hoverEffect="lift">
-                    <Link href="tel:+1-XXX-XXX-XXXX">
-                      <Button 
-                        variant="outline" 
-                        className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
-                      >
-                        {t("cta.callUs", "Appelez-nous")}
-                      </Button>
-                    </Link>
-                  </AnimatedImage>
-                </StaggerContainer>
-              </div>
-            </MotionSection>
-          </div>
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="/comment-ca-marche/build-your-event">
+                    <Button 
+                      variant="outline" 
+                      className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
+                    >
+                      {t("cta.callUs")}
+                    </Button>
+                  </Link>
+                </AnimatedImage>
+              </StaggerContainer>
+            </div>
+          </MotionSection>
         </main>
         <Footer />
       </div>
