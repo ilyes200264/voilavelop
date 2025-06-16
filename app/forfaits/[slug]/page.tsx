@@ -8,6 +8,7 @@ import Image from "next/image"
 import { ChevronRight, Check, Play, Star } from "lucide-react"
 import { packagesData } from "../packages-data"
 import { useI18n } from "@/lib/i18n"
+import { usePackageTranslations } from "@/lib/packages-i18n"
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -24,9 +25,12 @@ interface PackagePageProps {
 }
 
 export default function EnhancedPackagePage({ params }: PackagePageProps) {
-  const { t } = useI18n();
+  const { t, language } = useI18n();  // Add language to trigger re-renders
+  const { translatePackage } = usePackageTranslations();
   const { slug } = params
-  const currentPackage = packagesData[slug as keyof typeof packagesData]
+  
+  // Get translated package - will update when language changes
+  const currentPackage = translatePackage(slug)
 
   if (!currentPackage) {
     return (

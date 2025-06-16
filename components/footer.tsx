@@ -20,17 +20,17 @@ export function Footer() {
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                   <img
                   src="/voila_smoothie_bike_logo_bg.png"
-                  alt="Voilà Vélo Fruité Logo"
+                  alt={t('logo.alt')}
                   className="w-12 h-12 object-contain"
                   />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold">Voilà Vélo Fruité</h2>
+                  <h2 className="text-2xl font-bold">{t('companyName')}</h2>
                 </div>
               </div>
             </div>
             <div className="footer-cities">
-              <h3 className="cities-text text-xl md:text-2xl font-medium">Montréal | Québec | Laval | Ottawa</h3>
+              <h3 className="cities-text text-xl md:text-2xl font-medium">{t('cities')}</h3>
             </div>
           </div>
         </div>
@@ -54,9 +54,9 @@ export function Footer() {
                         rel="noopener"
                         className="hover:text-secondary-yellow transition-colors"
                       >
-                        [Adresse d'entreprise]
+                        {t('common.footer.address.line1')}
                         <br />
-                        Montréal, QC [Code postal]
+                        {t('common.footer.address.line2')}
                       </Link>
                     </p>
                   </div>
@@ -66,8 +66,8 @@ export function Footer() {
                   <div className="contact-icon text-lg">📞</div>
                   <div className="contact-details">
                     <p>
-                      <Link href="tel:+1-XXX-XXX-XXXX" className="hover:text-secondary-yellow transition-colors">
-                        XXX-XXX-XXXX
+                      <Link href={`tel:+1-${t('common.footer.phone')}`} className="hover:text-secondary-yellow transition-colors">
+                        {t('common.footer.phone')}
                       </Link>
                     </p>
                   </div>
@@ -77,8 +77,8 @@ export function Footer() {
                   <div className="contact-icon text-lg">✉️</div>
                   <div className="contact-details">
                     <p>
-                      <Link href="mailto:info@voilavelo.ca" className="hover:text-secondary-yellow transition-colors">
-                        info@voilavelo.ca
+                      <Link href={`mailto:${t('common.footer.email')}`} className="hover:text-secondary-yellow transition-colors">
+                        {t('common.footer.email')}
                       </Link>
                     </p>
                   </div>
@@ -96,37 +96,37 @@ export function Footer() {
               <ul className="footer-menu space-y-2">
                 <li>
                   <Link href="/forfaits/la-petite-koki/" className="hover:text-secondary-yellow transition-colors">
-                    La petite Koki
+                    {t('packages_submenu.laPetiteKoki')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/pop-solo/" className="hover:text-secondary-yellow transition-colors">
-                    Pop Solo
+                    {t('packages_submenu.popSolo')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/double-fun/" className="hover:text-secondary-yellow transition-colors">
-                    Double Fun
+                    {t('packages_submenu.doubleFun')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/ready-set-blend/" className="hover:text-secondary-yellow transition-colors">
-                    Ready Set Blend
+                    {t('packages_submenu.readySetBlend')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/defi-parent-enfant/" className="hover:text-secondary-yellow transition-colors">
-                    Défi Parent-Enfant
+                    {t('packages_submenu.parentChildChallenge')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/la-smoothie-parade/" className="hover:text-secondary-yellow transition-colors">
-                    La Smoothie Parade
+                    {t('packages_submenu.smoothieParade')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/signature/" className="hover:text-secondary-yellow transition-colors">
-                    Forfait Signature
+                    {t('packages_submenu.signature')}
                   </Link>
                 </li>
               </ul>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { useI18n } from "@/lib/i18n"
+import { usePackageTranslations } from "@/lib/packages-i18n"
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -20,132 +21,48 @@ import {
 
 export default function ForfaitsPage() {
   const { t } = useI18n();
+  const { getAllPackages } = usePackageTranslations();
+  const { language } = useI18n();
+  
+  // Get all translated packages
+  const allPackages = getAllPackages();
+  
+  // Add UI-specific properties to packages
   const packages = [
     {
-      id: "la-petite-koki",
-      title: "La petite Koki",
-      tagline: "Le favori de tous les temps des enfants!",
-      description: "Parfait pour les anniversaires, les graduations de garderie ou les festivals familiaux.",
-      ageRange: "5-10 ans",
-      duration: "1-2 heures",
-      capacity: "25-50 smoothies",
-      startingPrice: "299",
-      image: "/images/velo-smoothie-1.jpg",
+      ...allPackages.find(p => p.id === "la-petite-koki"),
       color: "bg-primary-red",
       textColor: "text-white",
-      features: [
-        "1 vélo mélangeur adapté aux enfants",
-        "Animation et musique festive",
-        "Recettes et menu coloré"
-      ]
     },
     {
-      id: "pop-solo",
-      title: "Pop Solo",
-      tagline: "Un succès garanti avec les ados, adultes et familles!",
-      description: "Parfait pour les événements scolaires, les fêtes de bureau ou tout rassemblement festif.",
-      ageRange: "10+ ans",
-      duration: "1.5-2.5 heures",
-      capacity: "50-75 smoothies",
-      startingPrice: "449",
-      image: "/images/velo-smoothie-2.jpg",
+      ...allPackages.find(p => p.id === "pop-solo"),
       color: "bg-secondary-yellow",
       textColor: "text-dark-charcoal",
-      features: [
-        "1 vélo mélangeur pour adultes",
-        "Atmosphère festive et animée",
-        "Recettes santé personnalisées"
-      ]
     },
     {
-      id: "double-fun",
-      title: "Double Fun",
-      tagline: "Deux fois plus de vélos = deux fois plus d'énergie!",
-      description: "Parfait pour les festivals communautaires, les activations de marque, les collectes de fonds.",
-      ageRange: "Tous âges",
-      duration: "2-4 heures",
-      capacity: "100-300 smoothies",
-      startingPrice: "699",
-      image: "/images/velo-smoothie-3.jpg",
+      ...allPackages.find(p => p.id === "double-fun"),
       color: "bg-trust-blue",
       textColor: "text-white",
-      features: [
-        "2 vélos mélangeurs pour adultes",
-        "Installation complète avec tables",
-        "Musique et ambiance dynamique"
-      ]
     },
     {
-      id: "ready-set-blend",
-      title: "Ready Set Blend",
-      tagline: "Compétition amicale et team building!",
-      description: "Parfait pour les événements corporatifs et les activités de consolidation d'équipe.",
-      ageRange: "16+ ans",
-      duration: "2-3 heures",
-      capacity: "75-150 smoothies",
-      startingPrice: "599",
-      image: "/images/gallery-3.jpg",
+      ...allPackages.find(p => p.id === "ready-set-blend"),
       color: "bg-accent-green",
       textColor: "text-white",
-      features: [
-        "2 vélos avec moniteurs de vitesse",
-        "Tableau des scores en temps réel",
-        "Animateur énergique pour la compétition"
-      ]
     },
     {
-      id: "defi-parent-enfant",
-      title: "Défi Parent-Enfant",
-      tagline: "Créez des liens familiaux en pédalant ensemble!",
-      description: "Une expérience intergénérationnelle parfaite pour les événements familiaux.",
-      ageRange: "Familles",
-      duration: "1.5-2 heures",
-      capacity: "40-80 smoothies",
-      startingPrice: "399",
-      image: "/images/gallery-1.jpg",
+      ...allPackages.find(p => p.id === "defi-parent-enfant"),
       color: "bg-creative-purple",
       textColor: "text-white",
-      features: [
-        "1 vélo enfant + 1 vélo adulte",
-        "Défis parents-enfants amusants",
-        "Moments de complicité garantis"
-      ]
     },
     {
-      id: "la-smoothie-parade",
-      title: "La Smoothie Parade",
-      tagline: "L'expérience ultime pour les grands événements!",
-      description: "Parfait pour les festivals, les foires et les grands rassemblements communautaires.",
-      ageRange: "Tous âges",
-      duration: "4-8 heures",
-      capacity: "300-500 smoothies",
-      startingPrice: "999",
-      image: "/images/gallery-5.jpg",
+      ...allPackages.find(p => p.id === "la-smoothie-parade"),
       color: "bg-primary-red",
       textColor: "text-white",
-      features: [
-        "3 vélos mélangeurs (2 grands + 1 petit)",
-        "Installation spectaculaire complète",
-        "Équipe d'animateurs dédiée"
-      ]
     },
     {
-      id: "signature",
-      title: "Forfait Signature",
-      tagline: "Entièrement personnalisé pour votre marque!",
-      description: "Solution premium avec personnalisation complète pour les activations de marque haut de gamme.",
-      ageRange: "Sur mesure",
-      duration: "Flexible",
-      capacity: "Sur mesure",
-      startingPrice: "Sur devis",
-      image: "/images/Signature package2.jpg",
+      ...allPackages.find(p => p.id === "signature"),
       color: "bg-dark-charcoal",
       textColor: "text-white",
-      features: [
-        "Personnalisation complète à votre image",
-        "Service concierge dédié",
-        "Solution sur mesure premium"
-      ]
     },
   ]
 
@@ -313,7 +230,7 @@ export default function ForfaitsPage() {
                     </AnimatedImage>
                     
                     <AnimatedImage hoverEffect="lift">
-                      <Link href="tel:+1-XXX-XXX-XXXX">
+                      <Link href={`tel:+1-${t('common.footer.phone', 'XXX-XXX-XXXX')}`}>
                         <Button 
                           variant="outline" 
                           className="border-white text-white hover:bg-white hover:text-primary-red px-8 py-3 text-lg font-semibold">

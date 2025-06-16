@@ -16,10 +16,12 @@ import { CalendarIcon, MapPin, Phone, Mail, Clock } from "lucide-react"
 import { format } from "date-fns"
 import { fr, enUS } from "date-fns/locale"
 import { useI18n } from "@/lib/i18n"
+import { usePackageTranslations } from "@/lib/packages-i18n"
 import { packagesData } from "../forfaits/packages-data"
 
 export default function BookingPage() {
   const { t, language } = useI18n();
+  const { getAllPackages } = usePackageTranslations();
   
   // Use correct namespace for translations
   const translate = (key: string) => t(`reservation:${key}`);
@@ -285,8 +287,8 @@ export default function BookingPage() {
                           <SelectValue placeholder={translate('form.package.placeholder')} />
                         </SelectTrigger>
                         <SelectContent>
-                          {Object.entries(packagesData).map(([id, package_]) => (
-                            <SelectItem key={id} value={id}>{package_.title}</SelectItem>
+                          {getAllPackages().map((package_) => (
+                            <SelectItem key={package_.id} value={package_.id}>{package_.title}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>

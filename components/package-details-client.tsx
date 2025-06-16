@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Check } from "lucide-react"
+import { useI18n } from "@/lib/i18n"
 import { Button } from "@/components/ui/button"
 import { IconMapper } from "@/components/ui/icon-mapper"
 import { 
@@ -20,6 +21,8 @@ interface PackageDetailsClientProps {
 }
 
 export function PackageDetailsClient({ packageData }: PackageDetailsClientProps) {
+  const { t, language } = useI18n(); // Add language to trigger re-renders
+  
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
@@ -61,13 +64,13 @@ export function PackageDetailsClient({ packageData }: PackageDetailsClientProps)
             className="rounded-2xl shadow-2xl"
           />
           <div className="price-overlay absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-            <span className="price-label text-sm text-gray-600 block">À partir de</span>
+            <span className="price-label text-sm text-gray-600 block">{t('packageDetail.startingFrom', 'À partir de')}</span>
             <span className="price-amount text-2xl font-bold text-dark-charcoal">
               {packageData.options[0].price}$
             </span>
             <AnimatedImage hoverEffect="lift">
               <Link href="#booking">
-                <Button className="mt-2 w-full bg-primary-red text-white hover:bg-primary-red/90 transition-colors">Réserver maintenant</Button>
+                <Button className="mt-2 w-full bg-primary-red text-white hover:bg-primary-red/90 transition-colors">{t('packageDetail.bookNow', 'Réserver maintenant')}</Button>
               </Link>
             </AnimatedImage>
           </div>
@@ -87,7 +90,7 @@ export function PackageDetailsClient({ packageData }: PackageDetailsClientProps)
           </MotionDiv>
           
           <MotionDiv variant="fadeUp" className="package-summary bg-light-gray p-6 rounded-xl mb-6">
-            <h3 className="text-xl font-bold text-dark-charcoal mb-4">Ce forfait comprend:</h3>
+            <h3 className="text-xl font-bold text-dark-charcoal mb-4">{t('packageDetail.whatsIncluded', 'Ce forfait comprend:')}</h3>
             <ul className="space-y-3">
               {packageData.includes.slice(0, 2).map((item, index) => (
                 <li key={index} className="flex items-start">
@@ -106,7 +109,7 @@ export function PackageDetailsClient({ packageData }: PackageDetailsClientProps)
             <AnimatedImage hoverEffect="lift">
               <Link href="#options">
                 <Button className="w-full bg-primary-red text-white py-3 text-lg">
-                  Voir les options disponibles
+                  {t('packageDetail.options.title', 'Voir les options disponibles')}
                 </Button>
               </Link>
             </AnimatedImage>
@@ -118,6 +121,7 @@ export function PackageDetailsClient({ packageData }: PackageDetailsClientProps)
 }
 
 export function IncludesSection({ includes }) {
+  const { t } = useI18n();
   return (
     <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
       {includes.map((item, index) => (

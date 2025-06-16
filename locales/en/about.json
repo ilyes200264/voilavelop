@@ -10,7 +10,8 @@
     "description1": "Voilà Vélo Fruité is a pop-up events company that promotes cycling, sustainability, health, and happiness using our Quebec-made blender bikes.",
     "description2": "We are a team of passionate event organizers who believe in ethical and sustainable practices to create a happier and healthier world — one smoothie event at a time! We use washable or biodegradable cups, offset our carbon, compost or recycle all waste produced, and donate to UNICEF.",
     "description3": "Voilà Vélo Fruité is perfect for engaging and inspiring your audience through entertaining catering, brand exposure, or promoting sustainability and health at events.",
-    "description4": "The company was founded by Leen and Micha in 2020 with the help of their dedicated team. They now run events in Montreal, Quebec City, Laval, and Ottawa."
+    "description4": "The company was founded by Leen and Micha in 2020 with the help of their dedicated team. They now run events in Montreal, Quebec City, Laval, and Ottawa.",
+    "cities": ["Montreal", "Quebec City", "Laval", "Ottawa"]
   },
   "founders": {
     "title": "Our Founders",

@@ -14,6 +14,7 @@ import {
 import { useI18n } from "@/lib/i18n"
 import { packagesData } from "@/app/forfaits/packages-data"
 import { usePackageTranslations } from "@/lib/packages-i18n"
+import { kebabToCamel } from "@/lib/i18n-utils"
 
 export function PackagesSection() {
   const { t } = useI18n()
@@ -101,10 +102,10 @@ export function PackagesSection() {
 
                 <div className="package-description mb-6">
                   <p className="package-tagline font-semibold mb-3 text-gray-700 italic">
-                    "{pkg.tagline || t(`packages.${pkg.id}.tagline`, '')}"
+                    "{pkg.tagline || t(`packages:packages.${kebabToCamel(pkg.id)}.tagline`, '')}"
                   </p>
                   <p className="package-intro text-sm text-gray-700 leading-relaxed">
-                    {pkg.heroDescription || t(`packages.${pkg.id}.heroDescription`, '')}
+                    {pkg.heroDescription || t(`packages:packages.${kebabToCamel(pkg.id)}.heroDescription`, '')}
                   </p>
                 </div>
 
@@ -130,7 +131,7 @@ export function PackagesSection() {
                         {option.title || `Option ${optionIndex + 1}`}
                       </span>
                       <span className={`option-details font-bold ${pkg.borderColor.replace('border-t-', 'text-')}`}>
-                        {option.price} {language === 'en' ? '€' : '€'}
+                        {option.price}$
                       </span>
                     </div>
                   ))}

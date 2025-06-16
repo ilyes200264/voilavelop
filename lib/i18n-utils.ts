@@ -5,6 +5,18 @@
 import { Language, TranslationsType } from './i18n-types';
 
 /**
+ * Convert kebab-case to camelCase (e.g., "la-petite-koki" to "laPetiteKoki")
+ * This is needed because package IDs are kebab-case but translation keys are camelCase
+ * @param str The kebab-case string to convert
+ * @returns The camelCase version of the string
+ */
+export function kebabToCamel(str: string): string {
+  return str.replace(/-([a-z])/g, function(match, letter) {
+    return letter.toUpperCase();
+  });
+}
+
+/**
  * Helper function to get a nested value from a translations object using a dot-notation path
  * @param translations The translations object
  * @param key The key path in dot notation (e.g. 'common.navigation.home')

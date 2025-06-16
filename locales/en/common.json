@@ -1,4 +1,9 @@
 {
+  "companyName": "Voilà Vélo Fruité",
+  "logo": {
+    "alt": "Voilà Vélo Fruité Logo"
+  },
+  "cities": "Montréal | Québec | Laval | Ottawa",
   "navigation": {
     "home": "Home",
     "about": "About",
@@ -44,6 +49,12 @@
     "ourMission": "Our Mission",
     "ourBlog": "Our Blog",
     "indigenousAcknowledgment": "We acknowledge the Indigenous peoples, traditional guardians of this land. Voice. Treaty. Truth.",
-    "copyright": "© Copyright 2025 Voilà Vélo Fruité"
+    "copyright": "© Copyright 2025 Voilà Vélo Fruité",
+    "address": {
+      "line1": "[Business Address]",
+      "line2": "Montreal, QC [Postal Code]"
+    },
+    "phone": "XXX-XXX-XXXX",
+    "email": "info@voilavelo.ca"
   }
 }
