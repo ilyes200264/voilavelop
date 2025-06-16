@@ -15,28 +15,31 @@
   "founders": {
     "title": "Nos Fondatrices",
     "subtitle": "Leen et Micha",
-    "description": "Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, alimentée entièrement par leur énergie! Pour en savoir plus sur la façon dont nous avons commencé Voilà Vélo Fruité, consultez notre histoire.",
+    "description": "Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, alimentée entièrement par leur énergie! Nous croyons qu'il faut répandre la positivité, promouvoir le bien-être et impliquer tout le monde — peu importe l'âge. Que ce soit lors d'un événement scolaire, d'un festival ou d'un rassemblement d'entreprise, Voilà Vélo apporte du plaisir, de la saveur et de bonnes vibrations à chaque occasion.",
     "button": "En savoir plus"
   },
   "mission": {
     "title": "Notre Mission",
-    "values": [
-      {
-        "icon": "👁️",
-        "title": "Notre Vision",
-        "description": "Nous croyons aux pratiques éthiques et durables pour un monde plus heureux et plus sain que tous peuvent apprécier."
-      },
-      {
-        "icon": "🎯", 
-        "title": "Notre Mission",
-        "description": "Être la principale entreprise d'événements pop-up à vélo du Québec afin de pouvoir soutenir et faire des dons aux organisations internationales et locales qui partagent notre vision."
-      },
-      {
-        "icon": "⚖️",
-        "title": "Notre Éthique",
-        "description": "Nous plaçons la planète et nos gens avant le profit tout en offrant un service exceptionnel. Nous croyons en 'soyez le changement que vous voulez voir'."
-      }
-    ]
+    "description": "Notre mission est de rendre la vie saine amusante, simple et inspirante. En combinant mouvement, durabilité et nutrition, nous voulons éveiller les consciences tout en créant des souvenirs heureux et savoureux. Nous croyons qu'un coup de pédale suffit pour se reconnecter à son corps, à la nature et aux autres — et Voilà Vélo est là pour que cela arrive."
+  },
+  "values": {
+    "title": "Nos Valeurs",
+    "healthWellness": {
+      "title": "Santé & Bien-être",
+      "description": "Nous croyons que nourrir son corps doit être à la fois délicieux et agréable."
+    },
+    "sustainability": {
+      "title": "Durabilité",
+      "description": "Nous sommes engagés à soutenir les producteurs locaux et à adopter des pratiques éco-responsables."
+    },
+    "community": {
+      "title": "Communauté",
+      "description": "Nous créons du lien et de la joie en rassemblant les gens à travers nos expériences smoothies."
+    },
+    "empowerment": {
+      "title": "Empowerment & Inclusion",
+      "description": "Nous inspirons les gens de tous âges et horizons à participer, créer et s'énergiser — car tout le monde mérite de faire partie du plaisir et du changement positif."
+    }
   },
   "howWeDo": {
     "title": "Nous le faisons en:",

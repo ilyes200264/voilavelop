@@ -62,23 +62,19 @@ export function PackagesSection() {
   ]
 
   return (
-    <MotionSection className="packages-section bg-gradient-to-br from-accent-green/5 to-trust-blue/10 py-16 md:py-24 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-accent-green/10 -z-10"></div>
-      <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-trust-blue/10 -z-10"></div>
-      <div className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-primary-red/5 -z-10"></div>
+    <MotionSection className="packages-section bg-accent-green text-white py-16 md:py-24 relative overflow-hidden">
       
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <ScrollReveal className="section-header text-center mb-12">
           <TextReveal>
-            <h2 className="section-title text-3xl md:text-4xl font-bold bg-gradient-to-r from-accent-green to-trust-blue bg-clip-text text-transparent">{t('home.packages.title')}</h2>
+            <h2 className="section-title text-3xl md:text-4xl font-bold text-white">{t('home.packages.title')}</h2>
           </TextReveal>
           
           <div className="separator w-32 h-1 mx-auto my-6 bg-gradient-to-r from-accent-green to-trust-blue rounded-full"></div>
           
           <ScrollReveal delay={0.3}>
-            <p className="section-subtitle text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+            <p className="section-subtitle text-lg text-white/90 mt-4 max-w-3xl mx-auto">
               {t('home.packages.subtitle')}
             </p>
           </ScrollReveal>
@@ -91,7 +87,7 @@ export function PackagesSection() {
               key={pkg.id}
               variant="fadeUp"
               custom={index}
-              className={`package-card rounded-2xl p-6 shadow-lg transition-all duration-500 ${pkg.borderColor} border-t-4 hover:shadow-xl hover:translate-y-[-8px] backdrop-blur-sm`}
+              className={`package-card bg-white rounded-2xl p-6 shadow-lg transition-all duration-500 ${pkg.borderColor} border-t-4 hover:shadow-xl hover:translate-y-[-8px]`}
             >
               <AnimatedImage hoverEffect="lift" className="h-full">
                 <div className="package-header text-center mb-6">
@@ -104,10 +100,10 @@ export function PackagesSection() {
                 </div>
 
                 <div className="package-description mb-6">
-                  <p className="package-tagline font-semibold mb-3 text-gray-600 italic">
+                  <p className="package-tagline font-semibold mb-3 text-gray-700 italic">
                     "{pkg.tagline || t(`packages.${pkg.id}.tagline`, '')}"
                   </p>
-                  <p className="package-intro text-sm text-gray-600 leading-relaxed">
+                  <p className="package-intro text-sm text-gray-700 leading-relaxed">
                     {pkg.heroDescription || t(`packages.${pkg.id}.heroDescription`, '')}
                   </p>
                 </div>
@@ -157,7 +153,7 @@ export function PackagesSection() {
         {/* Section Footer */}
         <StaggerContainer className="packages-footer text-center space-y-6">
           <MotionDiv variant="fadeUp">
-            <p className="packages-tagline text-lg text-dark-charcoal max-w-3xl mx-auto">
+            <p className="packages-tagline text-lg text-white max-w-3xl mx-auto">
               <em>
                 <span className="text-primary-red font-semibold">{t('home.packages.footer.highlight')} –</span> {t('home.packages.footer.text')}
               </em>

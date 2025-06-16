@@ -163,21 +163,20 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="header-content flex items-center justify-between py-4">
           {/* Logo Section */}
-          <motion.div 
+            <motion.div 
             className="logo-section"
             variants={logoVariants}
-          >
+            >
             <Link href="/">
               <div className="flex items-center space-x-2">
-                <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">V</span>
-                </div>
-                <div className="hidden md:block">
-                  <h1 className="text-xl font-bold text-dark-charcoal">Voilà Vélo Fruité</h1>
-                </div>
+              <img
+                src="/voila_smoothie_bike_logo.png"
+                alt="Voilà Vélo Fruité Logo"
+                className="w-20 h-20 rounded-full object-cover"
+              />
               </div>
             </Link>
-          </motion.div>
+            </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="main-navigation hidden lg:block">

@@ -15,28 +15,31 @@
   "founders": {
     "title": "Our Founders",
     "subtitle": "Leen and Micha",
-    "description": "We are Leen and Micha — two sisters with a great love for nature, healthy living, and cycling. That's how Voilà Vélo Fruité came to be — a joyful concept where people of all ages can hop on a smoothie bike, pedal with all their heart, and create their own delicious drink, powered entirely by their energy! To learn more about how we started Voilà Vélo Fruité, check out our story.",
+    "description": "We are Leen and Micha — two sisters with a great love for nature, healthy living, and cycling. That's how Voilà Vélo Fruité came to be — a joyful concept where people of all ages can hop on a smoothie bike, pedal with all their heart, and create their own delicious drink, powered entirely by their energy! We believe in spreading positivity, promoting wellness, and getting everyone involved — no matter how young or old. Whether it's at a school event, a festival, or a corporate gathering, Voilà Vélo brings fun, flavor, and feel-good vibes to every occasion.",
     "button": "Learn More"
   },
   "mission": {
     "title": "Our Mission",
-    "values": [
-      {
-        "icon": "👁️",
-        "title": "Our Vision",
-        "description": "We believe in ethical and sustainable practices for a happier and healthier world that everyone can enjoy."
-      },
-      {
-        "icon": "🎯", 
-        "title": "Our Mission",
-        "description": "To be Quebec's leading bike pop-up events company so that we can support and donate to international and local organizations that share our vision."
-      },
-      {
-        "icon": "⚖️",
-        "title": "Our Ethics",
-        "description": "We place the planet and our people before profit while delivering exceptional service. We believe in 'be the change you want to see'."
-      }
-    ]
+    "description": "Our mission is to make healthy living fun, simple, and inspiring. By combining motion, sustainability, and nutrition, we aim to spark awareness while creating happy, tasty memories. We believe that one pedal stroke is all it takes to reconnect with your body, nature, and each other — and Voilà Vélo is here to make that happen."
+  },
+  "values": {
+    "title": "Our Values",
+    "healthWellness": {
+      "title": "Health & Wellness",
+      "description": "We believe that nourishing your body should be both delicious and enjoyable."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "We are committed to supporting local producers and practicing eco-friendly methods."
+    },
+    "community": {
+      "title": "Community",
+      "description": "We foster connection and joy by bringing people together through our smoothie experiences."
+    },
+    "empowerment": {
+      "title": "Empowerment & Inclusion",
+      "description": "We inspire people of all ages and backgrounds to participate, create, and feel energized — because everyone deserves to be part of the fun and positive change."
+    }
   },
   "howWeDo": {
     "title": "We do this by:",

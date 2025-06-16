@@ -18,7 +18,11 @@ export function Footer() {
             <div className="footer-logo mb-8">
               <div className="flex items-center justify-center space-x-3">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-primary-red font-bold text-2xl">V</span>
+                  <img
+                  src="/voila_smoothie_bike_logo_bg.png"
+                  alt="Voilà Vélo Fruité Logo"
+                  className="w-12 h-12 object-contain"
+                  />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold">Voilà Vélo Fruité</h2>

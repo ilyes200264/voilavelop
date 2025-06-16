@@ -21,6 +21,10 @@
           "answer": "Nous adorons entendre des idées intéressantes! Appelez-nous ou envoyez-nous un e-mail pour discuter des détails et nous ferons de notre mieux pour répondre à votre demande."
         },
         {
+          "question": "Pouvez-vous mélanger des cocktails alcoolisés lors de mariages ou de fêtes privées?",
+          "answer": "Oui, absolument! Nous pouvons mélanger de délicieux cocktails alcoolisés pour les mariages et les événements privés. Pour les événements privés d'entreprise où l'alcool est servi gratuitement, aucun permis spécial n'est requis au Québec. Si l'événement a lieu dans un lieu avec licence (restaurant, salle de banquet), leur permis couvre le service d'alcool. Nous nous occupons de tous les aspects légaux pour garantir que tout soit conforme et sécuritaire."
+        },
+        {
           "question": "Quels ingrédients utilisez-vous?",
           "answer": "Nous utilisons uniquement des fruits frais, des légumes biologiques et des ingrédients naturels. Nous pouvons accommoder les allergies alimentaires et les préférences diététiques avec un préavis."
         },
@@ -35,10 +39,6 @@
         {
           "question": "Les clients peuvent-ils préparer leurs propres boissons?",
           "answer": "Oui! Nous encourageons tous nos clients à préparer leurs propres boissons - nous pensons que c'est plus amusant et plus engageant de cette façon. Presque tout le monde peut utiliser les vélos mélangeurs - les enfants dès l'âge de quatre ans, les adolescents, les adultes et même les personnes âgées dynamiques peuvent confortablement utiliser nos formidables vélos mélangeurs. Notre personnel est également composé de cyclistes enthousiastes si vous souhaitez que nous vous donnions un coup de main (ou de jambe) à tout moment."
-        },
-        {
-          "question": "Pouvez-vous mélanger des cocktails alcoolisés lors de mariages ou de fêtes privées?",
-          "answer": "Oui, absolument! Nous pouvons mélanger de délicieux cocktails alcoolisés pour les mariages et les événements privés. Nous nous occupons également d'obtenir le permis d'alcool nécessaire auprès du Québec pour garantir que tout est légal et sécuritaire."
         },
         {
           "question": "Que se passe-t-il s'il pleut?",

@@ -56,6 +56,7 @@
         }
       },
       "eventDate": "Event Date",
+      "dateFormat": "mm/dd/yyyy",
       "guests": {
         "label": "Number of Guests",
         "placeholder": "Select",

@@ -1,5 +1,8 @@
 "use client"
 
+import { useState } from "react"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import { H1, H2, P, PoppinsText } from "@/components/ui/typography"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -9,216 +12,356 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { CalendarIcon } from "lucide-react"
+import { CalendarIcon, MapPin, Phone, Mail, Clock } from "lucide-react"
 import { format } from "date-fns"
 import { fr, enUS } from "date-fns/locale"
 import { useI18n } from "@/lib/i18n"
+import { packagesData } from "../forfaits/packages-data"
 
 export default function BookingPage() {
   const { t, language } = useI18n();
+  
+  // Use correct namespace for translations
+  const translate = (key: string) => t(`reservation:${key}`);
+  
   // Choose locale based on current language
   const dateLocale = language === 'fr' ? fr : enUS;
-  return (
-    <div className="pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 md:pb-16">
-      {/* Hero Section */}
-      <div className="bg-light-gray py-8 sm:py-12 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <H1 className="mb-3 sm:mb-4" dangerouslySetInnerHTML={{ __html: t('hero.title') }}></H1>
-            <P className="text-base sm:text-lg mb-6 sm:mb-8">
-              {t('hero.description')}
-            </P>
-          </div>
-        </div>
-      </div>
+  
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+    eventType: "",
+    eventDate: "",
+    guests: "",
+    package: "",
+    message: "",
+    newsletter: false,
+  });
 
-      {/* Booking Form Section */}
-      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-12">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {/* Form */}
-            <div className="md:col-span-2 bg-white rounded-lg shadow-md p-4 sm:p-6">
-              <H2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">{t('form.title')}</H2>
-              
-              <form className="space-y-4 sm:space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">{t('form.firstName.label')}</Label>
-                    <Input id="firstName" placeholder={t('form.firstName.placeholder')} className="h-11 sm:h-10" />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">{t('form.lastName.label')}</Label>
-                    <Input id="lastName" placeholder={t('form.lastName.placeholder')} className="h-11 sm:h-10" />
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="email">{t('form.email.label')}</Label>
-                    <Input id="email" type="email" placeholder={t('form.email.placeholder')} className="h-11 sm:h-10" />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">{t('form.phone.label')}</Label>
-                    <Input id="phone" placeholder={t('form.phone.placeholder')} className="h-11 sm:h-10" />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="company">{t('form.company.label')}</Label>
-                  <Input id="company" placeholder={t('form.company.placeholder')} className="h-11 sm:h-10" />
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="eventDate">{t('form.eventDate.label')}</Label>
-                    <div className="relative">
-                      <Popover>
-                        <PopoverTrigger asChild>
-                          <Button variant="outline" className="w-full h-11 sm:h-10 justify-start text-left font-normal">
-                            <CalendarIcon className="mr-2 h-4 w-4" />
-                            <span>{t('form.eventDate.placeholder')}</span>
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent className="w-[280px] sm:w-auto p-0">
-                          <Calendar locale={dateLocale} />
-                        </PopoverContent>
-                      </Popover>
+  const handleInputChange = (field, value) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log("Form submitted:", formData);
+    // Redirect to thank you page
+    window.location.href = "/merci";
+  };
+
+  return (
+    <div className="min-h-screen">
+      <Header />
+
+      <main className="pt-28 pb-16 bg-accent-green/10">
+        <div className="container mx-auto px-4 max-w-5xl">
+          {/* Page Header */}
+          <div className="text-center mb-12 p-8 bg-accent-green text-white rounded-lg">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4" dangerouslySetInnerHTML={{ __html: translate('hero.title') }}></h1>
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
+              {translate('hero.description')}
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-5 gap-8">
+            {/* Contact Information */}
+            <div className="contact-info lg:col-span-2">
+              <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+                <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{translate('sidebar.needHelp.title')}</h2>
+
+                <div className="contact-methods space-y-6">
+                  <div className="contact-method flex items-start space-x-4">
+                    <div className="method-icon bg-accent-green text-white p-3 rounded-full">
+                      <MapPin className="h-6 w-6" />
+                    </div>
+                    <div className="method-details">
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{translate('sidebar.contact.address.label')}</h3>
+                      <p className="text-gray-600 mb-2">
+                        {translate('sidebar.contact.address.line1')}
+                        <br />
+                        {translate('sidebar.contact.address.line2')}
+                      </p>
                     </div>
                   </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="package">{t('form.package.label')}</Label>
-                    <Select>
-                      <SelectTrigger id="package">
-                        <SelectValue placeholder={t('form.package.placeholder')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="petite-koki">{t('form.package.options.petiteKoki')}</SelectItem>
-                        <SelectItem value="pop-solo">{t('form.package.options.popSolo')}</SelectItem>
-                        <SelectItem value="double-fun">{t('form.package.options.doubleFun')}</SelectItem>
-                        <SelectItem value="ready-set-blend">{t('form.package.options.readySetBlend')}</SelectItem>
-                        <SelectItem value="defi-parent-enfant">{t('form.package.options.parentChildChallenge')}</SelectItem>
-                        <SelectItem value="smoothie-parade">{t('form.package.options.smoothieParade')}</SelectItem>
-                        <SelectItem value="signature">{t('form.package.options.signature')}</SelectItem>
-                      </SelectContent>
-                    </Select>
+
+                  <div className="contact-method flex items-start space-x-4">
+                    <div className="method-icon bg-accent-green text-white p-3 rounded-full">
+                      <Phone className="h-6 w-6" />
+                    </div>
+                    <div className="method-details">
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{translate('sidebar.contact.phone.label')}</h3>
+                      <p className="text-gray-600 mb-1">
+                        <a href="tel:+1-XXX-XXX-XXXX" className="hover:text-accent-green">
+                          {translate('sidebar.contact.phone.value')}
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="contact-method flex items-start space-x-4">
+                    <div className="method-icon bg-accent-green text-white p-3 rounded-full">
+                      <Mail className="h-6 w-6" />
+                    </div>
+                    <div className="method-details">
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{translate('sidebar.contact.email.label')}</h3>
+                      <p className="text-gray-600 mb-1">
+                        <a href="mailto:info@voilavelo.ca" className="hover:text-accent-green">
+                          {translate('sidebar.contact.email.value')}
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="contact-method flex items-start space-x-4">
+                    <div className="method-icon bg-accent-green text-white p-3 rounded-full">
+                      <Clock className="h-6 w-6" />
+                    </div>
+                    <div className="method-details">
+                      <h3 className="font-semibold text-dark-charcoal mb-1">{translate('sidebar.contact.hours.label')}</h3>
+                      <p className="text-gray-600 mb-1">
+                        {translate('sidebar.contact.hours.value')}
+                      </p>
+                    </div>
                   </div>
                 </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="guests">{t('form.guests.label')}</Label>
-                    <Select>
-                      <SelectTrigger id="guests">
-                        <SelectValue placeholder={t('form.guests.placeholder')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="less-than-50">{t('form.guests.options.lessThan50')}</SelectItem>
-                        <SelectItem value="50-100">{t('form.guests.options.50-100')}</SelectItem>
-                        <SelectItem value="100-200">{t('form.guests.options.100-200')}</SelectItem>
-                        <SelectItem value="200-500">{t('form.guests.options.200-500')}</SelectItem>
-                        <SelectItem value="more-than-500">{t('form.guests.options.moreThan500')}</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="eventType">{t('form.eventType.label')}</Label>
-                    <Select>
-                      <SelectTrigger id="eventType">
-                        <SelectValue placeholder={t('form.eventType.placeholder')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="corporate">{t('form.eventType.options.corporate')}</SelectItem>
-                        <SelectItem value="private">{t('form.eventType.options.private')}</SelectItem>
-                        <SelectItem value="school">{t('form.eventType.options.school')}</SelectItem>
-                        <SelectItem value="festival">{t('form.eventType.options.festival')}</SelectItem>
-                        <SelectItem value="conference">{t('form.eventType.options.conference')}</SelectItem>
-                        <SelectItem value="other">{t('form.eventType.options.other')}</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">{t('form.message.label')}</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder={t('form.message.placeholder')} 
-                    rows={4}
-                    className="min-h-[100px]" 
-                  />
-                </div>
-                
-                <Button type="submit" className="w-full md:w-auto py-3 md:py-2 text-base md:text-sm bg-primary-red hover:bg-primary-red/90">
-                  {t('form.submitButton')}
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h3 className="text-xl font-bold text-dark-charcoal mb-4">{translate('sidebar.packageHelp.title')}</h3>
+                <p className="text-gray-600 mb-6">{translate('sidebar.packageHelp.description')}</p>
+                <Button variant="outline" className="w-full border-accent-green text-accent-green hover:bg-accent-green hover:text-white" asChild>
+                  <a href="/forfaits">{translate('sidebar.packageHelp.button')}</a>
                 </Button>
+              </div>
+            </div>
+
+            {/* Booking Form */}
+            <div className="contact-form-section lg:col-span-3 bg-white rounded-xl shadow-lg p-6 md:p-8">
+              <h2 className="text-2xl font-bold text-dark-charcoal mb-6">{translate('form.title')}</h2>
+
+              <form className="quote-form space-y-8" onSubmit={handleSubmit}>
+                {/* Personal Information */}
+                <div className="form-section">
+                  <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{translate('form.personalInfo.title')}</h3>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="form-field">
+                      <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.firstName.label')} *
+                      </label>
+                      <Input
+                        id="firstName"
+                        type="text"
+                        required
+                        value={formData.firstName}
+                        onChange={(e) => handleInputChange("firstName", e.target.value)}
+                        placeholder={translate('form.firstName.placeholder')}
+                        className="w-full focus:ring-accent-green focus:border-accent-green"
+                      />
+                    </div>
+
+                    <div className="form-field">
+                      <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.lastName.label')} *
+                      </label>
+                      <Input
+                        id="lastName"
+                        type="text"
+                        required
+                        value={formData.lastName}
+                        onChange={(e) => handleInputChange("lastName", e.target.value)}
+                        placeholder={translate('form.lastName.placeholder')}
+                        className="w-full focus:ring-accent-green focus:border-accent-green"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="form-field">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.email.label')} *
+                      </label>
+                      <Input
+                        id="email"
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => handleInputChange("email", e.target.value)}
+                        placeholder={translate('form.email.placeholder')}
+                        className="w-full focus:ring-accent-green focus:border-accent-green"
+                      />
+                    </div>
+
+                    <div className="form-field">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.phone.label')}
+                      </label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange("phone", e.target.value)}
+                        placeholder={translate('form.phone.placeholder')}
+                        className="w-full focus:ring-accent-green focus:border-accent-green"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="form-field">
+                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                      {translate('form.company.label')}
+                    </label>
+                    <Input
+                      id="company"
+                      type="text"
+                      value={formData.company}
+                      onChange={(e) => handleInputChange("company", e.target.value)}
+                      placeholder={translate('form.company.placeholder')}
+                      className="w-full focus:ring-accent-green focus:border-accent-green"
+                    />
+                  </div>
+                </div>
+
+                {/* Event Information */}
+                <div className="form-section border-t pt-6">
+                  <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{translate('form.eventInfo.title')}</h3>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="form-field">
+                      <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.eventType.label')} *
+                      </label>
+                      <Select onValueChange={(value) => handleInputChange("eventType", value)}>
+                        <SelectTrigger id="eventType" className="focus:ring-accent-green focus:border-accent-green">
+                          <SelectValue placeholder={translate('form.eventType.placeholder')} />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="corporate">{translate('form.eventType.options.corporate')}</SelectItem>
+                          <SelectItem value="private">{translate('form.eventType.options.private')}</SelectItem>
+                          <SelectItem value="school">{translate('form.eventType.options.school')}</SelectItem>
+                          <SelectItem value="festival">{translate('form.eventType.options.festival')}</SelectItem>
+                          <SelectItem value="conference">{translate('form.eventType.options.conference')}</SelectItem>
+                          <SelectItem value="other">{translate('form.eventType.options.other')}</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div className="form-field">
+                      <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.eventDate.label')}
+                      </label>
+                      <div className="relative">
+                        <Popover>
+                          <PopoverTrigger asChild>
+                            <Button variant="outline" className="w-full h-10 justify-start text-left font-normal focus:ring-accent-green focus:border-accent-green">
+                              <CalendarIcon className="mr-2 h-4 w-4" />
+                              <span>{formData.eventDate || translate('form.eventDate.placeholder')}</span>
+                            </Button>
+                          </PopoverTrigger>
+                          <PopoverContent className="w-auto p-0">
+                            <Calendar 
+                              locale={dateLocale} 
+                              mode="single"
+                              selected={formData.eventDate ? new Date(formData.eventDate) : undefined}
+                              onSelect={(date) => handleInputChange("eventDate", date ? format(date, 'yyyy-MM-dd') : '')}
+                            />
+                          </PopoverContent>
+                        </Popover>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="form-field">
+                      <label htmlFor="package" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.package.label')} *
+                      </label>
+                      <Select onValueChange={(value) => handleInputChange("package", value)}>
+                        <SelectTrigger id="package" className="focus:ring-accent-green focus:border-accent-green">
+                          <SelectValue placeholder={translate('form.package.placeholder')} />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {Object.entries(packagesData).map(([id, package_]) => (
+                            <SelectItem key={id} value={id}>{package_.title}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div className="form-field">
+                      <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-2">
+                        {translate('form.guests.label')} *
+                      </label>
+                      <Select onValueChange={(value) => handleInputChange("guests", value)}>
+                        <SelectTrigger id="guests" className="focus:ring-accent-green focus:border-accent-green">
+                          <SelectValue placeholder={translate('form.guests.placeholder')} />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="less-than-50">{translate('form.guests.options.lessThan50')}</SelectItem>
+                          <SelectItem value="50-100">{translate('form.guests.options.50-100')}</SelectItem>
+                          <SelectItem value="100-200">{translate('form.guests.options.100-200')}</SelectItem>
+                          <SelectItem value="200-500">{translate('form.guests.options.200-500')}</SelectItem>
+                          <SelectItem value="more-than-500">{translate('form.guests.options.moreThan500')}</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Information */}
+                <div className="form-section border-t pt-6">
+                  <h3 className="text-lg font-semibold text-dark-charcoal mb-4">{translate('form.additionalInfo.title')}</h3>
+
+                  <div className="form-field mb-4">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                      {translate('form.message.label')}
+                    </label>
+                    <Textarea
+                      id="message"
+                      rows={5}
+                      placeholder={translate('form.message.placeholder')}
+                      value={formData.message}
+                      onChange={(e) => handleInputChange("message", e.target.value)}
+                      className="w-full min-h-[100px] focus:ring-accent-green focus:border-accent-green"
+                    />
+                  </div>
+
+                  <div className="form-field">
+                    <label className="flex items-center space-x-3 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={formData.newsletter}
+                        onChange={(e) => handleInputChange("newsletter", e.target.checked)}
+                        className="w-4 h-4 text-accent-green border-gray-300 rounded focus:ring-accent-green"
+                      />
+                      <span className="text-sm text-gray-700">
+                        {translate('form.newsletter')}
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                {/* Submit */}
+                <div className="form-submit text-center">
+                  <Button type="submit" className="bg-accent-green text-white px-8 py-3 hover:bg-accent-green/90">
+                    {translate('form.submitButton')}
+                  </Button>
+
+                  <p className="text-sm text-gray-600 mt-4">
+                    {translate('form.confirmation')}
+                  </p>
+                </div>
               </form>
             </div>
-            
-            {/* Sidebar */}
-            <div className="md:col-span-1 flex flex-col gap-4 sm:gap-6">
-              <Card>
-                <CardHeader className="bg-primary-red text-white rounded-t-lg p-4 sm:p-6">
-                  <CardTitle className="text-lg sm:text-xl">{t('sidebar.needHelp.title')}</CardTitle>
-                  <CardDescription className="text-white/80 text-sm sm:text-base">
-                    {t('sidebar.needHelp.description')}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="pt-4 sm:pt-6 p-4 sm:p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <PoppinsText className="font-semibold block mb-1">{t('sidebar.contact.email.label')}</PoppinsText>
-                      <P className="text-sm">{t('sidebar.contact.email.value')}</P>
-                    </div>
-                    <div>
-                      <PoppinsText className="font-semibold block mb-1">{t('sidebar.contact.phone.label')}</PoppinsText>
-                      <P className="text-sm">{t('sidebar.contact.phone.value')}</P>
-                    </div>
-                    <div>
-                      <PoppinsText className="font-semibold block mb-1">{t('sidebar.contact.hours.label')}</PoppinsText>
-                      <P className="text-sm">{t('sidebar.contact.hours.value')}</P>
-                    </div>
-                  </div>
-                </CardContent>
-                <CardFooter className="border-t pt-4 sm:pt-6 p-4 sm:p-6 flex flex-col items-start">
-                  <PoppinsText className="font-semibold mb-2">{t('sidebar.packageHelp.title')}</PoppinsText>
-                  <P className="text-sm mb-4">{t('sidebar.packageHelp.description')}</P>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="/forfaits">{t('sidebar.packageHelp.button')}</a>
-                  </Button>
-                </CardFooter>
-              </Card>
-              
-              <Card className="bg-light-gray border-none">
-                <CardContent className="pt-4 sm:pt-6 p-4 sm:p-6">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-accent-green rounded-full flex items-center justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    </div>
-                    <div>
-                      <PoppinsText className="font-semibold">{t('sidebar.features.team.title')}</PoppinsText>
-                      <P className="text-sm">{t('sidebar.features.team.description')}</P>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-secondary-yellow rounded-full flex items-center justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                    </div>
-                    <div>
-                      <PoppinsText className="font-semibold">{t('sidebar.features.experience.title')}</PoppinsText>
-                      <P className="text-sm">{t('sidebar.features.experience.description')}</P>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
-      </div>
+      </main>
+
+      <Footer />
     </div>
   )
 }

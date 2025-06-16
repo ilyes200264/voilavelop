@@ -11,6 +11,37 @@
     "description2": "Make your next event a fun and healthy success! We have experience organizing unique pop-up events to meet your needs. Choose one of our popular packages or contact us for a quote before we're all pedaled out!",
     "ctaButton": "LEARN MORE"
   },
+  "whyChooseWorkshop": {
+    "title": "Why choose our Voilà Vélo workshop?",
+    "subtitle": "Because it's fun, sustainable, and unforgettable!",
+    "description": "At Voilà Vélo, we believe that learning, moving, and enjoying yourself can go hand in hand. Our Smoothie Vélo workshop is more than just an activity — it's an experience that inspires healthy habits, one pedal-powered smoothie at a time.",
+    "features": {
+      "ecoFriendly": {
+        "title": "Eco-friendly and energy-free",
+        "description": "No electricity needed! Smoothies are blended by participant pedal power — a zero-emission, 100% human-powered activity that makes sustainability exciting."
+      },
+      "sustainability": {
+        "title": "A hands-on approach to sustainability",
+        "description": "Participants become creators, not just consumers. It's a unique way to understand the impact of our actions, while embracing physical effort and environmental awareness."
+      },
+      "healthy": {
+        "title": "Healthy, tasty, and joyful",
+        "description": "Our smoothies are made on-site with fresh, colorful ingredients and a big dose of fun — combining nutrition and movement for all ages."
+      },
+      "events": {
+        "title": "Perfect for all kinds of events",
+        "description": "From schools and festivals to corporate or community events — our workshop adapts to your crowd. It's inclusive, interactive, and unforgettable."
+      },
+      "values": {
+        "title": "We pedal for our values",
+        "description": "We use reusable or compostable materials, reduce waste, and promote mindful consumption — all in a lively and welcoming atmosphere."
+      }
+    },
+    "tagline": {
+      "part1": "Voilà Vélo Fruité:",
+      "part2": "Blended by You, Powered by Fun!"
+    }
+  },
   "whyChoose": {
     "title": "Why Choose Voilà Vélo?",
     "subtitle": "Delicious smoothies and an unforgettable experience",
@@ -173,10 +204,6 @@
       "noStraws": {
         "title": "Straws\nNo thanks!",
         "description": "We don't use straws or lids at our events and encourage our clients to do the same"
-      },
-      "zeroWaste": {
-        "title": "Zero\nWaste!",
-        "description": "We don't contribute to landfills during our events, recycling and composting all our waste"
       },
       "foodWaste": {
         "title": "Fighting\nFood Waste!",

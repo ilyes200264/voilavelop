@@ -9,6 +9,15 @@
   },
   "form": {
     "title": "Formulaire de réservation",
+    "personalInfo": {
+      "title": "Informations personnelles"
+    },
+    "eventInfo": {
+      "title": "Détails de l'événement"
+    },
+    "additionalInfo": {
+      "title": "Informations supplémentaires"
+    },
     "firstName": {
       "label": "Prénom",
       "placeholder": "Votre prénom"
@@ -73,6 +82,8 @@
       "label": "Message (détails supplémentaires)",
       "placeholder": "Partagez des détails supplémentaires sur votre événement..."
     },
+    "newsletter": "J'aimerais recevoir des conseils d'événements et des offres spéciales par email",
+    "confirmation": "Nous vous répondrons dans les 24 heures avec une soumission personnalisée pour votre événement.",
     "submitButton": "Envoyer la demande de réservation"
   },
   "sidebar": {
@@ -81,6 +92,11 @@
       "description": "Nous sommes là pour vous guider"
     },
     "contact": {
+      "address": {
+        "label": "Adresse",
+        "line1": "Voilà Vélo Fruité",
+        "line2": "Montréal, QC"
+      },
       "email": {
         "label": "Email",
         "value": "info@voilavelo.com"

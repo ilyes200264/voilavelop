@@ -20,8 +20,29 @@ import { useI18n } from "@/lib/i18n"
 export default function AboutPage() {
   const { t } = useI18n()
   
-  // Add fallback empty array to prevent "map is not a function" error
-  const values = t<any[]>('mission.values', [])
+  // Valeurs exactes du document original
+  const exactValues = [
+    {
+      icon: "🍏",
+      title: t("about.values.healthWellness.title", "Santé & Bien-être"),
+      description: t("about.values.healthWellness.description", "Nous croyons que nourrir son corps doit être à la fois délicieux et agréable.")
+    },
+    {
+      icon: "🌱",
+      title: t("about.values.sustainability.title", "Durabilité"),
+      description: t("about.values.sustainability.description", "Nous sommes engagés à soutenir les producteurs locaux et à adopter des pratiques éco-responsables.")
+    },
+    {
+      icon: "🤝",
+      title: t("about.values.community.title", "Communauté"),
+      description: t("about.values.community.description", "Nous créons du lien et de la joie en rassemblant les gens à travers nos expériences smoothies.")
+    },
+    {
+      icon: "💪",
+      title: t("about.values.empowerment.title", "Empowerment & Inclusion"),
+      description: t("about.values.empowerment.description", "Nous inspirons les gens de tous âges et horizons à participer, créer et s'énergiser — car tout le monde mérite de faire partie du plaisir et du changement positif.")
+    }
+  ]
 
   const cities = ['Montréal', 'Québec', 'Laval', 'Ottawa']
 
@@ -30,43 +51,8 @@ export default function AboutPage() {
       <Header />
 
       <main className="pt-20">
-        {/* Hero Section */}
-        <section className="py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <div className="text-center">
-              <TextReveal>
-                <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
-                  {t('hero.title', "À Propos de Nous")}
-                </h1>
-              </TextReveal>
-              
-              <RedLineSeparator className="mb-8" />
-              
-              <ScrollReveal delay={0.3}>
-                <p className="text-2xl italic text-gray-700 mb-8 leading-relaxed">
-                  {t('hero.quote', "\"Nous engageons et inspirons les gens d'une manière amusante et saine!\"")}
-                </p>
-              </ScrollReveal>
-              
-              <AnimatedImage hoverEffect="scale" className="mb-6">
-                <Image
-                  src="/images/founders.jpg"
-                  alt="Leen et Micha, fondatrices de Voilà Vélo Fruité"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-2xl mx-auto"
-                />
-              </AnimatedImage>
-              
-              <ScrollReveal delay={0.5}>
-                <p className="text-lg text-gray-600">{t('hero.founders', "Leen et Micha, fondatrices de Voilà Vélo Fruité")}</p>
-              </ScrollReveal>
-            </div>
-          </div>
-        </section>
-
         {/* Company Section - Red Background */}
-        <MotionSection className="py-24 bg-primary-red">
+        <MotionSection className="py-24 bg-gradient-to-br from-primary-red via-pink-200 to-yellow-100">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <ImageMaskReveal className="rounded-lg">
@@ -82,32 +68,32 @@ export default function AboutPage() {
               <StaggerContainer className="text-white pl-0 lg:pl-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    {t('company.title', "Voilà Vélo Fruité")}
+                    Voilà Vélo Fruité
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-secondary-yellow mb-6">
-                    {t('company.subtitle', "Nous créons des événements innovants et durables")}
+                    Nous créons des événements innovants et durables
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <p className="mb-4">
-                    {t('company.description1', "Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut le cyclisme, la durabilité, la santé et le bonheur en utilisant nos vélos mélangeurs fabriqués au Québec.")}
+                  <p className="mb-4 text-black">
+                    Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut le cyclisme, la durabilité, la santé et le bonheur en utilisant nos vélos mélangeurs fabriqués au Québec.
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <p className="mb-4">
-                    {t('company.description2', "Nous sommes une équipe d'organisateurs d'événements passionnés qui croient aux pratiques éthiques et durables pour créer un monde plus heureux et plus sain — un événement smoothie à la fois! Nous utilisons des gobelets lavables ou biodégradables, compensons notre carbone, compostons ou recyclons tous les déchets produits et faisons des dons à UNICEF.")}
+                  <p className="mb-4 text-black">
+                    Nous sommes une équipe d'organisateurs d'événements passionnés qui croient aux pratiques éthiques et durables pour créer un monde plus heureux et plus sain — un événement smoothie à la fois! Nous utilisons des gobelets lavables ou biodégradables, compensons notre carbone, compostons ou recyclons tous les déchets produits et faisons des dons à UNICEF.
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <p className="mb-4">
-                    {t('company.description3', "Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.")}
+                  <p className="mb-4 text-black">
+                    Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <p>
-                    {t('company.description4', "L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.")}
+                  <p className="text-black">
+                    L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.
                   </p>
                 </MotionDiv>
               </StaggerContainer>
@@ -116,29 +102,34 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* Founder Section - Blue Background */}
-        <MotionSection className="py-24 bg-trust-blue">
+        <MotionSection className="py-24 bg-gradient-to-br from-blue-300 via-blue-100 to-pink-100">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <StaggerContainer className="text-white order-2 lg:order-1 pr-0 lg:pr-12">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-4xl font-bold text-black mb-4">
-                    {t('founders.title', "Nos Fondatrices")}
+                    Nos Fondatrices
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-2xl text-primary-red mb-6">
-                    {t('founders.subtitle', "Leen et Micha")}
+                    Leen et Micha
                   </h5>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <p className="mb-6">
-                    {t('founders.description', "Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, alimentée entièrement par leur énergie! Pour en savoir plus sur la façon dont nous avons commencé Voilà Vélo Fruité, consultez notre histoire.")}
+                  <p className="mb-6 text-black">
+                    Nous sommes Leen et Micha — deux sœurs avec un grand amour pour la nature, la vie saine et le vélo. C'est ainsi que Voilà Vélo Fruité a vu le jour — un concept joyeux où les gens de tous âges peuvent monter sur un vélo smoothie, pédaler de tout leur cœur et créer leur propre boisson délicieuse, alimentée entièrement par leur énergie!
+                  </p>
+                </MotionDiv>
+                <MotionDiv variant="fadeUp">
+                  <p className="mb-6 text-black">
+                    Nous croyons qu'il faut répandre la positivité, promouvoir le bien-être et impliquer tout le monde — peu importe l'âge. Que ce soit lors d'un événement scolaire, d'un festival ou d'un rassemblement d'entreprise, Voilà Vélo apporte du plaisir, de la saveur et de bonnes vibrations à chaque occasion.
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
                     <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                      {t('founders.button', "En savoir plus")}
+                      En savoir plus
                     </Button>
                   </AnimatedImage>
                 </MotionDiv>
@@ -157,67 +148,90 @@ export default function AboutPage() {
           </div>
         </MotionSection>
 
-        {/* Mission Section - White Background */}
-        <MotionSection id="notre-mission" className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('mission.title', "Notre Mission")}
-              </h2>
-            </ScrollReveal>
+        {/* Notre Mission Section */}
+        <section className="py-16 bg-gradient-to-br from-green-100 via-yellow-100 to-pink-100 text-center mx-2 rounded-2xl shadow mb-8">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-primary-red">Notre Mission</h2>
+            <p className="text-xl md:text-2xl mb-4 text-gray-700 font-medium">
+              Notre mission est de rendre la vie saine amusante, simple et inspirante. En combinant mouvement, durabilité et nutrition, nous voulons éveiller les consciences tout en créant des souvenirs heureux et savoureux.
+            </p>
+            <p className="text-lg text-gray-600">
+              Nous croyons qu'un coup de pédale suffit pour se reconnecter à son corps, à la nature et aux autres — et Voilà Vélo est là pour que cela arrive.
+            </p>
+          </div>
+        </section>
 
-            <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {values.map((value: { icon: string; title: string; description: string }, index: number) => (
-                <MotionDiv 
-                  key={index} 
+        {/* Nos Valeurs - Exactement selon le document */}
+        <section className="py-16 bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 mx-2 rounded-2xl shadow mb-8">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-primary-red text-center">Nos Valeurs</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {exactValues.map((value, index) => (
+                <MotionDiv
+                  key={index}
                   variant="fadeUp"
                   custom={index}
-                  className="text-center"
+                  className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
                 >
-                  <AnimatedImage hoverEffect="rotate" className="text-6xl mb-6">
-                    <div>{value.icon}</div>
-                  </AnimatedImage>
-                  
-                  <h2 className="text-2xl font-bold text-primary-red mb-4">
-                    {value.title}
-                  </h2>
-                  
-                  <p className="text-gray-700 leading-relaxed">
-                    {value.description}
-                  </p>
+                  <span className="text-5xl mb-4">{value.icon}</span>
+                  <h3 className="text-xl font-bold text-primary-red mb-2 text-center">{value.title}</h3>
+                  <p className="text-gray-700 text-center leading-relaxed">{value.description}</p>
                 </MotionDiv>
               ))}
-            </StaggerContainer>
+            </div>
           </div>
-        </MotionSection>
+        </section>
 
-        {/* "We do this by" Section - Light Gray Background */}
-        <MotionSection className="py-24 bg-light-gray">
+        {/* "We do this by" Section */}
+        <MotionSection className="py-24 bg-gradient-to-br from-green-100 via-yellow-100 to-pink-100">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('howWeDo.title', "Nous le faisons en:")}
+                Nous le faisons en:
               </h2>
             </ScrollReveal>
 
-            <StaggerContainer className="max-w-4xl mx-auto text-center space-y-8">
-              {t<string[]>('howWeDo.points', []).map((point: string, index: number) => (
-                <MotionDiv key={index} variant="fadeUp" custom={index}>
-                  <p className={index === 0 || index === 3 ? "text-2xl font-medium text-dark-charcoal leading-relaxed" : "text-lg text-gray-700"}>
-                    {point}
-                  </p>
-                </MotionDiv>
-              ))}
+            <StaggerContainer className="max-w-4xl mx-auto text-center space-y-6">
+              <MotionDiv variant="fadeUp">
+                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
+                  Fournissant des activations durables professionnelles exceptionnelles;
+                </p>
+              </MotionDiv>
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Rendant la santé et le bien-être faciles et amusants pour tout groupe démographique;
+                </p>
+              </MotionDiv>
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Adoptant des pratiques durables et éthiques en utilisant uniquement des gobelets lavables ou biodégradables (et en prenant position contre l'utilisation de pailles ou de couvercles), en compostant ou recyclant presque TOUS nos déchets y compris le plastique souple, en utilisant des compensations carbone pour neutraliser nos émissions et en faisant des dons à UNICEF et à des organisations locales;
+                </p>
+              </MotionDiv>
+              <MotionDiv variant="fadeUp">
+                <p className="text-2xl font-medium text-dark-charcoal leading-relaxed">
+                  Partenariat avec des entreprises qui partagent une mission similaire.
+                </p>
+              </MotionDiv>
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Ainsi, nous soutenir, c'est soutenir notre merveilleuse planète.
+                </p>
+              </MotionDiv>
+              <MotionDiv variant="fadeUp">
+                <p className="text-lg text-gray-700">
+                  Nous construisons également chaque vélo mélangeur à la main au Québec.
+                </p>
+              </MotionDiv>
             </StaggerContainer>
           </div>
         </MotionSection>
 
-        {/* Partners Section - White Background */}
-        <MotionSection id="nos-partenaires" className="py-24 bg-white">
+        {/* Partners Section */}
+        <MotionSection id="nos-partenaires" className="py-24 bg-gradient-to-br from-pink-100 via-yellow-100 to-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
-                {t('partners.title', "Nos Partenaires")}
+                Nos Partenaires
               </h2>
             </ScrollReveal>
 
@@ -234,14 +248,14 @@ export default function AboutPage() {
               
               <MotionDiv variant="fadeUp">
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  {t('partners.description', "Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos pour engager, éduquer et divertir les enfants et les adultes.")}
+                  Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos pour engager, éduquer et divertir les enfants et les adultes.
                 </p>
               </MotionDiv>
               
               <MotionDiv variant="fadeUp">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-primary-red text-white hover:bg-primary-red/90 px-8 py-3 text-lg font-semibold">
-                    {t('partners.button', "En savoir plus")}
+                    En savoir plus
                   </Button>
                 </AnimatedImage>
               </MotionDiv>
@@ -249,8 +263,8 @@ export default function AboutPage() {
           </div>
         </MotionSection>
 
-        {/* Service Areas Footer Section - Red Background */}
-        <MotionSection className="py-16 bg-primary-red">
+        {/* Service Areas Footer Section */}
+        <MotionSection className="py-16 bg-gradient-to-br from-primary-red via-pink-400 to-yellow-200">
           <div className="container mx-auto px-4">
             <StaggerContainer className="text-center">
               <AnimatedImage hoverEffect="scale" className="mb-16">

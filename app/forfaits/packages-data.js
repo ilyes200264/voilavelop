@@ -4,7 +4,7 @@ export const packagesData = {
     title: "La petite Koki",
     tagline: "Le favori de tous les temps des enfants!",
     heroDescription:
-      "Ce forfait de Voilà Vélo Fruité offre une façon excitante et pratique de mélanger le plaisir avec la santé lors de votre prochain événement.",
+      "Parfait pour les anniversaires, les graduations de garderie ou les festivals familiaux, ce forfait apporte du plaisir, des rires et des smoothies savoureux à toute célébration!",
     ageRange: "5-10 ans",
     duration: "1-2 heures",
     capacity: "25-50 smoothies",
@@ -12,15 +12,14 @@ export const packagesData = {
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Ce forfait comprend un vélo mélangeur adapté aux enfants, permettant aux participants de pédaler pour créer leurs smoothies, ce qui en fait une activité amusante et interactive pour tous les âges. Le forfait La petite Koki offre les éléments essentiels dont vous avez besoin pour une expérience de mélange simplifiée, garantissant que vos invités repartent avec une impression mémorable.",
+        "Ce forfait comprend un vélo mélangeur adapté aux enfants, permettant aux participants de pédaler pour créer leurs smoothies, ce qui en fait une activité amusante et interactive pour tous les âges. Nous pouvons personnaliser ce forfait avec votre marque, ballons et décorations personnalisées!",
       image: "/images/velo-smoothie-1.jpg",
       includes: [
-        "1 vélo mélangeur adapté aux enfants (5-10 ans)",
-        "25-50 smoothies délicieux selon l'option choisie",
-        "1-2 heures de divertissement énergique",
-        "Recettes et menu coloré",
-        "Animation vivante avec musique festive",
-        "Personnalisation possible avec votre marque",
+        "1 vélo mélangeur adapté aux enfants (5-10 ans) - ils pédalent, ils mélangent, ils s'amusent!",
+        "Smoothies frais et colorés - faits sur place avec joie et énergie",
+        "Animation vivante - musique et ambiance festive dont tout le monde se souviendra",
+        "Personnalisation possible avec votre marque, ballons et décorations",
+        "Mélangé par vos enfants, alimenté par le plaisir!",
       ],
       backgroundColor: "#ec634c",
     },
@@ -29,7 +28,7 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est idéal pour les personnes qui veulent offrir une expérience unique et mémorable aux enfants, tout en promouvant l'activité physique et une alimentation saine de manière ludique.",
-      image: "/images/gallery-1.jpg",
+      image: "/images/velo-smoothie-2.jpg",
       perfectFor: [
         "Fêtes d'anniversaire - Créez des souvenirs inoubliables",
         "Graduations de garderie et événements scolaires",
@@ -81,35 +80,33 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Petite Fête",
+        title: "Option 1",
         price: "299",
         duration: "1 heure",
         smoothies: "25",
         includes: [
+          "25 smoothies délicieux + 1 heure de divertissement énergique",
           "1 vélo mélangeur adapté aux enfants",
-          "25 smoothies délicieux",
-          "1 heure d'animation énergique",
-          "Musique et ambiance festive",
+          "Animation vivante avec musique festive",
           "Ingrédients frais et colorés",
         ],
         idealFor:
-          "Parfait pour les petites fêtes d'anniversaire (10-15 enfants) ou les événements intimes.",
+          "Parfait pour les petites fêtes d'anniversaire ou les événements intimes.",
       },
       {
-        title: "Option Grande Célébration",
+        title: "Option 2",
         price: "449",
         duration: "2 heures",
         smoothies: "50",
         includes: [
+          "50 smoothies délicieux + 2 heures de divertissement énergique",
           "1 vélo mélangeur adapté aux enfants",
-          "50 smoothies délicieux",
-          "2 heures de divertissement",
-          "Animation interactive avec jeux",
+          "Animation vivante avec musique festive",
           "Décorations colorées incluses",
           "Personnalisation possible",
         ],
         idealFor:
-          "Idéal pour les grandes fêtes (20-30 enfants), graduations de garderie ou festivals familiaux.",
+          "Idéal pour les grandes fêtes, graduations de garderie ou festivals familiaux.",
         featured: true,
       },
     ],
@@ -128,14 +125,13 @@ export const packagesData = {
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Ce forfait comprend un vélo mélangeur pour adultes, permettant aux participants de créer leurs smoothies frais tout en faisant de l'exercice. Une expérience parfaite qui combine plaisir, santé et interaction sociale.",
-      image: "/images/velo-smoothie-2.jpg",
+        "Ce forfait comprend un vélo mélangeur pour adultes, permettant aux participants de créer leurs smoothies frais tout en faisant de l'exercice. Une expérience parfaite qui combine plaisir, santé et interaction sociale. Nous pouvons personnaliser ce forfait avec votre marque, ballons et décorations!",
+      image: "/images/velo-smoothie-3.jpg",
       includes: [
         "1 vélo mélangeur adapté aux adultes",
-        "50-75 smoothies frais préparés sur place",
-        "1.5-2.5 heures de plaisir énergique",
+        "Smoothies frais préparés sur place",
         "Atmosphère festive avec musique et bonnes vibrations",
-        "Recettes santé et menu personnalisé",
+        "Mélangé par vous, alimenté par le plaisir!",
         "Personnalisation possible avec votre marque",
       ],
       backgroundColor: "#f0b860",
@@ -145,7 +141,7 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est parfait pour engager les adolescents, adultes et familles dans une activité qui promeut la santé et le bien-être de manière amusante et interactive.",
-      image: "/images/gallery-2.jpg",
+      image: "/images/indoor.jpeg",
       perfectFor: [
         "Événements scolaires pour adolescents",
         "Fêtes de bureau et team building",
@@ -195,31 +191,29 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Standard",
+        title: "Option 1",
         price: "449",
         duration: "1.5 heures",
         smoothies: "50",
         includes: [
+          "50 smoothies + 1.5 heures de plaisir énergique",
           "1 vélo mélangeur pour adultes",
-          "50 smoothies frais",
-          "1.5 heures d'animation",
-          "Musique et ambiance festive",
-          "Ingrédients de qualité",
+          "Atmosphère festive avec musique et bonnes vibrations",
+          "Smoothies frais préparés sur place",
         ],
         idealFor:
           "Parfait pour les petits événements et rassemblements intimes.",
       },
       {
-        title: "Option Premium",
+        title: "Option 2",
         price: "649",
         duration: "2.5 heures",
         smoothies: "75",
         includes: [
+          "75 smoothies + 2.5 heures de plaisir énergique",
           "1 vélo mélangeur pour adultes",
-          "75 smoothies frais",
-          "2.5 heures d'animation interactive",
-          "Système sonore professionnel",
-          "Variété d'ingrédients premium",
+          "Atmosphère festive avec musique et bonnes vibrations",
+          "Smoothies frais préparés sur place",
           "Personnalisation de base incluse",
         ],
         idealFor:
@@ -234,7 +228,7 @@ export const packagesData = {
     title: "Double Fun",
     tagline: "Deux fois plus de vélos = deux fois plus d'énergie!",
     heroDescription:
-      "Parfait pour les festivals communautaires, les activations de marque, les collectes de fonds, les fêtes corporatives et plus encore!",
+      "Parfait pour les festivals communautaires, les activations de marque, les collectes de fonds, les fêtes corporatives, les portes ouvertes et plus encore!",
     ageRange: "Tous âges",
     duration: "2-4 heures",
     capacity: "100-300 smoothies",
@@ -242,12 +236,11 @@ export const packagesData = {
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Ce forfait comprend deux vélos mélangeurs pour adultes, permettant une expérience interactive à plus grande échelle. Parfait pour créer une ambiance de foule dynamique et engager plus de participants simultanément.",
-      image: "/images/velo-smoothie-3.jpg",
+        "Ce forfait comprend deux vélos mélangeurs pour adultes, permettant une expérience interactive à plus grande échelle. Parfait pour créer une ambiance de foule dynamique et engager plus de participants simultanément. Vous pouvez personnaliser ce forfait avec votre marque, ballons et décorations - faites-nous savoir pour tripler le plaisir!",
+      image: "/images/outdoor.jpg",
       includes: [
         "2 vélos mélangeurs pour adultes",
-        "100-300 smoothies préparés sur place",
-        "2-4 heures de divertissement continu",
+        "Préparation de smoothies sur place",
         "Musique et ambiance de foule dynamique",
         "Installation complète avec tables et signalétique",
         "Personnalisation avec votre marque, ballons et décorations",
@@ -259,7 +252,7 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est conçu pour les événements de plus grande envergure qui nécessitent une capacité élevée et une énergie constante pour maintenir l'engagement tout au long de l'événement.",
-      image: "/images/gallery-3.jpg",
+      image: "/images/1000099697.png",
       perfectFor: [
         "Festivals communautaires et événements publics",
         "Activations de marque et lancements de produits",
@@ -309,50 +302,46 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Festival",
+        title: "Option 1",
         price: "699",
         duration: "2 heures",
         smoothies: "100",
         includes: [
+          "100 smoothies + 2 heures de divertissement",
           "2 vélos mélangeurs pour adultes",
-          "100 smoothies frais",
-          "2 heures d'animation",
-          "Installation complète",
-          "Musique et ambiance festive",
+          "Préparation de smoothies sur place",
+          "Musique et ambiance de foule dynamique",
         ],
         idealFor:
           "Parfait pour les événements communautaires et festivals locaux.",
       },
       {
-        title: "Option Activation",
+        title: "Option 2",
         price: "999",
         duration: "3 heures",
         smoothies: "200",
         includes: [
+          "200 smoothies + 3 heures",
           "2 vélos mélangeurs pour adultes",
-          "200 smoothies frais",
-          "3 heures d'animation interactive",
+          "Préparation de smoothies sur place",
+          "Musique et ambiance de foule dynamique",
           "Personnalisation de marque incluse",
-          "Installation premium avec décoration",
-          "Animateur professionnel",
         ],
         idealFor:
           "Idéal pour les activations de marque et événements corporatifs.",
         featured: true,
       },
       {
-        title: "Option Grande Envergure",
+        title: "Option 3",
         price: "1299",
         duration: "4 heures",
         smoothies: "300",
         includes: [
+          "300 smoothies + 4 heures",
           "2 vélos mélangeurs pour adultes",
-          "300 smoothies frais",
-          "4 heures d'animation continue",
+          "Préparation de smoothies sur place",
+          "Musique et ambiance de foule dynamique",
           "Personnalisation complète",
-          "Installation premium",
-          "Équipe d'animation dédiée",
-          "Système sonore professionnel",
         ],
         idealFor:
           "Parfait pour les grands festivals et événements d'envergure.",
@@ -368,20 +357,19 @@ export const packagesData = {
       "Parfait pour les soirées d'entreprise, les événements festifs, les conférences, les défis de bien-être et les collectes de fonds amusantes!",
     ageRange: "16+ ans",
     duration: "2-3 heures",
-    capacity: "75-150 smoothies",
+    capacity: "100-200 smoothies",
 
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Ce forfait transforme la création de smoothies en compétition amicale! Avec deux vélos mélangeurs, des moniteurs de vitesse et un tableau de scores en temps réel, vos participants vivront une expérience de team-building unique et motivante.",
-      image: "/images/velo-competition.jpg",
+        "Ce forfait transforme la création de smoothies en compétition amicale! Avec deux vélos mélangeurs, des moniteurs de vitesse et un tableau de scores en temps réel, vos participants vivront une expérience de team-building unique et motivante. Rendez votre événement inoubliable avec une compétition amicale et des récompenses délicieuses.",
+      image: "/images/1000099651.png",
       includes: [
         "2 vélos mélangeurs pour adultes",
         "Moniteurs de vitesse + tableau des scores en temps réel",
         "Animateur énergique pour encourager la foule",
-        "75-150 smoothies préparés avec votre propre énergie",
+        "Smoothies préparés avec votre propre énergie de pédalage",
         "Compétition amicale avec récompenses délicieuses",
-        "Système de classement et prix pour les gagnants",
       ],
       backgroundColor: "#85ba5d",
     },
@@ -390,13 +378,13 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est spécialement conçu pour les entreprises et organisations qui cherchent à renforcer la cohésion d'équipe tout en promouvant la santé et le bien-être au travail.",
-      image: "/images/corporate-team.jpg",
+      image: "/images/1000099719.png",
       perfectFor: [
-        "Événements corporatifs et team-building",
-        "Soirées d'entreprise et célébrations",
+        "Soirées d'entreprise et événements corporatifs",
+        "Événements festifs et célébrations",
         "Conférences et séminaires d'entreprise",
         "Défis de bien-être en milieu de travail",
-        "Collectes de fonds organisationnelles",
+        "Collectes de fonds amusantes et organisationnelles",
       ],
       backgroundColor: "#f0b860",
     },
@@ -440,33 +428,31 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Compétition",
+        title: "Option 1",
         price: "599",
         duration: "2 heures",
         smoothies: "100",
         includes: [
-          "2 vélos mélangeurs avec moniteurs",
-          "100 smoothies de compétition",
-          "2 heures de compétition guidée",
-          "Tableau de scores en temps réel",
-          "Animateur professionnel",
-          "Prix pour les gagnants",
+          "100 smoothies + 2 heures de compétition excitante",
+          "2 vélos mélangeurs pour adultes",
+          "Moniteurs de vitesse + tableau des scores en temps réel",
+          "Animateur énergique pour encourager la foule",
+          "Smoothies préparés avec votre propre énergie de pédalage",
         ],
         idealFor: "Parfait pour les équipes de 20-40 personnes.",
       },
       {
-        title: "Option Team-Building Premium",
+        title: "Option 2",
         price: "799",
         duration: "3 heures",
-        smoothies: "150",
+        smoothies: "200",
         includes: [
-          "2 vélos mélangeurs avec moniteurs avancés",
-          "150 smoothies énergisants",
-          "3 heures de défis variés",
-          "Animation interactive complète",
+          "200 smoothies + 3 heures de plaisir rapide",
+          "2 vélos mélangeurs pour adultes",
+          "Moniteurs de vitesse + tableau des scores en temps réel",
+          "Animateur énergique pour encourager la foule",
+          "Smoothies préparés avec votre propre énergie de pédalage",
           "Personnalisation de l'expérience",
-          "Cérémonie de remise des prix",
-          "Photos souvenir de l'événement",
         ],
         idealFor: "Idéal pour les événements corporatifs de 40-60 personnes.",
         featured: true,
@@ -481,19 +467,18 @@ export const packagesData = {
     heroDescription:
       "Parfait pour les écoles, les festivals, les fêtes familiales ou les événements de quartier qui veulent rassembler les générations.",
     ageRange: "Familles",
-    duration: "1.5-2 heures",
-    capacity: "40-80 smoothies",
+    duration: "2-3 heures",
+    capacity: "50-100 smoothies",
 
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Ce forfait unique combine un vélo adapté aux enfants et un vélo pour adultes, créant une expérience intergénérationnelle où parents et enfants collaborent dans une compétition amicale pleine de rires et de complicité.",
-      image: "/images/parent-child-bikes.jpg",
+        "Ce forfait unique combine un vélo adapté aux enfants et un vélo pour adultes, créant une expérience intergénérationnelle où parents et enfants collaborent dans une compétition amicale pleine de rires et de complicité. Complicité, rires et smoothies délicieux - tout en un!",
+      image: "/images/Packages-596-Edit.jpg",
       includes: [
         "1 vélo pour enfant + 1 vélo pour adulte",
         "Moniteurs de vitesse + tableau des scores en direct",
         "Animateur dynamique & ambiance festive",
-        "40-80 smoothies familiaux",
         "Médaille pour l'équipe gagnante",
         "Moments de complicité, rires et smoothies délicieux en un seul événement!",
       ],
@@ -504,13 +489,13 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est parfait pour créer des liens familiaux forts tout en offrant une expérience ludique et saine qui plaira aux parents comme aux enfants.",
-      image: "/images/family-event.jpg",
+      image: "/images/Packages-596-Edit.jpg",
       perfectFor: [
-        "Événements scolaires et journées portes ouvertes",
+        "Écoles, festivals et fêtes familiales",
+        "Événements de quartier",
         "Festivals familiaux et fêtes de quartier",
         "Célébrations multigénérationnelles",
         "Événements communautaires axés sur la famille",
-        "Activités de garderies et centres de loisirs",
       ],
       backgroundColor: "#f0b860",
     },
@@ -554,33 +539,31 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Complicité",
+        title: "Option 1",
         price: "399",
-        duration: "1.5 heures",
+        duration: "2 heures",
         smoothies: "50",
         includes: [
-          "1 vélo enfant + 1 vélo adulte",
-          "50 smoothies familiaux",
-          "1.5 heures de défis parents-enfants",
-          "Animation familiale adaptée",
-          "Médailles souvenirs",
-          "Ambiance festive et musicale",
+          "50 smoothies + 2 heures de compétition",
+          "1 vélo pour enfant + 1 vélo pour adulte",
+          "Moniteurs de vitesse + tableau des scores en direct",
+          "Animateur dynamique & ambiance festive",
+          "Médaille pour l'équipe gagnante",
         ],
         idealFor:
           "Parfait pour les petits événements familiaux et célébrations intimes.",
       },
       {
-        title: "Option Festival Familial",
+        title: "Option 2",
         price: "549",
         duration: "3 heures",
         smoothies: "100",
         includes: [
-          "1 vélo enfant + 1 vélo adulte",
-          "100 smoothies énergisants",
-          "3 heures d'énergie et de plaisir familial",
-          "Défis variés et jeux interactifs",
-          "Cérémonie de remise des médailles",
-          "Animation professionnelle",
+          "100 smoothies + 3 heures d'énergie et de plaisir",
+          "1 vélo pour enfant + 1 vélo pour adulte",
+          "Moniteurs de vitesse + tableau des scores en direct",
+          "Animateur dynamique & ambiance festive",
+          "Médaille pour l'équipe gagnante",
           "Photos souvenir offertes",
         ],
         idealFor:
@@ -593,26 +576,24 @@ export const packagesData = {
   "la-smoothie-parade": {
     id: "la-smoothie-parade",
     title: "La Smoothie Parade",
-    tagline: "L'expérience ultime pour les grands événements!",
+    tagline: "Parfait pour les grandes foules et encore plus de plaisir!",
     heroDescription:
-      "Ce forfait festif comprend 2 grands vélos mélangeurs et 1 petit (pour les enfants de 6 ans et plus), parfait pour les événements qui appellent à l'excitation, aux couleurs et à la communauté.",
+      "Ce forfait festif comprend 2 grands vélos mélangeurs et 1 petit (pour les enfants de 6 ans et plus), parfait pour les événements qui appellent à l'excitation, aux couleurs et à la communauté. Laissez vos invités pédaler pour créer des smoothies délicieux avec notre installation interactive!",
     ageRange: "Tous âges",
     duration: "4-8 heures",
-    capacity: "300-500 smoothies",
+    capacity: "200+ smoothies",
 
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Notre forfait le plus spectaculaire! Avec trois vélos mélangeurs, cette installation crée une véritable attraction qui captive et engage les foules pendant des heures. Parfait pour les événements d'envergure qui veulent marquer les esprits.",
-      image: "/images/smoothie-parade.jpg",
+        "Notre forfait le plus spectaculaire! Avec trois vélos mélangeurs (2 grands + 1 petit), cette installation crée une véritable attraction qui captive et engage les foules pendant des heures. Parfait pour les événements d'envergure qui veulent marquer les esprits. Apportez l'énergie. Mélangez le plaisir.",
+      image: "/images/velo-smoothie-1.jpg",
       includes: [
         "3 vélos mélangeurs (2 grands + 1 petit)",
-        "300-500 smoothies aux fruits frais",
-        "4-8 heures d'animation continue",
-        "Panneaux de menu et signalétique complète",
-        "Table d'installation premium",
-        "Animation spectaculaire et musique",
-        "Équipe d'animateurs dédiée",
+        "200 smoothies aux fruits frais",
+        "Panneaux de menu",
+        "Table d'installation",
+        "La Smoothie Parade est votre solution pour des expériences de groupe inoubliables - à l'intérieur ou à l'extérieur!",
       ],
       backgroundColor: "#ec634c",
     },
@@ -621,14 +602,14 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est conçu pour les événements de grande envergure qui nécessitent une attraction majeure capable de divertir et d'engager de grandes foules pendant des heures.",
-      image: "/images/big-crowd-event.jpg",
+      image: "/images/1000099697.png",
       perfectFor: [
-        "Grands festivals et événements communautaires",
-        "Activations d'entreprise majeures",
-        "Événements scolaires et universitaires",
-        "Centres commerciaux et espaces publics",
-        "Conférences et salons professionnels",
-        "Célébrations familiales d'envergure",
+        "Activations corporatives",
+        "Festivals et événements communautaires",
+        "Journées scolaires ou universitaires",
+        "Centres commerciaux",
+        "Team building et conférences",
+        "Célébrations familiales ou de vacances",
       ],
       backgroundColor: "#f0b860",
     },
@@ -672,58 +653,20 @@ export const packagesData = {
 
     options: [
       {
-        title: "Option Festival",
+        title: "Installation Standard",
         price: "999",
-        duration: "4 heures",
+        duration: "Variable",
         smoothies: "200",
         includes: [
           "3 vélos mélangeurs (2 grands + 1 petit)",
-          "200 smoothies frais variés",
-          "4 heures d'animation continue",
+          "200 smoothies aux fruits frais",
+          "Panneaux de menu",
+          "Table d'installation",
           "Installation complète",
-          "Équipe d'animation",
-          "Musique et ambiance festive",
         ],
         idealFor:
           "Parfait pour les festivals moyens et événements communautaires.",
-      },
-      {
-        title: "Option Spectacle Premium",
-        price: "1499",
-        duration: "6 heures",
-        smoothies: "350",
-        includes: [
-          "3 vélos mélangeurs premium",
-          "350 smoothies gourmet",
-          "6 heures de spectacle continu",
-          "Personnalisation de marque incluse",
-          "Installation scénographique",
-          "Équipe d'animation professionnelle",
-          "Système sonore et éclairage",
-          "Documentation photo/vidéo",
-        ],
-        idealFor:
-          "Idéal pour les grands événements corporatifs et activations majeures.",
         featured: true,
-      },
-      {
-        title: "Option Méga-Événement",
-        price: "1999",
-        duration: "8 heures",
-        smoothies: "500",
-        includes: [
-          "3 vélos mélangeurs haut de gamme",
-          "500 smoothies premium",
-          "8 heures de divertissement",
-          "Personnalisation complète",
-          "Installation spectaculaire",
-          "Équipe d'animation dédiée",
-          "Technologies interactives",
-          "Service traiteur smoothies",
-          "Couverture média incluse",
-        ],
-        idealFor:
-          "Parfait pour les méga-événements et festivals d'envergure nationale.",
       },
     ],
   },
@@ -731,9 +674,9 @@ export const packagesData = {
   signature: {
     id: "signature",
     title: "Forfait Signature",
-    tagline: "Entièrement personnalisé pour votre marque!",
+    tagline: "Ajoutez votre saveur au plaisir!",
     heroDescription:
-      "Rendez votre événement unique avec notre forfait de marque événementielle Signature. Solution premium avec personnalisation complète pour les activations de marque haut de gamme.",
+      "Faites ressortir votre événement avec notre forfait de marque d'événement Signature. Transformez n'importe quel événement en une expérience unique et mémorable avec Voilà Vélo!",
     ageRange: "Sur mesure",
     duration: "Flexible",
     capacity: "Sur mesure",
@@ -741,16 +684,14 @@ export const packagesData = {
     mainSection: {
       title: "Qu'est-ce qui est inclus?",
       description:
-        "Notre forfait le plus exclusif, entièrement personnalisable selon vos besoins exacts. De la conception à l'exécution, nous créons une expérience unique qui reflète parfaitement votre marque et vos objectifs.",
-      image: "/images/signature-branding.jpg",
+        "Que ce soit un événement corporatif, une activation de marque ou une célébration personnelle, nous offrons des options de personnalisation sur mesure pour mettre en valeur votre identité - à la manière smoothie! Contactez-nous pour rendre votre événement unique!",
+      image: "/images/Signature package2.jpg",
       includes: [
         "Gobelets personnalisés à votre marque",
         "Housses de roues imprimées double face",
-        "Panneaux sandwich à cadre A personnalisés",
+        "Panneaux sandwich à cadre A",
         "Décorations de table à votre style",
         "Conception graphique sur mesure",
-        "Installation scénographique personnalisée",
-        "Service concierge dédié",
       ],
       backgroundColor: "#4d4d4d",
     },
@@ -759,14 +700,13 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait premium est conçu pour les marques et organisations qui exigent l'excellence et veulent créer une expérience totalement unique et mémorable.",
-      image: "/images/premium-branding.jpg",
+      image: "/images/Signature package2.jpg",
       perfectFor: [
-        "Événements corporatifs haut de gamme",
-        "Activations de marque premium",
+        "Événements corporatifs",
         "Campagnes de sensibilisation de marque",
-        "Lancements de produits exclusifs",
-        "Mariages et célébrations privées de luxe",
-        "Événements VIP et galas",
+        "Festivals scolaires",
+        "Célébrations communautaires",
+        "Mariages, anniversaires et fêtes privées",
       ],
       backgroundColor: "#ec634c",
     },
@@ -810,56 +750,21 @@ export const packagesData = {
 
     options: [
       {
-        title: "Signature Essentiel",
+        title: "Forfait Signature sur mesure",
         price: "Sur devis",
         duration: "Flexible",
         smoothies: "Selon besoins",
         includes: [
+          "Gobelets personnalisés à votre marque",
+          "Housses de roues imprimées double face",
+          "Panneaux sandwich à cadre A",
+          "Décorations de table à votre style",
           "Consultation approfondie",
-          "Personnalisation de base",
-          "Gobelets et signalétique sur mesure",
-          "Installation personnalisée",
           "Service premium",
-          "Suivi post-événement",
         ],
         idealFor:
-          "Parfait pour les événements corporatifs moyens avec besoins spécifiques.",
-      },
-      {
-        title: "Signature Premium",
-        price: "Sur devis",
-        duration: "Flexible",
-        smoothies: "Selon besoins",
-        includes: [
-          "Conception graphique complète",
-          "Personnalisation totale",
-          "Installation scénographique",
-          "Service concierge dédié",
-          "Technologies interactives",
-          "Documentation professionnelle",
-          "Suivi et optimisation",
-        ],
-        idealFor:
-          "Idéal pour les activations de marque premium et événements VIP.",
+          "Parfait pour tous types d'événements nécessitant une personnalisation complète.",
         featured: true,
-      },
-      {
-        title: "Signature Exclusif",
-        price: "Sur devis",
-        duration: "Flexible",
-        smoothies: "Selon besoins",
-        includes: [
-          "Conception créative exclusive",
-          "Développement sur mesure",
-          "Technologies innovantes",
-          "Équipe dédiée complète",
-          "Service white-glove",
-          "Couverture média",
-          "Analyse ROI détaillée",
-          "Garantie satisfaction",
-        ],
-        idealFor:
-          "Parfait pour les événements d'exception et campagnes nationales.",
       },
     ],
   },

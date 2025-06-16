@@ -46,18 +46,15 @@ export function TestimonialsSection() {
   const currentTestimonialData = testimonials[currentTestimonial]
 
   return (
-    <section className="testimonials-section py-16 md:py-24 bg-creative-purple/10 relative overflow-hidden">
+    <section className="testimonials-section py-16 md:py-24 bg-creative-purple text-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="section-header text-center mb-12">
-          <h2 className="section-title text-3xl md:text-4xl font-bold text-creative-purple">{t('home.testimonials.title')}</h2>
+          <h2 className="section-title text-3xl md:text-4xl font-bold text-white">{t('home.testimonials.title')}</h2>
           <div className="w-24 h-1 bg-creative-purple mx-auto my-4"></div>
-          <p className="text-lg text-dark-charcoal font-medium">{t('home.testimonials.subtitle')}</p>
+          <p className="text-lg text-white font-medium">{t('home.testimonials.subtitle')}</p>
         </div>
         
         {/* Decorative elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-creative-purple/10 -z-10"></div>
-        <div className="absolute bottom-10 right-10 w-48 h-48 rounded-full bg-creative-purple/10 -z-10"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-creative-purple/10 -z-10"></div>
 
         <div className="testimonials-carousel max-w-4xl mx-auto">
           <div className="testimonial-card bg-white rounded-2xl p-8 md:p-12 text-center shadow-lg border-t-4 border-t-creative-purple transform -rotate-1 hover:rotate-0 transition-all duration-300">

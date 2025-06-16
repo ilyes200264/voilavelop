@@ -11,6 +11,37 @@
     "description2": "Faites de votre prochain événement un succès amusant et sain! Nous avons de l'expérience dans l'organisation d'événements pop-up uniques pour répondre à vos besoins. Choisissez l'un de nos forfaits populaires ou contactez-nous pour une soumission avant qu'on soit tous pédalés!",
     "ctaButton": "EN SAVOIR PLUS"
   },
+  "whyChooseWorkshop": {
+    "title": "Pourquoi choisir notre atelier Voilà Vélo?",
+    "subtitle": "Parce que c'est amusant, durable et inoubliable!",
+    "description": "Chez Voilà Vélo, nous croyons que l'apprentissage, le mouvement et le plaisir peuvent aller de pair. Notre atelier Smoothie Vélo est plus qu'une simple activité — c'est une expérience qui inspire des habitudes saines, un smoothie alimenté par pédalage à la fois.",
+    "features": {
+      "ecoFriendly": {
+        "title": "Écologique et sans énergie",
+        "description": "Aucune électricité nécessaire! Les smoothies sont mélangés par la puissance de pédalage des participants — une activité zéro émission, 100% alimentée par l'humain qui rend la durabilité excitante."
+      },
+      "sustainability": {
+        "title": "Une approche pratique de la durabilité",
+        "description": "Les participants deviennent créateurs, pas seulement consommateurs. C'est une façon unique de comprendre l'impact de nos actions, tout en embrassant l'effort physique et la conscience environnementale."
+      },
+      "healthy": {
+        "title": "Sain, savoureux et joyeux",
+        "description": "Nos smoothies sont faits sur place avec des ingrédients frais et colorés et une grande dose de plaisir — combinant nutrition et mouvement pour tous les âges."
+      },
+      "events": {
+        "title": "Parfait pour tous types d'événements",
+        "description": "Des écoles et festivals aux événements corporatifs ou communautaires — notre atelier s'adapte à votre foule. C'est inclusif, interactif et inoubliable."
+      },
+      "values": {
+        "title": "Nous pédalons pour nos valeurs",
+        "description": "Nous utilisons des matériaux réutilisables ou compostables, réduisons les déchets et promouvons la consommation consciente — le tout dans une atmosphère vivante et accueillante."
+      }
+    },
+    "tagline": {
+      "part1": "Voilà Vélo Fruité:",
+      "part2": "Mélangé par Vous, Alimenté par le Plaisir!"
+    }
+  },
   "whyChoose": {
     "title": "Pourquoi choisir Voilà Vélo?",
     "subtitle": "Des smoothies délicieux et une expérience inoubliable",
@@ -173,10 +204,6 @@
       "noStraws": {
         "title": "Pailles\nNon merci!",
         "description": "Nous n'utilisons pas de pailles ou de couvercles lors de nos événements et encourageons nos clients à faire de même"
-      },
-      "zeroWaste": {
-        "title": "Zéro\nDéchet!",
-        "description": "Nous ne contribuons pas aux décharges lors de nos événements, recyclant et compostant tous nos déchets"
       },
       "foodWaste": {
         "title": "Lutte contre le\ngaspillage alimentaire!",

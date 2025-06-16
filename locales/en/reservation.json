@@ -9,6 +9,15 @@
   },
   "form": {
     "title": "Booking Form",
+    "personalInfo": {
+      "title": "Personal Information"
+    },
+    "eventInfo": {
+      "title": "Event Details"
+    },
+    "additionalInfo": {
+      "title": "Additional Information"
+    },
     "firstName": {
       "label": "First Name",
       "placeholder": "Your first name"
@@ -73,6 +82,8 @@
       "label": "Message (additional details)",
       "placeholder": "Share additional details about your event..."
     },
+    "newsletter": "I would like to receive event tips and special offers by email",
+    "confirmation": "We'll respond within 24 hours with a personalized quote for your event.",
     "submitButton": "Send Booking Request"
   },
   "sidebar": {
@@ -81,6 +92,11 @@
       "description": "We're here to guide you"
     },
     "contact": {
+      "address": {
+        "label": "Address",
+        "line1": "Voilà Vélo Fruité",
+        "line2": "Montreal, QC"
+      },
       "email": {
         "label": "Email",
         "value": "info@voilavelo.com"
