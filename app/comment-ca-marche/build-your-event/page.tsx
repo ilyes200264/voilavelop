@@ -1,21 +1,44 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { CheckCircle, ChevronRight, ChevronDown, ChevronUp, ArrowRight } from "lucide-react"
+import { ChevronDown, ChevronUp, ArrowRight, Building, Rocket, GraduationCap, 
+         Party, Tent, Heart, CheckCircle, ChevronRight } from "lucide-react"
+import { 
+  MotionSection, 
+  ScrollReveal, 
+  StaggerContainer, 
+  MotionDiv, 
+  AnimatedImage,
+  TextReveal,
+  RedLineSeparator,
+  ImageMaskReveal
+} from "@/components/motion/motion-components"
 import { useI18n } from "@/lib/i18n"
 
 export default function BuildYourEventPage() {
-  const { t } = useI18n()
+  const { t } = useI18n("build-your-event")
   const [currentStep, setCurrentStep] = useState(1)
   const [openFaq, setOpenFaq] = useState<number | null>(0) // Open first FAQ by default
-  
+
+  // Use proper namespace format
   const steps = t<Array<{ number: number; name: string }>>("steps", [])
   const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes", [])
-  const faqItems = t<any[]>('faq.items', [])
+  const faqItems = t<any[]>('faq:categories[0].faqs', []).slice(0, 5)
+
+  // Event category images and descriptions
+  const eventImages = [
+    { id: "corporate", image: "/images/corporate-events.jpg" },
+    { id: "brand-activation", image: "/images/event-2.jpg" },
+    { id: "school", image: "/images/event-3.jpg" },
+    { id: "private", image: "/images/gallery-3.jpg" },
+    { id: "festival", image: "/images/festivals.jpg" },
+    { id: "nonprofit", image: "/images/gallery-1.jpg" }
+  ]
 
   const handleNext = () => {
     if (currentStep < steps.length) {
@@ -35,360 +58,243 @@ export default function BuildYourEventPage() {
     setOpenFaq(openFaq === index ? null : index)
   }
 
+  // Helper function to get icon component
+  const getIconComponent = (iconName: string) => {
+    switch (iconName) {
+      case "🏢": return <Building className="h-12 w-12" />
+      case "🚀": return <Rocket className="h-12 w-12" />
+      case "🎓": return <GraduationCap className="h-12 w-12" />
+      case "🎉": return <Party className="h-12 w-12" />
+      case "🎪": return <Tent className="h-12 w-12" />
+      case "💝": return <Heart className="h-12 w-12" />
+      default: return <Building className="h-12 w-12" />
+    }
+  }
+
   return (
     <div className="min-h-screen">
       <Header />
-
       <main>
-        {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-accent-green to-trust-blue text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up" style={{animationDuration: '0.8s'}}>
-              {t("title")}
-            </h1>
-            <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8 animate-scale-in" style={{animationDuration: '1s', animationDelay: '0.3s', animationFillMode: 'both'}}></div>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up" style={{animationDuration: '0.8s', animationDelay: '0.5s', animationFillMode: 'both'}}>
-              {t("subtitle")}
-            </p>
+        {/* Hero Section styled like home page hero */}
+        <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div className="hero-video-container absolute inset-0">
+            <div
+              className="hero-video absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('/images/outdoor.jpg')`,
+              }}
+            />
+            <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
           </div>
-        </section>
 
-        {/* Steps Section */}
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-4 max-w-5xl">
-            {/* Step Progress */}
-            <div className="step-progress mb-12">
-              <div className="flex items-center justify-between">
-                {(steps || []).map((step) => (
-                  <div key={step.number} className="step-item flex-1 relative">
-                    <div
-                      className={`step-circle w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 ${
-                        step.number <= currentStep ? "bg-accent-green text-white" : "bg-gray-200 text-gray-500"
-                      } shadow-md transition-all duration-300`}
-                    >
-                      {step.number < currentStep ? (
-                        <CheckCircle className="h-7 w-7" />
-                      ) : (
-                        <span className="text-lg font-semibold">{step.number}</span>
-                      )}
-                    </div>
-                    <div
-                      className={`step-name text-center text-sm md:text-base ${
-                        step.number <= currentStep ? "text-accent-green font-semibold" : "text-gray-500"
-                      }`}
-                    >
-                      {step.name}
-                    </div>
-                    {step.number < steps.length && (
-                      <div
-                        className={`absolute top-6 left-1/2 w-full h-1 ${
-                          step.number < currentStep ? "bg-accent-green" : "bg-gray-200"
-                        }`}
-                        style={{ transform: "translateY(-50%)" }}
-                      ></div>
-                    )}
-                  </div>
-                ))}
+          {/* Hero Content */}
+          <div className="hero-content relative z-10 text-center text-white px-4 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            {/* Left Side - Text Content */}
+            <div className="text-left px-6 md:px-12 py-16 bg-black/20 backdrop-blur-sm md:ml-12">
+              <div className="max-w-md">
+                {/* Simple, Bold Title */}
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-none">
+                  {t('title')}
+                </h1>
+                
+                {/* Clean Subtitle */}
+                <p className="text-xl md:text-2xl font-light mb-12 opacity-90">
+                  {t('subtitle')}
+                </p>
+
+                {/* Minimal Button */}
+                <Button 
+                  size="lg" 
+                  className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-8 py-4 text-lg font-medium inline-flex items-center transition-colors"
+                  onClick={() => document.getElementById('event-types')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  {t('navigation.continue')}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Step Content Sections */}
-        <section className={`py-16 ${currentStep % 2 === 0 ? 'bg-light-gray' : 'bg-white'}`}>
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="step-content bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
-              {currentStep === 1 && (
-                <div className="step-1 animate-fade-in-up" style={{animationDuration: '0.5s'}}>
-                  <h2 className="text-2xl md:text-3xl font-bold text-accent-green mb-6">{t("step1.title")}</h2>
-                  <div className="red-line-separator w-16 h-1 bg-accent-green mb-8"></div>
-                  <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-                    {t("step1.subtitle")}
-                  </p>
-
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                    {(eventTypes || []).map((type, index) => (
-                      <div
-                        key={index}
-                        className="event-type-card border border-gray-200 rounded-lg p-6 hover:border-accent-green hover:shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
-                        style={{animationDuration: '0.6s', animationDelay: `${0.1 + index * 0.1}s`, animationFillMode: 'both'}}
-                      >
-                        <div className="text-4xl mb-4 text-accent-green">{type.icon}</div>
-                        <h3 className="text-xl font-bold text-dark-charcoal mb-3">{type.title}</h3>
-                        <p className="text-gray-600">{type.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {currentStep === 2 && (
-                <div className="step-2 animate-fade-in-up" style={{animationDuration: '0.5s'}}>
-                  <h2 className="text-2xl md:text-3xl font-bold text-accent-green mb-6">{t("step2.title")}</h2>
-                  <div className="red-line-separator w-16 h-1 bg-accent-green mb-8"></div>
-                  <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-                    {t("step2.subtitle")}
-                  </p>
-
-                  <div className="grid md:grid-cols-2 gap-6 mb-8">
-                    <div className="form-group animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.1s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.eventDate")}</label>
-                      <input
-                        type="date"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                      />
-                    </div>
-                    <div className="form-group animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.2s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.startTime")}</label>
-                      <input
-                        type="time"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                      />
-                    </div>
-                    <div className="form-group animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.3s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.duration")}</label>
-                      <select className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent">
-                        {t<string[]>("step2.form.durationOptions", []).map((option, index) => (
-                          <option key={index} value={index + 1}>{option}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="form-group animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.4s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.participants")}</label>
-                      <input
-                        type="number"
-                        placeholder={t("step2.form.participantsPlaceholder")}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                      />
-                    </div>
-                    <div className="form-group md:col-span-2 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.5s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.location")}</label>
-                      <input
-                        type="text"
-                        placeholder={t("step2.form.locationPlaceholder")}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                      />
-                    </div>
-                    <div className="form-group md:col-span-2 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.6s'}}>
-                      <label className="block text-dark-charcoal font-medium mb-2">{t("step2.form.description")}</label>
-                      <textarea
-                        rows={4}
-                        placeholder={t("step2.form.descriptionPlaceholder")}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent resize-none"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {currentStep === 3 && (
-                <div className="step-3 animate-fade-in-up" style={{animationDuration: '0.5s'}}>
-                  <h2 className="text-2xl md:text-3xl font-bold text-accent-green mb-6">{t("step3.title")}</h2>
-                  <div className="red-line-separator w-16 h-1 bg-accent-green mb-8"></div>
-                  <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-                    {t("step3.subtitle")}
-                  </p>
-
-                  <div className="space-y-8 mb-8">
-                    <div className="option-group p-6 border border-gray-200 rounded-lg bg-light-gray/50 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.1s'}}>
-                      <h3 className="text-xl font-bold text-accent-green mb-6">{t("step3.bikes.title")}</h3>
-                      <div className="grid md:grid-cols-3 gap-4">
-                        {t<string[]>("step3.bikes.options", []).map((option, index) => (
-                          <label key={index} className="flex items-center space-x-3 p-4 border border-gray-200 rounded-md cursor-pointer hover:bg-white hover:shadow-md transition-all duration-300 bg-white">
-                            <input type="radio" name="bikes" className="text-accent-green focus:ring-accent-green h-5 w-5" />
-                            <span className="text-dark-charcoal font-medium">{option}</span>
-                          </label>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="option-group p-6 border border-gray-200 rounded-lg bg-light-gray/50 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.2s'}}>
-                      <h3 className="text-xl font-bold text-accent-green mb-6">{t("step3.smoothies.title")}</h3>
-                      <div className="grid md:grid-cols-3 gap-4">
-                        {t<string[]>("step3.smoothies.options", []).map((option, index) => (
-                          <label key={index} className="flex items-center space-x-3 p-4 border border-gray-200 rounded-md cursor-pointer hover:bg-white hover:shadow-md transition-all duration-300 bg-white">
-                            <input type="radio" name="smoothies" className="text-accent-green focus:ring-accent-green h-5 w-5" />
-                            <span className="text-dark-charcoal font-medium">{option}</span>
-                          </label>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="option-group p-6 border border-gray-200 rounded-lg bg-light-gray/50 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.3s'}}>
-                      <h3 className="text-xl font-bold text-accent-green mb-6">{t("step3.extras.title")}</h3>
-                      <div className="space-y-4">
-                        {t<Array<{title: string; description: string}>>("step3.extras.options", []).map((option, index) => (
-                          <label key={index} className="flex items-center space-x-4 p-4 border border-gray-200 rounded-md cursor-pointer hover:bg-white hover:shadow-md transition-all duration-300 bg-white">
-                            <input type="checkbox" className="text-accent-green focus:ring-accent-green h-5 w-5" />
-                            <div>
-                              <span className="block text-dark-charcoal font-medium text-lg">{option.title}</span>
-                              <span className="block text-gray-600 mt-1">{option.description}</span>
-                            </div>
-                          </label>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {currentStep === 4 && (
-                <div className="step-4 animate-fade-in-up" style={{animationDuration: '0.5s'}}>
-                  <h2 className="text-2xl md:text-3xl font-bold text-accent-green mb-6">{t("step4.title")}</h2>
-                  <div className="red-line-separator w-16 h-1 bg-accent-green mb-8"></div>
-                  <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-                    {t("step4.subtitle")}
-                  </p>
-
-                  <div className="summary p-6 bg-light-gray rounded-lg mb-8 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.1s'}}>
-                    <div className="grid md:grid-cols-2 gap-8">
-                      <div className="summary-group">
-                        <h3 className="text-xl font-bold text-accent-green mb-4">{t("step4.eventDetails.title")}</h3>
-                        <ul className="space-y-3">
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.eventDetails.type")}</span>
-                            <span className="text-dark-charcoal font-medium">Événement corporatif</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.eventDetails.date")}</span>
-                            <span className="text-dark-charcoal font-medium">JJ/MM/AAAA</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.eventDetails.time")}</span>
-                            <span className="text-dark-charcoal font-medium">HH:MM</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.eventDetails.duration")}</span>
-                            <span className="text-dark-charcoal font-medium">2 heures</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.eventDetails.location")}</span>
-                            <span className="text-dark-charcoal font-medium">Adresse complète</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="summary-group">
-                        <h3 className="text-xl font-bold text-accent-green mb-4">{t("step4.selectedOptions.title")}</h3>
-                        <ul className="space-y-3">
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.selectedOptions.bikes")}</span>
-                            <span className="text-dark-charcoal font-medium">2 vélos adultes</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.selectedOptions.smoothies")}</span>
-                            <span className="text-dark-charcoal font-medium">100 smoothies</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-gray-600 w-32">{t("step4.selectedOptions.extras")}</span>
-                            <ul className="text-dark-charcoal font-medium">
-                              <li>• Personnalisation avec votre marque</li>
-                              <li>• Animation et musique</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="contact-info p-6 border border-gray-200 rounded-lg bg-white mb-8 animate-fade-in-up" style={{animationDuration: '0.5s', animationDelay: '0.2s'}}>
-                    <h3 className="text-xl font-bold text-accent-green mb-6">{t("step4.contactInfo.title")}</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="form-group">
-                        <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.name")}</label>
-                        <input
-                          type="text"
-                          placeholder={t("step4.contactInfo.namePlaceholder")}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.email")}</label>
-                        <input
-                          type="email"
-                          placeholder={t("step4.contactInfo.emailPlaceholder")}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.phone")}</label>
-                        <input
-                          type="tel"
-                          placeholder={t("step4.contactInfo.phonePlaceholder")}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label className="block text-dark-charcoal font-medium mb-2">{t("step4.contactInfo.company")}</label>
-                        <input
-                          type="text"
-                          placeholder={t("step4.contactInfo.companyPlaceholder")}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Navigation Buttons */}
-            <div className="step-navigation flex justify-between mb-16">
-              <Button
-                variant="outline"
-                onClick={handleBack}
-                disabled={currentStep === 1}
-                className={`${currentStep === 1 ? "invisible" : ""} border-accent-green text-accent-green hover:bg-accent-green/5 px-6 py-3`}
-              >
-                {t("navigation.back")}
-              </Button>
-
-              {currentStep < steps.length ? (
-                <Button onClick={handleNext} className="bg-accent-green text-white px-8 py-3 shadow-md hover:shadow-lg transition-all">
-                  {t("navigation.continue")} <ChevronRight className="ml-2 h-5 w-5" />
-                </Button>
-              ) : (
-                <Link href="/merci">
-                  <Button className="bg-accent-green text-white px-8 py-3 shadow-md hover:shadow-lg transition-all">
-                    {t("navigation.submit")} <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-              )}
+            
+            {/* Right Side - Empty Space/Visual Balance */}
+            <div className="hidden md:block">
+              {/* Intentionally left empty for visual balance */}
             </div>
           </div>
         </section>
+
+        {/* Event Types Section styled like value proposition */}
+        <MotionSection id="event-types" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
+                {t("step1.title")}
+              </h2>
+              <RedLineSeparator className="w-16 mx-auto mb-8" />
+              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                {t("step1.subtitle")}
+              </p>
+            </ScrollReveal>
+
+            <StaggerContainer className="space-y-16">
+              {(eventTypes || []).map((type, index) => {
+                const eventImage = eventImages[index] || eventImages[0];
+                return (
+                  <MotionDiv
+                    key={index}
+                    variant="fadeUp"
+                    custom={index}
+                    className={`${index % 2 === 0 ? 'bg-primary-red' : 'bg-trust-blue'} rounded-2xl overflow-hidden shadow-xl`}
+                  >
+                    <div className="grid lg:grid-cols-2 gap-0">
+                      {/* Image Section */}
+                      <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                        <ImageMaskReveal className="h-64 lg:h-full">
+                          <Image 
+                            src={eventImage.image}
+                            alt={type.title} 
+                            width={800}
+                            height={600}
+                            className="w-full h-full object-cover"
+                          />
+                        </ImageMaskReveal>
+                      </div>
+
+                      {/* Content Section */}
+                      <div className={`p-8 lg:p-12 text-white ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                        <div className="flex items-center mb-6">
+                          <AnimatedImage hoverEffect="rotate" className="mr-4 text-white">
+                            {getIconComponent(type.icon)}
+                          </AnimatedImage>
+                          <h3 className="text-2xl md:text-3xl font-bold">{type.title}</h3>
+                        </div>
+                        
+                        <p className="text-lg mb-6 leading-relaxed opacity-90">
+                          {type.description}
+                        </p>
+
+                        <div className="mb-8">
+                          <h4 className="text-lg font-semibold mb-4">Avantages clés:</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-center">
+                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                              Expérience unique et mémorable
+                            </li>
+                            <li className="flex items-center">
+                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                              Adaptable à vos besoins spécifiques
+                            </li>
+                            <li className="flex items-center">
+                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                              Engagement actif des participants
+                            </li>
+                          </ul>
+                        </div>
+
+                        <AnimatedImage hoverEffect="lift">
+                          <Link href="/contact">
+                            <Button 
+                              className="bg-white text-dark-charcoal hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none"
+                            >
+                              Demander un devis
+                              <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                          </Link>
+                        </AnimatedImage>
+                      </div>
+                    </div>
+                  </MotionDiv>
+                );
+              })}
+            </StaggerContainer>
+          </div>
+        </MotionSection>
+
+        {/* Steps Section - Using the same style as benefits section */}
+        <MotionSection className="py-20 bg-accent-green text-white">
+          <div className="container mx-auto px-4">
+            <ScrollReveal className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Comment créer votre événement
+              </h2>
+              <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
+              <p className="text-lg md:text-xl max-w-3xl mx-auto">
+                Un processus simple en 4 étapes pour organiser votre événement Voilà Vélo
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+              {steps.map((step, index) => (
+                <MotionDiv
+                  key={step.number}
+                  variant="fadeUp"
+                  custom={index}
+                  className="text-center relative"
+                >
+                  <AnimatedImage 
+                    hoverEffect="bounce" 
+                    className="bg-white w-20 h-20 rounded-full flex items-center justify-center text-accent-green text-2xl font-bold mx-auto mb-8 shadow-lg"
+                  >
+                    <span className="text-3xl">{step.number}</span>
+                  </AnimatedImage>
+                  
+                  <h3 className="text-xl font-bold mb-4">{step.name}</h3>
+                  <p className="leading-relaxed opacity-90">
+                    {index === 0 && "Choisissez le type d'événement qui correspond à vos besoins"}
+                    {index === 1 && "Précisez la date, l'heure, le lieu et le nombre de participants"}
+                    {index === 2 && "Sélectionnez le nombre de vélos, smoothies et options supplémentaires"}
+                    {index === 3 && "Vérifiez tous les détails et soumettez votre demande"}
+                  </p>
+                </MotionDiv>
+              ))}
+            </div>
+            
+            {/* Call-to-action button */}
+            <ScrollReveal delay={0.5}>
+              <div className="mt-16 text-center">
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="/reserver">
+                    <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none">
+                      Réserver maintenant
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </AnimatedImage>
+              </div>
+            </ScrollReveal>
+          </div>
+        </MotionSection>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-light-gray">
+        <MotionSection className="py-20 bg-light-gray">
           <div className="container mx-auto px-4 max-w-5xl">
-            <div className="text-center mb-16">
+            <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-                Questions fréquemment posées
+                {t("faq:title")}
               </h2>
-              <div className="red-line-separator w-16 h-1 bg-accent-green mx-auto mb-8"></div>
+              <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Trouvez des réponses à toutes vos questions concernant la création d'événements personnalisés
+                {t("faq:subtitle")}
               </p>
-            </div>
+            </ScrollReveal>
 
-            <div className="faq-list max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
-              {(faqItems || []).slice(0, 5).map((item, index) => (
+            <div className="faq-list max-w-4xl mx-auto bg-white p-8 rounded-none shadow-lg">
+              {(faqItems || []).map((item, index) => (
                 <div 
                   key={index} 
-                  className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg animate-fade-in-up" 
-                  style={{animationDuration: '0.5s', animationDelay: `${0.2 + index * 0.1}s`, animationFillMode: 'both'}}
+                  className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg" 
                 >
                   <button
-                    className="faq-question w-full text-left py-6 px-4 flex justify-between items-center hover:text-accent-green transition-colors"
+                    className="faq-question w-full text-left py-6 px-4 flex justify-between items-center hover:text-primary-red transition-colors"
                     onClick={() => toggleFaq(index)}
                     aria-expanded={openFaq === index}
                   >
                     <h3 className="text-lg font-bold pr-4">{item.question}</h3>
-                    <span className="faq-toggle text-accent-green flex-shrink-0 bg-white p-2 rounded-full shadow-md">
+                    <span className="faq-toggle text-primary-red flex-shrink-0 bg-white p-2 rounded-full shadow-md">
                       {openFaq === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
                     </span>
                   </button>
                   {openFaq === index && (
-                    <div className="faq-answer pb-6 px-4 animate-fade-in-up">
+                    <div className="faq-answer pb-6 px-4">
                       <p className="text-gray-700 leading-relaxed">{item.answer}</p>
                     </div>
                   )}
@@ -397,46 +303,56 @@ export default function BuildYourEventPage() {
             </div>
 
             <div className="mt-16 text-center">
-              <Link href="/comment-ca-marche/faq">
-                <Button variant="outline" className="border-accent-green text-accent-green hover:bg-accent-green/5 px-8 py-3">
-                  Voir toutes les questions fréquentes <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <AnimatedImage hoverEffect="lift">
+                <Link href="/comment-ca-marche/faq">
+                  <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5 px-8 py-3 rounded-none">
+                    Voir toutes les questions fréquentes <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </AnimatedImage>
             </div>
           </div>
-        </section>
+        </MotionSection>
 
-        {/* Contact CTA Section */}
-        <section className="py-16 bg-accent-green text-white">
-          <div className="container mx-auto px-4 max-w-5xl">
+        {/* Final CTA Section - Styled like events page */}
+        <MotionSection className="py-20 bg-primary-red text-white">
+          <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Besoin d'aide pour créer votre événement parfait?
-              </h2>
-              <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8"></div>
-              <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-                Notre équipe est là pour vous aider! Contactez-nous directement et nous vous guiderons à chaque étape du processus.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link href="/contact">
-                  <Button className="bg-white text-accent-green px-8 py-3 font-bold hover:bg-gray-100 shadow-md">
-                    Nous contacter <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link href="tel:+1-XXX-XXX-XXXX">
-                  <Button 
-                    variant="outline" 
-                    className="border-white text-white hover:bg-white hover:text-accent-green px-8 py-3 font-bold"
-                  >
-                    Appelez-nous
-                  </Button>
-                </Link>
-              </div>
+              <ScrollReveal>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  Prêt à créer un événement mémorable?
+                </h2>
+                <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
+                <p className="text-xl mb-8 max-w-2xl mx-auto">
+                  Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.
+                </p>
+              </ScrollReveal>
+              
+              <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="/contact">
+                    <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none">
+                      Demander un devis
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </AnimatedImage>
+                
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="tel:+1XXXXXXXXXX">
+                    <Button 
+                      variant="outline" 
+                      className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-none"
+                    >
+                      Appelez-nous
+                    </Button>
+                  </Link>
+                </AnimatedImage>
+              </StaggerContainer>
             </div>
           </div>
-        </section>
+        </MotionSection>
       </main>
-
       <Footer />
     </div>
   )

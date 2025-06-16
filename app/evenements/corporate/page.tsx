@@ -17,7 +17,8 @@ import {
 import { useI18n } from "@/lib/i18n"
 
 export default function CorporateEventsPage() {
-  const { t } = useI18n("corporate-events");
+  // Make sure to use the namespace with a colon when referencing specific translations
+  const { t } = useI18n();
   
   // Icons for benefits
   const benefitIcons = [
@@ -34,7 +35,7 @@ export default function CorporateEventsPage() {
   const benefits = t<Array<{
     title: string;
     description: string;
-  }>>("benefits.items", []).map((benefit, index) => ({
+  }>>("corporate-events:benefits.items", []).map((benefit, index) => ({
     ...benefit,
     icon: benefitIcons[index],
     color: benefitColors[index]
@@ -48,7 +49,7 @@ export default function CorporateEventsPage() {
     price: string;
     features: string[];
     popular?: boolean;
-  }>>("packages.items", []);
+  }>>("corporate-events:packages.items", []);
   
   // Get testimonials from translations
   const testimonials = t<Array<{
@@ -57,13 +58,13 @@ export default function CorporateEventsPage() {
     position: string;
     company: string;
     rating: number;
-  }>>("testimonials.items", []).map((testimonial, index) => ({
+  }>>("corporate-events:testimonials.items", []).map((testimonial, index) => ({
     ...testimonial,
     image: `/images/testimonial-${index + 1}.jpg`
   }));
   
   // Get stats from translations
-  const stats = t<Array<{ number: string; label: string }>>("stats", []);
+  const stats = t<Array<{ number: string; label: string }>>("corporate-events:stats", []);
 
   return (
     <div className="min-h-screen">
@@ -76,15 +77,15 @@ export default function CorporateEventsPage() {
             <div className="max-w-4xl mx-auto text-white">
               <div className="flex items-center text-sm mb-4 opacity-90">
                 <Link href="/evenements" className="hover:underline">
-                  {t("breadcrumb.events")}
+                  {t("corporate-events:breadcrumb.events")}
                 </Link>
                 <span className="mx-2">/</span>
-                <span>{t("breadcrumb.corporate")}</span>
+                <span>{t("corporate-events:breadcrumb.corporate")}</span>
               </div>
               
               <TextReveal>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  {t("hero.title")}
+                  {t("corporate-events:hero.title")}
                 </h1>
               </TextReveal>
               
@@ -92,14 +93,14 @@ export default function CorporateEventsPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl">
-                  {t("hero.description")}
+                  {t("corporate-events:hero.description")}
                 </p>
               </ScrollReveal>
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    {t("hero.requestQuote")}
+                    {t("corporate-events:hero.requestQuote")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>
@@ -110,7 +111,7 @@ export default function CorporateEventsPage() {
                       variant="outline" 
                       className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
                     >
-                      {t("hero.viewTeamBuilding")}
+                      {t("corporate-events:hero.viewTeamBuilding")}
                     </Button>
                   </Link>
                 </AnimatedImage>
@@ -147,11 +148,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("benefits.title")}
+                {t("corporate-events:benefits.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                {t("benefits.subtitle")}
+                {t("corporate-events:benefits.subtitle")}
               </p>
             </ScrollReveal>
 
@@ -203,20 +204,20 @@ export default function CorporateEventsPage() {
                   <div className="flex items-center mb-6">
                     <Building className="h-12 w-12 mr-4" />
                     <h2 className="text-3xl md:text-4xl font-bold">
-                      {t("corporateExperience.title")}
+                      {t("corporate-events:corporateExperience.title")}
                     </h2>
                   </div>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    {t("corporateExperience.description")}
+                    {t("corporate-events:corporateExperience.description")}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {t<string[]>("corporateExperience.features", []).map((feature, index) => (
+                    {t<string[]>("corporate-events:corporateExperience.features", []).map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{feature}</span>
@@ -229,7 +230,7 @@ export default function CorporateEventsPage() {
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
                       <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-xl">
-                        {t("corporateExperience.planEventButton")}
+                        {t("corporate-events:corporateExperience.planEventButton")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </AnimatedImage>
@@ -245,11 +246,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("packages.title")}
+                {t("corporate-events:packages.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                {t("packages.subtitle")}
+                {t("corporate-events:packages.subtitle")}
               </p>
             </ScrollReveal>
 
@@ -268,7 +269,7 @@ export default function CorporateEventsPage() {
                   >
                     {pkg.popular && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        {t("packages.mostPopular")}
+                        {t("corporate-events:packages.mostPopular")}
                       </div>
                     )}
                     
@@ -300,7 +301,7 @@ export default function CorporateEventsPage() {
                               : 'bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white'
                           }`}
                         >
-                          {t("packages.selectPackage")}
+                          {t("corporate-events:packages.selectPackage")}
                         </Button>
                       </div>
                     </div>
@@ -316,7 +317,7 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("testimonials.title")}
+                {t("corporate-events:testimonials.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
             </ScrollReveal>
@@ -367,19 +368,19 @@ export default function CorporateEventsPage() {
               <StaggerContainer>
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    {t("roi.title")}
+                    {t("corporate-events:roi.title")}
                   </h2>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    {t("roi.description")}
+                    {t("corporate-events:roi.description")}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {t<string[]>("roi.benefits", []).map((benefit, index) => (
+                    {t<string[]>("corporate-events:roi.benefits", []).map((benefit, index) => (
                       <div key={index} className="flex items-center">
                         <TrendingUp className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{benefit}</span>
@@ -392,10 +393,10 @@ export default function CorporateEventsPage() {
               <AnimatedImage hoverEffect="scale">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <div className="text-center">
-                    <div className="text-6xl font-bold mb-4">{t("roi.roiCard.value")}</div>
-                    <div className="text-xl mb-6">{t("roi.roiCard.title")}</div>
+                    <div className="text-6xl font-bold mb-4">{t("corporate-events:roi.roiCard.value")}</div>
+                    <div className="text-xl mb-6">{t("corporate-events:roi.roiCard.title")}</div>
                     <div className="text-lg opacity-90">
-                      {t("roi.roiCard.subtitle")}
+                      {t("corporate-events:roi.roiCard.subtitle")}
                     </div>
                   </div>
                 </div>
@@ -409,11 +410,11 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                {t("finalCta.title")}
+                {t("corporate-events:finalCta.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-xl mb-8">
-                {t("finalCta.description")}
+                {t("corporate-events:finalCta.description")}
               </p>
             </ScrollReveal>
             
@@ -421,7 +422,7 @@ export default function CorporateEventsPage() {
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
                   <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    {t("finalCta.contactUs")}
+                    {t("corporate-events:finalCta.contactUs")}
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -433,7 +434,7 @@ export default function CorporateEventsPage() {
                     variant="outline" 
                     className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
                   >
-                    {t("finalCta.createEvent")}
+                    {t("corporate-events:finalCta.createEvent")}
                   </Button>
                 </Link>
               </AnimatedImage>
