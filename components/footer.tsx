@@ -96,37 +96,37 @@ export function Footer() {
               <ul className="footer-menu space-y-2">
                 <li>
                   <Link href="/forfaits/la-petite-koki/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.laPetiteKoki')}
+                    {t('common.packages_submenu.laPetiteKoki')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/pop-solo/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.popSolo')}
+                    {t('common.packages_submenu.popSolo')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/double-fun/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.doubleFun')}
+                    {t('common.packages_submenu.doubleFun')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/ready-set-blend/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.readySetBlend')}
+                    {t('common.packages_submenu.readySetBlend')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/defi-parent-enfant/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.parentChildChallenge')}
+                    {t('common.packages_submenu.parentChildChallenge')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/la-smoothie-parade/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.smoothieParade')}
+                    {t('common.packages_submenu.smoothieParade')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/forfaits/signature/" className="hover:text-secondary-yellow transition-colors">
-                    {t('packages_submenu.signature')}
+                    {t('common.packages_submenu.signature')}
                   </Link>
                 </li>
               </ul>
