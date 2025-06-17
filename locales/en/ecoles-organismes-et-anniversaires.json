@@ -1,0 +1,161 @@
+{
+  "breadcrumb": {
+    "events": "Events",
+    "schools": "Schools, Organizations & Birthdays"
+  },
+  
+  "hero": {
+    "title": "Bring people together around smoothies, smiles, and lots of fun!",
+    "description": "Looking for a creative way to raise funds, connect with your community, or celebrate a special day? Our smoothie bike experiences are perfect for school events and birthday parties!",
+    "requestQuote": "Request an educational quote",
+    "viewPackage": "View children's package"
+  },
+  
+  "stats": [
+    { "number": "500+", "label": "Successful school events" },
+    { "number": "98%", "label": "Teacher satisfaction rate" },
+    { "number": "40%", "label": "Discount for schools" },
+    { "number": "15k+", "label": "Children educated" }
+  ],
+  
+  "educational": {
+    "title": "Learning while having fun",
+    "description": "Our workshops transform learning into an adventure! Children discover nutrition, environment, and physical activity through an unforgettable interactive experience.",
+    "benefitsTitle": "Educational benefits:",
+    "benefits": [
+      "Learning about nutrition and healthy habits",
+      "Environmental and sustainability awareness",
+      "Motor skills and coordination development",
+      "Teamwork and cooperation",
+      "Self-confidence and personal achievement"
+    ],
+    "programButton": "Educational program"
+  },
+  
+  "benefits": {
+    "title": "Why do our events work so well?",
+    "subtitle": "We offer discounted packages for schools and non-profit organizations, making this experience accessible to all.",
+    "items": [
+      {
+        "title": "Educational and fun activity",
+        "description": "Combine learning and fun by teaching nutrition, physical activity, and sustainability in an interactive way."
+      },
+      {
+        "title": "Effective fundraising",
+        "description": "Create a memorable event that attracts participants and generates significant revenue for your cause."
+      },
+      {
+        "title": "Community engagement",
+        "description": "Bring together families, students, and community around a positive activity that strengthens social bonds."
+      },
+      {
+        "title": "Unforgettable memories",
+        "description": "Create precious moments and memorable photos that participants will cherish for a long time."
+      }
+    ]
+  },
+  
+  "pricing": {
+    "title": "Accessibility for all",
+    "description": "We believe every child deserves access to enriching educational experiences. That's why we offer special rates for educational institutions and non-profit organizations.",
+    "features": [
+      "Packages adapted to school budgets",
+      "Personalized educational planning",
+      "Pedagogical support included",
+      "Flexibility for special events"
+    ],
+    "discount": {
+      "value": "40%",
+      "title": "discount for schools",
+      "subtitle": "Preferential rates for education"
+    }
+  },
+  
+  "packages": {
+    "title": "Our specialized packages",
+    "subtitle": "Solutions designed for education, organizations, and family celebrations",
+    "mostPopular": "Most popular",
+    "selectPackage": "Choose this package",
+    "items": [
+      {
+        "title": "Small School",
+        "duration": "1-2 hours",
+        "people": "25-50 children",
+        "price": "Starting at $349",
+        "features": [
+          "1 child-adapted bike",
+          "25-50 educational smoothies",
+          "Educational animation included",
+          "Nutrition activities",
+          "Educational material provided",
+          "Reduced rate for schools"
+        ]
+      },
+      {
+        "title": "Big Celebration",
+        "duration": "2-4 hours",
+        "people": "50-150 people", 
+        "price": "Starting at $599",
+        "features": [
+          "2 bikes (1 child + 1 adult)",
+          "100-150 smoothies for everyone",
+          "Intergenerational family challenges",
+          "Complete festive animation",
+          "Thematic decoration",
+          "Special birthday/graduation package",
+          "Souvenir photos included"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Premium Fundraising",
+        "duration": "Half-day/full day",
+        "people": "100-300 people",
+        "price": "Starting at $899",
+        "features": [
+          "Multi-bike installation",
+          "Unlimited smoothie production",
+          "Dedicated animation team",
+          "Awareness stand included",
+          "Marketing and promotion support",
+          "Percentage donated to your cause",
+          "Detailed impact report"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Testimonials from our partners",
+    "items": [
+      {
+        "quote": "Our students loved learning about nutrition while having fun! The team perfectly adapted the activity to our educational program.",
+        "author": "Marie-Claire Dubois",
+        "position": "Principal",
+        "company": "Sainte-Famille Elementary School",
+        "rating": 5
+      },
+      {
+        "quote": "Our fundraiser exceeded all our goals! Families came in large numbers and the atmosphere was fantastic.",
+        "author": "Jean-François Roy",
+        "position": "President",
+        "company": "Parents Committee",
+        "rating": 5
+      },
+      {
+        "quote": "My daughter's birthday was magical! All the children participated with joy and the parents loved the experience.",
+        "author": "Sophie Tremblay",
+        "position": "Organizing mom",
+        "company": "Private birthday party",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "finalCta": {
+    "title": "Let's create a memorable event together!",
+    "description": "Whether it's for education, celebration, or fundraising, we adapt our service to your specific needs and budget.",
+    "quoteButton": "Request an educational quote",
+    "discussButton": "Discuss my project"
+  }
+}

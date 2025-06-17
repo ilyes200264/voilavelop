@@ -123,6 +123,22 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                     {currentPackage.mainSection.description}
                   </p>
                 </MotionDiv>
+                
+                {currentPackage.id === "la-petite-koki" && (
+                  <MotionDiv variant="fadeUp">
+                    <p className="text-xl leading-relaxed mb-8 text-black font-bold italic">
+                      "Blended by your kids, powered by fun!"
+                    </p>
+                  </MotionDiv>
+                )}
+                
+                {currentPackage.id === "pop-solo" && (
+                  <MotionDiv variant="fadeUp">
+                    <p className="text-xl leading-relaxed mb-8 text-black font-bold italic">
+                      "Mélangé par vous, alimenté par le plaisir!"
+                    </p>
+                  </MotionDiv>
+                )}
 
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-xl font-semibold mb-4">{t('packageDetail.whatsIncluded', "Qu'est-ce qui est inclus?")}</h5>
@@ -245,57 +261,6 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
           </div>
         </MotionSection>
 
-        {/* Reviews Section */}
-        <MotionSection 
-          className="py-20 text-center"
-          style={{ backgroundColor: currentPackage.reviewsSection.backgroundColor }}
-        >
-          <div className="container mx-auto px-4">
-            <TextReveal>
-              <h2 className="text-5xl md:text-6xl font-normal text-black mb-4 font-great-vibes fancy-title">
-                {currentPackage.reviewsSection.title}
-              </h2>
-            </TextReveal>
-            
-            <ScrollReveal delay={0.3}>
-              <p className="text-xl text-white mb-12">
-                {currentPackage.reviewsSection.subtitle}
-              </p>
-            </ScrollReveal>
-
-            <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {(currentPackage.reviewsSection?.testimonials || []).map((testimonial, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                >
-                  <AnimatedImage hoverEffect="lift" className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                    <StarRating rating={testimonial.rating} />
-                    
-                    <blockquote className="text-lg text-gray-700 italic mb-6">
-                      "{testimonial.text}"
-                    </blockquote>
-                    
-                    <div className="flex items-center justify-center">
-                      <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">
-                          {testimonial.author.charAt(0)}
-                        </span>
-                      </div>
-                      <div className="text-left">
-                        <div className="font-semibold text-dark-charcoal">
-                          {testimonial.author}
-                        </div>
-                      </div>
-                    </div>
-                  </AnimatedImage>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
-          </div>
-        </MotionSection>
-
         {/* Package Options */}
         <MotionSection className="py-20 bg-light-gray">
           <div className="container mx-auto px-4">
@@ -338,8 +303,8 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                       <h3 className="text-xl font-bold text-dark-charcoal mb-2">
                         {option.title}
                       </h3>
-                      <div className="text-3xl font-bold text-primary-red">
-                        {option.price === "Sur devis" ? option.price : `${option.price}$`}
+                      <div className="text-xl font-medium text-primary-red">
+                        Contact us for pricing
                       </div>
                     </div>
 

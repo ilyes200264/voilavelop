@@ -64,12 +64,8 @@ export function PackageDetailsClient({ packageData }: PackageDetailsClientProps)
             className="rounded-2xl shadow-2xl"
           />
           <div className="price-overlay absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-            <span className="price-label text-sm text-gray-600 block">{t('packageDetail.startingFrom', 'À partir de')}</span>
-            <span className="price-amount text-2xl font-bold text-dark-charcoal">
-              {packageData.options[0].price}$
-            </span>
             <AnimatedImage hoverEffect="lift">
-              <Link href="#booking">
+              <Link href="/contact">
                 <Button className="mt-2 w-full bg-primary-red text-white hover:bg-primary-red/90 transition-colors">{t('packageDetail.bookNow', 'Réserver maintenant')}</Button>
               </Link>
             </AnimatedImage>

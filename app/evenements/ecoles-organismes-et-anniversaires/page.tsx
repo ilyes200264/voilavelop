@@ -154,8 +154,17 @@ export default function SchoolsNonprofitsBirthdaysPage() {
     <div className="min-h-screen">
       <Header />
       <main>
+        {/* Hero Image */}
+        <div className="w-full">
+          <img 
+            src="/images/gallery-1.jpg" 
+            alt="Écoles, Organismes & Anniversaires avec vélos à smoothie" 
+            className="w-full h-80 object-cover"
+          />
+        </div>
+        
         {/* Hero Section */}
-        <MotionSection className="schools-hero relative pt-32 pb-20 bg-accent-green text-white">
+        <MotionSection className="schools-hero relative pt-16 pb-20 bg-orange-500 text-white">
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-white">
@@ -185,7 +194,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
-                  <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                  <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
                     Demander un devis éducatif
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
@@ -195,7 +204,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                   <Link href="/forfaits/la-petite-koki">
                     <Button 
                       variant="outline" 
-                      className="border-2 border-white text-white hover:bg-white hover:text-accent-green px-8 py-4 text-lg font-semibold rounded-xl"
+                      className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold rounded-xl"
                     >
                       Voir forfait enfants
                     </Button>
@@ -403,7 +412,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                   <AnimatedImage 
                     hoverEffect="lift" 
                     className={`h-full bg-white rounded-2xl shadow-lg border-2 ${
-                      pkg.popular ? 'border-accent-green ring-2 ring-accent-green/20' : 'border-gray-200'
+                      pkg.popular ? 'border-orange-500 ring-2 ring-orange-500/20' : 'border-gray-200'
                     } relative`}
                   >
                     {pkg.popular && (

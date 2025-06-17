@@ -70,11 +70,19 @@ export default function CorporateEventsPage() {
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Hero Section */}
-        <MotionSection className="corporate-hero relative pt-32 pb-20 bg-primary-red text-white">
+        {/* Hero Section with Image at the top */}
+        <MotionSection className="relative pt-20 bg-gradient-to-r from-orange-100 to-yellow-100 text-dark-charcoal">
+          {/* Image at the top */}
+          <div className="w-full">
+            <img 
+              src="/images/3.jpg" 
+              alt="Corporate events with smoothie bikes" 
+              className="w-full h-80 object-cover"
+            />
+          </div>
           
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-white">
+          <div className="container mx-auto px-4 relative z-10 py-16">
+            <div className="max-w-4xl mx-auto">
               <div className="flex items-center text-sm mb-4 opacity-90">
                 <Link href="/evenements" className="hover:underline">
                   {t("corporate-events:breadcrumb.events")}
@@ -84,32 +92,37 @@ export default function CorporateEventsPage() {
               </div>
               
               <TextReveal>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-primary-red">
                   {t("corporate-events:hero.title")}
                 </h1>
               </TextReveal>
               
-              <RedLineSeparator className="w-16 mb-8 bg-white" />
+              <RedLineSeparator className="w-16 mb-8" />
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl">
-                  {t("corporate-events:hero.description")}
+                  Boost employee well-being and energize your workplace with a fun, healthy, and memorable experience. Whether you're looking to engage your team right at the office, foyer, or common area, our smoothie bike setup brings healthy fun directly to your workspace, creating a unique break your employees will love.
+                </p>
+                <p className="text-xl mb-8 leading-relaxed max-w-3xl">
+                  Whether your team is returning to the office or just needs a midday boost, our pedal-powered smoothie station encourages physical activity, nourishes the body, and sparks meaningful conversations. A healthier employee is not only happier but also more productive — and what better way to promote wellness than with a delicious smoothie they blend themselves?
                 </p>
               </ScrollReveal>
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
-                  <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    {t("corporate-events:hero.requestQuote")}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  <Link href="/contact">
+                    <Button className="bg-primary-red text-white hover:bg-primary-red/90 px-8 py-4 text-lg font-semibold">
+                      {t("corporate-events:hero.requestQuote")}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
                 </AnimatedImage>
                 
                 <AnimatedImage hoverEffect="lift">
                   <Link href="/forfaits/ready-set-blend">
                     <Button 
                       variant="outline" 
-                      className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
+                      className="border-2 border-primary-red text-primary-red hover:bg-primary-red hover:text-white px-8 py-4 text-lg font-semibold"
                     >
                       {t("corporate-events:hero.viewTeamBuilding")}
                     </Button>

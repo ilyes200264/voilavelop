@@ -155,7 +155,7 @@ export function Header() {
 
   return (
     <motion.header 
-      className="site-header fixed top-0 left-0 right-0 z-50 bg-white shadow-sm"
+      className="site-header fixed top-0 left-0 right-0 z-50 bg-white bg-gradient-to-r from-white via-white to-orange-50 shadow-sm"
       initial="hidden"
       animate="visible"
       variants={headerVariants}
@@ -190,7 +190,7 @@ export function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="text-dark-charcoal hover:text-primary-red transition-colors flex items-center"
+                    className="text-dark-charcoal hover:text-primary-red transition-colors flex items-center font-medium px-3 py-2 rounded-md hover:bg-orange-50"
                   >
                     {item.name} {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
                   </Link>
@@ -224,7 +224,7 @@ export function Header() {
           >
             <LanguageSwitcher className="hidden md:flex" />
 
-            <Button className="btn-primary hidden md:inline-flex" asChild>
+            <Button className="bg-primary-red text-white hover:bg-primary-red/90 hidden md:inline-flex" asChild>
               <Link href="/reserver">{t('common.navigation.book')}</Link>
             </Button>
 

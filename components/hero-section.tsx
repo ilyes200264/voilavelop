@@ -17,15 +17,15 @@ export function HeroSection() {
 
   return (
     <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - Using a fresher background */}
       <div className="hero-video-container absolute inset-0">
         <div
           className="hero-video absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/Packages-596-Edit.jpg')`,
+            backgroundImage: `url('/images/6.jpg')`,
           }}
         />
-        <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
       </div>
 
       {/* Hero Content */}
@@ -38,22 +38,39 @@ export function HeroSection() {
               {t('home.hero.title')}
             </h1>
             
+            {/* Bold Slogan */}
+            <p className="text-xl md:text-2xl font-bold mb-6 text-primary-red">
+              GOOD VIBES, GREEN RIDES, GREAT TASTE.
+            </p>
+            
             {/* Clean Subtitle */}
             <p className="text-xl md:text-2xl font-light mb-12 opacity-90">
               {t('home.hero.subtitle')}
             </p>
 
-            {/* Minimal Button */}
-            <Button size="lg" className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-8 py-4 text-lg font-medium inline-flex items-center transition-colors">
-              {t('home.hero.ctaButton')}
-              <ArrowRight className="ml-2 h-5 w-5" />
+            {/* Book Now Button - Linked to form */}
+            <Button size="lg" className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-8 py-4 text-lg font-medium inline-flex items-center transition-colors" asChild>
+              <a href="/reserver">
+                {t('home.hero.ctaButton')}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
         </div>
         
-        {/* Right Side - Empty Space/Visual Balance */}
-        <div className="hidden md:block">
-          {/* Intentionally left empty for visual balance */}
+        {/* Right Side - Product Images */}
+        <div className="hidden md:flex flex-col items-center justify-center gap-4">
+          <div className="flex gap-4">
+            <AnimatedImage hoverEffect="scale" className="w-1/3">
+              <img src="/images/0.jpg" alt="Green bicycle" className="rounded-lg shadow-lg" />
+            </AnimatedImage>
+            <AnimatedImage hoverEffect="scale" className="w-1/3">
+              <img src="/images/1.jpg" alt="Red bicycle" className="rounded-lg shadow-lg" />
+            </AnimatedImage>
+            <AnimatedImage hoverEffect="scale" className="w-1/3">
+              <img src="/images/2.jpg" alt="Yellow bicycle" className="rounded-lg shadow-lg" />
+            </AnimatedImage>
+          </div>
         </div>
       </div>
     </section>

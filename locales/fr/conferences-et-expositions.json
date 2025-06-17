@@ -1,0 +1,162 @@
+{
+  "breadcrumb": {
+    "events": "Événements",
+    "conferences": "Conférences & Expositions"
+  },
+  
+  "hero": {
+    "title": "Attirez l'attention, suscitez des conversations et dynamisez votre stand!",
+    "description": "Vous cherchez un moyen de vous démarquer lors de votre prochain salon? Notre vélo à smoothie est une attraction qui fait pédaler, sourire et engager les gens avec votre marque d'une manière amusante et mémorable.",
+    "planStand": "Planifier mon stand",
+    "viewPackage": "Voir forfait compétition"
+  },
+  
+  "stats": [
+    { "number": "85%", "label": "Augmentation du trafic stand" },
+    { "number": "3.5x", "label": "Plus de temps d'engagement" },
+    { "number": "200+", "label": "Salons et conférences" },
+    { "number": "92%", "label": "Recommandent l'expérience" }
+  ],
+  
+  "advantages": {
+    "title": "Votre avantage concurrentiel",
+    "description": "Parfait pour les installations intérieures ou extérieures, nous offrons des stations entièrement personnalisées pour correspondre à votre message et style. Vous voulez intensifier? Ajoutez une petite compétition amicale avec notre tableau de bord et speedomètres.",
+    "specializedAdvantages": "Avantages spécialisés :",
+    "items": [
+      "Installation rapide adaptée aux contraintes de salon",
+      "Équipe multilingue pour événements internationaux",
+      "Respect des normes d'hygiène des centres de congrès",
+      "Solutions modulaires pour tous types d'espaces",
+      "Support technique en continu pendant l'événement"
+    ],
+    "caseStudyButton": "Étude de cas salon"
+  },
+  
+  "benefits": {
+    "title": "Pourquoi les exposants nous choisissent-ils?",
+    "subtitle": "Faites de votre stand celui dont tout le monde se souvient. C'est un briseur de glace formidable et un excellent moyen d'attirer une foule.",
+    "items": [
+      {
+        "title": "Différenciation compétitive",
+        "description": "Démarquez-vous de la concurrence avec une attraction unique qui attire l'attention et crée un avantage mémorable."
+      },
+      {
+        "title": "Génération de leads qualifiés",
+        "description": "Créez des opportunités de conversation naturelles avec vos prospects grâce à une expérience interactive engageante."
+      },
+      {
+        "title": "Expérience mémorable",
+        "description": "Offrez quelque chose d'unique que vos visiteurs n'oublieront pas et dont ils parleront longtemps après l'événement."
+      },
+      {
+        "title": "Trafic augmenté sur stand",
+        "description": "Attirez plus de visiteurs vers votre stand et gardez-les engagés plus longtemps avec notre expérience interactive."
+      }
+    ]
+  },
+  
+  "competition": {
+    "title": "Ajoutez la compétition!",
+    "description": "Transformez votre stand en centre d'attraction avec nos moniteurs de vitesse et tableaux de scores en temps réel. Parfait pour briser la glace et créer de l'engagement naturel avec vos prospects.",
+    "features": [
+      "Compétition amicale qui attire les foules",
+      "Données d'engagement en temps réel",
+      "Opportunités de conversation naturelles",
+      "Contenu partageable pour réseaux sociaux"
+    ],
+    "engagementStat": {
+      "value": "2 min",
+      "title": "Temps d'engagement moyen",
+      "subtitle": "vs 30 secondes pour un stand traditionnel"
+    }
+  },
+  
+  "packages": {
+    "title": "Solutions pour salons & conférences",
+    "subtitle": "Des formules adaptées à votre stratégie d'exposition et vos objectifs de lead generation",
+    "mostPopular": "Plus populaire",
+    "selectPackage": "Choisir ce forfait",
+    "items": [
+      {
+        "title": "Stand Attraction",
+        "duration": "Journée complète",
+        "people": "100-300 visiteurs",
+        "price": "À partir de 749$",
+        "features": [
+          "1 vélo mélangeur professionnel",
+          "Branding complet du stand",
+          "100-200 smoothies échantillons",
+          "Animation continue",
+          "Support marketing inclus",
+          "Collecte de données visiteurs"
+        ]
+      },
+      {
+        "title": "Expérience Premium",
+        "duration": "Multi-jours",
+        "people": "300-800 visiteurs", 
+        "price": "À partir de 1399$",
+        "features": [
+          "2 vélos avec compétition",
+          "Moniteurs et tableau scores",
+          "500+ smoothies personnalisés",
+          "Animation interactive avancée",
+          "Captation photo/vidéo",
+          "Rapport d'engagement détaillé",
+          "Gestion réseaux sociaux"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Activation Exclusive",
+        "duration": "Événement complet",
+        "people": "500+ visiteurs",
+        "price": "Sur devis",
+        "features": [
+          "Installation multi-vélos sur mesure",
+          "Expérience immersive complète",
+          "Production smoothies illimitée",
+          "Équipe dédiée multi-lingue",
+          "Technologies interactives",
+          "Analytics avancés et ROI",
+          "Service concierge VIP",
+          "Post-événement marketing"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Retours d'exposants",
+    "items": [
+      {
+        "quote": "Notre stand était le plus visité du salon! Les vélos à smoothie ont attiré exactement le type de prospects que nous recherchions.",
+        "author": "Alexandre Moreau",
+        "position": "Directeur Marketing",
+        "company": "TechSolutions Inc.",
+        "rating": 5
+      },
+      {
+        "quote": "ROI exceptionnel! Nous avons généré 40% plus de leads qualifiés qu'avec nos activations traditionnelles. Expérience à renouveler absolument.",
+        "author": "Isabelle Gagnon",
+        "position": "Responsable Événementiel",
+        "company": "InnovaCorp",
+        "rating": 5
+      },
+      {
+        "quote": "L'équipe Voilà Vélo a transformé notre présence au salon. L'engagement des visiteurs était remarquable et l'ambiance fantastique!",
+        "author": "Philippe Côté",
+        "position": "VP Ventes",
+        "company": "GreenTech Solutions",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "finalCta": {
+    "title": "Prêt à dominer votre prochain salon?",
+    "description": "Contactez-nous dès aujourd'hui pour planifier une stratégie d'exposition qui génère des résultats mesurables et des souvenirs durables.",
+    "strategyButton": "Stratégie d'exposition",
+    "planStandButton": "Planifier mon stand"
+  }
+}

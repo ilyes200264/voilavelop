@@ -18,7 +18,7 @@ import {
 import { useI18n } from "@/lib/i18n"
 
 export default function ConferencesExposPage() {
-  const { t } = useI18n();
+  const { t } = useI18n("conferences-et-expositions");
   
   // Icons for benefits
   const benefitIcons = [
@@ -28,135 +28,56 @@ export default function ConferencesExposPage() {
     <Zap key="zap" className="h-12 w-12 text-white" />
   ];
   
-  // Colors for benefits
-  const benefitColors = ["bg-trust-blue", "bg-primary-red", "bg-accent-green", "bg-secondary-yellow"];
+  // Get benefits from translations and add icons
+  const benefits = t<Array<{
+    title: string;
+    description: string;
+  }>>("benefits.items", []).map((benefit, index) => ({
+    ...benefit,
+    icon: benefitIcons[index % benefitIcons.length],
+    color: "bg-yellow-500" // Use consistent color theme
+  }));
   
-  // Benefits data
-  const benefits = [
-    {
-      title: "Différenciation compétitive",
-      description: "Démarquez-vous de la concurrence avec une attraction unique qui attire l'attention et crée un avantage mémorable.",
-      icon: benefitIcons[0],
-      color: benefitColors[0]
-    },
-    {
-      title: "Génération de leads qualifiés",
-      description: "Créez des opportunités de conversation naturelles avec vos prospects grâce à une expérience interactive engageante.",
-      icon: benefitIcons[1],
-      color: benefitColors[1]
-    },
-    {
-      title: "Expérience mémorable",
-      description: "Offrez quelque chose d'unique que vos visiteurs n'oublieront pas et dont ils parleront longtemps après l'événement.",
-      icon: benefitIcons[2],
-      color: benefitColors[2]
-    },
-    {
-      title: "Trafic augmenté sur stand",
-      description: "Attirez plus de visiteurs vers votre stand et gardez-les engagés plus longtemps avec notre expérience interactive.",
-      icon: benefitIcons[3],
-      color: benefitColors[3]
-    }
-  ];
+  // Get packages from translations
+  const packages = t<Array<{
+    title: string;
+    duration: string;
+    people: string;
+    price: string;
+    features: string[];
+    popular?: boolean;
+  }>>("packages.items", []);
   
-  // Package options
-  const packages = [
-    {
-      title: "Stand Attraction",
-      duration: "Journée complète",
-      people: "100-300 visiteurs",
-      price: "À partir de 749$",
-      features: [
-        "1 vélo mélangeur professionnel",
-        "Branding complet du stand",
-        "100-200 smoothies échantillons",
-        "Animation continue",
-        "Support marketing inclus",
-        "Collecte de données visiteurs"
-      ]
-    },
-    {
-      title: "Expérience Premium",
-      duration: "Multi-jours",
-      people: "300-800 visiteurs", 
-      price: "À partir de 1399$",
-      features: [
-        "2 vélos avec compétition",
-        "Moniteurs et tableau scores",
-        "500+ smoothies personnalisés",
-        "Animation interactive avancée",
-        "Captation photo/vidéo",
-        "Rapport d'engagement détaillé",
-        "Gestion réseaux sociaux"
-      ],
-      popular: true
-    },
-    {
-      title: "Activation Exclusive",
-      duration: "Événement complet",
-      people: "500+ visiteurs",
-      price: "Sur devis",
-      features: [
-        "Installation multi-vélos sur mesure",
-        "Expérience immersive complète",
-        "Production smoothies illimitée",
-        "Équipe dédiée multi-lingue",
-        "Technologies interactives",
-        "Analytics avancés et ROI",
-        "Service concierge VIP",
-        "Post-événement marketing"
-      ]
-    }
-  ];
+  // Get testimonials from translations
+  const testimonials = t<Array<{
+    quote: string;
+    author: string;
+    position: string;
+    company: string;
+    rating: number;
+  }>>("testimonials.items", []);
   
-  // Success stories/testimonials
-  const testimonials = [
-    {
-      quote: "Notre stand était le plus visité du salon! Les vélos à smoothie ont attiré exactement le type de prospects que nous recherchions.",
-      author: "Alexandre Moreau",
-      position: "Directeur Marketing",
-      company: "TechSolutions Inc.",
-      rating: 5
-    },
-    {
-      quote: "ROI exceptionnel! Nous avons généré 40% plus de leads qualifiés qu'avec nos activations traditionnelles. Expérience à renouveler absolument.",
-      author: "Isabelle Gagnon",
-      position: "Responsable Événementiel",
-      company: "InnovaCorp",
-      rating: 5
-    },
-    {
-      quote: "L'équipe Voilà Vélo a transformé notre présence au salon. L'engagement des visiteurs était remarquable et l'ambiance fantastique!",
-      author: "Philippe Côté",
-      position: "VP Ventes",
-      company: "GreenTech Solutions",
-      rating: 5
-    }
-  ];
-  
-  // Stats data
-  const stats = [
-    { number: "85%", label: "Augmentation du trafic stand" },
-    { number: "3.5x", label: "Plus de temps d'engagement" },
-    { number: "200+", label: "Salons et conférences" },
-    { number: "92%", label: "Recommandent l'expérience" }
-  ];
+  // Get stats from translations
+  const stats = t<Array<{ number: string; label: string }>>("stats", []);
 
   // Conference specific benefits
-  const conferenceAdvantages = [
-    "Installation rapide adaptée aux contraintes de salon",
-    "Équipe multilingue pour événements internationaux",
-    "Respect des normes d'hygiène des centres de congrès",
-    "Solutions modulaires pour tous types d'espaces",
-    "Support technique en continu pendant l'événement"
-  ];
+  const conferenceAdvantages = t<Array<string>>("advantages.items", []);
 
   return (
     <div className="min-h-screen">
       <Header />
       <main>
+        {/* Hero Image */}
+        <div className="w-full">
+          <img 
+            src="/images/7.jpg" 
+            alt="Conférences et expositions avec vélos à smoothie" 
+            className="w-full h-80 object-cover"
+          />
+        </div>
+        
         {/* Hero Section */}
-        <MotionSection className="conferences-hero relative pt-32 pb-20 bg-trust-blue text-white">
+        <MotionSection className="conferences-hero relative pt-16 pb-20 bg-orange-500 text-white">
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-white">
@@ -186,7 +107,7 @@ export default function ConferencesExposPage() {
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
-                  <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                  <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
                     Planifier mon stand
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
@@ -196,7 +117,7 @@ export default function ConferencesExposPage() {
                   <Link href="/forfaits/ready-set-blend">
                     <Button 
                       variant="outline" 
-                      className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
+                      className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold rounded-xl"
                     >
                       Voir forfait compétition
                     </Button>
@@ -208,7 +129,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Stats Section */}
-        <MotionSection className="py-16 bg-white">
+        <MotionSection className="py-16 bg-amber-100">
           <div className="container mx-auto px-4">
             <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {(stats || []).map((stat, index) => (
@@ -218,10 +139,10 @@ export default function ConferencesExposPage() {
                   custom={index}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-trust-blue mb-2">
+                  <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 text-sm md:text-base">
+                  <div className="text-orange-700 text-sm md:text-base">
                     {stat.label}
                   </div>
                 </MotionDiv>
@@ -231,7 +152,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Conference Benefits Section */}
-        <MotionSection className="py-20 bg-secondary-yellow text-white">
+        <MotionSection className="py-20 bg-yellow-500 text-white">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-5 gap-12 items-center">
               <AnimatedImage hoverEffect="scale" className="lg:col-span-3">
@@ -277,7 +198,7 @@ export default function ConferencesExposPage() {
                 <MotionDiv variant="fadeUp">
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
-                      <Button className="bg-trust-blue text-white hover:bg-trust-blue/90 px-8 py-3 text-lg font-semibold rounded-xl">
+                      <Button className="bg-orange-600 text-white hover:bg-orange-700 px-8 py-3 text-lg font-semibold rounded-xl">
                         Étude de cas salon
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
@@ -290,7 +211,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Benefits Section */}
-        <MotionSection className="py-20 bg-trust-blue text-white">
+        <MotionSection className="py-20 bg-orange-600 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -333,7 +254,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Competition Feature Section */}
-        <MotionSection className="py-20 bg-accent-green text-white">
+        <MotionSection className="py-20 bg-amber-500 text-white">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <StaggerContainer>
@@ -384,7 +305,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Packages Section */}
-        <MotionSection className="py-20 bg-primary-red text-white">
+        <MotionSection className="py-20 bg-orange-500 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -406,11 +327,11 @@ export default function ConferencesExposPage() {
                   <AnimatedImage 
                     hoverEffect="lift" 
                     className={`h-full bg-white rounded-2xl shadow-lg border-2 ${
-                      pkg.popular ? 'border-trust-blue ring-2 ring-trust-blue/20' : 'border-gray-200'
+                      pkg.popular ? 'border-orange-500 ring-2 ring-orange-500/20' : 'border-gray-200'
                     } relative`}
                   >
                     {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-trust-blue text-white px-4 py-1 rounded-full text-sm font-semibold">
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                         Plus populaire
                       </div>
                     )}
@@ -418,7 +339,7 @@ export default function ConferencesExposPage() {
                     <div className="p-8 h-full flex flex-col">
                       <div className="text-center mb-6">
                         <h3 className="text-2xl font-bold text-dark-charcoal mb-2">{pkg.title}</h3>
-                        <div className="text-3xl font-bold text-trust-blue mb-2">{pkg.price}</div>
+                        <div className="text-3xl font-bold text-orange-500 mb-2">{pkg.price}</div>
                         <div className="text-gray-600">
                           {pkg.duration} • {pkg.people}
                         </div>
@@ -439,8 +360,8 @@ export default function ConferencesExposPage() {
                         <Button 
                           className={`w-full py-3 text-lg font-semibold rounded-xl ${
                             pkg.popular 
-                              ? 'bg-trust-blue text-white hover:bg-trust-blue/90' 
-                              : 'bg-gray-100 text-dark-charcoal hover:bg-trust-blue hover:text-white'
+                              ? 'bg-orange-500 text-white hover:bg-orange-600' 
+                              : 'bg-gray-100 text-dark-charcoal hover:bg-orange-500 hover:text-white'
                           }`}
                         >
                           Choisir ce forfait
@@ -455,11 +376,11 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Testimonials Section */}
-        <MotionSection className="py-20 bg-creative-purple text-white">
+        <MotionSection className="py-20 bg-yellow-600 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Retours d'exposants
+                {t("testimonials.title", "Retours d'exposants")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
             </ScrollReveal>
@@ -475,7 +396,7 @@ export default function ConferencesExposPage() {
                     <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full flex flex-col">
                       <div className="flex mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 text-trust-blue fill-current" />
+                          <Star key={i} className="h-5 w-5 text-orange-500 fill-current" />
                         ))}
                       </div>
                       
@@ -485,14 +406,14 @@ export default function ConferencesExposPage() {
                       
                       <div className="flex items-center">
                         <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
-                          <span className="text-trust-blue font-bold text-lg">
+                          <span className="text-orange-500 font-bold text-lg">
                             {testimonial.author.charAt(0)}
                           </span>
                         </div>
                         <div>
                           <p className="font-semibold text-dark-charcoal">{testimonial.author}</p>
                           <p className="text-sm text-gray-600">{testimonial.position}</p>
-                          <p className="text-sm text-trust-blue font-medium">{testimonial.company}</p>
+                          <p className="text-sm text-orange-500 font-medium">{testimonial.company}</p>
                         </div>
                       </div>
                     </div>
@@ -504,7 +425,7 @@ export default function ConferencesExposPage() {
         </MotionSection>
 
         {/* Final CTA Section */}
-        <MotionSection className="py-20 bg-primary-red text-white text-center">
+        <MotionSection className="py-20 bg-orange-600 text-white text-center">
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -520,8 +441,8 @@ export default function ConferencesExposPage() {
             <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
-                  <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Stratégie d'exposition
+                  <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                    {t("finalCta.strategyButton", "Stratégie d'exposition")}
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -531,9 +452,9 @@ export default function ConferencesExposPage() {
                 <Link href="/comment-ca-marche/build-your-event">
                   <Button 
                     variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
+                    className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 text-lg font-semibold rounded-xl"
                   >
-                    Planifier mon stand
+                    {t("finalCta.planStandButton", "Planifier mon stand")}
                   </Button>
                 </Link>
               </AnimatedImage>

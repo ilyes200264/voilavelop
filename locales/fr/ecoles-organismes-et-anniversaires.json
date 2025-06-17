@@ -1,0 +1,161 @@
+{
+  "breadcrumb": {
+    "events": "Événements",
+    "schools": "Écoles, Organismes & Anniversaires"
+  },
+  
+  "hero": {
+    "title": "Rassemblez les gens autour de smoothies, de sourires et beaucoup de plaisir!",
+    "description": "Vous cherchez une façon créative de collecter des fonds, de vous connecter avec votre communauté ou de célébrer un jour spécial? Nos expériences de vélos à smoothie sont parfaites pour les événements scolaires et les fêtes d'anniversaire!",
+    "requestQuote": "Demander un devis éducatif",
+    "viewPackage": "Voir forfait enfants"
+  },
+  
+  "stats": [
+    { "number": "500+", "label": "Événements scolaires réussis" },
+    { "number": "98%", "label": "Satisfaction des enseignants" },
+    { "number": "40%", "label": "Réduction tarifaire pour écoles" },
+    { "number": "15k+", "label": "Enfants sensibilisés" }
+  ],
+  
+  "educational": {
+    "title": "Apprendre en s'amusant",
+    "description": "Nos ateliers transforment l'apprentissage en aventure! Les enfants découvrent la nutrition, l'environnement et l'activité physique à travers une expérience interactive inoubliable.",
+    "benefitsTitle": "Bénéfices éducatifs :",
+    "benefits": [
+      "Apprentissage de la nutrition et des habitudes saines",
+      "Sensibilisation à l'environnement et la durabilité",
+      "Développement de la motricité et coordination",
+      "Travail d'équipe et coopération",
+      "Confiance en soi et accomplissement personnel"
+    ],
+    "programButton": "Programme éducatif"
+  },
+  
+  "benefits": {
+    "title": "Pourquoi nos événements marchent-ils si bien?",
+    "subtitle": "Nous offrons des forfaits à prix réduit pour les écoles et organismes à but non lucratif, rendant cette expérience accessible à tous.",
+    "items": [
+      {
+        "title": "Activité éducative et amusante",
+        "description": "Combinez apprentissage et plaisir en enseignant la nutrition, l'activité physique et la durabilité de manière interactive."
+      },
+      {
+        "title": "Collecte de fonds efficace",
+        "description": "Créez un événement mémorable qui attire les participants et génère des revenus significatifs pour votre cause."
+      },
+      {
+        "title": "Engagement communautaire",
+        "description": "Rassemblez familles, étudiants et communauté autour d'une activité positive qui renforce les liens sociaux."
+      },
+      {
+        "title": "Souvenirs inoubliables",
+        "description": "Créez des moments précieux et des photos mémorables que les participants chériront longtemps."
+      }
+    ]
+  },
+  
+  "pricing": {
+    "title": "Accessibilité pour tous",
+    "description": "Nous croyons que chaque enfant mérite d'accéder à des expériences éducatives enrichissantes. C'est pourquoi nous offrons des tarifs spéciaux pour les institutions éducatives et les organismes à but non lucratif.",
+    "features": [
+      "Forfaits adaptés aux budgets scolaires",
+      "Planification éducative personnalisée",
+      "Support pédagogique inclus",
+      "Flexibilité pour événements spéciaux"
+    ],
+    "discount": {
+      "value": "40%",
+      "title": "de réduction pour les écoles",
+      "subtitle": "Tarifs préférentiels pour l'éducation"
+    }
+  },
+  
+  "packages": {
+    "title": "Nos forfaits spécialisés",
+    "subtitle": "Des solutions pensées pour l'éducation, les organismes et les célébrations familiales",
+    "mostPopular": "Plus populaire",
+    "selectPackage": "Choisir ce forfait",
+    "items": [
+      {
+        "title": "Petite École",
+        "duration": "1-2 heures",
+        "people": "25-50 enfants",
+        "price": "À partir de 349$",
+        "features": [
+          "1 vélo adapté aux enfants",
+          "25-50 smoothies éducatifs",
+          "Animation pédagogique incluse",
+          "Activités sur la nutrition",
+          "Matériel éducatif fourni",
+          "Tarif réduit pour écoles"
+        ]
+      },
+      {
+        "title": "Grande Célébration",
+        "duration": "2-4 heures",
+        "people": "50-150 personnes", 
+        "price": "À partir de 599$",
+        "features": [
+          "2 vélos (1 enfant + 1 adulte)",
+          "100-150 smoothies pour tous",
+          "Défis famille intergénérationnels",
+          "Animation festive complète",
+          "Décoration thématique",
+          "Forfait anniversaire/graduation spécial",
+          "Photos souvenir incluses"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Collecte de Fonds Premium",
+        "duration": "Demi-journée/journée",
+        "people": "100-300 personnes",
+        "price": "À partir de 899$",
+        "features": [
+          "Installation multi-vélos",
+          "Production smoothies illimitée",
+          "Équipe d'animation dédiée",
+          "Stand de sensibilisation inclus",
+          "Support marketing et promotion",
+          "Pourcentage reversé à votre cause",
+          "Rapport d'impact détaillé"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Témoignages de nos partenaires",
+    "items": [
+      {
+        "quote": "Nos élèves ont adoré apprendre la nutrition tout en s'amusant! L'équipe a su adapter parfaitement l'activité à notre programme éducatif.",
+        "author": "Marie-Claire Dubois",
+        "position": "Directrice",
+        "company": "École Primaire Sainte-Famille",
+        "rating": 5
+      },
+      {
+        "quote": "Notre collecte de fonds a dépassé tous nos objectifs! Les familles sont venues nombreuses et l'ambiance était fantastique.",
+        "author": "Jean-François Roy",
+        "position": "Président",
+        "company": "Comité de Parents",
+        "rating": 5
+      },
+      {
+        "quote": "L'anniversaire de ma fille était magique! Tous les enfants ont participé avec joie et les parents ont adoré l'expérience.",
+        "author": "Sophie Tremblay",
+        "position": "Maman organisatrice",
+        "company": "Fête d'anniversaire privée",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "finalCta": {
+    "title": "Créons ensemble un événement mémorable!",
+    "description": "Que ce soit pour éduquer, célébrer ou collecter des fonds, nous adaptons notre service à vos besoins spécifiques et votre budget.",
+    "quoteButton": "Demander un devis éducatif",
+    "discussButton": "Discuter de mon projet"
+  }
+}

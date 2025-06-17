@@ -77,7 +77,7 @@ export function WhyChooseWorkshopSection() {
               key={index}
               variant="fadeUp"
               custom={index}
-              className={`feature-card ${index === 2 ? 'lg:col-start-2' : ''}`}
+              className="feature-card"
             >
               <AnimatedImage 
                 hoverEffect="lift" 

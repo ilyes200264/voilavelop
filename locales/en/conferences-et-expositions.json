@@ -1,0 +1,162 @@
+{
+  "breadcrumb": {
+    "events": "Events",
+    "conferences": "Conferences & Exhibitions"
+  },
+  
+  "hero": {
+    "title": "Attract attention, spark conversations, and energize your booth!",
+    "description": "Looking for a way to stand out at your next trade show? Our smoothie bike is an attraction that gets people pedaling, smiling, and engaging with your brand in a fun and memorable way.",
+    "planStand": "Plan my booth",
+    "viewPackage": "View competition package"
+  },
+  
+  "stats": [
+    { "number": "85%", "label": "Increase in booth traffic" },
+    { "number": "3.5x", "label": "More engagement time" },
+    { "number": "200+", "label": "Trade shows and conferences" },
+    { "number": "92%", "label": "Recommend the experience" }
+  ],
+  
+  "advantages": {
+    "title": "Your competitive advantage",
+    "description": "Perfect for indoor or outdoor installations, we offer fully customized stations to match your message and style. Want to intensify? Add a friendly competition with our dashboard and speedometers.",
+    "specializedAdvantages": "Specialized advantages:",
+    "items": [
+      "Quick setup adapted to trade show constraints",
+      "Multilingual team for international events",
+      "Compliance with convention center hygiene standards",
+      "Modular solutions for all types of spaces",
+      "Continuous technical support during the event"
+    ],
+    "caseStudyButton": "Trade show case study"
+  },
+  
+  "benefits": {
+    "title": "Why exhibitors choose us?",
+    "subtitle": "Make your booth the one everyone remembers. It's a great ice breaker and an excellent way to attract a crowd.",
+    "items": [
+      {
+        "title": "Competitive differentiation",
+        "description": "Stand out from the competition with a unique attraction that draws attention and creates a memorable advantage."
+      },
+      {
+        "title": "Qualified lead generation",
+        "description": "Create natural conversation opportunities with your prospects through an engaging interactive experience."
+      },
+      {
+        "title": "Memorable experience",
+        "description": "Offer something unique that your visitors won't forget and will talk about long after the event."
+      },
+      {
+        "title": "Increased booth traffic",
+        "description": "Attract more visitors to your booth and keep them engaged longer with our interactive experience."
+      }
+    ]
+  },
+  
+  "competition": {
+    "title": "Add the competition!",
+    "description": "Transform your booth into an attraction center with our speed monitors and real-time leaderboards. Perfect for breaking the ice and creating natural engagement with your prospects.",
+    "features": [
+      "Friendly competition that attracts crowds",
+      "Real-time engagement data",
+      "Natural conversation opportunities",
+      "Shareable content for social media"
+    ],
+    "engagementStat": {
+      "value": "2 min",
+      "title": "Average engagement time",
+      "subtitle": "vs 30 seconds for a traditional booth"
+    }
+  },
+  
+  "packages": {
+    "title": "Solutions for trade shows & conferences",
+    "subtitle": "Packages adapted to your exhibition strategy and lead generation objectives",
+    "mostPopular": "Most popular",
+    "selectPackage": "Choose this package",
+    "items": [
+      {
+        "title": "Booth Attraction",
+        "duration": "Full day",
+        "people": "100-300 visitors",
+        "price": "Starting at $749",
+        "features": [
+          "1 professional blender bike",
+          "Complete booth branding",
+          "100-200 sample smoothies",
+          "Continuous animation",
+          "Marketing support included",
+          "Visitor data collection"
+        ]
+      },
+      {
+        "title": "Premium Experience",
+        "duration": "Multi-day",
+        "people": "300-800 visitors", 
+        "price": "Starting at $1399",
+        "features": [
+          "2 bikes with competition",
+          "Monitors and scoreboard",
+          "500+ customized smoothies",
+          "Advanced interactive animation",
+          "Photo/video capture",
+          "Detailed engagement report",
+          "Social media management"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Exclusive Activation",
+        "duration": "Complete event",
+        "people": "500+ visitors",
+        "price": "Upon request",
+        "features": [
+          "Custom multi-bike installation",
+          "Complete immersive experience",
+          "Unlimited smoothie production",
+          "Dedicated multilingual team",
+          "Interactive technologies",
+          "Advanced analytics and ROI",
+          "VIP concierge service",
+          "Post-event marketing"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Exhibitor feedback",
+    "items": [
+      {
+        "quote": "Our booth was the most visited at the show! The smoothie bikes attracted exactly the type of prospects we were looking for.",
+        "author": "Alexander Moreau",
+        "position": "Marketing Director",
+        "company": "TechSolutions Inc.",
+        "rating": 5
+      },
+      {
+        "quote": "Exceptional ROI! We generated 40% more qualified leads than with our traditional activations. Experience to absolutely renew.",
+        "author": "Isabelle Gagnon",
+        "position": "Event Manager",
+        "company": "InnovaCorp",
+        "rating": 5
+      },
+      {
+        "quote": "The Voilà Vélo team transformed our presence at the trade show. Visitor engagement was remarkable and the atmosphere fantastic!",
+        "author": "Philip Côté",
+        "position": "VP Sales",
+        "company": "GreenTech Solutions",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "finalCta": {
+    "title": "Ready to dominate your next trade show?",
+    "description": "Contact us today to plan an exhibition strategy that generates measurable results and lasting memories.",
+    "strategyButton": "Exhibition strategy",
+    "planStandButton": "Plan my booth"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "breadcrumb": {
+    "events": "Events",
+    "openings": "Openings & Activations"
+  },
+  
+  "hero": {
+    "title": "Make your next event unforgettable — blend your brand with action!",
+    "description": "Want to create buzz and draw a crowd? Our smoothie bike is more than just a fun activity — it's a magnet for your brand. Every element can be customized with your logo to leave a lasting impression.",
+    "requestQuote": "Request a quote",
+    "viewPackage": "View Signature package"
+  },
+  
+  "stats": [
+    { "number": "95%", "label": "Participant engagement rate" },
+    { "number": "3.2x", "label": "More social shares" },
+    { "number": "150+", "label": "Successful activations" },
+    { "number": "2 min", "label": "Average interaction time" }
+  ],
+  
+  "benefits": {
+    "title": "Why choose Voilà Vélo for your activations?",
+    "subtitle": "As soon as the pedals start turning, heads turn. It's a conversation starter, a photo opportunity, and a wellness moment all in one.",
+    "items": [
+      {
+        "title": "Strong visual attraction",
+        "description": "Create an irresistible focal point that naturally attracts crowds and generates spontaneous engagement."
+      },
+      {
+        "title": "Guaranteed marketing buzz",
+        "description": "Our smoothie bikes create shareable moments that generate organic content on social media."
+      },
+      {
+        "title": "High customer engagement",
+        "description": "Transform passive visitors into active participants who interact directly with your brand."
+      },
+      {
+        "title": "Complete customization",
+        "description": "From smoothie colors to branding elements, everything can be adapted to your visual identity."
+      }
+    ]
+  },
+  
+  "experience": {
+    "title": "The experience that makes an impact",
+    "description": "In today's world, experiences build brands. Give people something exciting to talk about — and let them do the marketing for you.",
+    "features": [
+      "100% customizable installation for your brand",
+      "Automatically generated organic content",
+      "Direct and memorable engagement with your customers",
+      "Natural media coverage and viral sharing"
+    ],
+    "planButton": "Plan my activation"
+  },
+  
+  "packages": {
+    "title": "Activation Packages",
+    "subtitle": "Solutions adapted to your activation scale and brand objectives",
+    "mostPopular": "Most popular",
+    "selectPackage": "Choose this package",
+    "items": [
+      {
+        "title": "Signature Activation",
+        "duration": "2-3 hours",
+        "people": "100-200 people",
+        "price": "Starting at $899",
+        "features": [
+          "1-2 premium blender bikes",
+          "100-150 customized smoothies",
+          "Complete branding with logo",
+          "Custom cups and signage",
+          "Professional animation",
+          "Photo-friendly configuration"
+        ]
+      },
+      {
+        "title": "Prestige Activation",
+        "duration": "4-6 hours",
+        "people": "200-500 people", 
+        "price": "Starting at $1299",
+        "features": [
+          "2-3 deluxe blender bikes",
+          "300-400 signature smoothies",
+          "Spectacular installation",
+          "Dedicated animation team",
+          "Event photography",
+          "Video report included",
+          "Complete social media management"
+        ],
+        "popular": true
+      },
+      {
+        "title": "Exclusive Activation",
+        "duration": "Full day",
+        "people": "500+ people",
+        "price": "Upon request",
+        "features": [
+          "Custom multi-bike installation",
+          "Unlimited smoothie production",
+          "Unique scenographic design",
+          "Complete technical team",
+          "Professional media coverage",
+          "Detailed ROI and analytics",
+          "VIP concierge service"
+        ]
+      }
+    ]
+  },
+  
+  "testimonials": {
+    "title": "Client testimonials",
+    "items": [
+      {
+        "quote": "The Voilà Vélo activation generated 300% more engagement than our traditional activations. People were queuing up to try it!",
+        "author": "Stephanie Martin",
+        "position": "Marketing Director",
+        "company": "TechStart Montreal",
+        "rating": 5
+      },
+      {
+        "quote": "Amazing return on investment! The photos and videos from the event are still circulating on social media 3 months later.",
+        "author": "David Chen",
+        "position": "Event Manager",
+        "company": "Innovation Lab",
+        "rating": 5
+      },
+      {
+        "quote": "Exactly what we needed for our product launch. The Voilà Vélo team perfectly adapted the experience to our brand.",
+        "author": "Catherine Dubois",
+        "position": "Brand Manager",
+        "company": "Wellness Co.",
+        "rating": 5
+      }
+    ]
+  },
+  
+  "finalCta": {
+    "title": "Ready to create an unforgettable buzz?",
+    "description": "Contact us today to transform your next activation into a memorable experience that generates engagement and conversations.",
+    "quoteButton": "Request a quote",
+    "createButton": "Create my activation"
+  }
+}

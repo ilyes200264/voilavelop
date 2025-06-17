@@ -145,8 +145,17 @@ export default function OpeningsActivationsPage() {
     <div className="min-h-screen">
       <Header />
       <main>
+        {/* Hero Image */}
+        <div className="w-full">
+          <img 
+            src="/images/gallery-3.jpg" 
+            alt="Ouvertures et activations avec vélos à smoothie" 
+            className="w-full h-80 object-cover"
+          />
+        </div>
+        
         {/* Hero Section */}
-        <MotionSection className="openings-hero relative pt-32 pb-20 bg-secondary-yellow text-white">
+        <MotionSection className="openings-hero relative pt-16 pb-20 bg-orange-500 text-white">
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-white">
@@ -176,7 +185,7 @@ export default function OpeningsActivationsPage() {
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
-                  <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                  <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
                     Demander un devis
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
@@ -186,7 +195,7 @@ export default function OpeningsActivationsPage() {
                   <Link href="/forfaits/signature">
                     <Button 
                       variant="outline" 
-                      className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-xl"
+                      className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold rounded-xl"
                     >
                       Voir forfait Signature
                     </Button>
@@ -198,7 +207,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Stats Section */}
-        <MotionSection className="py-16 bg-primary-red text-white">
+        <MotionSection className="py-16 bg-amber-100">
           <div className="container mx-auto px-4">
             <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {(stats || []).map((stat, index) => (
@@ -208,10 +217,10 @@ export default function OpeningsActivationsPage() {
                   custom={index}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-white/90 text-sm md:text-base">
+                  <div className="text-orange-700 text-sm md:text-base">
                     {stat.label}
                   </div>
                 </MotionDiv>
@@ -221,7 +230,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Benefits Section */}
-        <MotionSection className="py-20 bg-accent-green text-white">
+        <MotionSection className="py-20 bg-orange-600 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -264,7 +273,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Main Content Section */}
-        <MotionSection className="py-20 bg-primary-red text-white">
+        <MotionSection className="py-20 bg-amber-500 text-white">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-5 gap-12 items-center">
               <AnimatedImage hoverEffect="scale" className="lg:col-span-3">
@@ -313,7 +322,7 @@ export default function OpeningsActivationsPage() {
                 <MotionDiv variant="fadeUp">
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
-                      <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-xl">
+                      <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-xl">
                         Planifier mon activation
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
@@ -326,7 +335,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Packages Section */}
-        <MotionSection className="py-20 bg-trust-blue text-white">
+        <MotionSection className="py-20 bg-orange-500 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -348,11 +357,11 @@ export default function OpeningsActivationsPage() {
                   <AnimatedImage 
                     hoverEffect="lift" 
                     className={`h-full bg-white rounded-2xl shadow-lg border-2 ${
-                      pkg.popular ? 'border-secondary-yellow ring-2 ring-secondary-yellow/20' : 'border-gray-200'
+                      pkg.popular ? 'border-orange-500 ring-2 ring-orange-500/20' : 'border-gray-200'
                     } relative`}
                   >
                     {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-secondary-yellow text-dark-charcoal px-4 py-1 rounded-full text-sm font-semibold">
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                         Plus populaire
                       </div>
                     )}
@@ -360,7 +369,7 @@ export default function OpeningsActivationsPage() {
                     <div className="p-8 h-full flex flex-col">
                       <div className="text-center mb-6">
                         <h3 className="text-2xl font-bold text-dark-charcoal mb-2">{pkg.title}</h3>
-                        <div className="text-3xl font-bold text-secondary-yellow mb-2">{pkg.price}</div>
+                        <div className="text-3xl font-bold text-orange-500 mb-2">{pkg.price}</div>
                         <div className="text-gray-600">
                           {pkg.duration} • {pkg.people}
                         </div>
@@ -381,8 +390,8 @@ export default function OpeningsActivationsPage() {
                         <Button 
                           className={`w-full py-3 text-lg font-semibold rounded-xl ${
                             pkg.popular 
-                              ? 'bg-secondary-yellow text-dark-charcoal hover:bg-secondary-yellow/90' 
-                              : 'bg-gray-100 text-dark-charcoal hover:bg-secondary-yellow hover:text-dark-charcoal'
+                              ? 'bg-orange-500 text-white hover:bg-orange-600' 
+                              : 'bg-gray-100 text-dark-charcoal hover:bg-orange-500 hover:text-white'
                           }`}
                         >
                           Choisir ce forfait
@@ -397,7 +406,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Testimonials Section */}
-        <MotionSection className="py-20 bg-secondary-yellow text-white">
+        <MotionSection className="py-20 bg-yellow-600 text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -417,7 +426,7 @@ export default function OpeningsActivationsPage() {
                     <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
                       <div className="flex mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 text-secondary-yellow fill-current" />
+                          <Star key={i} className="h-5 w-5 text-orange-500 fill-current" />
                         ))}
                       </div>
                       
@@ -427,14 +436,14 @@ export default function OpeningsActivationsPage() {
                       
                       <div className="flex items-center">
                         <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
-                          <span className="text-secondary-yellow font-bold text-lg">
+                          <span className="text-orange-500 font-bold text-lg">
                             {testimonial.author.charAt(0)}
                           </span>
                         </div>
                         <div>
                           <p className="font-semibold text-dark-charcoal">{testimonial.author}</p>
                           <p className="text-sm text-gray-600">{testimonial.position}</p>
-                          <p className="text-sm text-secondary-yellow font-medium">{testimonial.company}</p>
+                          <p className="text-sm text-orange-500 font-medium">{testimonial.company}</p>
                         </div>
                       </div>
                     </div>
@@ -446,7 +455,7 @@ export default function OpeningsActivationsPage() {
         </MotionSection>
 
         {/* Final CTA Section */}
-        <MotionSection className="py-20 bg-trust-blue text-white text-center">
+        <MotionSection className="py-20 bg-orange-600 text-white text-center">
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -462,7 +471,7 @@ export default function OpeningsActivationsPage() {
             <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
-                  <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                  <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
                     Demander un devis
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
@@ -473,7 +482,7 @@ export default function OpeningsActivationsPage() {
                 <Link href="/comment-ca-marche/build-your-event">
                   <Button 
                     variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
+                    className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 text-lg font-semibold rounded-xl"
                   >
                     Créer mon activation
                   </Button>

@@ -68,33 +68,18 @@ export default function AboutPage() {
               
               <StaggerContainer className="text-white pl-0 lg:pl-12">
                 <MotionDiv variant="fadeUp">
-                  <h2 className="text-4xl font-bold text-black mb-4">
-                    {t('company.title')}
+                  <h2 className="text-4xl font-bold text-black mb-4" id="qui-nous-sommes">
+                    Who we are
                   </h2>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
-                  <h5 className="text-2xl text-secondary-yellow mb-6">
-                    {t('company.subtitle')}
-                  </h5>
-                </MotionDiv>
-                <MotionDiv variant="fadeUp">
                   <p className="mb-4 text-black">
-                    {t('company.description1')}
+                    We're Leen and Micha — two sisters with a big love for nature, healthy living, and biking. That's how Voilà Vélo Fruité came to life — a joyful concept where people of all ages can hop on a smoothie bike, pedal their hearts out, and create their own delicious drink, powered entirely by their energy!
                   </p>
                 </MotionDiv>
                 <MotionDiv variant="fadeUp">
                   <p className="mb-4 text-black">
-                    {t('company.description2')}
-                  </p>
-                </MotionDiv>
-                <MotionDiv variant="fadeUp">
-                  <p className="mb-4 text-black">
-                    {t('company.description3')}
-                  </p>
-                </MotionDiv>
-                <MotionDiv variant="fadeUp">
-                  <p className="text-black">
-                    {t('company.description4')}
+                    We believe in spreading positivity, promoting wellness, and getting everyone involved — no matter how young or old. Whether it's at a school event, a festival, or a corporate gathering, Voilà Vélo brings fun, flavor, and feel-good vibes to every occasion.
                   </p>
                 </MotionDiv>
               </StaggerContainer>
@@ -147,9 +132,9 @@ export default function AboutPage() {
         {/* Mission Section */}
         <section className="py-16 bg-gradient-to-br from-green-100 via-yellow-100 to-pink-100 text-center mx-2 rounded-2xl shadow mb-8">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-primary-red">{t('mission.title')}</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-primary-red" id="notre-mission">Our Mission</h2>
             <p className="text-xl md:text-2xl mb-4 text-gray-700 font-medium">
-              {t('mission.description')}
+              Our mission is to make healthy living fun, simple, and inspiring. By combining motion, sustainability, and nutrition, we aim to spark awareness while creating happy, tasty memories. We believe that one pedal stroke is all it takes to reconnect with your body, nature, and each other — and Voilà Vélo is here to make that happen.
             </p>
           </div>
         </section>
@@ -157,20 +142,47 @@ export default function AboutPage() {
         {/* Values Section */}
         <section className="py-16 bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 mx-2 rounded-2xl shadow mb-8">
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-primary-red text-center">{t('values.title')}</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-primary-red text-center" id="nos-valeurs">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {exactValues.map((value, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                  className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
-                >
-                  <span className="text-5xl mb-4">{value.icon}</span>
-                  <h3 className="text-xl font-bold text-primary-red mb-2 text-center">{value.title}</h3>
-                  <p className="text-gray-700 text-center leading-relaxed">{value.description}</p>
-                </MotionDiv>
-              ))}
+              <MotionDiv
+                variant="fadeUp"
+                custom={0}
+                className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
+              >
+                <span className="text-5xl mb-4">🍏</span>
+                <h3 className="text-xl font-bold text-primary-red mb-2 text-center">Health & Wellness</h3>
+                <p className="text-gray-700 text-center leading-relaxed">We believe that nourishing your body should be both delicious and enjoyable.</p>
+              </MotionDiv>
+              
+              <MotionDiv
+                variant="fadeUp"
+                custom={1}
+                className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
+              >
+                <span className="text-5xl mb-4">🌱</span>
+                <h3 className="text-xl font-bold text-primary-red mb-2 text-center">Sustainability</h3>
+                <p className="text-gray-700 text-center leading-relaxed">We are committed to supporting local producers and practicing eco-friendly methods.</p>
+              </MotionDiv>
+              
+              <MotionDiv
+                variant="fadeUp"
+                custom={2}
+                className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
+              >
+                <span className="text-5xl mb-4">🤝</span>
+                <h3 className="text-xl font-bold text-primary-red mb-2 text-center">Community</h3>
+                <p className="text-gray-700 text-center leading-relaxed">We foster connection and joy by bringing people together through our smoothie experiences.</p>
+              </MotionDiv>
+              
+              <MotionDiv
+                variant="fadeUp"
+                custom={3}
+                className="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300"
+              >
+                <span className="text-5xl mb-4">💪</span>
+                <h3 className="text-xl font-bold text-primary-red mb-2 text-center">Empowerment & Inclusion</h3>
+                <p className="text-gray-700 text-center leading-relaxed">We inspire people of all ages and backgrounds to participate, create, and feel energized — because everyone deserves to be part of the fun and positive change.</p>
+              </MotionDiv>
             </div>
           </div>
         </section>
