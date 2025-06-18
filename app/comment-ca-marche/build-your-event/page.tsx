@@ -77,7 +77,7 @@ export default function BuildYourEventPage() {
       <Header />
       <main>
         {/* Hero Section styled like home page hero */}
-        <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="hero-section relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div className="hero-video-container absolute inset-0">
             <div
@@ -86,28 +86,28 @@ export default function BuildYourEventPage() {
                 backgroundImage: `url('/images/outdoor.jpg')`,
               }}
             />
-            <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+            <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/90 sm:from-black/80 via-black/70 sm:via-black/50 to-black/50 sm:to-transparent" />
           </div>
 
           {/* Hero Content */}
-          <div className="hero-content relative z-10 text-center text-white px-4 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div className="hero-content relative z-10 text-center text-white px-4 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-start md:items-center py-16 md:py-0">
             {/* Left Side - Text Content */}
-            <div className="text-left px-6 md:px-12 py-16 bg-black/20 backdrop-blur-sm md:ml-12">
+            <div className="text-left px-4 sm:px-6 md:px-12 py-10 md:py-16 bg-black/20 backdrop-blur-sm md:ml-12">
               <div className="max-w-md">
                 {/* Simple, Bold Title */}
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-none">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tight leading-none">
                   {t('title')}
                 </h1>
                 
                 {/* Clean Subtitle */}
-                <p className="text-xl md:text-2xl font-light mb-12 opacity-90">
+                <p className="text-lg sm:text-xl md:text-2xl font-light mb-8 md:mb-12 opacity-90">
                   {t('subtitle')}
                 </p>
 
                 {/* Minimal Button */}
                 <Button 
                   size="lg" 
-                  className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-8 py-4 text-lg font-medium inline-flex items-center transition-colors"
+                  className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium inline-flex items-center transition-colors w-full sm:w-auto justify-center sm:justify-start"
                   onClick={() => document.getElementById('event-types')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   {t('navigation.continue')}
@@ -127,11 +127,11 @@ export default function BuildYourEventPage() {
         <MotionSection id="event-types" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
                 {t("step1.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
                 {t("step1.subtitle")}
               </p>
             </ScrollReveal>
@@ -146,7 +146,7 @@ export default function BuildYourEventPage() {
                     custom={index}
                     className={`${index % 2 === 0 ? 'bg-primary-red' : 'bg-trust-blue'} rounded-2xl overflow-hidden shadow-xl`}
                   >
-                    <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="grid lg:grid-cols-2 gap-0 flex-col-reverse lg:flex-row">
                       {/* Image Section */}
                       <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                         <ImageMaskReveal className="h-64 lg:h-full">
@@ -161,21 +161,22 @@ export default function BuildYourEventPage() {
                       </div>
 
                       {/* Content Section */}
-                      <div className={`p-8 lg:p-12 text-white ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                        <div className="flex items-center mb-6">
-                          <AnimatedImage hoverEffect="rotate" className="mr-4 text-white">
-                            {getIconComponent(type.icon)}
+                      <div className={`p-4 sm:p-8 lg:p-12 text-white ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                        <div className="flex items-center mb-4 sm:mb-6">
+                          <AnimatedImage hoverEffect="rotate" className="mr-3 sm:mr-4 text-white">
+                            <div className="hidden sm:block">{getIconComponent(type.icon)}</div>
+                            <div className="block sm:hidden h-8 w-8">{getIconComponent(type.icon)}</div>
                           </AnimatedImage>
-                          <h3 className="text-2xl md:text-3xl font-bold">{type.title}</h3>
+                          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">{type.title}</h3>
                         </div>
                         
-                        <p className="text-lg mb-6 leading-relaxed opacity-90">
+                        <p className="text-base sm:text-lg mb-6 leading-relaxed opacity-90">
                           {type.description}
                         </p>
 
                         <div className="mb-8">
-                          <h4 className="text-lg font-semibold mb-4">Avantages clés:</h4>
-                          <ul className="space-y-2">
+                          <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Avantages clés:</h4>
+                          <ul className="space-y-2 text-sm sm:text-base">
                             <li className="flex items-center">
                               <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
                               Expérience unique et mémorable
@@ -194,7 +195,7 @@ export default function BuildYourEventPage() {
                         <AnimatedImage hoverEffect="lift">
                           <Link href="/contact">
                             <Button 
-                              className="bg-white text-dark-charcoal hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none"
+                              className="bg-white text-dark-charcoal hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full sm:w-auto text-center"
                             >
                               Demander un devis
                               <ArrowRight className="ml-2 h-5 w-5" />
@@ -214,16 +215,16 @@ export default function BuildYourEventPage() {
         <MotionSection className="py-20 bg-accent-green text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
                 Comment créer votre événement
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
-              <p className="text-lg md:text-xl max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4 sm:px-0">
                 Un processus simple en 4 étapes pour organiser votre événement Voilà Vélo
               </p>
             </ScrollReveal>
 
-            <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-7xl mx-auto">
               {steps.map((step, index) => (
                 <MotionDiv
                   key={step.number}
@@ -233,12 +234,12 @@ export default function BuildYourEventPage() {
                 >
                   <AnimatedImage 
                     hoverEffect="bounce" 
-                    className="bg-white w-20 h-20 rounded-full flex items-center justify-center text-accent-green text-2xl font-bold mx-auto mb-8 shadow-lg"
+                    className="bg-white w-16 sm:w-20 h-16 sm:h-20 rounded-full flex items-center justify-center text-accent-green text-xl sm:text-2xl font-bold mx-auto mb-6 sm:mb-8 shadow-lg"
                   >
                     <span className="text-3xl">{step.number}</span>
                   </AnimatedImage>
                   
-                  <h3 className="text-xl font-bold mb-4">{step.name}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{step.name}</h3>
                   <p className="leading-relaxed opacity-90">
                     {index === 0 && "Choisissez le type d'événement qui correspond à vos besoins"}
                     {index === 1 && "Précisez la date, l'heure, le lieu et le nombre de participants"}
@@ -269,33 +270,33 @@ export default function BuildYourEventPage() {
         <MotionSection className="py-20 bg-light-gray">
           <div className="container mx-auto px-4 max-w-5xl">
             <ScrollReveal className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
                 {t("faq:title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
                 {t("faq:subtitle")}
               </p>
             </ScrollReveal>
 
-            <div className="faq-list max-w-4xl mx-auto bg-white p-8 rounded-none shadow-lg">
+            <div className="faq-list max-w-4xl mx-auto bg-white p-4 sm:p-8 rounded-none shadow-lg">
               {(faqItems || []).map((item, index) => (
                 <div 
                   key={index} 
                   className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg" 
                 >
                   <button
-                    className="faq-question w-full text-left py-6 px-4 flex justify-between items-center hover:text-primary-red transition-colors"
+                    className="faq-question w-full text-left py-4 sm:py-6 px-3 sm:px-4 flex justify-between items-center hover:text-primary-red transition-colors"
                     onClick={() => toggleFaq(index)}
                     aria-expanded={openFaq === index}
                   >
-                    <h3 className="text-lg font-bold pr-4">{item.question}</h3>
+                    <h3 className="text-base sm:text-lg font-bold pr-2 sm:pr-4">{item.question}</h3>
                     <span className="faq-toggle text-primary-red flex-shrink-0 bg-white p-2 rounded-full shadow-md">
                       {openFaq === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
                     </span>
                   </button>
                   {openFaq === index && (
-                    <div className="faq-answer pb-6 px-4">
+                    <div className="faq-answer pb-4 sm:pb-6 px-3 sm:px-4">
                       <p className="text-gray-700 leading-relaxed">{item.answer}</p>
                     </div>
                   )}
@@ -320,19 +321,19 @@ export default function BuildYourEventPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
               <ScrollReveal>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                   Prêt à créer un événement mémorable?
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
-                <p className="text-xl mb-8 max-w-2xl mx-auto">
+                <p className="text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-4 sm:px-0">
                   Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.
                 </p>
               </ScrollReveal>
               
-              <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
+              <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4 px-4 sm:px-0">
                 <AnimatedImage hoverEffect="lift">
                   <Link href="/contact">
-                    <Button className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none">
+                    <Button className="bg-white text-primary-red hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full">
                       Demander un devis
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
@@ -343,7 +344,7 @@ export default function BuildYourEventPage() {
                   <Link href="tel:+1XXXXXXXXXX">
                     <Button 
                       variant="outline" 
-                      className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 text-lg font-semibold rounded-none"
+                      className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full mt-4 sm:mt-0"
                     >
                       Appelez-nous
                     </Button>
