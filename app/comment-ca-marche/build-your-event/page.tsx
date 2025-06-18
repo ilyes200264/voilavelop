@@ -7,7 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, ChevronUp, ArrowRight, Building, Rocket, GraduationCap, 
-         Party, Tent, Heart, CheckCircle, ChevronRight } from "lucide-react"
+         PartyPopper, Tent, Heart, CheckCircle, ChevronRight } from "lucide-react"
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -28,7 +28,8 @@ export default function BuildYourEventPage() {
   // Use proper namespace format
   const steps = t<Array<{ number: number; name: string }>>("steps", [])
   const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes", [])
-  const faqItems = t<any[]>('faq:categories[0].faqs', []).slice(0, 5)
+  // Get FAQ items directly from questions array
+  const faqItems = t<any[]>('faq:questions', []).slice(0, 5)
 
   // Event category images and descriptions
   const eventImages = [
@@ -64,7 +65,7 @@ export default function BuildYourEventPage() {
       case "🏢": return <Building className="h-12 w-12" />
       case "🚀": return <Rocket className="h-12 w-12" />
       case "🎓": return <GraduationCap className="h-12 w-12" />
-      case "🎉": return <Party className="h-12 w-12" />
+      case "🎉": return <PartyPopper className="h-12 w-12" />
       case "🎪": return <Tent className="h-12 w-12" />
       case "💝": return <Heart className="h-12 w-12" />
       default: return <Building className="h-12 w-12" />

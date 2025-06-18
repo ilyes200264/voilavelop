@@ -9,11 +9,22 @@ import { ChevronDown, ChevronUp, Search } from "lucide-react"
 import { useI18n } from "@/lib/i18n"
 
 export default function FaqPage() {
-  const { t } = useI18n()
+  const { t } = useI18n("faq")
   const [openCategory, setOpenCategory] = useState<string | null>("general")
   const [searchQuery, setSearchQuery] = useState("")
 
-  const faqCategories = t<any[]>('categories', [])
+  // Convert questions from the JSON structure to categorized format
+  const categoriesObj = t<Record<string, string>>('categories', {})
+  const questions = t<any[]>('questions', [])
+  
+  // Group questions by category
+  const faqCategories = Object.keys(categoriesObj).map(categoryId => {
+    return {
+      id: categoryId,
+      name: categoriesObj[categoryId],
+      faqs: questions.filter(q => q.category === categoryId)
+    }
+  })
 
   const toggleCategory = (categoryId: string) => {
     setOpenCategory(openCategory === categoryId ? null : categoryId)
