@@ -33,12 +33,12 @@ export default function BuildYourEventPage() {
 
   // Event category images and descriptions
   const eventImages = [
-    { id: "corporate", image: "/images/corporate-events.jpg" },
-    { id: "brand-activation", image: "/images/event-2.jpg" },
-    { id: "school", image: "/images/event-3.jpg" },
-    { id: "private", image: "/images/gallery-3.jpg" },
-    { id: "festival", image: "/images/festivals.jpg" },
-    { id: "nonprofit", image: "/images/gallery-1.jpg" }
+    { id: "corporate", image: "/images/velo-smoothie-1.jpg" },
+    { id: "brand-activation", image: "/images/6.jpg" },
+    { id: "school", image: "/images/Packages-596-Edit.jpg" },
+    { id: "private", image: "/images/velo-smoothie-1.jpg" },
+    { id: "festival", image: "/images/1000099651.png" },
+    { id: "nonprofit", image: "/images/Signature package2.jpg" }
   ]
 
   const handleNext = () => {
