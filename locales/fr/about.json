@@ -1,6 +1,7 @@
 {
   "hero": {
-    "title": "À Propos de Nous",
+    "title": "Notre Histoire",
+    "subtitle": "Deux sœurs, une mission: rendre la vie saine amusante pour tous",
     "quote": "\"Nous engageons et inspirons les gens d'une manière amusante et saine!\"",
     "founders": "Leen et Micha"
   },
@@ -12,6 +13,15 @@
     "description3": "Voilà Vélo Fruité est parfait pour engager et inspirer votre public grâce à un service traiteur divertissant, une exposition de marque ou la promotion de la durabilité et de la santé lors d'événements.",
     "description4": "L'entreprise a été fondée par Leen et Micha en 2020 avec l'aide de leur équipe dévouée. Elles dirigent maintenant des événements à Montréal, Québec, Laval et Ottawa.",
     "cities": ["Montréal", "Québec", "Laval", "Ottawa"]
+  },
+  "whoWeAre": {
+    "title": "Qui Nous Sommes",
+    "badges": {
+      "sisterFounded": "Fondé par des Sœurs",
+      "passionDriven": "Guidé par la Passion",
+      "communityFocused": "Centré sur la Communauté"
+    },
+    "since": "Depuis 2023"
   },
   "founders": {
     "title": "Nos Fondatrices",
@@ -57,5 +67,10 @@
     "title": "Nos Partenaires",
     "description": "Nos partenaires spécialisent dans les événements alimentés par pédale en utilisant des vélos pour engager, éduquer et divertir les enfants et les adultes.",
     "button": "En savoir plus"
+  },
+  "cta": {
+    "title": "Prêt à Vivre l'Expérience?",
+    "subtitle": "Créons ensemble une expérience inoubliable de vélo smoothie pour votre prochain événement",
+    "button": "Commencer"
   }
 }

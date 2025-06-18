@@ -1,140 +1,73 @@
+
 {
-  "title": "Questions fréquemment posées",
-  "subtitle": "Trouvez des réponses à toutes vos questions concernant nos services de vélos à smoothie",
-  "search": {
-    "placeholder": "Rechercher une question...",
-    "results": "Résultats de recherche",
-    "noResults": "Aucun résultat trouvé pour",
-    "tryDifferent": "Essayez avec des termes différents ou parcourez les catégories ci-dessous"
+  "title": "Questions Fréquemment Posées",
+  "subtitle": "Tout ce que vous devez savoir sur notre service de vélos à smoothie",
+  "categories": {
+    "general": "Général",
+    "technical": "Technique",
+    "booking": "Réservation",
+    "customization": "Personnalisation"
   },
-  "categories": [
+  "questions": [
     {
-      "id": "general",
-      "name": "Questions générales",
-      "faqs": [
-        {
-          "question": "Combien de temps faut-il pour faire un smoothie?",
-          "answer": "Il ne faut que 30 secondes pour pédaler un smoothie, mais vous pouvez rester et continuer à rouler si vous le souhaitez! C'est très amusant et très facile pour tous les âges!"
-        },
-        {
-          "question": "Que se passe-t-il si je veux quelque chose en plus de ce que vous proposez habituellement?",
-          "answer": "Nous adorons entendre des idées intéressantes! Appelez-nous ou envoyez-nous un e-mail pour discuter des détails et nous ferons de notre mieux pour répondre à votre demande."
-        },
-        {
-          "question": "Pouvez-vous mélanger des cocktails alcoolisés lors de mariages ou de fêtes privées?",
-          "answer": "Oui, absolument! Nous pouvons mélanger de délicieux cocktails alcoolisés pour les mariages et les événements privés. Pour les événements privés d'entreprise où l'alcool est servi gratuitement, aucun permis spécial n'est requis au Québec. Si l'événement a lieu dans un lieu avec licence (restaurant, salle de banquet), leur permis couvre le service d'alcool. Nous nous occupons de tous les aspects légaux pour garantir que tout soit conforme et sécuritaire."
-        },
-        {
-          "question": "Quels ingrédients utilisez-vous?",
-          "answer": "Nous utilisons uniquement des fruits frais, des légumes biologiques et des ingrédients naturels. Nous pouvons accommoder les allergies alimentaires et les préférences diététiques avec un préavis."
-        },
-        {
-          "question": "Avez-vous besoin d'électricité?",
-          "answer": "Non! C'est la beauté de nos vélos - ils fonctionnent entièrement à l'énergie humaine. Nous apportons notre propre équipement sonore alimenté par batterie si nécessaire."
-        },
-        {
-          "question": "Voilà Vélo fonctionne-t-il mieux à l'intérieur ou à l'extérieur?",
-          "answer": "Voilà Vélo est parfait pour les événements en intérieur comme en extérieur. Nous nous adaptons à votre espace et à vos besoins."
-        },
-        {
-          "question": "Les clients peuvent-ils préparer leurs propres boissons?",
-          "answer": "Oui! Nous encourageons tous nos clients à préparer leurs propres boissons - nous pensons que c'est plus amusant et plus engageant de cette façon. Presque tout le monde peut utiliser les vélos mélangeurs - les enfants dès l'âge de quatre ans, les adolescents, les adultes et même les personnes âgées dynamiques peuvent confortablement utiliser nos formidables vélos mélangeurs. Notre personnel est également composé de cyclistes enthousiastes si vous souhaitez que nous vous donnions un coup de main (ou de jambe) à tout moment."
-        },
-        {
-          "question": "Que se passe-t-il s'il pleut?",
-          "answer": "Nous pouvons opérer à l'intérieur si vous avez un espace approprié, ou nous pouvons reporter l'événement. Nous travaillons avec vous pour trouver la meilleure solution."
-        },
-        {
-          "question": "Combien de temps à l'avance dois-je réserver?",
-          "answer": "Nous recommandons de réserver au moins 2-3 semaines à l'avance, surtout pendant la haute saison (mai-septembre). Pour les grands événements, 4-6 semaines sont préférables."
-        }
-      ]
+      "category": "general",
+      "question": "Combien de temps faut-il pour faire un smoothie?",
+      "answer": "Il ne faut que 30 secondes pour pédaler un smoothie."
     },
     {
-      "id": "equipment",
-      "name": "Équipement et logistique",
-      "faqs": [
-        {
-          "question": "Quels vélos sont disponibles?",
-          "answer": "Nous proposons des vélos pour adultes (convenant aux personnes à partir de 10 ans) et des vélos de taille enfant (adaptés aux enfants de 5 à 10 ans). Veuillez préciser vos besoins lors de votre réservation."
-        },
-        {
-          "question": "Combien de personnes peuvent utiliser un vélo en même temps?",
-          "answer": "Chaque vélo peut accommoder une personne à la fois. Cependant, nous encourageons les participants à faire la queue et à encourager les autres, créant une atmosphère festive et communautaire."
-        },
-        {
-          "question": "De combien d'espace avez-vous besoin pour l'installation?",
-          "answer": "Pour un vélo, nous avons besoin d'environ 2m x 2m d'espace. Pour plusieurs vélos, l'espace nécessaire augmente en conséquence. Nous vous conseillons également de prévoir de l'espace supplémentaire pour les participants qui attendent leur tour."
-        },
-        {
-          "question": "Combien de temps dure l'installation?",
-          "answer": "Notre équipe arrive généralement 1 heure avant le début de l'événement pour l'installation. Le démontage prend environ 30-45 minutes après la fin de l'événement."
-        }
-      ]
+      "category": "general",
+      "question": "Servez-vous des cocktails alcoolisés?",
+      "answer": "Oui, absolument. Nous pouvons mixer de délicieux cocktails alcoolisés pour les mariages et les événements privés. Nous nous occupons de tous les aspects légaux pour assurer que tout est sécuritaire."
     },
     {
-      "id": "customization",
-      "name": "Personnalisation et options",
-      "faqs": [
-        {
-          "question": "Pouvez-vous personnaliser les smoothies pour notre marque?",
-          "answer": "Oui! Nous pouvons créer des recettes personnalisées, utiliser vos couleurs de marque, et même ajouter votre logo sur les vélos pour les événements corporatifs."
-        },
-        {
-          "question": "Pouvez-vous fournir des services bilingues?",
-          "answer": "Absolument! Tous nos animateurs sont bilingues et peuvent conduire l'événement en français, en anglais, ou dans les deux langues selon vos besoins."
-        }
-      ]
+      "category": "general",
+      "question": "Quels ingrédients utilisez-vous?",
+      "answer": "Nous utilisons uniquement des fruits frais, des légumes biologiques et des ingrédients naturels. Tous nos produits sont canadiens."
     },
     {
-      "id": "pricing",
-      "name": "Tarifs et réservation",
-      "faqs": [
-        {
-          "question": "Comment puis-je obtenir un devis?",
-          "answer": "Vous pouvez remplir notre formulaire de contact en ligne, nous appeler directement, ou utiliser notre outil 'Créer votre événement' pour recevoir un devis personnalisé basé sur vos besoins spécifiques."
-        },
-        {
-          "question": "Y a-t-il des frais supplémentaires pour le déplacement?",
-          "answer": "Le déplacement est inclus gratuitement dans un rayon de 25 km de notre base à Montréal. Au-delà, des frais de déplacement peuvent s'appliquer selon la distance. Nous vous fournirons toujours un devis transparent incluant tous les coûts."
-        },
-        {
-          "question": "Proposez-vous des réductions pour les organismes à but non lucratif ou les écoles?",
-          "answer": "Oui, nous offrons des forfaits spéciaux pour les écoles, les organismes à but non lucratif et les événements caritatifs. Contactez-nous pour discuter de vos besoins et de votre budget."
-        },
-        {
-          "question": "Quelle est votre politique d'annulation?",
-          "answer": "Nous comprenons que les plans peuvent changer. Les annulations effectuées plus de 14 jours avant l'événement sont entièrement remboursables. Pour les annulations entre 7 et 14 jours, un acompte de 50% est conservé. Pour les annulations à moins de 7 jours, le paiement complet est dû. En cas de conditions météorologiques défavorables, nous travaillerons avec vous pour reprogrammer sans frais supplémentaires."
-        },
-        {
-          "question": "Comment puis-je effectuer le paiement?",
-          "answer": "Nous acceptons les paiements par virement électronique, carte de crédit, ou chèque d'entreprise. Un acompte de 50% est généralement requis pour confirmer la réservation, le solde étant dû le jour de l'événement ou à l'avance selon les termes du contrat."
-        }
-      ]
+      "category": "technical",
+      "question": "Avez-vous besoin d'électricité?",
+      "answer": "Non. C'est la beauté de nos vélos—ils fonctionnent entièrement à l'énergie humaine seulement."
     },
     {
-      "id": "sustainability",
-      "name": "Durabilité et valeurs",
-      "faqs": [
-        {
-          "question": "Comment Voilà Vélo contribue-t-il à la durabilité?",
-          "answer": "Notre concept est intrinsèquement durable car il fonctionne sans électricité, uniquement à l'énergie humaine. Nous utilisons des ingrédients locaux et biologiques dans la mesure du possible, et tous nos contenants et ustensiles sont compostables ou réutilisables."
-        },
-        {
-          "question": "Que se passe-t-il avec les ingrédients non utilisés?",
-          "answer": "Dans le cadre de notre engagement envers la durabilité, nous donnons tous les ingrédients restants à des organismes de bienfaisance locaux comme Moisson Montréal."
-        },
-        {
-          "question": "Travaillez-vous avec des fournisseurs locaux?",
-          "answer": "Oui, nous nous approvisionnons en fruits et légumes auprès de producteurs locaux dans la mesure du possible, en fonction de la saison. Nous croyons fermement au soutien de l'économie locale et à la réduction de notre empreinte carbone."
-        }
-      ]
+      "category": "general",
+      "question": "Que se passe-t-il s'il pleut?",
+      "answer": "Nous pouvons opérer à l'intérieur si vous avez un espace approprié. Nous travaillerons avec vous pour trouver la meilleure solution."
+    },
+    {
+      "category": "technical",
+      "question": "De combien d'espace avez-vous besoin pour l'installation?",
+      "answer": "Chaque vélo à smoothie nécessite 1,5 mètre par 1,5 mètre d'espace."
+    },
+    {
+      "category": "customization",
+      "question": "Pouvez-vous personnaliser les smoothies pour notre marque?",
+      "answer": "Oui, nous pouvons créer des recettes personnalisées, utiliser les couleurs de votre marque, et même ajouter votre logo sur les vélos, sur les gobelets, et sur tout ce que vous voulez. Nous pouvons ajouter vos logos aussi."
+    },
+    {
+      "category": "customization",
+      "question": "Offrez-vous de la décoration pour l'installation?",
+      "answer": "Oui, nous le faisons! Nous offrons de belles décorations de fleurs et de ballons pour rehausser l'ambiance de votre événement. Que vous recherchiez quelque chose d'élégant, de ludique ou de thématique, nous adaptons le décor pour correspondre à votre vision et créer une installation mémorable et photogénique."
+    },
+    {
+      "category": "booking",
+      "question": "Quelle est votre politique d'annulation?",
+      "answer": "Nous comprenons que les plans peuvent changer. Les annulations faites plus de 10 jours avant l'événement sont entièrement remboursables. Pour les annulations de 10 jours ou moins, 50% du dépôt est retenu."
+    },
+    {
+      "category": "general",
+      "question": "Comment Voila Vélo contribue-t-il à la durabilité?",
+      "answer": "Nos vélos à smoothie sont alimentés par les gens, réduisant les émissions. Nous utilisons des ingrédients d'origine locale, des emballages écologiques et des gobelets et pailles compostables."
+    },
+    {
+      "category": "general",
+      "question": "Qu'arrive-t-il aux ingrédients non utilisés?",
+      "answer": "Nous donnons tous les ingrédients restants aux personnes dans le besoin."
     }
   ],
-  "stillHaveQuestions": {
-    "title": "Vous avez encore des questions?",
-    "description": "Notre équipe est là pour vous aider! Contactez-nous directement pour toute question spécifique.",
-    "contactButton": "Nous contacter",
-    "callButton": "Appelez-nous: XXX-XXX-XXXX"
+  "notFound": {
+    "title": "Vous ne trouvez pas ce que vous cherchez?",
+    "description": "Notre équipe est là pour répondre à toutes vos questions.",
+    "contactButton": "Contactez-nous"
   }
 }

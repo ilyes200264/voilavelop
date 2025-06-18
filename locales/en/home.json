@@ -1,105 +1,70 @@
 {
   "hero": {
-    "title": "Fresh Smoothies, Powered by Pedals",
-    "subtitle": "Eco-friendly bike blenders for unforgettable events",
-    "ctaButton": "Book Now"
-  },
-  "valueProposition": {
-    "title": "Transform your event with our smoothie bikes",
-    "subtitle": "A unique, memorable and eco-friendly experience",
-    "description1": "Voilà Vélo Fruité is a pop-up event company that promotes health and wellness using our Quebec-made blender bikes.",
-    "description2": "Make your next event a fun and healthy success! We have experience organizing unique pop-up events to meet your needs. Choose one of our popular packages or contact us for a quote before we're all pedaled out!",
-    "ctaButton": "LEARN MORE"
-  },
-  "whyChooseWorkshop": {
-    "title": "Why choose our Voilà Vélo workshop?",
-    "subtitle": "Because it's fun, sustainable, and unforgettable!",
-    "description": "At Voilà Vélo, we believe that learning, moving, and enjoying yourself can go hand in hand. Our Smoothie Vélo workshop is more than just an activity — it's an experience that inspires healthy habits, one pedal-powered smoothie at a time.",
-    "features": {
-      "ecoFriendly": {
-        "title": "Eco-friendly and energy-free",
-        "description": "No electricity needed! Smoothies are blended by participant pedal power — a zero-emission, 100% human-powered activity that makes sustainability exciting."
+    "title": "Transform Your Event with Smoothie Bikes!",
+    "subtitle": "Create unforgettable experiences with our pedal-powered smoothie stations. Fun, healthy, and eco-friendly entertainment for all ages!",
+    "tagline": "GOOD VIBES, GREEN RIDES, GREAT TASTE.",
+    "bookNow": "Book Now",
+    "ourBikes": "Our Smoothie Bikes",
+    "bikeCards": {
+      "green": {
+        "title": "Eco Green",
+        "description": "Perfect for outdoor events"
       },
-      "sustainability": {
-        "title": "A hands-on approach to sustainability",
-        "description": "Participants become creators, not just consumers. It's a unique way to understand the impact of our actions, while embracing physical effort and environmental awareness."
+      "blue": {
+        "title": "Classic Blue",
+        "description": "Our most popular model"
       },
-      "healthy": {
-        "title": "Healthy, tasty, and joyful",
-        "description": "Our smoothies are made on-site with fresh, colorful ingredients and a big dose of fun — combining nutrition and movement for all ages."
-      },
-      "events": {
-        "title": "Perfect for all kinds of events",
-        "description": "From schools and festivals to corporate or community events — our workshop adapts to your crowd. It's inclusive, interactive, and unforgettable."
-      },
-      "values": {
-        "title": "We pedal for our values",
-        "description": "We use reusable or compostable materials, reduce waste, and promote mindful consumption — all in a lively and welcoming atmosphere."
+      "red": {
+        "title": "Watermelon Red",
+        "description": "Fun tropical theme"
       }
-    },
-    "tagline": {
-      "part1": "Voilà Vélo Fruité:",
-      "part2": "Blended by You, Powered by Fun!"
     }
   },
+  "transform": {
+    "title": "Transform your event with our smoothie bikes",
+    "description": "Bring energy, health, and unforgettable moments to your next gathering. Our smoothie bikes combine physical activity, nutrition education, and pure fun into one amazing experience.",
+    "learnMore": "Learn more"
+  },
   "whyChoose": {
-    "title": "Why Choose Voilà Vélo?",
-    "subtitle": "Delicious smoothies and an unforgettable experience",
-    "description": "At Voilà Vélo, we believe that learning, movement, and enjoyment can go hand in hand. Our Smoothie Bike workshop is more than just an activity — it's an experience that inspires healthy habits, one pedal-powered smoothie at a time.",
-    "reasons": {
-      "fun": {
-        "title": "Fun & Interactive",
-        "description": "Create a festive atmosphere with our smoothie bikes. Your guests will have fun pedaling to mix their own drinks."
-      },
-      "healthy": {
-        "title": "Healthy, Tasty, and Joyful",
-        "description": "Our smoothies are made on-site with fresh, colorful ingredients and a big dose of fun — combining nutrition and movement for all ages."
+    "title": "Why Choose Our Voilà Vélo Workshop?",
+    "items": {
+      "unique": {
+        "title": "Unique Experience",
+        "description": "An original activity that creates lasting memories for all participants"
       },
       "sustainable": {
-        "title": "Eco-friendly",
-        "description": "Our bikes operate without electricity and we only use sustainable and biodegradable materials."
+        "title": "100% Sustainable",
+        "description": "Eco-friendly practices from start to finish, supporting local producers"
       },
-      "unique": {
-        "title": "Unique & Memorable",
-        "description": "Offer an original experience that will stand out and be remembered by your guests for a long time."
+      "healthy": {
+        "title": "Healthy & Delicious",
+        "description": "Fresh, nutritious ingredients in every smoothie, promoting wellness"
       },
-      "ecoFriendly": {
-        "title": "Eco-Friendly and Energy-Free",
-        "description": "No electricity needed! Smoothies are blended by the pedaling power of participants — a zero-emission, 100% human-powered activity that makes sustainability exciting."
+      "engaging": {
+        "title": "Interactive Fun",
+        "description": "Get everyone involved and energized with hands-on participation"
       },
-      "sustainability": {
-        "title": "Hands-on Approach to Sustainability",
-        "description": "Participants become creators, not just consumers. It's a unique way to understand the impact of our actions, while embracing physical effort and environmental awareness."
-      },
-      "events": {
-        "title": "Perfect for All Types of Events",
-        "description": "From schools and festivals to corporate or community events — our workshop adapts to your crowd. It's inclusive, interactive, and unforgettable."
-      },
-      "values": {
-        "title": "We Pedal for Our Values",
-        "description": "We use reusable or compostable materials, reduce waste, and promote conscious consumption — all in a lively and welcoming atmosphere."
+      "professional": {
+        "title": "Professional Service",
+        "description": "Experienced bilingual team ensures smooth operation at every event"
       }
-    },
-    "tagline": {
-      "part1": "Voilà Vélo Fruité:",
-      "part2": "Blended by You, Powered by Joy!"
     }
   },
   "benefits": {
-    "title": "Reconnect in a fun and healthy way",
-    "subtitle": "The benefits of our smoothie bikes",
+    "title": "Benefits for Your Event",
+    "subtitle": "Discover how our smoothie bikes can transform any gathering",
     "perfectFor": "Perfect for:",
     "question": "Have something else in mind?",
-    "contactUs": "Contact us for your event idea!",
+    "contactUs": "Contact us about your event idea!",
     "learnMore": "Learn more",
     "items": {
       "engagement": {
-        "title": "Increase Engagement",
-        "description": "Create positive and fun interactions between your guests"
+        "title": "Boost Engagement",
+        "description": "Create positive and fun interactions among your guests"
       },
       "healthy": {
         "title": "Healthy Option",
-        "description": "Offer nutritious and refreshing drinks"
+        "description": "Offer nutritious and refreshing beverages"
       },
       "branding": {
         "title": "Customization",
@@ -109,84 +74,33 @@
         "title": "Reduced Ecological Footprint",
         "description": "Zero electricity and 100% biodegradable materials"
       },
-      "wellness": "Workplace wellness",
-      "teamBuilding": "Team building and staff engagement",
-      "corporate": "Corporate events (brand engagement and promotion)",
-      "malls": "Shopping mall activities / School holiday programs",
-      "schools": "School parties / Charity fundraisers",
-      "openDays": "University open days",
-      "weddings": "Weddings, birthday parties and gala dinners"
+      "wellness": "Workplace Wellness",
+      "teamBuilding": "Team Building & Staff Engagement",
+      "corporate": "Corporate Events (Brand Engagement & Promotion)",
+      "malls": "Mall Activities / School Holiday Programs",
+      "schools": "School Parties / Charity Fundraisers",
+      "openDays": "University Open Days",
+      "weddings": "Weddings, Birthday Parties & Gala Dinners"
     }
   },
   "packages": {
     "title": "Our Packages",
-    "subtitle": "Find the perfect formula for your event",
+    "subtitle": "Choose the perfect smoothie bike experience for your event",
+    "includes": "Package includes",
+    "seeDetails": "See details",
     "viewAll": "View all packages",
     "footer": {
-      "highlight": "The choice is yours",
-      "text": "choose from our complete range of packages or contact us to create your own."
-    },
-    "items": {
-      "laPetiteKoki": {
-        "title": "La petite Koki",
-        "description": "Ideal for small events up to 50 people",
-        "details": "See details"
-      },
-      "doubleFun": {
-        "title": "Double Fun",
-        "description": "Two bikes for more fun and competition",
-        "details": "See details"
-      },
-      "signature": {
-        "title": "Signature Package",
-        "description": "The complete experience, fully customized",
-        "details": "See details"
-      },
-      "la-petite-koki": {
-        "details": "See details"
-      },
-      "pop-solo": {
-        "details": "See details"
-      },
-      "double-fun": {
-        "details": "See details"
-      }
-    }
-  },
-  "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "Successful events and satisfied clients",
-    "previous": "Previous testimonial",
-    "next": "Next testimonial",
-    "goTo": "Go to testimonial",
-    "items": {
-      "testimonial1": {
-        "text": "Our community event was much more successful thanks to the bikes. This is the 3rd year we've rented them... thank you so much!",
-        "author": "Beatrice",
-        "title": "Event Organizer",
-        "date": "December 2024"
-      },
-      "testimonial2": {
-        "text": "The Voilà Vélo team transformed our corporate event into an unforgettable experience. Our employees are still talking about that day!",
-        "author": "Marc-André",
-        "title": "HR Director",
-        "date": "November 2024"
-      },
-      "testimonial3": {
-        "text": "Perfect for our family festival! The kids loved pedaling to create their smoothies. An activity that is both fun and educational.",
-        "author": "Sophie",
-        "title": "Event Coordinator",
-        "date": "October 2024"
-      }
+      "highlight": "Something for everyone",
+      "text": "from intimate gatherings to large-scale events, we have the perfect package for you."
     }
   },
   "sustainability": {
-    "title": "We integrate sustainability into everything we do!!",
-    "subtitle": "Responsible and eco-friendly events",
-    "description": "At Voilà Vélo, we believe it's possible to have fun while respecting the planet. That's why we've implemented sustainable practices at every step of our service.",
+    "title": "We integrate sustainability into everything we do!",
+    "subtitle": "From local sourcing to zero waste, we're committed to protecting our planet",
+    "description": "Our commitment to the environment goes beyond pedal power. We source ingredients locally, use compostable materials, and donate unused ingredients to those in need.",
     "items": {
       "energyFree": {
-        "title": "Electricity-Free",
+        "title": "Energy Free",
         "description": "Our bikes operate solely on human power"
       },
       "localIngredients": {
@@ -199,15 +113,15 @@
       },
       "carbonOffset": {
         "title": "Carbon Offset",
-        "description": "We offset the carbon footprint of our travel"
+        "description": "We offset the carbon footprint of our travels"
       },
       "noStraws": {
-        "title": "Straws\nNo thanks!",
+        "title": "No Straws\nThank You!",
         "description": "We don't use straws or lids at our events and encourage our clients to do the same"
       },
       "foodWaste": {
-        "title": "Fighting\nFood Waste!",
-        "description": "We donate all leftover ingredients to people in need"
+        "title": "Fighting Food\nWaste!",
+        "description": "We donate all leftover ingredients to charities like Moisson Montreal"
       },
       "equality": {
         "title": "Fighting\nInequality!",
@@ -218,5 +132,19 @@
         "description": "All carbon produced by our vehicles and paper is offset by tree plantings in Quebec"
       }
     }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Hear from organizations that have experienced the Voilà Vélo difference"
+  },
+  "valueProposition": {
+    "title": "More Than Just Smoothies",
+    "subtitle": "We create experiences that bring people together",
+    "points": [
+      "Interactive entertainment for all ages",
+      "Promotes health and wellness",
+      "Eco-friendly and sustainable",
+      "Bilingual professional service"
+    ]
   }
 }

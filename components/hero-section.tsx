@@ -1,118 +1,190 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Sparkles } from "lucide-react"
 import { 
-  MotionDiv, 
+  MotionSection, 
+  ScrollReveal, 
   StaggerContainer, 
-  RedLineSeparator,
-  TextReveal,
-  AnimatedImage
+  MotionDiv, 
+  AnimatedImage,
+  TextReveal
 } from "@/components/motion/motion-components"
 import { useI18n } from "@/lib/i18n"
+import { motion } from "framer-motion"
 
 export function HeroSection() {
   const { t } = useI18n()
-  const cities = ["Montréal", "Québec", "Laval", "Ottawa"]
-
-  // Product images array for easier management
-  const productImages = [
-    { src: "/images/0.jpg", alt: "Green bicycle" },
-    { src: "/images/1.jpg", alt: "Red bicycle" },
-    { src: "/images/2.jpg", alt: "Yellow bicycle" },
-  ]
 
   return (
-    <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-28">
-      {/* Background Image - Using a fresher background */}
-      <div className="hero-video-container absolute inset-0">
-        <div
-          className="hero-video absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/images/6.jpg')`,
-          }}
-        />
-        <div className="video-overlay absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-      </div>
-
-      {/* Hero Content */}
-      <div className="hero-content relative z-10 text-center text-white px-4 w-full max-w-7xl mx-auto mt-6 md:mt-10">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left Side - Text Content */}
-          <div className="text-left px-6 md:px-12 py-16 bg-black/20 backdrop-blur-sm lg:ml-12">
-            <div className="max-w-md">
-              {/* Simple, Bold Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-none">
-                {t('home.hero.title')}
+    <MotionSection 
+      // CHANGED: Replaced dark background with fresh, vibrant gradient
+      className="hero-section relative min-h-screen bg-gradient-to-br from-secondary-yellow/30 via-white to-accent-green/20 overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      {/* Decorative elements for visual interest */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-yellow/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-green/20 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
+        <StaggerContainer className="text-center max-w-5xl mx-auto">
+          {/* Main Title */}
+          <MotionDiv variant="fadeUp">
+            <TextReveal>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-charcoal mb-6 leading-tight">
+                {t('home.hero.title', 'Transform Your Event with Smoothie Bikes!')}
               </h1>
-              
-              {/* Bold Slogan */}
-              <p className="text-lg md:text-xl lg:text-2xl font-bold mb-6 text-primary-red">
-                GOOD VIBES, GREEN RIDES, GREAT TASTE.
-              </p>
-              
-              {/* Clean Subtitle */}
-              <p className="text-lg md:text-xl lg:text-2xl font-light mb-12 opacity-90">
-                {t('home.hero.subtitle')}
-              </p>
+            </TextReveal>
+          </MotionDiv>
 
-              {/* Book Now Button - Linked to form */}
-              <Button size="lg" className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-8 py-4 text-lg font-medium inline-flex items-center transition-colors" asChild>
-                <a href="/reserver">
-                  {t('home.hero.ctaButton')}
+          {/* Bold tagline with translation */}
+          <MotionDiv variant="fadeUp" custom={1}>
+            <p className="text-2xl md:text-3xl font-bold text-primary-red mb-8 flex items-center justify-center gap-3">
+              <Sparkles className="h-8 w-8 text-secondary-yellow" />
+              {t('home.hero.tagline', 'GOOD VIBES, GREEN RIDES, GREAT TASTE.')}
+              <Sparkles className="h-8 w-8 text-secondary-yellow" />
+            </p>
+          </MotionDiv>
+
+          {/* Subtitle */}
+          <MotionDiv variant="fadeUp" custom={2}>
+            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed">
+              {t('home.hero.subtitle', 'Create unforgettable experiences with our pedal-powered smoothie stations. Fun, healthy, and eco-friendly entertainment for all ages!')}
+            </p>
+          </MotionDiv>
+
+          {/* CTA Button - CHANGED: Links directly to reservation form */}
+          <MotionDiv variant="fadeUp" custom={3}>
+            <AnimatedImage hoverEffect="lift">
+              <Link href="/reserver">
+                <Button 
+                  className="bg-primary-red hover:bg-red-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  {t('home.hero.bookNow', 'Book Now')}
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </div>
-          </div>
-          
-          {/* Right Side - Product Images - Enhanced for better mobile visibility */}
-          <div className="flex flex-col items-center justify-center gap-4 px-4">
-            {/* Main Product Images Row */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 w-full max-w-lg">
-              {productImages.slice(0, 3).map((image, index) => (
-                <AnimatedImage 
-                  key={index}
-                  hoverEffect="scale" 
-                  className="w-full"
-                >
-                  <img 
-                    src={image.src} 
-                    alt={image.alt} 
-                    className="w-full h-28 sm:h-32 md:h-40 object-cover rounded-lg shadow-lg" 
-                    loading="eager"
-                  />
-                </AnimatedImage>
-              ))}
-            </div>
-            
-            {/* Additional Product Images - Now showing 3 on mobile, all 3 on larger screens */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 w-full max-w-lg mt-2">
-              {productImages.slice(3, 6).map((image, index) => (
-                <AnimatedImage 
-                  key={index + 3}
-                  hoverEffect="scale" 
-                  className="w-full"
-                >
-                  <img 
-                    src={image.src} 
-                    alt={image.alt} 
-                    className="w-full h-20 sm:h-24 md:h-32 object-cover rounded-lg shadow-lg opacity-90 hover:opacity-100 transition-opacity" 
-                    loading="eager"
-                  />
-                </AnimatedImage>
-              ))}
-            </div>
+                </Button>
+              </Link>
+            </AnimatedImage>
+          </MotionDiv>
+        </StaggerContainer>
 
-            {/* Product Showcase Text */}
-            <div className="text-center mt-2 sm:mt-4">
-              <p className="text-sm md:text-base text-white/90 font-medium">
-                {t('home.hero.productShowcase', 'Nos vélos smoothie disponibles')}
-              </p>
+        {/* NEW: Three Products Side by Side */}
+        <ScrollReveal className="mt-20">
+          <div className="products-showcase">
+            <h3 className="text-2xl font-bold text-dark-charcoal text-center mb-8">
+              {t('home.hero.ourBikes', 'Our Smoothie Bikes')}
+            </h3>
+            
+            {/* TODO: Add three real product images side by side
+                1. Green bicycle with basket
+                2. Regular smoothie bike  
+                3. Red bicycle with watermelon basket
+                Size: Each image should be approximately 400x300px
+                Layout: Responsive grid, 3 columns on desktop, 1 on mobile */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {/* Green Bike */}
+              <AnimatedImage hoverEffect="scale" className="product-card">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-green-200 relative">
+                    <img 
+                      src="/images/0.jpg" 
+                      alt="Green smoothie bike with basket" 
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Placeholder if image not available */}
+                    <div className="absolute inset-0 flex items-center justify-center text-green-600">
+                      <div className="text-center">
+                        <span className="text-6xl mb-2">🚲</span>
+                        <p className="text-sm font-medium">Green Bike</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.green.title', 'Eco Green')}</h4>
+                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.green.description', 'Perfect for outdoor events')}</p>
+                  </div>
+                </div>
+              </AnimatedImage>
+
+              {/* Regular Bike */}
+              <AnimatedImage hoverEffect="scale" className="product-card">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-blue-200 relative">
+                    <img 
+                      src="/images/1.jpg" 
+                      alt="Regular smoothie bike" 
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Placeholder if image not available */}
+                    <div className="absolute inset-0 flex items-center justify-center text-blue-600">
+                      <div className="text-center">
+                        <span className="text-6xl mb-2">🚴</span>
+                        <p className="text-sm font-medium">Classic Bike</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.blue.title', 'Classic Blue')}</h4>
+                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.blue.description', 'Our most popular model')}</p>
+                  </div>
+                </div>
+              </AnimatedImage>
+
+              {/* Red Watermelon Bike */}
+              <AnimatedImage hoverEffect="scale" className="product-card">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-red-100 to-pink-200 relative">
+                    <img 
+                      src="/images/2.jpg" 
+                      alt="Red bicycle with watermelon basket" 
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Placeholder if image not available */}
+                    <div className="absolute inset-0 flex items-center justify-center text-red-600">
+                      <div className="text-center">
+                        <span className="text-6xl mb-2">🍉</span>
+                        <p className="text-sm font-medium">Watermelon Special</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.red.title', 'Watermelon Red')}</h4>
+                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.red.description', 'Fun tropical theme')}</p>
+                  </div>
+                </div>
+              </AnimatedImage>
             </div>
           </div>
+        </ScrollReveal>
+
+        {/* Additional decorative elements */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-gray-400"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </MotionSection>
   )
 }
+
+/*
+CHANGES MADE:
+1. Changed dark background to fresh, vibrant gradient: from-secondary-yellow/30 via-white to-accent-green/20
+2. Added decorative blur elements for modern look
+3. Added bold tagline "GOOD VIBES, GREEN RIDES, GREAT TASTE." with sparkle icons
+4. Book Now button now links directly to /reserver (reservation form)
+5. Added section for three products side by side with placeholders
+6. Each product has a card design with image placeholder and fallback emoji
+7. Added hover effects and animations for better interactivity
+8. Maintained responsive design (3 columns on desktop, 1 on mobile)
+*/

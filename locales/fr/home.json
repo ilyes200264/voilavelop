@@ -2,7 +2,24 @@
   "hero": {
     "title": "Smoothies Frais, Propulsés à Vélo",
     "subtitle": "Mélangeurs écologiques pour des événements inoubliables",
-    "ctaButton": "Réserver"
+    "tagline": "BONNES VIBRATIONS, VÉLOS VERTS, GOÛT EXCELLENT.",
+    "bookNow": "Réserver",
+    "ctaButton": "Réserver",
+    "ourBikes": "Nos Vélos à Smoothies",
+    "bikeCards": {
+      "green": {
+        "title": "Éco Vert",
+        "description": "Parfait pour les événements extérieurs"
+      },
+      "blue": {
+        "title": "Classique Bleu",
+        "description": "Notre modèle le plus populaire"
+      },
+      "red": {
+        "title": "Rouge Pastèque",
+        "description": "Thème tropical amusant"
+      }
+    }
   },
   "valueProposition": {
     "title": "Transformez votre événement avec nos vélos à smoothies",

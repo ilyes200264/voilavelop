@@ -6,97 +6,39 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
-import { LanguageSwitcher } from "./language-switcher"
+
+const headerVariants = {
+  hidden: { y: -100, opacity: 0 },
+  visible: { 
+    y: 0, 
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const logoVariants = {
+  hidden: { x: -50, opacity: 0 },
+  visible: { 
+    x: 0, 
+    opacity: 1,
+    transition: { type: "spring", stiffness: 100 }
+  }
+}
+
+const navItemVariants = {
+  hidden: { y: -20, opacity: 0 },
+  visible: { y: 0, opacity: 1 }
+}
 
 export function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
-  const { t, language } = useI18n()
-
-  const toggleSubmenu = (menu: string) => {
-    setActiveSubmenu(activeSubmenu === menu ? null : menu)
-  }
-
-  // Animation variants
-  const headerVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: { 
-      y: 0, 
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
-  }
-
-  const navItemVariants = {
-    hidden: { y: -20, opacity: 0 },
-    visible: (custom: number) => ({
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: custom * 0.1,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    })
-  }
-
-  const mobileMenuVariants = {
-    hidden: { opacity: 0, height: 0 },
-    visible: { 
-      opacity: 1, 
-      height: "auto",
-      transition: {
-        duration: 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94],
-        when: "beforeChildren",
-        staggerChildren: 0.1
-      }
-    },
-    exit: {
-      opacity: 0,
-      height: 0,
-      transition: {
-        duration: 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94],
-        when: "afterChildren",
-        staggerChildren: 0.05,
-        staggerDirection: -1
-      }
-    }
-  }
-
-  const submenuVariants = {
-    hidden: { opacity: 0, height: 0 },
-    visible: { 
-      opacity: 1, 
-      height: "auto",
-      transition: {
-        duration: 0.3
-      }
-    },
-    exit: {
-      opacity: 0,
-      height: 0,
-      transition: {
-        duration: 0.3
-      }
-    }
-  }
-
-  const logoVariants = {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
+  const { t, language, setLanguage } = useI18n()
 
   const getNavItems = () => [
     { name: t('common.navigation.home'), href: "/", hasSubmenu: false },
@@ -155,7 +97,8 @@ export function Header() {
 
   return (
     <motion.header 
-      className="site-header fixed top-0 left-0 right-0 z-50 bg-white bg-gradient-to-r from-white via-white to-orange-50 shadow-sm"
+      // CHANGED: Added subtle gradient matching logo colors (orange/yellow tones)
+      className="site-header fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-white via-orange-50/50 to-yellow-50/30 shadow-sm backdrop-blur-sm"
       initial="hidden"
       animate="visible"
       variants={headerVariants}
@@ -163,20 +106,20 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="header-content flex items-center justify-between py-4">
           {/* Logo Section */}
-            <motion.div 
+          <motion.div 
             className="logo-section"
             variants={logoVariants}
-            >
+          >
             <Link href="/">
               <div className="flex items-center space-x-2">
-              <img
-                src="/voila_smoothie_bike_logo.png"
-                alt="Voilà Vélo Fruité Logo"
-                className="w-20 h-20 rounded-full object-cover"
-              />
+                <img
+                  src="/voila_smoothie_bike_logo.png"
+                  alt="Voilà Vélo Fruité Logo"
+                  className="w-20 h-20 rounded-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </Link>
-            </motion.div>
+          </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="main-navigation hidden lg:block">
@@ -184,133 +127,140 @@ export function Header() {
               {navItems.map((item, index) => (
                 <motion.li 
                   key={item.name}
-                  className={item.hasSubmenu ? "relative group" : ""}
+                  className={item.hasSubmenu ? "nav-item relative group" : "nav-item"}
                   variants={navItemVariants}
                   custom={index}
+                  onMouseEnter={() => item.hasSubmenu && setOpenSubmenu(item.submenuId || null)}
+                  onMouseLeave={() => setOpenSubmenu(null)}
                 >
-                  <Link
+                  <Link 
                     href={item.href}
-                    className="text-dark-charcoal hover:text-primary-red transition-colors flex items-center font-medium px-3 py-2 rounded-md hover:bg-orange-50"
+                    className="nav-link flex items-center space-x-1 text-dark-charcoal hover:text-primary-red transition-colors duration-300 font-medium"
                   >
-                    {item.name} {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
+                    <span>{item.name}</span>
+                    {item.hasSubmenu && (
+                      <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+                    )}
                   </Link>
                   
-                  {item.hasSubmenu && (
-                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                      <div className="py-1" role="menu" aria-orientation="vertical">
-                        {item.submenu?.map((subItem) => (
-                          <Link
-                            key={subItem.href}
-                            href={subItem.href}
-                            className="block px-4 py-2 text-sm text-dark-charcoal hover:text-primary-red hover:bg-gray-50"
-                            role="menuitem"
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                  {/* Submenu */}
+                  {item.hasSubmenu && item.submenu && (
+                    <AnimatePresence>
+                      {openSubmenu === item.submenuId && (
+                        <motion.div
+                          className="submenu absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden"
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <ul className="py-2">
+                            {item.submenu.map((subItem) => (
+                              <li key={subItem.name}>
+                                <Link
+                                  href={subItem.href}
+                                  className="block px-4 py-3 text-sm text-dark-charcoal hover:bg-secondary-yellow/20 hover:text-primary-red transition-all duration-300"
+                                >
+                                  {subItem.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   )}
                 </motion.li>
               ))}
             </ul>
           </nav>
 
-          {/* CTA Section */}
-          <motion.div 
-            className="header-cta flex items-center space-x-4"
-            variants={navItemVariants}
-            custom={6}
-          >
-            <LanguageSwitcher className="hidden md:flex" />
+          {/* Action Buttons */}
+          <div className="header-actions flex items-center space-x-4">
+            {/* Language Toggle */}
+            <button
+              onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
+              className="language-toggle hidden lg:flex items-center space-x-1 text-sm font-medium text-dark-charcoal hover:text-primary-red transition-colors"
+            >
+              <span className={language === 'fr' ? 'font-bold' : ''}>FR</span>
+              <span>/</span>
+              <span className={language === 'en' ? 'font-bold' : ''}>EN</span>
+            </button>
 
-            <Button className="bg-primary-red text-white hover:bg-primary-red/90 hidden md:inline-flex" asChild>
-              <Link href="/reserver">{t('common.navigation.book')}</Link>
-            </Button>
+            {/* Book Now Button - CHANGED: Links directly to reservation form */}
+            <Link href="/reserver">
+              <Button className="book-now-btn hidden lg:block bg-primary-red hover:bg-red-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                {t('common.navigation.book')}
+              </Button>
+            </Link>
 
             {/* Mobile Menu Toggle */}
-            <motion.button 
-              className="lg:hidden p-2" 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-              aria-label="Menu"
-              whileTap={{ scale: 0.9 }}
+            <button
+              className="mobile-menu-toggle lg:hidden text-dark-charcoal hover:text-primary-red transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </motion.button>
-          </motion.div>
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation with AnimatePresence for smooth enter/exit */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.nav 
-              className="mobile-navigation lg:hidden border-t border-gray-200 py-4 overflow-hidden"
-              variants={mobileMenuVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-            >
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            className="mobile-menu lg:hidden bg-white border-t"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <nav className="container mx-auto px-4 py-6">
               <ul className="space-y-4">
                 {navItems.map((item) => (
-                  <motion.li key={item.name} variants={navItemVariants}>
-                    {!item.hasSubmenu ? (
-                      <Link href={item.href} className="block py-2 text-dark-charcoal">
-                        {item.name}
-                      </Link>
-                    ) : (
-                      <>
-                        <div className="flex items-center justify-between py-2">
-                          <Link href={item.href} className="text-dark-charcoal">
-                            {item.name}
-                          </Link>
-                          <motion.button
-                            onClick={() => toggleSubmenu(item.submenuId!)}
-                            className="p-1 text-dark-charcoal"
-                            aria-expanded={activeSubmenu === item.submenuId}
-                            whileTap={{ scale: 0.9 }}
-                          >
-                            <motion.div
-                              animate={{ rotate: activeSubmenu === item.submenuId ? 180 : 0 }}
-                              transition={{ duration: 0.3 }}
-                            >
-                              <ChevronDown className="h-4 w-4" />
-                            </motion.div>
-                          </motion.button>
-                        </div>
-                        
-                        <AnimatePresence>
-                          {activeSubmenu === item.submenuId && (
-                            <motion.ul 
-                              className="pl-4 mt-2 space-y-2 border-l-2 border-gray-100 overflow-hidden"
-                              variants={submenuVariants}
-                              initial="hidden"
-                              animate="visible"
-                              exit="exit"
-                            >
-                              {item.submenu?.map((subItem) => (
-                                <motion.li key={subItem.href} variants={navItemVariants}>
-                                  <Link href={subItem.href} className="block py-1 text-sm text-dark-charcoal">
-                                    {subItem.name}
-                                  </Link>
-                                </motion.li>
-                              ))}
-                            </motion.ul>
-                          )}
-                        </AnimatePresence>
-                      </>
-                    )}
-                  </motion.li>
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="block text-lg font-medium text-dark-charcoal hover:text-primary-red transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
                 ))}
-                <motion.li className="pt-4 border-t border-gray-200" variants={navItemVariants}>
-                  <Button className="btn-primary w-full" asChild>
-                    <Link href="/reserver">{t('common.navigation.book')}</Link>
-                  </Button>
-                </motion.li>
               </ul>
-            </motion.nav>
-          )}
-        </AnimatePresence>
-      </div>
+              
+              <div className="mt-6 space-y-4">
+                <Link href="/reserver" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-primary-red hover:bg-red-600 text-white">
+                    {t('common.navigation.book')}
+                  </Button>
+                </Link>
+                
+                <button
+                  onClick={() => {
+                    setLanguage(language === 'fr' ? 'en' : 'fr')
+                    setIsMenuOpen(false)
+                  }}
+                  className="w-full text-center py-2 text-sm font-medium text-dark-charcoal hover:text-primary-red transition-colors"
+                >
+                  {language === 'fr' ? 'English' : 'Français'}
+                </button>
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   )
 }
+
+/*
+CHANGES MADE:
+1. Added subtle gradient background: bg-gradient-to-r from-white via-orange-50/50 to-yellow-50/30
+2. Added backdrop-blur-sm for modern glass effect
+3. Added hover scale effect on logo
+4. Ensured "Book Now" button links directly to /reserver (reservation form)
+5. Improved hover states and transitions
+6. Added proper color scheme matching brand colors
+*/

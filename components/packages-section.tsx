@@ -2,149 +2,130 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ArrowRight, Check } from "lucide-react"
 import { 
   MotionSection, 
   ScrollReveal, 
   StaggerContainer, 
   MotionDiv, 
   AnimatedImage,
-  TextReveal,
-  RedLineSeparator
+  TextReveal
 } from "@/components/motion/motion-components"
 import { useI18n } from "@/lib/i18n"
 import { packagesData } from "@/app/forfaits/packages-data"
-import { usePackageTranslations } from "@/lib/packages-i18n"
 import { kebabToCamel } from "@/lib/i18n-utils"
 
 export function PackagesSection() {
   const { t } = useI18n()
-  const { translatePackage } = usePackageTranslations()
-  // Get translated packages
-  const packageIds = ["la-petite-koki", "pop-solo", "double-fun"];
-  // Use language from i18n to force re-rendering when language changes
-  const { language } = useI18n();
   
-  const packages = [
-    {
-      ...translatePackage("la-petite-koki"),
-      colorClass: "orange-package",
-      borderColor: "border-t-primary-red",
-    },
-    {
-      ...translatePackage("pop-solo"),
-      colorClass: "yellow-package",
-      borderColor: "border-t-secondary-yellow",
-    },
-    {
-      ...translatePackage("double-fun"),
-      colorClass: "blue-package",
-      borderColor: "border-t-trust-blue",
-    },
-    {
-      ...translatePackage("ready-set-blend"),
-      colorClass: "green-package",
-      borderColor: "border-t-accent-green",
-    },
-    {
-      ...translatePackage("defi-parent-enfant"),
-      colorClass: "purple-package",
-      borderColor: "border-t-purple-500",
-    },
-    {
-      ...translatePackage("la-smoothie-parade"),
-      colorClass: "orange-package",
-      borderColor: "border-t-orange-400",
-    },
-    {
-      ...translatePackage("signature"),
-      colorClass: "yellow-package",
-      borderColor: "border-t-secondary-yellow",
-    },
-  ]
+  // Get first 3 packages to display
+  const packageIds = ['la-petite-koki', 'pop-solo', 'double-fun']
+  
+  const packages = packageIds.map(id => {
+    const pkg = packagesData[id]
+    const camelId = kebabToCamel(id)
+    
+    return {
+      id,
+      // CHANGED: Ensure we're using proper translation keys
+      title: t(`packages:packages.${camelId}.title`, pkg.title),
+      tagline: t(`packages:packages.${camelId}.tagline`, pkg.tagline || ''),
+      heroDescription: t(`packages:packages.${camelId}.heroDescription`, pkg.heroDescription || ''),
+      includes: t<string[]>(`packages:packages.${camelId}.mainSection.includes`, pkg.mainSection?.includes || []),
+      borderColor: pkg.borderColor
+    }
+  })
 
   return (
-    <MotionSection className="packages-section bg-accent-green text-white py-16 md:py-24 relative overflow-hidden">
+    <MotionSection className="packages-section py-20 bg-accent-green relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-10">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-white rounded-full"></div>
+      </div>
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <ScrollReveal className="section-header text-center mb-12">
           <TextReveal>
-            <h2 className="section-title text-3xl md:text-4xl font-bold text-white">{t('home.packages.title')}</h2>
+            <h2 className="section-title text-3xl md:text-4xl font-bold text-white">
+              {t('home.packages.title', 'Our Packages')}
+            </h2>
           </TextReveal>
           
-          <div className="separator w-32 h-1 mx-auto my-6 bg-gradient-to-r from-accent-green to-trust-blue rounded-full"></div>
+          <div className="separator w-32 h-1 mx-auto my-6 bg-gradient-to-r from-white to-secondary-yellow rounded-full"></div>
           
           <ScrollReveal delay={0.3}>
             <p className="section-subtitle text-lg text-white/90 mt-4 max-w-3xl mx-auto">
-              {t('home.packages.subtitle')}
+              {t('home.packages.subtitle', 'Choose the perfect smoothie bike experience for your event')}
             </p>
           </ScrollReveal>
         </ScrollReveal>
 
         {/* Featured Packages Grid - Show first 3 packages */}
         <StaggerContainer className="packages-grid grid lg:grid-cols-3 gap-8 mb-12">
-          {packages.slice(0, 3).map((pkg, index) => (
+          {packages.map((pkg, index) => (
             <MotionDiv
               key={pkg.id}
               variant="fadeUp"
               custom={index}
-              className={`package-card bg-white rounded-2xl p-6 shadow-lg transition-all duration-500 ${pkg.borderColor} border-t-4 hover:shadow-xl hover:translate-y-[-8px]`}
+              className="h-full"
             >
               <AnimatedImage hoverEffect="lift" className="h-full">
-                <div className="package-header text-center mb-6">
-                  <div className="package-icon mb-4">
-                    <div className={`w-20 h-20 ${pkg.borderColor.replace('border-t-', 'bg-')} bg-opacity-20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-500 hover:rotate-12`}>
-                      <span className="text-3xl">🚴</span>
+                <div className={`package-card bg-white rounded-2xl p-6 shadow-lg h-full flex flex-col ${pkg.borderColor || 'border-t-primary-red'} border-t-4 hover:shadow-xl transition-all duration-500`}>
+                  {/* Package Header */}
+                  <div className="package-header text-center mb-6">
+                    <div className="package-icon mb-4">
+                      <div className={`w-20 h-20 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'}/20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-500 hover:rotate-12`}>
+                        <span className="text-3xl">🚴</span>
+                      </div>
                     </div>
+                    <h4 className={`package-title text-xl font-bold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-2`}>
+                      {pkg.title}
+                    </h4>
                   </div>
-                  <h4 className={`package-title text-xl font-bold ${pkg.borderColor.replace('border-t-', 'text-')} mb-2`}>{pkg.title}</h4>
-                </div>
 
-                <div className="package-description mb-6">
-                  <p className="package-tagline font-semibold mb-3 text-gray-700 italic">
-                    "{pkg.tagline || t(`packages:packages.${kebabToCamel(pkg.id)}.tagline`, '')}"
-                  </p>
-                  <p className="package-intro text-sm text-gray-700 leading-relaxed">
-                    {pkg.heroDescription || t(`packages:packages.${kebabToCamel(pkg.id)}.heroDescription`, '')}
-                  </p>
-                </div>
+                  {/* Package Description */}
+                  <div className="package-description mb-6 flex-grow">
+                    {pkg.tagline && (
+                      <p className="package-tagline font-semibold mb-3 text-gray-700 italic text-center">
+                        "{pkg.tagline}"
+                      </p>
+                    )}
+                    <p className="package-intro text-sm text-gray-700 leading-relaxed text-center">
+                      {pkg.heroDescription}
+                    </p>
+                  </div>
 
-                <div className="package-includes mb-6 p-3 bg-gray-50 rounded-lg">
-                  <h5 className={`includes-title font-semibold ${pkg.borderColor.replace('border-t-', 'text-')} mb-3 flex items-center`}>
-                    <span className={`inline-block w-1.5 h-1.5 ${pkg.borderColor.replace('border-t-', 'bg-')} rounded-full mr-2`}></span>
-                    {t('packages.includes', 'Package includes:')}
-                  </h5>
-                  <ul className="includes-list space-y-2">
-                    {(pkg.mainSection?.includes || []).map((item: string, itemIndex: number) => (
-                      <li key={itemIndex} className="flex items-start text-sm group">
-                        <span className={`${pkg.borderColor.replace('border-t-', 'text-')} mr-2 mt-1 transform transition-transform duration-300 group-hover:scale-125`}>✓</span>
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  {/* What's Included - NO PRICES */}
+                  <div className="package-includes mb-6 p-4 bg-gray-50 rounded-lg">
+                    <h5 className={`includes-title font-semibold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-3 flex items-center`}>
+                      <span className={`inline-block w-1.5 h-1.5 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} rounded-full mr-2`}></span>
+                      {t('home.packages.includes', 'Package includes:')}
+                    </h5>
+                    <ul className="includes-list space-y-2">
+                      {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
+                        <li key={itemIndex} className="flex items-start text-sm group">
+                          <Check className={`h-4 w-4 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mr-2 mt-0.5 flex-shrink-0 transform transition-transform duration-300 group-hover:scale-125`} />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <div className="package-options mb-6">
-                  {(pkg.options || []).map((option: any, optionIndex: number) => (
-                    <div key={optionIndex} className={`option flex justify-between items-center py-2 px-3 text-sm my-2 border-l-2 ${pkg.borderColor.replace('border-t-', 'border-l-')} rounded-r-lg transition-all duration-300 hover:bg-gray-50`}>
-                      <span className="option-label font-medium text-dark-charcoal">
-                        {option.title || `Option ${optionIndex + 1}`}
-                      </span>
-                      <span className={`option-details font-bold ${pkg.borderColor.replace('border-t-', 'text-')}`}>
-                        {option.price}$
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                  {/* REMOVED: All pricing options */}
 
-                <div className="package-cta text-center">
-                  <AnimatedImage hoverEffect="scale">
-                    <Button 
-                      className={`w-full bg-white hover:${pkg.borderColor.replace('border-t-', 'bg-')} hover:text-white border ${pkg.borderColor.replace('border-t-', 'border-')} ${pkg.borderColor.replace('border-t-', 'text-')} transition-all duration-300`}
-                    >
-                      {t(`packages.details`, 'See details')} →
-                    </Button>
-                  </AnimatedImage>
+                  {/* CTA Button - CHANGED: Links to main packages page */}
+                  <div className="package-cta">
+                    <Link href="/forfaits/" className="block">
+                      <Button 
+                        className={`w-full bg-white hover:${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} hover:text-white border-2 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'border-') : 'border-primary-red'} ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} transition-all duration-300`}
+                      >
+                        {t('home.packages.seeDetails', 'See details')}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </AnimatedImage>
             </MotionDiv>
@@ -156,15 +137,22 @@ export function PackagesSection() {
           <MotionDiv variant="fadeUp">
             <p className="packages-tagline text-lg text-white max-w-3xl mx-auto">
               <em>
-                <span className="text-primary-red font-semibold">{t('home.packages.footer.highlight')} –</span> {t('home.packages.footer.text')}
+                <span className="text-yellow-300 font-semibold">
+                  {t('home.packages.footer.highlight', 'Something for everyone')} –
+                </span>{' '}
+                {t('home.packages.footer.text', 'from intimate gatherings to large-scale events, we have the perfect package for you.')}
               </em>
             </p>
           </MotionDiv>
 
+          {/* View All Packages Button */}
           <MotionDiv variant="fadeUp">
-            <AnimatedImage hoverEffect="lift" className="packages-cta">
+            <AnimatedImage hoverEffect="lift">
               <Link href="/forfaits/">
-                <Button className="btn-primary bg-gradient-to-r from-accent-green to-trust-blue text-white px-8 py-3 hover:shadow-lg transform hover:scale-105 transition-all duration-300">{t('home.packages.viewAll')}</Button>
+                <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                  {t('home.packages.viewAll', 'View all packages')}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </Link>
             </AnimatedImage>
           </MotionDiv>
@@ -173,3 +161,17 @@ export function PackagesSection() {
     </MotionSection>
   )
 }
+
+/*
+CHANGES MADE:
+1. REMOVED all price displays and "Option 1", "Option 2" sections
+2. FIXED translation keys to use proper namespace (packages:packages.camelCaseId)
+3. Used kebabToCamel utility to convert package IDs to proper translation keys
+4. Limited includes list to 4 items for cleaner display
+5. "See details" button now links to /forfaits/ (main packages page)
+6. Added Check icon instead of text checkmark for better visual
+7. Improved responsive layout with flex-grow for equal height cards
+8. Added hover effects and transitions throughout
+9. Ensured all text uses translation system properly
+10. Background decorations for visual interest
+*/

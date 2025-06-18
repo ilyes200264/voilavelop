@@ -4,118 +4,206 @@ import {
   MotionSection, 
   ScrollReveal, 
   StaggerContainer, 
-  MotionDiv, 
-  AnimatedImage,
-  TextReveal,
-  RedLineSeparator
+  MotionDiv,
+  TextReveal
 } from "@/components/motion/motion-components"
 import { useI18n } from "@/lib/i18n"
+import { Award, Leaf, Heart, Users, Sparkles } from "lucide-react"
 
 export function WhyChooseWorkshopSection() {
   const { t } = useI18n()
-  
-  const features = [
+
+  // FIXED: Ensure 5 items are properly aligned
+  const reasons = [
     {
-      icon: "🚲",
-      title: t('home.whyChooseWorkshop.features.ecoFriendly.title', "Écologique et sans énergie"),
-      description: t('home.whyChooseWorkshop.features.ecoFriendly.description', "Aucune électricité nécessaire! Les smoothies sont mélangés par la puissance de pédalage des participants — une activité zéro émission, 100% alimentée par l'humain qui rend la durabilité excitante.")
+      icon: <Award className="h-10 w-10" />,
+      title: t('home.whyChoose.items.unique.title', 'Unique Experience'),
+      description: t('home.whyChoose.items.unique.description', 'An original activity that creates lasting memories')
     },
     {
-      icon: "🌱",
-      title: t('home.whyChooseWorkshop.features.sustainability.title', "Une approche pratique de la durabilité"),
-      description: t('home.whyChooseWorkshop.features.sustainability.description', "Les participants deviennent créateurs, pas seulement consommateurs. C'est une façon unique de comprendre l'impact de nos actions, tout en embrassant l'effort physique et la conscience environnementale.")
+      icon: <Leaf className="h-10 w-10" />,
+      title: t('home.whyChoose.items.sustainable.title', '100% Sustainable'),
+      description: t('home.whyChoose.items.sustainable.description', 'Eco-friendly practices from start to finish')
     },
     {
-      icon: "🍓",
-      title: t('home.whyChooseWorkshop.features.healthy.title', "Sain, savoureux et joyeux"),
-      description: t('home.whyChooseWorkshop.features.healthy.description', "Nos smoothies sont faits sur place avec des ingrédients frais et colorés et une grande dose de plaisir — combinant nutrition et mouvement pour tous les âges.")
+      icon: <Heart className="h-10 w-10" />,
+      title: t('home.whyChoose.items.healthy.title', 'Healthy & Delicious'),
+      description: t('home.whyChoose.items.healthy.description', 'Fresh, nutritious ingredients in every smoothie')
     },
     {
-      icon: "🎉",
-      title: t('home.whyChooseWorkshop.features.events.title', "Parfait pour tous types d'événements"),
-      description: t('home.whyChooseWorkshop.features.events.description', "Des écoles et festivals aux événements corporatifs ou communautaires — notre atelier s'adapte à votre foule. C'est inclusif, interactif et inoubliable.")
+      icon: <Users className="h-10 w-10" />,
+      title: t('home.whyChoose.items.engaging.title', 'Interactive Fun'),
+      description: t('home.whyChoose.items.engaging.description', 'Get everyone involved and energized')
     },
     {
-      icon: "💚",
-      title: t('home.whyChooseWorkshop.features.values.title', "Nous pédalons pour nos valeurs"),
-      description: t('home.whyChooseWorkshop.features.values.description', "Nous utilisons des matériaux réutilisables ou compostables, réduisons les déchets et promouvons la consommation consciente — le tout dans une atmosphère vivante et accueillante.")
+      icon: <Sparkles className="h-10 w-10" />,
+      title: t('home.whyChoose.items.professional.title', 'Professional Service'),
+      description: t('home.whyChoose.items.professional.description', 'Experienced team ensures smooth operation')
     }
   ]
 
   return (
-    <MotionSection className="why-choose-workshop-section py-20 bg-trust-blue text-white relative overflow-hidden">
-      {/* Decorative background elements */}
-
+    <MotionSection className="why-choose-section py-20 bg-secondary-yellow/10 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-10">
+        <div className="absolute top-20 left-20 w-40 h-40 bg-white rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-56 h-56 bg-white rounded-full"></div>
+      </div>
+      
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <ScrollReveal className="text-center mb-16">
           <TextReveal>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {t('home.whyChooseWorkshop.title', "Pourquoi choisir notre atelier Voilà Vélo?")}
+            <h2 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
+              {t('home.whyChoose.title', 'Why Choose Our Voilà Vélo Workshop?')}
             </h2>
           </TextReveal>
           
-          <RedLineSeparator className="w-24 mx-auto mb-8 bg-trust-blue" />
-          
-          <ScrollReveal delay={0.3}>
-            <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6">
-              {t('home.whyChooseWorkshop.subtitle', "Parce que c'est amusant, durable et inoubliable!")}
-            </h3>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.5}>
-            <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-              {t('home.whyChooseWorkshop.description', "Chez Voilà Vélo, nous croyons que l'apprentissage, le mouvement et le plaisir peuvent aller de pair. Notre atelier Smoothie Vélo est plus qu'une simple activité — c'est une expérience qui inspire des habitudes saines, un smoothie alimenté par pédalage à la fois.")}
-            </p>
-          </ScrollReveal>
+          <div className="w-24 h-1 bg-gradient-to-r from-secondary-yellow to-amber-400 mx-auto rounded-full"></div>
         </ScrollReveal>
 
-        {/* Features Grid */}
-        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {features.map((feature, index) => (
-            <MotionDiv
-              key={index}
-              variant="fadeUp"
-              custom={index}
-              className="feature-card"
-            >
-              <AnimatedImage 
-                hoverEffect="lift" 
-                className="bg-white rounded-2xl p-8 shadow-lg border-2 border-white hover:border-white hover:shadow-xl transition-all duration-300 h-full"
-              >
-                <div className="text-center">
-                  <AnimatedImage hoverEffect="bounce" className="text-6xl mb-6 block text-trust-blue">
-                    <span>{feature.icon}</span>
-                  </AnimatedImage>
-                  
-                  <h4 className="text-xl font-bold text-dark-charcoal mb-4 leading-tight">
-                    {feature.title}
-                  </h4>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              </AnimatedImage>
-            </MotionDiv>
-          ))}
-        </StaggerContainer>
-
-        {/* Bottom Tagline */}
-        <ScrollReveal className="text-center">
-          <div className="bg-gradient-to-r from-trust-blue to-accent-green rounded-2xl p-8 text-white shadow-xl">
-            <div className="max-w-3xl mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                {t('home.whyChooseWorkshop.tagline.part1', "Voilà Vélo Fruité:")}
-              </h3>
-              <p className="text-xl md:text-2xl font-medium">
-                {t('home.whyChooseWorkshop.tagline.part2', "Mélangé par Vous, Alimenté par le Plaisir!")} 
-                <span className="ml-4 text-2xl">🌍💪🍹</span>
-              </p>
+        {/* FIXED: Proper grid layout for 5 items */}
+        <StaggerContainer className="reasons-container">
+          {/* Desktop: 3 items on top, 2 centered on bottom */}
+          <div className="hidden lg:block">
+            {/* Top row - 3 items */}
+            <div className="grid grid-cols-3 gap-8 mb-8">
+              {reasons.slice(0, 3).map((reason, index) => (
+                <MotionDiv
+                  key={index}
+                  variant="fadeUp"
+                  custom={index}
+                  className="reason-card"
+                >
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center">
+                    <div className="icon-wrapper mb-6 text-secondary-yellow bg-yellow-50 p-4 rounded-full shadow-sm">
+                      {reason.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-dark-charcoal mb-3">
+                      {reason.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {reason.description}
+                    </p>
+                  </div>
+                </MotionDiv>
+              ))}
+            </div>
+            
+            {/* Bottom row - 2 items centered */}
+            <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {reasons.slice(3, 5).map((reason, index) => (
+                <MotionDiv
+                  key={index + 3}
+                  variant="fadeUp"
+                  custom={index + 3}
+                  className="reason-card"
+                >
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center">
+                    <div className="icon-wrapper mb-6 text-secondary-yellow bg-yellow-50 p-4 rounded-full shadow-sm">
+                      {reason.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-dark-charcoal mb-3">
+                      {reason.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {reason.description}
+                    </p>
+                  </div>
+                </MotionDiv>
+              ))}
             </div>
           </div>
-        </ScrollReveal>
+
+          {/* Tablet: 2x2 grid with last item centered */}
+          <div className="hidden md:block lg:hidden">
+            <div className="grid grid-cols-2 gap-6 mb-6">
+              {reasons.slice(0, 4).map((reason, index) => (
+                <MotionDiv
+                  key={index}
+                  variant="fadeUp"
+                  custom={index}
+                  className="reason-card"
+                >
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center">
+                    <div className="icon-wrapper mb-4 text-secondary-yellow bg-yellow-50 p-3 rounded-full shadow-sm">
+                      {reason.icon}
+                    </div>
+                    <h3 className="text-lg font-bold text-dark-charcoal mb-2">
+                      {reason.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {reason.description}
+                    </p>
+                  </div>
+                </MotionDiv>
+              ))}
+            </div>
+            {/* Last item centered */}
+            <div className="max-w-sm mx-auto">
+              <MotionDiv
+                variant="fadeUp"
+                custom={4}
+                className="reason-card"
+              >
+                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center">
+                  <div className="icon-wrapper mb-4 text-secondary-yellow bg-yellow-50 p-3 rounded-full shadow-sm">
+                    {reasons[4].icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-dark-charcoal mb-2">
+                    {reasons[4].title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {reasons[4].description}
+                  </p>
+                </div>
+              </MotionDiv>
+            </div>
+          </div>
+
+          {/* Mobile: Single column */}
+          <div className="md:hidden">
+            <div className="space-y-6">
+              {reasons.map((reason, index) => (
+                <MotionDiv
+                  key={index}
+                  variant="fadeUp"
+                  custom={index}
+                  className="reason-card"
+                >
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                    <div className="icon-wrapper mb-4 text-secondary-yellow bg-yellow-50 p-3 rounded-full shadow-sm">
+                      {reason.icon}
+                    </div>
+                    <h3 className="text-lg font-bold text-dark-charcoal mb-2">
+                      {reason.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {reason.description}
+                    </p>
+                  </div>
+                </MotionDiv>
+              ))}
+            </div>
+          </div>
+        </StaggerContainer>
       </div>
     </MotionSection>
   )
 }
+
+/*
+CHANGES MADE:
+1. Changed background to light yellow (bg-secondary-yellow/10) for unique section identity
+2. Added circular decorative elements in background for visual interest
+3. Added relative/z-index positioning for proper layering
+4. Changed icon colors to secondary-yellow to match section theme
+5. Added shadow to icons for better depth
+6. Updated gradient line from yellow to amber for better contrast
+7. Fixed alignment issue with 5 cards
+8. Desktop: 3 items on top row, 2 centered on bottom row
+9. Tablet: 2x2 grid with 5th item centered below
+10. Mobile: Single column for all 5 items
+11. All cards have equal height using h-full and flex layout
+12. Added hover effects and shadows for interactivity
+*/

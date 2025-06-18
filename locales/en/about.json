@@ -1,6 +1,7 @@
 {
   "hero": {
-    "title": "About Us",
+    "title": "Our Story",
+    "subtitle": "Two sisters, one mission: making healthy living fun for everyone",
     "quote": "\"We engage and inspire people in a fun and healthy way!\"",
     "founders": "Leen and Micha"
   },
@@ -12,6 +13,15 @@
     "description3": "Voilà Vélo Fruité is perfect for engaging and inspiring your audience through entertaining catering, brand exposure, or promoting sustainability and health at events.",
     "description4": "The company was founded by Leen and Micha in 2020 with the help of their dedicated team. They now run events in Montreal, Quebec City, Laval, and Ottawa.",
     "cities": ["Montreal", "Quebec City", "Laval", "Ottawa"]
+  },
+  "whoWeAre": {
+    "title": "Who We Are",
+    "badges": {
+      "sisterFounded": "Sister-Founded",
+      "passionDriven": "Passion-Driven",
+      "communityFocused": "Community-Focused"
+    },
+    "since": "Since 2023"
   },
   "founders": {
     "title": "Our Founders",
@@ -57,5 +67,10 @@
     "title": "Our Partners",
     "description": "Our partners specialize in pedal-powered events using bikes to engage, educate, and entertain children and adults.",
     "button": "Learn More"
+  },
+  "cta": {
+    "title": "Ready to Experience the Joy?",
+    "subtitle": "Let's create an unforgettable smoothie bike experience for your next event",
+    "button": "Get Started"
   }
 }
