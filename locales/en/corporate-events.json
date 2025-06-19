@@ -11,6 +11,10 @@
     "viewTeamBuilding": "View Team-Building package"
   },
   
+  "images": {
+    "corporateEvent": "Corporate event with smoothie bikes"
+  },
+  
   "stats": [
     { "number": "5.81x", "label": "ROI on employee wellness" },
     { "number": "95%", "label": "Satisfaction rate" },

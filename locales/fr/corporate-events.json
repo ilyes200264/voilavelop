@@ -11,6 +11,10 @@
     "viewTeamBuilding": "Voir forfait Team-Building"
   },
   
+  "images": {
+    "corporateEvent": "Événement corporate avec vélos à smoothie"
+  },
+  
   "stats": [
     { "number": "5.81x", "label": "ROI sur le bien-être employés" },
     { "number": "95%", "label": "Taux de satisfaction" },
