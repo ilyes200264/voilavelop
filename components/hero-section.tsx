@@ -40,15 +40,6 @@ export function HeroSection() {
             </TextReveal>
           </MotionDiv>
 
-          {/* Bold tagline with translation */}
-          <MotionDiv variant="fadeUp" custom={1}>
-            <p className="text-2xl md:text-3xl font-bold text-primary-red mb-8 flex items-center justify-center gap-3">
-              <Sparkles className="h-8 w-8 text-secondary-yellow" />
-              {t('home.hero.tagline', 'GOOD VIBES, GREEN RIDES, GREAT TASTE.')}
-              <Sparkles className="h-8 w-8 text-secondary-yellow" />
-            </p>
-          </MotionDiv>
-
           {/* Subtitle */}
           <MotionDiv variant="fadeUp" custom={2}>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -95,12 +86,6 @@ export function HeroSection() {
                       className="w-full h-full object-cover"
                     />
                     {/* Placeholder if image not available */}
-                    <div className="absolute inset-0 flex items-center justify-center text-green-600">
-                      <div className="text-center">
-                        <span className="text-6xl mb-2">🚲</span>
-                        <p className="text-sm font-medium">Green Bike</p>
-                      </div>
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.green.title', 'Eco Green')}</h4>
@@ -119,12 +104,6 @@ export function HeroSection() {
                       className="w-full h-full object-cover"
                     />
                     {/* Placeholder if image not available */}
-                    <div className="absolute inset-0 flex items-center justify-center text-blue-600">
-                      <div className="text-center">
-                        <span className="text-6xl mb-2">🚴</span>
-                        <p className="text-sm font-medium">Classic Bike</p>
-                      </div>
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.blue.title', 'Classic Blue')}</h4>
@@ -143,12 +122,6 @@ export function HeroSection() {
                       className="w-full h-full object-cover"
                     />
                     {/* Placeholder if image not available */}
-                    <div className="absolute inset-0 flex items-center justify-center text-red-600">
-                      <div className="text-center">
-                        <span className="text-6xl mb-2">🍉</span>
-                        <p className="text-sm font-medium">Watermelon Special</p>
-                      </div>
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.red.title', 'Watermelon Red')}</h4>
@@ -181,7 +154,7 @@ export function HeroSection() {
 CHANGES MADE:
 1. Changed dark background to fresh, vibrant gradient: from-secondary-yellow/30 via-white to-accent-green/20
 2. Added decorative blur elements for modern look
-3. Added bold tagline "GOOD VIBES, GREEN RIDES, GREAT TASTE." with sparkle icons
+3. Removed tagline and Sparkles icons from the main hero section
 4. Book Now button now links directly to /reserver (reservation form)
 5. Added section for three products side by side with placeholders
 6. Each product has a card design with image placeholder and fallback emoji

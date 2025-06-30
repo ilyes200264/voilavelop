@@ -112,13 +112,6 @@ export default function AboutPage() {
                       alt="Leen and Micha, founders of Voilà Vélo" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Placeholder if no image */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <span className="text-6xl">👭</span>
-                        <p className="mt-2 text-gray-600">Leen & Micha</p>
-                      </div>
-                    </div>
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-secondary-yellow rounded-2xl p-4 shadow-lg">
                     <p className="text-2xl font-bold text-dark-charcoal">{t('about.whoWeAre.since', 'Since 2023')}</p>

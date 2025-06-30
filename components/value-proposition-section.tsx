@@ -110,13 +110,6 @@ export function ValuePropositionSection() {
                   alt="Green bicycle with basket for smoothie making" 
                   className="w-full h-full object-cover"
                 />
-                {/* Placeholder if image not available */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-green-600">
-                    <span className="text-8xl mb-4 block">🚲</span>
-                    <p className="text-lg font-medium">Green Smoothie Bike</p>
-                  </div>
-                </div>
               </div>
               
               {/* Decorative elements */}
