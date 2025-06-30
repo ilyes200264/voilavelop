@@ -201,10 +201,17 @@ export default function CorporateEventsPage() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-5 gap-12 items-center">
               <AnimatedImage hoverEffect="scale" className="lg:col-span-3">
+                <div className="rounded-2xl overflow-hidden shadow-2xl mb-8">
+                  <img 
+                    src="/images/even-corp.jpg" 
+                    alt="L'expérience corporate parfaite" 
+                    className="w-full h-auto"
+                  />
+                </div>
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="/images/corporate-smoothie-bikes.jpg" 
-                    alt={t("corporateEvents:images.corporateEvent")} 
+                    alt={t("corporateEvents:images.corporateEvent")}
                     className="w-full h-auto"
                   />
                 </div>
@@ -249,126 +256,6 @@ export default function CorporateEventsPage() {
                 </MotionDiv>
               </StaggerContainer>
             </div>
-          </div>
-        </MotionSection>
-
-        {/* Packages Section */}
-        <MotionSection className="py-20 bg-trust-blue text-white">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("corporateEvents:packages.title")}
-              </h2>
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-              <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                {t("corporateEvents:packages.subtitle")}
-              </p>
-            </ScrollReveal>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {(packages || []).map((pkg, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                >
-                  <AnimatedImage 
-                    hoverEffect="lift" 
-                    className={`h-full bg-white rounded-2xl shadow-lg border-2 ${
-                      pkg.popular ? 'border-primary-red ring-2 ring-primary-red/20' : 'border-gray-200'
-                    } relative`}
-                  >
-                    {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-red text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        {t("corporateEvents:packages.mostPopular")}
-                      </div>
-                    )}
-                    
-                    <div className="p-8 h-full flex flex-col">
-                      <div className="text-center mb-6">
-                        <h3 className="text-2xl font-bold text-dark-charcoal mb-2">{pkg.title}</h3>
-                        <div className="text-3xl font-bold text-primary-red mb-2">{pkg.price}</div>
-                        <div className="text-gray-600">
-                          {pkg.duration} • {pkg.people}
-                        </div>
-                      </div>
-
-                      <div className="flex-grow">
-                        <ul className="space-y-3">
-                          {(pkg.features || []).map((feature, idx) => (
-                            <li key={idx} className="flex items-start">
-                              <Check className="h-5 w-5 text-accent-green mr-3 mt-0.5 flex-shrink-0" />
-                              <span className="text-gray-700">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div className="mt-8">
-                        <Button 
-                          className={`w-full py-3 text-lg font-semibold rounded-xl ${
-                            pkg.popular 
-                              ? 'bg-primary-red text-white hover:bg-primary-red/90' 
-                              : 'bg-gray-100 text-dark-charcoal hover:bg-primary-red hover:text-white'
-                          }`}
-                        >
-                          {t("corporateEvents:packages.selectPackage")}
-                        </Button>
-                      </div>
-                    </div>
-                  </AnimatedImage>
-                </MotionDiv>
-              ))}
-            </div>
-          </div>
-        </MotionSection>
-
-        {/* Testimonials Section */}
-        <MotionSection className="py-20 bg-secondary-yellow text-white">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("corporateEvents:testimonials.title")}
-              </h2>
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-            </ScrollReveal>
-
-            <StaggerContainer className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {(testimonials || []).map((testimonial, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                >
-                  <AnimatedImage hoverEffect="lift" className="h-full">
-                    <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
-                      <div className="flex mb-4">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 text-secondary-yellow fill-current" />
-                        ))}
-                      </div>
-                      
-                      <blockquote className="text-lg text-gray-700 italic mb-6 flex-grow">
-                        "{testimonial.quote}"
-                      </blockquote>
-                      
-                      <div className="flex items-center">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
-                          <span className="text-primary-red font-bold text-lg">
-                            {testimonial.author.charAt(0)}
-                          </span>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-dark-charcoal">{testimonial.author}</p>
-                          <p className="text-sm text-gray-600">{testimonial.position}</p>
-                          <p className="text-sm text-primary-red font-medium">{testimonial.company}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </AnimatedImage>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
           </div>
         </MotionSection>
 

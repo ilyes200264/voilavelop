@@ -4,6 +4,7 @@ import { openSans, poppins, greatVibes } from '@/lib/fonts'
 import { ThemeProvider } from '@/components/theme-provider'
 import { I18nProvider } from '@/lib/i18n'
 import translations from '@/lib/translations'
+import SocialFAB from "@/components/social-fab"
 
 export const metadata: Metadata = {
   title: 'Voilà Vélo',
@@ -30,6 +31,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <I18nProvider initialLanguage="fr" translations={translations}>
             {children}
+            <SocialFAB />
           </I18nProvider>
         </ThemeProvider>
       </body>

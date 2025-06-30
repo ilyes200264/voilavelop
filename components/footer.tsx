@@ -44,31 +44,26 @@ export function Footer() {
             <div className="footer-column contact-column lg:col-span-2">
               <h3 className="footer-title text-xl font-semibold text-secondary-yellow mb-4">{t('common.footer.contact')}</h3>
               <div className="contact-info space-y-4">
-                <div className="contact-item address flex items-start space-x-3">
-                  <div className="contact-icon text-lg">📍</div>
-                  <div className="contact-details">
-                    <p>
-                      <Link
-                        href="https://maps.google.com"
-                        target="_blank"
-                        rel="noopener"
-                        className="hover:text-secondary-yellow transition-colors"
-                      >
-                        {t('common.footer.address.line1')}
-                        <br />
-                        {t('common.footer.address.line2')}
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-
                 <div className="contact-item phone flex items-start space-x-3">
                   <div className="contact-icon text-lg">📞</div>
                   <div className="contact-details">
                     <p>
-                      <Link href={`tel:+1-${t('common.footer.phone')}`} className="hover:text-secondary-yellow transition-colors">
-                        {t('common.footer.phone')}
+                      <Link href="tel:+15145156811" className="hover:text-secondary-yellow transition-colors">
+                        (514)515-6811
                       </Link>
+                    </p>
+                    <p>
+                      <Link href="tel:+15145156811" className="hover:text-secondary-yellow transition-colors">
+                        (514)515-6811
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+                <div className="contact-item address flex items-start space-x-3">
+                  <div className="contact-icon text-lg">📍</div>
+                  <div className="contact-details">
+                    <p>
+                      3846 rue martin Laval QC H7P 4E5
                     </p>
                   </div>
                 </div>
@@ -141,17 +136,12 @@ export function Footer() {
               </h3>
               <ul className="footer-menu space-y-2">
                 <li>
-                  <Link href="/a-propos/#nos-partenaires" className="hover:text-secondary-yellow transition-colors">
-                    {t('common.footer.ourPartners')}
-                  </Link>
-                </li>
-                <li>
                   <Link href="/a-propos/#notre-mission" className="hover:text-secondary-yellow transition-colors">
                     {t('common.footer.ourMission')}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blogue/" className="hover:text-secondary-yellow transition-colors">
+                  <Link href="/a-propos#nos-valeurs" className="hover:text-secondary-yellow transition-colors">
                     {t('common.footer.ourBlog')}
                   </Link>
                 </li>

@@ -13,7 +13,7 @@ export const packagesData = {
       title: "Qu'est-ce qui est inclus?",
       description:
         "Ce forfait comprend un vélo mélangeur adapté aux enfants, permettant aux participants de pédaler pour créer leurs smoothies, ce qui en fait une activité amusante et interactive pour tous les âges. Nous pouvons personnaliser ce forfait avec votre marque, ballons et décorations personnalisées!",
-      image: "/images/velo-smoothie-1.jpg",
+      image: "/images/velo-smoothie-3.jpg",
       includes: [
         "1 vélo mélangeur adapté aux enfants (5-10 ans) - ils pédalent, ils mélangent, ils s'amusent!",
         "Smoothies frais et colorés - faits sur place avec joie et énergie",
@@ -124,7 +124,7 @@ export const packagesData = {
       title: "Qu'est-ce qui est inclus?",
       description:
         "Ce forfait comprend un vélo mélangeur pour adultes, permettant aux participants de créer leurs smoothies frais tout en faisant de l'exercice. Une expérience parfaite qui combine plaisir, santé et interaction sociale. Nous pouvons personnaliser ce forfait avec votre marque, ballons et décorations!",
-      image: "/images/velo-smoothie-3.jpg",
+      image: "/images/velo-smoothie-1.jpg",
       includes: [
         "1 vélo mélangeur adapté aux adultes",
         "Smoothies frais préparés sur place",
@@ -137,7 +137,7 @@ export const packagesData = {
       title: "Pour qui est-ce idéal?",
       description:
         "Ce forfait est parfait pour engager les adolescents, adultes et familles dans une activité qui promeut la santé et le bien-être de manière amusante et interactive.",
-      image: "/images/indoor.jpeg",
+      image: "/images/velo-smoothie-2.jpg",
       perfectFor: [
         "Événements scolaires pour adolescents",
         "Fêtes de bureau et team building",

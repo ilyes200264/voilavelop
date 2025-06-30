@@ -133,15 +133,22 @@ export function Header() {
                   onMouseEnter={() => item.hasSubmenu && setOpenSubmenu(item.submenuId || null)}
                   onMouseLeave={() => setOpenSubmenu(null)}
                 >
-                  <Link 
-                    href={item.href}
-                    className="nav-link flex items-center space-x-1 text-dark-charcoal hover:text-primary-red transition-colors duration-300 font-medium"
-                  >
-                    <span>{item.name}</span>
-                    {item.hasSubmenu && (
+                  {item.name === t('common.navigation.events') ? (
+                    <span className="nav-link flex items-center space-x-1 text-dark-charcoal cursor-default font-medium select-none">
+                      <span>{item.name}</span>
                       <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
-                    )}
-                  </Link>
+                    </span>
+                  ) : (
+                    <Link 
+                      href={item.href}
+                      className="nav-link flex items-center space-x-1 text-dark-charcoal hover:text-primary-red transition-colors duration-300 font-medium"
+                    >
+                      <span>{item.name}</span>
+                      {item.hasSubmenu && (
+                        <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+                      )}
+                    </Link>
+                  )}
                   
                   {/* Submenu */}
                   {item.hasSubmenu && item.submenu && (
