@@ -105,16 +105,24 @@ export default function AboutPage() {
               </StaggerContainer>
 
               <AnimatedImage hoverEffect="scale">
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100 to-green-100 rounded-2xl overflow-hidden shadow-xl">
-                    <img 
-                      src="/images/7.jpg" 
-                      alt="Leen and Micha, founders of Voilà Vélo" 
-                      className="w-full h-full object-cover"
-                    />
+                <div className="space-y-6">
+                  <div className="relative">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100 to-green-100 rounded-2xl overflow-hidden shadow-xl">
+                      <img
+                        src="/images/about1.jpg"
+                        alt="Les fondatrices de Voilà Vélo formant un cœur avec leurs bras"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
-                  <div className="absolute -bottom-4 -right-4 bg-secondary-yellow rounded-2xl p-4 shadow-lg">
-                    <p className="text-2xl font-bold text-dark-charcoal">{t('about.whoWeAre.since', 'Since 2023')}</p>
+                  <div className="relative">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100 to-green-100 rounded-2xl overflow-hidden shadow-xl">
+                      <img
+                        src="/images/about2.jpg"
+                        alt="Les fondatrices de Voilà Vélo présentant des gobelets de smoothies"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </AnimatedImage>

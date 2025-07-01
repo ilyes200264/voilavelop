@@ -29,9 +29,9 @@
   },
   "events_submenu": {
     "corporate": "Corporate",
-    "openingsActivations": "Openings & Activations",
-    "schoolsOrganizationsAnniversaries": "Schools, Organizations & Birthdays",
-    "conferencesExhibitions": "Conferences & Exhibitions"
+    "openingsActivations": "New Branch Openings & Product Launches",
+    "schoolsOrganizationsAnniversaries": "Schools, Community Fundraising Events",
+    "conferencesExhibitions": "Trade Shows & Expos"
   },
   "howItWorks_submenu": {
     "createYourEvent": "Create Your Event",

@@ -302,43 +302,6 @@ export default function CorporateEventsPage() {
             </div>
           </div>
         </MotionSection>
-
-        {/* Final CTA Section */}
-        <MotionSection className="py-20 bg-trust-blue text-white text-center">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                {t("corporateEvents:finalCta.title")}
-              </h2>
-              <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
-              <p className="text-xl mb-8">
-                {t("corporateEvents:finalCta.description")}
-              </p>
-            </ScrollReveal>
-            
-            <StaggerContainer className="flex flex-col sm:flex-row justify-center gap-4">
-              <AnimatedImage hoverEffect="lift">
-                <Link href="/contact">
-                  <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    {t("corporateEvents:finalCta.contactUs")}
-                    <Coffee className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-              </AnimatedImage>
-              
-              <AnimatedImage hoverEffect="lift">
-                <Link href="/comment-ca-marche/build-your-event">
-                  <Button 
-                    variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
-                  >
-                    {t("corporateEvents:finalCta.createEvent")}
-                  </Button>
-                </Link>
-              </AnimatedImage>
-            </StaggerContainer>
-          </div>
-        </MotionSection>
       </main>
       <Footer />
     </div>

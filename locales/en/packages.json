@@ -6,6 +6,31 @@
   "bookPackage": "Book this package",
   "targetAudience": "Perfect for",
   "note": "Note",
+  "pageHero": {
+    "title": "Our Packages",
+    "description": "Festivals, corporate events, fundraisers, or school programs – we have the perfect package for you."
+  },
+  "intro": {
+    "description1": "Our smoothie bikes are available for rent across the region. Whether you're hosting a small family gathering or a large festival, we have a solution that fits your needs.",
+    "description2": "All our packages include delivery, setup and breakdown, plus a professional staff member to guide your guests through the experience. We also supply all fresh ingredients, cups and other necessary accessories."
+  },
+  "packagesGrid": {
+    "title": "Discover our packages",
+    "subtitle": "A unique and memorable experience for every type of event",
+    "seeDetails": "See details",
+    "learnMore": "Learn more"
+  },
+  "help": {
+    "title": "Need help choosing?",
+    "description": "Our team can help you select the perfect package for your event or create a fully customized solution.",
+    "requestQuote": "Request a quote",
+    "callUs": "Call us",
+    "testimonial": {
+      "text": "We booked Voilà Vélo Fruité for our corporate day and it was a resounding success! The team was professional and our employees loved the experience.",
+      "author": "Marie Lemieux",
+      "company": "HR Director, XYZ Corp"
+    }
+  },
   "packages": {
     "laPetiteKoki": {
       "title": "La Petite Koki",
@@ -15,13 +40,10 @@
       "mainSection": {
         "title": "What's Included",
         "includes": [
-          "1 child-sized smoothie bike perfectly adapted for small riders",
-          "Fresh seasonal fruits and vegetables",
-          "Bilingual professional animator",
-          "30-minute interactive session",
-          "Fun nutrition education game",
-          "All necessary equipment and supplies",
-          "Setup and cleanup service"
+          "1 child-sized smoothie bike",
+          "Seasonal fruits and vegetables",
+          "Bilingual professional staff member",
+          "30-minute interactive session"
         ]
       },
       "targetAudience": {
@@ -45,12 +67,9 @@
         "title": "What's Included",
         "includes": [
           "1 adult smoothie bike",
-          "Premium ingredient selection",
-          "Professional bilingual animator",
-          "2-hour service duration",
-          "Custom recipe options",
-          "Complete setup and cleanup",
-          "All equipment and supplies"
+          "Seasonal fruits and vegetables",
+          "Bilingual professional staff member",
+          "2-hour service duration"
         ]
       },
       "targetAudience": {
@@ -68,17 +87,14 @@
       "title": "Double Fun",
       "tagline": "Twice the bikes, twice the fun!",
       "heroTitle": "Double the Energy, Double the Fun",
-      "heroDescription": "With two bikes running simultaneously, create friendly competitions and double the smoothie production for medium-sized events.",
+      "heroDescription": "With two bikes running simultaneously, create friendly competitions and double the smoothie production for your events.",
       "mainSection": {
         "title": "What's Included",
         "includes": [
           "2 smoothie bikes (adult or mixed sizes)",
-          "Expanded ingredient selection",
-          "2 professional animators",
-          "3-hour service duration",
-          "Competition games and challenges",
-          "Custom branding options",
-          "Complete event coordination"
+          "Seasonal fruits and vegetables",
+          "2 Bilingual professional staff member",
+          "3-hour service duration"
         ]
       },
       "targetAudience": {

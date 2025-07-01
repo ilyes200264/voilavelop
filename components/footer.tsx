@@ -182,7 +182,7 @@ export function Footer() {
                 <h4 className="social-title font-semibold mb-3">{t('common.footer.followUs')}</h4>
                 <div className="social-links flex space-x-3">
                   <Link
-                    href="#"
+                    href="https://www.facebook.com/share/16neHhFkHf/"
                     target="_blank"
                     rel="noopener"
                     className="social-link w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-primary-red transition-all"
@@ -191,7 +191,7 @@ export function Footer() {
                     <Facebook className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/voila.velo?igsh=dGNwM3BhdTltc2xi"
                     target="_blank"
                     rel="noopener"
                     className="social-link w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-primary-red transition-all"
@@ -200,7 +200,7 @@ export function Footer() {
                     <Instagram className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://youtube.com/@voilavelo?si=T4EgDDeNjsczCiS5"
                     target="_blank"
                     rel="noopener"
                     className="social-link w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-primary-red transition-all"
@@ -209,7 +209,7 @@ export function Footer() {
                     <Youtube className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/in/voil%C3%A0-v%C3%A9lo-b51615372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     target="_blank"
                     rel="noopener"
                     className="social-link w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-primary-red transition-all"

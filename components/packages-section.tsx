@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Bike, Baby, User, Users } from "lucide-react"
 import { 
   MotionSection, 
   ScrollReveal, 
@@ -14,6 +14,7 @@ import {
 import { useI18n } from "@/lib/i18n"
 import { packagesData } from "@/app/forfaits/packages-data"
 import { kebabToCamel } from "@/lib/i18n-utils"
+import React from "react"
 
 export function PackagesSection() {
   const { t } = useI18n()
@@ -22,7 +23,7 @@ export function PackagesSection() {
   const packageIds = ['la-petite-koki', 'pop-solo', 'double-fun']
   
   const packages = packageIds.map(id => {
-    const pkg = packagesData[id]
+    const pkg = (packagesData as any)[id]
     const camelId = kebabToCamel(id)
     
     return {
@@ -35,6 +36,12 @@ export function PackagesSection() {
       borderColor: pkg.borderColor
     }
   })
+
+  const iconMap: Record<string, React.ReactNode> = {
+    'la-petite-koki': <Baby className="h-9 w-9 text-black" />,
+    'pop-solo': <User className="h-9 w-9 text-black" />,
+    'double-fun': <Users className="h-9 w-9 text-black" />
+  }
 
   return (
     <MotionSection className="packages-section py-20 bg-accent-green relative overflow-hidden">
@@ -77,7 +84,7 @@ export function PackagesSection() {
                   <div className="package-header text-center mb-6">
                     <div className="package-icon mb-4">
                       <div className={`w-20 h-20 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'}/20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-500 hover:rotate-12`}>
-                        <span className="text-3xl">🚴</span>
+                        {iconMap[pkg.id] || <Bike className="h-9 w-9 text-black" />}
                       </div>
                     </div>
                     <h4 className={`package-title text-xl font-bold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-2`}>
