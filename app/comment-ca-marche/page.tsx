@@ -12,7 +12,7 @@ export default function HowItWorksPage() {
   const { t } = useI18n()
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  const cities = t<any[]>('serviceAreas.cities', [])
+  const cities = t<any[]>('howItWorks:serviceAreas.cities', [])
   const cityIcons = [
     <MapPin className="h-12 w-12 text-accent-green" />,
     <Building className="h-12 w-12 text-accent-green" />,
@@ -25,7 +25,7 @@ export default function HowItWorksPage() {
     icon: cityIcons[index]
   }))
 
-  const steps = t<any[]>('bookingProcess.steps', [])
+  const steps = t<any[]>('howItWorks:bookingProcess.steps', [])
   const stepIcons = [
     <Phone className="h-12 w-12 text-white" />,
     <ClipboardEdit className="h-12 w-12 text-white" />,
@@ -38,7 +38,7 @@ export default function HowItWorksPage() {
     icon: stepIcons[index]
   }))
 
-  const faqItems = t<any[]>('faq.items', [])
+  const faqItems = t<any[]>('howItWorks:faq.items', [])
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -53,11 +53,11 @@ export default function HowItWorksPage() {
         <section className="pt-32 pb-20 bg-[#E91E63] text-white">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up" style={{animationDuration: '0.8s'}}>
-              {t('hero.title', "Comment ça marche")}
+              {t('howItWorks:hero.title')}
             </h1>
             <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8 animate-scale-in" style={{animationDuration: '1s', animationDelay: '0.3s', animationFillMode: 'both'}}></div>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up" style={{animationDuration: '0.8s', animationDelay: '0.5s', animationFillMode: 'both'}}>
-              {t('hero.description', "Découvrez comment notre service de vélos à smoothie fonctionne, de la réservation à l'installation et l'animation lors de votre événement.")}
+              {t('howItWorks:hero.description')}
             </p>
           </div>
         </section>
@@ -67,13 +67,11 @@ export default function HowItWorksPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t('serviceAreas.title', "Zones de service")}
+                {t('howItWorks:serviceAreas.title')}
               </h2>
               <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-                Nous desservons des événements de toute taille à Montréal, Laval, Québec et Ottawa.
-                <br />
-                Contactez-nous pour vérifier la disponibilité dans votre secteur.
+                {t('howItWorks:serviceAreas.subtitle')}
               </p>
             </div>
 
@@ -186,11 +184,11 @@ export default function HowItWorksPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t('bookingProcess.title', "Processus de réservation")}
+                {t('howItWorks:bookingProcess.title')}
               </h2>
               <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-                {t('bookingProcess.subtitle', "Simple, rapide et sans stress - voici comment réserver votre expérience Voilà Vélo")}
+                {t('howItWorks:bookingProcess.subtitle')}
               </p>
             </div>
 
@@ -214,7 +212,7 @@ export default function HowItWorksPage() {
             <div className="text-center mt-20">
               <Link href="/contact">
                 <Button className="bg-white text-[#4CAF50] px-10 py-4 text-lg font-bold hover:bg-white/90 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">
-                  {t('bookingProcess.ctaButton', "Réserver maintenant")} <ArrowRight className="ml-2 h-5 w-5" />
+                  {t('howItWorks:bookingProcess.ctaButton')} <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>
@@ -226,11 +224,11 @@ export default function HowItWorksPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {t('faq.title', "Questions fréquemment posées")}
+                {t('howItWorks:faq.title')}
               </h2>
               <div className="red-line-separator w-16 h-1 bg-white mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-white max-w-3xl mx-auto">
-                {t('faq.subtitle', "Trouvez des réponses à toutes vos questions concernant nos services de vélos à smoothie")}
+                {t('howItWorks:faq.subtitle')}
               </p>
             </div>
 
@@ -276,16 +274,16 @@ export default function HowItWorksPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="cta-content">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  {t('faq.notFoundQuestion', "Vous n'avez pas trouvé la réponse à votre question?")}
+                  {t('howItWorks:faq.notFoundQuestion')}
                 </h2>
                 <div className="red-line-separator w-16 h-1 bg-white mb-6"></div>
                 <p className="text-xl mb-6">
-                  {t('faq.notFoundDescription', "Contactez-nous directement et notre équipe vous répondra dans les plus brefs délais. Nous sommes là pour vous aider à créer l'événement parfait!")}
+                  {t('howItWorks:faq.notFoundDescription')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact">
                     <Button className="bg-white text-[#9C27B0] px-8 py-3 font-bold hover:bg-white/90">
-                      {t('faq.contactButton', "Nous contacter")} <ArrowRight className="ml-2 h-4 w-4" />
+                      {t('howItWorks:faq.contactButton')} <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                   <Link href="tel:+1-XXX-XXX-XXXX">
@@ -293,7 +291,7 @@ export default function HowItWorksPage() {
                       variant="outline" 
                       className="border-white text-white hover:bg-white hover:text-[#9C27B0] px-8 py-3 font-bold"
                     >
-                      {t('faq.callButton', "Appelez-nous")}
+                      {t('howItWorks:faq.callButton')}
                     </Button>
                   </Link>
                 </div>
@@ -302,13 +300,13 @@ export default function HowItWorksPage() {
                 <div className="absolute -top-10 -right-10 text-6xl opacity-50">❝</div>
                 <div className="testimonial-content bg-[#BA68C8] p-6 rounded-xl">
                   <p className="text-lg italic mb-4">
-                    {t('faq.testimonial.text', "L'équipe de Voilà Vélo Fruité a été très réactive et professionnelle. Ils ont répondu à toutes mes questions et ont créé une expérience parfaitement adaptée à nos besoins spécifiques.")}
+                    {t('howItWorks:faq.testimonial.text')}
                   </p>
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-white rounded-full mr-3"></div>
                     <div>
-                      <p className="font-bold">{t('faq.testimonial.name', "Sophie Tremblay")}</p>
-                      <p className="text-sm">{t('faq.testimonial.title', "Organisatrice d'événements")}</p>
+                      <p className="font-bold">{t('howItWorks:faq.testimonial.name')}</p>
+                      <p className="text-sm">{t('howItWorks:faq.testimonial.title')}</p>
                     </div>
                   </div>
                 </div>

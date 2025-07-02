@@ -141,5 +141,19 @@
       "company": "Entreprise/Organisation",
       "companyPlaceholder": "Nom de votre entreprise (si applicable)"
     }
+  },
+  "stepSection": {
+    "heading": "Comment créer votre événement",
+    "description": "Un processus simple en 4 étapes pour organiser votre événement Voilà Vélo",
+    "ctaButton": "Réserver maintenant"
+  },
+  "faqSection": {
+    "ctaButton": "Voir toutes les questions fréquentes"
+  },
+  "finalCTA": {
+    "heading": "Prêt à créer un'événement mémorable?",
+    "description": "Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.",
+    "ctaPrimary": "Demander un devis",
+    "ctaSecondary": "Appelez-nous"
   }
 }

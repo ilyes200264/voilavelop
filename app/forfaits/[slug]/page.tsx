@@ -19,6 +19,7 @@ import {
   RedLineSeparator
 } from "@/components/motion/motion-components"
 import { use } from "react"
+import { kebabToCamel } from "@/lib/i18n-utils"
 
 interface PackagePageProps {
   params: { slug: string }
@@ -29,6 +30,15 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
   const { translatePackage } = usePackageTranslations();
   const { slug } = params
   
+  // Translation path for per-package content
+  const slugCamel = kebabToCamel(slug)
+  // Fallback object for missing translations
+  const fallbackTA = { title: '', description: '', items: [] } as { title: string; description: string; items: string[] }
+  // Try nested path (fr structure) first, then flat (en structure)
+  const nestedTA = t<{ title: string; description: string; items: string[] }>(`packages:packages.${slugCamel}.targetAudience`, fallbackTA)
+  const flatTA = t<{ title: string; description: string; items: string[] }>(`packages:${slugCamel}.targetAudience`, fallbackTA)
+  const targetAudience = nestedTA.items.length > 0 ? nestedTA : flatTA
+
   // Get translated package - will update when language changes
   const currentPackage = translatePackage(slug)
 
@@ -124,22 +134,6 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   </p>
                 </MotionDiv>
                 
-                {currentPackage.id === "la-petite-koki" && (
-                  <MotionDiv variant="fadeUp">
-                    <p className="text-xl leading-relaxed mb-8 text-black font-bold italic">
-                      "Blended by your kids, powered by fun!"
-                    </p>
-                  </MotionDiv>
-                )}
-                
-                {currentPackage.id === "pop-solo" && (
-                  <MotionDiv variant="fadeUp">
-                    <p className="text-xl leading-relaxed mb-8 text-black font-bold italic">
-                      "Mélangé par vous, alimenté par le plaisir!"
-                    </p>
-                  </MotionDiv>
-                )}
-
                 <MotionDiv variant="fadeUp">
                   <h5 className="text-xl font-semibold mb-4">{t('packageDetail.whatsIncluded', "Qu'est-ce qui est inclus?")}</h5>
                   
@@ -178,13 +172,13 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
               <StaggerContainer className="lg:col-span-2 text-white order-2 lg:order-1">
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-5xl md:text-6xl font-normal text-black mb-6 font-great-vibes fancy-title">
-                    {currentPackage.targetSection.title}
+                    {targetAudience.title}
                   </h2>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-lg leading-relaxed mb-8 text-black">
-                    {currentPackage.targetSection.description}
+                    {targetAudience.description}
                   </p>
                 </MotionDiv>
 
@@ -192,7 +186,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                   <h5 className="text-xl font-semibold mb-4">{t('packageDetail.perfectFor', "Pour qui est-ce idéal?")}</h5>
                   
                   <ul className="space-y-3 mb-8">
-                    {(currentPackage.targetSection?.perfectFor || []).map((item, index) => (
+                    {targetAudience.items.map((item, index) => (
                       <li key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
                         <span>{item}</span>
@@ -304,7 +298,7 @@ export default function EnhancedPackagePage({ params }: PackagePageProps) {
                         {option.title}
                       </h3>
                       <div className="text-xl font-medium text-primary-red">
-                        Contact us for pricing
+                        {t('packageDetail.options.contactForPricing', 'Contact us for pricing')}
                       </div>
                     </div>
 

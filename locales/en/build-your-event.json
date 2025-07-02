@@ -141,5 +141,19 @@
       "company": "Company/Organization",
       "companyPlaceholder": "Name of your company (if applicable)"
     }
+  },
+  "stepSection": {
+    "heading": "How to build your event",
+    "description": "A simple 4-step process to plan your event with Voilà Vélo",
+    "ctaButton": "Get Started Now"
+  },
+  "faqSection": {
+    "ctaButton": "View all frequently asked questions"
+  },
+  "finalCTA": {
+    "heading": "Ready to create a memorable event?",
+    "description": "Contact us today to discuss your needs and receive a personalized quote for your next Voilà Vélo event.",
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "Call us"
   }
 }

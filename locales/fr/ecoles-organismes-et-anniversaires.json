@@ -1,20 +1,20 @@
 {
   "breadcrumb": {
     "events": "Événements",
-    "schools": "Écoles & Collectes de fonds communautaires"
+    "category": "Écoles, Organismes & Anniversaires"
   },
   
   "hero": {
-    "title": "Rassemblez les gens autour de smoothies, de sourires et beaucoup de plaisir!",
+    "title": "Rassemblez les gens autour de smoothies, de sourires et de plaisir!",
     "description": "Vous cherchez une façon créative de collecter des fonds, de vous connecter avec votre communauté ou de célébrer un jour spécial? Nos expériences de vélos à smoothie sont parfaites pour les événements scolaires et les fêtes d'anniversaire!",
     "requestQuote": "Demander un devis éducatif",
-    "viewPackage": "Voir forfait enfants"
+    "viewChildrenPackage": "Voir forfait enfants"
   },
   
   "stats": [
     { "number": "500+", "label": "Événements scolaires réussis" },
     { "number": "98%", "label": "Satisfaction des enseignants" },
-    { "number": "40%", "label": "Réduction tarifaire pour écoles" },
+    { "number": "40%", "label": "Réduction pour écoles" },
     { "number": "15k+", "label": "Enfants sensibilisés" }
   ],
   
@@ -157,5 +157,30 @@
     "description": "Que ce soit pour éduquer, célébrer ou collecter des fonds, nous adaptons notre service à vos besoins spécifiques et votre budget.",
     "quoteButton": "Demander un devis éducatif",
     "discussButton": "Discuter de mon projet"
+  },
+  
+  "benefitsSection": {
+    "title": "Pourquoi nos événements marchent-ils si bien?",
+    "subtitle": "Nous offrons des forfaits à prix réduit pour les écoles et organismes à but non lucratif, rendant cette expérience accessible à tous.",
+    "items": [
+      { "title": "Activité éducative et amusante", "description": "Combinez apprentissage et plaisir en enseignant la nutrition, l'activité physique et la durabilité de manière interactive." },
+      { "title": "Collecte de fonds efficace", "description": "Créez un événement mémorable qui attire les participants et génère des revenus significatifs pour votre cause." },
+      { "title": "Engagement communautaire", "description": "Rassemblez familles, étudiants et communauté autour d'une activité positive qui renforce les liens sociaux." },
+      { "title": "Souvenirs inoubliables", "description": "Créez des moments précieux et des photos mémorables que les participants conserveront longtemps." }
+    ]
+  },
+  
+  "education": {
+    "heading": "Apprendre en s'amusant",
+    "description": "Nos ateliers transforment l'apprentissage en aventure ! Les enfants découvrent la nutrition, l'environnement et l'activité physique à travers une expérience interactive inoubliable.",
+    "label": "Bénéfices éducatifs :",
+    "items": [
+      "Apprentissage de la nutrition et des habitudes saines",
+      "Sensibilisation à l'environnement et la durabilité",
+      "Développement de la motricité et de la coordination",
+      "Travail d'équipe et coopération",
+      "Confiance en soi et accomplissement personnel"
+    ],
+    "ctaButton": "Programme éducatif"
   }
 }

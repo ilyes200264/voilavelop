@@ -32,6 +32,17 @@
           "Mélangé par vos enfants, alimenté par le plaisir!"
         ]
       },
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est idéal pour les personnes qui veulent offrir une expérience unique et mémorable aux enfants, tout en promouvant l'activité physique et une alimentation saine de manière ludique.",
+        "items": [
+          "Fêtes d'anniversaire - Créez des souvenirs inoubliables",
+          "Graduations de garderie et événements scolaires",
+          "Festivals familiaux et événements communautaires",
+          "Journées portes ouvertes dans les écoles",
+          "Célébrations privées et rassemblements familiaux"
+        ]
+      },
       "options": [
         {
           "title": "Option 1",
@@ -81,6 +92,22 @@
           "Personnalisation possible avec votre marque"
         ]
       },
+      "customizationSection": {
+        "title": "Personnalisez votre expérience Pop Solo",
+        "description": "Adaptez ce forfait à votre image de marque et à vos besoins spécifiques.",
+        "details": "Options de personnalisation complètes disponibles pour faire de votre événement une expérience unique et mémorable."
+      },
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est idéal pour les événements scolaires, les fêtes de bureau, les ateliers bien-être, les ouvertures de boutiques et les rassemblements intimes—offrant une expérience personnalisée et mémorable.",
+        "items": [
+          "Événements scolaires pour adolescents",
+          "Fêtes de bureau et team building",
+          "Ateliers bien-être",
+          "Ouvertures de boutiques",
+          "Rassemblements intimes"
+        ]
+      },
       "options": [
         {
           "title": "Option 1",
@@ -128,6 +155,17 @@
           "Musique et ambiance de foule dynamique",
           "Installation complète avec tables et signalétique",
           "Personnalisation avec votre marque, ballons et décorations"
+        ]
+      },
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est idéal pour les événements de team building d'entreprise, les événements communautaires, les festivals, les collectes de fonds scolaires et les fêtes de taille moyenne — offrant un plaisir à haute énergie et une compétition amicale.",
+        "items": [
+          "Team building d'entreprise",
+          "Événements communautaires",
+          "Festivals",
+          "Collectes de fonds scolaires",
+          "Fêtes de taille moyenne"
         ]
       },
       "options": [
@@ -189,6 +227,17 @@
           "Animateur énergique pour encourager la foule",
           "Smoothies préparés avec votre propre énergie de pédalage",
           "Compétition amicale avec récompenses délicieuses"
+        ]
+      },
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est spécialement conçu pour les entreprises et organisations qui cherchent à renforcer la cohésion d'équipe tout en promouvant la santé et le bien-être au travail.",
+        "items": [
+          "Soirées d'entreprise et événements corporatifs",
+          "Événements festifs et célébrations",
+          "Conférences et séminaires d'entreprise",
+          "Défis de bien-être en milieu de travail",
+          "Collectes de fonds amusantes et organisationnelles"
         ]
       },
       "options": [
@@ -266,7 +315,31 @@
             "Photos souvenir offertes"
           ]
         }
-      ]
+      ],
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est parfait pour créer des liens familiaux forts tout en offrant une expérience ludique et saine qui plaira aux parents comme aux enfants.",
+        "items": [
+          "Écoles, festivals et fêtes familiales",
+          "Événements de quartier",
+          "Festivals familiaux et fêtes de quartier",
+          "Célébrations multigénérationnelles",
+          "Événements communautaires axés sur la famille"
+        ]
+      }
+    },
+    "defiParentEnfant": {
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait est parfait pour créer des liens familiaux forts tout en offrant une expérience ludique et saine qui plaira aux parents comme aux enfants.",
+        "items": [
+          "Écoles, festivals et fêtes familiales",
+          "Événements de quartier",
+          "Festivals familiaux et fêtes de quartier",
+          "Célébrations multigénérationnelles",
+          "Événements communautaires axés sur la famille"
+        ]
+      }
     },
     "smoothieParade": {
       "title": "La Smoothie Parade",
@@ -293,6 +366,58 @@
           "Panneaux de menu",
           "Table d'installation",
           "La Smoothie Parade est votre solution pour des expériences de groupe inoubliables - à l'intérieur ou à l'extérieur!"
+        ]
+      },
+      "options": [
+        {
+          "title": "Installation Standard",
+          "idealFor": "Parfait pour les festivals moyens et événements communautaires.",
+          "includes": [
+            "3 vélos mélangeurs (2 grands + 1 petit)",
+            "200 smoothies aux fruits frais",
+            "Panneaux de menu",
+            "Table d'installation",
+            "Installation complète"
+          ]
+        }
+      ]
+    },
+    "laSmoothieParade": {
+      "title": "La Smoothie Parade",
+      "description": "Pour les festivals et grands événements publics",
+      "details": [
+        "4 vélos à smoothies",
+        "Smoothies illimités pour la durée de l'événement",
+        "Jusqu'à 8 heures de service",
+        "Équipe complète d'animateurs",
+        "Variété d'ingrédients et recettes spéciales",
+        "Gobelets et pailles biodégradables",
+        "Personnalisation complète",
+        "Animation et concours",
+        "Stand personnalisé"
+      ],
+      "tagline": "Parfait pour les grandes foules et encore plus de plaisir!",
+      "heroDescription": "Ce forfait festif comprend 2 grands vélos mélangeurs et 1 petit (pour les enfants de 6 ans et plus), parfait pour les événements qui appellent à l'excitation, aux couleurs et à la communauté. Laissez vos invités pédaler pour créer des smoothies délicieux avec notre installation interactive!",
+      "mainSection": {
+        "title": "Qu'est-ce qui est inclus?",
+        "description": "Notre forfait le plus spectaculaire! Avec trois vélos mélangeurs (2 grands + 1 petit), cette installation crée une véritable attraction qui captive et engage les foules pendant des heures. Parfait pour les événements d'envergure qui veulent marquer les esprits. Apportez l'énergie. Mélangez le plaisir.",
+        "includes": [
+          "3 vélos mélangeurs (2 grands + 1 petit)",
+          "200 smoothies aux fruits frais",
+          "Panneaux de menu",
+          "Table d'installation",
+          "La Smoothie Parade est votre solution pour des expériences de groupe inoubliables - à l'intérieur ou à l'extérieur!"
+        ]
+      },
+      "targetAudience": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Idéal pour les festivals, événements corporatifs, levées de fonds d'envergure et toute occasion où il faut impressionner une grande foule.",
+        "items": [
+          "Grands festivals",
+          "Événements corporatifs",
+          "Événements municipaux",
+          "Levées de fonds majeures",
+          "Célébrations publiques"
         ]
       },
       "options": [
@@ -336,6 +461,25 @@
           "Décorations de table à votre style",
           "Conception graphique sur mesure"
         ]
+      },
+      "targetSection": {
+        "title": "Pour qui est-ce idéal?",
+        "description": "Ce forfait premium est conçu pour les marques et organisations qui exigent l'excellence et souhaitent offrir une expérience vraiment unique et mémorable.",
+        "perfectFor": [
+          "Événements corporatifs",
+          "Campagnes de sensibilisation de marque",
+          "Festivals scolaires",
+          "Célébrations communautaires",
+          "Mariages, anniversaires et fêtes privées"
+        ]
+      },
+      "demoSection": {
+        "title": "Forfait Signature – Excellence personnalisée"
+      },
+      "customizationSection": {
+        "title": "Créez l'expérience Signature parfaite",
+        "description": "Conception entièrement sur mesure pour refléter parfaitement votre vision et vos objectifs.",
+        "details": "Consultation approfondie, conception graphique exclusive et exécution impeccable pour une expérience unique."
       },
       "options": [
         {

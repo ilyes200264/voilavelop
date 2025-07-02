@@ -21,13 +21,13 @@ import {
 import { useI18n } from "@/lib/i18n"
 
 export default function BuildYourEventPage() {
-  const { t } = useI18n("build-your-event")
+  const { t } = useI18n()
   const [currentStep, setCurrentStep] = useState(1)
   const [openFaq, setOpenFaq] = useState<number | null>(0) // Open first FAQ by default
 
   // Use proper namespace format
-  const steps = t<Array<{ number: number; name: string }>>("steps", [])
-  const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("step1.eventTypes", [])
+  const steps = t<Array<{ number: number; name: string }>>("buildYourEvent.steps", [])
+  const eventTypes = t<Array<{ title: string; description: string; icon: string }>>("buildYourEvent.step1.eventTypes", [])
   // Get FAQ items directly from questions array
   const faqItems = t<any[]>('faq:questions', []).slice(0, 5)
 
@@ -96,12 +96,12 @@ export default function BuildYourEventPage() {
               <div className="max-w-md">
                 {/* Simple, Bold Title */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tight leading-none">
-                  {t('title')}
+                  {t('buildYourEvent.title')}
                 </h1>
                 
                 {/* Clean Subtitle */}
                 <p className="text-lg sm:text-xl md:text-2xl font-light mb-8 md:mb-12 opacity-90">
-                  {t('subtitle')}
+                  {t('buildYourEvent.subtitle')}
                 </p>
 
                 {/* Minimal Button */}
@@ -110,7 +110,7 @@ export default function BuildYourEventPage() {
                   className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium inline-flex items-center transition-colors w-full sm:w-auto justify-center sm:justify-start"
                   onClick={() => document.getElementById('event-types')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  {t('navigation.continue')}
+                  {t('buildYourEvent.navigation.continue')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -128,11 +128,11 @@ export default function BuildYourEventPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
-                {t("step1.title")}
+                {t("buildYourEvent.step1.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
-                {t("step1.subtitle")}
+                {t("buildYourEvent.step1.subtitle")}
               </p>
             </ScrollReveal>
 
@@ -216,11 +216,11 @@ export default function BuildYourEventPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-                Comment créer votre événement
+                {t('buildYourEvent.stepSection.heading')}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4 sm:px-0">
-                Un processus simple en 4 étapes pour organiser votre événement Voilà Vélo
+                {t('buildYourEvent.stepSection.description')}
               </p>
             </ScrollReveal>
 
@@ -241,10 +241,7 @@ export default function BuildYourEventPage() {
                   
                   <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{step.name}</h3>
                   <p className="leading-relaxed opacity-90">
-                    {index === 0 && "Choisissez le type d'événement qui correspond à vos besoins"}
-                    {index === 1 && "Précisez la date, l'heure, le lieu et le nombre de participants"}
-                    {index === 2 && "Sélectionnez le nombre de vélos, smoothies et options supplémentaires"}
-                    {index === 3 && "Vérifiez tous les détails et soumettez votre demande"}
+                    {t(`buildYourEvent.step${step.number}.subtitle`)}
                   </p>
                 </MotionDiv>
               ))}
@@ -256,7 +253,7 @@ export default function BuildYourEventPage() {
                 <AnimatedImage hoverEffect="lift">
                   <Link href="/reserver">
                     <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none">
-                      Réserver maintenant
+                      {t('buildYourEvent.stepSection.ctaButton')}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -308,7 +305,7 @@ export default function BuildYourEventPage() {
               <AnimatedImage hoverEffect="lift">
                 <Link href="/comment-ca-marche/faq">
                   <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5 px-8 py-3 rounded-none">
-                    Voir toutes les questions fréquentes <ArrowRight className="ml-2 h-4 w-4" />
+                    {t('buildYourEvent.faqSection.ctaButton')} <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </AnimatedImage>
@@ -322,11 +319,11 @@ export default function BuildYourEventPage() {
             <div className="text-center">
               <ScrollReveal>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-                  Prêt à créer un événement mémorable?
+                  {t('buildYourEvent.finalCTA.heading')}
                 </h2>
                 <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
                 <p className="text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-4 sm:px-0">
-                  Contactez-nous aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé pour votre prochain événement Voilà Vélo.
+                  {t('buildYourEvent.finalCTA.description')}
                 </p>
               </ScrollReveal>
               
@@ -334,7 +331,7 @@ export default function BuildYourEventPage() {
                 <AnimatedImage hoverEffect="lift">
                   <Link href="/contact">
                     <Button className="bg-white text-primary-red hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full">
-                      Demander un devis
+                      {t('buildYourEvent.finalCTA.ctaPrimary')}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -346,7 +343,7 @@ export default function BuildYourEventPage() {
                       variant="outline" 
                       className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full mt-4 sm:mt-0"
                     >
-                      Appelez-nous
+                      {t('buildYourEvent.finalCTA.ctaSecondary')}
                     </Button>
                   </Link>
                 </AnimatedImage>

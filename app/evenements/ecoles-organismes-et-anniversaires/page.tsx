@@ -32,32 +32,12 @@ export default function SchoolsNonprofitsBirthdaysPage() {
   const benefitColors = ["bg-accent-green", "bg-primary-red", "bg-trust-blue", "bg-secondary-yellow"];
   
   // Benefits data
-  const benefits = [
-    {
-      title: "Activité éducative et amusante",
-      description: "Combinez apprentissage et plaisir en enseignant la nutrition, l'activité physique et la durabilité de manière interactive.",
-      icon: benefitIcons[0],
-      color: benefitColors[0]
-    },
-    {
-      title: "Collecte de fonds efficace",
-      description: "Créez un événement mémorable qui attire les participants et génère des revenus significatifs pour votre cause.",
-      icon: benefitIcons[1],
-      color: benefitColors[1]
-    },
-    {
-      title: "Engagement communautaire",
-      description: "Rassemblez familles, étudiants et communauté autour d'une activité positive qui renforce les liens sociaux.",
-      icon: benefitIcons[2],
-      color: benefitColors[2]
-    },
-    {
-      title: "Souvenirs inoubliables",
-      description: "Créez des moments précieux et des photos mémorables que les participants chériront longtemps.",
-      icon: benefitIcons[3],
-      color: benefitColors[3]
-    }
-  ];
+  const rawBenefits = t<Array<{ title: string; description: string }>>("ecolesOrganismesEtAnniversaires:benefitsSection.items", []);
+  const benefits = rawBenefits.map((b, i) => ({
+    ...b,
+    icon: benefitIcons[i],
+    color: benefitColors[i]
+  }));
   
   // Package options
   const packages = [
@@ -134,12 +114,18 @@ export default function SchoolsNonprofitsBirthdaysPage() {
   ];
   
   // Stats data
-  const stats = [
-    { number: "500+", label: "Événements scolaires réussis" },
-    { number: "98%", label: "Satisfaction des enseignants" },
-    { number: "40%", label: "Réduction tarifaire pour écoles" },
-    { number: "15k+", label: "Enfants sensibilisés" }
-  ];
+  const stats = t<Array<{ number: string; label: string }>>("ecolesOrganismesEtAnniversaires:stats", []);
+  
+  // Pricing data
+  const pricing = t<{
+    discount: { value: string; title: string; subtitle: string };
+    title: string;
+    description: string;
+    features: string[];
+  }>("ecolesOrganismesEtAnniversaires:pricing", {} as any);
+
+  // Final CTA data
+  const finalCta = t<{ title: string; description: string; quoteButton: string; discussButton: string }>("ecolesOrganismesEtAnniversaires:finalCta", {} as any);
 
   // Educational benefits
   const educationalBenefits = [
@@ -170,15 +156,14 @@ export default function SchoolsNonprofitsBirthdaysPage() {
             <div className="max-w-4xl mx-auto text-white">
               <div className="flex items-center text-sm mb-4 opacity-90">
                 <Link href="/evenements" className="hover:underline">
-                  Événements
+                  {t('ecolesOrganismesEtAnniversaires:breadcrumb.events')}
                 </Link>
-                <span className="mx-2">/</span>
-                <span>Écoles, Organismes & Anniversaires</span>
+                <span>{t('ecolesOrganismesEtAnniversaires:breadcrumb.category')}</span>
               </div>
               
               <TextReveal>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  Rassemblez les gens autour de smoothies, de sourires et beaucoup de plaisir!
+                  {t('ecolesOrganismesEtAnniversaires:hero.title')}
                 </h1>
               </TextReveal>
               
@@ -186,16 +171,14 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl">
-                  Vous cherchez une façon créative de collecter des fonds, de vous connecter avec votre communauté 
-                  ou de célébrer un jour spécial? Nos expériences de vélos à smoothie sont parfaites pour les 
-                  événements scolaires et les fêtes d'anniversaire!
+                  {t('ecolesOrganismesEtAnniversaires:hero.description')}
                 </p>
               </ScrollReveal>
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Demander un devis éducatif
+                    {t('ecolesOrganismesEtAnniversaires:hero.requestQuote')}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>
@@ -206,7 +189,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                       variant="outline" 
                       className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold rounded-xl"
                     >
-                      Voir forfait enfants
+                      {t('ecolesOrganismesEtAnniversaires:hero.viewChildrenPackage')}
                     </Button>
                   </Link>
                 </AnimatedImage>
@@ -247,22 +230,23 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                   <div className="flex items-center mb-6">
                     <GraduationCap className="h-12 w-12 mr-4 text-white" />
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
-                      Apprendre en s'amusant
+                      {t('ecolesOrganismesEtAnniversaires:education.heading')}
                     </h2>
                   </div>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed text-white/90">
-                    Nos ateliers transforment l'apprentissage en aventure! Les enfants découvrent la nutrition, 
-                    l'environnement et l'activité physique à travers une expérience interactive inoubliable.
+                    {t('ecolesOrganismesEtAnniversaires:education.description')}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
-                  <h4 className="text-lg font-semibold mb-4 text-white">Bénéfices éducatifs :</h4>
+                  <h4 className="text-lg font-semibold mb-4 text-white">
+                    {t('ecolesOrganismesEtAnniversaires:education.label')}
+                  </h4>
                   <div className="space-y-3">
-                    {(educationalBenefits || []).map((benefit, index) => (
+                    {t<string[]>('ecolesOrganismesEtAnniversaires:education.items', []).map((benefit, index) => (
                       <div key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-white mr-3 mt-1 flex-shrink-0" />
                         <span className="text-white/90">{benefit}</span>
@@ -275,8 +259,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
                       <Button className="bg-accent-green text-white hover:bg-accent-green/90 px-8 py-3 text-lg font-semibold rounded-xl">
-                        Programme éducatif
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        {t('ecolesOrganismesEtAnniversaires:education.ctaButton')}<ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </AnimatedImage>
                   </div>
@@ -301,17 +284,16 @@ export default function SchoolsNonprofitsBirthdaysPage() {
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Pourquoi nos événements marchent-ils si bien?
+                {t('ecolesOrganismesEtAnniversaires:benefitsSection.title')}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8" />
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Nous offrons des forfaits à prix réduit pour les écoles et organismes à but non lucratif, 
-                rendant cette expérience accessible à tous.
+                {t('ecolesOrganismesEtAnniversaires:benefitsSection.subtitle')}
               </p>
             </ScrollReveal>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {(benefits || []).map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <MotionDiv
                   key={index}
                   variant="fadeUp"
@@ -346,10 +328,10 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               <AnimatedImage hoverEffect="scale">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <div className="text-center">
-                    <div className="text-6xl font-bold mb-4">40%</div>
-                    <div className="text-xl mb-6">de réduction pour les écoles</div>
+                    <div className="text-6xl font-bold mb-4">{pricing.discount.value}</div>
+                    <div className="text-xl mb-6">{pricing.discount.title}</div>
                     <div className="text-lg opacity-90">
-                      Tarifs préférentiels pour l'éducation
+                      {pricing.discount.subtitle}
                     </div>
                   </div>
                 </div>
@@ -358,26 +340,20 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               <StaggerContainer>
                 <MotionDiv variant="fadeUp">
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Accessibilité pour tous
+                    {pricing.title}
                   </h2>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    Nous croyons que chaque enfant mérite d'accéder à des expériences éducatives enrichissantes. 
-                    C'est pourquoi nous offrons des tarifs spéciaux pour les institutions éducatives et les organismes à but non lucratif.
+                    {pricing.description}
                   </p>
                 </MotionDiv>
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {[
-                      "Forfaits adaptés aux budgets scolaires",
-                      "Planification éducative personnalisée",
-                      "Support pédagogique inclus",
-                      "Flexibilité pour événements spéciaux"
-                    ].map((feature, index) => (
-                      <div key={index} className="flex items-center">
+                    {pricing.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center">
                         <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{feature}</span>
                       </div>
@@ -394,12 +370,11 @@ export default function SchoolsNonprofitsBirthdaysPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Créons ensemble un événement mémorable!
+                {finalCta.title}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-xl mb-8">
-                Que ce soit pour éduquer, célébrer ou collecter des fonds, nous adaptons notre service 
-                à vos besoins spécifiques et votre budget.
+                {finalCta.description}
               </p>
             </ScrollReveal>
             
@@ -407,7 +382,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
                   <Button className="bg-white text-trust-blue hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Demander un devis éducatif
+                    {finalCta.quoteButton}
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -419,7 +394,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                     variant="outline" 
                     className="border-2 border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 text-lg font-semibold rounded-xl"
                   >
-                    Discuter de mon projet
+                    {finalCta.discussButton}
                   </Button>
                 </Link>
               </AnimatedImage>

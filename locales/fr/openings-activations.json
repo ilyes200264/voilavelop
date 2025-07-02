@@ -1,0 +1,45 @@
+{
+  "breadcrumb": {
+    "events": "Événements",
+    "openingsActivations": "Ouvertures de succursales & Lancements de produits"
+  },
+  "hero": {
+    "title": "Rendez votre prochain événement inoubliable — mélangez votre marque à l'action!",
+    "description": "Vous voulez créer un buzz et attirer une foule ? Notre vélo à smoothie est plus qu'une simple activité amusante — c'est un aimant pour votre marque. Chaque élément peut être adapté avec votre logo pour laisser une impression durable.",
+    "requestQuote": "Demander un devis",
+    "viewSignature": "Voir forfait Signature"
+  },
+  "stats": [
+    { "number": "95%", "label": "Taux d'engagement participant" },
+    { "number": "3.2x", "label": "Plus de partages sociaux" },
+    { "number": "150+", "label": "Activations réussies" },
+    { "number": "2 min", "label": "Temps moyen d'interaction" }
+  ],
+  "benefits": {
+    "title": "Pourquoi choisir Voilà Vélo pour vos activations ?",
+    "subtitle": "Dès que les pédales commencent à tourner, les têtes se tournent. C'est un déclencheur de conversation, une opportunité photo et un moment de bien-être en un seul.",
+    "items": [
+      { "title": "Attraction visuelle forte", "description": "Créez un point focal irrésistible qui attire naturellement les foules et génère de l'engagement spontané." },
+      { "title": "Buzz marketing garanti", "description": "Nos vélos à smoothies créent des moments partageables qui génèrent du contenu organique sur les réseaux sociaux." },
+      { "title": "Engagement client élevé", "description": "Transformez les visiteurs passifs en participants actifs qui interagissent directement avec votre marque." },
+      { "title": "Personnalisation complète", "description": "De la couleur des smoothies aux éléments de branding, tout peut être adapté à votre identité visuelle." }
+    ]
+  },
+  "experience": {
+    "title": "L'expérience qui marque",
+    "description": "Dans le monde d'aujourd'hui, les expériences construisent les marques. Donnez aux gens quelque chose d'excitant dont ils peuvent parler — et laissez-les faire le marketing pour vous.",
+    "features": [
+      "Installation 100% personnalisable à votre marque",
+      "Contenu organique généré automatiquement",
+      "Engagement direct et mémorable avec vos clients",
+      "Couverture médiatique naturelle et partage viral"
+    ],
+    "planActivation": "Planifier mon activation"
+  },
+  "finalCTA": {
+    "title": "Prêt à créer un buzz inoubliable ?",
+    "description": "Contactez-nous aujourd'hui pour transformer votre prochaine activation en expérience mémorable qui génère de l'engagement et des conversations.",
+    "requestQuote": "Demander un devis",
+    "createActivation": "Créer mon activation"
+  }
+} 

@@ -112,6 +112,38 @@ export function usePackageTranslations() {
       }
     }
     
+    // Translate targetSection if exists
+    if (pkg.targetSection) {
+      const tsPath = `${usePath}.targetSection`;
+      translatedPkg.targetSection = {
+        ...pkg.targetSection,
+        title: t(`${tsPath}.title`, pkg.targetSection.title),
+        description: t(`${tsPath}.description`, pkg.targetSection.description),
+        perfectFor: t<string[]>(`${tsPath}.perfectFor`, pkg.targetSection.perfectFor || []),
+      };
+    }
+    
+    // Translate customizationSection if exists
+    if (pkg.customizationSection) {
+      const csPath = `${usePath}.customizationSection`;
+      translatedPkg.customizationSection = {
+        ...pkg.customizationSection,
+        title: t(`${csPath}.title`, pkg.customizationSection.title),
+        description: t(`${csPath}.description`, pkg.customizationSection.description),
+        details: t(`${csPath}.details`, pkg.customizationSection.details),
+        downloadLink: pkg.customizationSection.downloadLink
+      };
+    }
+    
+    // Translate demoSection if exists
+    if (pkg.demoSection) {
+      const dsPath = `${usePath}.demoSection`;
+      translatedPkg.demoSection = {
+        ...pkg.demoSection,
+        title: t(`${dsPath}.title`, pkg.demoSection.title),
+      };
+    }
+    
     return translatedPkg;
   }, [language, t]);
   

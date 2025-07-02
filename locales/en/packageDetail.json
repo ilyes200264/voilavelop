@@ -1,0 +1,31 @@
+{
+  "notFound": {
+    "message": "Package not found",
+    "backButton": "Back to packages"
+  },
+  "whatsIncluded": "What's included?",
+  "requestQuote": "Request a quote",
+  "perfectFor": "Perfect for?",
+  "bookNow": "Book now",
+  "options": {
+    "title": "Available options",
+    "subtitle": "Choose the option that best suits your event and budget",
+    "mostPopular": "Most popular",
+    "included": "Included",
+    "idealFor": "Ideal for",
+    "chooseOption": "Choose this option",
+    "contactForPricing": "Contact us for pricing"
+  },
+  "downloadGuide": "Download guide",
+  "readyToBook": {
+    "title": "Ready to book",
+    "description": "Contact us for a personalized quote and book your date today!",
+    "requestQuote": "Request a quote",
+    "callNow": "Call now",
+    "testimonial": {
+      "text": "Our experience with {packageTitle} was absolutely incredible! Our guests loved the interactivity and the smoothies were delicious.",
+      "author": "Isabelle Tremblay",
+      "location": "Montréal, QC"
+    }
+  }
+} 

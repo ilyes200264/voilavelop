@@ -22,6 +22,14 @@ import thankYouEn from '@/locales/en/thank-you.json';
 import thankYouFr from '@/locales/fr/thank-you.json';
 import reservationEn from '@/locales/en/reservation.json';
 import reservationFr from '@/locales/fr/reservation.json';
+import openingsActivationsEn from '@/locales/en/openings-activations.json';
+import openingsActivationsFr from '@/locales/fr/openings-activations.json';
+import conferencesEtExpositionsEn from '@/locales/en/conferences-et-expositions.json';
+import conferencesEtExpositionsFr from '@/locales/fr/conferences-et-expositions.json';
+import schoolsEn from '@/locales/en/ecoles-organismes-et-anniversaires.json';
+import schoolsFr from '@/locales/fr/ecoles-organismes-et-anniversaires.json';
+import packageDetailEn from '@/locales/en/packageDetail.json';
+import packageDetailFr from '@/locales/fr/packageDetail.json';
 
 type Language = 'en' | 'fr';
 
@@ -48,6 +56,10 @@ const translations = {
     corporateEvents: corporateEventsEn,
     thankYou: thankYouEn,
     reservation: reservationEn,
+    openingsActivations: openingsActivationsEn,
+    conferencesEtExpositions: conferencesEtExpositionsEn,
+    ecolesOrganismesEtAnniversaires: schoolsEn,
+    packageDetail: packageDetailEn,
   },
   fr: {
     common: commonFr,
@@ -62,6 +74,10 @@ const translations = {
     corporateEvents: corporateEventsFr,
     thankYou: thankYouFr,
     reservation: reservationFr,
+    openingsActivations: openingsActivationsFr,
+    conferencesEtExpositions: conferencesEtExpositionsFr,
+    ecolesOrganismesEtAnniversaires: schoolsFr,
+    packageDetail: packageDetailFr,
   },
 };
 

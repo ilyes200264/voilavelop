@@ -70,7 +70,7 @@ export const I18nProvider = ({
       // Format: 'namespace:path.to.key'
       const [namespace, path] = key.split(':', 2);
       if (currentTranslations[namespace]) {
-        const result = getNestedTranslation(currentTranslations[namespace], path);
+        const result = getNestedTranslation(currentTranslations[namespace] as TranslationsType, path);
         if (result !== undefined) {
           return result as T;
         }

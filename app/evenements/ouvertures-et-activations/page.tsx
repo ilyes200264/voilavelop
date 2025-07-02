@@ -19,7 +19,6 @@ import { useI18n } from "@/lib/i18n"
 
 export default function OpeningsActivationsPage() {
   const { t } = useI18n();
-  
   // Icons for benefits
   const benefitIcons = [
     <Eye key="eye" className="h-12 w-12 text-white" />,
@@ -32,32 +31,12 @@ export default function OpeningsActivationsPage() {
   const benefitColors = ["bg-secondary-yellow", "bg-primary-red", "bg-trust-blue", "bg-accent-green"];
   
   // Benefits data
-  const benefits = [
-    {
-      title: "Attraction visuelle forte",
-      description: "Créez un point focal irrésistible qui attire naturellement les foules et génère de l'engagement spontané.",
-      icon: benefitIcons[0],
-      color: benefitColors[0]
-    },
-    {
-      title: "Buzz marketing garanti",
-      description: "Nos vélos à smoothies créent des moments partageables qui génèrent du contenu organique sur les réseaux sociaux.",
-      icon: benefitIcons[1],
-      color: benefitColors[1]
-    },
-    {
-      title: "Engagement client élevé",
-      description: "Transformez les visiteurs passifs en participants actifs qui interagissent directement avec votre marque.",
-      icon: benefitIcons[2],
-      color: benefitColors[2]
-    },
-    {
-      title: "Personnalisation complète",
-      description: "De la couleur des smoothies aux éléments de branding, tout peut être adapté à votre identité visuelle.",
-      icon: benefitIcons[3],
-      color: benefitColors[3]
-    }
-  ];
+  const rawBenefits = t<Array<{ title: string; description: string }>>("openingsActivations:benefits.items", []);
+  const benefits = rawBenefits.map((b, i) => ({
+    ...b,
+    icon: benefitIcons[i],
+    color: benefitColors[i]
+  }));
   
   // Package options
   const packages = [
@@ -134,12 +113,7 @@ export default function OpeningsActivationsPage() {
   ];
   
   // Stats data
-  const stats = [
-    { number: "95%", label: "Taux d'engagement participant" },
-    { number: "3.2x", label: "Plus de partages sociaux" },
-    { number: "150+", label: "Activations réussies" },
-    { number: "2 min", label: "Temps moyen d'interaction" }
-  ];
+  const stats = t<Array<{ number: string; label: string }>>("openingsActivations:stats", []);
 
   return (
     <div className="min-h-screen">
@@ -153,15 +127,15 @@ export default function OpeningsActivationsPage() {
             <div className="max-w-4xl mx-auto text-white">
               <div className="flex items-center text-sm mb-4 opacity-90">
                 <Link href="/evenements" className="hover:underline">
-                  Événements
+                  {t('openingsActivations:breadcrumb.events')}
                 </Link>
                 <span className="mx-2">/</span>
-                <span>Ouvertures & Activations</span>
+                <span>{t('openingsActivations:breadcrumb.openingsActivations')}</span>
               </div>
               
               <TextReveal>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  Rendez votre prochain événement inoubliable — mélangez votre marque à l'action!
+                  {t('openingsActivations:hero.title')}
                 </h1>
               </TextReveal>
               
@@ -169,17 +143,14 @@ export default function OpeningsActivationsPage() {
               
               <ScrollReveal delay={0.3}>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl">
-                  Vous voulez créer un buzz et attirer une foule? Notre vélo à smoothie est plus qu'une simple 
-                  activité amusante — c'est un aimant pour votre marque. Chaque élément peut être adapté avec 
-                  votre logo pour laisser une impression durable.
+                  {t('openingsActivations:hero.description')}
                 </p>
               </ScrollReveal>
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
                   <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Demander un devis
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    {t('openingsActivations:hero.requestQuote')} <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </AnimatedImage>
                 
@@ -189,7 +160,7 @@ export default function OpeningsActivationsPage() {
                       variant="outline" 
                       className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold rounded-xl"
                     >
-                      Voir forfait Signature
+                      {t('openingsActivations:hero.viewSignature')}
                     </Button>
                   </Link>
                 </AnimatedImage>
@@ -299,12 +270,7 @@ export default function OpeningsActivationsPage() {
                 
                 <MotionDiv variant="fadeUp">
                   <div className="space-y-4">
-                    {[
-                      "Installation 100% personnalisable à votre marque",
-                      "Contenu organique généré automatiquement",
-                      "Engagement direct et mémorable avec vos clients",
-                      "Couverture médiatique naturelle et partage viral"
-                    ].map((feature, index) => (
+                    {t<string[]>("openingsActivations:experience.features", []).map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                         <span className="text-lg">{feature}</span>
@@ -317,7 +283,7 @@ export default function OpeningsActivationsPage() {
                   <div className="mt-8">
                     <AnimatedImage hoverEffect="lift">
                       <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-xl">
-                        Planifier mon activation
+                        {t("openingsActivations:experience.planActivation")}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </AnimatedImage>
@@ -333,12 +299,11 @@ export default function OpeningsActivationsPage() {
           <div className="container mx-auto px-4 max-w-4xl">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Prêt à créer un buzz inoubliable?
+                {t("openingsActivations:finalCTA.title")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-xl mb-8">
-                Contactez-nous aujourd'hui pour transformer votre prochaine activation en expérience mémorable 
-                qui génère de l'engagement et des conversations.
+                {t("openingsActivations:finalCTA.description")}
               </p>
             </ScrollReveal>
             
@@ -346,7 +311,7 @@ export default function OpeningsActivationsPage() {
               <AnimatedImage hoverEffect="lift">
                 <Link href="/contact">
                   <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Demander un devis
+                    {t("openingsActivations:finalCTA.requestQuote")}
                     <Coffee className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
@@ -358,7 +323,7 @@ export default function OpeningsActivationsPage() {
                     variant="outline" 
                     className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 text-lg font-semibold rounded-xl"
                   >
-                    Créer mon activation
+                    {t("openingsActivations:finalCTA.createActivation")}
                   </Button>
                 </Link>
               </AnimatedImage>
