@@ -30,7 +30,7 @@ export function Footer() {
               </div>
             </div>
             <div className="footer-cities">
-              <h3 className="cities-text text-xl md:text-2xl font-medium">{t('cities')}</h3>
+              <h3 className="cities-text text-xl md:text-2xl font-medium">{t('common.footer.serviceArea')}</h3>
             </div>
           </div>
         </div>

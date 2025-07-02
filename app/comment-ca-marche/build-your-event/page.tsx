@@ -76,7 +76,7 @@ export default function BuildYourEventPage() {
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Hero Section styled like home page hero */}
+        {/* Build Your Event Section (Hero/Intro) */}
         <section className="hero-section relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div className="hero-video-container absolute inset-0">
@@ -123,104 +123,16 @@ export default function BuildYourEventPage() {
           </div>
         </section>
 
-        {/* Event Types Section styled like value proposition */}
-        <MotionSection id="event-types" className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <ScrollReveal className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
-                {t("buildYourEvent.step1.title")}
-              </h2>
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
-                {t("buildYourEvent.step1.subtitle")}
-              </p>
-            </ScrollReveal>
-
-            <StaggerContainer className="space-y-16">
-              {(eventTypes || []).map((type, index) => {
-                const eventImage = eventImages[index] || eventImages[0];
-                return (
-                  <MotionDiv
-                    key={index}
-                    variant="fadeUp"
-                    custom={index}
-                    className={`${index % 2 === 0 ? 'bg-primary-red' : 'bg-trust-blue'} rounded-2xl overflow-hidden shadow-xl`}
-                  >
-                    <div className="grid lg:grid-cols-2 gap-0 flex-col-reverse lg:flex-row">
-                      {/* Image Section */}
-                      <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                        <ImageMaskReveal className="h-64 lg:h-full">
-                          <Image 
-                            src={eventImage.image}
-                            alt={type.title} 
-                            width={800}
-                            height={600}
-                            className="w-full h-full object-cover"
-                          />
-                        </ImageMaskReveal>
-                      </div>
-
-                      {/* Content Section */}
-                      <div className={`p-4 sm:p-8 lg:p-12 text-white ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                        <div className="flex items-center mb-4 sm:mb-6">
-                          <AnimatedImage hoverEffect="rotate" className="mr-3 sm:mr-4 text-white">
-                            <div className="hidden sm:block">{getIconComponent(type.icon)}</div>
-                            <div className="block sm:hidden h-8 w-8">{getIconComponent(type.icon)}</div>
-                          </AnimatedImage>
-                          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">{type.title}</h3>
-                        </div>
-                        
-                        <p className="text-base sm:text-lg mb-6 leading-relaxed opacity-90">
-                          {type.description}
-                        </p>
-
-                        <div className="mb-8">
-                          <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Avantages clés:</h4>
-                          <ul className="space-y-2 text-sm sm:text-base">
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Expérience unique et mémorable
-                            </li>
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Adaptable à vos besoins spécifiques
-                            </li>
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Engagement actif des participants
-                            </li>
-                          </ul>
-                        </div>
-
-                        <AnimatedImage hoverEffect="lift">
-                          <Link href="/contact">
-                            <Button 
-                              className="bg-white text-dark-charcoal hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-none w-full sm:w-auto text-center"
-                            >
-                              Demander un devis
-                              <ArrowRight className="ml-2 h-5 w-5" />
-                            </Button>
-                          </Link>
-                        </AnimatedImage>
-                      </div>
-                    </div>
-                  </MotionDiv>
-                );
-              })}
-            </StaggerContainer>
-          </div>
-        </MotionSection>
-
-        {/* Steps Section - Using the same style as benefits section */}
+        {/* How to Build Your Event Section (Steps) */}
         <MotionSection className="py-20 bg-accent-green text-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-                {t('buildYourEvent.stepSection.heading')}
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
+                {t("buildYourEvent.stepSection.heading")}
               </h2>
               <RedLineSeparator className="w-16 mx-auto mb-8 bg-white" />
               <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4 sm:px-0">
-                {t('buildYourEvent.stepSection.description')}
+                {t("buildYourEvent.stepSection.description")}
               </p>
             </ScrollReveal>
 
@@ -263,58 +175,60 @@ export default function BuildYourEventPage() {
           </div>
         </MotionSection>
 
-        {/* FAQ Section */}
-        <MotionSection className="py-20 bg-light-gray">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <ScrollReveal className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
-                {t("faq:title")}
-              </h2>
-              <RedLineSeparator className="w-16 mx-auto mb-8" />
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
-                {t("faq:subtitle")}
-              </p>
-            </ScrollReveal>
+        {/* Frequently Asked Questions Section (FAQ) */}
+        {faqItems && faqItems.length > 0 && (
+          <MotionSection className="py-20 bg-light-gray">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <ScrollReveal className="text-center mb-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-charcoal mb-3 sm:mb-4">
+                  {t("faq:title")}
+                </h2>
+                <RedLineSeparator className="w-16 mx-auto mb-8" />
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
+                  {t("faq:subtitle")}
+                </p>
+              </ScrollReveal>
 
-            <div className="faq-list max-w-4xl mx-auto bg-white p-4 sm:p-8 rounded-none shadow-lg">
-              {(faqItems || []).map((item, index) => (
-                <div 
-                  key={index} 
-                  className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg" 
-                >
-                  <button
-                    className="faq-question w-full text-left py-4 sm:py-6 px-3 sm:px-4 flex justify-between items-center hover:text-primary-red transition-colors"
-                    onClick={() => toggleFaq(index)}
-                    aria-expanded={openFaq === index}
+              <div className="faq-list max-w-4xl mx-auto bg-white p-4 sm:p-8 rounded-none shadow-lg">
+                {(faqItems || []).map((item, index) => (
+                  <div 
+                    key={index} 
+                    className="faq-item border-b border-gray-300 last:border-b-0 hover:bg-white/50 transition-colors rounded-lg" 
                   >
-                    <h3 className="text-base sm:text-lg font-bold pr-2 sm:pr-4">{item.question}</h3>
-                    <span className="faq-toggle text-primary-red flex-shrink-0 bg-white p-2 rounded-full shadow-md">
-                      {openFaq === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
-                    </span>
-                  </button>
-                  {openFaq === index && (
-                    <div className="faq-answer pb-4 sm:pb-6 px-3 sm:px-4">
-                      <p className="text-gray-700 leading-relaxed">{item.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+                    <button
+                      className="faq-question w-full text-left py-4 sm:py-6 px-3 sm:px-4 flex justify-between items-center hover:text-primary-red transition-colors"
+                      onClick={() => toggleFaq(index)}
+                      aria-expanded={openFaq === index}
+                    >
+                      <h3 className="text-base sm:text-lg font-bold pr-2 sm:pr-4">{item.question}</h3>
+                      <span className="faq-toggle text-primary-red flex-shrink-0 bg-white p-2 rounded-full shadow-md">
+                        {openFaq === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                      </span>
+                    </button>
+                    {openFaq === index && (
+                      <div className="faq-answer pb-4 sm:pb-6 px-3 sm:px-4">
+                        <p className="text-gray-700 leading-relaxed">{item.answer}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
 
-            <div className="mt-16 text-center">
-              <AnimatedImage hoverEffect="lift">
-                <Link href="/comment-ca-marche/faq">
-                  <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5 px-8 py-3 rounded-none">
-                    {t('buildYourEvent.faqSection.ctaButton')} <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </AnimatedImage>
+              <div className="mt-16 text-center">
+                <AnimatedImage hoverEffect="lift">
+                  <Link href="/comment-ca-marche/faq">
+                    <Button variant="outline" className="border-primary-red text-primary-red hover:bg-primary-red/5 px-8 py-3 rounded-none">
+                      {t('buildYourEvent.faqSection.ctaButton')} <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </AnimatedImage>
+              </div>
             </div>
-          </div>
-        </MotionSection>
+          </MotionSection>
+        )}
 
-        {/* Final CTA Section - Styled like events page */}
-        <MotionSection className="py-20 bg-primary-red text-white">
+        {/* Final CTA Section (Ready to create a memorable event?) */}
+        <MotionSection className="py-20 bg-primary-red text-white text-center">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
               <ScrollReveal>

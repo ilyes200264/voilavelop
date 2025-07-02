@@ -11,6 +11,7 @@ import {
   TextReveal,
   RedLineSeparator
 } from "@/components/motion/motion-components"
+import Link from "next/link"
 
 export function BenefitsSection() {
   const { t } = useI18n();
@@ -20,7 +21,6 @@ export function BenefitsSection() {
     { iconName: "building", text: t('home.benefits.items.corporate') },
     { iconName: "shoppingBag", text: t('home.benefits.items.malls') },
     { iconName: "graduationCap", text: t('home.benefits.items.schools') },
-    { iconName: "graduationCap", text: t('home.benefits.items.openDays') },
     { iconName: "partyPopper", text: t('home.benefits.items.weddings') },
   ]
 
@@ -79,9 +79,11 @@ export function BenefitsSection() {
 
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
-                    <button className="btn-primary bg-primary-red text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                      {t('home.benefits.learnMore')}
-                    </button>
+                    <Link href="/a-propos">
+                      <button className="btn-primary bg-primary-red text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
+                        {t('home.benefits.learnMore')}
+                      </button>
+                    </Link>
                   </AnimatedImage>
                 </MotionDiv>
               </StaggerContainer>

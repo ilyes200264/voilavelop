@@ -21,7 +21,7 @@
     }
   },
   "transform": {
-    "title": "Transform your event with our smoothie bikes",
+    "title": "Transform Your Event With Our Smoothie Bikes",
     "description": "Bring energy, health, and unforgettable moments to your next gathering. Our smoothie bikes combine physical activity, nutrition education, and pure fun into one amazing experience.",
     "learnMore": "Learn more"
   },
@@ -77,9 +77,8 @@
       "wellness": "Workplace Wellness",
       "teamBuilding": "Team Building & Staff Engagement",
       "corporate": "Corporate Events (Brand Engagement & Promotion)",
-      "malls": "Mall Activities / School Holiday Programs",
+      "malls": "Mall Activities",
       "schools": "School Parties / Charity Fundraisers",
-      "openDays": "University Open Days",
       "weddings": "Weddings, Birthday Parties & Gala Dinners"
     }
   },
@@ -116,33 +115,45 @@
         "description": "We offset the carbon footprint of our travels"
       },
       "noStraws": {
-        "title": "No Straws\nThank You!",
-        "description": "We don't use straws or lids at our events and encourage our clients to do the same"
+        "title": "No Straws",
+        "description": "We don't use straws or lids at our events and encourage our clients to do the same."
       },
       "foodWaste": {
-        "title": "Fighting Food\nWaste!",
-        "description": "We donate all leftover ingredients to charities like Moisson Montreal"
-      },
-      "equality": {
-        "title": "Fighting\nInequality!",
-        "description": "We donate to UNICEF and local organizations, helping children and youth every day"
-      },
-      "carbon": {
-        "title": "Carbon\nNeutral!",
-        "description": "All carbon produced by our vehicles and paper is offset by tree plantings in Quebec"
+        "title": "Fighting Food Waste",
+        "description": "We donate all leftover ingredients to charities."
       }
     }
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "subtitle": "Hear from organizations that have experienced the Voilà Vélo difference"
+    "subtitle": "Hear from organizations that have experienced the Voilà Vélo difference",
+    "items": {
+      "testimonial1": {
+        "text": "Our community event was much more successful thanks to the bikes. This is the 3rd year we've rented them... thank you so much!",
+        "author": "Beatrice",
+        "title": "Event Organizer",
+        "date": "December 2024"
+      },
+      "testimonial2": {
+        "text": "The Voilà Vélo team turned our corporate event into an unforgettable experience. Our employees are still talking about that day!",
+        "author": "Marc-André",
+        "title": "HR Director",
+        "date": "November 2024"
+      },
+      "testimonial3": {
+        "text": "Perfect for our family festival! The kids loved pedaling to make their own smoothies. A fun and educational activity.",
+        "author": "Sophie",
+        "title": "Event Coordinator",
+        "date": "October 2024"
+      }
+    }
   },
   "valueProposition": {
     "title": "More Than Just Smoothies",
     "subtitle": "We create experiences that bring people together",
     "points": [
       "Interactive entertainment for all ages",
-      "Promotes health and wellness",
+      "Health and wellness for everyone",
       "Eco-friendly and sustainable",
       "Bilingual professional service"
     ]

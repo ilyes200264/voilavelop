@@ -111,8 +111,8 @@ export default function BookingPage() {
                     <div className="method-details">
                       <h3 className="font-semibold text-dark-charcoal mb-1">{translate('sidebar.contact.email.label')}</h3>
                       <p className="text-gray-600 mb-1">
-                        <a href="mailto:info@voilavelo.ca" className="hover:text-accent-green">
-                          {translate('sidebar.contact.email.value')}
+                        <a href="mailto:voilavelo25@gmail.com" className="hover:text-accent-green">
+                          voilavelo25@gmail.com
                         </a>
                       </p>
                     </div>

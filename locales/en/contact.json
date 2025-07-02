@@ -12,12 +12,13 @@
     },
     "phone": {
       "title": "Phone",
-      "number": "XXX-XXX-XXXX",
+      "number": "(514)515-6811",
+      "number2": "(514)515-6811",
       "hours": "Mon-Fri: 9:00AM-5:00PM"
     },
     "email": {
       "title": "Email",
-      "address": "info@voilavelo.ca",
+      "address": "voilavelo25@gmail.com",
       "responseTime": "Response within 24h"
     },
     "serviceAreas": {

@@ -124,15 +124,322 @@
     }
   },
   "readySetBlend": {
+    "title": "Ready Set Blend",
+    "description": "For large events with many participants",
+    "details": [
+      "3 smoothie bikes",
+      "Up to 300 smoothies",
+      "4 hours of service",
+      "Three animators",
+      "All fresh ingredients",
+      "Biodegradable cups and straws",
+      "Full customization",
+      "Animation and contests"
+    ],
+    "tagline": "Team-building with a touch of health and energy!",
+    "heroDescription": "Perfect for corporate evenings, festive events, conferences, wellness challenges, and fun fundraisers!",
+    "mainSection": {
+      "title": "What's Included?",
+      "description": "This package turns smoothie making into a friendly competition! With two blender bikes, speed monitors, and a real-time scoreboard, your participants will enjoy a unique and motivating team-building experience. Make your event unforgettable with friendly competition and delicious rewards.",
+      "includes": [
+        "2 adult blender bikes",
+        "Speed monitors + real-time scoreboard",
+        "Energetic animator to cheer the crowd",
+        "Smoothies made with your own pedal power",
+        "Friendly competition with delicious rewards"
+      ]
+    },
     "targetAudience": {
-      "title": "Perfect For",
-      "description": "This package is specifically designed for companies and organisations looking to strengthen team cohesion while promoting health and well-being at work.",
+      "title": "Who is it for?",
+      "description": "This package is specially designed for companies and organizations looking to strengthen team cohesion while promoting health and well-being at work.",
       "items": [
-        "Corporate parties & company events",
-        "Festive events & celebrations",
-        "Corporate conferences & seminars",
+        "Corporate evenings and events",
+        "Festive events and celebrations",
+        "Corporate conferences and seminars",
         "Workplace wellness challenges",
-        "Fun and organisational fund-raisers"
+        "Fun and organizational fundraisers"
+      ]
+    },
+    "options": [
+      {
+        "title": "Option 1",
+        "idealFor": "Perfect for teams of 20-40 people.",
+        "includes": [
+          "100 smoothies + 2 hours of exciting competition",
+          "2 adult blender bikes",
+          "Speed monitors + real-time scoreboard",
+          "Energetic animator to cheer the crowd",
+          "Smoothies made with your own pedal power"
+        ]
+      },
+      {
+        "title": "Option 2",
+        "idealFor": "Ideal for corporate events of 40-60 people.",
+        "includes": [
+          "200 smoothies + 3 hours of fast-paced fun",
+          "2 adult blender bikes",
+          "Speed monitors + real-time scoreboard",
+          "Energetic animator to cheer the crowd",
+          "Smoothies made with your own pedal power",
+          "Experience customization"
+        ]
+      }
+    ]
+  },
+  "laPetiteKoki": {
+    "title": "La Petite Koki",
+    "description": "Ideal for small events up to 50 people",
+    "details": [
+      "1 smoothie bike",
+      "Up to 50 smoothies",
+      "2 hours of service",
+      "One animator",
+      "All fresh ingredients",
+      "Biodegradable cups and straws"
+    ],
+    "tagline": "All-time kids' favorite!",
+    "heroDescription": "Perfect for birthdays, daycare graduations, or family festivals, this package brings fun, laughter, and delicious smoothies to any celebration!",
+    "mainSection": {
+      "title": "What's Included?",
+      "description": "This package includes a kid-friendly blender bike, letting participants pedal to create their smoothies—making it a fun and interactive activity for all ages. We can customize this package with your branding, balloons, and personalized decorations!",
+      "includes": [
+        "1 kid-friendly blender bike (ages 5-10) – they pedal, they blend, they have fun!",
+        "Fresh, colorful smoothies – made on the spot with joy and energy",
+        "Lively animation – music and festive atmosphere everyone will remember",
+        "Customization possible with your branding, balloons, and decorations",
+        "Blended by your kids, powered by fun!"
+      ]
+    },
+    "targetAudience": {
+      "title": "Who is it for?",
+      "description": "This package is ideal for those who want to offer a unique and memorable experience for children, while promoting physical activity and healthy eating in a playful way.",
+      "items": [
+        "Birthday parties – Create unforgettable memories",
+        "Daycare graduations and school events",
+        "Family festivals and community events",
+        "School open houses",
+        "Private celebrations and family gatherings"
+      ]
+    },
+    "options": [
+      {
+        "title": "Option 1",
+        "idealFor": "Perfect for small birthday parties or intimate events.",
+        "includes": [
+          "25 delicious smoothies + 1 hour of energetic entertainment",
+          "1 kid-friendly blender bike",
+          "Lively animation with festive music",
+          "Fresh and colorful ingredients"
+        ]
+      },
+      {
+        "title": "Option 2",
+        "idealFor": "Ideal for larger parties, daycare graduations, or family festivals.",
+        "includes": [
+          "50 delicious smoothies + 2 hours of energetic entertainment",
+          "1 kid-friendly blender bike",
+          "Lively animation with festive music",
+          "Colorful decorations included",
+          "Customization possible"
+        ]
+      }
+    ]
+  },
+  "popSolo": {
+    "title": "Pop Solo",
+    "description": "Perfect for medium-sized events",
+    "details": [
+      "1 smoothie bike",
+      "Up to 100 smoothies",
+      "3 hours of service",
+      "One animator",
+      "All fresh ingredients",
+      "Biodegradable cups and straws",
+      "Basic customization"
+    ],
+    "tagline": "A guaranteed hit with teens, adults, and families!",
+    "heroDescription": "Perfect for school events, office parties, or any festive gathering focused on health and fun!",
+    "mainSection": {
+      "title": "What's Included?",
+      "description": "This package includes an adult blender bike, letting participants create their fresh smoothies while exercising. A perfect experience that combines fun, health, and social interaction. We can customize this package with your branding, balloons, and decorations!",
+      "includes": [
+        "1 adult-friendly blender bike",
+        "Fresh smoothies made on site",
+        "Festive atmosphere with music and good vibes",
+        "Blended by you, powered by fun!",
+        "Customization possible with your branding"
+      ]
+    },
+    "customizationSection": {
+      "title": "Customize Your Pop Solo Experience",
+      "description": "Adapt this package to your brand image and specific needs.",
+      "details": "Full customization options available to make your event a unique and memorable experience."
+    },
+    "targetAudience": {
+      "title": "Who is it for?",
+      "description": "This package is ideal for school events, office parties, wellness workshops, store openings, and intimate gatherings—offering a personalized and memorable experience.",
+      "items": [
+        "School events for teens",
+        "Office parties and team building",
+        "Wellness workshops",
+        "Store openings",
+        "Intimate gatherings"
+      ]
+    },
+    "options": [
+      {
+        "title": "Option 1",
+        "idealFor": "Perfect for small events and intimate gatherings.",
+        "includes": [
+          "50 smoothies + 1.5 hours of energetic fun",
+          "1 adult-friendly blender bike",
+          "Festive atmosphere with music and good vibes",
+          "Fresh smoothies made on site"
+        ]
+      },
+      {
+        "title": "Option 2",
+        "idealFor": "Ideal for medium-sized events and corporate celebrations.",
+        "includes": [
+          "75 smoothies + 2.5 hours of energetic fun",
+          "1 adult-friendly blender bike",
+          "Festive atmosphere with music and good vibes",
+          "Fresh smoothies made on site",
+          "Basic customization included"
+        ]
+      }
+    ]
+  },
+  "doubleFun": {
+    "title": "Double Fun",
+    "description": "Two bikes for more fun and competition",
+    "details": [
+      "2 smoothie bikes",
+      "Up to 150 smoothies",
+      "3 hours of service",
+      "Two animators",
+      "All fresh ingredients",
+      "Biodegradable cups and straws",
+      "Basic customization"
+    ],
+    "tagline": "Twice the bikes = twice the energy!",
+    "heroDescription": "Perfect for community festivals, brand activations, fundraisers, corporate parties, open houses, and more!",
+    "mainSection": {
+      "title": "What's Included?",
+      "description": "This package includes two adult blender bikes, allowing for a larger-scale interactive experience. Perfect for creating a dynamic crowd atmosphere and engaging more participants at once. You can customize this package with your branding, balloons, and decorations—let us know to triple the fun!",
+      "includes": [
+        "2 adult blender bikes",
+        "Smoothie preparation on site",
+        "Music and dynamic crowd atmosphere",
+        "Full setup with tables and signage",
+        "Customization with your branding, balloons, and decorations"
+      ]
+    },
+    "targetAudience": {
+      "title": "Who is it for?",
+      "description": "This package is ideal for corporate team building events, community events, festivals, school fundraisers, and medium-sized parties—offering high-energy fun and friendly competition.",
+      "items": [
+        "Corporate team building",
+        "Community events",
+        "Festivals",
+        "School fundraisers",
+        "Medium-sized parties"
+      ]
+    },
+    "options": [
+      {
+        "title": "Option 1",
+        "idealFor": "Perfect for community events and local festivals.",
+        "includes": [
+          "100 smoothies + 2 hours of entertainment",
+          "2 adult blender bikes",
+          "Smoothie preparation on site",
+          "Music and dynamic crowd atmosphere"
+        ]
+      },
+      {
+        "title": "Option 2",
+        "idealFor": "Ideal for brand activations and corporate events.",
+        "includes": [
+          "200 smoothies + 3 hours",
+          "2 adult blender bikes",
+          "Smoothie preparation on site",
+          "Music and dynamic crowd atmosphere",
+          "Brand customization included"
+        ]
+      },
+      {
+        "title": "Option 3",
+        "idealFor": "Perfect for large festivals and major events.",
+        "includes": [
+          "300 smoothies + 4 hours",
+          "2 adult blender bikes",
+          "Smoothie preparation on site",
+          "Music and dynamic crowd atmosphere",
+          "Full customization"
+        ]
+      }
+    ]
+  },
+  "parentChildChallenge": {
+    "title": "Parent-Child Challenge",
+    "description": "A fun activity for families",
+    "details": [
+      "2 smoothie bikes (1 standard, 1 child-friendly)",
+      "Up to 120 smoothies",
+      "3 hours of service",
+      "Two animators",
+      "Child-friendly ingredients",
+      "Biodegradable cups and straws",
+      "Educational nutrition activities"
+    ],
+    "tagline": "A family challenge they won't forget!",
+    "heroDescription": "Perfect for schools, festivals, family parties, or neighborhood events that want to bring generations together.",
+    "mainSection": {
+      "title": "What's Included?",
+      "description": "This unique package combines a child-friendly bike and an adult bike, creating an intergenerational experience where parents and children collaborate in a friendly competition full of laughter and bonding. Bonding, laughter, and delicious smoothies—all in one!",
+      "includes": [
+        "1 child bike + 1 adult bike",
+        "Speed monitors + live scoreboard",
+        "Dynamic animator & festive atmosphere",
+        "Medal for the winning team",
+        "Moments of bonding, laughter, and delicious smoothies in a single event!"
+      ]
+    },
+    "options": [
+      {
+        "title": "Option 1",
+        "idealFor": "Perfect for small family events and intimate celebrations.",
+        "includes": [
+          "50 smoothies + 2 hours of competition",
+          "1 child bike + 1 adult bike",
+          "Speed monitors + live scoreboard",
+          "Dynamic animator & festive atmosphere",
+          "Medal for the winning team"
+        ]
+      },
+      {
+        "title": "Option 2",
+        "idealFor": "Ideal for family festivals and large community events.",
+        "includes": [
+          "100 smoothies + 3 hours of energy and fun",
+          "1 child bike + 1 adult bike",
+          "Speed monitors + live scoreboard",
+          "Dynamic animator & festive atmosphere",
+          "Medal for the winning team",
+          "Souvenir photos included"
+        ]
+      }
+    ],
+    "targetAudience": {
+      "title": "Who is it for?",
+      "description": "This package is perfect for creating strong family bonds while offering a fun and healthy experience that will appeal to both parents and children.",
+      "items": [
+        "Schools, festivals, and family parties",
+        "Neighborhood events",
+        "Family festivals and block parties",
+        "Multigenerational celebrations",
+        "Community events focused on families"
       ]
     }
   }

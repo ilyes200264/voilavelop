@@ -62,10 +62,10 @@ export default function ContactPage() {
           {/* Hero Section */}
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-dark-charcoal mb-4">
-              {t('contact.hero.title', 'Get Your Free Quote')}
+              {t('contact:title', 'Contact Us')}
             </h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              {t('contact.hero.subtitle', 'Tell us about your event and we\'ll create a custom smoothie bike experience just for you')}
+              {t('contact:subtitle', 'Ready to add pedal-powered fun to your event? Let\'s talk!')}
             </p>
           </div>
 
@@ -74,41 +74,42 @@ export default function ContactPage() {
             <div className="lg:col-span-1">
               <div className="bg-accent-green/10 rounded-xl p-6 mb-6">
                 <h3 className="text-xl font-bold text-dark-charcoal mb-4">
-                  {t('contact.sidebar.info.title', 'Contact Information')}
+                  {t('contact:contactInfo.title', 'Contact Information')}
                 </h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-accent-green mt-1" />
                     <div>
-                      <p className="font-medium">{t('contact.sidebar.info.address.label', 'Address')}</p>
-                      <p className="text-sm text-gray-600">Montreal, Quebec</p>
+                      <p className="font-medium">{t('contact:contactInfo.address.title', 'Address')}</p>
+                      <p className="text-sm text-gray-600">{t('contact:contactInfo.address.line2', 'Montreal, QC')}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Phone className="h-5 w-5 text-accent-green mt-1" />
                     <div>
-                      <p className="font-medium">{t('contact.sidebar.info.phone.label', 'Phone')}</p>
-                      <p className="text-sm text-gray-600">XXX-XXX-XXXX</p>
+                      <p className="font-medium">{t('contact:contactInfo.phone.title', 'Phone')}</p>
+                      <p className="text-sm text-gray-600">{t('contact:contactInfo.phone.number', 'XXX-XXX-XXXX')}</p>
+                      {t('contact:contactInfo.phone.number2', '') && (
+                        <p className="text-sm text-gray-600">{t('contact:contactInfo.phone.number2')}</p>
+                      )}
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Mail className="h-5 w-5 text-accent-green mt-1" />
                     <div>
-                      <p className="font-medium">{t('contact.sidebar.info.email.label', 'Email')}</p>
-                      {/* CHANGED: Added correct email addresses */}
-                      <p className="text-sm text-gray-600">info@voilavelo.ca</p>
+                      <p className="font-medium">{t('contact:contactInfo.email.title', 'Email')}</p>
+                      <p className="text-sm text-gray-600">{t('contact:contactInfo.email.address', 'voilavelo25@gmail.com')}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Clock className="h-5 w-5 text-accent-green mt-1" />
                     <div>
-                      <p className="font-medium">{t('contact.sidebar.info.hours.label', 'Hours')}</p>
-                      <p className="text-sm text-gray-600">Mon-Fri: 9AM-6PM</p>
-                      <p className="text-sm text-gray-600">Sat-Sun: 10AM-4PM</p>
+                      <p className="font-medium">{t('contact:contactInfo.phone.hours', 'Hours')}</p>
+                      <p className="text-sm text-gray-600">{t('contact:contactInfo.phone.hours', 'Mon-Fri: 9:00AM-5:00PM')}</p>
                     </div>
                   </div>
                 </div>
@@ -121,13 +122,13 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-lg p-6 md:p-8">
                 <h2 className="text-2xl font-bold text-dark-charcoal mb-6">
-                  {t('contact.form.title', 'Request Your Quote')}
+                  {t('contact:contactForm.title', 'Request a Quote')}
                 </h2>
 
                 {/* Personal Information */}
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div>
-                    <Label htmlFor="firstName">{t('contact.form.firstName', 'First Name')} *</Label>
+                    <Label htmlFor="firstName">{t('contact:contactForm.personalInfo.firstName', 'First Name')} *</Label>
                     <Input
                       id="firstName"
                       required
@@ -136,7 +137,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName">{t('contact.form.lastName', 'Last Name')} *</Label>
+                    <Label htmlFor="lastName">{t('contact:contactForm.personalInfo.lastName', 'Last Name')} *</Label>
                     <Input
                       id="lastName"
                       required
@@ -148,7 +149,7 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div>
-                    <Label htmlFor="email">{t('contact.form.email', 'Email')} *</Label>
+                    <Label htmlFor="email">{t('contact:contactForm.personalInfo.email', 'Email')} *</Label>
                     <Input
                       id="email"
                       type="email"
@@ -158,7 +159,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="phone">{t('contact.form.phone', 'Phone Number')}</Label>
+                    <Label htmlFor="phone">{t('contact:contactForm.personalInfo.phone', 'Phone')}</Label>
                     <Input
                       id="phone"
                       type="tel"
@@ -169,7 +170,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="mb-6">
-                  <Label htmlFor="company">{t('contact.form.company', 'Company/Organization')}</Label>
+                  <Label htmlFor="company">{t('contact:contactForm.personalInfo.company', 'Company/Organization')}</Label>
                   <Input
                     id="company"
                     value={formData.company}
@@ -179,7 +180,7 @@ export default function ContactPage() {
 
                 {/* Event Details - FIXED: Working dropdowns */}
                 <h3 className="text-lg font-semibold text-dark-charcoal mb-4">
-                  {t('contact.form.eventDetails', 'Event Details')}
+                  {t('contact:contactForm.eventInfo.title', 'Event Details')}
                 </h3>
 
                 <div className="grid md:grid-cols-3 gap-4 mb-6">

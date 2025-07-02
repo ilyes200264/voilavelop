@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://facebook.com", label: "Facebook", icon: Facebook },
-  { href: "https://instagram.com", label: "Instagram", icon: Instagram },
-  { href: "https://youtube.com", label: "Youtube", icon: Youtube },
-  { href: "https://linkedin.com", label: "Linkedin", icon: Linkedin },
+  { href: "https://www.facebook.com/share/16neHhFkHf/", label: "Facebook", icon: Facebook },
+  { href: "https://www.instagram.com/voila.velo?igsh=dGNwM3BhdTltc2xi", label: "Instagram", icon: Instagram },
+  { href: "https://youtube.com/@voilavelo?si=T4EgDDeNjsczCiS5", label: "Youtube", icon: Youtube },
+  { href: "https://www.linkedin.com/in/voil%C3%A0-v%C3%A9lo-b51615372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "Linkedin", icon: Linkedin },
 ];
 
 export default function SocialFAB() {

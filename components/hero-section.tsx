@@ -65,16 +65,6 @@ export function HeroSection() {
         {/* NEW: Three Products Side by Side */}
         <ScrollReveal className="mt-20">
           <div className="products-showcase">
-            <h3 className="text-2xl font-bold text-dark-charcoal text-center mb-8">
-              {t('home.hero.ourBikes', 'Our Smoothie Bikes')}
-            </h3>
-            
-            {/* TODO: Add three real product images side by side
-                1. Green bicycle with basket
-                2. Regular smoothie bike  
-                3. Red bicycle with watermelon basket
-                Size: Each image should be approximately 400x300px
-                Layout: Responsive grid, 3 columns on desktop, 1 on mobile */}
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Green Bike */}
               <AnimatedImage hoverEffect="scale" className="product-card">
@@ -85,11 +75,6 @@ export function HeroSection() {
                       alt="Green smoothie bike with basket" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Placeholder if image not available */}
-                  </div>
-                  <div className="p-4">
-                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.green.title', 'Eco Green')}</h4>
-                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.green.description', 'Perfect for outdoor events')}</p>
                   </div>
                 </div>
               </AnimatedImage>
@@ -103,11 +88,6 @@ export function HeroSection() {
                       alt="Regular smoothie bike" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Placeholder if image not available */}
-                  </div>
-                  <div className="p-4">
-                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.blue.title', 'Classic Blue')}</h4>
-                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.blue.description', 'Our most popular model')}</p>
                   </div>
                 </div>
               </AnimatedImage>
@@ -121,11 +101,6 @@ export function HeroSection() {
                       alt="Red bicycle with watermelon basket" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Placeholder if image not available */}
-                  </div>
-                  <div className="p-4">
-                    <h4 className="font-semibold text-dark-charcoal">{t('home.hero.bikeCards.red.title', 'Watermelon Red')}</h4>
-                    <p className="text-sm text-gray-600">{t('home.hero.bikeCards.red.description', 'Fun tropical theme')}</p>
                   </div>
                 </div>
               </AnimatedImage>

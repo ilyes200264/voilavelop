@@ -22,7 +22,7 @@
     }
   },
   "valueProposition": {
-    "title": "Transformez votre événement avec nos vélos à smoothies",
+    "title": "Transformez Votre Événement Avec Nos Vélos À Smoothies",
     "subtitle": "Une expérience unique, mémorable et écologique",
     "description1": "Voilà Vélo Fruité est une entreprise d'événements pop-up qui promeut la santé et le bien-être en utilisant nos vélos mélangeurs fabriqués au Québec.",
     "description2": "Faites de votre prochain événement un succès amusant et sain! Nous avons de l'expérience dans l'organisation d'événements pop-up uniques pour répondre à vos besoins. Choisissez l'un de nos forfaits populaires ou contactez-nous pour une soumission avant qu'on soit tous pédalés!",
@@ -129,9 +129,8 @@
       "wellness": "Bien-être au travail",
       "teamBuilding": "Consolidation d'équipe et engagement du personnel",
       "corporate": "Événements corporatifs (engagement de marque et promotion)",
-      "malls": "Activités de centres commerciaux / Programmes de vacances scolaires",
+      "malls": "Activités de centres commerciaux",
       "schools": "Fêtes d'école / Collectes de fonds caritatives",
-      "openDays": "Journées portes ouvertes universitaires",
       "weddings": "Mariages, fêtes d'anniversaire et dîners de gala"
     }
   },
@@ -198,41 +197,21 @@
     }
   },
   "sustainability": {
-    "title": "Nous intégrons la durabilité dans tout ce que nous faisons!!",
-    "subtitle": "Des événements responsables et écologiques",
-    "description": "Chez Voilà Vélo, nous croyons qu'il est possible de s'amuser tout en respectant la planète. C'est pourquoi nous avons mis en place des pratiques durables à chaque étape de notre service.",
+    "title": "Nous intégrons la durabilité dans tout ce que nous faisons!",
+    "subtitle": "De l'approvisionnement local au zéro déchet, nous nous engageons à protéger notre planète",
+    "description": "Notre engagement envers l'environnement va au-delà de la puissance des pédales. Nous nous approvisionnons localement, utilisons des matériaux compostables et donnons les ingrédients non utilisés à ceux qui en ont besoin.",
     "items": {
-      "energyFree": {
-        "title": "Sans électricité",
-        "description": "Nos vélos fonctionnent uniquement grâce à l'énergie humaine"
-      },
-      "localIngredients": {
-        "title": "Ingrédients locaux",
-        "description": "Nous privilégions les producteurs locaux pour nos fruits et légumes"
+      "noStraws": {
+        "title": "Sans Pailles",
+        "description": "Nous n'utilisons pas de pailles ni de couvercles lors de nos événements et encourageons nos clients à faire de même."
       },
       "zeroWaste": {
-        "title": "Zéro déchet",
-        "description": "Tous nos contenants et ustensiles sont compostables"
-      },
-      "carbonOffset": {
-        "title": "Compensation carbone",
-        "description": "Nous compensons l'empreinte carbone de nos déplacements"
-      },
-      "noStraws": {
-        "title": "Pailles\nNon merci!",
-        "description": "Nous n'utilisons pas de pailles ou de couvercles lors de nos événements et encourageons nos clients à faire de même"
+        "title": "Zéro Déchet",
+        "description": "Tous nos contenants et ustensiles sont compostables."
       },
       "foodWaste": {
-        "title": "Lutte contre le\ngaspillage alimentaire!",
-        "description": "Nous donnons tous les ingrédients restants à des organismes de bienfaisance comme Moisson Montréal"
-      },
-      "equality": {
-        "title": "Lutte contre\nles inégalités!",
-        "description": "Nous faisons des dons à UNICEF et à des organismes locaux, aidant les enfants et les jeunes chaque jour"
-      },
-      "carbon": {
-        "title": "Carbone\nNeutre!",
-        "description": "Tout le carbone produit par nos véhicules et notre papier est compensé par des plantations d'arbres au Québec"
+        "title": "Lutte Contre le Gaspillage Alimentaire",
+        "description": "Nous donnons tous les ingrédients restants à des organismes de bienfaisance."
       }
     }
   }

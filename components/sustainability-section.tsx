@@ -20,17 +20,7 @@ export function SustainabilitySection() {
       iconName: "apple",
       title: t('home.sustainability.items.foodWaste.title'),
       description: t('home.sustainability.items.foodWaste.description')
-    },
-    {
-      iconName: "heart",
-      title: t('home.sustainability.items.equality.title'),
-      description: t('home.sustainability.items.equality.description')
-    },
-    {
-      iconName: "sprout",
-      title: t('home.sustainability.items.carbon.title'),
-      description: t('home.sustainability.items.carbon.description')
-    },
+    }
   ]
 
   return (
@@ -55,11 +45,11 @@ export function SustainabilitySection() {
           </div>
 
           {/* Sustainability Features Grid */}
-          <div className="sustainability-grid grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="sustainability-grid grid grid-cols-1 md:grid-cols-3 gap-12 justify-center md:justify-between items-center mx-auto">
             {sustainabilityFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="sustainability-feature text-center bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="sustainability-feature text-center bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-80 min-h-80 flex flex-col justify-center"
                 style={{
                   animationDelay: `${index * 150}ms`,
                 }}
