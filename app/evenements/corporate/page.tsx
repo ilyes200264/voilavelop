@@ -131,29 +131,6 @@ export default function CorporateEventsPage() {
           </div>
         </MotionSection>
 
-        {/* Stats Section */}
-        <MotionSection className="py-16 bg-accent-green text-white">
-          <div className="container mx-auto px-4">
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {(stats || []).map((stat, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                  className="text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-white/90 text-sm md:text-base">
-                    {stat.label}
-                  </div>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
-          </div>
-        </MotionSection>
-
         {/* Benefits Section */}
         <MotionSection className="py-20 bg-secondary-yellow text-white">
           <div className="container mx-auto px-4">
@@ -255,50 +232,6 @@ export default function CorporateEventsPage() {
                   </div>
                 </MotionDiv>
               </StaggerContainer>
-            </div>
-          </div>
-        </MotionSection>
-
-        {/* ROI Section */}
-        <MotionSection className="py-20 bg-accent-green text-white">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <StaggerContainer>
-                <MotionDiv variant="fadeUp">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    {t("corporateEvents:roi.title")}
-                  </h2>
-                </MotionDiv>
-                
-                <MotionDiv variant="fadeUp">
-                  <p className="text-xl mb-6 leading-relaxed opacity-90">
-                    {t("corporateEvents:roi.description")}
-                  </p>
-                </MotionDiv>
-                
-                <MotionDiv variant="fadeUp">
-                  <div className="space-y-4">
-                    {t<string[]>("corporateEvents:roi.benefits", []).map((benefit, index) => (
-                      <div key={index} className="flex items-center">
-                        <TrendingUp className="h-5 w-5 mr-3 flex-shrink-0" />
-                        <span className="text-lg">{benefit}</span>
-                      </div>
-                    ))}
-                  </div>
-                </MotionDiv>
-              </StaggerContainer>
-              
-              <AnimatedImage hoverEffect="scale">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold mb-4">{t("corporateEvents:roi.roiCard.value")}</div>
-                    <div className="text-xl mb-6">{t("corporateEvents:roi.roiCard.title")}</div>
-                    <div className="text-lg opacity-90">
-                      {t("corporateEvents:roi.roiCard.subtitle")}
-                    </div>
-                  </div>
-                </div>
-              </AnimatedImage>
             </div>
           </div>
         </MotionSection>
