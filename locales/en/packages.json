@@ -1,4 +1,10 @@
 {
+  "packages_section": {
+    "title": "Our Packages",
+    "subtitle": "Find the perfect package for your event",
+    "viewAll": "View all packages",
+    "details": "View details"
+  },
   "laSmoothieParade": {
     "title": "The Smoothie Parade",
     "tagline": "A parade of flavours for large events!",
@@ -441,6 +447,26 @@
         "Multigenerational celebrations",
         "Community events focused on families"
       ]
+    }
+  },
+  "packages": {
+    "pageHero": {
+      "title": "Our Packages",
+      "description": "Festivals, corporate events, fundraisers, or school programs – we have the perfect package for you."
+    },
+    "intro": {
+      "description1": "Our smoothie bikes are available for rent throughout the region. Whether you're hosting a small family event or a large festival, we have a solution tailored to your needs.",
+      "description2": "All our packages include delivery, setup and takedown, as well as a professional animator to guide your guests through the experience. We also provide all fresh ingredients, cups, and other necessary accessories."
+    },
+    "packagesGrid": {
+      "title": "Discover our packages",
+      "subtitle": "A unique and memorable experience for all types of events",
+      "seeDetails": "See details",
+      "learnMore": "Learn more"
+    },
+    "help": {
+      "title": "Need help choosing?",
+      "cta": "Contact us for personalized advice and we'll help you find the perfect package for your event!"
     }
   }
 } 

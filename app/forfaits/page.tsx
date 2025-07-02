@@ -165,9 +165,10 @@ export default function ForfaitsPage() {
                         </ul>
                         
                         <div className="mt-auto text-center">
-                          <div className="font-bold text-xl mb-4">
+                          {/* Remove price display from package cards */}
+                          {/* <div className="font-bold text-xl mb-4">
                             {pkg.startingPrice === "Sur devis" ? pkg.startingPrice : `${pkg.startingPrice}$`}
-                          </div>
+                          </div> */}
                           
                           <AnimatedImage hoverEffect="scale">
                             <Link href={`/forfaits/${pkg.id}`} className="block w-full">

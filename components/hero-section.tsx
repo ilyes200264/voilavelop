@@ -68,12 +68,13 @@ export function HeroSection() {
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Green Bike */}
               <AnimatedImage hoverEffect="scale" className="product-card">
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-green-200 relative">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 relative h-full flex-1">
                     <img 
                       src="/images/0.jpg" 
                       alt="Green smoothie bike with basket" 
                       className="w-full h-full object-cover"
+                      style={{ minHeight: 0 }}
                     />
                   </div>
                 </div>
@@ -81,12 +82,13 @@ export function HeroSection() {
 
               {/* Regular Bike */}
               <AnimatedImage hoverEffect="scale" className="product-card">
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-blue-200 relative">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 relative h-full flex-1">
                     <img 
                       src="/images/1.jpg" 
                       alt="Regular smoothie bike" 
                       className="w-full h-full object-cover"
+                      style={{ minHeight: 0 }}
                     />
                   </div>
                 </div>
@@ -94,12 +96,13 @@ export function HeroSection() {
 
               {/* Red Watermelon Bike */}
               <AnimatedImage hoverEffect="scale" className="product-card">
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-red-100 to-pink-200 relative">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+                  <div className="bg-gradient-to-br from-red-100 to-pink-200 relative h-full flex-1">
                     <img 
                       src="/images/2.jpg" 
                       alt="Red bicycle with watermelon basket" 
                       className="w-full h-full object-cover"
+                      style={{ minHeight: 0 }}
                     />
                   </div>
                 </div>
