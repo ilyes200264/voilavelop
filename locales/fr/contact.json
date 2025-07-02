@@ -6,13 +6,13 @@
     "title": "Informations de contact",
     "address": {
       "title": "Adresse",
-      "line1": "[Adresse d'entreprise]",
-      "line2": "Montréal, QC [Code postal]",
+      "line1": "3846 rue martin Laval QC H7P 4E5",
+      "line2": "Laval, QC H7P 4E5",
       "viewMap": "Voir sur la carte →"
     },
     "phone": {
       "title": "Téléphone",
-      "number": "(514)515-6811",
+      "number": "+16479175857",
       "number2": "(514)515-6811",
       "hours": "Lun-Ven: 9h00-17h00"
     },

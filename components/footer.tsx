@@ -48,8 +48,8 @@ export function Footer() {
                   <div className="contact-icon text-lg">📞</div>
                   <div className="contact-details">
                     <p>
-                      <Link href="tel:+15145156811" className="hover:text-secondary-yellow transition-colors">
-                        (514)515-6811
+                      <Link href="tel:+16479175857" className="hover:text-secondary-yellow transition-colors">
+                        +16479175857
                       </Link>
                     </p>
                     <p>
