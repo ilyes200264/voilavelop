@@ -117,3 +117,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Masquer la ligne des jours de la semaine dans le calendrier */
+.rdp-head {
+  display: none !important;
+}
+
+/* Masquer toutes les lignes d'en-tête de jours de la semaine dans les calendriers */
+.rdp-head, .DayPicker-Weekdays, .rdp-weekdays, thead tr, thead, .DayPicker-WeekdaysRow, .rdp-row[role="row"]:first-child {
+  display: none !important;
+}

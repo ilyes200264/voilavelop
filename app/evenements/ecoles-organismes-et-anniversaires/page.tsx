@@ -141,16 +141,8 @@ export default function SchoolsNonprofitsBirthdaysPage() {
       <Header />
       <main>
         {/* Hero Image */}
-        <div className="w-full">
-          <img 
-            src="/images/gallery-1.jpg" 
-            alt="Écoles, Organismes & Anniversaires avec vélos à smoothie" 
-            className="w-full h-80 object-cover"
-          />
-        </div>
-        
         {/* Hero Section */}
-        <MotionSection className="schools-hero relative pt-16 pb-20 bg-orange-500 text-white">
+        <MotionSection className="schools-hero relative pt-16 pb-20 bg-orange-500 text-white mt-24">
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-white">
@@ -197,29 +189,19 @@ export default function SchoolsNonprofitsBirthdaysPage() {
             </div>
           </div>
         </MotionSection>
-
-        {/* Stats Section */}
-        <MotionSection className="py-16 bg-trust-blue text-white">
-          <div className="container mx-auto px-4">
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {(stats || []).map((stat, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                  className="text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-white/90 text-sm md:text-base">
-                    {stat.label}
-                  </div>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
+        {/* Bloc d'accessibilité sans chiffres */}
+        <section className="py-12 bg-accent-green text-white">
+          <div className="container mx-auto px-4 flex flex-col md:flex-row gap-8 items-center justify-between">
+            <div className="bg-white/20 rounded-xl p-8 flex-1 mb-4 md:mb-0">
+              <h3 className="text-xl font-bold mb-2">Tarifs préférentiels pour l'éducation</h3>
+              <p className="text-lg">Nous offrons des tarifs spéciaux pour les écoles et organismes éducatifs afin de rendre nos ateliers accessibles à tous.</p>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold mb-2">Accessibilité pour tous</h3>
+              <p className="text-lg">Chaque enfant mérite d'accéder à des expériences éducatives enrichissantes. Nos forfaits sont adaptés aux budgets scolaires et incluent un support pédagogique personnalisé.</p>
+            </div>
           </div>
-        </MotionSection>
+        </section>
 
         {/* Educational Benefits Section */}
         <MotionSection className="py-20 bg-secondary-yellow text-white">
@@ -255,15 +237,7 @@ export default function SchoolsNonprofitsBirthdaysPage() {
                   </div>
                 </MotionDiv>
                 
-                <MotionDiv variant="fadeUp">
-                  <div className="mt-8">
-                    <AnimatedImage hoverEffect="lift">
-                      <Button className="bg-accent-green text-white hover:bg-accent-green/90 px-8 py-3 text-lg font-semibold rounded-xl">
-                        {t('ecolesOrganismesEtAnniversaires:education.ctaButton')}<ArrowRight className="ml-2 h-5 w-5" />
-                      </Button>
-                    </AnimatedImage>
-                  </div>
-                </MotionDiv>
+                {/* Supprimé : MotionDiv avec le bouton Programme éducatif */}
               </StaggerContainer>
 
               <AnimatedImage hoverEffect="scale" className="lg:col-span-3">
@@ -328,10 +302,9 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               <AnimatedImage hoverEffect="scale">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <div className="text-center">
-                    <div className="text-6xl font-bold mb-4">{pricing.discount.value}</div>
-                    <div className="text-xl mb-6">{pricing.discount.title}</div>
+                    <div className="text-2xl font-bold mb-4">Tarif préférentiel pour les écoles</div>
                     <div className="text-lg opacity-90">
-                      {pricing.discount.subtitle}
+                      Profitez d'une offre spéciale pour les établissements scolaires et organismes éducatifs. Contactez-nous pour un devis personnalisé !
                     </div>
                   </div>
                 </div>

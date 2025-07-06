@@ -6,20 +6,16 @@
     "title": "Contact Information",
     "address": {
       "title": "Address",
-      "line1": "3846 rue martin Laval QC H7P 4E5",
-      "line2": "Laval, QC H7P 4E5",
-      "viewMap": "View on map →"
+      "line2": "Laval, QC"
     },
     "phone": {
       "title": "Phone",
       "number": "+1 (647) 917-5857",
-      "number2": "+1 (514) 515-6811",
-      "hours": "Mon-Fri: 9:00AM-5:00PM"
+      "number2": "+1 (514) 515-6811"
     },
     "email": {
       "title": "Email",
-      "address": "voilavelo25@gmail.com",
-      "responseTime": "Response within 24h"
+      "address": "voilavelo25@gmail.com"
     },
     "serviceAreas": {
       "title": "Service Areas",

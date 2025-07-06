@@ -156,7 +156,7 @@ export default function ForfaitsPage() {
                         </div>
                         
                         <ul className="mb-6 flex-grow">
-                          {(pkg.features || []).map((feature, idx) => (
+                          {(pkg.features || []).map((feature: string, idx: number) => (
                             <li key={idx} className="mb-3 flex items-start">
                               <span className="inline-block mr-2">•</span>
                               <span>{feature}</span>
@@ -172,7 +172,7 @@ export default function ForfaitsPage() {
                           
                           <AnimatedImage hoverEffect="scale">
                             <Link href={`/forfaits/${pkg.id}`} className="block w-full">
-                              <Button className={`w-full ${pkg.textColor === 'text-white' ? 'bg-white text-black hover:bg-gray-100' : 'bg-dark-charcoal text-white hover:bg-dark-charcoal/90'} py-3 text-lg font-semibold`}>
+                              <Button className={`w-full ${pkg.id === 'pop-solo' ? 'bg-white text-black hover:bg-gray-100' : (pkg.textColor === 'text-white' ? 'bg-white text-black hover:bg-gray-100' : 'bg-dark-charcoal text-white hover:bg-dark-charcoal/90')} py-3 text-lg font-semibold`}>
                                 {t('packages.packagesGrid.learnMore', "En savoir plus")}
                               </Button>
                             </Link>

@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { CalendarIcon, MapPin, Phone, Mail, Clock } from "lucide-react"
+import { CalendarIcon, MapPin, Phone, Mail } from "lucide-react"
 import { format } from "date-fns"
 import { fr, enUS } from "date-fns/locale"
 import { useI18n } from "@/lib/i18n"
@@ -102,14 +102,6 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">{t('contact:contactInfo.email.title', 'Email')}</p>
                       <p className="text-sm text-gray-600">{t('contact:contactInfo.email.address', 'voilavelo25@gmail.com')}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-accent-green mt-1" />
-                    <div>
-                      <p className="font-medium">{t('contact:contactInfo.phone.hours', 'Hours')}</p>
-                      <p className="text-sm text-gray-600">{t('contact:contactInfo.phone.hours', 'Mon-Fri: 9:00AM-5:00PM')}</p>
                     </div>
                   </div>
                 </div>
@@ -246,33 +238,13 @@ export default function ContactPage() {
                   {/* Date Picker - WORKING */}
                   <div>
                     <Label htmlFor="eventDate">{t('contact.form.eventDate', 'Event Date')}</Label>
-                    <Popover>
-                      <PopoverTrigger asChild>
-                        <Button
-                          variant="outline"
-                          className={cn(
-                            "w-full justify-start text-left font-normal",
-                            !formData.eventDate && "text-muted-foreground"
-                          )}
-                        >
-                          <CalendarIcon className="mr-2 h-4 w-4" />
-                          {formData.eventDate ? (
-                            format(formData.eventDate, "PPP", { locale: dateLocale })
-                          ) : (
-                            <span>{t('contact.form.selectDate', 'Select date')}</span>
-                          )}
-                        </Button>
-                      </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar
-                          mode="single"
-                          selected={formData.eventDate || undefined}
-                          onSelect={(date) => handleInputChange("eventDate", date)}
-                          initialFocus
-                          disabled={(date) => date < new Date()}
-                        />
-                      </PopoverContent>
-                    </Popover>
+                    <Input
+                      id="eventDate"
+                      type="date"
+                      value={formData.eventDate ? format(formData.eventDate, 'yyyy-MM-dd') : ''}
+                      onChange={e => handleInputChange('eventDate', e.target.value ? new Date(e.target.value) : null)}
+                      className="w-full"
+                    />
                   </div>
                 </div>
 

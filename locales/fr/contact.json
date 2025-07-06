@@ -3,23 +3,19 @@
   "subtitle": "Prêt à ajouter du plaisir pédalé à votre événement? Parlons-en!",
   
   "contactInfo": {
-    "title": "Informations de contact",
+    "title": "Coordonnées",
     "address": {
       "title": "Adresse",
-      "line1": "3846 rue martin Laval QC H7P 4E5",
-      "line2": "Laval, QC H7P 4E5",
-      "viewMap": "Voir sur la carte →"
+      "line2": "Laval, QC"
     },
     "phone": {
       "title": "Téléphone",
       "number": "+1 (647) 917-5857",
-      "number2": "+1 (514) 515-6811",
-      "hours": "Lun-Ven: 9h00-17h00"
+      "number2": "+1 (514) 515-6811"
     },
     "email": {
-      "title": "Email",
-      "address": "voilavelo25@gmail.com",
-      "responseTime": "Réponse dans les 24h"
+      "title": "Courriel",
+      "address": "voilavelo25@gmail.com"
     },
     "serviceAreas": {
       "title": "Zones de service",

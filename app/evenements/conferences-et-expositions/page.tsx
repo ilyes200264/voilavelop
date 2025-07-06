@@ -123,29 +123,6 @@ export default function ConferencesExposPage() {
           </div>
         </MotionSection>
 
-        {/* Stats Section */}
-        <MotionSection className="py-16 bg-amber-100">
-          <div className="container mx-auto px-4">
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {(stats || []).map((stat, index) => (
-                <MotionDiv
-                  key={index}
-                  variant="fadeUp"
-                  custom={index}
-                  className="text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-orange-700 text-sm md:text-base">
-                    {stat.label}
-                  </div>
-                </MotionDiv>
-              ))}
-            </StaggerContainer>
-          </div>
-        </MotionSection>
-
         {/* Conference Benefits Section */}
         <MotionSection className="py-20 bg-yellow-500 text-white">
           <div className="container mx-auto px-4">
@@ -190,12 +167,7 @@ export default function ConferencesExposPage() {
                 
                 <MotionDiv variant="fadeUp">
                   <div className="mt-8">
-                    <AnimatedImage hoverEffect="lift">
-                      <Button className="bg-orange-600 text-white hover:bg-orange-700 px-8 py-3 text-lg font-semibold rounded-xl">
-                        {advantagesData.caseStudyButton}
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Button>
-                    </AnimatedImage>
+                    {/* BOUTON ÉTUDE DE CAS SALON SUPPRIMÉ */}
                   </div>
                 </MotionDiv>
               </StaggerContainer>
