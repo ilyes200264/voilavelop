@@ -83,69 +83,11 @@ export function PackagesSection() {
           {packages.map((pkg, index) => (
             isMobile ? (
               <div
-                key={pkg.id}
                 className="h-full border-4 border-red-500 bg-white text-black"
-                style={{ position: 'relative' }}
+                style={{ position: 'relative', minHeight: 100 }}
               >
-                <div style={{position:'absolute',top:0,left:0,background:'#fff',zIndex:10,fontWeight:'bold',fontSize:12}}>DEBUG: Package visible</div>
-                <AnimatedImage hoverEffect="lift" className="h-full">
-                  <div className={`package-card bg-white rounded-2xl p-6 shadow-lg h-full flex flex-col ${pkg.borderColor || 'border-t-primary-red'} border-t-4 hover:shadow-xl transition-all duration-500`}>
-                    {/* Package Header */}
-                    <div className="package-header text-center mb-6">
-                      <div className="package-icon mb-4">
-                        <div className={`w-20 h-20 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'}/20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-500 hover:rotate-12`}>
-                          {iconMap[pkg.id] || <Bike className="h-9 w-9 text-black" />}
-                        </div>
-                      </div>
-                      <h4 className={`package-title text-xl font-bold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-2`} style={{color:'#111'}}>
-                        {pkg.title}
-                      </h4>
-                    </div>
-
-                    {/* Package Description */}
-                    <div className="package-description mb-6 flex-grow">
-                      {pkg.tagline && (
-                        <p className="package-tagline font-semibold mb-3 text-gray-700 italic text-center" style={{color:'#222'}}>
-                          "{pkg.tagline}"
-                        </p>
-                      )}
-                      <p className="package-intro text-sm text-gray-700 leading-relaxed text-center" style={{color:'#222'}}>
-                        {pkg.heroDescription}
-                      </p>
-                    </div>
-
-                    {/* What's Included - NO PRICES */}
-                    <div className="package-includes mb-6 p-4 bg-gray-50 rounded-lg">
-                      <h5 className={`includes-title font-semibold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-3 flex items-center`} style={{color:'#111'}}>
-                        <span className={`inline-block w-1.5 h-1.5 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} rounded-full mr-2`}></span>
-                        {t('home.packages.includes', 'Package includes:')}
-                      </h5>
-                      <ul className="includes-list space-y-2">
-                        {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
-                          <li key={itemIndex} className="flex items-start text-sm group" style={{color:'#222'}}>
-                            <Check className={`h-4 w-4 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mr-2 mt-0.5 flex-shrink-0 transform transition-transform duration-300 group-hover:scale-125`} />
-                            <span className="text-gray-700" style={{color:'#222'}}>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* REMOVED: All pricing options */}
-
-                    {/* CTA Button - CHANGED: Links to main packages page */}
-                    <div className="package-cta">
-                      <Link href="/forfaits/" className="block">
-                        <Button 
-                          className={`w-full bg-white hover:${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} hover:text-white border-2 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'border-') : 'border-primary-red'} ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} transition-all duration-300`}
-                          style={{color:'#111'}}
-                        >
-                          {t('home.packages.seeDetails', 'See details')}
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </AnimatedImage>
+                <div style={{fontWeight:'bold',fontSize:14}}>DEBUG: Package visible</div>
+                <div style={{fontSize:18}}>{pkg.title}</div>
               </div>
             ) : (
               <MotionDiv
