@@ -52,8 +52,6 @@ export function PackagesSection() {
 
   return (
     <MotionSection className="packages-section py-20 bg-accent-green relative overflow-hidden">
-      {/* DEBUG: Ajout d'un contour rouge à la section */}
-      <div className="border-4 border-dashed border-red-500 mb-4">DEBUG: PackagesSection visible</div>
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
@@ -83,28 +81,24 @@ export function PackagesSection() {
           {packages.map((pkg, index) => (
             isMobile ? (
               <div
-                className="h-full border-4 border-red-500 bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col"
-                style={{ position: 'relative', minHeight: 100, marginBottom: 16 }}
+                className="bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col mb-6"
+                style={{ minHeight: 100 }}
               >
-                <div style={{fontWeight:'bold',fontSize:14}}>DEBUG: Package visible</div>
-                <div style={{fontSize:22, color:'#111'}}>{pkg.title}</div>
+                <div className="text-xl font-bold text-primary-red mb-1">{pkg.title}</div>
                 {pkg.tagline && (
-                  <div style={{fontSize:16, color:'#333', fontStyle:'italic', marginTop:8}}>{pkg.tagline}</div>
+                  <div className="text-base text-gray-700 italic mb-2">{pkg.tagline}</div>
                 )}
                 {pkg.heroDescription && (
-                  <div style={{fontSize:15, color:'#444', marginTop:8}}>{pkg.heroDescription}</div>
+                  <div className="text-sm text-gray-800 mb-4">{pkg.heroDescription}</div>
                 )}
                 {pkg.includes && (
-                  <ul style={{marginTop:12, paddingLeft:18}}>
+                  <ul className="mb-4 pl-4 list-disc text-sm text-gray-700 space-y-1">
                     {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
-                      <li key={itemIndex} style={{color:'#222', fontSize:14, marginBottom:4}}>
-                        ✔️ {item}
-                      </li>
+                      <li key={itemIndex}>{item}</li>
                     ))}
                   </ul>
                 )}
-                {/* Bouton CTA simple */}
-                <a href="/forfaits/" className="block w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors mt-4">
+                <a href="/forfaits/" className="block w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
                   Voir les détails
                 </a>
               </div>
