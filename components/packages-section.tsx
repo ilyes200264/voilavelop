@@ -83,11 +83,54 @@ export function PackagesSection() {
           {packages.map((pkg, index) => (
             isMobile ? (
               <div
-                className="h-full border-4 border-red-500 bg-white text-black"
-                style={{ position: 'relative', minHeight: 100 }}
+                className="h-full border-4 border-red-500 bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col"
+                style={{ position: 'relative', minHeight: 100, marginBottom: 16 }}
               >
                 <div style={{fontWeight:'bold',fontSize:14}}>DEBUG: Package visible</div>
-                <div style={{fontSize:18}}>{pkg.title}</div>
+                {/* Header */}
+                <div className="package-header text-center mb-6">
+                  <div className="package-icon mb-4">
+                    <div className="w-20 h-20 bg-primary-red/20 rounded-full flex items-center justify-center mx-auto shadow-md">
+                      {/* Icon simple */}
+                      <span style={{fontSize:32}}>🚲</span>
+                    </div>
+                  </div>
+                  <h4 className="package-title text-xl font-bold text-primary-red mb-2">
+                    {pkg.title}
+                  </h4>
+                </div>
+                {/* Description */}
+                <div className="package-description mb-6 flex-grow">
+                  {pkg.tagline && (
+                    <p className="package-tagline font-semibold mb-3 text-gray-700 italic text-center">
+                      "{pkg.tagline}"
+                    </p>
+                  )}
+                  <p className="package-intro text-sm text-gray-700 leading-relaxed text-center">
+                    {pkg.heroDescription}
+                  </p>
+                </div>
+                {/* What's Included */}
+                <div className="package-includes mb-6 p-4 bg-gray-50 rounded-lg">
+                  <h5 className="includes-title font-semibold text-primary-red mb-3 flex items-center">
+                    <span className="inline-block w-1.5 h-1.5 bg-primary-red rounded-full mr-2"></span>
+                    Inclus :
+                  </h5>
+                  <ul className="includes-list space-y-2">
+                    {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
+                      <li key={itemIndex} className="flex items-start text-sm group">
+                        <span className="mr-2">✔️</span>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {/* CTA simple */}
+                <div className="package-cta">
+                  <a href="/forfaits/" className="block w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
+                    Voir les détails
+                  </a>
+                </div>
               </div>
             ) : (
               <MotionDiv
