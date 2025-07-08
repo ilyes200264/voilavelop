@@ -223,27 +223,52 @@ export function Header() {
             transition={{ duration: 0.3 }}
           >
             <nav className="container mx-auto px-4 py-6">
-              <ul className="space-y-4">
+              <ul className="space-y-2">
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="block text-lg font-medium text-dark-charcoal hover:text-primary-red transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
+                    {item.hasSubmenu && item.submenu ? (
+                      <>
+                        <button
+                          className="w-full flex items-center justify-between text-lg font-medium text-dark-charcoal hover:text-primary-red transition-colors py-2"
+                          onClick={() => setOpenSubmenu(openSubmenu === item.submenuId ? null : item.submenuId)}
+                        >
+                          <span>{item.name}</span>
+                          <ChevronDown className={`h-5 w-5 ml-2 transition-transform duration-200 ${openSubmenu === item.submenuId ? 'rotate-180' : ''}`} />
+                        </button>
+                        {openSubmenu === item.submenuId && (
+                          <ul className="pl-4 py-1 space-y-1">
+                            {item.submenu.map((subItem) => (
+                              <li key={subItem.name}>
+                                <Link
+                                  href={subItem.href}
+                                  className="block text-base text-dark-charcoal hover:text-primary-red py-1"
+                                  onClick={() => setIsMenuOpen(false)}
+                                >
+                                  {subItem.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="block text-lg font-medium text-dark-charcoal hover:text-primary-red transition-colors py-2"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
-              
               <div className="mt-6 space-y-4">
                 <Link href="/reserver" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full bg-primary-red hover:bg-red-600 text-white">
                     {t('common.navigation.book')}
                   </Button>
                 </Link>
-                
                 <button
                   onClick={() => {
                     setLanguage(language === 'fr' ? 'en' : 'fr')
