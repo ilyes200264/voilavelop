@@ -94,6 +94,15 @@ export function PackagesSection() {
                 {pkg.heroDescription && (
                   <div style={{fontSize:15, color:'#444', marginTop:8}}>{pkg.heroDescription}</div>
                 )}
+                {pkg.includes && (
+                  <ul style={{marginTop:12, paddingLeft:18}}>
+                    {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
+                      <li key={itemIndex} style={{color:'#222', fontSize:14, marginBottom:4}}>
+                        ✔️ {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ) : (
               <MotionDiv
