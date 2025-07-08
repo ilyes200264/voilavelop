@@ -6,6 +6,14 @@
     "details": "Voir les détails"
   },
   "packages": {
+    "pageHero": {
+      "title": "Nos forfaits",
+      "description": "Festivals, événements corporatifs, collectes de fonds ou programmes scolaires - nous avons le forfait parfait pour vous."
+    },
+    "intro": {
+      "description1": "Nos vélos à smoothies sont disponibles pour la location dans toute la région. Que vous organisiez un petit événement familial ou un grand festival, nous avons une solution adaptée à vos besoins.",
+      "description2": "Tous nos forfaits comprennent la livraison, l'installation et la désinstallation, ainsi qu'un animateur professionnel pour guider vos invités à travers l'expérience. Nous fournissons également tous les ingrédients frais, gobelets, et autres accessoires nécessaires."
+    },
     "packagesGrid": {
       "title": "Découvrez nos forfaits",
       "subtitle": "Une expérience unique et mémorable pour tous types d'événements",
