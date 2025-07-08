@@ -496,5 +496,22 @@
         }
       ]
     }
+  },
+  "packagesGrid": {
+    "title": "Découvrez nos forfaits",
+    "subtitle": "Une expérience unique et mémorable pour tous types d'événements",
+    "seeDetails": "Voir les détails",
+    "learnMore": "En savoir plus"
+  },
+  "help": {
+    "title": "Besoin d'aide pour choisir?",
+    "description": "Notre équipe peut vous aider à sélectionner le forfait parfait pour votre événement ou créer une solution entièrement personnalisée.",
+    "requestQuote": "Demander un devis",
+    "callUs": "Appelez-nous",
+    "testimonial": {
+      "text": "Nous avons réservé Voilà Vélo Fruité pour notre journée corporative et ce fut un succès retentissant! L'équipe était professionnelle et nos employés ont adoré l'expérience.",
+      "author": "Marie Lemieux",
+      "company": "Directrice RH, Entreprise XYZ"
+    }
   }
 }

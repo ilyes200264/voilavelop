@@ -217,7 +217,14 @@
     },
     "help": {
       "title": "Need help choosing?",
-      "cta": "Contact us for personalized advice and we'll help you find the perfect package for your event!"
+      "description": "Our team can help you select the perfect package for your event or create a completely customized solution.",
+      "requestQuote": "Request a quote",
+      "callUs": "Call us",
+      "testimonial": {
+        "text": "We booked Voilà Vélo Fruité for our corporate day and it was a resounding success! The team was professional and our employees loved the experience.",
+        "author": "Marie Lemieux",
+        "company": "HR Director, XYZ Company"
+      }
     }
   },
   "laSmoothieParade": {
