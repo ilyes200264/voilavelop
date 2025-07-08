@@ -91,6 +91,9 @@ export function PackagesSection() {
                 {pkg.tagline && (
                   <div style={{fontSize:16, color:'#333', fontStyle:'italic', marginTop:8}}>{pkg.tagline}</div>
                 )}
+                {pkg.heroDescription && (
+                  <div style={{fontSize:15, color:'#444', marginTop:8}}>{pkg.heroDescription}</div>
+                )}
               </div>
             ) : (
               <MotionDiv
