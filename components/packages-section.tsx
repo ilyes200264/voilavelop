@@ -103,6 +103,10 @@ export function PackagesSection() {
                     ))}
                   </ul>
                 )}
+                {/* Bouton CTA simple */}
+                <a href="/forfaits/" className="block w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors mt-4">
+                  Voir les détails
+                </a>
               </div>
             ) : (
               <MotionDiv
