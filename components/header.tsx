@@ -133,7 +133,7 @@ export function Header() {
                   onMouseEnter={() => item.hasSubmenu && setOpenSubmenu(item.submenuId || null)}
                   onMouseLeave={() => setOpenSubmenu(null)}
                 >
-                  {item.name === t('common.navigation.events') ? (
+                  {item.name === t('common.navigation.events') || item.name === t('common.navigation.packages') ? (
                     <span className="nav-link flex items-center space-x-1 text-dark-charcoal cursor-default font-medium select-none">
                       <span>{item.name}</span>
                       <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />

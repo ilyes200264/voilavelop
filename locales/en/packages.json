@@ -411,131 +411,131 @@
           "Multigenerational celebrations",
           "Community events focused on families"
         ]
-      }
+    }
+  },
+  "laSmoothieParade": {
+    "title": "The Smoothie Parade",
+    "tagline": "A parade of flavours for large events!",
+    "heroTitle": "Maximum Impact for Large Gatherings",
+    "heroDescription": "Our largest standard package – perfect when you need to serve big crowds and create a real spectacle.",
+    "demoSection": {
+      "title": "Smoothie Parade in Action"
     },
-    "laSmoothieParade": {
-      "title": "The Smoothie Parade",
-      "tagline": "A parade of flavours for large events!",
-      "heroTitle": "Maximum Impact for Large Gatherings",
-      "heroDescription": "Our largest standard package – perfect when you need to serve big crowds and create a real spectacle.",
-      "demoSection": {
-        "title": "Smoothie Parade in Action"
-      },
-      "customizationSection": {
-        "title": "Make Your Parade Unforgettable",
-        "description": "Full visual and experiential customisation so your brand shines in front of thousands.",
-        "details": "Custom wheel covers, branded cups, themed decorations, music programming and more — ask us for the full list!"
-      },
-      "mainSection": {
-        "title": "What's Included",
-        "description": "This package features 4+ smoothie bikes, multiple serving stations and a full team of professional animators to keep the energy high for hours.",
-        "includes": [
-          "4+ smoothie bikes",
-          "Multiple serving stations",
-          "Team of professional animators",
-          "Up to 8-hour service duration",
-          "Extensive ingredient variety",
-          "Sound system & music",
-          "Complete event management"
-        ]
-      },
-      "targetSection": {
-        "title": "Perfect For",
-        "description": "Designed for large-scale events that need a headline attraction capable of keeping crowds entertained and engaged for hours.",
-        "perfectFor": [
-          "Brand activations",
-          "Community festivals",
-          "School or university days",
-          "Shopping malls",
-          "Team building & conferences",
-          "Public celebrations"
-        ]
-      },
-      "targetAudience": {
-        "title": "Perfect For",
-        "description": "Ideal for city festivals, corporate gatherings, major fund-raisers and any situation where you need to wow a large audience.",
-        "items": [
-          "Large festivals",
-          "Corporate gatherings",
-          "City events",
-          "Major fund-raisers",
-          "Public celebrations"
-        ]
-      },
-      "options": [
-        {
-          "title": "Standard Parade Setup",
-          "idealFor": "Great for medium-sized festivals and community events.",
-          "includes": [
-            "3 smoothie bikes (2 large + 1 child)",
-            "200 fresh-fruit smoothies",
-            "Menu boards",
-            "Setup tables & signage",
-            "Full installation"
-          ]
-        }
+    "customizationSection": {
+      "title": "Make Your Parade Unforgettable",
+      "description": "Full visual and experiential customisation so your brand shines in front of thousands.",
+      "details": "Custom wheel covers, branded cups, themed decorations, music programming and more — ask us for the full list!"
+    },
+    "mainSection": {
+      "title": "What's Included",
+      "description": "This package features 4+ smoothie bikes, multiple serving stations and a full team of professional animators to keep the energy high for hours.",
+      "includes": [
+        "4+ smoothie bikes",
+        "Multiple serving stations",
+        "Team of professional animators",
+        "Up to 8-hour service duration",
+        "Extensive ingredient variety",
+        "Sound system & music",
+        "Complete event management"
       ]
     },
-    "signature": {
-      "title": "Signature Package",
-      "tagline": "Your vision, our expertise!",
-      "heroTitle": "Customized to Perfection",
-      "heroDescription": "Let us create a completely customized smoothie bike experience tailored to your specific needs and vision.",
-      "mainSection": {
-        "title": "What's Included",
-        "description": "Whether it's a corporate gala, brand activation or private celebration, this fully bespoke package lets you showcase your identity – smoothie-style! Contact us to make your vision a reality.",
+    "targetSection": {
+      "title": "Perfect For",
+      "description": "Designed for large-scale events that need a headline attraction capable of keeping crowds entertained and engaged for hours.",
+      "perfectFor": [
+        "Brand activations",
+        "Community festivals",
+        "School or university days",
+        "Shopping malls",
+        "Team building & conferences",
+        "Public celebrations"
+      ]
+    },
+    "targetAudience": {
+      "title": "Perfect For",
+      "description": "Ideal for city festivals, corporate gatherings, major fund-raisers and any situation where you need to wow a large audience.",
+      "items": [
+        "Large festivals",
+        "Corporate gatherings",
+        "City events",
+        "Major fund-raisers",
+        "Public celebrations"
+      ]
+    },
+    "options": [
+      {
+        "title": "Standard Parade Setup",
+        "idealFor": "Great for medium-sized festivals and community events.",
         "includes": [
-          "Flexible number of bikes",
-          "Customised service duration",
-          "Bespoke ingredient menu",
-          "Themed decorations",
-          "Brand integration",
-          "Special effects & features",
-          "Dedicated event planning"
-        ]
-      },
-      "targetSection": {
-        "title": "Perfect For",
-        "description": "This premium package is designed for brands and organisations that demand excellence and want to deliver a truly unique, memorable experience.",
-        "perfectFor": [
-          "Corporate events",
-          "Brand-awareness campaigns",
-          "School festivals",
-          "Community celebrations",
-          "Weddings, anniversaries & private parties"
-        ]
-      },
-      "demoSection": {
-        "title": "Signature Package – Tailored Excellence"
-      },
-      "customizationSection": {
-        "title": "Create the Perfect Signature Experience",
-        "description": "Fully bespoke design so every detail reflects your brand and event goals.",
-        "details": "In-depth consultation, exclusive graphic design and flawless execution for a one-of-a-kind experience."
-      },
-      "options": [
-        {
-          "title": "Fully Custom Signature Package",
-          "idealFor": "Perfect for events that require complete customisation and premium service.",
-          "includes": [
-            "Custom-branded cups",
-            "Double-sided printed wheel covers",
-            "A-frame sandwich boards",
-            "Tabletop decorations in your style",
-            "Premium consultation & concierge service"
-          ]
-        }
-      ],
-      "targetAudience": {
-        "title": "Perfect For",
-        "items": [
-          "Weddings",
-          "VIP events",
-          "Product launches",
-          "Unique celebrations",
-          "Branded experiences"
+          "3 smoothie bikes (2 large + 1 child)",
+          "200 fresh-fruit smoothies",
+          "Menu boards",
+          "Setup tables & signage",
+          "Full installation"
         ]
       }
+    ]
+  },
+  "signature": {
+    "title": "Signature Package",
+    "tagline": "Your vision, our expertise!",
+    "heroTitle": "Customized to Perfection",
+    "heroDescription": "Let us create a completely customized smoothie bike experience tailored to your specific needs and vision.",
+    "mainSection": {
+      "title": "What's Included",
+      "description": "Whether it's a corporate gala, brand activation or private celebration, this fully bespoke package lets you showcase your identity – smoothie-style! Contact us to make your vision a reality.",
+      "includes": [
+        "Flexible number of bikes",
+        "Customised service duration",
+        "Bespoke ingredient menu",
+        "Themed decorations",
+        "Brand integration",
+        "Special effects & features",
+        "Dedicated event planning"
+      ]
+    },
+    "targetSection": {
+      "title": "Perfect For",
+      "description": "This premium package is designed for brands and organisations that demand excellence and want to deliver a truly unique, memorable experience.",
+      "perfectFor": [
+        "Corporate events",
+        "Brand-awareness campaigns",
+        "School festivals",
+        "Community celebrations",
+        "Weddings, anniversaries & private parties"
+      ]
+    },
+    "demoSection": {
+      "title": "Signature Package – Tailored Excellence"
+    },
+    "customizationSection": {
+      "title": "Create the Perfect Signature Experience",
+      "description": "Fully bespoke design so every detail reflects your brand and event goals.",
+      "details": "In-depth consultation, exclusive graphic design and flawless execution for a one-of-a-kind experience."
+    },
+    "options": [
+      {
+        "title": "Fully Custom Signature Package",
+        "idealFor": "Perfect for events that require complete customisation and premium service.",
+        "includes": [
+          "Custom-branded cups",
+          "Double-sided printed wheel covers",
+          "A-frame sandwich boards",
+          "Tabletop decorations in your style",
+          "Premium consultation & concierge service"
+        ]
+      }
+    ],
+    "targetAudience": {
+      "title": "Perfect For",
+      "items": [
+        "Weddings",
+        "VIP events",
+        "Product launches",
+        "Unique celebrations",
+        "Branded experiences"
+      ]
+    }
     }
   }
 } 
