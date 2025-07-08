@@ -88,6 +88,9 @@ export function PackagesSection() {
               >
                 <div style={{fontWeight:'bold',fontSize:14}}>DEBUG: Package visible</div>
                 <div style={{fontSize:22, color:'#111'}}>{pkg.title}</div>
+                {pkg.tagline && (
+                  <div style={{fontSize:16, color:'#333', fontStyle:'italic', marginTop:8}}>{pkg.tagline}</div>
+                )}
               </div>
             ) : (
               <MotionDiv
