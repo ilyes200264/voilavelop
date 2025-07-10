@@ -1,5 +1,4 @@
 "use client"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check, Bike, Baby, User, Users } from "lucide-react"
@@ -80,28 +79,31 @@ export function PackagesSection() {
         <StaggerContainer className="packages-grid grid lg:grid-cols-3 gap-8 mb-12">
           {packages.map((pkg, index) => (
             isMobile ? (
-              <div
-                className="bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col mb-6"
-                style={{ minHeight: 100 }}
+              <Link 
+                key={pkg.id}
+                href="/forfaits/" 
+                className="block"
               >
-                <div className="text-xl font-bold text-primary-red mb-1">{pkg.title}</div>
-                {pkg.tagline && (
-                  <div className="text-base text-gray-700 italic mb-2">{pkg.tagline}</div>
-                )}
-                {pkg.heroDescription && (
-                  <div className="text-sm text-gray-800 mb-4">{pkg.heroDescription}</div>
-                )}
-                {pkg.includes && (
-                  <ul className="mb-4 pl-4 list-disc text-sm text-gray-700 space-y-1">
-                    {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                  </ul>
-                )}
-                <a href="/forfaits/" className="block w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                  Voir les détails
-                </a>
-              </div>
+                <div className="bg-white text-black rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-1">
+                  <div className="text-xl font-bold text-primary-red mb-1">{pkg.title}</div>
+                  {pkg.tagline && (
+                    <div className="text-base text-gray-700 italic mb-2">{pkg.tagline}</div>
+                  )}
+                  {pkg.heroDescription && (
+                    <div className="text-sm text-gray-800 mb-4">{pkg.heroDescription}</div>
+                  )}
+                  {pkg.includes && (
+                    <ul className="mb-4 pl-4 list-disc text-sm text-gray-700 space-y-1">
+                      {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  <div className="w-full bg-primary-red text-white text-center py-3 rounded-lg font-semibold">
+                    Voir les détails
+                  </div>
+                </div>
+              </Link>
             ) : (
               <MotionDiv
                 key={pkg.id}
@@ -109,12 +111,12 @@ export function PackagesSection() {
                 custom={index}
                 className="h-full"
               >
-                <AnimatedImage hoverEffect="lift" className="h-full">
-                  <div className={`package-card bg-white rounded-2xl p-6 shadow-lg h-full flex flex-col ${pkg.borderColor || 'border-t-primary-red'} border-t-4 hover:shadow-xl transition-all duration-500`}>
+                <Link href="/forfaits/" className="block h-full">
+                  <div className={`package-card bg-white rounded-2xl p-6 shadow-lg h-full flex flex-col ${pkg.borderColor || 'border-t-primary-red'} border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group`}>
                     {/* Package Header */}
                     <div className="package-header text-center mb-6">
                       <div className="package-icon mb-4">
-                        <div className={`w-20 h-20 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'}/20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-500 hover:rotate-12`}>
+                        <div className={`w-20 h-20 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'}/20 rounded-full flex items-center justify-center mx-auto shadow-md transform transition-transform duration-300 group-hover:scale-110`}>
                           {iconMap[pkg.id] || <Bike className="h-9 w-9 text-black" />}
                         </div>
                       </div>
@@ -135,7 +137,7 @@ export function PackagesSection() {
                       </p>
                     </div>
 
-                    {/* What's Included - NO PRICES */}
+                    {/* What's Included */}
                     <div className="package-includes mb-6 p-4 bg-gray-50 rounded-lg">
                       <h5 className={`includes-title font-semibold ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mb-3 flex items-center`}>
                         <span className={`inline-block w-1.5 h-1.5 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} rounded-full mr-2`}></span>
@@ -143,29 +145,23 @@ export function PackagesSection() {
                       </h5>
                       <ul className="includes-list space-y-2">
                         {(pkg.includes || []).slice(0, 4).map((item: string, itemIndex: number) => (
-                          <li key={itemIndex} className="flex items-start text-sm group">
-                            <Check className={`h-4 w-4 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mr-2 mt-0.5 flex-shrink-0 transform transition-transform duration-300 group-hover:scale-125`} />
+                          <li key={itemIndex} className="flex items-start text-sm">
+                            <Check className={`h-4 w-4 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} mr-2 mt-0.5 flex-shrink-0`} />
                             <span className="text-gray-700">{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    {/* REMOVED: All pricing options */}
-
-                    {/* CTA Button - CHANGED: Links to main packages page */}
-                    <div className="package-cta">
-                      <Link href="/forfaits/" className="block">
-                        <Button 
-                          className={`w-full bg-white hover:${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'bg-') : 'bg-primary-red'} hover:text-white border-2 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'border-') : 'border-primary-red'} ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} transition-all duration-300`}
-                        >
-                          {t('home.packages.seeDetails', 'See details')}
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
+                    {/* CTA Footer */}
+                    <div className="package-cta mt-auto">
+                      <div className={`w-full text-center py-3 px-4 rounded-lg border-2 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'border-') : 'border-primary-red'} ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'text-') : 'text-primary-red'} font-semibold group-hover:bg-opacity-10 ${pkg.borderColor ? pkg.borderColor.replace('border-t-', 'group-hover:bg-') : 'group-hover:bg-primary-red'} transition-all duration-300 flex items-center justify-center`}>
+                        {t('home.packages.seeDetails', 'See details')}
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
                     </div>
                   </div>
-                </AnimatedImage>
+                </Link>
               </MotionDiv>
             )
           ))}
@@ -186,31 +182,15 @@ export function PackagesSection() {
 
           {/* View All Packages Button */}
           <MotionDiv variant="fadeUp">
-            <AnimatedImage hoverEffect="lift">
-              <Link href="/forfaits/">
-                <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                  {t('home.packages.viewAll', 'View all packages')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </AnimatedImage>
+            <Link href="/forfaits/">
+              <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                {t('home.packages.viewAll', 'View all packages')}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </MotionDiv>
         </StaggerContainer>
       </div>
     </MotionSection>
   )
 }
-
-/*
-CHANGES MADE:
-1. REMOVED all price displays and "Option 1", "Option 2" sections
-2. FIXED translation keys to use proper namespace (packages:packages.camelCaseId)
-3. Used kebabToCamel utility to convert package IDs to proper translation keys
-4. Limited includes list to 4 items for cleaner display
-5. "See details" button now links to /forfaits/ (main packages page)
-6. Added Check icon instead of text checkmark for better visual
-7. Improved responsive layout with flex-grow for equal height cards
-8. Added hover effects and transitions throughout
-9. Ensured all text uses translation system properly
-10. Background decorations for visual interest
-*/
