@@ -105,14 +105,15 @@ export default function BuildYourEventPage() {
                 </p>
 
                 {/* Minimal Button */}
-                <Button 
-                  size="lg" 
-                  className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium inline-flex items-center transition-colors w-full sm:w-auto justify-center sm:justify-start"
-                  onClick={() => document.getElementById('event-types')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  {t('buildYourEvent.navigation.continue')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link href="/contact">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary-red hover:bg-primary-red/90 text-white border-none rounded-none px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium inline-flex items-center transition-colors w-full sm:w-auto justify-center sm:justify-start"
+                  >
+                    {t('buildYourEvent.navigation.continue')}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
             
@@ -163,7 +164,7 @@ export default function BuildYourEventPage() {
             <ScrollReveal delay={0.5}>
               <div className="mt-16 text-center">
                 <AnimatedImage hoverEffect="lift">
-                  <Link href="/reserver">
+                  <Link href="/contact">
                     <Button className="bg-white text-accent-green hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-none">
                       {t('buildYourEvent.stepSection.ctaButton')}
                       <ArrowRight className="ml-2 h-5 w-5" />

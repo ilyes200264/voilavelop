@@ -195,7 +195,7 @@ export function Header() {
             </button>
 
             {/* Book Now Button - CHANGED: Links directly to reservation form */}
-            <Link href="/reserver">
+            <Link href="/contact">
               <Button className="book-now-btn hidden lg:block bg-primary-red hover:bg-red-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 {t('common.navigation.book')}
               </Button>
@@ -264,7 +264,7 @@ export function Header() {
                 ))}
               </ul>
               <div className="mt-6 space-y-4">
-                <Link href="/reserver" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full bg-primary-red hover:bg-red-600 text-white">
                     {t('common.navigation.book')}
                   </Button>
@@ -292,7 +292,7 @@ CHANGES MADE:
 1. Added subtle gradient background: bg-gradient-to-r from-white via-orange-50/50 to-yellow-50/30
 2. Added backdrop-blur-sm for modern glass effect
 3. Added hover scale effect on logo
-4. Ensured "Book Now" button links directly to /reserver (reservation form)
+4. Ensured "Book Now" button links directly to /contact (reservation form)
 5. Improved hover states and transitions
 6. Added proper color scheme matching brand colors
 */

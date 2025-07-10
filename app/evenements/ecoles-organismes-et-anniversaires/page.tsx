@@ -169,10 +169,12 @@ export default function SchoolsNonprofitsBirthdaysPage() {
               
               <StaggerContainer className="flex flex-col sm:flex-row gap-4">
                 <AnimatedImage hoverEffect="lift">
-                  <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    {t('ecolesOrganismesEtAnniversaires:hero.requestQuote')}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  <Link href="/contact">
+                    <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                      {t('ecolesOrganismesEtAnniversaires:hero.requestQuote')}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
                 </AnimatedImage>
                 
                 <AnimatedImage hoverEffect="lift">

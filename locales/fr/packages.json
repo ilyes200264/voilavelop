@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "title": "Nos Forfaits Smoothie Bike",
+    "subtitle": "Des expériences sur mesure pour tous vos événements. Choisissez le forfait parfait ou créons ensemble une solution entièrement personnalisée.",
+    "viewPackages": "Voir les forfaits",
+    "requestQuote": "Demander un devis"
+  },
+
   "packages_section": {
     "title": "Nos forfaits",
     "subtitle": "Trouvez la formule parfaite pour votre événement",
@@ -11,8 +18,21 @@
       "description": "Festivals, événements corporatifs, collectes de fonds ou programmes scolaires - nous avons le forfait parfait pour vous."
     },
     "intro": {
+      "title": "Une Expérience Unique Pour Chaque Occasion",
+
       "description1": "Nos vélos à smoothies sont disponibles pour la location dans toute la région. Que vous organisiez un petit événement familial ou un grand festival, nous avons une solution adaptée à vos besoins.",
       "description2": "Tous nos forfaits comprennent la livraison, l'installation et la désinstallation, ainsi qu'un animateur professionnel pour guider vos invités à travers l'expérience. Nous fournissons également tous les ingrédients frais, gobelets, et autres accessoires nécessaires."
+    },
+    "features": {
+      "title": "Inclus dans Tous Nos Forfaits",
+      "delivery": "Livraison & Installation",
+      "deliveryDesc": "Service complet clé en main",
+      "animator": "Animateur Professionnel",
+      "animatorDesc": "Guide expérimenté inclus",
+      "ingredients": "Ingrédients Frais",
+      "ingredientsDesc": "Fruits et légumes de qualité",
+      "equipment": "Tout l'Équipement",
+      "equipmentDesc": "Gobelets, ustensiles, tout fourni"
     },
     "packagesGrid": {
       "title": "Découvrez nos forfaits",

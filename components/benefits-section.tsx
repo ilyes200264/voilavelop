@@ -79,7 +79,7 @@ export function BenefitsSection() {
 
                 <MotionDiv variant="fadeUp">
                   <AnimatedImage hoverEffect="lift">
-                    <Link href="/a-propos">
+                    <Link href="/contact">
                       <button className="btn-primary bg-primary-red text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
                         {t('home.benefits.learnMore')}
                       </button>

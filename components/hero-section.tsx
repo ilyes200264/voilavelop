@@ -50,7 +50,7 @@ export function HeroSection() {
           {/* CTA Button - CHANGED: Links directly to reservation form */}
           <MotionDiv variant="fadeUp" custom={3}>
             <AnimatedImage hoverEffect="lift">
-              <Link href="/reserver">
+              <Link href="/contact">
                 <Button 
                   className="bg-primary-red hover:bg-red-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
@@ -133,7 +133,7 @@ CHANGES MADE:
 1. Changed dark background to fresh, vibrant gradient: from-secondary-yellow/30 via-white to-accent-green/20
 2. Added decorative blur elements for modern look
 3. Removed tagline and Sparkles icons from the main hero section
-4. Book Now button now links directly to /reserver (reservation form)
+4. Book Now button now links directly to /contact (reservation form)
 5. Added section for three products side by side with placeholders
 6. Each product has a card design with image placeholder and fallback emoji
 7. Added hover effects and animations for better interactivity

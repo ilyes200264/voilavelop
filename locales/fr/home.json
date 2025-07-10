@@ -63,22 +63,30 @@
     "title": "Pourquoi choisir Voilà Vélo?",
     "subtitle": "Des smoothies délicieux et une expérience inoubliable",
     "description": "Chez Voilà Vélo, nous croyons que l'apprentissage, le mouvement et le plaisir peuvent aller de pair. Notre atelier Smoothie Vélo est plus qu'une simple activité — c'est une expérience qui inspire des habitudes saines, un smoothie alimenté par pédalage à la fois.",
-    "reasons": {
-      "fun": {
-        "title": "Amusant & Interactif",
-        "description": "Créez une ambiance festive avec nos vélos à smoothies. Vos invités s'amuseront à pédaler pour mixer leurs propres boissons."
-      },
-      "healthy": {
-        "title": "Sain, savoureux et joyeux",
-        "description": "Nos smoothies sont faits sur place avec des ingrédients frais et colorés et une grande dose de plaisir — combinant nutrition et mouvement pour tous les âges."
-      },
-      "sustainable": {
-        "title": "Éco-responsable",
-        "description": "Nos vélos fonctionnent sans électricité et nous utilisons uniquement des matériaux durables et biodégradables."
-      },
+    "items": {
       "unique": {
         "title": "Unique & Mémorable",
         "description": "Offrez une expérience originale qui se démarquera et dont vos invités se souviendront longtemps."
+      },
+      "sustainable": {
+        "title": "100% Durable",
+        "description": "Pratiques écologiques du début à la fin, soutenant les producteurs locaux"
+      },
+      "healthy": {
+        "title": "Sain & Délicieux",
+        "description": "Ingrédients frais et nutritifs dans chaque smoothie, favorisant le bien-être"
+      },
+      "engaging": {
+        "title": "Amusant Interactif",
+        "description": "Impliquez tout le monde et dynamisez avec une participation pratique"
+      },
+      "professional": {
+        "title": "Service Professionnel",
+        "description": "Équipe bilingue expérimentée assure un fonctionnement fluide à chaque événement"
+      },
+      "fun": {
+        "title": "Amusant & Interactif",
+        "description": "Créez une ambiance festive avec nos vélos à smoothies. Vos invités s'amuseront à pédaler pour mixer leurs propres boissons."
       },
       "ecoFriendly": {
         "title": "Écologique et sans énergie",
